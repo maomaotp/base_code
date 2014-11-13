@@ -1,0 +1,42 @@
+#include "sharemem.h"
+#include <unistd.h>
+#define NUM 21
+int main()
+{
+	int i = 0;
+	ShareMem obj;
+	int ret = obj.Init_shm();
+	printf("pid=%d\n", getpid());
+	obj.Set_pid_shm(ALARMPID);
+	int pid = obj.Get_pid_shm(ALARMPID);
+	printf("current pid = %d\n", pid);
+
+
+	if(-1 == ret){
+		printf("Init_shm failed\n");
+		return -1;
+	}
+	char status_input[NUM], status_output[NUM];
+	for(i=0;i<NUM;i++)
+	{
+		status_input[i] = 65 + i;
+	}
+	ret = obj.Set_status_shm(14,&status_input,sizeof(status_input));
+	if(-1 == ret)
+	{
+		printf("set failed\n");
+	}
+	ret = obj.Get_status_shm(14,&status_output,sizeof(status_output));
+	if(-1 == ret)
+	{
+		printf("get failed\n");
+		return -1;
+	}
+	for(i=0;i<NUM;i++)
+	{
+		printf("status_output[%d]=%c\n", i, status_output[i]);
+	}
+//	obj.Unlink_shm();
+	
+	return 0;
+}

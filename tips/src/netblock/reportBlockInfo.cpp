@@ -1,0 +1,260 @@
+#include "reportBlockInfo.h"
+
+pthread_t pid=0;
+static libnet_t *net=NULL;
+extern std::list<BlockOrder> manager;
+extern pthread_mutex_t env_mutex ;
+
+void createPthread(pcap_t *handle)
+{
+   pthread_create(&pid,NULL,pthreadFunc,handle);
+}
+
+void my_alarm(int signo)
+{
+       std::list<BlockOrder>::iterator listManager;
+
+       time_t now=time(NULL);
+       while(searchTimeout(listManager,&now))
+       {
+         pthread_mutex_lock(&env_mutex);
+
+         if(!listManager->insidePort.port.empty())
+           listManager->insidePort.port.clear();
+	 if(!listManager->outsidePort.port.empty())
+	   listManager->outsidePort.port.clear();
+        
+	  manager.erase(listManager);
+
+	  pthread_mutex_unlock(&env_mutex);
+       }
+
+ //   printf("alarm\n");
+    alarm(180);
+}
+
+bool searchTimeout(std::list<BlockOrder>::iterator &p,const time_t *now)
+{
+   if(manager.empty())
+   return false;
+
+    std::list<BlockOrder>::iterator it=manager.begin();
+
+
+    for(; it != manager.end(); it++)
+    {
+       if(it->times == 0)
+       continue;
+
+       if((it->times*60*60+it->createtime) <= *now)
+       {
+          p=it;
+	  return true;
+       }
+    }
+    
+    return false;
+}
+
+void* pthreadFunc(void *arg)
+{
+    pcap_t *handle=NULL;
+    handle=(pcap_t *)arg;
+
+    pcap_loop(handle,-1,mycallback,NULL);
+}
+
+void block_tcp_stream(struct iphdr *ip,struct tcphdr *tcp)
+{
+    libnet_clear_packet(net);
+    libnet_build_tcp(ntohs(tcp->dest),ntohs(tcp->source),ntohl(tcp->ack_seq),0,TH_RST,0,0,0,LIBNET_TCP_H ,NULL,0,net,0);
+    libnet_build_ipv4(LIBNET_IPV4_H + LIBNET_TCP_H ,0,242,0,64,IPPROTO_TCP,0,ip->daddr,ip->saddr,NULL,0,net,0);
+    libnet_write(net);
+}
+
+bool compareIP(const in_addr_t *addr,const BlockAddr *listElement)
+{
+    if(listElement->endIP ==0 || listElement->endIP == -1)
+    return true;
+
+    if((*addr >= listElement->startIP) && (*addr <= listElement->endIP))
+    return true;
+
+    return false;
+}
+
+bool juageIp(struct iphdr *ip,BlockOrder *order)
+{
+    bool inside=false;
+    bool outside=false;
+
+    in_addr_t sourceip=0;
+    in_addr_t destip=0;
+
+    sourceip=ntohl(ip->saddr);
+    destip=ntohl(ip->daddr);
+
+    if(ipmarkoff(&ip->saddr))
+    {
+      inside=compareIP(&sourceip,&order->inSideIp);
+      outside=compareIP(&destip,&order->outSideIp);
+    }
+    else
+    {
+      inside=compareIP(&sourceip,&order->outSideIp);
+      outside=compareIP(&destip,&order->inSideIp);
+    }
+
+    return (inside && outside) ;
+}
+
+bool juagePort(struct iphdr *ip,struct tcphdr *tcp,BlockOrder *order)
+{
+   bool  insideport=false;
+   bool  outsideport=false;
+
+   in_port_t sport=0;
+   in_port_t dport=0;
+
+   if(ipmarkoff(&ip->saddr))
+   {
+      sport=ntohs(tcp->source);
+      dport=ntohs(tcp->dest);
+
+      insideport=comparePort(&sport,&order->insidePort);
+      outsideport=comparePort(&dport,&order->outsidePort);
+   }
+   else
+   {
+     sport=ntohs(tcp->dest);
+     dport=ntohs(tcp->source);
+
+     insideport=comparePort(&sport,&order->insidePort);
+     outsideport=comparePort(&dport,&order->outsidePort);
+   }
+
+   return insideport && outsideport;
+}
+
+bool comparePort(const in_port_t *port,const PORT *listElement)
+{
+    if(listElement->port.empty())
+    return true;
+    
+    std::list<in_port_t>::const_iterator it=listElement->port.begin();
+
+    for(; it != listElement->port.end(); it++)
+    {
+      if(*it == *port)
+      return true;
+    }
+
+    return false;
+}
+
+
+void mycallback(u_char *user,const struct pcap_pkthdr *h,const u_char *bytes)
+{
+    struct iphdr *ip=NULL;
+
+    if(isPacket(bytes) == 0) {
+        return;
+    }
+      
+    ip=(struct iphdr *)(bytes + sizeof(struct ether_header));
+  
+    if(ip->protocol == IPPROTO_TCP)
+    {
+         struct tcphdr *tcp=NULL;
+         tcp=(struct tcphdr *)(bytes+sizeof(struct ether_header)+ip->ihl*4);
+  
+         pthread_mutex_lock(&env_mutex);
+  
+         std::list<BlockOrder>::iterator it=manager.begin();
+         for(;it != manager.end();it++)
+         {
+            static cache_block_t block_info;
+            time_t now=time(NULL);
+          
+  	         //if((now <= (it->times*60*60 + it->createtime)) && juageIp(ip,&(*it)) && juagePort(ip,tcp,&(*it)) )
+  	         // if( (ip->saddr == 3523219628) || (ip->daddr == 3523219628))
+  	         if( juageIp(ip,&(*it)) ) {
+                 block_tcp_stream(ip, tcp);
+  	             memset(&block_info, 0, sizeof(struct cache_block_t));
+                 initAche_block_t(&block_info, &now, ip, tcp);
+  	         }
+        }
+  
+        pthread_mutex_unlock(&env_mutex);
+    }
+}
+
+void TurnTime(const time_t clock,char *buffer,int size)
+{
+         struct tm *tm;
+         char *format=(char *)"%Y-%m-%d %H:%M:%S";
+	 tm = localtime(&clock);
+         strftime(buffer,size, format,tm);
+}
+
+void initAche_block_t(struct cache_block_t *info,const time_t *now,const struct iphdr *ip,const struct tcphdr *tcp)
+{
+   char  buffer[16]={0};
+   char  strtime[32]={0};
+   
+   info->head.type=BLOCK;
+   
+	 if(ipmarkoff((in_addr_t *)&ip->saddr))
+	 {
+      inet_ntop(AF_INET,&ip->saddr,buffer,16);
+      strcpy(info->sip,buffer);
+      memset(buffer,0,16);
+      inet_ntop(AF_INET,&ip->daddr,buffer,16);
+      strcpy(info->dip,buffer);
+		}
+	 else
+	 {
+      inet_ntop(AF_INET,&ip->saddr,buffer,16);
+      strcpy(info->dip,buffer);
+      memset(buffer,0,16);
+      inet_ntop(AF_INET,&ip->daddr,buffer,16);
+      strcpy(info->sip,buffer);
+	 }
+   
+   TurnTime(*now,strtime,sizeof(strtime));
+   strcpy(info->start_time,strtime);
+   memset(strtime,0,32);
+   TurnTime(time(NULL),strtime,32);
+   strcpy(info->expired_time,strtime);
+
+   info->sport=ntohs(tcp->source);
+   Send_Msg((char*)info,sizeof(struct cache_block_t));
+}
+
+void getopt_reset()
+{
+  optarg=NULL;
+
+  optind=opterr=optopt=0;
+}
+
+void initNetWork()
+{
+  char errormess[64]={0};
+ 
+  net=libnet_init(LIBNET_RAW4,"eth0",errormess);
+  if(!net)
+  {
+    printf("libnet error\n");
+    exit(-1);
+  }
+  
+  if(pthread_mutex_init(&env_mutex,NULL) != 0)
+  {
+     printf("mutex error\n");
+     exit(-1);
+  }
+
+  signal(SIGALRM,my_alarm);
+  alarm(2);
+}

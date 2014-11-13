@@ -1,0 +1,2093 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACLOCAL	Stream5/Makefile	/^ACLOCAL = ${SHELL} \/home\/source_code\/snort-2.9.6.1\/missing aclocal-1.13$/;"	m
+ACLOCAL_M4	Stream5/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACTION_ACK_RECEIVER_DATA	Stream5/snort_stream5_tcp.c	152;"	d	file:
+ACTION_ACK_SENDER_DATA	Stream5/snort_stream5_tcp.c	151;"	d	file:
+ACTION_BAD_PKT	Stream5/snort_stream5_tcp.c	157;"	d	file:
+ACTION_BAD_SEQ	Stream5/snort_stream5_tcp.c	156;"	d	file:
+ACTION_COMPLETE_TWH	Stream5/snort_stream5_tcp.c	154;"	d	file:
+ACTION_DISABLE_INSPECTION	Stream5/snort_stream5_tcp.c	159;"	d	file:
+ACTION_DROP_SESSION	Stream5/snort_stream5_tcp.c	150;"	d	file:
+ACTION_FLUSH_RECEIVER_STREAM	Stream5/snort_stream5_tcp.c	149;"	d	file:
+ACTION_FLUSH_SENDER_STREAM	Stream5/snort_stream5_tcp.c	148;"	d	file:
+ACTION_LWSSN_CLOSED	Stream5/snort_stream5_tcp.c	158;"	d	file:
+ACTION_NOTHING	Stream5/snort_stream5_tcp.c	147;"	d	file:
+ACTION_NOTHING	Stream5/snort_stream5_udp.c	62;"	d	file:
+ACTION_RST	Stream5/snort_stream5_tcp.c	155;"	d	file:
+ACTION_SET_SSN	Stream5/snort_stream5_tcp.c	153;"	d	file:
+AMTAR	Stream5/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_DEFAULT_VERBOSITY	Stream5/Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_V_AR	Stream5/Makefile	/^AM_V_AR = $(am__v_AR_$(V))$/;"	m
+AM_V_CC	Stream5/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	Stream5/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	Stream5/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_P	Stream5/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_at	Stream5/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_lt	Stream5/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AR	Stream5/Makefile	/^AR = ar$/;"	m
+ARFLAGS	Stream5/Makefile	/^ARFLAGS = cru$/;"	m
+AUTOCONF	Stream5/Makefile	/^AUTOCONF = ${SHELL} \/home\/source_code\/snort-2.9.6.1\/missing autoconf$/;"	m
+AUTOHEADER	Stream5/Makefile	/^AUTOHEADER = ${SHELL} \/home\/source_code\/snort-2.9.6.1\/missing autoheader$/;"	m
+AUTOMAKE	Stream5/Makefile	/^AUTOMAKE = ${SHELL} \/home\/source_code\/snort-2.9.6.1\/missing automake-1.13$/;"	m
+AUTOMAKE_OPTIONS	Stream5/Makefile	/^AUTOMAKE_OPTIONS = foreign no-dependencies$/;"	m
+AVG_PKT_SIZE	Stream5/stream5_common.h	65;"	d
+AWK	Stream5/Makefile	/^AWK = gawk$/;"	m
+AddStreamNode	Stream5/snort_stream5_tcp.c	/^static int AddStreamNode(StreamTracker *st, Packet *p,$/;"	f	file:
+AddStreamSession	perf-base.c	/^int AddStreamSession(SFBASE *sfBase, uint32_t flags)$/;"	f
+AddUDPSession	perf-base.c	/^int AddUDPSession(SFBASE *sfBase)$/;"	f
+AutoDisable	Stream5/snort_stream5_tcp.c	/^static inline bool AutoDisable (StreamTracker* a, StreamTracker* b)$/;"	f	file:
+BITOP	stream_api.h	/^} BITOP;$/;"	t	typeref:struct:_BITOP
+BlockedSession	Stream5/snort_stream5_ip.c	/^static inline int BlockedSession (Packet* p, Stream5LWSession* lws)$/;"	f	file:
+CB_MAX	spp_stream5.c	2412;"	d	file:
+CC	Stream5/Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Stream5/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Stream5/Makefile	/^CCLD = $(CC)$/;"	m
+CCONFIGFLAGS	Stream5/Makefile	/^CCONFIGFLAGS =  -DSF_VISIBILITY -fvisibility=hidden$/;"	m
+CFLAGS	Stream5/Makefile	/^CFLAGS = -g -O2 -DSF_VISIBILITY -fvisibility=hidden -fno-strict-aliasing -Wall$/;"	m
+CHK_SEQ	Stream5/snort_stream5_tcp.c	140;"	d	file:
+COMPILE	Stream5/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIGFLAGS	Stream5/Makefile	/^CONFIGFLAGS =  -DSF_WCHAR -DTARGET_BASED -DPERF_PROFILING -DSNORT_RELOAD -DNO_NON_ETHER_DECODER -DNORMALIZER -DACTIVE_RESPONSE$/;"	m
+CONFIG_CLEAN_FILES	Stream5/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Stream5/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Stream5/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+COPY4	spp_stream5.h	34;"	d
+CPP	Stream5/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Stream5/Makefile	/^CPPFLAGS = -I\/usr\/local\/include -I\/usr\/local\/include -DZLIB -DGRE -DMPLS -DPPM_MGR -DNDEBUG -DENABLE_REACT -DENABLE_RESPOND -DENABLE_RESPONSE3 -DSF_WCHAR -DTARGET_BASED -DPERF_PROFILING -DSNORT_RELOAD -DNO_NON_ETHER_DECODER -DNORMALIZER -DACTIVE_RESPONSE$/;"	m
+CS_TYPE_DEBUG_S5_HA	Stream5/stream5_common.h	133;"	d
+CTAGS	Stream5/Makefile	/^CTAGS = ctags$/;"	m
+CYGPATH_W	Stream5/Makefile	/^CYGPATH_W = echo$/;"	m
+CalcJiffies	Stream5/stream5_common.c	/^static inline uint64_t CalcJiffies(Packet *p)$/;"	f	file:
+CalculateBasePerfStats	perf-base.c	/^static int CalculateBasePerfStats(SFBASE *sfBase, SFBASE_STATS *sfBaseStats, int max_stats)$/;"	f	file:
+CalculateHAMessageSize	Stream5/stream5_ha.c	/^static uint32_t CalculateHAMessageSize(uint8_t event, Stream5LWSession *lwssn)$/;"	f	file:
+CheckExpectedSession	Stream5/snort_stream5_ip.c	/^static inline int CheckExpectedSession (Packet* p, Stream5LWSession* lws)$/;"	f	file:
+CheckFlushCoercion	Stream5/snort_stream5_tcp.c	/^static inline int CheckFlushCoercion ($/;"	f	file:
+CheckFlushPolicyOnAck	Stream5/snort_stream5_tcp.c	/^int CheckFlushPolicyOnAck($/;"	f
+CheckFlushPolicyOnData	Stream5/snort_stream5_tcp.c	/^static inline int CheckFlushPolicyOnData($/;"	f	file:
+CheckSegments	Stream5/snort_stream5_tcp.c	/^static void CheckSegments (const StreamTracker* a)$/;"	f	file:
+CloseStreamSession	perf-base.c	/^int CloseStreamSession(SFBASE *sfBase, char flags)$/;"	f
+ConsumeHAMessage	Stream5/stream5_ha.c	/^static int ConsumeHAMessage(const uint8_t *msg, uint32_t msglen)$/;"	f	file:
+CopyMacAddr	Stream5/snort_stream5_tcp.c	/^static inline void CopyMacAddr(Packet *p,$/;"	f	file:
+DEBUG	decode.c	15;"	d	file:
+DEFAULT_INCLUDES	Stream5/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Stream5/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Stream5/Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Stream5/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Stream5/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/Makefile.am$/;"	m
+DIST_SOURCES	Stream5/Makefile	/^DIST_SOURCES = $(am__libstream5_a_SOURCES_DIST)$/;"	m
+DLLTOOL	Stream5/Makefile	/^DLLTOOL = false$/;"	m
+DSYMUTIL	Stream5/Makefile	/^DSYMUTIL = $/;"	m
+DUMPBIN	Stream5/Makefile	/^DUMPBIN = $/;"	m
+DataToFlush	Stream5/snort_stream5_tcp.c	/^static inline bool DataToFlush (const StreamTracker* st)$/;"	f	file:
+DecodeIP	decode.c	/^void DecodeIP(const u_int8_t* pkt, const u_int32_t len, Packet* p)$/;"	f
+DecodeTCP	decode.c	/^void DecodeTCP(const u_int8_t * pkt, const u_int32_t len, Packet * p)$/;"	f
+DeleteLWSession	Stream5/snort_stream5_session.c	/^int DeleteLWSession(Stream5SessionCache *sessionCache,$/;"	f
+DeleteLWSessionCache	Stream5/snort_stream5_session.c	/^int DeleteLWSessionCache(Stream5SessionCache *sessionCache)$/;"	f
+DeleteSeglist	Stream5/snort_stream5_tcp.c	/^static void DeleteSeglist(StreamSegment *listhead)$/;"	f	file:
+DeserializeHASession	Stream5/stream5_ha.c	/^static Stream5LWSession *DeserializeHASession(const SessionKey *key, const Stream5HASession *has, Stream5LWSession *lwssn)$/;"	f	file:
+DeserializePreprocData	Stream5/stream5_ha.c	/^static inline int DeserializePreprocData(uint8_t event, Stream5LWSession *lwssn, uint8_t preproc_id,$/;"	f	file:
+DisableInspection	Stream5/snort_stream5_tcp.c	/^static inline void DisableInspection (Stream5LWSession* lwssn, Packet* p, char ignore)$/;"	f	file:
+Discard	Stream5/snort_stream5_tcp.c	/^static inline void Discard ()$/;"	f	file:
+DisplayBasePerfStatsConsole	perf-base.c	/^static void DisplayBasePerfStatsConsole(SFBASE_STATS *sfBaseStats, int max_stats)$/;"	f	file:
+DupStreamNode	Stream5/snort_stream5_tcp.c	/^static int DupStreamNode(Packet *p,$/;"	f	file:
+ECHO_C	Stream5/Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Stream5/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Stream5/Makefile	/^ECHO_T = $/;"	m
+EGREP	Stream5/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Stream5/Makefile	/^ETAGS = etags$/;"	m
+ETHERNET_HEADER_LEN	decode.h	23;"	d
+ETHERNET_TYPE_8021Q	decode.h	19;"	d
+ETHERNET_TYPE_ARP	decode.h	17;"	d
+ETHERNET_TYPE_IP	decode.h	16;"	d
+ETHERNET_TYPE_PPPoE_DISC	decode.h	21;"	d
+ETHERNET_TYPE_PPPoE_SESS	decode.h	20;"	d
+ETHERNET_TYPE_REVARP	decode.h	18;"	d
+EVENT_4WHS	Stream5/snort_stream5_tcp.c	173;"	d	file:
+EVENT_BAD_ACK	Stream5/snort_stream5_tcp.c	177;"	d	file:
+EVENT_BAD_FIN	Stream5/snort_stream5_tcp.c	176;"	d	file:
+EVENT_BAD_RST	Stream5/snort_stream5_tcp.c	175;"	d	file:
+EVENT_BAD_SEGMENT	Stream5/snort_stream5_tcp.c	166;"	d	file:
+EVENT_BAD_TIMESTAMP	Stream5/snort_stream5_tcp.c	165;"	d	file:
+EVENT_DATA_AFTER_RESET	Stream5/snort_stream5_tcp.c	169;"	d	file:
+EVENT_DATA_AFTER_RST_RCVD	Stream5/snort_stream5_tcp.c	178;"	d	file:
+EVENT_DATA_ON_CLOSED	Stream5/snort_stream5_tcp.c	164;"	d	file:
+EVENT_DATA_ON_SYN	Stream5/snort_stream5_tcp.c	163;"	d	file:
+EVENT_DATA_WITHOUT_FLAGS	Stream5/snort_stream5_tcp.c	172;"	d	file:
+EVENT_EXCESSIVE_TCP_OVERLAPS	Stream5/snort_stream5_tcp.c	168;"	d	file:
+EVENT_NO_TIMESTAMP	Stream5/snort_stream5_tcp.c	174;"	d	file:
+EVENT_SESSION_HIJACK_CLIENT	Stream5/snort_stream5_tcp.c	170;"	d	file:
+EVENT_SESSION_HIJACK_SERVER	Stream5/snort_stream5_tcp.c	171;"	d	file:
+EVENT_SYN_ON_EST	Stream5/snort_stream5_tcp.c	162;"	d	file:
+EVENT_WINDOW_SLAM	Stream5/snort_stream5_tcp.c	179;"	d	file:
+EVENT_WINDOW_TOO_LARGE	Stream5/snort_stream5_tcp.c	167;"	d	file:
+EXEEXT	Stream5/Makefile	/^EXEEXT = $/;"	m
+EXPECT_FLAG_ALWAYS	stream_api.h	51;"	d
+EndOfFileHandle	Stream5/snort_stream5_tcp.c	/^static inline void EndOfFileHandle(Packet *p, TcpSession *tcpssn)$/;"	f	file:
+EtherHdr	decode.h	/^} EtherHdr;$/;"	t	typeref:struct:_EtherHdr
+EvalStateQueue	Stream5/snort_stream5_tcp.c	/^static inline int EvalStateQueue(StreamTracker *sptr, uint8_t flags,$/;"	f	file:
+Event4whs	Stream5/snort_stream5_tcp.c	/^static inline void Event4whs(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventBadAck	Stream5/snort_stream5_tcp.c	/^static inline void EventBadAck(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventBadFin	Stream5/snort_stream5_tcp.c	/^static inline void EventBadFin(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventBadReset	Stream5/snort_stream5_tcp.c	/^static inline void EventBadReset(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventBadSegment	Stream5/snort_stream5_tcp.c	/^static inline void EventBadSegment(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventBadTimestamp	Stream5/snort_stream5_tcp.c	/^static inline void EventBadTimestamp(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventDataAfterReset	Stream5/snort_stream5_tcp.c	/^static inline void EventDataAfterReset(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventDataAfterRstRcvd	Stream5/snort_stream5_tcp.c	/^static inline void EventDataAfterRstRcvd(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventDataOnClosed	Stream5/snort_stream5_tcp.c	/^static inline void EventDataOnClosed(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventDataOnSyn	Stream5/snort_stream5_tcp.c	/^static inline void EventDataOnSyn(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventDataWithoutFlags	Stream5/snort_stream5_tcp.c	/^static inline void EventDataWithoutFlags(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventExcessiveOverlap	Stream5/snort_stream5_tcp.c	/^static inline void EventExcessiveOverlap(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventInternal	Stream5/snort_stream5_tcp.c	/^static inline void EventInternal (uint32_t eventSid)$/;"	f	file:
+EventMaxSmallSegsExceeded	Stream5/snort_stream5_tcp.c	/^static inline void EventMaxSmallSegsExceeded(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventNo3whs	Stream5/snort_stream5_tcp.c	/^static inline void EventNo3whs (Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventNoTimestamp	Stream5/snort_stream5_tcp.c	/^static inline void EventNoTimestamp(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventSessionHijackedClient	Stream5/snort_stream5_tcp.c	/^static inline void EventSessionHijackedClient(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventSessionHijackedServer	Stream5/snort_stream5_tcp.c	/^static inline void EventSessionHijackedServer(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventSynOnEst	Stream5/snort_stream5_tcp.c	/^static inline void EventSynOnEst(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventWindowSlam	Stream5/snort_stream5_tcp.c	/^static inline void EventWindowSlam (Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+EventWindowTooLarge	Stream5/snort_stream5_tcp.c	/^static inline void EventWindowTooLarge(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+FGREP	Stream5/Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FROM_CLIENT	Stream5/stream5_common.h	115;"	d
+FROM_RESPONDER	Stream5/stream5_common.h	114;"	d
+FROM_SENDER	Stream5/stream5_common.h	116;"	d
+FROM_SERVER	Stream5/stream5_common.h	113;"	d
+FT_MAX	Stream5/stream5_paf.c	/^    FT_MAX   \/\/ flush len when len >= mfp$/;"	e	enum:__anon16	file:
+FT_NOP	Stream5/stream5_paf.c	/^    FT_NOP,  \/\/ no flush$/;"	e	enum:__anon16	file:
+FT_PAF	Stream5/stream5_paf.c	/^    FT_PAF,  \/\/ flush to paf pt when len >= paf$/;"	e	enum:__anon16	file:
+FT_SFP	Stream5/stream5_paf.c	/^    FT_SFP,  \/\/ abort paf$/;"	e	enum:__anon16	file:
+FindSegment	Stream5/snort_stream5_tcp.c	/^static inline StreamSegment *FindSegment(StreamTracker *st, uint32_t pkt_seq)$/;"	f	file:
+FinishServerInit	Stream5/snort_stream5_tcp.c	/^static void FinishServerInit(Packet *p, TcpDataBlock *tdb, TcpSession *ssn)$/;"	f	file:
+FlushConfig	Stream5/stream5_common.h	/^} FlushConfig;$/;"	t	typeref:struct:_FlushConfig
+FlushMgr	Stream5/stream5_common.h	/^} FlushMgr;$/;"	t	typeref:struct:_FlushMgr
+FlushPointList	Stream5/stream5_common.h	/^} FlushPointList;$/;"	t	typeref:struct:_FlushPointList
+FlushPolicy	stream_api.h	/^} FlushPolicy;$/;"	t	typeref:enum:__anon1
+FlushStream	Stream5/snort_stream5_tcp.c	/^static int FlushStream($/;"	f	file:
+FlushType	Stream5/stream5_paf.c	/^} FlushType;$/;"	t	typeref:enum:__anon16	file:
+FreeLWApplicationData	Stream5/snort_stream5_session.c	/^void FreeLWApplicationData(Stream5LWSession *ssn)$/;"	f
+GET_DST_IP	spp_stream5.h	51;"	d
+GET_IPH_ID	spp_stream5.h	55;"	d
+GET_IPH_LEN	spp_stream5.h	53;"	d
+GET_IPH_OFF	spp_stream5.h	56;"	d
+GET_IPH_PROTO	spp_stream5.h	58;"	d
+GET_IPH_TOS	spp_stream5.h	52;"	d
+GET_IPH_TTL	spp_stream5.h	54;"	d
+GET_IPH_VER	spp_stream5.h	57;"	d
+GET_ORIG_IPH_LEN	spp_stream5.h	62;"	d
+GET_ORIG_IPH_OFF	spp_stream5.h	63;"	d
+GET_ORIG_IPH_PROTO	spp_stream5.h	60;"	d
+GET_ORIG_IPH_VER	spp_stream5.h	61;"	d
+GET_SRC_IP	spp_stream5.h	50;"	d
+GREP	Stream5/Makefile	/^GREP = \/bin\/grep$/;"	m
+GenerateFlushPoint	Stream5/snort_stream5_tcp.c	/^static inline uint32_t GenerateFlushPoint(FlushPointList *flush_point_list)$/;"	f	file:
+GenerateHADeletionMessage	Stream5/stream5_ha.c	/^static uint32_t GenerateHADeletionMessage(uint8_t *msg, uint32_t msg_size, Stream5LWSession *lwssn)$/;"	f	file:
+GenerateHAUpdateMessage	Stream5/stream5_ha.c	/^static uint32_t GenerateHAUpdateMessage(uint8_t *msg, uint32_t msg_size, Stream5LWSession *lwssn)$/;"	f	file:
+GetCPUTime	perf-base.c	/^static void GetCPUTime(SFBASE *sfBase, SFBASE_STATS *sfBaseStats, SYSTIMES *Systimes)$/;"	f	file:
+GetEventsPerSecond	perf-base.c	/^static void GetEventsPerSecond(SFBASE *sfBase, SFBASE_STATS *sfBaseStats,$/;"	f	file:
+GetForwardDir	Stream5/snort_stream5_tcp.c	/^static inline uint32_t GetForwardDir (const Packet* p)$/;"	f	file:
+GetLWIpSession	Stream5/snort_stream5_ip.c	/^static Stream5LWSession *GetLWIpSession (const SessionKey *key)$/;"	f	file:
+GetLWPacketDirection	Stream5/snort_stream5_session.c	/^void GetLWPacketDirection(Packet *p, Stream5LWSession *ssn)$/;"	f
+GetLWSession	Stream5/snort_stream5_session.c	/^Stream5LWSession *GetLWSession(Stream5SessionCache *sessionCache, Packet *p, SessionKey *key)$/;"	f
+GetLWSessionCount	Stream5/snort_stream5_session.c	/^int GetLWSessionCount(Stream5SessionCache *sessionCache)$/;"	f
+GetLWSessionFromKey	Stream5/snort_stream5_session.c	/^Stream5LWSession *GetLWSessionFromKey(Stream5SessionCache *sessionCache, const SessionKey *key)$/;"	f
+GetLWSessionKey	Stream5/snort_stream5_session.c	/^int GetLWSessionKey(Packet *p, SessionKey *key)$/;"	f
+GetLWSessionKeyFromIpPort	Stream5/snort_stream5_session.c	/^int GetLWSessionKeyFromIpPort($/;"	f
+GetLWTcpSession	Stream5/snort_stream5_tcp.c	/^Stream5LWSession *GetLWTcpSession(const SessionKey *key)$/;"	f
+GetLWUdpSession	Stream5/snort_stream5_udp.c	/^Stream5LWSession *GetLWUdpSession(const SessionKey *key)$/;"	f
+GetMbitsPerSecond	perf-base.c	/^static void GetMbitsPerSecond(SFBASE *sfBase, SFBASE_STATS *sfBaseStats,$/;"	f	file:
+GetPacketHeaderFoo	Stream5/snort_stream5_tcp.c	/^static inline void GetPacketHeaderFoo ($/;"	f	file:
+GetPacketsPerSecond	perf-base.c	/^static void GetPacketsPerSecond(SFBASE *sfBase, SFBASE_STATS *sfBaseStats,$/;"	f	file:
+GetPktDropStats	perf-base.c	/^static void GetPktDropStats(SFBASE *sfBase, SFBASE_STATS *sfBaseStats)$/;"	f	file:
+GetProcessingTime	perf-base.c	/^static int GetProcessingTime(SYSTIMES *Systimes, SFBASE *sfBase)$/;"	f	file:
+GetReverseDir	Stream5/snort_stream5_tcp.c	/^static inline uint32_t GetReverseDir (const Packet* p)$/;"	f	file:
+GetTcpReassemblyPolicy	Stream5/snort_stream5_tcp.c	/^static inline uint16_t GetTcpReassemblyPolicy(int os_policy)$/;"	f	file:
+GetTcpRebuiltPackets	Stream5/snort_stream5_tcp.c	/^int GetTcpRebuiltPackets(Packet *p, Stream5LWSession *ssn,$/;"	f
+GetTcpStreamSegments	Stream5/snort_stream5_tcp.c	/^int GetTcpStreamSegments(Packet *p, Stream5LWSession *ssn,$/;"	f
+GetuSecondsPerPacket	perf-base.c	/^static void GetuSecondsPerPacket(SFBASE *sfBase, SFBASE_STATS *sfBaseStats,$/;"	f	file:
+HADebugSessionConstraints	Stream5/stream5_ha.c	/^} HADebugSessionConstraints;$/;"	t	typeref:struct:_HADebugSessionConstraints	file:
+HAStateDiff	spp_stream5.c	/^static inline uint8_t HAStateDiff(SessionKey *key, const Stream5HAState *old_state, Stream5HAState *new_state)$/;"	f	file:
+HA_Api	Stream5/stream5_ha.h	/^} HA_Api;$/;"	t	typeref:struct:__anon9
+HA_CRITICAL_SESSION_FLAGS	spp_stream5.c	858;"	d	file:
+HA_DEBUG_SESSION_ID_SIZE	Stream5/stream5_ha.c	145;"	d	file:
+HA_EVENT_DELETE	Stream5/stream5_ha.h	/^    HA_EVENT_DELETE,$/;"	e	enum:__anon8
+HA_EVENT_MAX	Stream5/stream5_ha.h	/^    HA_EVENT_MAX$/;"	e	enum:__anon8
+HA_EVENT_UPDATE	Stream5/stream5_ha.h	/^    HA_EVENT_UPDATE,$/;"	e	enum:__anon8
+HA_Event	Stream5/stream5_ha.h	/^} HA_Event;$/;"	t	typeref:enum:__anon8
+HA_FLAG_CRITICAL_CHANGE	Stream5/stream5_ha.h	72;"	d
+HA_FLAG_DELETED	Stream5/stream5_ha.h	73;"	d
+HA_FLAG_MAJOR_CHANGE	Stream5/stream5_ha.h	71;"	d
+HA_FLAG_MODIFIED	Stream5/stream5_ha.h	70;"	d
+HA_FLAG_NEW	Stream5/stream5_ha.h	69;"	d
+HA_FLAG_STANDBY	Stream5/stream5_ha.h	68;"	d
+HA_IGNORED_SESSION_FLAGS	spp_stream5.c	857;"	d	file:
+HA_MESSAGE_VERSION	Stream5/stream5_ha.c	137;"	d	file:
+HA_SESSION_FLAG_IP6	Stream5/stream5_ha.c	109;"	d	file:
+HA_SESSION_FLAG_LOW	Stream5/stream5_ha.c	108;"	d	file:
+HA_TCP_MAJOR_SESSION_FLAGS	spp_stream5.c	859;"	d	file:
+HA_TYPE_HAS	Stream5/stream5_ha.c	/^    HA_TYPE_HAS,    \/\/ Lightweight Session Data$/;"	e	enum:__anon12	file:
+HA_TYPE_KEY	Stream5/stream5_ha.c	/^    HA_TYPE_KEY,    \/\/ Lightweight Session Key$/;"	e	enum:__anon12	file:
+HA_TYPE_MAX	Stream5/stream5_ha.c	/^    HA_TYPE_MAX$/;"	e	enum:__anon12	file:
+HA_TYPE_PSD	Stream5/stream5_ha.c	/^    HA_TYPE_PSD,    \/\/ Preprocessor-specific Data$/;"	e	enum:__anon12	file:
+HA_Type	Stream5/stream5_ha.c	/^} HA_Type;$/;"	t	typeref:enum:__anon12	file:
+HashFunc	Stream5/snort_stream5_session.c	/^uint32_t HashFunc(SFHASHFCN *p, unsigned char *d, int n)$/;"	f
+HashKeyCmp	Stream5/snort_stream5_session.c	/^int HashKeyCmp(const void *s1, const void *s2, size_t n)$/;"	f
+ICONFIGFLAGS	Stream5/Makefile	/^ICONFIGFLAGS = $/;"	m
+INCLUDES	Stream5/Makefile	/^INCLUDES = -I$(top_srcdir) -I$(top_srcdir)\/src -I$(top_srcdir)\/src\/sfutil $(extra_incl) -I$(top_srcdir)\/src\/output-plugins -I$(top_srcdir)\/src\/detection-plugins -I$(top_srcdir)\/src\/dynamic-plugins -I$(top_srcdir)\/src\/preprocessors -I$(top_srcdir)\/src\/preprocessors\/portscan -I$(top_srcdir)\/src\/preprocessors\/HttpInspect\/include -I$(top_srcdir)\/src\/preprocessors\/Stream5 -I$(top_srcdir)\/src\/target-based -I$(top_srcdir)\/src\/control -I$(top_srcdir)\/src\/file-process -I$(top_srcdir)\/src\/file-process\/libs -I$(top_srcdir)\/src\/side-channel -I$(top_srcdir)\/src\/side-channel\/plugins$/;"	m
+INSTALL	Stream5/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Stream5/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Stream5/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Stream5/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Stream5/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Stream5/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+IP4_SESSION_KEY_SIZE	Stream5/stream5_ha.c	151;"	d	file:
+IP6_SESSION_KEY_SIZE	Stream5/stream5_ha.c	150;"	d	file:
+IPARP_SAP	decode.h	5;"	d
+IPHdr	decode.h	/^}IPHdr;$/;"	t	typeref:struct:_IPHdr
+IP_COPY_VALUE	spp_stream5.h	37;"	d
+IP_HEADER_LEN	decode.h	24;"	d
+IP_HLEN	decode.h	10;"	d
+IP_HLEN	decode.h	8;"	d
+IP_VER	decode.h	9;"	d
+IS_IP4	spp_stream5.h	31;"	d
+IS_IP6	spp_stream5.h	32;"	d
+IS_OUTER_IP4	spp_stream5.h	47;"	d
+IS_OUTER_IP6	spp_stream5.h	48;"	d
+IcmpSession	Stream5/snort_stream5_icmp.c	/^} IcmpSession;$/;"	t	typeref:struct:_IcmpSession	file:
+IcmpSessionCleanup	Stream5/snort_stream5_icmp.c	/^void IcmpSessionCleanup(Stream5LWSession *ssn)$/;"	f
+IcmpUpdateDirection	Stream5/snort_stream5_icmp.c	/^void IcmpUpdateDirection(Stream5LWSession *ssn, char dir,$/;"	f
+IgnoreLargePkt	Stream5/snort_stream5_tcp.c	/^static inline int IgnoreLargePkt(StreamTracker *st, Packet *p, TcpDataBlock *tdb)$/;"	f	file:
+IgnoreSession	Stream5/snort_stream5_ip.c	/^static inline int IgnoreSession (Packet* p, Stream5LWSession* lws)$/;"	f	file:
+IgnoredRuleList	Stream5/snort_stream5_session.h	/^} IgnoredRuleList;$/;"	t	typeref:struct:_IgnoredRuleList
+InitBaseStats	perf-base.c	/^int InitBaseStats(SFBASE *sfBase)$/;"	f
+InitFlushMgr	Stream5/snort_stream5_tcp.c	/^static inline void InitFlushMgr($/;"	f	file:
+InitFlushMgrByPort	Stream5/snort_stream5_tcp.c	/^static inline void InitFlushMgrByPort ($/;"	f	file:
+InitFlushMgrByService	Stream5/snort_stream5_tcp.c	/^static inline void InitFlushMgrByService ($/;"	f	file:
+InitFlushPointList	Stream5/snort_stream5_tcp.c	/^static inline void InitFlushPointList(FlushPointList *flush_point_list, uint32_t value, uint32_t range, int use_static)$/;"	f	file:
+InitLWSessionCache	Stream5/snort_stream5_session.c	/^Stream5SessionCache *InitLWSessionCache(int max_sessions,$/;"	f
+InitSession	Stream5/snort_stream5_ip.c	/^static inline void InitSession (Packet* p, Stream5LWSession* lws)$/;"	f	file:
+IpSessionCleanup	Stream5/snort_stream5_ip.c	/^void IpSessionCleanup (Stream5LWSession* lws)$/;"	f
+IsBetween	Stream5/snort_stream5_tcp.c	/^static inline int IsBetween(uint32_t low, uint32_t high, uint32_t cur)$/;"	f	file:
+IsClientLower	Stream5/stream5_ha.c	/^static inline bool IsClientLower(const sfip_t *cltIP, uint16_t cltPort,$/;"	f	file:
+IsEligible	spp_stream5.c	/^static inline int IsEligible(Packet *p)$/;"	f	file:
+IsRetransmit	Stream5/snort_stream5_tcp.c	/^static inline bool IsRetransmit(StreamSegment *seg, const uint8_t *rdata,$/;"	f	file:
+IsWellFormed	Stream5/snort_stream5_tcp.c	/^static inline int IsWellFormed(Packet *p, StreamTracker *ts)$/;"	f	file:
+LCL	Stream5/snort_stream5_tcp.c	4682;"	d	file:
+LD	Stream5/Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	Stream5/Makefile	/^LDFLAGS =  -L\/usr\/local\/lib -lpcre -L\/usr\/local\/lib -ldnet$/;"	m
+LEX	Stream5/Makefile	/^LEX = flex$/;"	m
+LIBOBJS	Stream5/Makefile	/^LIBOBJS = $/;"	m
+LIBRARIES	Stream5/Makefile	/^LIBRARIES = $(noinst_LIBRARIES)$/;"	m
+LIBS	Stream5/Makefile	/^LIBS = -lz -ldaq_static -ldnet -lcrypto -lpcre -lpcap -lnsl -lm -lm  -ldl -L\/usr\/local\/lib -ldaq_static_modules  -lsfbpf -lpcap -lsfbpf -lpcap -lz -lpthread -lpthread -lpthread$/;"	m
+LIBTOOL	Stream5/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LINK	Stream5/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LIPO	Stream5/Makefile	/^LIPO = $/;"	m
+LN_S	Stream5/Makefile	/^LN_S = ln -s$/;"	m
+LTCOMPILE	Stream5/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	Stream5/Makefile	/^LTLIBOBJS = $/;"	m
+LogBasePerfHeader	perf-base.c	/^void LogBasePerfHeader (FILE* fh)$/;"	f
+LogBasePerfStats	perf-base.c	/^static void LogBasePerfStats(SFBASE_STATS *sfBaseStats,  FILE * fh )$/;"	f	file:
+LogExtraData	stream_api.h	/^typedef void (*LogExtraData)(void *ssnptr, void *config, LogFunction *funcs, uint32_t max_count, uint32_t xtradata_mask, uint32_t id, uint32_t sec);$/;"	t
+LogTcpEvents	Stream5/snort_stream5_tcp.c	/^static void LogTcpEvents(Stream5TcpPolicy *s5TcpPolicy, int eventcode)$/;"	f	file:
+MAINT	Stream5/Makefile	/^MAINT = #$/;"	m
+MAKEINFO	Stream5/Makefile	/^MAKEINFO = ${SHELL} \/home\/source_code\/snort-2.9.6.1\/missing makeinfo$/;"	m
+MANIFEST_TOOL	Stream5/Makefile	/^MANIFEST_TOOL = :$/;"	m
+MAX	Stream5/snort_stream5_tcp.c	133;"	d	file:
+MAX_CB	Stream5/stream5_paf.c	78;"	d	file:
+MAX_PORTS_TO_PRINT	Stream5/stream5_common.h	59;"	d
+MAX_SESSION_ALERTS	Stream5/snort_stream5_tcp.c	236;"	d	file:
+MAX_STREAM_HA_FUNCS	Stream5/stream5_ha.c	136;"	d	file:
+MEMCAP	sfxhash.h	/^}MEMCAP;$/;"	t	typeref:struct:__anon5
+MIN	Stream5/snort_stream5_tcp.c	130;"	d	file:
+MKDIR_P	Stream5/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MarkupPacketFlags	Stream5/stream5_common.c	/^void MarkupPacketFlags(Packet *p, Stream5LWSession *lwssn)$/;"	f
+MemBucket	mempool.h	/^} MemBucket;$/;"	t	typeref:struct:_MemBucket
+MemPool	mempool.h	/^} MemPool;$/;"	t	typeref:struct:_MemPool
+MsgHeader	Stream5/stream5_ha.c	/^} MsgHeader;$/;"	t	typeref:struct:_MsgHeader	file:
+NM	Stream5/Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	Stream5/Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	Stream5/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Stream5/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NO_CHK_SEQ	Stream5/snort_stream5_tcp.c	141;"	d	file:
+NewLWSession	Stream5/snort_stream5_session.c	/^Stream5LWSession *NewLWSession(Stream5SessionCache *sessionCache, Packet *p,$/;"	f
+NewQueue	Stream5/snort_stream5_tcp.c	/^static void NewQueue(StreamTracker *st, Packet *p, TcpDataBlock *tdb, TcpSession *tcpssn)$/;"	f	file:
+NewTcpSession	Stream5/snort_stream5_tcp.c	/^static int NewTcpSession(Packet *p,$/;"	f	file:
+NewUdpSession	Stream5/snort_stream5_udp.c	/^static int NewUdpSession(Packet *p,$/;"	f	file:
+NormalCheckECN	Stream5/snort_stream5_tcp.c	/^static inline void NormalCheckECN (TcpSession* s, Packet* p)$/;"	f	file:
+NormalDropPacket	Stream5/snort_stream5_tcp.c	/^static inline void NormalDropPacket (Packet* p)$/;"	f	file:
+NormalDropPacketIf	Stream5/snort_stream5_tcp.c	/^static inline int NormalDropPacketIf (Packet* p, NormFlags f)$/;"	f	file:
+NormalDropPacketIf	Stream5/snort_stream5_tcp.c	2864;"	d	file:
+NormalStripTimeStamp	Stream5/snort_stream5_tcp.c	/^static inline void NormalStripTimeStamp (Packet* p, int i)$/;"	f	file:
+NormalTrackECN	Stream5/snort_stream5_tcp.c	/^static inline void NormalTrackECN (TcpSession* s, TCPHdr* tcph, int req3way)$/;"	f	file:
+NormalTrackECN	Stream5/snort_stream5_tcp.c	2866;"	d	file:
+NormalTrimPayload	Stream5/snort_stream5_tcp.c	/^static inline void NormalTrimPayload ($/;"	f	file:
+NormalTrimPayloadIf	Stream5/snort_stream5_tcp.c	/^static inline int NormalTrimPayloadIf ($/;"	f	file:
+NormalTrimPayloadIf	Stream5/snort_stream5_tcp.c	2865;"	d	file:
+OBJDUMP	Stream5/Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	Stream5/Makefile	/^OBJEXT = o$/;"	m
+OTOOL	Stream5/Makefile	/^OTOOL = $/;"	m
+OTOOL64	Stream5/Makefile	/^OTOOL64 = $/;"	m
+PACKAGE	Stream5/Makefile	/^PACKAGE = snort$/;"	m
+PACKAGE_BUGREPORT	Stream5/Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_NAME	Stream5/Makefile	/^PACKAGE_NAME = $/;"	m
+PACKAGE_STRING	Stream5/Makefile	/^PACKAGE_STRING = $/;"	m
+PACKAGE_TARNAME	Stream5/Makefile	/^PACKAGE_TARNAME = $/;"	m
+PACKAGE_URL	Stream5/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Stream5/Makefile	/^PACKAGE_VERSION = $/;"	m
+PAF_ABORT	stream_api.h	/^    PAF_ABORT,   \/\/ non-paf operation$/;"	e	enum:__anon2
+PAF_Callback	stream_api.h	/^typedef PAF_Status (*PAF_Callback)(  \/\/ return your scan state$/;"	t
+PAF_Config	Stream5/stream5_paf.c	/^} PAF_Config;$/;"	t	typeref:struct:__anon18	file:
+PAF_FLUSH	stream_api.h	/^    PAF_FLUSH,   \/\/ flush at given offset$/;"	e	enum:__anon2
+PAF_Map	Stream5/stream5_paf.c	/^} PAF_Map;$/;"	t	typeref:struct:__anon17	file:
+PAF_SEARCH	stream_api.h	/^    PAF_SEARCH,  \/\/ searching for next flush point$/;"	e	enum:__anon2
+PAF_SKIP	stream_api.h	/^    PAF_SKIP     \/\/ skip ahead to given offset$/;"	e	enum:__anon2
+PAF_START	stream_api.h	/^    PAF_START,   \/\/ internal use only$/;"	e	enum:__anon2
+PAF_State	Stream5/stream5_paf.h	/^} PAF_State;         \/\/ per session direction$/;"	t	typeref:struct:__anon15
+PAF_Status	stream_api.h	/^} PAF_Status;$/;"	t	typeref:enum:__anon2
+PATH_SEPARATOR	Stream5/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PAWS_24DAYS	Stream5/snort_stream5_tcp.c	137;"	d	file:
+PAWS_WINDOW	Stream5/snort_stream5_tcp.c	136;"	d	file:
+PC_MAX	Stream5/snort_stream5_tcp.c	/^    PC_MAX$/;"	e	enum:__anon7	file:
+PC_TCP_BLOCK	Stream5/snort_stream5_tcp.c	/^    PC_TCP_BLOCK,$/;"	e	enum:__anon7	file:
+PC_TCP_ECN_SSN	Stream5/snort_stream5_tcp.c	/^    PC_TCP_ECN_SSN,$/;"	e	enum:__anon7	file:
+PC_TCP_IPS_DATA	Stream5/snort_stream5_tcp.c	/^    PC_TCP_IPS_DATA,$/;"	e	enum:__anon7	file:
+PC_TCP_TRIM	Stream5/snort_stream5_tcp.c	/^    PC_TCP_TRIM,$/;"	e	enum:__anon7	file:
+PC_TCP_TS_NOP	Stream5/snort_stream5_tcp.c	/^    PC_TCP_TS_NOP,$/;"	e	enum:__anon7	file:
+PERF_COUNT_ICMP4_ECHO	perf-base.h	/^    PERF_COUNT_ICMP4_ECHO,$/;"	e	enum:__anon6
+PERF_COUNT_ICMP6_ECHO	perf-base.h	/^    PERF_COUNT_ICMP6_ECHO,$/;"	e	enum:__anon6
+PERF_COUNT_IP4_DF	perf-base.h	/^    PERF_COUNT_IP4_DF,$/;"	e	enum:__anon6
+PERF_COUNT_IP4_OPTS	perf-base.h	/^    PERF_COUNT_IP4_OPTS,$/;"	e	enum:__anon6
+PERF_COUNT_IP4_RF	perf-base.h	/^    PERF_COUNT_IP4_RF,$/;"	e	enum:__anon6
+PERF_COUNT_IP4_TOS	perf-base.h	/^    PERF_COUNT_IP4_TOS,$/;"	e	enum:__anon6
+PERF_COUNT_IP4_TRIM	perf-base.h	/^    PERF_COUNT_IP4_TRIM,$/;"	e	enum:__anon6
+PERF_COUNT_IP4_TTL	perf-base.h	/^    PERF_COUNT_IP4_TTL,$/;"	e	enum:__anon6
+PERF_COUNT_IP6_OPTS	perf-base.h	/^    PERF_COUNT_IP6_OPTS,$/;"	e	enum:__anon6
+PERF_COUNT_IP6_TTL	perf-base.h	/^    PERF_COUNT_IP6_TTL,$/;"	e	enum:__anon6
+PERF_COUNT_MAX	perf-base.h	/^    PERF_COUNT_MAX$/;"	e	enum:__anon6
+PERF_COUNT_TCP_BLOCK	perf-base.h	/^    PERF_COUNT_TCP_BLOCK,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_ECN_PKT	perf-base.h	/^    PERF_COUNT_TCP_ECN_PKT,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_ECN_SSN	perf-base.h	/^    PERF_COUNT_TCP_ECN_SSN,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_IPS_DATA	perf-base.h	/^    PERF_COUNT_TCP_IPS_DATA,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_NS	perf-base.h	/^    PERF_COUNT_TCP_NS,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_OPT	perf-base.h	/^    PERF_COUNT_TCP_OPT,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_PAD	perf-base.h	/^    PERF_COUNT_TCP_PAD,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_RSV	perf-base.h	/^    PERF_COUNT_TCP_RSV,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_SYN_OPT	perf-base.h	/^    PERF_COUNT_TCP_SYN_OPT,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_TRIM	perf-base.h	/^    PERF_COUNT_TCP_TRIM,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_TS_ECR	perf-base.h	/^    PERF_COUNT_TCP_TS_ECR,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_TS_NOP	perf-base.h	/^    PERF_COUNT_TCP_TS_NOP,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_URG	perf-base.h	/^    PERF_COUNT_TCP_URG,$/;"	e	enum:__anon6
+PERF_COUNT_TCP_URP	perf-base.h	/^    PERF_COUNT_TCP_URP,$/;"	e	enum:__anon6
+PKG_CONFIG	Stream5/Makefile	/^PKG_CONFIG = $/;"	m
+PKG_CONFIG_LIBDIR	Stream5/Makefile	/^PKG_CONFIG_LIBDIR = $/;"	m
+PKG_CONFIG_PATH	Stream5/Makefile	/^PKG_CONFIG_PATH = NONE\/lib\/pkgconfig:$/;"	m
+PKTSTATS	perf-base.h	/^}  PKTSTATS;$/;"	t	typeref:struct:_PKTSTATS
+PKT_ALLOW_MULTIPLE_DETECT	decode.h	50;"	d
+PKT_FROM_CLIENT	decode.h	39;"	d
+PKT_FROM_SERVER	decode.h	37;"	d
+PKT_HTTP_DECODE	decode.h	46;"	d
+PKT_IGNORE	decode.h	48;"	d
+PKT_IP_RULE	decode.h	56;"	d
+PKT_IP_RULE_2ND	decode.h	57;"	d
+PKT_LOGGED	decode.h	59;"	d
+PKT_MODIFIED	decode.h	61;"	d
+PKT_PASS_RULE	decode.h	55;"	d
+PKT_PAYLOAD_OBFUSCATE	decode.h	52;"	d
+PKT_PDU_HEAD	decode.h	42;"	d
+PKT_PDU_TAIL	decode.h	43;"	d
+PKT_PSEUDO	decode.h	60;"	d
+PKT_REBUILT_FRAG	decode.h	29;"	d
+PKT_REBUILT_STREAM	decode.h	30;"	d
+PKT_STATELESS	decode.h	54;"	d
+PKT_STREAM_EST	decode.h	33;"	d
+PKT_STREAM_INSERT	decode.h	35;"	d
+PKT_STREAM_TWH	decode.h	36;"	d
+PKT_STREAM_UNEST_UNI	decode.h	31;"	d
+PKT_TRUST	decode.h	49;"	d
+PKT_UNSURE_ENCAP	decode.h	44;"	d
+PORT_MONITOR_INSPECT	stream_api.h	/^    PORT_MONITOR_INSPECT = 0x01,$/;"	e	enum:__anon4
+PORT_MONITOR_NONE	stream_api.h	/^    PORT_MONITOR_NONE = 0x00,$/;"	e	enum:__anon4
+PORT_MONITOR_PACKET_DISCARD	Stream5/stream5_common.h	/^    PORT_MONITOR_PACKET_DISCARD$/;"	e	enum:__anon11
+PORT_MONITOR_PACKET_PROCESS	Stream5/stream5_common.h	/^    PORT_MONITOR_PACKET_PROCESS = 0,$/;"	e	enum:__anon11
+PORT_MONITOR_SESSION	stream_api.h	/^    PORT_MONITOR_SESSION = 0x02$/;"	e	enum:__anon4
+PORT_MONITOR_SESSION_BITS	stream_api.h	843;"	d
+POST_INSTALL	Stream5/Makefile	/^POST_INSTALL = :$/;"	m
+POST_SESSION_CLEANUP	Stream5/snort_stream5_tcp.c	4642;"	d	file:
+POST_UNINSTALL	Stream5/Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Stream5/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_SESSION_CLEANUP	Stream5/snort_stream5_tcp.c	4630;"	d	file:
+PRE_SESSION_CLEANUP_TARGET	Stream5/snort_stream5_tcp.c	4624;"	d	file:
+PRE_SESSION_CLEANUP_TARGET	Stream5/snort_stream5_tcp.c	4627;"	d	file:
+PRE_UNINSTALL	Stream5/Makefile	/^PRE_UNINSTALL = :$/;"	m
+Packet	decode.h	/^}Packet;$/;"	t	typeref:struct:_Packet
+PacketIterator	stream_api.h	/^typedef int (*PacketIterator)$/;"	t
+PegCounts	Stream5/snort_stream5_tcp.c	/^} PegCounts;$/;"	t	typeref:enum:__anon7	file:
+PerfCounts	perf-base.h	/^} PerfCounts;$/;"	t	typeref:enum:__anon6
+PoolCount	mempool.h	/^typedef unsigned int PoolCount;$/;"	t
+PortMonitorPacketStates	Stream5/stream5_common.h	/^} PortMonitorPacketStates;$/;"	t	typeref:enum:__anon11
+PortMonitorStates	stream_api.h	/^} PortMonitorStates;$/;"	t	typeref:enum:__anon4
+PreprocDataHeader	Stream5/stream5_ha.c	/^} PreprocDataHeader;$/;"	t	typeref:struct:_PreprocDataHeader	file:
+PrintFlushMgr	Stream5/snort_stream5_tcp.c	/^static void PrintFlushMgr(FlushMgr *fm)$/;"	f	file:
+PrintLWSessionCache	Stream5/snort_stream5_session.c	/^void PrintLWSessionCache(Stream5SessionCache *sessionCache)$/;"	f
+PrintStateMgr	Stream5/snort_stream5_tcp.c	/^static void PrintStateMgr(StateMgr *s)$/;"	f	file:
+PrintStreamTracker	Stream5/snort_stream5_tcp.c	/^static void PrintStreamTracker(StreamTracker *s)$/;"	f	file:
+PrintTcpDataBlock	Stream5/snort_stream5_tcp.c	/^static void PrintTcpDataBlock(TcpDataBlock *tdb)$/;"	f	file:
+PrintTcpSession	Stream5/snort_stream5_tcp.c	/^static void PrintTcpSession(TcpSession *ts)$/;"	f	file:
+PrintUdpSession	Stream5/snort_stream5_udp.c	/^static void PrintUdpSession(UdpSession *us)$/;"	f	file:
+ProcessBaseStats	perf-base.c	/^void ProcessBaseStats(SFBASE *sfBase, FILE *fh, int console, int max_stats)$/;"	f
+ProcessIcmpEcho	Stream5/snort_stream5_icmp.c	/^static int ProcessIcmpEcho(Packet *p)$/;"	f	file:
+ProcessIcmpUnreach	Stream5/snort_stream5_icmp.c	/^static int ProcessIcmpUnreach(Packet *p)$/;"	f	file:
+ProcessTcp	Stream5/snort_stream5_tcp.c	/^static int ProcessTcp(Stream5LWSession *lwssn, Packet *p, TcpDataBlock *tdb,$/;"	f	file:
+ProcessTcpData	Stream5/snort_stream5_tcp.c	/^static int ProcessTcpData(Packet *p, StreamTracker *listener, TcpSession *tcpssn,$/;"	f	file:
+ProcessTcpStream	Stream5/snort_stream5_tcp.c	/^static void ProcessTcpStream(StreamTracker *rcv, TcpSession *tcpssn,$/;"	f	file:
+ProcessUdp	Stream5/snort_stream5_udp.c	/^static int ProcessUdp(Stream5LWSession *lwssn, Packet *p,$/;"	f	file:
+PruneLWSessionCache	Stream5/snort_stream5_session.c	/^int PruneLWSessionCache(Stream5SessionCache *sessionCache,$/;"	f
+PurgeLWSessionCache	Stream5/snort_stream5_session.c	/^int PurgeLWSessionCache(Stream5SessionCache *sessionCache)$/;"	f
+QueueState	Stream5/snort_stream5_tcp.c	/^static inline void QueueState(uint8_t transition, StreamTracker *st,$/;"	f	file:
+RAND_FLUSH_POINTS	Stream5/snort_stream5_tcp.c	270;"	d	file:
+RANLIB	Stream5/Makefile	/^RANLIB = ranlib$/;"	m
+RAZORBACK_CFLAGS	Stream5/Makefile	/^RAZORBACK_CFLAGS = $/;"	m
+RAZORBACK_LIBS	Stream5/Makefile	/^RAZORBACK_LIBS = $/;"	m
+REASSEMBLY_POLICY_BSD	Stream5/snort_stream5_tcp.c	205;"	d	file:
+REASSEMBLY_POLICY_DEFAULT	Stream5/snort_stream5_tcp.c	216;"	d	file:
+REASSEMBLY_POLICY_FIRST	Stream5/snort_stream5_tcp.c	203;"	d	file:
+REASSEMBLY_POLICY_HPUX10	Stream5/snort_stream5_tcp.c	213;"	d	file:
+REASSEMBLY_POLICY_HPUX11	Stream5/snort_stream5_tcp.c	210;"	d	file:
+REASSEMBLY_POLICY_IRIX	Stream5/snort_stream5_tcp.c	211;"	d	file:
+REASSEMBLY_POLICY_LAST	Stream5/snort_stream5_tcp.c	207;"	d	file:
+REASSEMBLY_POLICY_LINUX	Stream5/snort_stream5_tcp.c	204;"	d	file:
+REASSEMBLY_POLICY_MACOS	Stream5/snort_stream5_tcp.c	212;"	d	file:
+REASSEMBLY_POLICY_OLD_LINUX	Stream5/snort_stream5_tcp.c	206;"	d	file:
+REASSEMBLY_POLICY_SOLARIS	Stream5/snort_stream5_tcp.c	209;"	d	file:
+REASSEMBLY_POLICY_VISTA	Stream5/snort_stream5_tcp.c	214;"	d	file:
+REASSEMBLY_POLICY_WINDOWS	Stream5/snort_stream5_tcp.c	208;"	d	file:
+REASSEMBLY_POLICY_WINDOWS2K3	Stream5/snort_stream5_tcp.c	215;"	d	file:
+RMT	Stream5/snort_stream5_tcp.c	4683;"	d	file:
+Read	Stream5/stream5_ha.c	/^static inline ssize_t Read(int fd, void *buf, size_t count)$/;"	f	file:
+ReadHAMessagesFromFile	Stream5/stream5_ha.c	/^static int ReadHAMessagesFromFile(const char *filename)$/;"	f	file:
+RecordHeader	Stream5/stream5_ha.c	/^} RecordHeader;$/;"	t	typeref:struct:_RecordHeader	file:
+RegisterStreamHAFuncs	Stream5/stream5_ha.c	/^int RegisterStreamHAFuncs(uint32_t preproc_id, uint8_t subcode, uint8_t size,$/;"	f
+RemoveLWSession	Stream5/snort_stream5_session.c	/^static int RemoveLWSession(Stream5SessionCache *sessionCache, Stream5LWSession *ssn)$/;"	f	file:
+RemoveStreamSession	perf-base.c	/^int RemoveStreamSession(SFBASE *sfBase)$/;"	f
+RemoveUDPSession	perf-base.c	/^int RemoveUDPSession(SFBASE *sfBase)$/;"	f
+RepeatedSyn	Stream5/snort_stream5_tcp.c	/^static int RepeatedSyn($/;"	f	file:
+ResetFlushMgrs	Stream5/snort_stream5_tcp.c	/^static inline void ResetFlushMgrs(void)$/;"	f	file:
+ResetFlushMgrsPolicy	Stream5/snort_stream5_tcp.c	/^static int ResetFlushMgrsPolicy($/;"	f	file:
+RetransmitHandle	Stream5/snort_stream5_tcp.c	/^static inline void RetransmitHandle(Packet *p, TcpSession *tcpssn)$/;"	f	file:
+RetransmitProcess	Stream5/snort_stream5_tcp.c	/^static inline void RetransmitProcess(Packet *p, TcpSession *tcpssn)$/;"	f	file:
+S5TraceTCP	Stream5/snort_stream5_tcp.c	/^static inline void S5TraceTCP ($/;"	f	file:
+S5_ALIGNED	Stream5/snort_stream5_tcp.c	144;"	d	file:
+S5_DEFAULT_CONSEC_SMALL_SEGS	Stream5/stream5_common.h	74;"	d
+S5_DEFAULT_MAX_ACTIVE_RESPONSES	spp_stream5.c	52;"	d	file:
+S5_DEFAULT_MAX_ICMP_SESSIONS	spp_stream5.c	41;"	d	file:
+S5_DEFAULT_MAX_IP_SESSIONS	spp_stream5.c	42;"	d	file:
+S5_DEFAULT_MAX_QUEUED_BYTES	Stream5/stream5_common.h	61;"	d
+S5_DEFAULT_MAX_QUEUED_SEGS	Stream5/stream5_common.h	66;"	d
+S5_DEFAULT_MAX_SMALL_SEG_SIZE	Stream5/stream5_common.h	70;"	d
+S5_DEFAULT_MAX_TCP_SESSIONS	spp_stream5.c	39;"	d	file:
+S5_DEFAULT_MAX_UDP_SESSIONS	spp_stream5.c	40;"	d	file:
+S5_DEFAULT_MEMCAP	spp_stream5.c	34;"	d	file:
+S5_DEFAULT_MIN_RESPONSE_SECONDS	spp_stream5.c	53;"	d	file:
+S5_DEFAULT_PRUNE_LOG_MAX	spp_stream5.c	35;"	d	file:
+S5_DEFAULT_PRUNE_QUANTA	spp_stream5.c	33;"	d	file:
+S5_DEFAULT_SSN_TIMEOUT	Stream5/stream5_common.h	50;"	d
+S5_DEFAULT_TCP_CACHE_NOMINAL_TIMEOUT	spp_stream5.c	44;"	d	file:
+S5_DEFAULT_TCP_CACHE_PRUNING_TIMEOUT	spp_stream5.c	43;"	d	file:
+S5_DEFAULT_TCP_PACKET_MEMCAP	Stream5/snort_stream5_tcp.c	198;"	d	file:
+S5_DEFAULT_UDP_CACHE_NOMINAL_TIMEOUT	spp_stream5.c	46;"	d	file:
+S5_DEFAULT_UDP_CACHE_PRUNING_TIMEOUT	spp_stream5.c	45;"	d	file:
+S5_EXPECTED_CHANNEL_TIMEOUT	spp_stream5.c	59;"	d	file:
+S5_FT_EXTERNAL	Stream5/snort_stream5_tcp.c	230;"	d	file:
+S5_FT_INTERNAL	Stream5/snort_stream5_tcp.c	229;"	d	file:
+S5_FT_PAF_MAX	Stream5/snort_stream5_tcp.c	231;"	d	file:
+S5_MAX_ACTIVE_RESPONSES_MAX	spp_stream5.c	55;"	d	file:
+S5_MAX_CACHE_TIMEOUT	spp_stream5.c	47;"	d	file:
+S5_MAX_CONSEC_SMALL_SEGS	Stream5/stream5_common.h	75;"	d
+S5_MAX_FLUSH_FACTOR	Stream5/snort_stream5_tcp.c	201;"	d	file:
+S5_MAX_MAX_QUEUED_BYTES	Stream5/stream5_common.h	63;"	d
+S5_MAX_MAX_QUEUED_SEGS	Stream5/stream5_common.h	68;"	d
+S5_MAX_MAX_SMALL_SEG_SIZE	Stream5/stream5_common.h	71;"	d
+S5_MAX_MAX_WINDOW	Stream5/stream5_common.h	56;"	d
+S5_MAX_OVERLAP_LIMIT	Stream5/snort_stream5_tcp.c	200;"	d	file:
+S5_MAX_PRUNE_LOG_MAX	spp_stream5.c	49;"	d	file:
+S5_MAX_SSN_TIMEOUT	Stream5/stream5_common.h	51;"	d
+S5_MIN_ALT_HS_TIMEOUT	Stream5/stream5_common.h	53;"	d
+S5_MIN_CONSEC_SMALL_SEGS	Stream5/stream5_common.h	76;"	d
+S5_MIN_MAX_QUEUED_BYTES	Stream5/stream5_common.h	62;"	d
+S5_MIN_MAX_QUEUED_SEGS	Stream5/stream5_common.h	67;"	d
+S5_MIN_MAX_SMALL_SEG_SIZE	Stream5/stream5_common.h	72;"	d
+S5_MIN_MAX_WINDOW	Stream5/stream5_common.h	58;"	d
+S5_MIN_OVERLAP_LIMIT	Stream5/snort_stream5_tcp.c	199;"	d	file:
+S5_MIN_PRUNE_LOG_MAX	spp_stream5.c	48;"	d	file:
+S5_MIN_RESPONSE_SECONDS_MAX	spp_stream5.c	56;"	d	file:
+S5_MIN_SSN_TIMEOUT	Stream5/stream5_common.h	52;"	d
+S5_RIDICULOUS_HI_MEMCAP	spp_stream5.c	36;"	d	file:
+S5_RIDICULOUS_LOW_MEMCAP	spp_stream5.c	37;"	d	file:
+S5_RIDICULOUS_MAX_SESSIONS	spp_stream5.c	38;"	d	file:
+S5_TRACK_NO	Stream5/stream5_common.h	55;"	d
+S5_TRACK_YES	Stream5/stream5_common.h	54;"	d
+S5_UNALIGNED	Stream5/snort_stream5_tcp.c	143;"	d	file:
+SDListItem	mempool.h	/^} SDListItem;$/;"	t	typeref:struct:_SDListItem
+SED	Stream5/Makefile	/^SED = \/bin\/sed$/;"	m
+SESSION_CACHE_FLAG_PRUNING	Stream5/snort_stream5_session.h	34;"	d
+SESSION_CACHE_FLAG_PURGING	Stream5/snort_stream5_session.h	33;"	d
+SESSION_CLOSED_ASYNC	perf-base.h	286;"	d
+SESSION_CLOSED_NORMALLY	perf-base.h	283;"	d
+SESSION_CLOSED_PRUNED	perf-base.h	285;"	d
+SESSION_CLOSED_TIMEDOUT	perf-base.h	284;"	d
+SET_MAKE	Stream5/Makefile	/^SET_MAKE = $/;"	m
+SE_EOF	stream_api.h	/^    SE_EOF,$/;"	e	enum:__anon3
+SE_MAX	stream_api.h	/^    SE_MAX$/;"	e	enum:__anon3
+SE_REXMIT	stream_api.h	/^    SE_REXMIT,$/;"	e	enum:__anon3
+SFBASE	perf-base.h	/^}  SFBASE;$/;"	t	typeref:struct:_SFBASE
+SFBASE_STATS	perf-base.h	/^}  SFBASE_STATS;$/;"	t	typeref:struct:_SFBASE_STATS
+SFHASHFCN	sfhashfcn.h	/^} SFHASHFCN;$/;"	t	typeref:struct:_SFHASHFCN
+SFHASHFCN_INCLUDE	sfhashfcn.h	27;"	d
+SFXHASH	sfxhash.h	/^} SFXHASH;$/;"	t	typeref:struct:_sfxhash
+SFXHASH_ERR	sfxhash.h	47;"	d
+SFXHASH_INTABLE	sfxhash.h	49;"	d
+SFXHASH_NODE	sfxhash.h	/^} SFXHASH_NODE;$/;"	t	typeref:struct:_sfxhash_node
+SFXHASH_NOMEM	sfxhash.h	46;"	d
+SFXHASH_OK	sfxhash.h	48;"	d
+SHELL	Stream5/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIGNAL_SNORT_DUMP_STATS	Stream5/Makefile	/^SIGNAL_SNORT_DUMP_STATS = $/;"	m
+SIGNAL_SNORT_READ_ATTR_TBL	Stream5/Makefile	/^SIGNAL_SNORT_READ_ATTR_TBL = $/;"	m
+SIGNAL_SNORT_RELOAD	Stream5/Makefile	/^SIGNAL_SNORT_RELOAD = $/;"	m
+SIGNAL_SNORT_ROTATE_STATS	Stream5/Makefile	/^SIGNAL_SNORT_ROTATE_STATS = $/;"	m
+SIZE	mempool.c	317;"	d	file:
+SLAM_MAX	Stream5/snort_stream5_tcp.c	233;"	d	file:
+SL_BUF_FLUSHED	Stream5/snort_stream5_tcp.c	432;"	d	file:
+SNORT_STREAM5_SESSION_H_	Stream5/snort_stream5_session.h	24;"	d
+SOURCES	Stream5/Makefile	/^SOURCES = $(libstream5_a_SOURCES)$/;"	m
+SSNFLAG_ALL	stream_api.h	91;"	d
+SSNFLAG_CLIENT_FIN	stream_api.h	74;"	d
+SSNFLAG_CLIENT_PKT	stream_api.h	76;"	d
+SSNFLAG_CLIENT_SWAP	stream_api.h	89;"	d
+SSNFLAG_CLIENT_SWAPPED	stream_api.h	90;"	d
+SSNFLAG_COUNTED_CLOSING	stream_api.h	80;"	d
+SSNFLAG_COUNTED_ESTABLISH	stream_api.h	79;"	d
+SSNFLAG_COUNTED_INITIALIZE	stream_api.h	78;"	d
+SSNFLAG_DROP_CLIENT	stream_api.h	84;"	d
+SSNFLAG_DROP_SERVER	stream_api.h	85;"	d
+SSNFLAG_ECN_CLIENT_QUERY	stream_api.h	69;"	d
+SSNFLAG_ECN_SERVER_REPLY	stream_api.h	70;"	d
+SSNFLAG_ESTABLISHED	stream_api.h	67;"	d
+SSNFLAG_FORCE_BLOCK	stream_api.h	88;"	d
+SSNFLAG_HTTP_1_1	stream_api.h	71;"	d
+SSNFLAG_LOGGED_QUEUE_FULL	stream_api.h	86;"	d
+SSNFLAG_MIDSTREAM	stream_api.h	73;"	d
+SSNFLAG_NMAP	stream_api.h	68;"	d
+SSNFLAG_NONE	stream_api.h	92;"	d
+SSNFLAG_PRUNED	stream_api.h	82;"	d
+SSNFLAG_RESET	stream_api.h	83;"	d
+SSNFLAG_SEEN_BOTH	Stream5/snort_stream5_tcp.c	3034;"	d	file:
+SSNFLAG_SEEN_CLIENT	stream_api.h	63;"	d
+SSNFLAG_SEEN_PMATCH	stream_api.h	72;"	d
+SSNFLAG_SEEN_RESPONDER	stream_api.h	66;"	d
+SSNFLAG_SEEN_SENDER	stream_api.h	64;"	d
+SSNFLAG_SEEN_SERVER	stream_api.h	65;"	d
+SSNFLAG_SERVER_FIN	stream_api.h	75;"	d
+SSNFLAG_SERVER_PKT	stream_api.h	77;"	d
+SSNFLAG_STREAM_ORDER_BAD	stream_api.h	87;"	d
+SSNFLAG_TIMEDOUT	stream_api.h	81;"	d
+SSN_DIR_BOTH	stream_api.h	61;"	d
+SSN_DIR_FROM_CLIENT	stream_api.h	57;"	d
+SSN_DIR_FROM_RESPONDER	stream_api.h	60;"	d
+SSN_DIR_FROM_SENDER	stream_api.h	58;"	d
+SSN_DIR_FROM_SERVER	stream_api.h	59;"	d
+SSN_DIR_NONE	stream_api.h	56;"	d
+SSN_MISSING_BEFORE	stream_api.h	54;"	d
+SSN_MISSING_NONE	stream_api.h	53;"	d
+SSOD_EQUALS	Stream5/snort_stream5_tcp.c	9676;"	d	file:
+SSOD_GREATER_THAN	Stream5/snort_stream5_tcp.c	9675;"	d	file:
+SSOD_GREATER_THAN_OR_EQUALS	Stream5/snort_stream5_tcp.c	9678;"	d	file:
+SSOD_LESS_THAN	Stream5/snort_stream5_tcp.c	9674;"	d	file:
+SSOD_LESS_THAN_OR_EQUALS	Stream5/snort_stream5_tcp.c	9677;"	d	file:
+SSOD_MATCH	Stream5/snort_stream5_tcp.c	9681;"	d	file:
+SSOD_NOMATCH	Stream5/snort_stream5_tcp.c	9682;"	d	file:
+SSOD_NOT_EQUALS	Stream5/snort_stream5_tcp.c	9679;"	d	file:
+STATIC_FP	Stream5/snort_stream5_tcp.c	1249;"	d	file:
+STREAM5_COMMON_H_	Stream5/stream5_common.h	24;"	d
+STREAM5_CONFIG_ASYNC	Stream5/stream5_common.h	100;"	d
+STREAM5_CONFIG_CHECK_SESSION_HIJACKING	Stream5/stream5_common.h	109;"	d
+STREAM5_CONFIG_ENABLE_ALERTS	Stream5/stream5_common.h	96;"	d
+STREAM5_CONFIG_FLUSH_ON_ALERT	Stream5/stream5_common.h	102;"	d
+STREAM5_CONFIG_IGNORE_ANY	Stream5/stream5_common.h	105;"	d
+STREAM5_CONFIG_IPS	Stream5/stream5_common.h	108;"	d
+STREAM5_CONFIG_LOG_STREAMS	Stream5/stream5_common.h	97;"	d
+STREAM5_CONFIG_MIDSTREAM_DROP_NOALERT	Stream5/stream5_common.h	104;"	d
+STREAM5_CONFIG_NO_ASYNC_REASSEMBLY	Stream5/stream5_common.h	110;"	d
+STREAM5_CONFIG_PERFORMANCE	Stream5/stream5_common.h	106;"	d
+STREAM5_CONFIG_REASS_CLIENT	Stream5/stream5_common.h	98;"	d
+STREAM5_CONFIG_REASS_SERVER	Stream5/stream5_common.h	99;"	d
+STREAM5_CONFIG_REQUIRE_3WHS	Stream5/stream5_common.h	103;"	d
+STREAM5_CONFIG_SHOW_PACKETS	Stream5/stream5_common.h	101;"	d
+STREAM5_CONFIG_STATEFUL_INSPECTION	Stream5/stream5_common.h	95;"	d
+STREAM5_CONFIG_STATIC_FLUSHPOINTS	Stream5/stream5_common.h	107;"	d
+STREAM5_DEBUG_WRAP	Stream5/snort_stream5_tcp.c	240;"	d	file:
+STREAM5_DEBUG_WRAP	Stream5/snort_stream5_tcp.c	242;"	d	file:
+STREAM5_ICMP_H_	Stream5/snort_stream5_icmp.h	24;"	d
+STREAM5_STATE_ACK	Stream5/stream5_common.h	121;"	d
+STREAM5_STATE_CLOSED	Stream5/stream5_common.h	128;"	d
+STREAM5_STATE_DROP_CLIENT	Stream5/stream5_common.h	123;"	d
+STREAM5_STATE_DROP_SERVER	Stream5/stream5_common.h	124;"	d
+STREAM5_STATE_ESTABLISHED	Stream5/stream5_common.h	122;"	d
+STREAM5_STATE_MIDSTREAM	Stream5/stream5_common.h	125;"	d
+STREAM5_STATE_NONE	Stream5/stream5_common.h	118;"	d
+STREAM5_STATE_SYN	Stream5/stream5_common.h	119;"	d
+STREAM5_STATE_SYN_ACK	Stream5/stream5_common.h	120;"	d
+STREAM5_STATE_TIMEDOUT	Stream5/stream5_common.h	126;"	d
+STREAM5_STATE_UNREACH	Stream5/stream5_common.h	127;"	d
+STREAM5_TCP_H_	Stream5/snort_stream5_tcp.h	24;"	d
+STREAM5_UDP_H_	Stream5/snort_stream5_udp.h	24;"	d
+STREAM_API_H_	stream_api.h	41;"	d
+STREAM_API_VERSION5	stream_api.h	117;"	d
+STREAM_FLPOLICY_FOOTPRINT	stream_api.h	/^    STREAM_FLPOLICY_FOOTPRINT,       \/* size-based footprint flush *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_FOOTPRINT_IPS	stream_api.h	/^    STREAM_FLPOLICY_FOOTPRINT_IPS,   \/* protocol agnostic ips *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_IGNORE	stream_api.h	/^    STREAM_FLPOLICY_IGNORE,          \/* ignore this traffic *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_LOGICAL	stream_api.h	/^    STREAM_FLPOLICY_LOGICAL,         \/* queued bytes-based flush *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_MAX	stream_api.h	/^    STREAM_FLPOLICY_MAX$/;"	e	enum:__anon1
+STREAM_FLPOLICY_NONE	stream_api.h	/^    STREAM_FLPOLICY_NONE,$/;"	e	enum:__anon1
+STREAM_FLPOLICY_PROTOCOL	stream_api.h	/^    STREAM_FLPOLICY_PROTOCOL,        \/* protocol aware flushing (PAF) *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_PROTOCOL_IPS	stream_api.h	/^    STREAM_FLPOLICY_PROTOCOL_IPS,    \/* protocol aware ips *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_RESPONSE	stream_api.h	/^    STREAM_FLPOLICY_RESPONSE,        \/* flush when we see response *\/$/;"	e	enum:__anon1
+STREAM_FLPOLICY_SET_ABSOLUTE	stream_api.h	112;"	d
+STREAM_FLPOLICY_SET_APPEND	stream_api.h	113;"	d
+STREAM_FLPOLICY_SLIDING_WINDOW	stream_api.h	/^    STREAM_FLPOLICY_SLIDING_WINDOW,  \/* flush on sliding window *\/$/;"	e	enum:__anon1
+STREAM_INSERT_ANOMALY	Stream5/snort_stream5_tcp.c	194;"	d	file:
+STREAM_INSERT_FAILED	Stream5/snort_stream5_tcp.c	196;"	d	file:
+STREAM_INSERT_OK	Stream5/snort_stream5_tcp.c	193;"	d	file:
+STREAM_INSERT_TIMEOUT	Stream5/snort_stream5_tcp.c	195;"	d	file:
+STREAM_POLICY_BSD	Stream5/stream5_common.h	81;"	d
+STREAM_POLICY_DEFAULT	Stream5/stream5_common.h	93;"	d
+STREAM_POLICY_FIRST	Stream5/stream5_common.h	79;"	d
+STREAM_POLICY_HPUX10	Stream5/stream5_common.h	89;"	d
+STREAM_POLICY_HPUX11	Stream5/stream5_common.h	86;"	d
+STREAM_POLICY_IPS	Stream5/stream5_common.h	92;"	d
+STREAM_POLICY_IRIX	Stream5/stream5_common.h	87;"	d
+STREAM_POLICY_LAST	Stream5/stream5_common.h	83;"	d
+STREAM_POLICY_LINUX	Stream5/stream5_common.h	80;"	d
+STREAM_POLICY_MACOS	Stream5/stream5_common.h	88;"	d
+STREAM_POLICY_OLD_LINUX	Stream5/stream5_common.h	82;"	d
+STREAM_POLICY_SOLARIS	Stream5/stream5_common.h	85;"	d
+STREAM_POLICY_VISTA	Stream5/stream5_common.h	90;"	d
+STREAM_POLICY_WINDOWS	Stream5/stream5_common.h	84;"	d
+STREAM_POLICY_WINDOWS2K3	Stream5/stream5_common.h	91;"	d
+STRIP	Stream5/Makefile	/^STRIP = strip$/;"	m
+SUB_ACK_SENT	Stream5/snort_stream5_tcp.c	223;"	d	file:
+SUB_FIN_SENT	Stream5/snort_stream5_tcp.c	226;"	d	file:
+SUB_RST_SENT	Stream5/snort_stream5_tcp.c	225;"	d	file:
+SUB_SETUP_OK	Stream5/snort_stream5_tcp.c	224;"	d	file:
+SUB_SYN_SENT	Stream5/snort_stream5_tcp.c	222;"	d	file:
+SYSTIMES	perf-base.h	/^}  SYSTIMES;$/;"	t	typeref:struct:_SYSTIMES
+SegmentAlloc	Stream5/snort_stream5_tcp.c	/^static inline StreamSegment* SegmentAlloc ($/;"	f	file:
+SegmentFastTrack	Stream5/snort_stream5_tcp.c	/^static inline int SegmentFastTrack(StreamSegment *tail, TcpDataBlock *tdb)$/;"	f	file:
+SegmentFree	Stream5/snort_stream5_tcp.c	/^static void SegmentFree (StreamSegment *seg)$/;"	f	file:
+SegsToFlush	Stream5/snort_stream5_tcp.c	/^static inline uint32_t SegsToFlush (const StreamTracker* st, unsigned max)$/;"	f	file:
+SendSCDeletionMessage	Stream5/stream5_ha.c	/^static void SendSCDeletionMessage(Stream5LWSession *lwssn, uint32_t msg_size)$/;"	f	file:
+SendSCUpdateMessage	Stream5/stream5_ha.c	/^static void SendSCUpdateMessage(Stream5LWSession *lwssn, uint32_t msg_size)$/;"	f	file:
+SessionKey	Stream5/stream5_common.h	/^typedef StreamSessionKey SessionKey;$/;"	t
+SessionWasBlocked	Stream5/snort_stream5_session.c	/^static inline int SessionWasBlocked (Stream5LWSession* ssn)$/;"	f	file:
+SetOSPolicy	Stream5/snort_stream5_tcp.c	/^static void SetOSPolicy(TcpSession *tcpssn)$/;"	f	file:
+SetPacketHeaderFoo	Stream5/snort_stream5_tcp.c	/^static inline void SetPacketHeaderFoo (TcpSession* tcpssn, const Packet* p)$/;"	f	file:
+SetTTL	Stream5/stream5_common.c	/^void SetTTL (Stream5LWSession* ssn, Packet* p, int client)$/;"	f
+SetTcpReassemblyPolicy	Stream5/snort_stream5_tcp.c	/^void SetTcpReassemblyPolicy(StreamTracker *st)$/;"	f
+SetupOK	Stream5/snort_stream5_tcp.c	/^static inline int SetupOK (const StreamTracker* st)$/;"	f	file:
+SetupTcpDataBlock	Stream5/snort_stream5_tcp.c	/^static inline void SetupTcpDataBlock(TcpDataBlock *tdb, Packet *p)$/;"	f	file:
+ShowRebuiltPacket	Stream5/snort_stream5_tcp.c	/^static void ShowRebuiltPacket (Packet* p)$/;"	f	file:
+StateMgr	Stream5/snort_stream5_tcp.c	/^} StateMgr;$/;"	t	typeref:struct:_StateMgr	file:
+Stream5ActivatePaf	spp_stream5.c	/^static bool Stream5ActivatePaf (void* ssnptr, bool to_server)$/;"	f	file:
+Stream5ActivatePafTcp	Stream5/snort_stream5_tcp.c	/^bool Stream5ActivatePafTcp (Stream5LWSession* lwssn, bool to_server)$/;"	f
+Stream5ActiveResponse	Stream5/stream5_common.c	/^void Stream5ActiveResponse(Packet* p, Stream5LWSession *lwssn)$/;"	f
+Stream5AddSessionAlert	spp_stream5.c	/^static int Stream5AddSessionAlert($/;"	f	file:
+Stream5AddSessionAlertTcp	Stream5/snort_stream5_tcp.c	/^int Stream5AddSessionAlertTcp($/;"	f
+Stream5AlertFlushStream	spp_stream5.c	/^static int Stream5AlertFlushStream(Packet *p)$/;"	f	file:
+Stream5AlertInfo	Stream5/snort_stream5_tcp.c	/^} Stream5AlertInfo;$/;"	t	typeref:struct:_Stream5AlertInfo	file:
+Stream5AnyAnyFlow	Stream5/stream5_common.c	/^int Stream5AnyAnyFlow($/;"	f
+Stream5AppData	Stream5/stream5_common.h	/^} Stream5AppData;$/;"	t	typeref:struct:_Stream5AppData
+Stream5CallHandler	spp_stream5.c	/^void Stream5CallHandler (Packet* p, unsigned id)$/;"	f
+Stream5CheckSessionAlert	spp_stream5.c	/^static int Stream5CheckSessionAlert($/;"	f	file:
+Stream5CheckSessionAlertTcp	Stream5/snort_stream5_tcp.c	/^int Stream5CheckSessionAlertTcp(Stream5LWSession *lwssn, Packet *p, uint32_t gid, uint32_t sid)$/;"	f
+Stream5CheckSessionClosed	spp_stream5.c	/^static void Stream5CheckSessionClosed(Packet* p)$/;"	f	file:
+Stream5CleanExit	spp_stream5.c	/^static void Stream5CleanExit(int signal, void *foo)$/;"	f	file:
+Stream5CleanHA	Stream5/stream5_ha.c	/^void Stream5CleanHA(void)$/;"	f
+Stream5CleanIcmp	Stream5/snort_stream5_icmp.c	/^void Stream5CleanIcmp(void)$/;"	f
+Stream5CleanIp	Stream5/snort_stream5_ip.c	/^void Stream5CleanIp (void)$/;"	f
+Stream5CleanTcp	Stream5/snort_stream5_tcp.c	/^void Stream5CleanTcp(void)$/;"	f
+Stream5CleanUdp	Stream5/snort_stream5_udp.c	/^void Stream5CleanUdp(void)$/;"	f
+Stream5ClearExtraData	spp_stream5.c	/^static void Stream5ClearExtraData (void* pv, Packet* p, uint32_t flag)$/;"	f	file:
+Stream5ClearExtraDataTcp	Stream5/snort_stream5_tcp.c	/^void Stream5ClearExtraDataTcp (Stream5LWSession* lwssn, Packet* p, uint32_t xid)$/;"	f
+Stream5Config	Stream5/stream5_common.h	/^} Stream5Config;$/;"	t	typeref:struct:_Stream5Config
+Stream5DebugHA	Stream5/stream5_ha.c	/^static int Stream5DebugHA(uint16_t type, const uint8_t *data, uint32_t length, void **new_context, char *statusBuf, int statusBuf_len)$/;"	f	file:
+Stream5DisableInspection	spp_stream5.c	/^void Stream5DisableInspection(Stream5LWSession *lwssn, Packet *p)$/;"	f
+Stream5DropPacket	spp_stream5.c	/^static void Stream5DropPacket(Packet *p)$/;"	f	file:
+Stream5DropTraffic	spp_stream5.c	/^static void Stream5DropTraffic($/;"	f	file:
+Stream5Expire	Stream5/stream5_common.c	/^int Stream5Expire(Packet *p, Stream5LWSession *lwssn)$/;"	f
+Stream5ExpireSession	Stream5/stream5_common.c	/^int Stream5ExpireSession(Stream5LWSession *lwssn)$/;"	f
+Stream5FlushClient	Stream5/snort_stream5_tcp.c	/^int Stream5FlushClient(Packet *p, Stream5LWSession *lwssn)$/;"	f
+Stream5FlushListener	Stream5/snort_stream5_tcp.c	/^int Stream5FlushListener(Packet *p, Stream5LWSession *lwssn)$/;"	f
+Stream5FlushServer	Stream5/snort_stream5_tcp.c	/^int Stream5FlushServer(Packet *p, Stream5LWSession *lwssn)$/;"	f
+Stream5FlushTalker	Stream5/snort_stream5_tcp.c	/^int Stream5FlushTalker(Packet *p, Stream5LWSession *lwssn)$/;"	f
+Stream5ForceSessionExpiration	spp_stream5.c	/^static void Stream5ForceSessionExpiration(void *ssnptr)$/;"	f	file:
+Stream5FreeConfig	Stream5/stream5_common.c	/^void Stream5FreeConfig(Stream5Config *config)$/;"	f
+Stream5FreeConfigs	Stream5/stream5_common.c	/^void Stream5FreeConfigs(tSfPolicyUserContextId config)$/;"	f
+Stream5FreeConfigsPolicy	Stream5/stream5_common.c	/^static int Stream5FreeConfigsPolicy($/;"	f	file:
+Stream5GetApplicationData	spp_stream5.c	/^static void *Stream5GetApplicationData(void *ssnptr, uint32_t protocol)$/;"	f	file:
+Stream5GetApplicationDataFromIpPort	spp_stream5.c	/^static void * Stream5GetApplicationDataFromIpPort($/;"	f	file:
+Stream5GetApplicationDataFromSessionKey	spp_stream5.c	/^static void * Stream5GetApplicationDataFromSessionKey(const StreamSessionKey *key, uint32_t protocol)$/;"	f	file:
+Stream5GetApplicationProtocolId	spp_stream5.c	/^static int16_t Stream5GetApplicationProtocolId(void *ssnptr)$/;"	f	file:
+Stream5GetExpire	Stream5/stream5_common.c	/^int Stream5GetExpire(Packet *p, Stream5LWSession *lwssn)$/;"	f
+Stream5GetFlowData	spp_stream5.c	/^static StreamFlowData *Stream5GetFlowData(Packet *p)$/;"	f	file:
+Stream5GetFlushPoint	spp_stream5.c	/^static uint32_t Stream5GetFlushPoint(void *ssnptr, char dir)$/;"	f	file:
+Stream5GetFlushPointTcp	Stream5/snort_stream5_tcp.c	/^uint32_t Stream5GetFlushPointTcp(Stream5LWSession *lwssn, char dir)$/;"	f
+Stream5GetIcmpPrunes	Stream5/snort_stream5_icmp.c	/^uint32_t Stream5GetIcmpPrunes(void)$/;"	f
+Stream5GetIgnoreDirection	spp_stream5.c	/^static int Stream5GetIgnoreDirection(void *ssnptr)$/;"	f	file:
+Stream5GetIpPrunes	Stream5/snort_stream5_ip.c	/^uint32_t Stream5GetIpPrunes (void)$/;"	f
+Stream5GetKeyFromSessionPtr	spp_stream5.c	/^static const StreamSessionKey *Stream5GetKeyFromSessionPtr(const void *ssnptr)$/;"	f	file:
+Stream5GetMss	Stream5/snort_stream5_tcp.c	/^static uint32_t Stream5GetMss(Packet *p, uint16_t *value)$/;"	f	file:
+Stream5GetPAFUserData	spp_stream5.c	/^void** Stream5GetPAFUserData(void* ssnptr, bool to_server)$/;"	f
+Stream5GetPAFUserDataTcp	Stream5/snort_stream5_tcp.c	/^void** Stream5GetPAFUserDataTcp (Stream5LWSession* lwssn, bool to_server)$/;"	f
+Stream5GetPacketDirection	spp_stream5.c	/^static uint32_t Stream5GetPacketDirection(Packet *p)$/;"	f	file:
+Stream5GetReassemblyDirection	spp_stream5.c	/^static char Stream5GetReassemblyDirection(void *ssnptr)$/;"	f	file:
+Stream5GetReassemblyDirectionTcp	Stream5/snort_stream5_tcp.c	/^char Stream5GetReassemblyDirectionTcp(Stream5LWSession *lwssn)$/;"	f
+Stream5GetReassemblyFlushPolicy	spp_stream5.c	/^static char Stream5GetReassemblyFlushPolicy(void *ssnptr, char dir)$/;"	f	file:
+Stream5GetReassemblyFlushPolicyTcp	Stream5/snort_stream5_tcp.c	/^char Stream5GetReassemblyFlushPolicyTcp(Stream5LWSession *lwssn, char dir)$/;"	f
+Stream5GetRebuiltPackets	spp_stream5.c	/^static int Stream5GetRebuiltPackets($/;"	f	file:
+Stream5GetSessionFlags	spp_stream5.c	/^static uint32_t Stream5GetSessionFlags(void *ssnptr)$/;"	f	file:
+Stream5GetSessionIpAddress	spp_stream5.c	/^static snort_ip_p Stream5GetSessionIpAddress(void *ssnptr, uint32_t direction)$/;"	f	file:
+Stream5GetSessionKey	spp_stream5.c	/^static StreamSessionKey * Stream5GetSessionKey(Packet *p)$/;"	f	file:
+Stream5GetSessionPtr	spp_stream5.c	/^static inline void * Stream5GetSessionPtr(const SessionKey *key)$/;"	f	file:
+Stream5GetSessionPtrFromIpPort	spp_stream5.c	/^static void * Stream5GetSessionPtrFromIpPort($/;"	f	file:
+Stream5GetStreamSegments	spp_stream5.c	/^static int Stream5GetStreamSegments($/;"	f	file:
+Stream5GetTcpPrunes	Stream5/snort_stream5_tcp.c	/^uint32_t Stream5GetTcpPrunes(void)$/;"	f
+Stream5GetTcpTimestamp	Stream5/snort_stream5_tcp.c	/^static uint32_t Stream5GetTcpTimestamp(Packet *p, uint32_t *ts, int strip)$/;"	f	file:
+Stream5GetUdpPrunes	Stream5/snort_stream5_udp.c	/^uint32_t Stream5GetUdpPrunes(void)$/;"	f
+Stream5GetWindow	Stream5/snort_stream5_tcp.c	/^static inline uint32_t Stream5GetWindow($/;"	f	file:
+Stream5GetWscale	Stream5/snort_stream5_tcp.c	/^static uint32_t Stream5GetWscale(Packet *p, uint16_t *value)$/;"	f	file:
+Stream5GetXtraDataMap	spp_stream5.c	/^static uint32_t Stream5GetXtraDataMap(LogFunction **f)$/;"	f	file:
+Stream5GlobalConfig	Stream5/stream5_common.h	/^} Stream5GlobalConfig;$/;"	t	typeref:struct:_Stream5GlobalConfig
+Stream5GlobalReload	spp_stream5.c	/^static void Stream5GlobalReload(struct _SnortConfig *sc, char *args, void **new_config)$/;"	f	file:
+Stream5HAConfig	Stream5/stream5_common.h	/^} Stream5HAConfig;$/;"	t	typeref:struct:_Stream5HAConfig
+Stream5HAConfigFree	Stream5/stream5_ha.c	/^void Stream5HAConfigFree(Stream5HAConfig *config)$/;"	f
+Stream5HADebugCheck	Stream5/stream5_ha.c	/^static inline bool Stream5HADebugCheck(const SessionKey *key, volatile int debug_flag,$/;"	f	file:
+Stream5HADebugParse	Stream5/stream5_ha.c	/^static void Stream5HADebugParse(const char *desc, const uint8_t *data, uint32_t length,$/;"	f	file:
+Stream5HAInit	Stream5/stream5_ha.c	/^void Stream5HAInit(struct _SnortConfig *sc, char *args)$/;"	f
+Stream5HANotifyDeletion	Stream5/stream5_ha.c	/^void Stream5HANotifyDeletion(Stream5LWSession *lwssn)$/;"	f
+Stream5HAPostConfigInit	Stream5/stream5_ha.c	/^void Stream5HAPostConfigInit(struct _SnortConfig *sc, int unused, void *arg)$/;"	f
+Stream5HAReload	Stream5/stream5_ha.c	/^void Stream5HAReload(struct _SnortConfig *sc, char *args, void **new_config)$/;"	f
+Stream5HASCMsgHandler	Stream5/stream5_ha.c	/^static int Stream5HASCMsgHandler(SCMsgHdr *hdr, const uint8_t *msg, uint32_t msglen)$/;"	f	file:
+Stream5HASession	Stream5/stream5_ha.c	/^} Stream5HASession;$/;"	t	typeref:struct:__anon13	file:
+Stream5HAState	Stream5/stream5_common.h	/^} Stream5HAState;$/;"	t	typeref:struct:_Stream5HAState
+Stream5HAStats	Stream5/stream5_ha.c	/^} Stream5HAStats;$/;"	t	typeref:struct:__anon14	file:
+Stream5IPCreateSession	Stream5/snort_stream5_ip.c	/^static Stream5LWSession *Stream5IPCreateSession (const SessionKey *key)$/;"	f	file:
+Stream5IPDeleteSession	Stream5/snort_stream5_ip.c	/^static int Stream5IPDeleteSession (const SessionKey *key)$/;"	f	file:
+Stream5IcmpConfig	Stream5/stream5_common.h	/^} Stream5IcmpConfig;$/;"	t	typeref:struct:_Stream5IcmpConfig
+Stream5IcmpConfigFree	Stream5/snort_stream5_icmp.c	/^void Stream5IcmpConfigFree(Stream5IcmpConfig *config)$/;"	f
+Stream5IcmpPolicy	Stream5/stream5_common.h	/^} Stream5IcmpPolicy;$/;"	t	typeref:struct:_Stream5IcmpPolicy
+Stream5IcmpPolicyInit	Stream5/snort_stream5_icmp.c	/^void Stream5IcmpPolicyInit(Stream5IcmpConfig *config, char *args)$/;"	f
+Stream5IcmpReload	spp_stream5.c	/^static void Stream5IcmpReload(struct _SnortConfig *sc, char *args, void **new_config)$/;"	f	file:
+Stream5IgnoreChannel	spp_stream5.c	/^static int Stream5IgnoreChannel($/;"	f	file:
+Stream5InitIcmp	Stream5/snort_stream5_icmp.c	/^void Stream5InitIcmp(Stream5GlobalConfig *gconfig)$/;"	f
+Stream5InitIp	Stream5/snort_stream5_ip.c	/^void Stream5InitIp (Stream5GlobalConfig* gconfig)$/;"	f
+Stream5InitPacket	Stream5/snort_stream5_tcp.c	/^static void Stream5InitPacket(void)$/;"	f	file:
+Stream5InitTcp	Stream5/snort_stream5_tcp.c	/^void Stream5InitTcp(Stream5GlobalConfig *gconfig)$/;"	f
+Stream5InitUdp	Stream5/snort_stream5_udp.c	/^void Stream5InitUdp(Stream5GlobalConfig *gconfig)$/;"	f
+Stream5IpConfig	Stream5/stream5_common.h	/^} Stream5IpConfig;$/;"	t	typeref:struct:_Stream5IpConfig
+Stream5IpConfigFree	Stream5/snort_stream5_ip.c	/^void Stream5IpConfigFree (Stream5IpConfig* config)$/;"	f
+Stream5IpPolicy	Stream5/stream5_common.h	/^} Stream5IpPolicy;$/;"	t	typeref:struct:_Stream5IpPolicy
+Stream5IpPolicyInit	Stream5/snort_stream5_ip.c	/^void Stream5IpPolicyInit (Stream5IpConfig* config, char* args)$/;"	f
+Stream5IpReload	spp_stream5.c	/^static void Stream5IpReload(struct _SnortConfig *sc, char *args, void **new_config)$/;"	f	file:
+Stream5IsPafActive	spp_stream5.c	/^static bool Stream5IsPafActive (void* ssnptr, bool to_server)$/;"	f	file:
+Stream5IsPafActiveTcp	Stream5/snort_stream5_tcp.c	/^bool Stream5IsPafActiveTcp (Stream5LWSession* lwssn, bool to_server)$/;"	f
+Stream5IsStreamSequenced	spp_stream5.c	/^static char Stream5IsStreamSequenced(void *ssnptr, char dir)$/;"	f	file:
+Stream5IsStreamSequencedTcp	Stream5/snort_stream5_tcp.c	/^char Stream5IsStreamSequencedTcp(Stream5LWSession *lwssn, char dir)$/;"	f
+Stream5LWSession	Stream5/stream5_common.h	/^} Stream5LWSession;$/;"	t	typeref:struct:_Stream5LWSession
+Stream5MidStreamDropAlert	spp_stream5.c	/^static int Stream5MidStreamDropAlert(void)$/;"	f	file:
+Stream5MissingInReassembled	spp_stream5.c	/^static int Stream5MissingInReassembled(void *ssnptr, char dir)$/;"	f	file:
+Stream5MissingInReassembledTcp	Stream5/snort_stream5_tcp.c	/^int Stream5MissingInReassembledTcp(Stream5LWSession *lwssn, char dir)$/;"	f
+Stream5OtnHasFlowOrFlowbit	Stream5/stream5_common.c	/^int Stream5OtnHasFlowOrFlowbit(OptTreeNode *otn)$/;"	f
+Stream5PacketHasWscale	Stream5/snort_stream5_tcp.c	/^static uint32_t Stream5PacketHasWscale(Packet *p)$/;"	f	file:
+Stream5PacketsMissing	spp_stream5.c	/^static char Stream5PacketsMissing(void *ssnptr, char dir)$/;"	f	file:
+Stream5PacketsMissingTcp	Stream5/snort_stream5_tcp.c	/^char Stream5PacketsMissingTcp(Stream5LWSession *lwssn, char dir)$/;"	f
+Stream5ParseHAArgs	Stream5/stream5_ha.c	/^static void Stream5ParseHAArgs(SnortConfig *sc, Stream5HAConfig *config, char *args)$/;"	f	file:
+Stream5ParseIcmpArgs	Stream5/snort_stream5_icmp.c	/^static void Stream5ParseIcmpArgs(char *args, Stream5IcmpPolicy *s5IcmpPolicy)$/;"	f	file:
+Stream5ParseIpArgs	Stream5/snort_stream5_ip.c	/^static void Stream5ParseIpArgs (char* args, Stream5IpPolicy* policy)$/;"	f	file:
+Stream5ParseTcpArgs	Stream5/snort_stream5_tcp.c	/^static void Stream5ParseTcpArgs(struct _SnortConfig *sc, Stream5TcpConfig *config, char *args, Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+Stream5ParseUdpArgs	Stream5/snort_stream5_udp.c	/^static void Stream5ParseUdpArgs(Stream5UdpConfig *config, char *args, Stream5UdpPolicy *s5UdpPolicy)$/;"	f	file:
+Stream5PolicyInitIcmp	spp_stream5.c	/^static void Stream5PolicyInitIcmp(struct _SnortConfig *sc, char *args)$/;"	f	file:
+Stream5PolicyInitIp	spp_stream5.c	/^static void Stream5PolicyInitIp(struct _SnortConfig *sc, char *args)$/;"	f	file:
+Stream5PolicyInitTcp	spp_stream5.c	/^static void Stream5PolicyInitTcp(struct _SnortConfig *sc, char *args)$/;"	f	file:
+Stream5PolicyInitUdp	spp_stream5.c	/^static void Stream5PolicyInitUdp(struct _SnortConfig *sc, char *args)$/;"	f	file:
+Stream5PolicyLookup	Stream5/snort_stream5_tcp.c	/^Stream5TcpPolicy *Stream5PolicyLookup(sfip_t *ip)$/;"	f
+Stream5PopulateSessionKey	spp_stream5.c	/^static void Stream5PopulateSessionKey(Packet *p, StreamSessionKey *key)$/;"	f	file:
+Stream5PostConfigTcp	Stream5/snort_stream5_tcp.c	/^void Stream5PostConfigTcp (struct _SnortConfig *sc, void* pv)$/;"	f
+Stream5PrintHAConfig	Stream5/stream5_ha.c	/^static void Stream5PrintHAConfig(Stream5HAConfig *config)$/;"	f	file:
+Stream5PrintHAStats	Stream5/stream5_ha.c	/^void Stream5PrintHAStats(void)$/;"	f
+Stream5PrintIcmpConfig	Stream5/snort_stream5_icmp.c	/^static void Stream5PrintIcmpConfig(Stream5IcmpPolicy *s5IcmpPolicy)$/;"	f	file:
+Stream5PrintIpConfig	Stream5/snort_stream5_ip.c	/^static void Stream5PrintIpConfig (Stream5IpPolicy* policy)$/;"	f	file:
+Stream5PrintStats	spp_stream5.c	/^static void Stream5PrintStats(int exiting)$/;"	f	file:
+Stream5PrintTcpConfig	Stream5/snort_stream5_tcp.c	/^static void Stream5PrintTcpConfig(Stream5TcpPolicy *s5TcpPolicy)$/;"	f	file:
+Stream5PrintUdpConfig	Stream5/snort_stream5_udp.c	/^static void Stream5PrintUdpConfig(Stream5UdpPolicy *s5UdpPolicy)$/;"	f	file:
+Stream5Process	spp_stream5.c	/^void Stream5Process(Packet *p, void *context)$/;"	f
+Stream5ProcessHA	Stream5/stream5_ha.c	/^void Stream5ProcessHA(void *ssnptr)$/;"	f
+Stream5ProcessIcmp	Stream5/snort_stream5_icmp.c	/^int Stream5ProcessIcmp(Packet *p)$/;"	f
+Stream5ProcessIp	Stream5/snort_stream5_ip.c	/^int Stream5ProcessIp(Packet *p, Stream5LWSession *lwssn, SessionKey *skey)$/;"	f
+Stream5ProcessTcp	Stream5/snort_stream5_tcp.c	/^int Stream5ProcessTcp(Packet *p, Stream5LWSession *lwssn,$/;"	f
+Stream5ProcessUdp	Stream5/snort_stream5_udp.c	/^int Stream5ProcessUdp(Packet *p, Stream5LWSession *lwssn,$/;"	f
+Stream5RegisterHandler	spp_stream5.c	/^static unsigned Stream5RegisterHandler (Stream_Callback cb)$/;"	f	file:
+Stream5RegisterPAFPort	spp_stream5.c	/^static bool Stream5RegisterPAFPort ($/;"	f	file:
+Stream5RegisterPAFService	spp_stream5.c	/^static bool Stream5RegisterPAFService ($/;"	f	file:
+Stream5RegisterXtraData	spp_stream5.c	/^static uint32_t Stream5RegisterXtraData(LogFunction f)$/;"	f	file:
+Stream5RegisterXtraDataLog	spp_stream5.c	/^static void Stream5RegisterXtraDataLog(LogExtraData f, void *config)$/;"	f	file:
+Stream5ReloadSwap	spp_stream5.c	/^static void * Stream5ReloadSwap(struct _SnortConfig *sc, void *swap_config)$/;"	f	file:
+Stream5ReloadSwapFree	spp_stream5.c	/^static void Stream5ReloadSwapFree(void *data)$/;"	f	file:
+Stream5ReloadSwapPolicy	spp_stream5.c	/^static int Stream5ReloadSwapPolicy($/;"	f	file:
+Stream5ReloadVerify	spp_stream5.c	/^static int Stream5ReloadVerify(struct _SnortConfig *sc, void *swap_config)$/;"	f	file:
+Stream5ReloadVerifyPolicy	spp_stream5.c	/^static int Stream5ReloadVerifyPolicy($/;"	f	file:
+Stream5Reset	spp_stream5.c	/^static void Stream5Reset(int signal, void *foo)$/;"	f	file:
+Stream5ResetFlowBits	Stream5/stream5_common.h	/^static inline void Stream5ResetFlowBits(Stream5LWSession *lwssn)$/;"	f
+Stream5ResetHAStats	Stream5/stream5_ha.c	/^void Stream5ResetHAStats(void)$/;"	f
+Stream5ResetIcmp	Stream5/snort_stream5_icmp.c	/^void Stream5ResetIcmp(void)$/;"	f
+Stream5ResetIcmpPrunes	Stream5/snort_stream5_icmp.c	/^void Stream5ResetIcmpPrunes(void)$/;"	f
+Stream5ResetIp	Stream5/snort_stream5_ip.c	/^void Stream5ResetIp (void)$/;"	f
+Stream5ResetIpPrunes	Stream5/snort_stream5_ip.c	/^void Stream5ResetIpPrunes (void)$/;"	f
+Stream5ResetStats	spp_stream5.c	/^static void Stream5ResetStats(int signal, void *foo)$/;"	f	file:
+Stream5ResetTcp	Stream5/snort_stream5_tcp.c	/^void Stream5ResetTcp(void)$/;"	f
+Stream5ResetTcpPrunes	Stream5/snort_stream5_tcp.c	/^void Stream5ResetTcpPrunes(void)$/;"	f
+Stream5ResetUdp	Stream5/snort_stream5_udp.c	/^void Stream5ResetUdp(void)$/;"	f
+Stream5ResetUdpPrunes	Stream5/snort_stream5_udp.c	/^void Stream5ResetUdpPrunes(void)$/;"	f
+Stream5ResponseFlushStream	spp_stream5.c	/^static int Stream5ResponseFlushStream(Packet *p)$/;"	f	file:
+Stream5ResumeInspection	spp_stream5.c	/^static void Stream5ResumeInspection($/;"	f	file:
+Stream5SeglistAddNode	Stream5/snort_stream5_tcp.c	/^static void Stream5SeglistAddNode(StreamTracker *st, StreamSegment *prev,$/;"	f	file:
+Stream5SeglistDeleteNode	Stream5/snort_stream5_tcp.c	/^static int Stream5SeglistDeleteNode (StreamTracker* st, StreamSegment* seg)$/;"	f	file:
+Stream5SeglistDeleteNodeTrim	Stream5/snort_stream5_tcp.c	/^static int Stream5SeglistDeleteNodeTrim ($/;"	f	file:
+Stream5SessionCache	Stream5/snort_stream5_session.h	/^} Stream5SessionCache;$/;"	t	typeref:struct:_Stream5SessionCache
+Stream5SessionCleanup	Stream5/snort_stream5_session.h	/^typedef void(*Stream5SessionCleanup)(Stream5LWSession *ssn);$/;"	t
+Stream5SetApplicationData	spp_stream5.c	/^static int Stream5SetApplicationData($/;"	f	file:
+Stream5SetApplicationProtocolId	spp_stream5.c	/^static int16_t Stream5SetApplicationProtocolId(void *ssnptr, int16_t id)$/;"	f	file:
+Stream5SetApplicationProtocolIdExpected	spp_stream5.c	/^static int Stream5SetApplicationProtocolIdExpected($/;"	f	file:
+Stream5SetApplicationProtocolIdFromHostEntry	spp_stream5.c	/^void Stream5SetApplicationProtocolIdFromHostEntry(Stream5LWSession *lwssn,$/;"	f
+Stream5SetExpire	Stream5/stream5_common.c	/^void Stream5SetExpire(Packet *p,$/;"	f
+Stream5SetExtraData	spp_stream5.c	/^static void Stream5SetExtraData (void* pv, Packet* p, uint32_t flag)$/;"	f	file:
+Stream5SetExtraDataTcp	Stream5/snort_stream5_tcp.c	/^void Stream5SetExtraDataTcp (Stream5LWSession* lwssn, Packet* p, uint32_t xid)$/;"	f
+Stream5SetFlushPoint	spp_stream5.c	/^static void Stream5SetFlushPoint(void *ssnptr, char dir, uint32_t flush_point)$/;"	f	file:
+Stream5SetFlushPointTcp	Stream5/snort_stream5_tcp.c	/^void Stream5SetFlushPointTcp(Stream5LWSession *lwssn,$/;"	f
+Stream5SetHABit	Stream5/stream5_common.h	/^static inline void Stream5SetHABit(Stream5LWSession *lwssn, unsigned int ha_func_idx)$/;"	f
+Stream5SetHAPendingBit	Stream5/stream5_ha.c	/^void Stream5SetHAPendingBit(void *ssnptr, int bit)$/;"	f
+Stream5SetHandler	spp_stream5.c	/^static bool Stream5SetHandler (void* ssnptr, unsigned id, Stream_Event se)$/;"	f	file:
+Stream5SetIPProtocol	spp_stream5.c	/^static void Stream5SetIPProtocol(Stream5LWSession *lwssn)$/;"	f	file:
+Stream5SetIgnoreDirection	spp_stream5.c	/^static int Stream5SetIgnoreDirection(void *ssnptr, int ignore_direction)$/;"	f	file:
+Stream5SetReassembly	spp_stream5.c	/^static char Stream5SetReassembly(void *ssnptr,$/;"	f	file:
+Stream5SetReassemblyTcp	Stream5/snort_stream5_tcp.c	/^char Stream5SetReassemblyTcp(Stream5LWSession *lwssn,$/;"	f
+Stream5SetRuntimeConfiguration	Stream5/snort_stream5_session.c	/^Stream5SetRuntimeConfiguration($/;"	f
+Stream5SetSessionFlags	spp_stream5.c	/^static uint32_t Stream5SetSessionFlags($/;"	f	file:
+Stream5Stats	Stream5/stream5_common.h	/^} Stream5Stats;$/;"	t	typeref:struct:_Stream5Stats
+Stream5StopInspection	spp_stream5.c	/^static void Stream5StopInspection($/;"	f	file:
+Stream5TCPCreateSession	Stream5/snort_stream5_tcp.c	/^static Stream5LWSession *Stream5TCPCreateSession(const SessionKey *key)$/;"	f	file:
+Stream5TCPDeactivateSession	Stream5/snort_stream5_tcp.c	/^static void Stream5TCPDeactivateSession(Stream5LWSession *lwssn)$/;"	f	file:
+Stream5TCPDeleteSession	Stream5/snort_stream5_tcp.c	/^static int Stream5TCPDeleteSession (const SessionKey *key)$/;"	f	file:
+Stream5TcpConfig	Stream5/stream5_common.h	/^} Stream5TcpConfig;$/;"	t	typeref:struct:_Stream5TcpConfig
+Stream5TcpConfigFree	Stream5/snort_stream5_tcp.c	/^void Stream5TcpConfigFree(Stream5TcpConfig *config)$/;"	f
+Stream5TcpInitFlushPoints	Stream5/snort_stream5_tcp.c	/^void Stream5TcpInitFlushPoints(void)$/;"	f
+Stream5TcpPolicy	Stream5/stream5_common.h	/^} Stream5TcpPolicy;$/;"	t	typeref:struct:_Stream5TcpPolicy
+Stream5TcpPolicyInit	Stream5/snort_stream5_tcp.c	/^void Stream5TcpPolicyInit(struct _SnortConfig *sc, Stream5TcpConfig *config, char *args)$/;"	f
+Stream5TcpRegisterPreprocProfiles	Stream5/snort_stream5_tcp.c	/^void Stream5TcpRegisterPreprocProfiles(void)$/;"	f
+Stream5TcpRegisterRuleOptions	Stream5/snort_stream5_tcp.c	/^void Stream5TcpRegisterRuleOptions(struct _SnortConfig *sc)$/;"	f
+Stream5TcpReload	spp_stream5.c	/^static void Stream5TcpReload(struct _SnortConfig *sc, char *args, void **new_config)$/;"	f	file:
+Stream5TcpSessionClear	Stream5/snort_stream5_tcp.c	/^void Stream5TcpSessionClear(Packet *p)$/;"	f
+Stream5UDPCreateSession	Stream5/snort_stream5_udp.c	/^static Stream5LWSession *Stream5UDPCreateSession(const SessionKey *key)$/;"	f	file:
+Stream5UDPDeleteSession	Stream5/snort_stream5_udp.c	/^static int Stream5UDPDeleteSession(const SessionKey *key)$/;"	f	file:
+Stream5UdpConfig	Stream5/stream5_common.h	/^} Stream5UdpConfig;$/;"	t	typeref:struct:_Stream5UdpConfig
+Stream5UdpConfigFree	Stream5/snort_stream5_udp.c	/^void Stream5UdpConfigFree(Stream5UdpConfig *config)$/;"	f
+Stream5UdpPolicy	Stream5/stream5_common.h	/^} Stream5UdpPolicy;$/;"	t	typeref:struct:_Stream5UdpPolicy
+Stream5UdpPolicyInit	Stream5/snort_stream5_udp.c	/^void Stream5UdpPolicyInit(Stream5UdpConfig *config, char *args)$/;"	f
+Stream5UdpReload	spp_stream5.c	/^static void Stream5UdpReload(struct _SnortConfig *sc, char *args, void **new_config)$/;"	f	file:
+Stream5UpdateDirection	spp_stream5.c	/^static void Stream5UpdateDirection($/;"	f	file:
+Stream5UpdatePerfBaseState	Stream5/snort_stream5_tcp.c	/^void Stream5UpdatePerfBaseState(SFBASE *sf_base,$/;"	f
+Stream5UpdateSessionAlert	spp_stream5.c	/^static int Stream5UpdateSessionAlert($/;"	f	file:
+Stream5UpdateSessionAlertTcp	Stream5/snort_stream5_tcp.c	/^int Stream5UpdateSessionAlertTcp ($/;"	f
+Stream5VerifyConfig	spp_stream5.c	/^static int Stream5VerifyConfig(struct _SnortConfig *sc)$/;"	f	file:
+Stream5VerifyConfigPolicy	spp_stream5.c	/^static int Stream5VerifyConfigPolicy($/;"	f	file:
+Stream5VerifyHAConfig	Stream5/stream5_ha.c	/^int Stream5VerifyHAConfig(struct _SnortConfig *sc, Stream5HAConfig *config, tSfPolicyId policy_id)$/;"	f
+Stream5VerifyIcmpConfig	Stream5/snort_stream5_icmp.c	/^int Stream5VerifyIcmpConfig(Stream5IcmpConfig *config, tSfPolicyId policy_id)$/;"	f
+Stream5VerifyIpConfig	Stream5/snort_stream5_ip.c	/^int Stream5VerifyIpConfig (Stream5IpConfig* config, tSfPolicyId policy_id)$/;"	f
+Stream5VerifyTcpConfig	Stream5/snort_stream5_tcp.c	/^int Stream5VerifyTcpConfig(struct _SnortConfig *sc, Stream5TcpConfig *config, tSfPolicyId policy_id)$/;"	f
+Stream5VerifyUdpConfig	Stream5/snort_stream5_udp.c	/^int Stream5VerifyUdpConfig(struct _SnortConfig *sc, Stream5UdpConfig *config, tSfPolicyId policyId)$/;"	f
+StreamAPI	stream_api.h	/^} StreamAPI;$/;"	t	typeref:struct:_stream_api
+StreamAppDataFree	stream_api.h	/^typedef void (*StreamAppDataFree)(void *);$/;"	t
+StreamFlowData	stream_api.h	/^} StreamFlowData;$/;"	t	typeref:struct:_StreamFlowData
+StreamGetPolicy	Stream5/snort_stream5_tcp.c	/^uint16_t StreamGetPolicy(Stream5LWSession *lwssn, Stream5TcpPolicy *s5TcpPolicy,$/;"	f
+StreamHAConsumerFunc	stream_api.h	/^typedef int (*StreamHAConsumerFunc)(void *ssnptr, const uint8_t *data, uint8_t length);$/;"	t
+StreamHAFuncsNode	Stream5/stream5_ha.c	/^} StreamHAFuncsNode;$/;"	t	typeref:struct:_StreamHAFuncsNode	file:
+StreamHAProducerFunc	stream_api.h	/^typedef uint32_t (*StreamHAProducerFunc)(void *ssnptr, uint8_t *buf);$/;"	t
+StreamPolicyIdFromHostAttributeEntry	Stream5/snort_stream5_tcp.c	/^int StreamPolicyIdFromHostAttributeEntry(HostAttributeEntry *host_entry)$/;"	f
+StreamPolicyIdFromName	Stream5/snort_stream5_tcp.c	/^static inline uint16_t StreamPolicyIdFromName(char *name)$/;"	f	file:
+StreamQueue	Stream5/snort_stream5_tcp.c	/^static int StreamQueue(StreamTracker *st, Packet *p, TcpDataBlock *tdb,$/;"	f	file:
+StreamReassembleRuleOptionData	Stream5/snort_stream5_tcp.c	/^} StreamReassembleRuleOptionData;$/;"	t	typeref:struct:_StreamReassembleRuleOptionData	file:
+StreamSegment	Stream5/snort_stream5_tcp.c	/^} StreamSegment;$/;"	t	typeref:struct:_StreamSegment	file:
+StreamSegmentIterator	stream_api.h	/^typedef int (*StreamSegmentIterator)$/;"	t
+StreamSessionKey	stream_api.h	/^} StreamSessionKey;$/;"	t	typeref:struct:_StreamSessionKey
+StreamSessionLimits	stream_api.h	/^} StreamSessionLimits;$/;"	t	typeref:struct:_StreamSessionLimits
+StreamSizeOptionData	Stream5/snort_stream5_tcp.c	/^} StreamSizeOptionData;$/;"	t	typeref:struct:_StreamSizeOptionData	file:
+StreamTracker	Stream5/snort_stream5_tcp.c	/^} StreamTracker;$/;"	t	typeref:struct:_StreamTracker	file:
+Stream_Callback	stream_api.h	/^typedef void (*Stream_Callback)(Packet *);$/;"	t
+Stream_Event	stream_api.h	/^} Stream_Event;$/;"	t	typeref:enum:__anon3
+Stream_PrintNormalizationStats	Stream5/snort_stream5_tcp.c	/^void Stream_PrintNormalizationStats (void)$/;"	f
+Stream_ResetNormalizationStats	Stream5/snort_stream5_tcp.c	/^void Stream_ResetNormalizationStats (void)$/;"	f
+SwapPacketHeaderFoo	Stream5/snort_stream5_tcp.c	/^static inline void SwapPacketHeaderFoo (TcpSession* tcpssn)$/;"	f	file:
+TCPHdr	decode.h	/^}TCPHdr;$/;"	t	typeref:struct:_TCPHdr
+TCPOPT_WSCALE	Stream5/snort_stream5_tcp.c	218;"	d	file:
+TCP_HZ	Stream5/stream5_common.h	130;"	d
+TCP_ISFLAGSET	decode.h	13;"	d
+TCP_OFFSET	decode.h	11;"	d
+TCP_OPTLENMAX	Stream5/snort_stream5_tcp.c	219;"	d	file:
+TCP_STATE_CLOSED	Stream5/snort_stream5_tcp.c	127;"	d	file:
+TCP_STATE_CLOSE_WAIT	Stream5/snort_stream5_tcp.c	121;"	d	file:
+TCP_STATE_CLOSING	Stream5/snort_stream5_tcp.c	124;"	d	file:
+TCP_STATE_ESTABLISHED	Stream5/snort_stream5_tcp.c	120;"	d	file:
+TCP_STATE_FIN_WAIT_1	Stream5/snort_stream5_tcp.c	123;"	d	file:
+TCP_STATE_FIN_WAIT_2	Stream5/snort_stream5_tcp.c	125;"	d	file:
+TCP_STATE_LAST_ACK	Stream5/snort_stream5_tcp.c	122;"	d	file:
+TCP_STATE_LISTEN	Stream5/snort_stream5_tcp.c	117;"	d	file:
+TCP_STATE_NONE	Stream5/snort_stream5_tcp.c	116;"	d	file:
+TCP_STATE_SYN_RCVD	Stream5/snort_stream5_tcp.c	118;"	d	file:
+TCP_STATE_SYN_SENT	Stream5/snort_stream5_tcp.c	119;"	d	file:
+TCP_STATE_TIME_WAIT	Stream5/snort_stream5_tcp.c	126;"	d	file:
+TF_ALL	Stream5/snort_stream5_tcp.c	191;"	d	file:
+TF_FIRST_PKT_MISSING	Stream5/snort_stream5_tcp.c	190;"	d	file:
+TF_FORCE_FLUSH	Stream5/snort_stream5_tcp.c	186;"	d	file:
+TF_MISSING_PKT	Stream5/snort_stream5_tcp.c	188;"	d	file:
+TF_MISSING_PREV_PKT	Stream5/snort_stream5_tcp.c	189;"	d	file:
+TF_MSS	Stream5/snort_stream5_tcp.c	185;"	d	file:
+TF_NONE	Stream5/snort_stream5_tcp.c	181;"	d	file:
+TF_PKT_MISSED	Stream5/snort_stream5_tcp.c	187;"	d	file:
+TF_TSTAMP	Stream5/snort_stream5_tcp.c	183;"	d	file:
+TF_TSTAMP_ZERO	Stream5/snort_stream5_tcp.c	184;"	d	file:
+TF_WSCALE	Stream5/snort_stream5_tcp.c	182;"	d	file:
+TH_ACK	Stream5/snort_stream5_tcp.c	109;"	d	file:
+TH_CWR	Stream5/snort_stream5_tcp.c	112;"	d	file:
+TH_ECE	Stream5/snort_stream5_tcp.c	111;"	d	file:
+TH_FIN	Stream5/snort_stream5_tcp.c	105;"	d	file:
+TH_NORESERVED	Stream5/snort_stream5_tcp.c	113;"	d	file:
+TH_PUSH	Stream5/snort_stream5_tcp.c	108;"	d	file:
+TH_RST	Stream5/snort_stream5_tcp.c	107;"	d	file:
+TH_SYN	Stream5/snort_stream5_tcp.c	106;"	d	file:
+TH_URG	Stream5/snort_stream5_tcp.c	110;"	d	file:
+TRH_MR_LEN	decode.h	7;"	d
+TR_ALEN	decode.h	4;"	d
+TcpDataBlock	Stream5/snort_stream5_tcp.c	/^} TcpDataBlock;$/;"	t	typeref:struct:_TcpDataBlock	file:
+TcpSession	Stream5/snort_stream5_tcp.c	/^} TcpSession;$/;"	t	typeref:struct:_TcpSession	file:
+TcpSessionCleanup	Stream5/snort_stream5_tcp.c	/^static void TcpSessionCleanup(Stream5LWSession *lwssn, int freeApplicationData)$/;"	f	file:
+TcpSessionCleanupWithFreeApplicationData	Stream5/snort_stream5_tcp.c	/^static void TcpSessionCleanupWithFreeApplicationData(Stream5LWSession *lwssn)$/;"	f	file:
+TcpSessionClear	Stream5/snort_stream5_tcp.c	/^static void TcpSessionClear (Stream5LWSession* lwssn, TcpSession* tcpssn, int freeApplicationData)$/;"	f	file:
+TcpUpdateDirection	Stream5/snort_stream5_tcp.c	/^void TcpUpdateDirection(Stream5LWSession *ssn, char dir,$/;"	f
+TraceEvent	Stream5/snort_stream5_tcp.c	/^static void TraceEvent ($/;"	f	file:
+TraceSegments	Stream5/snort_stream5_tcp.c	/^static void TraceSegments (const StreamTracker* a)$/;"	f	file:
+TraceSession	Stream5/snort_stream5_tcp.c	/^static void TraceSession (const Stream5LWSession* lws)$/;"	f	file:
+TraceState	Stream5/snort_stream5_tcp.c	/^static void TraceState ($/;"	f	file:
+TraceTCP	Stream5/snort_stream5_tcp.c	/^static void TraceTCP ($/;"	f	file:
+Trh_hdr	decode.h	/^}Trh_hdr;$/;"	t	typeref:struct:_Trh_hdr
+Trh_llc	decode.h	/^}Trh_llc;$/;"	t	typeref:struct:_Trh_llc
+Trh_mr	decode.h	/^}Trh_mr;$/;"	t	typeref:struct:_Trh_mr
+TwoWayTraffic	Stream5/snort_stream5_tcp.c	/^static inline bool TwoWayTraffic (Stream5LWSession* lwssn)$/;"	f	file:
+UDPHdr	decode.h	/^}UDPHdr;$/;"	t	typeref:struct:_UDPHdr
+UNKNOWN_PORT	stream_api.h	115;"	d
+UdpSession	Stream5/snort_stream5_udp.c	/^} UdpSession;$/;"	t	typeref:struct:_UdpSession	file:
+UdpSessionCleanup	Stream5/snort_stream5_udp.c	/^void UdpSessionCleanup(Stream5LWSession *lwssn)$/;"	f
+UdpUpdateDirection	Stream5/snort_stream5_udp.c	/^void UdpUpdateDirection(Stream5LWSession *ssn, char dir,$/;"	f
+UnregisterStreamHAFuncs	Stream5/stream5_ha.c	/^void UnregisterStreamHAFuncs(uint32_t preproc_id, uint8_t subcode)$/;"	f
+UpdateBaseStats	perf-base.c	/^void UpdateBaseStats(SFBASE *sfBase, Packet *p, bool rebuilt)$/;"	f
+UpdateFilteredPacketStats	perf-base.c	/^void UpdateFilteredPacketStats(SFBASE *sfBase, unsigned int proto)$/;"	f
+UpdateFlushMgr	Stream5/snort_stream5_tcp.c	/^static inline void UpdateFlushMgr($/;"	f	file:
+UpdateHAMessageHeaderLength	Stream5/stream5_ha.c	/^static void UpdateHAMessageHeaderLength(uint8_t *msg, uint16_t msglen)$/;"	f	file:
+UpdateIPFragStats	perf-base.c	/^void UpdateIPFragStats(SFBASE *sfBase, int len)$/;"	f
+UpdateIPReassStats	perf-base.c	/^void UpdateIPReassStats(SFBASE *sfBase, int len)$/;"	f
+UpdateMPLSStats	perf-base.c	/^void UpdateMPLSStats(SFBASE *sfBase, int len, int dropped)$/;"	f
+UpdateSession	Stream5/snort_stream5_ip.c	/^static inline void UpdateSession (Packet* p, Stream5LWSession* lws)$/;"	f	file:
+UpdateSsn	Stream5/snort_stream5_tcp.c	/^static inline void UpdateSsn($/;"	f	file:
+UpdateStreamReassStats	perf-base.c	/^void UpdateStreamReassStats(SFBASE *sfBase, int len)$/;"	f
+UpdateWireStats	perf-base.c	/^void UpdateWireStats(SFBASE *sfBase, int len, int dropped, int inject)$/;"	f
+VERSION	Stream5/Makefile	/^VERSION = 2.9.6.1$/;"	m
+ValidMacAddress	Stream5/snort_stream5_tcp.c	/^static inline int ValidMacAddress(StreamTracker *talker,$/;"	f	file:
+ValidRst	Stream5/snort_stream5_tcp.c	/^static inline int ValidRst($/;"	f	file:
+ValidRstSynSent	Stream5/snort_stream5_tcp.c	/^static inline int ValidRstSynSent(StreamTracker *st, TcpDataBlock *tdb)$/;"	f	file:
+ValidSeq	Stream5/snort_stream5_tcp.c	/^static inline int ValidSeq($/;"	f	file:
+ValidTimestamp	Stream5/snort_stream5_tcp.c	/^static inline int ValidTimestamp(StreamTracker *talker,$/;"	f	file:
+VlanTagHdr	decode.h	/^} VlanTagHdr;$/;"	t	typeref:struct:_VlanTagHdr
+Write	Stream5/stream5_ha.c	/^static inline ssize_t Write(int fd, const void *buf, size_t count)$/;"	f	file:
+WriteHAMessageHeader	Stream5/stream5_ha.c	/^static uint32_t WriteHAMessageHeader(uint8_t event, uint16_t msglen, const SessionKey *key, uint8_t *msg)$/;"	f	file:
+WriteHASession	Stream5/stream5_ha.c	/^static uint32_t WriteHASession(Stream5LWSession *lwssn, uint8_t *msg)$/;"	f	file:
+WritePreprocDataRecord	Stream5/stream5_ha.c	/^static uint32_t WritePreprocDataRecord(Stream5LWSession *lwssn, StreamHAFuncsNode *node, uint8_t *msg)$/;"	f	file:
+XCCFLAGS	Stream5/Makefile	/^XCCFLAGS = $/;"	m
+YACC	Stream5/Makefile	/^YACC = bison -y$/;"	m
+_BITOP	stream_api.h	/^typedef struct _BITOP {$/;"	s
+_DECODE_H_	decode.h	2;"	d
+_EtherHdr	decode.h	/^typedef struct _EtherHdr$/;"	s
+_FlushConfig	Stream5/stream5_common.h	/^typedef struct _FlushConfig$/;"	s
+_FlushMgr	Stream5/stream5_common.h	/^typedef struct _FlushMgr$/;"	s
+_FlushPointList	Stream5/stream5_common.h	/^typedef struct _FlushPointList$/;"	s
+_HADebugSessionConstraints	Stream5/stream5_ha.c	/^typedef struct _HADebugSessionConstraints$/;"	s	file:
+_IPHdr	decode.h	/^typedef struct _IPHdr$/;"	s
+_IcmpSession	Stream5/snort_stream5_icmp.c	/^typedef struct _IcmpSession$/;"	s	file:
+_IgnoredRuleList	Stream5/snort_stream5_session.h	/^typedef struct _IgnoredRuleList$/;"	s
+_MEMPOOL_H	mempool.h	25;"	d
+_MemBucket	mempool.h	/^typedef struct _MemBucket$/;"	s
+_MemPool	mempool.h	/^typedef struct _MemPool$/;"	s
+_MsgHeader	Stream5/stream5_ha.c	/^typedef struct _MsgHeader$/;"	s	file:
+_PERFBASE_H	perf-base.h	32;"	d
+_PKTSTATS	perf-base.h	/^typedef struct _PKTSTATS$/;"	s
+_Packet	decode.h	/^typedef struct _Packet$/;"	s
+_PreprocDataHeader	Stream5/stream5_ha.c	/^typedef struct _PreprocDataHeader$/;"	s	file:
+_RecordHeader	Stream5/stream5_ha.c	/^typedef struct _RecordHeader$/;"	s	file:
+_SDListItem	mempool.h	/^typedef struct _SDListItem {$/;"	s
+_SFBASE	perf-base.h	/^typedef struct _SFBASE$/;"	s
+_SFBASE_STATS	perf-base.h	/^typedef struct _SFBASE_STATS {$/;"	s
+_SFHASHFCN	sfhashfcn.h	/^typedef struct _SFHASHFCN {$/;"	s
+_SFXHASH_	sfxhash.h	35;"	d
+_SYSTIMES	perf-base.h	/^typedef struct _SYSTIMES {$/;"	s
+_StateMgr	Stream5/snort_stream5_tcp.c	/^typedef struct _StateMgr$/;"	s	file:
+_Stream5AlertInfo	Stream5/snort_stream5_tcp.c	/^typedef struct _Stream5AlertInfo$/;"	s	file:
+_Stream5AppData	Stream5/stream5_common.h	/^typedef struct _Stream5AppData$/;"	s
+_Stream5Config	Stream5/stream5_common.h	/^typedef struct _Stream5Config$/;"	s
+_Stream5GlobalConfig	Stream5/stream5_common.h	/^typedef struct _Stream5GlobalConfig$/;"	s
+_Stream5HAConfig	Stream5/stream5_common.h	/^typedef struct _Stream5HAConfig$/;"	s
+_Stream5HAState	Stream5/stream5_common.h	/^typedef struct _Stream5HAState$/;"	s
+_Stream5IcmpConfig	Stream5/stream5_common.h	/^typedef struct _Stream5IcmpConfig$/;"	s
+_Stream5IcmpPolicy	Stream5/stream5_common.h	/^typedef struct _Stream5IcmpPolicy$/;"	s
+_Stream5IpConfig	Stream5/stream5_common.h	/^typedef struct _Stream5IpConfig$/;"	s
+_Stream5IpPolicy	Stream5/stream5_common.h	/^typedef struct _Stream5IpPolicy$/;"	s
+_Stream5LWSession	Stream5/stream5_common.h	/^typedef struct _Stream5LWSession$/;"	s
+_Stream5SessionCache	Stream5/snort_stream5_session.h	/^typedef struct _Stream5SessionCache$/;"	s
+_Stream5Stats	Stream5/stream5_common.h	/^typedef struct _Stream5Stats$/;"	s
+_Stream5TcpConfig	Stream5/stream5_common.h	/^typedef struct _Stream5TcpConfig$/;"	s
+_Stream5TcpPolicy	Stream5/stream5_common.h	/^typedef struct _Stream5TcpPolicy$/;"	s
+_Stream5UdpConfig	Stream5/stream5_common.h	/^typedef struct _Stream5UdpConfig$/;"	s
+_Stream5UdpPolicy	Stream5/stream5_common.h	/^typedef struct _Stream5UdpPolicy$/;"	s
+_StreamFlowData	stream_api.h	/^typedef struct _StreamFlowData$/;"	s
+_StreamHAFuncsNode	Stream5/stream5_ha.c	/^typedef struct _StreamHAFuncsNode$/;"	s	file:
+_StreamReassembleRuleOptionData	Stream5/snort_stream5_tcp.c	/^typedef struct _StreamReassembleRuleOptionData$/;"	s	file:
+_StreamSegment	Stream5/snort_stream5_tcp.c	/^typedef struct _StreamSegment$/;"	s	file:
+_StreamSessionKey	stream_api.h	/^typedef struct _StreamSessionKey$/;"	s
+_StreamSessionLimits	stream_api.h	/^typedef struct _StreamSessionLimits$/;"	s
+_StreamSizeOptionData	Stream5/snort_stream5_tcp.c	/^typedef struct _StreamSizeOptionData$/;"	s	file:
+_StreamTracker	Stream5/snort_stream5_tcp.c	/^typedef struct _StreamTracker$/;"	s	file:
+_TCPHdr	decode.h	/^typedef struct _TCPHdr$/;"	s
+_TcpDataBlock	Stream5/snort_stream5_tcp.c	/^typedef struct _TcpDataBlock$/;"	s	file:
+_TcpSession	Stream5/snort_stream5_tcp.c	/^typedef struct _TcpSession$/;"	s	file:
+_Trh_hdr	decode.h	/^typedef struct _Trh_hdr$/;"	s
+_Trh_llc	decode.h	/^typedef struct _Trh_llc$/;"	s
+_Trh_mr	decode.h	/^typedef struct _Trh_mr$/;"	s
+_UDPHdr	decode.h	/^typedef struct _UDPHdr$/;"	s
+_UdpSession	Stream5/snort_stream5_udp.c	/^typedef struct _UdpSession$/;"	s	file:
+_VlanTagHdr	decode.h	/^typedef struct _VlanTagHdr$/;"	s
+__SPP_STREAM5_H__	spp_stream5.h	25;"	d
+__STREAM5_HA_H__	Stream5/stream5_ha.h	37;"	d
+__STREAM5_IP_H__	Stream5/snort_stream5_ip.h	30;"	d
+__STREAM5_PAF_H__	Stream5/stream5_paf.h	32;"	d
+_flush_to_seq	Stream5/snort_stream5_tcp.c	/^static inline int _flush_to_seq ($/;"	f	file:
+_sfxhash	sfxhash.h	/^typedef struct _sfxhash$/;"	s
+_sfxhash_node	sfxhash.h	/^typedef struct _sfxhash_node$/;"	s
+_stream_api	stream_api.h	/^typedef struct _stream_api$/;"	s
+abs_builddir	Stream5/Makefile	/^abs_builddir = \/home\/source_code\/snort-2.9.6.1\/src\/preprocessors\/Stream5$/;"	m
+abs_srcdir	Stream5/Makefile	/^abs_srcdir = \/home\/source_code\/snort-2.9.6.1\/src\/preprocessors\/Stream5$/;"	m
+abs_top_builddir	Stream5/Makefile	/^abs_top_builddir = \/home\/source_code\/snort-2.9.6.1$/;"	m
+abs_top_srcdir	Stream5/Makefile	/^abs_top_srcdir = \/home\/source_code\/snort-2.9.6.1$/;"	m
+ac	decode.h	/^    u_int8_t ac;        \/* access control field *\/$/;"	m	struct:_Trh_hdr
+ac_ct_AR	Stream5/Makefile	/^ac_ct_AR = ar$/;"	m
+ac_ct_CC	Stream5/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_DUMPBIN	Stream5/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ack	Stream5/snort_stream5_tcp.c	/^    uint32_t   ack;$/;"	m	struct:_TcpDataBlock	file:
+activate_paf	stream_api.h	/^    bool (*activate_paf)(void* ssn, bool toServer);$/;"	m	struct:_stream_api
+addRuleToIgnoreList	Stream5/stream5_common.c	/^static void addRuleToIgnoreList(IgnoredRuleList **ppIgnoredRuleList, OptTreeNode *otn)$/;"	f	file:
+add_session_alert	stream_api.h	/^    int (*add_session_alert)(void *, Packet *p, uint32_t, uint32_t);$/;"	m	struct:_stream_api
+addressSpaceId	stream_api.h	/^    uint16_t   addressSpaceId;$/;"	m	struct:_StreamSessionKey
+addressSpaceIdPad1	stream_api.h	/^    uint16_t   addressSpaceIdPad1;$/;"	m	struct:_StreamSessionKey
+address_space_id	Stream5/snort_stream5_tcp.c	/^    uint16_t address_space_id;$/;"	m	struct:_TcpSession	file:
+alert	Stream5/snort_stream5_tcp.c	/^    char alert;$/;"	m	struct:_StreamReassembleRuleOptionData	file:
+alert_count	Stream5/snort_stream5_tcp.c	/^    uint8_t  alert_count;  \/* number alerts stored (up to MAX_SESSION_ALERTS) *\/$/;"	m	struct:_StreamTracker	file:
+alert_flush_stream	stream_api.h	/^    int (*alert_flush_stream)(Packet *);$/;"	m	struct:_stream_api
+alert_inline_midstream_drops	stream_api.h	/^    int (*alert_inline_midstream_drops)(void);$/;"	m	struct:_stream_api
+alerts	Stream5/snort_stream5_tcp.c	/^    Stream5AlertInfo alerts[MAX_SESSION_ALERTS]; \/* history of alerts *\/$/;"	m	struct:_StreamTracker	file:
+alerts_per_second	perf-base.h	/^    double   alerts_per_second;$/;"	m	struct:_SFBASE_STATS
+alt_dsize	decode.h	/^    u_int16_t alt_dsize;    \/* the dsize of a packet before munging$/;"	m	struct:_Packet
+am__aclocal_m4_deps	Stream5/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.in$/;"	m
+am__can_run_installinfo	Stream5/Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Stream5/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Stream5/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__define_uniq_tagged_files	Stream5/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	Stream5/Makefile	/^am__depfiles_maybe =$/;"	m
+am__include	Stream5/Makefile	/^am__include = include$/;"	m
+am__is_gnu_make	Stream5/Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__leading_dot	Stream5/Makefile	/^am__leading_dot = .$/;"	m
+am__libstream5_a_SOURCES_DIST	Stream5/Makefile	/^am__libstream5_a_SOURCES_DIST = snort_stream5_tcp.c \\$/;"	m
+am__make_dryrun	Stream5/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Stream5/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	Stream5/Makefile	/^am__make_running_with_option = \\$/;"	m
+am__quote	Stream5/Makefile	/^am__quote = $/;"	m
+am__tagged_files	Stream5/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tar	Stream5/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__uniquify_input	Stream5/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	Stream5/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__v_AR_	Stream5/Makefile	/^am__v_AR_ = $(am__v_AR_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_AR_0	Stream5/Makefile	/^am__v_AR_0 = @echo "  AR      " $@;$/;"	m
+am__v_AR_1	Stream5/Makefile	/^am__v_AR_1 = $/;"	m
+am__v_CCLD_	Stream5/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	Stream5/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	Stream5/Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	Stream5/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	Stream5/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	Stream5/Makefile	/^am__v_CC_1 = $/;"	m
+am__v_GEN_	Stream5/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Stream5/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Stream5/Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_P_	Stream5/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	Stream5/Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	Stream5/Makefile	/^am__v_P_1 = :$/;"	m
+am__v_at_	Stream5/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Stream5/Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Stream5/Makefile	/^am__v_at_1 = $/;"	m
+am__v_lt_	Stream5/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	Stream5/Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_1	Stream5/Makefile	/^am__v_lt_1 = $/;"	m
+am_libstream5_a_OBJECTS	Stream5/Makefile	/^am_libstream5_a_OBJECTS = snort_stream5_tcp.$(OBJEXT) \\$/;"	m
+anr_count	sfxhash.h	/^  unsigned        anr_count; \/\/\/ # ANR ops performaed$/;"	m	struct:_sfxhash
+anr_flag	sfxhash.h	/^  int             anr_flag;  \/\/\/ 0=off, !0=on$/;"	m	struct:_sfxhash
+anr_tries	sfxhash.h	/^  unsigned        anr_tries;$/;"	m	struct:_sfxhash
+anrfree	sfxhash.c	/^int anrfree( void * key, void * data )$/;"	f
+anrfree	sfxhash.h	/^  int (*anrfree)( void * key, void * data );$/;"	m	struct:_sfxhash
+appDataList	Stream5/stream5_common.h	/^    Stream5AppData *appDataList;$/;"	m	struct:_Stream5LWSession
+application_protocol	Stream5/stream5_common.h	/^    int16_t    application_protocol;$/;"	m	struct:_Stream5HAState
+attribute_table_reloads	perf-base.h	/^    uint64_t   attribute_table_reloads;$/;"	m	struct:_SFBASE_STATS
+auto_disable	Stream5/stream5_common.h	/^    uint8_t    auto_disable;$/;"	m	struct:_FlushMgr
+auto_on	Stream5/stream5_paf.c	/^    uint8_t auto_on;$/;"	m	struct:__anon17	file:
+avg_bytes_per_ipfrag_packet	perf-base.h	/^    int      avg_bytes_per_ipfrag_packet;$/;"	m	struct:_SFBASE_STATS
+avg_bytes_per_ipreass_packet	perf-base.h	/^    int      avg_bytes_per_ipreass_packet;$/;"	m	struct:_SFBASE_STATS
+avg_bytes_per_mpls_packet	perf-base.h	/^    int      avg_bytes_per_mpls_packet;$/;"	m	struct:_SFBASE_STATS
+avg_bytes_per_packet	perf-base.h	/^    int      avg_bytes_per_packet;$/;"	m	struct:_SFBASE_STATS
+avg_bytes_per_rebuilt_packet	perf-base.h	/^    int      avg_bytes_per_rebuilt_packet;$/;"	m	struct:_SFBASE_STATS
+avg_bytes_per_wire_packet	perf-base.h	/^    int      avg_bytes_per_wire_packet;$/;"	m	struct:_SFBASE_STATS
+bcast_len_dir_lf_res	decode.h	/^    u_int16_t bcast_len_dir_lf_res;$/;"	m	struct:_Trh_mr
+bindir	Stream5/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+boFlowbits	stream_api.h	/^    BITOP boFlowbits;$/;"	m	struct:_StreamFlowData
+boInitStaticBITOP	Stream5/snort_stream5_session.c	/^static inline int boInitStaticBITOP(BITOP *BitOp,int iBytes,unsigned char *buf)$/;"	f	file:
+bound_addrs	Stream5/stream5_common.h	/^    IpAddrSet   *bound_addrs;$/;"	m	struct:_Stream5UdpPolicy
+bucketpool	mempool.h	/^    MemBucket *bucketpool; \/* memory buffer *\/$/;"	m	struct:_MemPool
+buf	decode.c	/^char buf[20];$/;"	v
+buffered	Stream5/snort_stream5_tcp.c	/^    uint8_t    buffered;$/;"	m	struct:_StreamSegment	file:
+build	Stream5/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	Stream5/Makefile	/^build_alias = $/;"	m
+build_cpu	Stream5/Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Stream5/Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Stream5/Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	Stream5/Makefile	/^build_vendor = unknown$/;"	m
+builddir	Stream5/Makefile	/^builddir = .$/;"	m
+bzero	decode.h	12;"	d
+caplen	Stream5/snort_stream5_tcp.c	/^    uint32_t caplen;$/;"	m	struct:_StreamSegment	file:
+caplen	decode.h	/^    u_int32_t caplen;$/;"	m	struct:_Packet
+capturePk	decode.c	/^void capturePk()$/;"	f
+cb_mask	Stream5/stream5_paf.c	/^    uint8_t cb_mask;$/;"	m	struct:__anon17	file:
+cb_mask	Stream5/stream5_paf.h	/^    uint8_t cb_mask; \/\/ callback mask$/;"	m	struct:__anon15
+checkCacheFlowTimeout	Stream5/snort_stream5_session.c	/^static void checkCacheFlowTimeout(uint32_t flowCount, time_t cur_time, Stream5SessionCache *cache)$/;"	f	file:
+checkLWSessionTimeout	Stream5/snort_stream5_session.c	/^void checkLWSessionTimeout(uint32_t flowCount, time_t cur_time)$/;"	f
+check_session_alerted	stream_api.h	/^    int (*check_session_alerted)(void *, Packet *p, uint32_t, uint32_t);$/;"	m	struct:_stream_api
+check_session_closed	stream_api.h	/^    void (*check_session_closed)(Packet *);$/;"	m	struct:_stream_api
+cleanup_fcn	Stream5/snort_stream5_session.h	/^    Stream5SessionCleanup cleanup_fcn;$/;"	m	struct:_Stream5SessionCache
+cleanup_sessions	Stream5/snort_stream5_session.h	/^    uint32_t cleanup_sessions;$/;"	m	struct:_Stream5SessionCache
+clear_extra_data	stream_api.h	/^    void (*clear_extra_data)(void*, Packet *, uint32_t);$/;"	m	struct:_stream_api
+client	Stream5/snort_stream5_tcp.c	/^    StreamTracker client;$/;"	m	struct:_TcpSession	file:
+client	Stream5/stream5_common.h	/^    FlushMgr client;$/;"	m	struct:_FlushConfig
+client_ip	Stream5/stream5_common.h	/^    snort_ip    client_ip; \/\/ FIXTHIS family and bits should be changed to uint16_t$/;"	m	struct:_Stream5LWSession
+client_port	Stream5/stream5_common.h	/^    uint16_t    client_port;$/;"	m	struct:_Stream5LWSession
+cnode	sfxhash.h	/^  SFXHASH_NODE  * cnode;   \/\/\/ findfirst\/next node ptr$/;"	m	struct:_sfxhash
+config	Stream5/stream5_common.h	/^    tSfPolicyUserContextId config;$/;"	m	struct:_Stream5LWSession
+consume	Stream5/stream5_ha.c	/^    StreamHAConsumerFunc consume;$/;"	m	struct:_StreamHAFuncsNode	file:
+consumed	Stream5/stream5_ha.c	/^    uint32_t consumed;$/;"	m	struct:_StreamHAFuncsNode	file:
+count	sfxhash.h	/^  unsigned        count;     \/\/\/ total # nodes in table$/;"	m	struct:_sfxhash
+create_session	Stream5/stream5_ha.h	/^    f_ha_create_session create_session;$/;"	m	struct:__anon9
+crow	sfxhash.h	/^  unsigned        crow;    \/\/\/ findfirst\/next row in table$/;"	m	struct:_sfxhash
+csum_flags	decode.h	/^    u_int8_t csum_flags;        \/* checksum flags *\/$/;"	m	struct:_Packet
+curr_tcp_sessions_closing	perf-base.h	/^    uint64_t   curr_tcp_sessions_closing;$/;"	m	struct:_SFBASE_STATS
+curr_tcp_sessions_established	perf-base.h	/^    uint64_t   curr_tcp_sessions_established;$/;"	m	struct:_SFBASE_STATS
+curr_tcp_sessions_initializing	perf-base.h	/^    uint64_t   curr_tcp_sessions_initializing;$/;"	m	struct:_SFBASE_STATS
+current	Stream5/stream5_common.h	/^    uint8_t    current;$/;"	m	struct:_FlushPointList
+current_attribute_hosts	perf-base.h	/^    uint64_t   current_attribute_hosts;$/;"	m	struct:_SFBASE_STATS
+current_frags	perf-base.h	/^    uint64_t current_frags;$/;"	m	struct:_SFBASE_STATS
+daddr	decode.h	/^    u_int8_t daddr[TR_ALEN];    \/* src address *\/$/;"	m	struct:_Trh_hdr
+daq_flags	Stream5/snort_stream5_tcp.c	/^    uint32_t daq_flags;     \/* Flags for the packet (DAQ_PKT_FLAG_*) *\/$/;"	m	struct:_TcpSession	file:
+data	Stream5/snort_stream5_tcp.c	/^    uint8_t    *data;$/;"	m	struct:_StreamSegment	file:
+data	decode.h	/^    const u_int8_t *data;         \/* packet payload pointer *\/$/;"	m	struct:_Packet
+data	mempool.h	/^	void* data;$/;"	m	struct:_SDListItem
+data	mempool.h	/^    void *data;$/;"	m	struct:_MemBucket
+data	sfxhash.h	/^  void * data;  \/\/\/ Pointer to the users data, this is not copied !$/;"	m	struct:_sfxhash_node
+dataPointer	Stream5/stream5_common.h	/^    void        *dataPointer;$/;"	m	struct:_Stream5AppData
+datadir	Stream5/Makefile	/^datadir = ${datarootdir}$/;"	m
+datapool	mempool.h	/^    void **datapool; \/* memory buffer for MemBucket->data *\/$/;"	m	struct:_MemPool
+datarootdir	Stream5/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datasize	sfxhash.h	/^  int             datasize;  \/\/\/ bytes in key, if == 0 -> user data$/;"	m	struct:_sfxhash
+deactivate_session	Stream5/stream5_ha.h	/^    f_ha_deactivate_session deactivate_session;$/;"	m	struct:__anon9
+decodeEthPkt	decode.c	/^void decodeEthPkt(Packet *p, const struct pcap_pkthdr* pkthdr, const u_int8_t* pkt)$/;"	f
+default_policy	Stream5/stream5_common.h	/^    Stream5IcmpPolicy default_policy;$/;"	m	struct:_Stream5IcmpConfig
+default_policy	Stream5/stream5_common.h	/^    Stream5IpPolicy default_policy;$/;"	m	struct:_Stream5IpConfig
+default_policy	Stream5/stream5_common.h	/^    Stream5TcpPolicy *default_policy;$/;"	m	struct:_Stream5TcpConfig
+default_policy	Stream5/stream5_common.h	/^    Stream5UdpPolicy *default_policy;$/;"	m	struct:_Stream5UdpConfig
+default_ports	Stream5/snort_stream5_tcp.c	/^int default_ports[] =$/;"	v
+default_protocols	Stream5/snort_stream5_tcp.c	/^char *default_protocols[] =$/;"	v
+delete_messages_not_sent	Stream5/stream5_ha.c	/^    uint32_t delete_messages_not_sent;$/;"	m	struct:__anon14	file:
+delete_messages_received	Stream5/stream5_ha.c	/^    uint32_t delete_messages_received;$/;"	m	struct:__anon14	file:
+delete_messages_sent	Stream5/stream5_ha.c	/^    uint32_t delete_messages_sent;$/;"	m	struct:__anon14	file:
+delete_session	Stream5/stream5_ha.h	/^    f_ha_delete_session delete_session;$/;"	m	struct:__anon9
+deleted_sessions_per_second	perf-base.h	/^    double   deleted_sessions_per_second;$/;"	m	struct:_SFBASE_STATS
+deleted_udp_sessions_per_second	perf-base.h	/^    double   deleted_udp_sessions_per_second;$/;"	m	struct:_SFBASE_STATS
+depcomp	Stream5/Makefile	/^depcomp =$/;"	m
+df	decode.h	/^    u_int8_t df;            \/* don't fragment flag *\/$/;"	m	struct:_Packet
+dip	Stream5/stream5_ha.c	/^    sfip_t dip;$/;"	m	struct:_HADebugSessionConstraints	file:
+direction	Stream5/snort_stream5_tcp.c	/^    char direction;$/;"	m	struct:_StreamReassembleRuleOptionData	file:
+direction	Stream5/snort_stream5_tcp.c	/^    char direction;$/;"	m	struct:_StreamSizeOptionData	file:
+direction	Stream5/stream5_common.h	/^    char       direction;$/;"	m	struct:_Stream5HAState
+disabled	Stream5/stream5_common.h	/^    char       disabled;$/;"	m	struct:_Stream5GlobalConfig
+docdir	Stream5/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE}$/;"	m
+dp	decode.h	/^    u_int16_t dp;           \/* dest port (TCP\/UDP) *\/$/;"	m	struct:_Packet
+dport	Stream5/stream5_ha.c	/^    uint16_t dport;$/;"	m	struct:_HADebugSessionConstraints	file:
+drop_packet	stream_api.h	/^    void (*drop_packet)(Packet *);$/;"	m	struct:_stream_api
+drop_traffic	stream_api.h	/^    void (*drop_traffic)(Packet *, void *, char);$/;"	m	struct:_stream_api
+dsap	decode.h	/^    u_int8_t dsap;$/;"	m	struct:_Trh_llc
+dsize	decode.h	/^    u_int16_t dsize;        \/* packet payload size *\/$/;"	m	struct:_Packet
+dummy	Stream5/stream5_common.h	/^    uint8_t dummy;  \/* For alignment *\/$/;"	m	struct:_Stream5UdpConfig
+dvidir	Stream5/Makefile	/^dvidir = ${docdir}$/;"	m
+echo_count	Stream5/snort_stream5_icmp.c	/^    uint32_t   echo_count;$/;"	m	struct:_IcmpSession	file:
+ecn	Stream5/snort_stream5_tcp.c	/^    uint8_t ecn;$/;"	m	struct:_TcpSession	file:
+egress_group	Stream5/snort_stream5_tcp.c	/^    int32_t egress_group;   \/* Index of the outbound group. *\/$/;"	m	struct:_TcpSession	file:
+egress_index	Stream5/snort_stream5_tcp.c	/^    int32_t egress_index;   \/* Index of the outbound interface. *\/$/;"	m	struct:_TcpSession	file:
+eh	decode.h	/^    const EtherHdr *eh;               \/* standard TCP\/IP\/Ethernet\/ARP headers *\/$/;"	m	struct:_Packet
+enable	Stream5/snort_stream5_tcp.c	/^    char enable;$/;"	m	struct:_StreamReassembleRuleOptionData	file:
+enable_ha	Stream5/stream5_common.h	/^    char       enable_ha;$/;"	m	struct:_Stream5GlobalConfig
+end_seq	Stream5/snort_stream5_tcp.c	/^    uint32_t   end_seq;$/;"	m	struct:_TcpDataBlock	file:
+ether_dst	decode.h	/^    u_int8_t ether_dst[6];$/;"	m	struct:_EtherHdr
+ether_src	decode.h	/^    u_int8_t ether_src[6];$/;"	m	struct:_EtherHdr
+ether_type	decode.h	/^    u_int16_t ether_type;$/;"	m	struct:_EtherHdr
+ethertype	decode.h	/^    u_int8_t ethertype;$/;"	m	struct:_Trh_llc
+event	Stream5/stream5_ha.c	/^    uint8_t event;$/;"	m	struct:_MsgHeader	file:
+event_id	Stream5/snort_stream5_tcp.c	/^    uint32_t event_id;$/;"	m	struct:_Stream5AlertInfo	file:
+event_second	Stream5/snort_stream5_tcp.c	/^    uint32_t event_second;$/;"	m	struct:_Stream5AlertInfo	file:
+events	Stream5/stream5_common.h	/^    uint32_t   events;$/;"	m	struct:_Stream5Stats
+exec_prefix	Stream5/Makefile	/^exec_prefix = ${prefix}$/;"	m
+expected_flags	Stream5/snort_stream5_tcp.c	/^    uint8_t    expected_flags;$/;"	m	struct:_StateMgr	file:
+expire_session	stream_api.h	/^    void (*expire_session)(void *);$/;"	m	struct:_stream_api
+expire_time	Stream5/stream5_common.h	/^    uint64_t   expire_time;$/;"	m	struct:_Stream5LWSession
+extra_data_config	spp_stream5.c	/^void *extra_data_config = NULL;$/;"	v
+extra_data_log	spp_stream5.c	/^LogExtraData extra_data_log = NULL;$/;"	v
+extra_incl	Stream5/Makefile	/^extra_incl = -I\/usr\/include\/pcap$/;"	m
+f_ha_create_session	Stream5/stream5_ha.h	/^typedef Stream5LWSession *(*f_ha_create_session) (const SessionKey *);$/;"	t
+f_ha_deactivate_session	Stream5/stream5_ha.h	/^typedef void (*f_ha_deactivate_session) (Stream5LWSession *);$/;"	t
+f_ha_delete_session	Stream5/stream5_ha.h	/^typedef int (*f_ha_delete_session) (const SessionKey *);$/;"	t
+f_ha_get_lws	Stream5/stream5_ha.h	/^typedef Stream5LWSession *(*f_ha_get_lws) (const SessionKey *);$/;"	t
+family	decode.h	/^	int family;$/;"	m	struct:_Packet
+fastpath	Stream5/snort_stream5_tcp.c	/^    char fastpath;$/;"	m	struct:_StreamReassembleRuleOptionData	file:
+fc	decode.h	/^    u_int8_t fc;        \/* frame control field *\/$/;"	m	struct:_Trh_hdr
+fhead	sfxhash.h	/^  SFXHASH_NODE  * fhead, * ftail;  \/\/\/ list of free nodes, which are recyled$/;"	m	struct:_sfxhash
+file_io_buffer	Stream5/stream5_ha.c	/^static uint8_t file_io_buffer[UINT16_MAX];$/;"	v	file:
+filtered	Stream5/stream5_common.h	/^    uint32_t  filtered;$/;"	m	struct:__anon10
+final	sfhashfcn.h	46;"	d
+find_fail	sfxhash.h	/^  unsigned        find_fail;$/;"	m	struct:_sfxhash
+find_success	sfxhash.h	/^  unsigned        find_success;$/;"	m	struct:_sfxhash
+firstPacketTime	spp_stream5.c	/^uint32_t firstPacketTime = 0;$/;"	v
+flags	Stream5/snort_stream5_session.h	/^    uint32_t flags;$/;"	m	struct:_Stream5SessionCache
+flags	Stream5/snort_stream5_tcp.c	/^    uint16_t  flags;        \/* bitmap flags (TF_xxx) *\/$/;"	m	struct:_StreamTracker	file:
+flags	Stream5/stream5_common.h	/^    uint16_t   flags;$/;"	m	struct:_Stream5TcpPolicy
+flags	Stream5/stream5_common.h	/^    uint16_t   flags;$/;"	m	struct:_Stream5UdpPolicy
+flags	Stream5/stream5_common.h	/^    uint32_t   flags;$/;"	m	struct:_Stream5GlobalConfig
+flags	Stream5/stream5_ha.c	/^    uint8_t flags;$/;"	m	struct:__anon13	file:
+flow	decode.h	/^    void *flow;             \/* for flow info *\/$/;"	m	struct:_Packet
+flowb	stream_api.h	/^    unsigned char flowb[1];$/;"	m	struct:_StreamFlowData
+flowdata	Stream5/stream5_common.h	/^    MemBucket *flowdata; \/* add flowbits *\/$/;"	m	struct:_Stream5LWSession
+flush_ackd	Stream5/snort_stream5_tcp.c	/^static inline int flush_ackd($/;"	f	file:
+flush_base	Stream5/stream5_common.h	/^    uint32_t   flush_base;  \/* Set as value - range\/2 *\/$/;"	m	struct:_FlushPointList
+flush_count	Stream5/snort_stream5_tcp.c	/^    uint32_t flush_count;        \/* number of flushed queued segments *\/$/;"	m	struct:_StreamTracker	file:
+flush_factor	Stream5/stream5_common.h	/^    uint16_t   flush_factor;$/;"	m	struct:_Stream5TcpPolicy
+flush_mgr	Stream5/snort_stream5_tcp.c	/^    FlushMgr  flush_mgr;    \/* please flush twice, it's a long way to$/;"	m	struct:_StreamTracker	file:
+flush_pdu_ackd	Stream5/snort_stream5_tcp.c	/^static inline uint32_t flush_pdu_ackd ($/;"	f	file:
+flush_pdu_ips	Stream5/snort_stream5_tcp.c	/^static inline uint32_t flush_pdu_ips ($/;"	f	file:
+flush_points	Stream5/stream5_common.h	/^    uint32_t *flush_points;$/;"	m	struct:_FlushPointList
+flush_policy	Stream5/stream5_common.h	/^    uint8_t    flush_policy;$/;"	m	struct:_FlushMgr
+flush_policy_names	Stream5/snort_stream5_tcp.c	/^static char *flush_policy_names[] = {$/;"	v	file:
+flush_pt	Stream5/stream5_common.h	/^    uint32_t   flush_pt;$/;"	m	struct:_FlushMgr
+flush_range	Stream5/stream5_common.h	/^    uint32_t   flush_range;$/;"	m	struct:_FlushPointList
+flush_stream	Stream5/snort_stream5_tcp.c	/^static inline int flush_stream($/;"	f	file:
+flush_to_seq	Stream5/snort_stream5_tcp.c	/^static inline int flush_to_seq($/;"	f	file:
+flush_type	Stream5/stream5_common.h	/^    uint8_t    flush_type;$/;"	m	struct:_FlushMgr
+flushxt	Stream5/snort_stream5_tcp.c	/^static const char* flushxt[] = {$/;"	v	file:
+fpt	Stream5/stream5_paf.h	/^    uint32_t fpt;    \/\/ current flush point$/;"	m	struct:__anon15
+frag3_mem_in_use	perf-base.h	/^    uint64_t   frag3_mem_in_use;$/;"	m	struct:_SFBASE
+frag3_mem_in_use	perf-base.h	/^    uint64_t   frag3_mem_in_use;$/;"	m	struct:_SFBASE_STATS
+frag_autofrees_per_second	perf-base.h	/^    double frag_autofrees_per_second;$/;"	m	struct:_SFBASE_STATS
+frag_completes_per_second	perf-base.h	/^    double frag_completes_per_second;$/;"	m	struct:_SFBASE_STATS
+frag_creates_per_second	perf-base.h	/^    double frag_creates_per_second;$/;"	m	struct:_SFBASE_STATS
+frag_deletes_per_second	perf-base.h	/^    double frag_deletes_per_second;$/;"	m	struct:_SFBASE_STATS
+frag_faults	perf-base.h	/^    uint64_t frag_faults;$/;"	m	struct:_SFBASE_STATS
+frag_flag	decode.h	/^    u_int8_t frag_flag;     \/* flag to indicate a fragmented packet *\/$/;"	m	struct:_Packet
+frag_flushes_per_second	perf-base.h	/^    double frag_flushes_per_second;$/;"	m	struct:_SFBASE_STATS
+frag_inserts_per_second	perf-base.h	/^    double frag_inserts_per_second;$/;"	m	struct:_SFBASE_STATS
+frag_offset	decode.h	/^    u_int16_t frag_offset;  \/* fragment offset number *\/$/;"	m	struct:_Packet
+frag_timeouts	perf-base.h	/^    uint64_t frag_timeouts;$/;"	m	struct:_SFBASE_STATS
+freeFunc	Stream5/stream5_common.h	/^    StreamAppDataFree freeFunc;$/;"	m	struct:_Stream5AppData
+free_list	mempool.h	/^    sfSDList free_list;$/;"	m	struct:_MemPool
+ftail	sfxhash.h	/^  SFXHASH_NODE  * fhead, * ftail;  \/\/\/ list of free nodes, which are recyled$/;"	m	struct:_sfxhash
+g_static_points	Stream5/snort_stream5_tcp.c	/^static uint32_t g_static_points[RAND_FLUSH_POINTS] =$/;"	v	file:
+getProtocolName	Stream5/stream5_common.c	/^static inline char * getProtocolName (int protocol)$/;"	f	file:
+getSegmentFlushSize	Stream5/snort_stream5_tcp.c	/^static inline unsigned int getSegmentFlushSize($/;"	f	file:
+get_application_data	stream_api.h	/^    void *(*get_application_data)(void *, uint32_t);$/;"	m	struct:_stream_api
+get_application_data_from_ip_port	stream_api.h	/^    void *(*get_application_data_from_ip_port)(snort_ip_p, uint16_t, snort_ip_p, uint16_t, char, uint16_t, uint32_t, uint16_t, uint32_t);$/;"	m	struct:_stream_api
+get_application_data_from_key	stream_api.h	/^    void *(*get_application_data_from_key)(const StreamSessionKey *, uint32_t);$/;"	m	struct:_stream_api
+get_application_protocol_id	stream_api.h	/^    int16_t (*get_application_protocol_id)(void *);$/;"	m	struct:_stream_api
+get_config	Stream5/stream5_paf.c	/^static PAF_Config* get_config (struct _SnortConfig *sc, tSfPolicyId pid)$/;"	f	file:
+get_flow_data	stream_api.h	/^    StreamFlowData *(*get_flow_data)(Packet *p);$/;"	m	struct:_stream_api
+get_flush_point	stream_api.h	/^    uint32_t (*get_flush_point)(void *, char);$/;"	m	struct:_stream_api
+get_ignore_direction	stream_api.h	/^    int (*get_ignore_direction)(void *);$/;"	m	struct:_stream_api
+get_key_from_session_ptr	stream_api.h	/^    const StreamSessionKey *(*get_key_from_session_ptr)(const void *);$/;"	m	struct:_stream_api
+get_lws	Stream5/stream5_ha.h	/^    f_ha_get_lws get_lws;$/;"	m	struct:__anon9
+get_max_session_limits	stream_api.h	/^    void (*get_max_session_limits)(struct _SnortConfig *sc, tSfPolicyId, StreamSessionLimits*);$/;"	m	struct:_stream_api
+get_packet_direction	stream_api.h	/^    uint32_t (*get_packet_direction)(Packet *);$/;"	m	struct:_stream_api
+get_paf_user_data	stream_api.h	/^    void** (*get_paf_user_data)(void* ssnptr, bool toServer);$/;"	m	struct:_stream_api
+get_preprocessor_status_bit	stream_api.h	/^    uint16_t (*get_preprocessor_status_bit)(void);$/;"	m	struct:_stream_api
+get_q_footprint	Stream5/snort_stream5_tcp.c	/^static inline uint32_t get_q_footprint(StreamTracker *st)$/;"	f	file:
+get_q_sequenced	Stream5/snort_stream5_tcp.c	/^static inline uint32_t get_q_sequenced(StreamTracker *st)$/;"	f	file:
+get_reassembly_direction	stream_api.h	/^    char (*get_reassembly_direction)(void *);$/;"	m	struct:_stream_api
+get_reassembly_flush_policy	stream_api.h	/^    char (*get_reassembly_flush_policy)(void *, char);$/;"	m	struct:_stream_api
+get_session_flags	stream_api.h	/^    uint32_t (*get_session_flags)(void *);$/;"	m	struct:_stream_api
+get_session_ip_address	stream_api.h	/^     snort_ip_p  (*get_session_ip_address)(void *, uint32_t);$/;"	m	struct:_stream_api
+get_session_key	stream_api.h	/^    StreamSessionKey *(*get_session_key)(Packet *);$/;"	m	struct:_stream_api
+get_session_ptr_from_ip_port	stream_api.h	/^    void *(*get_session_ptr_from_ip_port)(snort_ip_p, uint16_t, snort_ip_p, uint16_t, char, uint16_t, uint32_t, uint16_t);$/;"	m	struct:_stream_api
+get_session_ttl	stream_api.h	/^    uint8_t (*get_session_ttl)(void *ssnptr, char direction, int outer);$/;"	m	struct:_stream_api
+get_xtra_data_map	stream_api.h	/^    uint32_t (*get_xtra_data_map)(LogFunction **);$/;"	m	struct:_stream_api
+ghead	sfxhash.h	/^  SFXHASH_NODE  * ghead, * gtail;  \/\/\/ global - root of all nodes allocated in table$/;"	m	struct:_sfxhash
+gid	Stream5/snort_stream5_tcp.c	/^    uint32_t gid;$/;"	m	struct:_Stream5AlertInfo	file:
+global_config	Stream5/stream5_common.h	/^    Stream5GlobalConfig *global_config;$/;"	m	struct:_Stream5Config
+gnext	sfxhash.h	/^  struct _sfxhash_node * gnext, * gprev; \/\/\/ global node list - used for ageing nodes$/;"	m	struct:_sfxhash_node	typeref:struct:_sfxhash_node::_sfxhash_node
+gprev	sfxhash.h	/^  struct _sfxhash_node * gnext, * gprev; \/\/\/ global node list - used for ageing nodes$/;"	m	struct:_sfxhash_node	typeref:struct:_sfxhash_node::
+gtail	sfxhash.h	/^  SFXHASH_NODE  * ghead, * gtail;  \/\/\/ global - root of all nodes allocated in table$/;"	m	struct:_sfxhash
+ha_config	Stream5/stream5_common.h	/^    Stream5HAConfig *ha_config;$/;"	m	struct:_Stream5Config
+ha_flags	Stream5/stream5_common.h	/^    uint8_t         ha_flags;$/;"	m	struct:_Stream5LWSession
+ha_get_api	Stream5/stream5_ha.c	/^static inline const HA_Api *ha_get_api(unsigned proto)$/;"	f	file:
+ha_ip_api	Stream5/snort_stream5_ip.c	/^static HA_Api ha_ip_api = {$/;"	v	file:
+ha_next_update	Stream5/stream5_common.h	/^    struct timeval  ha_next_update;$/;"	m	struct:_Stream5LWSession	typeref:struct:_Stream5LWSession::timeval
+ha_pending_mask	Stream5/stream5_common.h	/^    uint8_t         ha_pending_mask;$/;"	m	struct:_Stream5LWSession
+ha_set_api	Stream5/stream5_ha.c	/^int ha_set_api(unsigned proto, const HA_Api *api)$/;"	f
+ha_state	Stream5/stream5_common.h	/^    Stream5HAState ha_state;$/;"	m	struct:_Stream5LWSession
+ha_state	Stream5/stream5_ha.c	/^    Stream5HAState ha_state;$/;"	m	struct:__anon13	file:
+ha_tcp_api	Stream5/snort_stream5_tcp.c	/^static HA_Api ha_tcp_api = {$/;"	v	file:
+ha_udp_api	Stream5/snort_stream5_udp.c	/^static HA_Api ha_udp_api = {$/;"	v	file:
+handler	Stream5/stream5_common.h	/^    uint8_t     handler[SE_MAX];$/;"	m	struct:_Stream5LWSession
+hardener	sfhashfcn.h	/^ unsigned hardener;$/;"	m	struct:_SFHASHFCN
+hashTable	Stream5/snort_stream5_session.h	/^    SFXHASH *hashTable;$/;"	m	struct:_Stream5SessionCache
+hashmask	sfxhash.c	594;"	d	file:
+hashsize	sfxhash.c	593;"	d	file:
+host	Stream5/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	Stream5/Makefile	/^host_alias = $/;"	m
+host_cpu	Stream5/Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Stream5/Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Stream5/Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_vendor	Stream5/Makefile	/^host_vendor = unknown$/;"	m
+hs_timeout	Stream5/stream5_common.h	/^    uint32_t   hs_timeout;$/;"	m	struct:_Stream5TcpPolicy
+htmldir	Stream5/Makefile	/^htmldir = ${docdir}$/;"	m
+iAlerts	perf-base.h	/^    uint64_t   iAlerts;$/;"	m	struct:_SFBASE
+iAttributeHosts	perf-base.h	/^    uint64_t   iAttributeHosts;$/;"	m	struct:_SFBASE
+iAttributeReloads	perf-base.h	/^    uint64_t   iAttributeReloads;$/;"	m	struct:_SFBASE
+iClosedSessions	perf-base.h	/^    uint64_t   iClosedSessions;$/;"	m	struct:_SFBASE
+iCurrentFrags	perf-base.h	/^    uint64_t   iCurrentFrags;$/;"	m	struct:_SFBASE
+iDeletedSessions	perf-base.h	/^    uint64_t   iDeletedSessions;$/;"	m	struct:_SFBASE
+iDeletedUDPSessions	perf-base.h	/^    uint64_t   iDeletedUDPSessions;$/;"	m	struct:_SFBASE
+iDroppedAsyncSessions	perf-base.h	/^    uint64_t   iDroppedAsyncSessions;$/;"	m	struct:_SFBASE
+iFragAutoFrees	perf-base.h	/^    uint64_t   iFragAutoFrees;  \/* # of times we auto free a FragTracker *\/$/;"	m	struct:_SFBASE
+iFragCompletes	perf-base.h	/^    uint64_t   iFragCompletes;  \/* # of times we call FragIsComplete() *\/$/;"	m	struct:_SFBASE
+iFragCreates	perf-base.h	/^    uint64_t   iFragCreates;    \/* # of times we call Frag3NewTracker() *\/$/;"	m	struct:_SFBASE
+iFragDeletes	perf-base.h	/^    uint64_t   iFragDeletes;    \/* # of times we call Frag3RemoveTracker() *\/$/;"	m	struct:_SFBASE
+iFragFaults	perf-base.h	/^    uint64_t   iFragFaults;     \/* # of times we've run out of memory *\/$/;"	m	struct:_SFBASE
+iFragFlushes	perf-base.h	/^    uint64_t   iFragFlushes;    \/* # of times we call Frag3Rebuild() *\/$/;"	m	struct:_SFBASE
+iFragInserts	perf-base.h	/^    uint64_t   iFragInserts;    \/* # of fraginserts *\/$/;"	m	struct:_SFBASE
+iFragTimeouts	perf-base.h	/^    uint64_t   iFragTimeouts;   \/* # of times we've reached timeout *\/$/;"	m	struct:_SFBASE
+iMaxFrags	perf-base.h	/^    uint64_t   iMaxFrags;$/;"	m	struct:_SFBASE
+iMaxSessions	perf-base.h	/^    uint64_t   iMaxSessions;$/;"	m	struct:_SFBASE
+iMaxSessionsInterval	perf-base.h	/^    uint64_t   iMaxSessionsInterval;$/;"	m	struct:_SFBASE
+iMaxUDPSessions	perf-base.h	/^    uint64_t   iMaxUDPSessions;$/;"	m	struct:_SFBASE
+iMidStreamSessions	perf-base.h	/^    uint64_t   iMidStreamSessions;$/;"	m	struct:_SFBASE
+iNames	perf-base.c	/^static const char* iNames[PERF_COUNT_MAX] = {$/;"	v	file:
+iNewSessions	perf-base.h	/^    uint64_t   iNewSessions;$/;"	m	struct:_SFBASE
+iNewUDPSessions	perf-base.h	/^    uint64_t   iNewUDPSessions;$/;"	m	struct:_SFBASE
+iPegs	perf-base.h	/^    uint64_t   iPegs[PERF_COUNT_MAX];$/;"	m	struct:_SFBASE
+iPrunedSessions	perf-base.h	/^    uint64_t   iPrunedSessions;$/;"	m	struct:_SFBASE
+iSessionsClosing	perf-base.h	/^    uint64_t   iSessionsClosing;$/;"	m	struct:_SFBASE
+iSessionsEstablished	perf-base.h	/^    uint64_t   iSessionsEstablished;$/;"	m	struct:_SFBASE
+iSessionsInitializing	perf-base.h	/^    uint64_t   iSessionsInitializing;$/;"	m	struct:_SFBASE
+iStreamFaults	perf-base.h	/^    uint64_t   iStreamFaults;  \/* # of times we run out of memory *\/$/;"	m	struct:_SFBASE
+iStreamFlushes	perf-base.h	/^    uint64_t   iStreamFlushes;  \/* # of fake packet is flushed *\/$/;"	m	struct:_SFBASE
+iStreamTimeouts	perf-base.h	/^    uint64_t   iStreamTimeouts; \/* # of timeouts we get in this quanta *\/$/;"	m	struct:_SFBASE
+iSynAcks	perf-base.h	/^    uint64_t   iSynAcks;   \/* better estimator  *\/$/;"	m	struct:_SFBASE
+iSyns	perf-base.h	/^    uint64_t   iSyns;      \/* SYNS != Connections *\/$/;"	m	struct:_SFBASE
+iTotalSessions	perf-base.h	/^    uint64_t   iTotalSessions;$/;"	m	struct:_SFBASE
+iTotalUDPSessions	perf-base.h	/^    uint64_t   iTotalUDPSessions;$/;"	m	struct:_SFBASE
+icmp_config	Stream5/stream5_common.h	/^    Stream5IcmpConfig *icmp_config;$/;"	m	struct:_Stream5Config
+icmp_lws_cache	Stream5/snort_stream5_icmp.c	/^Stream5SessionCache *icmp_lws_cache;$/;"	v
+icmp_prunes	Stream5/stream5_common.h	/^    uint32_t   icmp_prunes;$/;"	m	struct:_Stream5Stats
+icmp_responder_ip	Stream5/snort_stream5_icmp.c	50;"	d	file:
+icmp_sender_ip	Stream5/snort_stream5_icmp.c	49;"	d	file:
+icmp_session_limit	stream_api.h	/^    uint32_t icmp_session_limit;$/;"	m	struct:_StreamSessionLimits
+icmp_session_mempool	Stream5/snort_stream5_icmp.c	/^static MemPool icmp_session_mempool;$/;"	v	file:
+icmp_sessions_created	Stream5/stream5_common.h	/^    uint32_t   icmp_sessions_created;$/;"	m	struct:_Stream5Stats
+icmp_sessions_released	Stream5/stream5_common.h	/^    uint32_t   icmp_sessions_released;$/;"	m	struct:_Stream5Stats
+icmp_timeouts	Stream5/stream5_common.h	/^    uint32_t   icmp_timeouts;$/;"	m	struct:_Stream5Stats
+id	Stream5/stream5_ha.c	/^    uint16_t id;$/;"	m	struct:_StreamHAFuncsNode	file:
+idle_cpu_time	perf-base.h	/^    double   idle_cpu_time;$/;"	m	struct:_SFBASE_STATS
+ignore_direction	Stream5/stream5_common.h	/^    char       ignore_direction; \/* flag to ignore traffic on this session *\/$/;"	m	struct:_Stream5HAState
+ignore_flush_policy	Stream5/snort_stream5_tcp.c	/^FlushConfig ignore_flush_policy[MAX_PORTS];$/;"	v
+ignore_flush_policy_protocol	Stream5/snort_stream5_tcp.c	/^FlushConfig ignore_flush_policy_protocol[MAX_PROTOCOL_ORDINAL];$/;"	v
+ignore_session	stream_api.h	/^    int (*ignore_session)(snort_ip_p, uint16_t, snort_ip_p, uint16_t,$/;"	m	struct:_stream_api
+includedir	Stream5/Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Stream5/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+ingress_group	Stream5/snort_stream5_tcp.c	/^    int32_t ingress_group;  \/* Index of the inbound group. *\/$/;"	m	struct:_TcpSession	file:
+ingress_index	Stream5/snort_stream5_tcp.c	/^    int32_t ingress_index;  \/* Index of the inbound interface. *\/$/;"	m	struct:_TcpSession	file:
+init_active_response	stream_api.h	/^    void (*init_active_response)(Packet *, void *);$/;"	m	struct:_stream_api
+initialized	Stream5/stream5_common.h	/^    uint8_t    initialized;$/;"	m	struct:_FlushPointList
+inner_client_ttl	Stream5/stream5_common.h	/^    uint8_t     inner_client_ttl, inner_server_ttl;$/;"	m	struct:_Stream5LWSession
+inner_server_ttl	Stream5/stream5_common.h	/^    uint8_t     inner_client_ttl, inner_server_ttl;$/;"	m	struct:_Stream5LWSession
+inspected	Stream5/stream5_common.h	/^    uint32_t  inspected;$/;"	m	struct:__anon10
+install_callback	Stream5/stream5_paf.c	/^static int install_callback (PAF_Callback cb)$/;"	f	file:
+install_sh	Stream5/Makefile	/^install_sh = ${SHELL} \/home\/source_code\/snort-2.9.6.1\/install-sh$/;"	m
+install_sh_DATA	Stream5/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Stream5/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Stream5/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+internalEvents	Stream5/stream5_common.h	/^    uint32_t   internalEvents;$/;"	m	struct:_Stream5Stats
+ip_config	Stream5/stream5_common.h	/^    Stream5IpConfig *ip_config;$/;"	m	struct:_Stream5Config
+ip_csum	decode.h	/^    u_int16_t ip_csum;      \/* checksum *\/$/;"	m	struct:_IPHdr
+ip_dst	decode.h	/^    struct in_addr ip_dst;  \/* dest IP *\/$/;"	m	struct:_IPHdr	typeref:struct:_IPHdr::in_addr
+ip_h	stream_api.h	/^    uint32_t   ip_h[4]; \/* High IP *\/$/;"	m	struct:_StreamSessionKey
+ip_id	decode.h	/^    u_int16_t ip_id;        \/* identification  *\/$/;"	m	struct:_IPHdr
+ip_l	stream_api.h	/^    uint32_t   ip_l[4]; \/* Low IP *\/$/;"	m	struct:_StreamSessionKey
+ip_lastopt_bad	decode.h	/^    u_char ip_lastopt_bad;  \/* flag to indicate that option decoding was$/;"	m	struct:_Packet
+ip_len	decode.h	/^    u_int16_t ip_len;       \/* datagram length *\/$/;"	m	struct:_IPHdr
+ip_lws_cache	Stream5/snort_stream5_ip.c	/^Stream5SessionCache* ip_lws_cache;$/;"	v
+ip_off	decode.h	/^    u_int16_t ip_off;       \/* fragment offset *\/$/;"	m	struct:_IPHdr
+ip_option_count	decode.h	/^    u_int32_t ip_option_count;  \/* number of options in this packet *\/$/;"	m	struct:_Packet
+ip_options_data	decode.h	/^    u_int8_t *ip_options_data;$/;"	m	struct:_Packet
+ip_options_len	decode.h	/^    u_int32_t ip_options_len;$/;"	m	struct:_Packet
+ip_proto	decode.h	/^    u_int8_t ip_proto;      \/* datagram protocol *\/$/;"	m	struct:_IPHdr
+ip_prunes	Stream5/stream5_common.h	/^    uint32_t   ip_prunes;$/;"	m	struct:_Stream5Stats
+ip_session_limit	stream_api.h	/^    uint32_t ip_session_limit;$/;"	m	struct:_StreamSessionLimits
+ip_src	decode.h	/^    struct in_addr ip_src;  \/* source IP *\/$/;"	m	struct:_IPHdr	typeref:struct:_IPHdr::in_addr
+ip_timeouts	Stream5/stream5_common.h	/^    uint32_t   ip_timeouts;$/;"	m	struct:_Stream5Stats
+ip_tos	decode.h	/^    u_int8_t ip_tos;        \/* type of service *\/$/;"	m	struct:_IPHdr
+ip_ttl	decode.h	/^    u_int8_t ip_ttl;        \/* time to live field *\/$/;"	m	struct:_IPHdr
+ip_verhl	decode.h	/^    u_int8_t ip_verhl;      \/* version & header length *\/$/;"	m	struct:_IPHdr
+ipfrag_mbits_per_sec	perf-base.h	/^    SYSTIMES ipfrag_mbits_per_sec;$/;"	m	struct:_SFBASE_STATS
+iph	decode.h	/^    IPHdr *iph, *orig_iph;   \/* and orig. headers for ICMP_*_UNREACH family *\/$/;"	m	struct:_Packet
+ipprotocol	Stream5/stream5_common.h	/^    int16_t    ipprotocol;$/;"	m	struct:_Stream5HAState
+ipreass_mbits_per_sec	perf-base.h	/^    SYSTIMES ipreass_mbits_per_sec;$/;"	m	struct:_SFBASE_STATS
+isPacketFilterDiscard	spp_stream5.c	/^int isPacketFilterDiscard($/;"	f
+is_paf_active	stream_api.h	/^    bool (*is_paf_active)(void* ssn, bool toServer);$/;"	m	struct:_stream_api
+is_stream_sequenced	stream_api.h	/^    char (*is_stream_sequenced)(void *, char);$/;"	m	struct:_stream_api
+isn	Stream5/snort_stream5_tcp.c	/^    uint32_t isn;          \/* initial sequence number *\/$/;"	m	struct:_StreamTracker	file:
+key	Stream5/stream5_common.h	/^    SessionKey *key;$/;"	m	struct:_Stream5LWSession
+key	mempool.h	/^    SDListItem *key;$/;"	m	struct:_MemBucket
+key	sfxhash.h	/^  void * key;   \/\/\/ Pointer to the key.$/;"	m	struct:_sfxhash_node
+key_size	Stream5/stream5_ha.c	/^    uint8_t key_size;$/;"	m	struct:_MsgHeader	file:
+key_type	Stream5/stream5_ha.c	/^    uint8_t key_type;$/;"	m	struct:_MsgHeader	file:
+keysize	sfxhash.h	/^  int             keysize;   \/\/\/ bytes in key, if <= 0 -> keys are strings$/;"	m	struct:_sfxhash
+kpackets_ipfrag_per_sec	perf-base.h	/^    SYSTIMES kpackets_ipfrag_per_sec;$/;"	m	struct:_SFBASE_STATS
+kpackets_ipreass_per_sec	perf-base.h	/^    SYSTIMES kpackets_ipreass_per_sec;$/;"	m	struct:_SFBASE_STATS
+kpackets_per_sec	perf-base.h	/^    SYSTIMES kpackets_per_sec;$/;"	m	struct:_SFBASE_STATS
+kpackets_per_sec_mpls	perf-base.h	/^    SYSTIMES kpackets_per_sec_mpls;$/;"	m	struct:_SFBASE_STATS
+kpackets_rebuilt_per_sec	perf-base.h	/^    SYSTIMES kpackets_rebuilt_per_sec;$/;"	m	struct:_SFBASE_STATS
+kpackets_wire_per_sec	perf-base.h	/^    SYSTIMES kpackets_wire_per_sec;$/;"	m	struct:_SFBASE_STATS
+l_nxt_seq	Stream5/snort_stream5_tcp.c	/^    uint32_t l_nxt_seq;    \/* local next expected sequence *\/$/;"	m	struct:_StreamTracker	file:
+l_unackd	Stream5/snort_stream5_tcp.c	/^    uint32_t l_unackd;     \/* local unack'd seq number *\/$/;"	m	struct:_StreamTracker	file:
+l_window	Stream5/snort_stream5_tcp.c	/^    uint32_t l_window;     \/* local receive window *\/$/;"	m	struct:_StreamTracker	file:
+last_count	Stream5/stream5_common.h	/^    uint16_t   last_count;$/;"	m	struct:_FlushMgr
+last_data_seen	Stream5/stream5_common.h	/^    long       last_data_seen;$/;"	m	struct:_Stream5LWSession
+last_size	Stream5/stream5_common.h	/^    uint16_t   last_size;$/;"	m	struct:_FlushMgr
+length	Stream5/stream5_ha.c	/^    uint8_t length;$/;"	m	struct:_RecordHeader	file:
+libdir	Stream5/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Stream5/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libstream5_a_AR	Stream5/Makefile	/^libstream5_a_AR = $(AR) $(ARFLAGS)$/;"	m
+libstream5_a_DEPENDENCIES	Stream5/Makefile	/^libstream5_a_DEPENDENCIES = snort_stream5_tcp.o snort_stream5_udp.o \\$/;"	m
+libstream5_a_LIBADD	Stream5/Makefile	/^libstream5_a_LIBADD = snort_stream5_tcp.o snort_stream5_udp.o \\$/;"	m
+libstream5_a_OBJECTS	Stream5/Makefile	/^libstream5_a_OBJECTS = $(am_libstream5_a_OBJECTS)$/;"	m
+libstream5_a_SOURCES	Stream5/Makefile	/^libstream5_a_SOURCES = snort_stream5_tcp.c snort_stream5_tcp.h \\$/;"	m
+listpool	mempool.h	/^    SDListItem *listpool; \/* list of things to use for memory bufs *\/$/;"	m	struct:_MemPool
+localedir	Stream5/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Stream5/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+lwSsn	Stream5/snort_stream5_icmp.c	/^    Stream5LWSession *lwSsn;$/;"	m	struct:_IcmpSession	file:
+lwSsn	Stream5/snort_stream5_udp.c	/^    Stream5LWSession *lwSsn;$/;"	m	struct:_UdpSession	file:
+lwssn	Stream5/snort_stream5_tcp.c	/^    Stream5LWSession *lwssn;$/;"	m	struct:_TcpSession	file:
+mac_addr	Stream5/snort_stream5_tcp.c	/^    uint8_t  mac_addr[6];$/;"	m	struct:_StreamTracker	file:
+main	decode.c	/^int main(int argc, char* argv[])$/;"	f
+main	mempool.c	/^int main(void)$/;"	f
+main	sfxhash.c	/^int main ( int argc, char ** argv )$/;"	f
+mandir	Stream5/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mask	Stream5/stream5_ha.c	/^    uint16_t mask;$/;"	m	struct:_StreamHAFuncsNode	file:
+max_active_responses	Stream5/stream5_common.h	/^    uint8_t    max_active_responses;$/;"	m	struct:_Stream5GlobalConfig
+max_consec_small_seg_size	Stream5/stream5_common.h	/^    uint32_t   max_consec_small_seg_size;$/;"	m	struct:_Stream5TcpPolicy
+max_consec_small_segs	Stream5/stream5_common.h	/^    uint32_t   max_consec_small_segs;$/;"	m	struct:_Stream5TcpPolicy
+max_frags	perf-base.h	/^    uint64_t max_frags;$/;"	m	struct:_SFBASE_STATS
+max_icmp_sessions	Stream5/stream5_common.h	/^    uint32_t   max_icmp_sessions;$/;"	m	struct:_Stream5GlobalConfig
+max_ip_sessions	Stream5/stream5_common.h	/^    uint32_t   max_ip_sessions;$/;"	m	struct:_Stream5GlobalConfig
+max_nodes	sfxhash.h	/^  unsigned        max_nodes; \/\/\/maximum # of nodes within a hash$/;"	m	struct:_sfxhash
+max_queued_bytes	Stream5/stream5_common.h	/^    uint32_t   max_queued_bytes;$/;"	m	struct:_Stream5TcpPolicy
+max_queued_segs	Stream5/stream5_common.h	/^    uint32_t   max_queued_segs;$/;"	m	struct:_Stream5TcpPolicy
+max_sessions	Stream5/snort_stream5_session.h	/^    uint32_t max_sessions;$/;"	m	struct:_Stream5SessionCache
+max_sessions	perf-base.h	/^    uint64_t   max_sessions;$/;"	m	struct:_SFBASE_STATS
+max_tcp_sessions	Stream5/stream5_common.h	/^    uint32_t   max_tcp_sessions;$/;"	m	struct:_Stream5GlobalConfig
+max_tcp_sessions_interval	perf-base.h	/^    uint64_t   max_tcp_sessions_interval;$/;"	m	struct:_SFBASE_STATS
+max_udp_sessions	Stream5/stream5_common.h	/^    uint32_t   max_udp_sessions;$/;"	m	struct:_Stream5GlobalConfig
+max_udp_sessions	perf-base.h	/^    uint64_t   max_udp_sessions;$/;"	m	struct:_SFBASE_STATS
+max_window	Stream5/stream5_common.h	/^    uint32_t   max_window;$/;"	m	struct:_Stream5TcpPolicy
+mbits_per_sec	perf-base.h	/^    SYSTIMES mbits_per_sec;$/;"	m	struct:_SFBASE_STATS
+mc	sfxhash.h	/^  MEMCAP          mc;$/;"	m	struct:_sfxhash
+mem_in_use	spp_stream5.c	/^uint32_t mem_in_use = 0;$/;"	v
+memcap	Stream5/stream5_common.h	/^    uint32_t   memcap;$/;"	m	struct:_Stream5GlobalConfig
+memcap	sfxhash.h	/^   unsigned long memcap;$/;"	m	struct:__anon5
+memcmp	sfhashfcn.h	/^ int      (*memcmp)( const void *s1,$/;"	m	struct:_SFHASHFCN
+mempool_alloc	mempool.c	/^MemBucket *mempool_alloc(MemPool *mempool)$/;"	f
+mempool_clean	mempool.c	/^int mempool_clean(MemPool *mempool)$/;"	f
+mempool_destroy	mempool.c	/^int mempool_destroy(MemPool *mempool)$/;"	f
+mempool_free	mempool.c	/^void mempool_free(MemPool *mempool, MemBucket *obj)$/;"	f
+mempool_free_pools	mempool.c	/^static inline void mempool_free_pools(MemPool *mempool)$/;"	f	file:
+mempool_init	mempool.c	/^int mempool_init(MemPool *mempool, PoolCount num_objects, size_t obj_size)$/;"	f
+mempool_numUsedBucket	mempool.h	/^static inline unsigned int mempool_numUsedBucket($/;"	f
+mempool_oldestUsedBucket	mempool.h	/^static inline MemBucket* mempool_oldestUsedBucket($/;"	f
+memused	sfxhash.h	/^   unsigned long memused;$/;"	m	struct:__anon5
+mf	decode.h	/^    u_int8_t mf;            \/* more fragments flag *\/$/;"	m	struct:_Packet
+mfp	Stream5/stream5_paf.c	/^    uint32_t mfp;$/;"	m	struct:__anon18	file:
+midstream_allowed	Stream5/snort_stream5_tcp.c	/^static char midstream_allowed = 0;$/;"	v	file:
+min_response_seconds	Stream5/stream5_common.h	/^    uint32_t   min_response_seconds;$/;"	m	struct:_Stream5GlobalConfig
+min_session_lifetime	Stream5/stream5_common.h	/^    struct timeval min_session_lifetime;$/;"	m	struct:_Stream5HAConfig	typeref:struct:_Stream5HAConfig::timeval
+min_sync_interval	Stream5/stream5_common.h	/^    struct timeval min_sync_interval;$/;"	m	struct:_Stream5HAConfig	typeref:struct:_Stream5HAConfig::timeval
+missed_packets	stream_api.h	/^    char (*missed_packets)(void *, char);$/;"	m	struct:_stream_api
+missing_in_reassembled	stream_api.h	/^    int (*missing_in_reassembled)(void *, char);$/;"	m	struct:_stream_api
+mix	sfhashfcn.h	36;"	d
+mkdir_p	Stream5/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkinstalldirs	Stream5/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+movetofront	sfxhash.c	/^static void movetofront( SFXHASH *t, SFXHASH_NODE * n )$/;"	f	file:
+mplsLabel	stream_api.h	/^    uint32_t   mplsLabel; \/* MPLS label *\/$/;"	m	struct:_StreamSessionKey
+mpls_mbits_per_sec	perf-base.h	/^    SYSTIMES mpls_mbits_per_sec;$/;"	m	struct:_SFBASE_STATS
+mss	Stream5/snort_stream5_tcp.c	/^    uint16_t mss;          \/* max segment size *\/$/;"	m	struct:_StreamTracker	file:
+mycallback	decode.c	/^void mycallback(u_char* argument, const struct pcap_pkthdr* pkthdr, const u_char* pkt)$/;"	f
+n_stream_ha_funcs	Stream5/stream5_ha.c	/^static int n_stream_ha_funcs = 0;$/;"	v	file:
+nblocks	sfxhash.h	/^   int      nblocks;$/;"	m	struct:__anon5
+new_sessions_per_second	perf-base.h	/^    double   new_sessions_per_second;$/;"	m	struct:_SFBASE_STATS
+new_udp_sessions_per_second	perf-base.h	/^    double   new_udp_sessions_per_second;$/;"	m	struct:_SFBASE_STATS
+next	Stream5/snort_stream5_session.h	/^    struct _IgnoredRuleList *next;$/;"	m	struct:_IgnoredRuleList	typeref:struct:_IgnoredRuleList::_IgnoredRuleList
+next	Stream5/snort_stream5_tcp.c	/^    struct _StreamSegment *next;$/;"	m	struct:_StreamSegment	typeref:struct:_StreamSegment::_StreamSegment	file:
+next	Stream5/stream5_common.h	/^    struct _Stream5AppData *next;$/;"	m	struct:_Stream5AppData	typeref:struct:_Stream5AppData::_Stream5AppData
+next	mempool.h	/^	struct _SDListItem* next;$/;"	m	struct:_SDListItem	typeref:struct:_SDListItem::_SDListItem
+next	sfxhash.h	/^  struct _sfxhash_node * next,  * prev;  \/\/\/ row node list$/;"	m	struct:_sfxhash_node	typeref:struct:_sfxhash_node::_sfxhash_node
+nextTimeoutEvalNode	Stream5/snort_stream5_session.h	/^    SFXHASH_NODE *nextTimeoutEvalNode;$/;"	m	struct:_Stream5SessionCache
+noinst_LIBRARIES	Stream5/Makefile	/^noinst_LIBRARIES = libstream5.a$/;"	m
+normStats	Stream5/snort_stream5_tcp.c	/^static uint64_t normStats[PC_MAX];$/;"	v	file:
+nrows	sfxhash.h	/^  unsigned        nrows;     \/\/\/ # rows int the hash table use a prime number 211, 9871$/;"	m	struct:_sfxhash
+num_policies	Stream5/stream5_common.h	/^    uint8_t num_policies;$/;"	m	struct:_Stream5IcmpConfig
+num_policies	Stream5/stream5_common.h	/^    uint8_t num_policies;$/;"	m	struct:_Stream5TcpConfig
+num_policies	Stream5/stream5_common.h	/^    uint8_t num_policies;$/;"	m	struct:_Stream5UdpConfig
+obj_size	mempool.h	/^    size_t obj_size;$/;"	m	struct:_MemPool
+oldincludedir	Stream5/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+operator	Stream5/snort_stream5_tcp.c	/^    char operator;$/;"	m	struct:_StreamSizeOptionData	file:
+ordinal	Stream5/snort_stream5_tcp.c	/^    int ordinal;$/;"	m	struct:_StreamSegment	file:
+orig_dp	decode.h	/^    u_int16_t orig_dp;      \/* dest port (TCP\/UDP) of original datagram *\/$/;"	m	struct:_Packet
+orig_dsize	Stream5/snort_stream5_tcp.c	/^    uint16_t   orig_dsize;$/;"	m	struct:_StreamSegment	file:
+orig_family	decode.h	/^	int orig_family;$/;"	m	struct:_Packet
+orig_iph	decode.h	/^    IPHdr *iph, *orig_iph;   \/* and orig. headers for ICMP_*_UNREACH family *\/$/;"	m	struct:_Packet
+orig_sp	decode.h	/^    u_int16_t orig_sp;      \/* source port (TCP\/UDP) of original datagram *\/$/;"	m	struct:_Packet
+orig_tcph	decode.h	/^    TCPHdr *tcph, *orig_tcph;$/;"	m	struct:_Packet
+os_policy	Stream5/snort_stream5_tcp.c	/^    uint16_t os_policy;$/;"	m	struct:_StreamTracker	file:
+otn	Stream5/snort_stream5_session.h	/^    OptTreeNode *otn;$/;"	m	struct:_IgnoredRuleList
+outer_client_ttl	Stream5/stream5_common.h	/^    uint8_t     outer_client_ttl, outer_server_ttl;$/;"	m	struct:_Stream5LWSession
+outer_family	decode.h	/^	int outer_family;$/;"	m	struct:_Packet
+outer_server_ttl	Stream5/stream5_common.h	/^    uint8_t     outer_client_ttl, outer_server_ttl;$/;"	m	struct:_Stream5LWSession
+overhead_blocks	sfxhash.h	/^  unsigned        overhead_blocks; \/\/\/ # of blocks consumed by the table$/;"	m	struct:_sfxhash
+overhead_bytes	sfxhash.h	/^  unsigned        overhead_bytes;  \/\/\/ # of bytes that will be unavailable for nodes inside the table$/;"	m	struct:_sfxhash
+overlap_count	Stream5/snort_stream5_tcp.c	/^    uint32_t overlap_count;      \/* overlaps encountered *\/$/;"	m	struct:_StreamTracker	file:
+overlap_limit	Stream5/stream5_common.h	/^    uint32_t   overlap_limit;$/;"	m	struct:_Stream5TcpPolicy
+packet_flags	decode.h	/^    u_int32_t packet_flags;     \/* special flags for the packet *\/$/;"	m	struct:_Packet
+pad	sfxhash.h	/^  unsigned        pad;$/;"	m	struct:_sfxhash
+pad	stream_api.h	/^    char       pad;$/;"	m	struct:_StreamSessionKey
+pad1	Stream5/snort_stream5_tcp.c	/^    uint8_t    pad1;$/;"	m	struct:_StreamSegment	file:
+pad2	Stream5/snort_stream5_tcp.c	/^    uint16_t   pad2;$/;"	m	struct:_StreamSegment	file:
+paf	Stream5/stream5_paf.h	/^    PAF_Status paf;  \/\/ current scan state$/;"	m	struct:__anon15
+paf_config	Stream5/stream5_common.h	/^    void* paf_config;$/;"	m	struct:_Stream5TcpConfig
+paf_state	Stream5/snort_stream5_tcp.c	/^    PAF_State paf_state;    \/\/ for tracking protocol aware flushing$/;"	m	struct:_StreamTracker	file:
+patmatch_percent	perf-base.h	/^    double   patmatch_percent;$/;"	m	struct:_SFBASE_STATS
+payload	Stream5/snort_stream5_tcp.c	/^    uint8_t    *payload;$/;"	m	struct:_StreamSegment	file:
+pdfdir	Stream5/Makefile	/^pdfdir = ${docdir}$/;"	m
+pegName	Stream5/snort_stream5_tcp.c	/^static const char* pegName[PC_MAX] = {$/;"	v	file:
+pegs	perf-base.h	/^    uint64_t   pegs[PERF_COUNT_MAX];$/;"	m	struct:_SFBASE_STATS
+pkgdatadir	Stream5/Makefile	/^pkgdatadir = $(datadir)\/snort$/;"	m
+pkgincludedir	Stream5/Makefile	/^pkgincludedir = $(includedir)\/snort$/;"	m
+pkglibdir	Stream5/Makefile	/^pkglibdir = $(libdir)\/snort$/;"	m
+pkglibexecdir	Stream5/Makefile	/^pkglibexecdir = $(libexecdir)\/snort$/;"	m
+pkt	Stream5/snort_stream5_tcp.c	/^    uint8_t    pkt[1];  \/\/ variable length$/;"	m	struct:_StreamSegment	file:
+pkt	decode.h	/^    const u_int8_t *pkt;              \/* base pointer to the raw packet data *\/$/;"	m	struct:_Packet
+pkt_drop_percent	perf-base.h	/^    double   pkt_drop_percent;$/;"	m	struct:_SFBASE_STATS
+pkt_stats	perf-base.h	/^    PKTSTATS pkt_stats;$/;"	m	struct:_SFBASE
+pkt_stats	perf-base.h	/^    PKTSTATS pkt_stats;$/;"	m	struct:_SFBASE_STATS
+pkth	decode.h	/^    const struct pcap_pkthdr *pkth;   \/* BPF data *\/$/;"	m	struct:_Packet	typeref:struct:_Packet::pcap_pkthdr
+pktlen	Stream5/snort_stream5_tcp.c	/^    uint32_t pktlen;$/;"	m	struct:_StreamSegment	file:
+pkts_drop	perf-base.h	/^    uint64_t pkts_drop;$/;"	m	struct:_PKTSTATS
+pkts_recv	perf-base.h	/^    uint64_t pkts_recv;$/;"	m	struct:_PKTSTATS
+policy	Stream5/stream5_common.h	/^    uint16_t   policy;$/;"	m	struct:_Stream5TcpPolicy
+policy	Stream5/stream5_common.h	/^    void *policy;$/;"	m	struct:_Stream5LWSession
+policyDecoderFlagsRestore	Stream5/snort_stream5_tcp.c	/^static void policyDecoderFlagsRestore(int policyId)$/;"	f	file:
+policyDecoderFlagsSaveNClear	Stream5/snort_stream5_tcp.c	/^static void policyDecoderFlagsSaveNClear(int policyId)$/;"	f	file:
+policy_id	Stream5/stream5_common.h	/^    tSfPolicyId policy_id;$/;"	m	struct:_Stream5LWSession
+policy_list	Stream5/stream5_common.h	/^    Stream5TcpPolicy **policy_list;$/;"	m	struct:_Stream5TcpConfig
+policy_list	Stream5/stream5_common.h	/^    Stream5UdpPolicy **policy_list;$/;"	m	struct:_Stream5UdpConfig
+populate_session_key	stream_api.h	/^    void (*populate_session_key)(Packet *, StreamSessionKey *);$/;"	m	struct:_stream_api
+port_filter	Stream5/stream5_common.h	/^    uint16_t port_filter[MAX_PORTS + 1];$/;"	m	struct:_Stream5TcpConfig
+port_filter	Stream5/stream5_common.h	/^    uint16_t port_filter[MAX_PORTS + 1];$/;"	m	struct:_Stream5UdpConfig
+port_h	stream_api.h	/^    uint16_t   port_h; \/* High Port - 0 if ICMP *\/$/;"	m	struct:_StreamSessionKey
+port_l	stream_api.h	/^    uint16_t   port_l; \/* Low Port - 0 if ICMP *\/$/;"	m	struct:_StreamSessionKey
+port_map	Stream5/stream5_paf.c	/^    PAF_Map port_map[MAXPORTS][2];$/;"	m	struct:__anon18	file:
+pos	Stream5/stream5_paf.h	/^    uint32_t pos;    \/\/ last flush position$/;"	m	struct:__anon15
+prefix	Stream5/Makefile	/^prefix = \/usr\/local$/;"	m
+prep_bytes	Stream5/stream5_paf.c	/^    uint32_t prep_bytes;$/;"	m	struct:__anon18	file:
+prep_calls	Stream5/stream5_paf.c	/^    uint32_t prep_calls;$/;"	m	struct:__anon18	file:
+preproc_id	Stream5/stream5_ha.c	/^    uint8_t preproc_id;$/;"	m	struct:_PreprocDataHeader	file:
+preproc_id	Stream5/stream5_ha.c	/^    uint8_t preproc_id;$/;"	m	struct:_StreamHAFuncsNode	file:
+preprocessors	decode.h	/^    int preprocessors;          \/* flags for preprocessors to check *\/$/;"	m	struct:_Packet
+prev	Stream5/snort_stream5_tcp.c	/^    struct _StreamSegment *prev;$/;"	m	struct:_StreamSegment	typeref:struct:_StreamSegment::_StreamSegment	file:
+prev	Stream5/stream5_common.h	/^    struct _Stream5AppData *prev;$/;"	m	struct:_Stream5AppData	typeref:struct:_Stream5AppData::_Stream5AppData
+prev	mempool.h	/^	struct _SDListItem* prev;$/;"	m	struct:_SDListItem	typeref:struct:_SDListItem::_SDListItem
+prev	sfxhash.h	/^  struct _sfxhash_node * next,  * prev;  \/\/\/ row node list$/;"	m	struct:_sfxhash_node	typeref:struct:_sfxhash_node::
+printIgnoredRules	Stream5/stream5_common.c	/^static void printIgnoredRules($/;"	f	file:
+process_ha	stream_api.h	/^    void (*process_ha)(void *);$/;"	m	struct:_stream_api
+produce	Stream5/stream5_ha.c	/^    StreamHAProducerFunc produce;$/;"	m	struct:_StreamHAFuncsNode	file:
+produced	Stream5/stream5_ha.c	/^    uint32_t produced;$/;"	m	struct:_StreamHAFuncsNode	file:
+program_transform_name	Stream5/Makefile	/^program_transform_name = s,x,x,$/;"	m
+protid	decode.h	/^    u_int8_t protid[3];$/;"	m	struct:_Trh_llc
+proto_specific_data	Stream5/stream5_common.h	/^    MemBucket  *proto_specific_data;$/;"	m	struct:_Stream5LWSession
+protocol	Stream5/stream5_common.h	/^    uint32_t   protocol;$/;"	m	struct:_Stream5AppData
+protocol	Stream5/stream5_common.h	/^    uint8_t     protocol;$/;"	m	struct:_Stream5LWSession
+protocol	Stream5/stream5_ha.c	/^    uint8_t protocol;$/;"	m	struct:_HADebugSessionConstraints	file:
+protocol	stream_api.h	/^    uint8_t    protocol;$/;"	m	struct:_StreamSessionKey
+prune_log_max	Stream5/stream5_common.h	/^    uint32_t   prune_log_max;$/;"	m	struct:_Stream5GlobalConfig
+prunes	Stream5/snort_stream5_session.h	/^    uint32_t prunes;$/;"	m	struct:_Stream5SessionCache
+psdir	Stream5/Makefile	/^psdir = ${docdir}$/;"	m
+pucBitBuffer	stream_api.h	/^    unsigned char *pucBitBuffer;$/;"	m	struct:_BITOP
+purge_alerts	Stream5/snort_stream5_tcp.c	/^static inline int purge_alerts(StreamTracker *st, uint32_t flush_seq, void *ssnptr)$/;"	f	file:
+purge_all	Stream5/snort_stream5_tcp.c	/^static inline void purge_all (StreamTracker *st)$/;"	f	file:
+purge_flushed_ackd	Stream5/snort_stream5_tcp.c	/^static inline int purge_flushed_ackd (TcpSession *tcpssn, StreamTracker *st)$/;"	f	file:
+purge_to_seq	Stream5/snort_stream5_tcp.c	/^static inline int purge_to_seq(TcpSession *tcpssn, StreamTracker *st, uint32_t flush_seq)$/;"	f	file:
+r_nxt_ack	Stream5/snort_stream5_tcp.c	/^    uint32_t r_nxt_ack;    \/* next expected ack from remote side *\/$/;"	m	struct:_StreamTracker	file:
+r_win_base	Stream5/snort_stream5_tcp.c	/^    uint32_t r_win_base;   \/* remote side window base sequence number$/;"	m	struct:_StreamTracker	file:
+realtime	perf-base.h	/^    double realtime;$/;"	m	struct:_SYSTIMES
+realtime_sec	perf-base.h	/^    double   realtime_sec;$/;"	m	struct:_SFBASE
+reassembly_policy	Stream5/snort_stream5_tcp.c	/^    uint16_t reassembly_policy;$/;"	m	struct:_StreamTracker	file:
+reassembly_policy	Stream5/stream5_common.h	/^    uint16_t   reassembly_policy;$/;"	m	struct:_Stream5TcpPolicy
+reassembly_policy_names	Stream5/snort_stream5_tcp.c	/^static char *reassembly_policy_names[] = {$/;"	v	file:
+rebuilt_mbits_per_sec	perf-base.h	/^    SYSTIMES rebuilt_mbits_per_sec;$/;"	m	struct:_SFBASE_STATS
+recycle_nodes	sfxhash.h	/^  int             recycle_nodes;   \/\/\/ recycle nodes. Nodes are not freed, but are used for subsequent new nodes$/;"	m	struct:_sfxhash
+ref_count	Stream5/stream5_common.h	/^    uint32_t ref_count;$/;"	m	struct:_Stream5Config
+reg_xtra_data_cb	stream_api.h	/^    uint32_t (*reg_xtra_data_cb)(LogFunction );$/;"	m	struct:_stream_api
+reg_xtra_data_log	stream_api.h	/^    void (*reg_xtra_data_log)(LogExtraData, void *);$/;"	m	struct:_stream_api
+register_event_handler	stream_api.h	/^    unsigned (*register_event_handler)(Stream_Callback);$/;"	m	struct:_stream_api
+register_ha_funcs	stream_api.h	/^    int (*register_ha_funcs)(uint32_t preproc_id, uint8_t subcode, uint8_t size,$/;"	m	struct:_stream_api
+register_paf_port	stream_api.h	/^    bool (*register_paf_port)($/;"	m	struct:_stream_api
+register_paf_service	stream_api.h	/^    bool (*register_paf_service)($/;"	m	struct:_stream_api
+response_count	Stream5/stream5_common.h	/^    uint8_t     response_count;$/;"	m	struct:_Stream5LWSession
+response_flush_stream	stream_api.h	/^    int (*response_flush_stream)(Packet *);$/;"	m	struct:_stream_api
+resume_inspection	stream_api.h	/^    void (*resume_inspection)(void *, char);$/;"	m	struct:_stream_api
+rf	decode.h	/^    u_int8_t rf;                  \/* IP reserved bit *\/$/;"	m	struct:_Packet
+rindex	sfxhash.h	/^  int    rindex; \/\/\/ row index of table this node belongs to.$/;"	m	struct:_sfxhash_node
+rot	sfhashfcn.h	34;"	d
+rset	decode.h	/^    u_int16_t rset[8];$/;"	m	struct:_Trh_mr
+runtimePolicyId	decode.c	/^tSfPolicyId runtimePolicyId = 0;$/;"	v
+runtime_output_fd	Stream5/stream5_ha.c	/^static int runtime_output_fd = -1;$/;"	v	file:
+runtime_output_file	Stream5/stream5_common.h	/^    char *runtime_output_file;$/;"	m	struct:_Stream5HAConfig
+s5FlowMempool	spp_stream5.c	/^MemPool s5FlowMempool;$/;"	v
+s5GetHopLimit	spp_stream5.c	/^static uint8_t s5GetHopLimit (void* pv, char dir, int outer)$/;"	f	file:
+s5GetMaxSessions	spp_stream5.c	/^static void s5GetMaxSessions(struct _SnortConfig *sc, tSfPolicyId policyId, StreamSessionLimits* limits)$/;"	f	file:
+s5GetPreprocessorStatusBit	spp_stream5.c	/^static uint16_t s5GetPreprocessorStatusBit(void)$/;"	f	file:
+s5GetServiceFilterStatus	spp_stream5.c	/^static int s5GetServiceFilterStatus ($/;"	f	file:
+s5HAConsumePerfStats	Stream5/stream5_ha.c	/^PreprocStats s5HAConsumePerfStats;$/;"	v
+s5HAPerfStats	Stream5/stream5_ha.c	/^PreprocStats s5HAPerfStats;$/;"	v
+s5HAProducePerfStats	Stream5/stream5_ha.c	/^PreprocStats s5HAProducePerfStats;$/;"	v
+s5IcmpPerfStats	Stream5/snort_stream5_icmp.c	/^PreprocStats s5IcmpPerfStats;$/;"	v
+s5InitActiveResponse	spp_stream5.c	/^static void s5InitActiveResponse (Packet* p, void* pv)$/;"	f	file:
+s5InitServiceFilterStatus	spp_stream5.c	/^static void s5InitServiceFilterStatus(struct _SnortConfig *sc)$/;"	f	file:
+s5IpPerfStats	Stream5/snort_stream5_ip.c	/^PreprocStats s5IpPerfStats;$/;"	v
+s5SetPortFilterStatus	spp_stream5.c	/^static void s5SetPortFilterStatus($/;"	f	file:
+s5SetServiceFilterStatus	spp_stream5.c	/^static void s5SetServiceFilterStatus($/;"	f	file:
+s5TcpGetPortFilterStatus	Stream5/snort_stream5_tcp.c	/^int s5TcpGetPortFilterStatus(struct _SnortConfig *sc, unsigned short port, tSfPolicyId policyId, int parsing)$/;"	f
+s5TcpSetPortFilterStatus	Stream5/snort_stream5_tcp.c	/^void s5TcpSetPortFilterStatus(struct _SnortConfig *sc, unsigned short port,$/;"	f
+s5TcpSetSynSessionStatus	Stream5/snort_stream5_tcp.c	/^void s5TcpSetSynSessionStatus(struct _SnortConfig *sc, uint16_t status, tSfPolicyId policyId, int parsing)$/;"	f
+s5TcpStreamReassembleRuleOptionCleanup	Stream5/snort_stream5_tcp.c	/^void s5TcpStreamReassembleRuleOptionCleanup(void *dataPtr)$/;"	f
+s5TcpStreamReassembleRuleOptionEval	Stream5/snort_stream5_tcp.c	/^int s5TcpStreamReassembleRuleOptionEval(void *p, const uint8_t **cursor, void *dataPtr)$/;"	f
+s5TcpStreamReassembleRuleOptionInit	Stream5/snort_stream5_tcp.c	/^int s5TcpStreamReassembleRuleOptionInit(struct _SnortConfig *sc, char *name, char *parameters, void **dataPtr)$/;"	f
+s5TcpStreamSizeCleanup	Stream5/snort_stream5_tcp.c	/^void s5TcpStreamSizeCleanup(void *dataPtr)$/;"	f
+s5TcpStreamSizeCompare	Stream5/snort_stream5_tcp.c	/^static inline int s5TcpStreamSizeCompare(uint32_t size1, uint32_t size2, char operator)$/;"	f	file:
+s5TcpStreamSizeEval	Stream5/snort_stream5_tcp.c	/^int s5TcpStreamSizeEval(void *p, const uint8_t **cursor, void *dataPtr)$/;"	f
+s5TcpStreamSizeInit	Stream5/snort_stream5_tcp.c	/^int s5TcpStreamSizeInit(struct _SnortConfig *sc, char *name, char *parameters, void **dataPtr)$/;"	f
+s5TcpUnsetPortFilterStatus	Stream5/snort_stream5_tcp.c	/^void s5TcpUnsetPortFilterStatus(struct _SnortConfig *sc, unsigned short port, uint16_t status, tSfPolicyId policyId, int parsing)$/;"	f
+s5TcpUnsetSynSessionStatus	Stream5/snort_stream5_tcp.c	/^void s5TcpUnsetSynSessionStatus(struct _SnortConfig *sc, uint16_t status, tSfPolicyId policyId, int parsing)$/;"	f
+s5UdpGetPortFilterStatus	Stream5/snort_stream5_udp.c	/^int s5UdpGetPortFilterStatus(struct _SnortConfig *sc, unsigned short port, tSfPolicyId policyId, int parsing)$/;"	f
+s5UdpPerfStats	Stream5/snort_stream5_udp.c	/^PreprocStats s5UdpPerfStats;$/;"	v
+s5UdpSetPortFilterStatus	Stream5/snort_stream5_udp.c	/^void s5UdpSetPortFilterStatus(struct _SnortConfig *sc, unsigned short port, uint16_t status, tSfPolicyId policyId, int parsing)$/;"	f
+s5UdpUnsetPortFilterStatus	Stream5/snort_stream5_udp.c	/^void s5UdpUnsetPortFilterStatus(struct _SnortConfig *sc, unsigned short port, uint16_t status, tSfPolicyId policyId, int parsing)$/;"	f
+s5UnsetPortFilterStatus	spp_stream5.c	/^static void s5UnsetPortFilterStatus($/;"	f	file:
+s5_cb	Stream5/stream5_paf.c	/^static PAF_Callback s5_cb[MAX_CB];$/;"	v	file:
+s5_cb_idx	Stream5/stream5_paf.c	/^static uint8_t s5_cb_idx = 0;$/;"	v	file:
+s5_config	spp_stream5.c	/^tSfPolicyUserContextId s5_config = NULL;$/;"	v
+s5_global_eval_config	spp_stream5.c	/^Stream5GlobalConfig *s5_global_eval_config = NULL;$/;"	v
+s5_ha_debug_flag	Stream5/stream5_ha.c	/^static volatile int s5_ha_debug_flag = 0;$/;"	v	file:
+s5_ha_debug_info	Stream5/stream5_ha.c	/^static HADebugSessionConstraints s5_ha_debug_info;$/;"	v	file:
+s5_ha_debug_session	Stream5/stream5_ha.c	/^static char s5_ha_debug_session[HA_DEBUG_SESSION_ID_SIZE];$/;"	v	file:
+s5_havent_pruned_yet	Stream5/snort_stream5_session.c	674;"	d	file:
+s5_icmp_eval_config	spp_stream5.c	/^Stream5IcmpConfig *s5_icmp_eval_config = NULL;$/;"	v
+s5_idx	Stream5/stream5_paf.c	/^static uint32_t s5_idx;  \/\/ offset from start of queued bytes$/;"	v	file:
+s5_ip_eval_config	spp_stream5.c	/^Stream5IpConfig *s5_ip_eval_config = NULL;$/;"	v
+s5_len	Stream5/stream5_paf.c	/^static uint32_t s5_len;  \/\/ total bytes queued$/;"	v	file:
+s5_over_memcap	Stream5/snort_stream5_session.c	676;"	d	file:
+s5_over_session_limit	Stream5/snort_stream5_session.c	672;"	d	file:
+s5_paf_active	Stream5/stream5_paf.h	/^static inline uint32_t s5_paf_active (PAF_State* ps)$/;"	f
+s5_paf_callback	Stream5/stream5_paf.c	/^static bool s5_paf_callback ($/;"	f	file:
+s5_paf_check	Stream5/stream5_paf.c	/^uint32_t s5_paf_check ($/;"	f
+s5_paf_clear	Stream5/stream5_paf.c	/^void s5_paf_clear (PAF_State* ps)$/;"	f
+s5_paf_delete	Stream5/stream5_paf.c	/^void s5_paf_delete (void* pv)$/;"	f
+s5_paf_eval	Stream5/stream5_paf.c	/^static inline bool s5_paf_eval ($/;"	f	file:
+s5_paf_flush	Stream5/stream5_paf.c	/^static uint32_t s5_paf_flush ($/;"	f	file:
+s5_paf_initialized	Stream5/stream5_paf.h	/^static inline uint32_t s5_paf_initialized (PAF_State* ps)$/;"	f
+s5_paf_new	Stream5/stream5_paf.c	/^void* s5_paf_new (void)$/;"	f
+s5_paf_port_registration	Stream5/stream5_paf.c	/^uint8_t s5_paf_port_registration (void* pv, uint16_t port, bool c2s, bool flush)$/;"	f
+s5_paf_position	Stream5/stream5_paf.h	/^static inline uint32_t s5_paf_position (PAF_State* ps)$/;"	f
+s5_paf_register_port	Stream5/stream5_paf.c	/^bool s5_paf_register_port (struct _SnortConfig *sc,$/;"	f
+s5_paf_register_service	Stream5/stream5_paf.c	/^bool s5_paf_register_service (struct _SnortConfig *sc,$/;"	f
+s5_paf_service_registration	Stream5/stream5_paf.c	/^uint8_t s5_paf_service_registration (void* pv, uint16_t service, bool c2s, bool flush)$/;"	f
+s5_paf_setup	Stream5/stream5_paf.c	/^void s5_paf_setup (PAF_State* ps, uint8_t mask)$/;"	f
+s5_pkt	Stream5/snort_stream5_tcp.c	/^static Packet *s5_pkt = NULL;$/;"	v	file:
+s5_pkt_end	Stream5/snort_stream5_tcp.c	/^static const uint8_t *s5_pkt_end = NULL;$/;"	v	file:
+s5_sessions_in_table	Stream5/snort_stream5_session.c	670;"	d	file:
+s5_tcp_cleanup	Stream5/snort_stream5_tcp.c	/^static int s5_tcp_cleanup = 0;$/;"	v	file:
+s5_tcp_eval_config	spp_stream5.c	/^Stream5TcpConfig *s5_tcp_eval_config = NULL;$/;"	v
+s5_trace_enabled	Stream5/snort_stream5_tcp.c	/^static int s5_trace_enabled = -1;$/;"	v	file:
+s5_udp_eval_config	spp_stream5.c	/^Stream5UdpConfig *s5_udp_eval_config = NULL;$/;"	v
+s5api	spp_stream5.c	/^StreamAPI s5api = {$/;"	v
+s5ha_stats	Stream5/stream5_ha.c	/^static Stream5HAStats s5ha_stats;$/;"	v	file:
+s5stats	spp_stream5.c	/^Stream5Stats s5stats;$/;"	v
+s_alloc	sfxhash.c	/^void * s_alloc( SFXHASH * t, int n )$/;"	f	file:
+s_free	sfxhash.c	/^void s_free( SFXHASH * t, void * p )$/;"	f	file:
+s_icmp_sessions	spp_stream5.c	/^static PoolCount s_icmp_sessions = 0, s_ip_sessions = 0;$/;"	v	file:
+s_ip	Stream5/stream5_ha.c	/^static const HA_Api *s_ip = NULL;$/;"	v	file:
+s_ip_sessions	spp_stream5.c	/^static PoolCount s_icmp_sessions = 0, s_ip_sessions = 0;$/;"	v	file:
+s_mgr	Stream5/snort_stream5_tcp.c	/^    StateMgr  s_mgr;        \/* state tracking goodies *\/$/;"	m	struct:_StreamTracker	file:
+s_proto_flags	spp_stream5.c	/^static int s_proto_flags = 0;$/;"	v	file:
+s_tcp	Stream5/stream5_ha.c	/^static const HA_Api *s_tcp = NULL;$/;"	v	file:
+s_tcp_sessions	spp_stream5.c	/^static PoolCount s_tcp_sessions = 0, s_udp_sessions = 0;$/;"	v	file:
+s_udp	Stream5/stream5_ha.c	/^static const HA_Api *s_udp = NULL;$/;"	v	file:
+s_udp_sessions	spp_stream5.c	/^static PoolCount s_tcp_sessions = 0, s_udp_sessions = 0;$/;"	v	file:
+saddr	decode.h	/^    u_int8_t saddr[TR_ALEN];    \/* dst address *\/$/;"	m	struct:_Trh_hdr
+sbindir	Stream5/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+scale	sfhashfcn.h	/^ unsigned scale;$/;"	m	struct:_SFHASHFCN
+seed	sfhashfcn.h	/^ unsigned seed;$/;"	m	struct:_SFHASHFCN
+seg_bytes_logical	Stream5/snort_stream5_tcp.c	/^    uint32_t seg_bytes_logical;  \/* logical bytes queued (total - overlaps) *\/$/;"	m	struct:_StreamTracker	file:
+seg_bytes_total	Stream5/snort_stream5_tcp.c	/^    uint32_t seg_bytes_total;    \/* total bytes currently queued *\/$/;"	m	struct:_StreamTracker	file:
+seg_count	Stream5/snort_stream5_tcp.c	/^    uint32_t seg_count;          \/* number of current queued segments *\/$/;"	m	struct:_StreamTracker	file:
+seglist	Stream5/snort_stream5_tcp.c	/^    StreamSegment *seglist;       \/* first queued segment *\/$/;"	m	struct:_StreamTracker	file:
+seglist_base_seq	Stream5/snort_stream5_tcp.c	/^    uint32_t seglist_base_seq;   \/* seq of first queued segment *\/$/;"	m	struct:_StreamTracker	file:
+seglist_next	Stream5/snort_stream5_tcp.c	/^    StreamSegment* seglist_next;  \/* next queued segment to flush *\/$/;"	m	struct:_StreamTracker	file:
+seglist_tail	Stream5/snort_stream5_tcp.c	/^    StreamSegment *seglist_tail;  \/* last queued segment *\/$/;"	m	struct:_StreamTracker	file:
+segment_ordinal	Stream5/snort_stream5_tcp.c	/^    int segment_ordinal;$/;"	m	struct:_StreamTracker	file:
+seq	Stream5/snort_stream5_tcp.c	/^    uint32_t   seq;$/;"	m	struct:_StreamSegment	file:
+seq	Stream5/snort_stream5_tcp.c	/^    uint32_t   seq;$/;"	m	struct:_TcpDataBlock	file:
+seq	Stream5/snort_stream5_tcp.c	/^    uint32_t seq;$/;"	m	struct:_Stream5AlertInfo	file:
+seq	Stream5/stream5_paf.h	/^    uint32_t seq;    \/\/ stream cursor$/;"	m	struct:__anon15
+server	Stream5/snort_stream5_tcp.c	/^    StreamTracker server;$/;"	m	struct:_TcpSession	file:
+server	Stream5/stream5_common.h	/^    FlushMgr server;$/;"	m	struct:_FlushConfig
+server_ip	Stream5/stream5_common.h	/^    snort_ip    server_ip; \/\/ or uint8_t to reduce sizeof from 24 to 20$/;"	m	struct:_Stream5LWSession
+server_port	Stream5/stream5_common.h	/^    uint16_t    server_port;$/;"	m	struct:_Stream5LWSession
+service_filter	Stream5/stream5_common.h	/^    uint8_t service_filter[MAX_PROTOCOL_ORDINAL];$/;"	m	struct:_Stream5Config
+service_map	Stream5/stream5_paf.c	/^    PAF_Map service_map[MAX_PROTOCOL_ORDINAL][2];$/;"	m	struct:__anon18	file:
+session_flags	Stream5/stream5_common.h	/^    uint32_t   session_flags;$/;"	m	struct:_Stream5HAState
+session_on_syn	Stream5/stream5_common.h	/^    uint16_t session_on_syn;$/;"	m	struct:_Stream5TcpConfig
+session_state	Stream5/stream5_common.h	/^    uint16_t    session_state;$/;"	m	struct:_Stream5LWSession
+session_timeout	Stream5/stream5_common.h	/^    uint32_t   session_timeout;$/;"	m	struct:_Stream5IcmpPolicy
+session_timeout	Stream5/stream5_common.h	/^    uint32_t   session_timeout;$/;"	m	struct:_Stream5IpPolicy
+session_timeout	Stream5/stream5_common.h	/^    uint32_t   session_timeout;$/;"	m	struct:_Stream5TcpPolicy
+session_timeout	Stream5/stream5_common.h	/^    uint32_t   session_timeout;$/;"	m	struct:_Stream5UdpPolicy
+session_tracked	Stream5/stream5_common.h	/^    uint32_t  session_tracked;$/;"	m	struct:__anon10
+setPortFilterList	Stream5/stream5_common.c	/^void setPortFilterList($/;"	f
+set_application_data	stream_api.h	/^    int (*set_application_data)(void *, uint32_t, void *, StreamAppDataFree);$/;"	m	struct:_stream_api
+set_application_protocol_id	stream_api.h	/^    int16_t (*set_application_protocol_id)(void *, int16_t);$/;"	m	struct:_stream_api
+set_application_protocol_id_expected	stream_api.h	/^    int (*set_application_protocol_id_expected)(snort_ip_p, uint16_t, snort_ip_p, uint16_t,$/;"	m	struct:_stream_api
+set_event_handler	stream_api.h	/^    bool (*set_event_handler)(void* ssnptr, unsigned id, Stream_Event);$/;"	m	struct:_stream_api
+set_extra_data	stream_api.h	/^    void (*set_extra_data)(void*, Packet *, uint32_t);$/;"	m	struct:_stream_api
+set_flush_point	stream_api.h	/^    void (*set_flush_point)(void *, char, uint32_t);$/;"	m	struct:_stream_api
+set_ha_pending_bit	stream_api.h	/^    void (*set_ha_pending_bit)(void *, int bit);$/;"	m	struct:_stream_api
+set_ignore_direction	stream_api.h	/^    int (*set_ignore_direction)(void *, int);$/;"	m	struct:_stream_api
+set_port_filter_status	stream_api.h	/^    void (*set_port_filter_status)(struct _SnortConfig *sc,$/;"	m	struct:_stream_api
+set_reassembly	stream_api.h	/^    char (*set_reassembly)(void *, uint8_t, char, char);$/;"	m	struct:_stream_api
+set_service_filter_status	stream_api.h	/^    void (*set_service_filter_status)(struct _SnortConfig *sc,$/;"	m	struct:_stream_api
+set_session_flags	stream_api.h	/^    uint32_t (*set_session_flags)(void *, uint32_t);$/;"	m	struct:_stream_api
+set_tcp_syn_session_status	stream_api.h	/^    void (*set_tcp_syn_session_status)(struct _SnortConfig *sc, uint16_t status, tSfPolicyId policyId, int parsing);$/;"	m	struct:_stream_api
+sfProcPidStats	perf-base.h	/^    SFPROCPIDSTATS *sfProcPidStats;$/;"	m	struct:_SFBASE_STATS
+sfProcPidStats	perf-base.h	/^    SFPROCPIDSTATS sfProcPidStats;$/;"	m	struct:_SFBASE
+sfhashfcn	sfxhash.h	/^  SFHASHFCN     * sfhashfcn; \/\/\/ hash function$/;"	m	struct:_sfxhash
+sfhashfcn_free	sfhashfcn.c	/^void sfhashfcn_free( SFHASHFCN * p )$/;"	f
+sfhashfcn_hash	sfhashfcn.c	/^unsigned sfhashfcn_hash( SFHASHFCN * p, unsigned char *d, int n )$/;"	f
+sfhashfcn_hash	sfhashfcn.h	/^ unsigned (*sfhashfcn_hash)(struct _SFHASHFCN * p,$/;"	m	struct:_SFHASHFCN
+sfhashfcn_new	sfhashfcn.c	/^SFHASHFCN * sfhashfcn_new( int m )$/;"	f
+sfhashfcn_set_keyops	sfhashfcn.c	/^int sfhashfcn_set_keyops( SFHASHFCN *h,$/;"	f
+sfxhash_add	sfxhash.c	/^int sfxhash_add( SFXHASH * t, void * key, void * data )$/;"	f
+sfxhash_alloc	sfxhash.c	/^void * sfxhash_alloc( SFXHASH * t, unsigned nbytes )$/;"	f
+sfxhash_anr_count	sfxhash.h	/^static inline unsigned sfxhash_anr_count( SFXHASH * t )$/;"	f
+sfxhash_calcrows	sfxhash.c	/^int sfxhash_calcrows(int num)$/;"	f
+sfxhash_count	sfxhash.h	/^static inline unsigned sfxhash_count( SFXHASH * t )$/;"	f
+sfxhash_delete	sfxhash.c	/^void sfxhash_delete( SFXHASH * h )$/;"	f
+sfxhash_delete_free_list	sfxhash.c	/^void sfxhash_delete_free_list(SFXHASH *t)$/;"	f	file:
+sfxhash_find	sfxhash.c	/^void * sfxhash_find( SFXHASH * t, void * key)$/;"	f
+sfxhash_find_fail	sfxhash.h	/^static inline unsigned sfxhash_find_fail( SFXHASH * t )$/;"	f
+sfxhash_find_node	sfxhash.c	/^SFXHASH_NODE * sfxhash_find_node( SFXHASH * t, const void * key)$/;"	f
+sfxhash_find_node_row	sfxhash.c	/^SFXHASH_NODE * sfxhash_find_node_row( SFXHASH * t, const void * key, int * rindex )$/;"	f	file:
+sfxhash_find_success	sfxhash.h	/^static inline unsigned sfxhash_find_success( SFXHASH * t )$/;"	f
+sfxhash_find_total	sfxhash.h	/^static inline unsigned sfxhash_find_total( SFXHASH * t )$/;"	f
+sfxhash_findfirst	sfxhash.c	/^SFXHASH_NODE * sfxhash_findfirst( SFXHASH * t )$/;"	f
+sfxhash_findnext	sfxhash.c	/^SFXHASH_NODE * sfxhash_findnext( SFXHASH * t )$/;"	f
+sfxhash_free	sfxhash.c	/^void   sfxhash_free( SFXHASH * t, void * p )$/;"	f
+sfxhash_free_node	sfxhash.c	/^int sfxhash_free_node( SFXHASH * t, SFXHASH_NODE * hnode)$/;"	f
+sfxhash_get_free_node	sfxhash.c	/^SFXHASH_NODE * sfxhash_get_free_node( SFXHASH *t )$/;"	f	file:
+sfxhash_get_node	sfxhash.c	/^SFXHASH_NODE * sfxhash_get_node( SFXHASH * t, const void * key )$/;"	f
+sfxhash_ghead	sfxhash.c	/^SFXHASH_NODE *sfxhash_ghead( SFXHASH * t )$/;"	f
+sfxhash_glink_node	sfxhash.c	/^void sfxhash_glink_node( SFXHASH *t, SFXHASH_NODE * hnode )$/;"	f	file:
+sfxhash_gmovetofront	sfxhash.c	/^void sfxhash_gmovetofront( SFXHASH *t, SFXHASH_NODE * hnode )$/;"	f
+sfxhash_gnext	sfxhash.c	/^SFXHASH_NODE *sfxhash_gnext( SFXHASH_NODE *n )$/;"	f
+sfxhash_gunlink_node	sfxhash.c	/^void sfxhash_gunlink_node( SFXHASH *t, SFXHASH_NODE * hnode )$/;"	f	file:
+sfxhash_link_node	sfxhash.c	/^void sfxhash_link_node( SFXHASH * t, SFXHASH_NODE * hnode )$/;"	f	file:
+sfxhash_lru	sfxhash.c	/^void * sfxhash_lru( SFXHASH * t )$/;"	f
+sfxhash_lru_node	sfxhash.c	/^SFXHASH_NODE * sfxhash_lru_node( SFXHASH * t )$/;"	f
+sfxhash_make_empty	sfxhash.c	/^int sfxhash_make_empty(SFXHASH *h)$/;"	f
+sfxhash_maxdepth	sfxhash.c	/^unsigned sfxhash_maxdepth( SFXHASH * t )$/;"	f
+sfxhash_mru	sfxhash.c	/^void * sfxhash_mru( SFXHASH * t )$/;"	f
+sfxhash_mru_node	sfxhash.c	/^SFXHASH_NODE * sfxhash_mru_node( SFXHASH * t )$/;"	f
+sfxhash_nearest_powerof2	sfxhash.c	/^static int sfxhash_nearest_powerof2(int nrows)$/;"	f	file:
+sfxhash_new	sfxhash.c	/^SFXHASH * sfxhash_new( int nrows, int keysize, int datasize, unsigned long maxmem,$/;"	f
+sfxhash_newnode	sfxhash.c	/^SFXHASH_NODE * sfxhash_newnode( SFXHASH * t )$/;"	f	file:
+sfxhash_next	sfxhash.c	/^void sfxhash_next( SFXHASH * t )$/;"	f	file:
+sfxhash_overhead_blocks	sfxhash.h	/^static inline unsigned sfxhash_overhead_blocks( SFXHASH * t )$/;"	f
+sfxhash_overhead_bytes	sfxhash.h	/^static inline unsigned sfxhash_overhead_bytes( SFXHASH * t )$/;"	f
+sfxhash_remove	sfxhash.c	/^int sfxhash_remove( SFXHASH * t, void * key)$/;"	f
+sfxhash_save_free_node	sfxhash.c	/^void sfxhash_save_free_node( SFXHASH *t, SFXHASH_NODE * hnode )$/;"	f	file:
+sfxhash_set_keyops	sfxhash.c	/^int sfxhash_set_keyops( SFXHASH *h ,$/;"	f
+sfxhash_set_max_nodes	sfxhash.c	/^void sfxhash_set_max_nodes( SFXHASH *h, int max_nodes )$/;"	f
+sfxhash_splaymode	sfxhash.c	/^void sfxhash_splaymode( SFXHASH * t, int n )$/;"	f
+sfxhash_unlink_node	sfxhash.c	/^void sfxhash_unlink_node( SFXHASH * t, SFXHASH_NODE * hnode )$/;"	f	file:
+sharedstatedir	Stream5/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+shutdown_output_file	Stream5/stream5_common.h	/^    char *shutdown_output_file;$/;"	m	struct:_Stream5HAConfig
+sid	Stream5/snort_stream5_tcp.c	/^    uint32_t sid;$/;"	m	struct:_Stream5AlertInfo	file:
+sip	Stream5/stream5_ha.c	/^    sfip_t sip;$/;"	m	struct:_HADebugSessionConstraints	file:
+size	Stream5/snort_stream5_tcp.c	/^    uint16_t   size;$/;"	m	struct:_StreamSegment	file:
+size	Stream5/snort_stream5_tcp.c	/^    uint32_t size;$/;"	m	struct:_StreamSizeOptionData	file:
+size	Stream5/stream5_ha.c	/^    uint8_t size;$/;"	m	struct:_StreamHAFuncsNode	file:
+small_seg_count	Stream5/snort_stream5_tcp.c	/^    uint32_t small_seg_count;$/;"	m	struct:_StreamTracker	file:
+small_seg_ignore	Stream5/stream5_common.h	/^    char       small_seg_ignore[MAX_PORTS\/8];$/;"	m	struct:_Stream5TcpPolicy
+sp	decode.h	/^    u_int16_t sp;           \/* source port (TCP\/UDP) *\/$/;"	m	struct:_Packet
+splay	sfxhash.h	/^  int             splay;   \/\/\/ whether to splay nodes with same hash bucket$/;"	m	struct:_sfxhash
+sport	Stream5/stream5_ha.c	/^    uint16_t sport;$/;"	m	struct:_HADebugSessionConstraints	file:
+srcdir	Stream5/Makefile	/^srcdir = .$/;"	m
+ssap	decode.h	/^    u_int8_t ssap;$/;"	m	struct:_Trh_llc
+ssn_time	Stream5/snort_stream5_icmp.c	/^    struct timeval ssn_time;$/;"	m	struct:_IcmpSession	typeref:struct:_IcmpSession::timeval	file:
+ssn_time	Stream5/snort_stream5_tcp.c	/^    struct timeval ssn_time;$/;"	m	struct:_TcpSession	typeref:struct:_TcpSession::timeval	file:
+ssn_time	Stream5/snort_stream5_udp.c	/^    struct timeval ssn_time;$/;"	m	struct:_UdpSession	typeref:struct:_UdpSession::timeval	file:
+ssnptr	decode.h	/^    void *ssnptr;           \/* for tcp session tracking info... *\/$/;"	m	struct:_Packet
+startup_input_file	Stream5/stream5_common.h	/^    char *startup_input_file;$/;"	m	struct:_Stream5HAConfig
+state	Stream5/snort_stream5_tcp.c	/^    uint8_t    state;$/;"	m	struct:_StateMgr	file:
+state_names	Stream5/snort_stream5_tcp.c	/^static char *state_names[] = {$/;"	v	file:
+state_queue	Stream5/snort_stream5_tcp.c	/^    uint8_t    state_queue;$/;"	m	struct:_StateMgr	file:
+statext	Stream5/snort_stream5_tcp.c	/^static const char* statext[] = {$/;"	v	file:
+stop_inspection	stream_api.h	/^    void (*stop_inspection)(void *, Packet *, char, int32_t, int);$/;"	m	struct:_stream_api
+stq_get_seq	Stream5/snort_stream5_tcp.c	/^    uint32_t   stq_get_seq;$/;"	m	struct:_StateMgr	file:
+stream5_mem_in_use	perf-base.h	/^    uint64_t   stream5_mem_in_use;$/;"	m	struct:_SFBASE
+stream5_mem_in_use	perf-base.h	/^    uint64_t   stream5_mem_in_use;$/;"	m	struct:_SFBASE_STATS
+stream_api	stream_api.c	/^StreamAPI *stream_api = NULL;$/;"	v
+stream_cb	spp_stream5.c	/^static Stream_Callback stream_cb[CB_MAX];$/;"	v	file:
+stream_cb_idx	spp_stream5.c	/^static unsigned stream_cb_idx = 1;$/;"	v	file:
+stream_faults	perf-base.h	/^    uint64_t stream_faults;$/;"	m	struct:_SFBASE_STATS
+stream_flushes_per_second	perf-base.h	/^    double stream_flushes_per_second;$/;"	m	struct:_SFBASE_STATS
+stream_ha_funcs	Stream5/stream5_ha.c	/^static StreamHAFuncsNode *stream_ha_funcs[MAX_STREAM_HA_FUNCS];$/;"	v	file:
+stream_timeouts	perf-base.h	/^    uint64_t stream_timeouts;$/;"	m	struct:_SFBASE_STATS
+streamptr	decode.h	/^    void *streamptr;        \/* for tcp pkt dump *\/$/;"	m	struct:_Packet
+sub_state	Stream5/snort_stream5_tcp.c	/^    uint8_t    sub_state;$/;"	m	struct:_StateMgr	file:
+subcode	Stream5/stream5_ha.c	/^    uint8_t subcode;$/;"	m	struct:_PreprocDataHeader	file:
+subcode	Stream5/stream5_ha.c	/^    uint8_t subcode;$/;"	m	struct:_StreamHAFuncsNode	file:
+subdir	Stream5/Makefile	/^subdir = src\/preprocessors\/Stream5$/;"	m
+synacks_per_second	perf-base.h	/^    double   synacks_per_second;$/;"	m	struct:_SFBASE_STATS
+syns_per_second	perf-base.h	/^    double   syns_per_second;$/;"	m	struct:_SFBASE_STATS
+sysconfdir	Stream5/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+system_cpu_time	perf-base.h	/^    double   system_cpu_time;$/;"	m	struct:_SFBASE_STATS
+systemtime	perf-base.h	/^    double systemtime;$/;"	m	struct:_SYSTIMES
+systemtime_sec	perf-base.h	/^    double   systemtime_sec;$/;"	m	struct:_SFBASE
+tPortFilterStats	Stream5/stream5_common.h	/^} tPortFilterStats;$/;"	t	typeref:struct:__anon10
+tSfPolicyId	decode.c	/^typedef unsigned int tSfPolicyId;$/;"	t	file:
+table	sfxhash.h	/^  SFXHASH_NODE ** table;     \/\/\/ array of node ptr's *\/$/;"	m	struct:_sfxhash
+targetPolicyIterate	Stream5/snort_stream5_tcp.c	/^static void targetPolicyIterate(void (*callback)(int))$/;"	f	file:
+target_alias	Stream5/Makefile	/^target_alias = $/;"	m
+tcp_cache_nominal_timeout	Stream5/stream5_common.h	/^    uint16_t   tcp_cache_nominal_timeout;$/;"	m	struct:_Stream5GlobalConfig
+tcp_cache_pruning_timeout	Stream5/stream5_common.h	/^    uint16_t   tcp_cache_pruning_timeout;$/;"	m	struct:_Stream5GlobalConfig
+tcp_client_ip	Stream5/snort_stream5_tcp.c	246;"	d	file:
+tcp_client_port	Stream5/snort_stream5_tcp.c	247;"	d	file:
+tcp_config	Stream5/stream5_common.h	/^    Stream5TcpConfig *tcp_config;$/;"	m	struct:_Stream5Config
+tcp_discards	Stream5/stream5_common.h	/^    uint32_t   tcp_discards;$/;"	m	struct:_Stream5Stats
+tcp_gaps	Stream5/stream5_common.h	/^    uint32_t   tcp_gaps;$/;"	m	struct:_Stream5Stats
+tcp_lastopt_bad	decode.h	/^    u_char tcp_lastopt_bad;  \/* flag to indicate that option decoding was$/;"	m	struct:_Packet
+tcp_lws_cache	Stream5/snort_stream5_tcp.c	/^Stream5SessionCache *tcp_lws_cache = NULL;$/;"	v
+tcp_option_count	decode.h	/^    u_int32_t tcp_option_count;$/;"	m	struct:_Packet
+tcp_options_data	decode.h	/^    u_int8_t *tcp_options_data;$/;"	m	struct:_Packet
+tcp_options_len	decode.h	/^    u_int32_t tcp_options_len;$/;"	m	struct:_Packet
+tcp_overlaps	Stream5/stream5_common.h	/^    uint32_t   tcp_overlaps;$/;"	m	struct:_Stream5Stats
+tcp_policy	Stream5/snort_stream5_tcp.c	/^    Stream5TcpPolicy *tcp_policy;$/;"	m	struct:_StreamTracker	file:
+tcp_port_filter	Stream5/stream5_common.h	/^    tPortFilterStats  tcp_port_filter;$/;"	m	struct:_Stream5Stats
+tcp_prunes	Stream5/stream5_common.h	/^    uint32_t   tcp_prunes;$/;"	m	struct:_Stream5Stats
+tcp_rebuilt_packets	Stream5/stream5_common.h	/^    uint32_t   tcp_rebuilt_packets;$/;"	m	struct:_Stream5Stats
+tcp_rebuilt_seqs_used	Stream5/stream5_common.h	/^    uint32_t   tcp_rebuilt_seqs_used;$/;"	m	struct:_Stream5Stats
+tcp_server_ip	Stream5/snort_stream5_tcp.c	248;"	d	file:
+tcp_server_port	Stream5/snort_stream5_tcp.c	249;"	d	file:
+tcp_session_limit	stream_api.h	/^    uint32_t tcp_session_limit;$/;"	m	struct:_StreamSessionLimits
+tcp_session_mempool	Stream5/snort_stream5_tcp.c	/^static MemPool tcp_session_mempool;$/;"	v	file:
+tcp_sessions_closed_per_second	perf-base.h	/^    double   tcp_sessions_closed_per_second;$/;"	m	struct:_SFBASE_STATS
+tcp_sessions_dropped_async_per_second	perf-base.h	/^    double   tcp_sessions_dropped_async_per_second;$/;"	m	struct:_SFBASE_STATS
+tcp_sessions_midstream_per_second	perf-base.h	/^    double   tcp_sessions_midstream_per_second;$/;"	m	struct:_SFBASE_STATS
+tcp_sessions_pruned_per_second	perf-base.h	/^    double   tcp_sessions_pruned_per_second;$/;"	m	struct:_SFBASE_STATS
+tcp_sessions_timedout_per_second	perf-base.h	/^    double   tcp_sessions_timedout_per_second;$/;"	m	struct:_SFBASE_STATS
+tcp_streamsegs_created	Stream5/stream5_common.h	/^    uint32_t   tcp_streamsegs_created;$/;"	m	struct:_Stream5Stats
+tcp_streamsegs_released	Stream5/stream5_common.h	/^    uint32_t   tcp_streamsegs_released;$/;"	m	struct:_Stream5Stats
+tcp_streamtrackers_created	Stream5/stream5_common.h	/^    uint32_t   tcp_streamtrackers_created;$/;"	m	struct:_Stream5Stats
+tcp_streamtrackers_released	Stream5/stream5_common.h	/^    uint32_t   tcp_streamtrackers_released;$/;"	m	struct:_Stream5Stats
+tcp_timeouts	Stream5/stream5_common.h	/^    uint32_t   tcp_timeouts;$/;"	m	struct:_Stream5Stats
+tcph	decode.h	/^    TCPHdr *tcph, *orig_tcph;$/;"	m	struct:_Packet
+th_ack	decode.h	/^    u_int32_t th_ack;       \/* acknowledgement number *\/$/;"	m	struct:_TCPHdr
+th_dport	decode.h	/^    u_int16_t th_dport;     \/* destination port *\/$/;"	m	struct:_TCPHdr
+th_flags	decode.h	/^    u_int8_t th_flags;$/;"	m	struct:_TCPHdr
+th_offx2	decode.h	/^    u_int8_t th_offx2;     \/* offset and reserved *\/$/;"	m	struct:_TCPHdr
+th_seq	decode.h	/^    u_int32_t th_seq;       \/* sequence number *\/$/;"	m	struct:_TCPHdr
+th_sport	decode.h	/^    u_int16_t th_sport;     \/* source port *\/$/;"	m	struct:_TCPHdr
+th_sum	decode.h	/^    u_int16_t th_sum;       \/* checksum *\/$/;"	m	struct:_TCPHdr
+th_urp	decode.h	/^    u_int16_t th_urp;       \/* urgent pointer *\/$/;"	m	struct:_TCPHdr
+th_win	decode.h	/^    u_int16_t th_win;       \/* window *\/$/;"	m	struct:_TCPHdr
+time	perf-base.h	/^    time_t   time;$/;"	m	struct:_SFBASE_STATS
+time	perf-base.h	/^    time_t time;$/;"	m	struct:_SFBASE
+timeoutAggressive	Stream5/snort_stream5_session.h	/^    uint32_t timeoutAggressive;$/;"	m	struct:_Stream5SessionCache
+timeoutNominal	Stream5/snort_stream5_session.h	/^    uint32_t timeoutNominal;$/;"	m	struct:_Stream5SessionCache
+top_build_prefix	Stream5/Makefile	/^top_build_prefix = ..\/..\/..\/$/;"	m
+top_builddir	Stream5/Makefile	/^top_builddir = ..\/..\/..$/;"	m
+top_srcdir	Stream5/Makefile	/^top_srcdir = ..\/..\/..$/;"	m
+tot	Stream5/stream5_paf.h	/^    uint32_t tot;    \/\/ total bytes flushed$/;"	m	struct:__anon15
+total	mempool.h	/^    PoolCount total;$/;"	m	struct:_MemPool
+total_alerts_per_second	perf-base.h	/^    double     total_alerts_per_second;$/;"	m	struct:_SFBASE_STATS
+total_blocked_bytes	perf-base.h	/^    uint64_t   total_blocked_bytes;$/;"	m	struct:_SFBASE
+total_blocked_bytes	perf-base.h	/^    uint64_t   total_blocked_bytes;$/;"	m	struct:_SFBASE_STATS
+total_blocked_mpls_bytes	perf-base.h	/^    uint64_t   total_blocked_mpls_bytes;$/;"	m	struct:_SFBASE
+total_blocked_mpls_bytes	perf-base.h	/^    uint64_t   total_blocked_mpls_bytes;$/;"	m	struct:_SFBASE_STATS
+total_blocked_mpls_packets	perf-base.h	/^    uint64_t   total_blocked_mpls_packets;$/;"	m	struct:_SFBASE
+total_blocked_mpls_packets	perf-base.h	/^    uint64_t   total_blocked_mpls_packets;$/;"	m	struct:_SFBASE_STATS
+total_blocked_packets	perf-base.h	/^    uint64_t   total_blocked_packets;$/;"	m	struct:_SFBASE
+total_blocked_packets	perf-base.h	/^    uint64_t   total_blocked_packets;$/;"	m	struct:_SFBASE_STATS
+total_bytes	perf-base.h	/^    uint64_t   total_bytes;    \/* Total non-stream rebuilt (but$/;"	m	struct:_SFBASE
+total_bytes_queued	Stream5/snort_stream5_tcp.c	/^    uint32_t total_bytes_queued; \/* total bytes queued (life of session) *\/$/;"	m	struct:_StreamTracker	file:
+total_iAlerts	perf-base.h	/^    uint64_t   total_iAlerts;$/;"	m	struct:_SFBASE
+total_icmp_sessions	Stream5/stream5_common.h	/^    uint32_t   total_icmp_sessions;$/;"	m	struct:_Stream5Stats
+total_injected_packets	perf-base.h	/^    uint64_t   total_injected_packets;  \/\/ due to normalize_ip4: trim blocks$/;"	m	struct:_SFBASE
+total_injected_packets	perf-base.h	/^    uint64_t   total_injected_packets;$/;"	m	struct:_SFBASE_STATS
+total_ip_sessions	Stream5/stream5_common.h	/^    uint32_t   total_ip_sessions;$/;"	m	struct:_Stream5Stats
+total_ipfragmented_bytes	perf-base.h	/^    uint64_t   total_ipfragmented_bytes;$/;"	m	struct:_SFBASE
+total_ipfragmented_packets	perf-base.h	/^    uint64_t   total_ipfragmented_packets;$/;"	m	struct:_SFBASE
+total_ipreassembled_bytes	perf-base.h	/^    uint64_t   total_ipreassembled_bytes;$/;"	m	struct:_SFBASE
+total_ipreassembled_packets	perf-base.h	/^    uint64_t   total_ipreassembled_packets;$/;"	m	struct:_SFBASE
+total_length	Stream5/stream5_ha.c	/^    uint16_t total_length;$/;"	m	struct:_MsgHeader	file:
+total_mpls_bytes	perf-base.h	/^    uint64_t   total_mpls_bytes;$/;"	m	struct:_SFBASE
+total_mpls_bytes	perf-base.h	/^    uint64_t   total_mpls_bytes;$/;"	m	struct:_SFBASE_STATS
+total_mpls_packets	perf-base.h	/^    uint64_t   total_mpls_packets;$/;"	m	struct:_SFBASE
+total_mpls_packets	perf-base.h	/^    uint64_t   total_mpls_packets;$/;"	m	struct:_SFBASE_STATS
+total_packets	perf-base.h	/^    uint64_t   total_packets;  \/* Really, total packets of$/;"	m	struct:_SFBASE
+total_packets	perf-base.h	/^    uint64_t   total_packets;$/;"	m	struct:_SFBASE_STATS
+total_rebuilt_bytes	perf-base.h	/^    uint64_t   total_rebuilt_bytes;$/;"	m	struct:_SFBASE
+total_rebuilt_packets	perf-base.h	/^    uint64_t   total_rebuilt_packets;$/;"	m	struct:_SFBASE
+total_segs_queued	Stream5/snort_stream5_tcp.c	/^    uint32_t total_segs_queued;  \/* number of segments queued (life) *\/$/;"	m	struct:_StreamTracker	file:
+total_sessions	perf-base.h	/^    uint64_t   total_sessions;$/;"	m	struct:_SFBASE_STATS
+total_tcp_filtered_packets	perf-base.h	/^    uint64_t   total_tcp_filtered_packets;$/;"	m	struct:_SFBASE
+total_tcp_filtered_packets	perf-base.h	/^    uint64_t   total_tcp_filtered_packets;$/;"	m	struct:_SFBASE_STATS
+total_tcp_sessions	Stream5/stream5_common.h	/^    uint32_t   total_tcp_sessions;$/;"	m	struct:_Stream5Stats
+total_udp_filtered_packets	perf-base.h	/^    uint64_t   total_udp_filtered_packets;$/;"	m	struct:_SFBASE
+total_udp_filtered_packets	perf-base.h	/^    uint64_t   total_udp_filtered_packets;$/;"	m	struct:_SFBASE_STATS
+total_udp_sessions	Stream5/stream5_common.h	/^    uint32_t   total_udp_sessions;$/;"	m	struct:_Stream5Stats
+total_udp_sessions	perf-base.h	/^    uint64_t   total_udp_sessions;$/;"	m	struct:_SFBASE_STATS
+total_wire_bytes	perf-base.h	/^    uint64_t   total_wire_bytes;$/;"	m	struct:_SFBASE
+total_wire_packets	perf-base.h	/^    uint64_t   total_wire_packets;$/;"	m	struct:_SFBASE
+totaltime	perf-base.h	/^    double totaltime;$/;"	m	struct:_SYSTIMES
+track_icmp_sessions	Stream5/stream5_common.h	/^    char       track_icmp_sessions;$/;"	m	struct:_Stream5GlobalConfig
+track_ip_sessions	Stream5/stream5_common.h	/^    char       track_ip_sessions;$/;"	m	struct:_Stream5GlobalConfig
+track_tcp_sessions	Stream5/stream5_common.h	/^    char       track_tcp_sessions;$/;"	m	struct:_Stream5GlobalConfig
+track_udp_sessions	Stream5/stream5_common.h	/^    char       track_udp_sessions;$/;"	m	struct:_Stream5GlobalConfig
+transform	Stream5/Makefile	/^transform = $(program_transform_name)$/;"	m
+transition_seq	Stream5/snort_stream5_tcp.c	/^    uint32_t   transition_seq;$/;"	m	struct:_StateMgr	file:
+traverse_reassembled	stream_api.h	/^    int (*traverse_reassembled)(Packet *, PacketIterator, void *userdata);$/;"	m	struct:_stream_api
+traverse_stream_segments	stream_api.h	/^    int (*traverse_stream_segments)(Packet *, StreamSegmentIterator, void *userdata);$/;"	m	struct:_stream_api
+trh	decode.h	/^    Trh_hdr *trh;               \/* Token Ring support headers *\/$/;"	m	struct:_Packet
+trhllc	decode.h	/^    Trh_llc *trhllc;$/;"	m	struct:_Packet
+trhmr	decode.h	/^    Trh_mr *trhmr;$/;"	m	struct:_Packet
+ts	Stream5/snort_stream5_tcp.c	/^    uint32_t   ts;$/;"	m	struct:_StreamSegment	file:
+ts	Stream5/snort_stream5_tcp.c	/^    uint32_t   ts;$/;"	m	struct:_TcpDataBlock	file:
+ts_last	Stream5/snort_stream5_tcp.c	/^    uint32_t ts_last;      \/* last timestamp (for PAWS) *\/$/;"	m	struct:_StreamTracker	file:
+ts_last_pkt	Stream5/snort_stream5_tcp.c	/^    uint32_t ts_last_pkt;  \/* last packet timestamp we got *\/$/;"	m	struct:_StreamTracker	file:
+tv	Stream5/snort_stream5_tcp.c	/^    struct timeval tv;$/;"	m	struct:_StreamSegment	typeref:struct:_StreamSegment::timeval	file:
+type	Stream5/stream5_ha.c	/^    uint8_t type;$/;"	m	struct:_RecordHeader	file:
+udp_cache_nominal_timeout	Stream5/stream5_common.h	/^    uint16_t   udp_cache_nominal_timeout;$/;"	m	struct:_Stream5GlobalConfig
+udp_cache_pruning_timeout	Stream5/stream5_common.h	/^    uint16_t   udp_cache_pruning_timeout;$/;"	m	struct:_Stream5GlobalConfig
+udp_config	Stream5/stream5_common.h	/^    Stream5UdpConfig *udp_config;$/;"	m	struct:_Stream5Config
+udp_discards	Stream5/stream5_common.h	/^    uint32_t   udp_discards;$/;"	m	struct:_Stream5Stats
+udp_lws_cache	Stream5/snort_stream5_udp.c	/^Stream5SessionCache *udp_lws_cache = NULL;$/;"	v
+udp_port_filter	Stream5/stream5_common.h	/^    tPortFilterStats  udp_port_filter;$/;"	m	struct:_Stream5Stats
+udp_prunes	Stream5/stream5_common.h	/^    uint32_t   udp_prunes;$/;"	m	struct:_Stream5Stats
+udp_responder_ip	Stream5/snort_stream5_udp.c	67;"	d	file:
+udp_responder_port	Stream5/snort_stream5_udp.c	68;"	d	file:
+udp_sender_ip	Stream5/snort_stream5_udp.c	65;"	d	file:
+udp_sender_port	Stream5/snort_stream5_udp.c	66;"	d	file:
+udp_session_limit	stream_api.h	/^    uint32_t udp_session_limit;$/;"	m	struct:_StreamSessionLimits
+udp_session_mempool	Stream5/snort_stream5_udp.c	/^static MemPool udp_session_mempool;$/;"	v	file:
+udp_sessions_created	Stream5/stream5_common.h	/^    uint32_t   udp_sessions_created;$/;"	m	struct:_Stream5Stats
+udp_sessions_released	Stream5/stream5_common.h	/^    uint32_t   udp_sessions_released;$/;"	m	struct:_Stream5Stats
+udp_timeouts	Stream5/stream5_common.h	/^    uint32_t   udp_timeouts;$/;"	m	struct:_Stream5Stats
+uh_chk	decode.h	/^    u_int16_t uh_chk;$/;"	m	struct:_UDPHdr
+uh_dport	decode.h	/^    u_int16_t uh_dport;$/;"	m	struct:_UDPHdr
+uh_len	decode.h	/^    u_int16_t uh_len;$/;"	m	struct:_UDPHdr
+uh_sport	decode.h	/^    u_int16_t uh_sport;$/;"	m	struct:_UDPHdr
+uiBitBufferSize	stream_api.h	/^    unsigned int  uiBitBufferSize;$/;"	m	struct:_BITOP
+uiMaxBits	stream_api.h	/^    unsigned int  uiMaxBits;$/;"	m	struct:_BITOP
+unset_port_filter_status	stream_api.h	/^    void (*unset_port_filter_status)(struct _SnortConfig *sc,$/;"	m	struct:_stream_api
+unset_tcp_syn_session_status	stream_api.h	/^    void (*unset_tcp_syn_session_status)(struct _SnortConfig *sc, uint16_t status, tSfPolicyId policyId, int parsing);$/;"	m	struct:_stream_api
+update_direction	stream_api.h	/^    void (*update_direction)(void *, char, snort_ip_p, uint16_t );$/;"	m	struct:_stream_api
+update_messages_received	Stream5/stream5_ha.c	/^    uint32_t update_messages_received;$/;"	m	struct:__anon14	file:
+update_messages_received_no_session	Stream5/stream5_ha.c	/^    uint32_t update_messages_received_no_session;$/;"	m	struct:__anon14	file:
+update_messages_sent_immediately	Stream5/stream5_ha.c	/^    uint32_t update_messages_sent_immediately;$/;"	m	struct:__anon14	file:
+update_messages_sent_normally	Stream5/stream5_ha.c	/^    uint32_t update_messages_sent_normally;$/;"	m	struct:__anon14	file:
+update_session_alert	stream_api.h	/^    int (*update_session_alert)(void *, Packet *p, uint32_t, uint32_t, uint32_t, uint32_t);$/;"	m	struct:_stream_api
+urg_offset	Stream5/snort_stream5_tcp.c	/^    uint16_t   urg_offset;$/;"	m	struct:_StreamSegment	file:
+uri_count	decode.h	/^    u_int8_t uri_count;     \/* number of URIs in this packet *\/$/;"	m	struct:_Packet
+use_side_channel	Stream5/stream5_common.h	/^    uint8_t use_side_channel;$/;"	m	struct:_Stream5HAConfig
+usecs_per_packet	perf-base.h	/^    SYSTIMES usecs_per_packet;$/;"	m	struct:_SFBASE_STATS
+used	mempool.h	/^    int used;$/;"	m	struct:_MemBucket
+used_list	mempool.h	/^    sfSDList used_list;$/;"	m	struct:_MemPool
+user	Stream5/stream5_paf.h	/^    void* user;      \/\/ arbitrary user data$/;"	m	struct:__anon15
+user_cpu_time	perf-base.h	/^    double   user_cpu_time;$/;"	m	struct:_SFBASE_STATS
+usertime	perf-base.h	/^    double usertime;$/;"	m	struct:_SYSTIMES
+usertime_sec	perf-base.h	/^    double   usertime_sec;$/;"	m	struct:_SFBASE
+usrfree	sfxhash.c	/^int usrfree( void * key, void * data )$/;"	f
+usrfree	sfxhash.h	/^  int (*usrfree)( void * key, void * data );$/;"	m	struct:_sfxhash
+version	Stream5/stream5_ha.c	/^    uint8_t version;$/;"	m	struct:_MsgHeader	file:
+version	stream_api.h	/^    int version;$/;"	m	struct:_stream_api
+vh	decode.h	/^    VlanTagHdr *vh;$/;"	m	struct:_Packet
+vlan_tag	stream_api.h	/^    uint16_t   vlan_tag;$/;"	m	struct:_StreamSessionKey
+vth_pri_cfi_vlan	decode.h	/^    u_int16_t vth_pri_cfi_vlan;$/;"	m	struct:_VlanTagHdr
+vth_proto	decode.h	/^    u_int16_t vth_proto;  \/* protocol field... *\/$/;"	m	struct:_VlanTagHdr
+win	Stream5/snort_stream5_tcp.c	/^    uint32_t   win;$/;"	m	struct:_TcpDataBlock	file:
+wire_mbits_per_sec	perf-base.h	/^    SYSTIMES wire_mbits_per_sec;$/;"	m	struct:_SFBASE_STATS
+wscale	Stream5/snort_stream5_tcp.c	/^    uint16_t wscale;       \/* window scale setting *\/$/;"	m	struct:_StreamTracker	file:
+xtradata_func_count	spp_stream5.c	/^uint32_t xtradata_func_count = 0;$/;"	v
+xtradata_map	spp_stream5.c	/^LogFunction xtradata_map[LOG_FUNC_MAX];$/;"	v
+xtradata_mask	Stream5/snort_stream5_tcp.c	/^    uint32_t xtradata_mask;      \/* extra data available to log *\/$/;"	m	struct:_StreamTracker	file:

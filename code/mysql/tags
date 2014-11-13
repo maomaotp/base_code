@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DB_NAME	sqlhandler.h	9;"	d
+Exec_Begin	sqlhandler.c	/^int Exec_Begin()$/;"	f
+Exec_Rollback	sqlhandler.c	/^int Exec_Rollback()$/;"	f
+INITSQL_H_	initsql.h	2;"	d
+Init_Sql	sqlhandler.c	/^void Init_Sql(MYSQL* mysql)$/;"	f
+Insert_Sql_Exec	sqlhandler.c	/^int Insert_Sql_Exec(MYSQL* mysql, char* sql)$/;"	f
+PASSWD	sqlhandler.h	8;"	d
+SERVER_IP	sqlhandler.h	6;"	d
+SQLHANDLER_H	sqlhandler.h	2;"	d
+Select_Sql_Exec	sqlhandler.c	/^int Select_Sql_Exec(MYSQL* mysql, char* sql, void (*call_back)(char** result, int column, void* param), void* param)$/;"	f
+TurnTime	initsql.c	/^void TurnTime(const time_t clock, char *tips_clock, int clocksize)$/;"	f
+USER_NAME	sqlhandler.h	7;"	d
+alarm_id	initsql.h	/^	char alarm_id[12];$/;"	m	struct:cache_alarm_t
+alarm_time	initsql.h	/^	time_t alarm_time;$/;"	m	struct:cache_alarm_t
+cache_alarm_t	initsql.h	/^typedef struct cache_alarm_t$/;"	s
+cache_alarm_t	initsql.h	/^}cache_alarm_t;$/;"	t	typeref:struct:cache_alarm_t
+call_back	main.c	/^void call_back(char** result,int column,void* param)$/;"	f
+call_back_table_name	main.c	/^void call_back_table_name(char** result,int column,void* param)$/;"	f
+descry	initsql.h	/^	char descry[65];$/;"	m	struct:cache_alarm_t
+device_id	initsql.h	/^	char device_id[12];$/;"	m	struct:cache_alarm_t
+dip	initsql.h	/^	char dip[19];$/;"	m	struct:cache_alarm_t
+dmac	initsql.h	/^	char dmac[20];$/;"	m	struct:cache_alarm_t
+insert_sql	main.c	/^void insert_sql(int index)$/;"	f
+main	initsql.c	/^int main()$/;"	f
+main	main.c	/^int main(int argc, char* argv[])$/;"	f
+mutex	sqlhandler.h	/^pthread_mutex_t mutex;$/;"	v
+risk	initsql.h	/^	char risk;$/;"	m	struct:cache_alarm_t
+scc	initsql.h	/^	char scc[65];$/;"	m	struct:cache_alarm_t
+scc_flag	initsql.h	/^	char scc_flag;$/;"	m	struct:cache_alarm_t
+select_sql	main.c	/^void select_sql()$/;"	f
+sip	initsql.h	/^	char sip[19];$/;"	m	struct:cache_alarm_t
+sql_alarm_info	initsql.c	/^int sql_alarm_info(cache_alarm_t* alarm_data)$/;"	f
+stores_Sql_Exec	sqlhandler.c	/^int stores_Sql_Exec(MYSQL* mysql, char* sql, void (*call_back)(char** result, int column, void* param), void* param)$/;"	f
+stores_sql	main.c	/^void stores_sql()$/;"	f
+trojan_id	initsql.h	/^	char trojan_id[6];$/;"	m	struct:cache_alarm_t
+type	initsql.h	/^	char type[3];$/;"	m	struct:cache_alarm_t

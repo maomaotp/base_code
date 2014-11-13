@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/DevelopRep/!svn/ver/6363/BoundaryProtectLine/TNM/MAINLINE/branches/database
+END
+auto.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/6363/BoundaryProtectLine/TNM/MAINLINE/branches/database/auto.sh
+END
+sqlhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/6363/BoundaryProtectLine/TNM/MAINLINE/branches/database/sqlhandler.h
+END
+initsql.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/6358/BoundaryProtectLine/TNM/MAINLINE/branches/database/initsql.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DevelopRep/!svn/ver/6363/BoundaryProtectLine/TNM/MAINLINE/branches/database/main.c
+END
+initsql.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/6358/BoundaryProtectLine/TNM/MAINLINE/branches/database/initsql.h
+END
+sqlhandler.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/6363/BoundaryProtectLine/TNM/MAINLINE/branches/database/sqlhandler.c
+END

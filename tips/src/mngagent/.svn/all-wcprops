@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent
+END
+audittask.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/audittask.h
+END
+kill_tipsalarm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/kill_tipsalarm.sh
+END
+Kill_Start.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/Kill_Start.sh
+END
+datatask.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/datatask.h
+END
+reporttask.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/reporttask.h
+END
+statustask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/statustask.cpp
+END
+kill_tipsaudit.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/kill_tipsaudit.sh
+END
+cachestruct.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/cachestruct.h
+END
+publicdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/publicdata.h
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tags
+END
+mngchkpostman.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/mngchkpostman.h
+END
+tipsmanager.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tipsmanager.h
+END
+ui_manage_server.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/ui_manage_server.h
+END
+clienthandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/clienthandler.h
+END
+itimertask.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/itimertask.h
+END
+netlog.cpp.201312111105.bak
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/netlog.cpp.201312111105.bak
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/main.cpp
+END
+ointerface.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/ointerface.h
+END
+funhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/funhandler.cpp
+END
+netlog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/netlog.cpp
+END
+audittask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/audittask.cpp
+END
+netlog.h.201312111105.bak
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/netlog.h.201312111105.bak
+END
+rulesdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/rulesdata.h
+END
+objectcreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/objectcreator.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/Makefile
+END
+datatask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/datatask.cpp
+END
+backuptask.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/backuptask.h
+END
+kill_tipsblock.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/kill_tipsblock.sh
+END
+reporttask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/reporttask.cpp
+END
+tipsalarm.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tipsalarm.h
+END
+syntask.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/syntask.h
+END
+sqlhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sqlhandler.h
+END
+mngchkdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/mngchkdata.h
+END
+mngchkpostman.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/mngchkpostman.cpp
+END
+tipsmanager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tipsmanager.cpp
+END
+sharemem_with_pid.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem_with_pid.tar.gz
+END
+statustask.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/statustask.h
+END
+ui_manage_server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/ui_manage_server.cpp
+END
+clienthandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/clienthandler.cpp
+END
+itimertask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/itimertask.cpp
+END
+data.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/data.h
+END
+ointerface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/ointerface.cpp
+END
+startmanager.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/startmanager.sh
+END
+net_guard_final_with_note.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final_with_note.tar.gz
+END
+sharemem.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem.tar.gz
+END
+tempfile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tempfile
+END
+objectcreator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/objectcreator.cpp
+END
+backuptask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/backuptask.cpp
+END
+tipsmanager
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tipsmanager
+END
+funhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/funhandler.h
+END
+syntask.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/syntask.cpp
+END
+tipsalarm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/tipsalarm.cpp
+END
+netlog.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/netlog.h
+END
+sqlhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sqlhandler.cpp
+END

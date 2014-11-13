@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 2013.06.04 -->
+<wsdl:definitions
+   name="dataengine_interface"
+   targetNamespace="http://www.lab503.cn/wsdl/dataengine/v1/interface"
+   xmlns="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:lab503_dataengine="http://www.lab503.cn/wsdl/dataengine/v1/interface"
+   xmlns:lab503_dataengine_xsd="http://www.lab503.cn/schema/dataengine/v1/types"
+   xmlns:lab503_dataengine_local_xsd="http://www.lab503.cn/schema/dataengine/v1/local">
+
+   <wsdl:types>
+      <xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.lab503.cn/schema/dataengine/v1/local">
+         <xsd:import namespace="http://www.lab503.cn/schema/dataengine/v1/types" schemaLocation="lab503_dataengine_types_1_0.xsd"/>
+
+         <!-- Operation Struct Define As Follows -->		 
+         <xsd:element name="ServiceException" type="lab503_dataengine_local_xsd:ServiceException"/>
+         <xsd:complexType name="ServiceException">
+            <xsd:sequence>
+               <xsd:element name="messageId" type="xsd:string"/>
+               <xsd:element name="text" type="xsd:string"/>
+            </xsd:sequence>
+         </xsd:complexType>
+		 
+         <xsd:element name="queryFm" type="lab503_dataengine_local_xsd:queryFm"/>
+         <xsd:complexType name="queryFm">
+            <xsd:sequence>
+			   <xsd:element name="userId" type="xsd:string"/>
+            </xsd:sequence>
+		 </xsd:complexType>
+         <xsd:element name="queryFmResponse" type="lab503_dataengine_local_xsd:queryFmResponse"/>
+		 <xsd:complexType name="queryFmResponse">
+            <xsd:sequence>
+               <xsd:element name="fmId" type="xsd:string"/>
+            </xsd:sequence>
+         </xsd:complexType>		 	 
+		 
+      </xsd:schema>
+   </wsdl:types>
+
+   <wsdl:message name="DataEngine_ServiceException">
+      <wsdl:part name="ServiceException" element="lab503_dataengine_local_xsd:ServiceException"/>
+   </wsdl:message>
+
+   <wsdl:message name="DataEngine_queryFmRequest">
+      <wsdl:part name="parameters" element="lab503_dataengine_local_xsd:queryFm"/>
+   </wsdl:message>
+   <wsdl:message name="DataEngine_queryFmResponse">
+      <wsdl:part name="result" element="lab503_dataengine_local_xsd:queryFmResponse"/>
+   </wsdl:message>           
+ 
+   <wsdl:portType name="DataEngine">
+      <wsdl:operation name="queryFm">
+         <wsdl:input message="lab503_dataengine:DataEngine_queryFmRequest"/>
+         <wsdl:output message="lab503_dataengine:DataEngine_queryFmResponse"/>
+         <wsdl:fault name="ServiceException" message="lab503_dataengine:DataEngine_ServiceException"/>
+      </wsdl:operation>		  
+	  
+   </wsdl:portType>
+</wsdl:definitions>

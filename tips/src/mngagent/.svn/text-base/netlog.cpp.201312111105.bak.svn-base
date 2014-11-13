@@ -1,0 +1,381 @@
+#include "netlog.h"
+
+extern int startrun;
+extern char LOCALDEVID[];
+
+int CNetlog::my_pow(int num, int n)
+{
+	int i;
+	int sum = 1;
+	for (i = 1; i <= n; i++)
+		sum *= num;
+	return sum;
+}
+
+#if 1
+void CNetlog::getlargeIP(char* source, uint32_t* startIP, uint32_t* largeIP, char** startip, char** overip)
+{
+	char mytmp[1024];
+	int amount = 0;
+	int endip = 0;
+	int yanma = 0;
+	char *tmp = 0;
+	char *tmp2 = 0;
+	memset(mytmp, 0, sizeof (mytmp));
+	strcpy(mytmp, source);
+	mytmp[strlen (mytmp)] = '\0';
+//	cout << " cao ni da ye" <<endl;
+	char *fl = strchr(mytmp, '/');
+	if ((tmp = strtok(mytmp, "/")))
+	{
+		if (inet_pton(AF_INET, tmp, startIP))
+		{
+			char temp[1024];
+			memset(temp, 0, sizeof (temp));
+			inet_ntop(AF_INET, startIP, temp, sizeof (temp));
+			*startip = new char[strlen(temp) + 1];
+			strcpy (*startip, temp);
+			*startIP = ntohl(*startIP);
+			if (fl && (tmp2 = strtok(NULL, "/")))
+			{
+				amount = atoi(tmp2);
+				endip = (my_pow(2, (32 - amount)) -1 );
+				yanma = ~endip;
+				*largeIP = ((*startIP) & ((yanma))) | (endip);
+			//	*largeIP = (ntohl(*startIP) & ((yanma))) | (endip);
+
+				*largeIP = htonl(*largeIP);
+				memset(temp, 0, sizeof (temp));
+				inet_ntop(AF_INET, largeIP, temp, sizeof (temp));
+				*overip = new char[strlen(temp) + 1];
+				strcpy(*overip, temp);
+				cout << "start ip === "<< startip << endl;
+				cout << "overip === " << overip <<endl;
+				return;
+			}
+			else
+			{
+				*largeIP = *startIP;
+				*largeIP = htonl(*largeIP);
+				inet_ntop(AF_INET, largeIP, temp, sizeof (temp));
+		//		*startip = new char[strlen(temp) + 1];
+		//		strcpy (*startip, temp);
+				*overip = new char[strlen(temp) + 1];
+				strcpy(*overip, temp);
+				cout << "start ip === "<< *startip << endl;
+				cout << "overip === " << *overip <<endl;
+
+				return;
+			}
+		}
+	}
+}
+#endif
+#if 0 
+void CNetlog::getlargeIP(char *source,uint32_t *startIP,uint32_t *largeIP)
+{
+		int amount = 0;
+		int endip = 0;
+		int yanma = 0;
+		char *tmp = 0;
+		char *tmp2 = 0;
+		char *fl = strchr(source,'/');
+		if((tmp = strtok(source,"/")))
+		{
+				if(inet_pton(AF_INET,tmp,startIP))
+				{
+						*startIP = ntohl(*startIP);
+						if(fl && (tmp2 = strtok(NULL,"/")))
+						{
+								amount = atoi(tmp2);	
+								endip = (my_pow(2,(32 - amount)) - 1);
+								yanma = ~endip;
+								*largeIP = ((*startIP) & ((yanma))) | (endip);
+								return;
+						}
+						else 
+								*largeIP = *startIP;
+				}
+		}
+		return;
+}
+#endif
+
+void CNetlog::deal()
+{
+return ;
+/*
+	int n = 0;
+	FILE* fp = fopen("/etc/tipscheck/ui_pid", "r");
+	char buffer[1024];
+	memset(buffer, 0, sizeof (buffer));
+	while (fgets(buffer, sizeof (buffer), fp))
+	{
+		if (strstr(buffer, "UI_PID:"))
+		{
+			buffer[strlen(buffer) - 1] = '\0';
+			n = atoi(strchr(buffer, ':') + 1);
+			break;
+		}
+	}
+	fclose(fp);
+	char buf[1024];
+	memset(buf, 0, sizeof (buf));
+	snprintf(buf, sizeof (buf), "1014_%ld_%s_%s.log", time (NULL), LOCALDEVID, param[7]);
+	fp = fopen(buf, "w+");
+	kill(n, SIGUSR2);
+	struct dirent* dp;
+	DIR* dfp;
+	if (NULL == (dfp = opendir("/root/lirongxun/manage_20130324")))
+	{
+		fprintf(stderr, "%s\n", strerror(errno));
+		return;
+	}
+	while (NULL != (dp = readdir(dfp)))
+	{
+		if ((!strcmp(dp->d_name, ".")) && (!strcmp(dp->d_name, "..")) && (!strcmp(dp->d_name, "tips.db")) && (!strcmp(dp->d_name, "tips_bak.db")) && (!strstr(dp->d_name, ".db")))
+			continue;
+		char temp[1024];
+		memset(temp, 0, sizeof (temp));
+		char* p = strstr(dp->d_name, ".db");
+		strncpy(temp, dp->d_name, strlen(dp->d_name) - strlen(p));
+		long long int n = atoll(temp);
+		long long int stime = atoll(param[5]);
+		long long int etime = atoll(param[6]);
+		if ((n >= stime) && (n <= etime))
+		{
+			char path[1024];
+			memset(path, 0, sizeof (path));
+			strncpy(path, "/root/lirongxun/manage_20130324", sizeof (path));
+			strcat(path, dp->d_name);
+			int rc = sqlite3_open(path, &netlog_db);
+			if (rc)
+				fprintf(stderr, "%s\n", sqlite3_errmsg(netlog_db));
+#if 1
+			rc = sqlite3_key(netlog_db, "admin", 5);
+			if (rc)
+				fprintf(stderr, "%s\n", sqlite3_errmsg(netlog_db));
+			Audit(fp);
+#endif
+		}
+	}
+	fclose(fp);
+	memset(buffer, 0, sizeof (buffer));
+	char* directory = get_current_dir_name();
+	strcpy(buffer, directory);
+	strcat(buffer, "/");
+	strcat(buffer, buf);
+	unlink(buffer);
+	sql_cmd[strlen(sql_cmd)] = '\0';
+	cout <<"sql_cmd ============ " << sql_cmd <<endl;	
+	pthread_mutex_lock (&sqlite_sync_mutex);
+	sqlite3_get_table (db, sql_cmd, &azResult, &nrow, &ncolumn, &errMsg);
+	time_t etime = atoi(param[6]);
+	time_t stime = atoi(param[5]);
+	memset (param[6], 0, sizeof(param[6]));
+	memset (param[5], 0, sizeof(param[5]));
+	reprort.TurnTime(stime, param[5], 1024);
+	reprort.TurnTime(etime, param[6], 1024);
+	for(int j = 1; j < nrow + 1; j++)
+	{
+		memset (buffer, 0, sizeof(buffer));
+	//	snprintf (buffer, sizeof (buffer), "%s#%s#%s#%s#%s#%s#%s#%s#%s#%s#%s\n", LOCALDEVID, param[7], azResult[j * ncolumn + 1], azResult[j * ncolumn + 2], azResult[j * ncolumn + 3], azResult[j * ncolumn + 4], azResult[j * ncolumn + 5], azResult[j * ncolumn + 6], azResult[j * ncolumn +7], azResult[j * ncolumn + 8], azResult[j * ncolumn + 10]);
+		snprintf (buffer, sizeof (buffer), "%s#%s#%s#%s#%s#%s#%s#%s#%s#%s#%s\n", LOCALDEVID, param[7], azResult[j * ncolumn + 1], azResult[j * ncolumn + 2], azResult[j * ncolumn + 3], azResult[j * ncolumn + 4], 5, azResult[j * ncolumn + 6], azResult[j * ncolumn + 7], azResult[j * ncolumn + 8], azResult[j * ncolumn + 10]);
+		buffer[strlen (buffer)] = '\0';
+		fwrite (buffer, strlen(buffer), 1, fp);
+	}
+	sqlite3_free_table(azResult);
+	fclose(fp);
+	cout << "buffer =============" <<buffer <<endl;
+	memset (buffer, 0, sizeof(buffer));
+	char* directory = get_current_dir_name();
+	strcpy (buffer, directory);
+	strcat (buffer, "/");
+	strcat (buffer, buf);
+	buffer[strlen (buffer)] = '\0';
+
+	int rc = UploadData(buffer,0);
+	if (-1 == rc)
+		reprort.Update_flag(rc, (char*)"上传文件失败");
+	else
+	{
+		reprort.Update_flag(rc, (char*)"update tips_netlog set flag='1'");
+	}
+	pthread_mutex_unlock(&sqlite_sync_mutex);
+	char rm[1024];
+	memset (rm, 0, sizeof(rm));
+	unlink (buffer);
+//	sprintf (rm, "rm -f %s", buffer);
+//	system(rm);
+	tips_sqlite_sync.tips_unlock (2);
+#endif
+*/
+//	kill(n, SIGUSR2);
+}
+
+void CNetlog::Audit(FILE* fp)
+{
+	ReportTask reprort;
+	cout <<"111111111111111111111111111111" <<endl;
+//	tips_sqlite_sync.tips_lock (2);
+	char dip[32];
+	char sip[32];
+//	int sport = 0;
+//	int dport = 0;
+	int nrow = 0, ncolumn = 0;
+	char** azResult;
+	char* errMsg;
+	char sql_cmd[1024];
+	memset(sql_cmd, 0, sizeof (sql_cmd));
+	char dstartip[1024];
+	char dendip[1024];
+	char sstartip[1024];
+	char sendip[1024];
+	memset(dstartip, 0, sizeof (dstartip));
+	memset(dendip, 0, sizeof(dendip));
+	memset(sstartip, 0, sizeof(sstartip));
+	memset(sendip, 0, sizeof(sendip));
+	for (int i = 0; i < 2; i ++)
+	{
+		if ((!strcmp(param[0], "0")) || (!strcmp(param[1], "0")))
+			continue;
+		char t[1024];
+		memset(t, 0, sizeof (t));
+		strcpy(t, param[i]);
+		cout << "t ========="<< t <<endl;
+		uint32_t a, b;
+		char *buffer = NULL;
+		char *buf = NULL;
+		cout <<" i ==================" << i <<endl;
+		if ((0 == i) || (1 == i))
+			getlargeIP(t, &a, &b, &buffer, &buf);
+		cout << "i222222222 ===========" << i <<endl;
+		if (0 == i)
+		{
+			strcpy(dstartip, buffer);
+			strcpy(dendip, buf);
+		}
+		else if (1 == i)
+		{
+			strcpy(sstartip, buffer);
+			strcpy(sendip, buf);
+		}
+		if (buffer)
+			delete buffer;
+		if (buf)
+			delete buf;
+	}
+	
+	char buf[1024] = {0};
+	
+	char buffer[1024];
+#if 1
+	char starttime[20] = {0};
+	char endtime[20] = {0};
+	reprort.TurnTime((time_t)atoi(param[5]), starttime, sizeof (starttime));
+	reprort.TurnTime((time_t)atoi(param[6]) + 3600, endtime, sizeof (endtime));
+	snprintf(sql_cmd, sizeof (sql_cmd), "select * from tips_netlog where Start_time>='%s' and End_time<='%s' and flag='0' ", starttime, endtime);
+	if (strcmp(param[0], "0"))
+	{
+		char temp[100] = {0};
+		snprintf(temp, sizeof (temp), " and Sip>='%s' and Sip<='%s' ", sstartip, sendip);
+		strcat(sql_cmd, temp);
+	}
+	if (strcmp(param[1], "0"))
+	{
+		char temp[100] = {0};
+		snprintf(temp, sizeof (temp), " and Dip>='%s' and Dip<='%s' ", dstartip, dendip);
+		strcat(sql_cmd, temp);
+	}
+	if (strcmp(param[2], "0"))
+	{
+		char temp[100] = {0};
+		snprintf(temp, sizeof (temp), " and Sport='%s' ", param[2]);
+		strcat(sql_cmd, temp);
+	}
+	if (strcmp(param[3], "0"))
+	{
+		char temp[100] = {0};
+		snprintf(temp, sizeof (temp), " and Dport='%s' ", param[3]);
+		strcat(sql_cmd, temp);
+	}
+	if (strcmp(param[4], "0"))
+	{
+		char temp[100] = {0};
+		snprintf(temp, sizeof (temp), " and Protocol='%s' ", param[4]);
+		strcat(sql_cmd, temp);
+	}
+#endif
+	sql_cmd[strlen(sql_cmd)] = '\0';
+	cout <<"sql_cmd ============ " << sql_cmd <<endl;	
+//	pthread_mutex_lock (&sqlite_sync_mutex);
+start:
+//	int ret = sqlite3_get_table(netlog_db, sql_cmd, &azResult, &nrow, &ncolumn, &errMsg);
+//	if (SQLITE_OK != ret)
+//		goto start;
+	time_t etime = atoi(param[6]);
+	time_t stime = atoi(param[5]);
+	memset(param[6], 0, sizeof (param[6]));
+	memset(param[5], 0, sizeof (param[5]));
+	reprort.TurnTime(stime, param[5], 1024);
+	reprort.TurnTime(etime, param[6], 1024);
+	
+	for(int j = 1; j < nrow + 1; j++)
+	{
+		memset(buffer, 0, sizeof (buffer));
+	//	snprintf (buffer, sizeof (buffer), "%s#%s#%s#%s#%s#%s#%s#%s#%s#%s#%s\n", LOCALDEVID, param[7], azResult[j * ncolumn + 1], azResult[j * ncolumn + 2], azResult[j * ncolumn + 3], azResult[j * ncolumn + 4], azResult[j * ncolumn + 5], azResult[j * ncolumn + 6], azResult[j * ncolumn +7], azResult[j * ncolumn + 8], azResult[j * ncolumn + 10]);
+		snprintf(buffer, sizeof (buffer), "%s#%s#%s#%s#%s#%s#%s#%s#%s#%s#%s\n", LOCALDEVID, param[7], azResult[j * ncolumn + 1], azResult[j * ncolumn + 2], azResult[j * ncolumn + 3], azResult[j * ncolumn + 4], "5", azResult[j * ncolumn + 6], azResult[j * ncolumn + 7], azResult[j * ncolumn + 8], azResult[j * ncolumn + 10]);
+		fwrite(buffer, strlen(buffer), 1, fp);
+	}
+	
+	sqlite3_free_table(azResult);
+	cout << "buffer =============" <<buffer <<endl;
+	memset(buffer, 0, sizeof (buffer));
+	char* directory = get_current_dir_name();
+	strcpy(buffer, directory);
+	strcat(buffer, "/");
+	strcat(buffer, buf);
+	buffer[strlen (buffer)] = '\0';
+
+	int rc = UploadData(buffer,0);
+	if (-1 == rc)
+		reprort.Update_flag(rc, (char*)"上传文件失败");
+	else
+	{
+		reprort.Update_flag(rc, (char*)"update tips_netlog set flag='1'");
+	}
+//	pthread_mutex_unlock(&sqlite_sync_mutex);
+//	sprintf (rm, "rm -f %s", buffer);
+//	system(rm);
+//	tips_sqlite_sync.tips_unlock (2);
+}
+
+CNetlog::CNetlog(char* p)
+{
+	char temp[1024];
+	memset(temp, 0, sizeof (temp));
+	strcpy(temp, p);
+	char* token = NULL;
+	token = strtok(temp, " ");
+	int cnt = 1;
+	while (token = strtok(NULL, " "))
+	{
+		cnt ++;
+		if((cnt % 2) == 0)
+		{
+			memset(param[cnt / 2 - 1], 0, sizeof (param[cnt/2 - 1]));
+			strcpy(param[cnt / 2 - 1], token);
+		}
+		if(cnt == 16)
+			break;
+	}
+//	for (int i = 0; i < 8; i++)
+	//	cout <<"param[" << i << "]=========" << param[i] <<endl; 
+}
+
+/*
+void CNetlog::setDB(sqlite3* dbhandler)
+{
+	db = dbhandler;
+}
+*/

@@ -1,0 +1,816 @@
+#include "tips_sqlite.h"
+#include "tips_time.h"
+#include "tips_sqlite_manage.h"
+GMutex *user_mutex = NULL;
+GMutex *user_bak_mutex = NULL;
+extern pthread_mutex_t sqlite_sync_mutex;
+extern int startrun;
+extern CTips_sqlite_sync tips_sqlite_sync;
+
+
+/*打开数据库，并初始化互斥量*/
+CUser_sqlite_handle::CUser_sqlite_handle()
+{
+	int ret = sqlite3_open("/root/lirongxun/manage_20130324/tips.db", &db);
+	if(ret != 0){
+		printf("user.db miss\n");
+		exit(0);
+	}
+#if 1
+	ret = sqlite3_key(db, "admin", 5);
+	if(ret != 0){
+		printf("Key error\n");
+		exit(0);
+	}
+#endif
+	ret = sqlite3_open("/root/lirongxun/manage_20130324/tips_bak.db", &bdb);
+	if(ret != 0){
+		printf("user.db miss\n");
+		exit(0);
+	}
+#if 1
+	ret = sqlite3_key(bdb, "admin", 5);
+	if(ret != 0){
+		printf("Key error\n");
+		exit(0);
+	}
+#endif
+	if(NULL == user_mutex)
+		user_mutex = g_mutex_new();
+	if(NULL == user_bak_mutex)
+		user_bak_mutex = g_mutex_new();
+	tips_sqlite_sync.init_sync_mutex();
+	tips_sqlite_sync.sqlite_sync_cli_init((char *)TIPS_DIR);
+}
+
+CUser_sqlite_handle::~CUser_sqlite_handle()
+{
+	sqlite3_close(db);
+	sqlite3_close(bdb);
+	g_mutex_free(user_mutex);
+	user_mutex = NULL;
+	g_mutex_free(user_bak_mutex);
+	user_bak_mutex = NULL;
+}
+
+int judge_account_exist(void* source_user, int argc, char **argv, char **argvv)
+{
+	sqlite_user_t *user = (sqlite_user_t *)source_user;
+	user->login_flag = 1;
+	return 0;
+}
+
+/*用来核对帐号和密码*/
+int judge_user(void* source_user, int argc, char **argv, char **argvv)
+{
+	sqlite_user_t *user = (sqlite_user_t *)source_user;
+	if((!strcmp(user->password, argv[0]))){
+		user->role = g_strdup_printf("%s", argv[1]);
+		user->login_flag = 1;
+	}
+	return 0;
+}
+/*查找用户接口，判断用户是否已经存在，或者验证密码*/
+int CUser_sqlite_handle::User_sqlite_interface(sqlite_user_t *user,
+					       tips_callback tipscallback)
+{
+	char *username = NULL;
+	init_sql_num((char *)(user->username), &username);
+	char *sql =g_strdup_printf("select password,role from tips_user where userName='%s'",username);
+	free(username);
+	char *errmsg;
+	g_mutex_lock(user_mutex);
+	user->login_flag = 0;
+	int ret = sqlite3_exec(bdb, sql, tipscallback, user, &errmsg);
+	if(ret != 0){
+		printf("user.db1:%s\n",errmsg);
+		exit(0);
+	}
+	if(user->login_flag == 1){
+		g_mutex_unlock(user_mutex);
+		return 1;			//密码正确或帐户已经存在
+	}
+	g_mutex_unlock(user_mutex);
+	g_free(sql);
+	return 0;				//密码错误或账户不存在
+}
+
+/*判断密码是否正确，正确返回1，错误返回0*/
+int CUser_sqlite_handle::User_login_judge(sqlite_user_t *user)
+{
+	printf("in user_login_judge\n");
+	return User_sqlite_interface(user, judge_user);
+}
+
+/*插入用户，失败返回0成功返回1*/
+int CUser_sqlite_handle::User_insert(sqlite_user_t* user)
+{
+	char *errmsg;
+	if(User_sqlite_interface(user, judge_account_exist))
+		return 0; 				//帐号存在返回0
+	g_mutex_lock(user_mutex);
+	char *username = NULL;
+	char *password = NULL;
+	init_sql_num((char *)(user->username), &username);
+	init_sql_num((char *)(user->password), &password);
+	gchar *sql = g_strdup_printf("insert into tips_user(userName, password,\
+					createTime, role)\
+					 values('%s','%s','%s','%s')", 
+					username,
+					password,
+					user->createtime,
+					user->role);
+	free(username);
+	free(password);
+	printf("sql===%s\n",sql);
+	int ret = sqlite3_exec(bdb, sql, NULL, NULL, &errmsg);
+	if(ret != 0){
+		printf("user.db2:%s\n",errmsg);
+		exit(0);
+	}
+	g_free(sql);
+	g_mutex_unlock(user_mutex);
+	return 1;					//插入成功返回1
+}
+
+int tips_catchxml(void* source_xml, int argc, char **argv, char **argvv)
+{
+	gchar *temp;
+	char *(turnrole[3]) = {(char *)"普通用户",(char *)"超级管理员",(char *)"管理员"};
+	printf("role==************************%d\n",atoi(argv[3]));
+	if(1 != atoi(argv[3])){
+		if(*((char **)source_xml) != NULL){
+			temp = g_strdup_printf("%s<tips_user><username><![CDATA[%s]]></username><passwd>******</passwd><createtime>%s</createtime><userrole>%s</userrole></tips_user>",*((char **)source_xml), argv[0],argv[2],turnrole[atoi(argv[3])]);
+			g_free(*((char **)source_xml));
+		}
+		else{
+			temp = g_strdup_printf("<tips_user><username><![CDATA[%s]]></username><passwd>******</passwd><createtime>%s</createtime><userrole>%s</userrole></tips_user>",  argv[0], argv[2], turnrole[atoi(argv[3])]);
+		}
+		*((char **)source_xml) = temp;
+		printf("callback:xml==%s\n",*((char **)source_xml));
+	}
+	return 0;
+}
+char *CUser_sqlite_handle::User_catch(char *role)
+{
+	char sql[1024];
+	memset(sql, 0, 1024);
+	printf("role in user_catch------------------------------------%s\n",role);
+	if(NULL != role){
+		snprintf(sql, 1024, "select userName,password,createTime,role from tips_user where role!='%s'", role);
+	}
+	else{
+		strcpy(sql, "select userName,password,createTime,role from tips_user");
+	}
+	char *errmsg;
+	char *xml=NULL;
+	g_mutex_lock(user_mutex);
+	int ret = sqlite3_exec(bdb, sql, tips_catchxml, &xml, &errmsg);
+	if(ret != 0){
+		printf("user.db3:%s\n",errmsg);
+		exit(0);
+	}
+	g_mutex_unlock(user_mutex);
+	return xml;
+
+}
+
+int CUser_sqlite_handle::User_delete(const char *username)
+{
+	char *tempuser = NULL;
+	init_sql_num((char *)username, &tempuser);
+	char *sql = g_strdup_printf("delete from tips_user where userName='%s';"
+					,tempuser);
+	printf("sql===%s\n",sql);
+	free(tempuser);
+	g_mutex_lock(user_mutex);
+	int ret = sqlite3_exec(bdb, sql, NULL, NULL, NULL);
+	if(ret != 0){
+		printf("delete fail\n");
+		exit(0);
+	}
+	g_mutex_unlock(user_mutex);
+	free(sql);
+}
+
+int role_judge(void *role, int argc, char **argv, char **argvv)
+{
+	*((gchar **)role) = g_strdup_printf("%s",argv[0]);
+	return 0;
+}
+
+char* CUser_sqlite_handle::User_Role_Judge(const char *username)
+{
+	char *role;
+	char *errmsg;
+	char *tempuser = NULL;
+	init_sql_num((char *)username, &tempuser);
+	char *sql = g_strdup_printf("select role from tips_user where userName='%s';", tempuser);
+	free(tempuser);
+	g_mutex_lock(user_mutex);
+	int ret = sqlite3_exec(bdb, sql, role_judge, &role, &errmsg);
+	if(ret != 0){
+		printf("judge error:%s",errmsg);
+		exit(0);
+	}
+	free(sql);
+	g_mutex_unlock(user_mutex);
+	return role;
+}
+
+int CUser_sqlite_handle::User_Update(sqlite_user_t *user)
+{
+	char *errmsg;
+	int ret;
+	char *username = NULL;
+	char *password = NULL;
+	init_sql_num((char *)(user->username), &username);
+	init_sql_num((char *)(user->password), &password);
+	char *sql = g_strdup_printf("update tips_user set password='%s' where userName='%s';", password, username);
+	free(username);
+	free(password);
+	g_mutex_lock(user_mutex);
+	ret = sqlite3_exec(bdb, sql, NULL, NULL, &errmsg);
+	if(ret != 0){
+		printf("update error:%s",errmsg);
+		exit(0);
+	}
+	free(sql);
+	g_mutex_unlock(user_mutex);
+	return 0;
+}
+//extern xml_part* xml_part_opt[5];
+int xml_callback(void *xml_opt, int argc, char **argv, char **argvv)
+{
+	char *xmltemp;
+	char *xmlparam=strdup("");
+	xml_stut_t *xml_opt_temp = (xml_stut_t *)xml_opt;
+	char **xml = &(xml_opt_temp->xml);
+	xml_part* (*xmlfun)[1] = (xml_fun_opt)xml_opt_temp->fun;
+	xmltemp = *xml;
+	printf("argc=%d\n",argc);
+	for(int i=0; i < argc; i++){
+		(*((*xmlfun)[i]))(argv[i], &xmlparam);
+		//printf("hello tomorrow=====5=5=5=5==5=5==5=5\n");
+		//xml_part_opt[i](argv[i], &xmlparam);
+		//printf("hello tomorrow=====5=5=5=5==5=5==5=5\n");
+	}
+	*xml = g_strdup_printf("%s<list>%s</list>", xmltemp
+							    , xmlparam);
+	g_free(xmltemp);
+	g_free(xmlparam);
+	return 0;
+}
+
+char* CUser_sqlite_handle::catch_xml_interface(char *sql, void *xmlpartfun)
+{
+	printf("sql========%s\n",sql);
+	char *errmsg;
+	xml_stut_t xml_opt;
+	xml_opt.xml = g_strdup("");
+	xml_opt.fun = xmlpartfun;
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_mutex);
+	int ret = sqlite3_exec(db, sql, xml_callback, &xml_opt, &errmsg);
+	if(ret != 0){
+		printf("sqlite interface error:%s\n",errmsg);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	g_mutex_unlock(user_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+	printf("xml_opt.xml = %s\n",xml_opt.xml);
+	return xml_opt.xml;
+}
+
+
+char* CUser_sqlite_handle::catch_xml_data(char *sql, void *xmlpartfun)
+{
+	printf("sql========%s\n",sql);
+	char *errmsg;
+	xml_stut_t xml_opt;
+	xml_opt.xml = g_strdup("");
+	xml_opt.fun = xmlpartfun;
+	g_mutex_lock(user_bak_mutex);
+	int ret = sqlite3_exec(bdb, sql, xml_callback, &xml_opt, &errmsg);
+	if(ret != 0){
+		printf("sqlite interface error:%s\n",errmsg);
+		exit(0);
+	}
+	g_mutex_unlock(user_bak_mutex);
+	printf("xml_opt.xml = %s\n",xml_opt.xml);
+	return xml_opt.xml;
+}
+
+int CUser_sqlite_handle::catch_opt(char *user, char *des)
+{
+	int ret;
+	char *errmsg;
+	time_t nowtemp;
+	gchar *sql;
+	char *username = NULL;
+	init_sql_num(user, &username);
+	nowtemp = time(NULL);
+	char clock[20];
+	memset(clock, 0, 20);
+	TurnTime(nowtemp, clock, 20);
+	sql = g_strdup_printf("insert into tips_Opt(username,Otime,Optdsc,flag) values('%s','%s','%s','0')",username, clock, des);
+	free(username);
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_mutex);
+	ret = sqlite3_exec(db, sql, NULL, NULL, &errmsg);
+	if(ret != 0){
+		printf("insert:%s\n",errmsg);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	g_mutex_unlock(user_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+	free(sql);
+	return 0;
+}
+
+void CUser_sqlite_handle::TurnTime(const time_t clock, char *tips_clock, int clocksize)
+{
+   struct tm *tm;
+   char *format=(char *)"%Y-%m-%d %H:%M:%S";
+   tm = localtime(&clock);
+   strftime(tips_clock,  clocksize, format,tm);
+}
+
+int CUser_sqlite_handle::init_sql_num(char* src, char** dest)
+{
+	int destlen;
+	char *temp=NULL;
+	if(src != NULL){
+		if(*dest == NULL){
+			destlen = 0;
+		}
+		else{
+			destlen = strlen(*dest);
+		}
+		if(NULL != (temp = strchr(src, '\''))){
+			*dest = (char *)realloc(*dest, strlen(src)-strlen(temp)+1+destlen+2);
+			memset(*dest+destlen,0,strlen(src)-strlen(temp)+1+2);
+			if(destlen != 0)
+				strncat(*dest,src,strlen(src)-strlen(temp));
+			else{
+				memcpy(*dest, src, strlen(src)-strlen(temp));
+			}
+			strcat(*dest,"\'\'");
+			init_sql_num(temp+1,dest);
+		}
+		else{
+			*dest=(char *)realloc(*dest,destlen+strlen(src)+1);
+			memset(*dest+destlen,0,strlen(src)+1);
+			if(destlen != 0){
+				strcat(*dest,src);
+			}
+			else{
+				strcpy(*dest, src);
+			}
+		}
+	}
+	return 0;
+}
+
+int callback_alarm(void *dbnow, int argc, char **argv, char **argvv)
+{
+	db_now_t* dbnowtemp = (db_now_t *)dbnow;
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 14){
+		printf("alarm lenth wrong\n");
+		return 0;
+	}
+	ret = snprintf(sql, 2047, "insert into tips_Alarm(Trojan_id,Sip,Dip,Dmac,Alarm_time,Type,Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id,BackID,Alarm_judgetime,flag) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%lld','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11],dbnowtemp->nowspace,argv[12], argv[13]);
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec(dbnowtemp->db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("copy db error:%s",err);
+			return 0;
+		}
+	}
+	else{
+		printf("alarm format err\n");
+		return 0;
+	}
+	return 0;
+}
+
+
+int callback_event(void *dbnow, int argc, char **argv, char **argvv)
+{
+	db_now_t* dbnowtemp = (db_now_t *)dbnow;
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 18){
+		printf("event lenth wrong\n");
+		return 0;
+	}
+	ret = snprintf(sql, 2047, "insert into tips_Event(Event_class,Event_type,Event_time,Sip,Sport,Dip,Dport,Dmac,Sender,Receiver,Title,File_name,Descr,Sen_msg,Event_iid,Device_id,BackID,Event_judgetime,flag) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%lld','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11], argv[12], argv[13], argv[14], argv[15], dbnowtemp->nowspace, argv[16], argv[17]);
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec(dbnowtemp->db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("copy db error:%s",err);
+			return 0;
+		}
+	}
+	else{
+		printf("alarm format err\n");
+		return 0;
+	}
+	return 0;
+}
+
+int callback_netlog(void *dbnow, int argc, char **argv, char **argvv)
+{
+	db_now_t* dbnowtemp = (db_now_t *)dbnow;
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 9){
+		printf("netlog lenth wrong\n");
+		exit(0);
+		return 0;
+	}
+	ret = snprintf(sql, 2047, "insert into tips_netlog(Dip,Dport,Sip,Sport,Protocol,Start_time,End_time,Load,Upload,BackID) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%lld')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8],dbnowtemp->nowspace);
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec(dbnowtemp->db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("copy db error:%s",err);
+			exit(0);
+		}
+	}
+	else{
+		printf("netlog format err\n");
+		return 0;
+	}
+	return 0;
+}
+
+int callback_opt(void *dbnow, int argc, char **argv, char **argvv)
+{
+	db_now_t* dbnowtemp = (db_now_t *)dbnow;
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 4){
+		printf("opt lenth wrong\n");
+		return 0;
+	}
+	ret = snprintf(sql, 2047, "insert into tips_opt(username,Otime,Optdsc,BackID,flag) values('%s','%s','%s','%lld','%s')",argv[0], argv[1], argv[2], dbnowtemp->nowspace, argv[3]);
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec(dbnowtemp->db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("copy db error:%s",err);
+			exit(0);
+		}
+	}
+	else{
+		printf("alarm format err\n");
+		return 0;
+	}
+	return 0;
+}
+
+
+
+int CUser_sqlite_handle::tips_Copy(char *findsql, tips_callback tipscopy, char *name,int oid)
+{
+	int ret = 0;
+	char *err = NULL;
+	char bdbsql[1024];
+	time_t clock = time(NULL);
+	char tips_clock[20];
+	memset(tips_clock, 0, 20);
+	memset(bdbsql, 0, 1024);
+	TurnTime(clock, tips_clock, 20);
+	snprintf(bdbsql, 1023,"insert into tips_back(BackName,BackTime,Oid) values('%s-%ld','%s','%d')", name, clock, tips_clock, oid);
+	g_mutex_lock(user_bak_mutex);
+	g_mutex_lock(user_mutex);
+	ret = sqlite3_exec(bdb, bdbsql, NULL, NULL, &err);
+	if(ret != 0){
+		printf("err in tips_back.db==%s\n",err);
+		exit(0);
+	}
+	sqlite3_exec(bdb, "begin;", 0, 0, 0);
+	unsigned long long int nowspace = sqlite3_last_insert_rowid(bdb);
+	db_now_t dbnow = {nowspace, bdb};
+	printf("findsql===%s\n",findsql);
+	tips_sqlite_sync.tips_lock(1);
+	ret = sqlite3_exec(db, findsql, tipscopy, &dbnow, &err);
+	if(ret != 0){
+		printf("err in sqlite==%s\n",err);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	tips_sqlite_sync.tips_unlock(1);
+	sqlite3_exec(bdb, "commit;", 0, 0, 0);
+	g_mutex_unlock(user_mutex);
+	g_mutex_unlock(user_bak_mutex);
+	return 0;
+}
+
+int CUser_sqlite_handle::Data_delete(unsigned long long int oid, char *tips_table)
+{
+	int ret = 0;
+	char *err = NULL;
+	char *(value[4]) = {(char *)"tips_Alarm",(char *)"tips_Event",(char *)"tips_netlog", (char *)"tips_opt"};
+	char *sql = g_strdup_printf("delete from %s where BackID='%lld'", value[atoi(tips_table)], oid);
+	printf("sql;;;%s\n",sql);
+	g_mutex_lock(user_bak_mutex);
+	ret = sqlite3_exec(bdb, sql, NULL, NULL, &err);
+	if(ret != 0){
+		printf("data_delete err:%s\n",err);
+		exit(0);
+	}
+	g_free(sql);
+	sql = NULL;
+	sql = g_strdup_printf("delete from tips_back where BackID='%lld'",oid);
+	printf("sql====%s\n",sql);
+	ret = sqlite3_exec(bdb, sql, NULL, NULL, &err);
+	if(ret != 0){
+		printf("data_delete err:%s\n",err);
+		exit(0);
+	}
+	g_mutex_unlock(user_bak_mutex);
+	g_free(sql);
+	return 0;
+}
+
+int callback_rebuild(void *db, int argc, char **argv, char **argvv)
+{
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 13){
+		printf("alarm lenth wrong\n");
+		return 0;
+	}
+	
+	ret = snprintf(sql, 2047, "insert into tips_Alarm(Trojan_id,Sip,Dip,Dmac,Alarm_time,Type,Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id,Alarm_judgetime) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11],argv[12]);
+	
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec((sqlite3 *)db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("err in sqlite==%s\n",err);
+			exit(0);
+		}
+		return 0;
+	}
+	return 0;
+}
+
+int CUser_sqlite_handle::Data_rebuild(unsigned long long int oid, char *tips_table)
+{
+	int ret = 0;
+	char *err = NULL;
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_bak_mutex);
+	g_mutex_lock(user_mutex);
+	sqlite3_exec(db, "begin;", 0, 0, 0);
+	char *sql = g_strdup_printf("select tips_Alarm.Trojan_id,tips_Alarm.Sip,tips_Alarm.Dip,tips_Alarm.Dmac,tips_Alarm.Alarm_time,tips_Alarm.Type,tips_Alarm.Risk,tips_Alarm.Scc_flag,tips_Alarm.Scc,tips_Alarm.Descry,tips_Alarm.Alarm_iid,tips_Alarm.Device_id,tips_Alarm.Alarm_judgetime from tips_back,tips_Alarm where tips_back.BackID=tips_Alarm.BackID and tips_back.BackID='%lld'",oid);
+	ret = sqlite3_exec(bdb, sql, callback_rebuild, db, &err);
+	if(ret != 0){
+		printf("data_rebuild_alarm err2:%s\n",err);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	sqlite3_exec(db, "commit;", 0, 0, 0);
+	g_mutex_unlock(user_mutex);
+	g_mutex_unlock(user_bak_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+
+}
+
+int callback_rebuild_opt(void *db, int argc, char **argv, char **argvv)
+{
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 4){
+		printf("opt lenth wrong\n");
+		return 0;
+	}
+	
+	ret = snprintf(sql, 2047, "insert into tips_opt(username,Otime,flag,Optdsc) values('%s','%s','%s','%s')",argv[0], argv[1], argv[2], argv[3]);
+	printf("###sql==%s\n",sql);
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec((sqlite3 *)db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("err in sqlite==%s\n",err);
+			exit(0);
+		}
+		return 0;
+	}
+	return 0;
+}
+
+
+
+int CUser_sqlite_handle::Data_rebuild_opt(unsigned long long int oid, char *tips_table)
+{
+	int ret = 0;
+	char *err = NULL;
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_bak_mutex);
+	g_mutex_lock(user_mutex);
+	sqlite3_exec(db, "begin;", 0, 0, 0);
+	char *sql = g_strdup_printf("select  tips_opt.username,tips_opt.Otime,tips_opt.flag,tips_opt.Optdsc from tips_back,tips_opt where tips_back.BackID=tips_opt.BackID and tips_back.BackID='%lld'",oid);
+	ret = sqlite3_exec(bdb, sql, callback_rebuild_opt, db, &err);
+	if(ret != 0){
+		printf("data_rebuild_opt err2:%s\n",err);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	sqlite3_exec(db, "commit;", 0, 0, 0);
+	g_mutex_unlock(user_mutex);
+	g_mutex_unlock(user_bak_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+
+}
+
+int callback_rebuild_netlog(void *db, int argc, char **argv, char **argvv)
+{
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 9){
+		printf("alarm lenth wrong\n");
+		return 0;
+	}
+	
+	ret = snprintf(sql, 2047, "insert into tips_netlog(Dip,Dport,Sip,Sport,Protocol,Start_time,End_time,Load,Upload) values('%s','%s','%s','%s','%s','%s','%s','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8]);
+	printf("###sql==%s\n",sql);
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec((sqlite3 *)db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("err in sqlite==%s\n",err);
+			exit(0);
+		}
+		return 0;
+	}
+	return 0;
+}
+
+int CUser_sqlite_handle::Data_rebuild_netlog(unsigned long long int oid, char *tips_table)
+{
+	int ret = 0;
+	char *err = NULL;
+	char *sql = g_strdup_printf("select tips_netlog.Dip,tips_netlog.Dport,tips_netlog.Sip,tips_netlog.Sport,tips_netlog.Protocol,tips_netlog.Start_time,tips_netlog.End_time,tips_netlog.Load,tips_netlog.Upload from tips_netlog,tips_back where tips_back.BackID=tips_netlog.BackID and tips_back.BackID='%lld'",oid);
+	printf("sql in rebuild on netlog :%s\n",sql);
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_bak_mutex);
+	g_mutex_lock(user_mutex);
+	sqlite3_exec(db, "begin;", 0, 0, 0);
+	ret = sqlite3_exec(bdb, sql, callback_rebuild_netlog, db, &err);
+	if(ret != 0){
+		printf("data_rebuild_alarm err3:%s\n",err);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	sqlite3_exec(db, "commit;", 0, 0, 0);
+	g_mutex_unlock(user_mutex);
+	g_mutex_unlock(user_bak_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+
+}
+
+int callback_rebuild_event(void *db, int argc, char **argv, char **argvv)
+{
+	char sql[2048];
+	int ret = 0;
+	char *err = NULL;
+	memset(sql, 0, 2048);
+	if(argc != 16){
+		printf("alarm lenth wrong\n");
+		return 0;
+	}
+	
+	ret = snprintf(sql, 2047, "insert into tips_Event(Event_class,Event_type,Event_time,Sip,Sport,Dip,Dport,Dmac,Sender,Receiver,Title,File_name,Descr,Sen_msg,Event_iid,Device_id) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11],argv[12],argv[13],argv[14],argv[15]);
+	
+	if((ret < 2047) && (ret > 0)){
+		ret = sqlite3_exec((sqlite3 *)db, sql, NULL, NULL, &err);
+		if(ret != 0){
+			printf("err in sqlite==%s\n",err);
+			exit(0);
+		}
+		return 0;
+	}
+	return 0;
+}
+
+int CUser_sqlite_handle::Data_rebuild_event(unsigned long long int oid, char *tips_table)
+{
+	int ret = 0;
+	char *err = NULL;
+	char *sql = g_strdup_printf("select tips_Event.Event_class,tips_Event.Event_type,tips_Event.Event_time,tips_Event.Sip,tips_Event.Sport,tips_Event.Dip,tips_Event.Dport,tips_Event.Dmac,tips_Event.Sender,tips_Event.Receiver,tips_Event.Title,tips_Event.File_name,tips_Event.Descr,tips_Event.Sen_msg,tips_Event.Event_iid,tips_Event.Device_id from tips_Event,tips_back where tips_back.BackID=tips_Event.BackID and tips_back.BackID='%lld'",oid);
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_bak_mutex);
+	g_mutex_lock(user_mutex);
+	sqlite3_exec(db, "begin;", 0, 0, 0);
+	ret = sqlite3_exec(bdb, sql, callback_rebuild_event, db, &err);
+	if(ret != 0){
+		printf("data_rebuild_alarm err1:%s\n",err);
+		tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	sqlite3_exec(db, "commit;", 0, 0, 0);
+	g_mutex_unlock(user_mutex);
+	g_mutex_unlock(user_bak_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+}
+
+int CUser_sqlite_handle::Data_Delete_obj(char *sql)
+{
+	int ret = 0;
+	char *err = NULL;
+	printf("sql=====%s\n",sql);
+	tips_sqlite_sync.tips_lock(1);
+	g_mutex_lock(user_mutex);
+	ret = sqlite3_exec(db, sql, NULL, NULL, &err);
+	if(ret != 0){
+		printf("data_delete_obj err****:%s\n",err);
+	  tips_sqlite_sync.tips_unlock(1);
+		exit(0);
+	}
+	g_mutex_unlock(user_mutex);
+	tips_sqlite_sync.tips_unlock(1);
+	return 0;
+}
+
+int onedata_callback(void *backname, int argc, char **argv, char **argvv)
+{
+	*((char **)backname) = g_strdup(argv[0]);
+	return 0;
+}
+
+char * CUser_sqlite_handle::One_Data_catch(unsigned long long int oid)
+{
+
+  char *backname = NULL;
+	char *err = NULL;
+	char* sql = g_strdup_printf("select BackName from tips_back where BackID='%lld'",oid);
+	g_mutex_lock(user_bak_mutex);
+	int ret = sqlite3_exec(bdb, sql, onedata_callback, &backname, &err);
+	if(ret != 0){
+		printf("data_delete_obj err###:%s\n",err);
+		exit(0);
+	}
+	g_mutex_unlock(user_bak_mutex);
+	g_free(sql);
+	return backname;
+}
+
+
+int page_get(void *last_page, int argc, char **argv, char **argvv)
+{
+	*((int *)last_page) = atoll(argv[0]);
+	return 0;
+}
+
+int CUser_sqlite_handle::last_page(char *sql, int judge)
+{
+	
+	sqlite3 *nowdb=db;
+	int ret = 0;
+	char *err = NULL;
+	int lastpage = 0;
+	if(judge){
+		nowdb = bdb;
+	}
+	if(!judge){
+		tips_sqlite_sync.tips_lock(1);
+		g_mutex_lock(user_mutex);
+	}
+	else{
+		g_mutex_lock(user_bak_mutex);
+	}
+	printf("sql == %s\n",sql);
+	ret = sqlite3_exec(nowdb, sql, page_get, &lastpage, &err);
+	if(ret != 0){
+		if(!judge){
+			tips_sqlite_sync.tips_unlock(1);
+		}
+		printf("count err:%s\n",err);
+		exit(0);
+	}
+	if(!judge){
+		tips_sqlite_sync.tips_unlock(1);
+		g_mutex_unlock(user_mutex);
+	}
+	else{
+		g_mutex_unlock(user_bak_mutex);
+	}
+	return (lastpage-1)/ONCE_MAXDATA+1;
+}

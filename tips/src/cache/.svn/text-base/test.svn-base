@@ -1,0 +1,111 @@
+#include <iostream>
+#include <stdio.h>
+#include "cmemcache.h"
+using namespace std;
+CMemcache memcache;
+pthread_cond_t cond;
+void* productor_fun(void* pthobj)
+{
+	char buff[1024];
+	int len=1024;
+	for(int i=0;;++i)
+	{
+		len=1024;
+		sprintf(buff,"this test data num==%d",i);
+		int err=memcache.Mem_Write(buff,&len);
+		switch(err)
+		{
+			case 0:
+			{
+				cout<<"缓冲区将要交换不能写入!"<<endl;
+				usleep(1000);
+				--i;
+				break;
+			}
+			case -1:
+			{
+				cout<<"write_buff====NULL"<<endl;
+				break;
+			}
+			case -2:
+			{
+				cout<<"内容太长,缓冲区长度不够!"<<endl;
+				usleep(1000);
+				break;
+			}
+			case 1:
+			{
+				cout<<"写入成功::"<<i<<endl;
+				break;
+			}
+		}
+		usleep(100);
+	}
+}
+void* consumer_fun(void* pthobj)
+{
+	while(1)
+	{
+		usleep(10000);
+		//交换读写内存
+		int err=memcache.Mem_Change(1000);
+		memcache.Mem_Read_All(NULL,NULL);
+		if(err==-1)
+		{
+			cout<<"当前读取没有完成!"<<endl;
+			sleep(1);
+		}
+		else if(err==0)cout<<"当前写数据池中没有数据!"<<endl;
+		else cout<<"交换成功!"<<endl;
+		char buff[1024];
+		int len=1024;
+		while(1)
+		{
+			err=memcache.Mem_Read(buff,&len);
+			if(err==0)
+			{
+				cout<<"当前内存池没有数据!"<<endl;
+				usleep(1000);
+				break;
+			}
+			switch(err)
+			{
+				case 0:
+				{
+					break;
+				}
+				case -1:
+				{
+					cout<<"buff====NULL"<<endl;
+					break;
+				}
+				case -2:
+				{
+					cout<<"当前buff长度不够!"<<endl;
+					break;
+				}
+				case 1:
+				{
+					cout<<len<<":::"<<buff<<endl;
+					break;
+				}
+			}
+		}
+
+	}
+}
+int main()
+{
+	if(!memcache.Mem_Init(90,NULL))
+	{
+		cout<<"初始化内存池失败"<<endl;
+		return 0;
+	}
+	pthread_cond_init(&cond,NULL);
+	pthread_t pid[2];
+	pthread_create(&(pid[0]),NULL,productor_fun,NULL);
+	pthread_create(&(pid[1]),NULL,consumer_fun,NULL);
+	pthread_join(pid[0],NULL);
+	pthread_join(pid[1],NULL);
+}
+

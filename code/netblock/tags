@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DEBUG	netblock.c	27;"	d	file:
+ETHERNET_TYPE_IP	netblock.h	9;"	d
+EtherHdr	netblock.h	/^}EtherHdr;$/;"	t	typeref:struct:_EtherHdr
+LOG_CONF	netblock.c	24;"	d	file:
+PID_FILE	netblock.c	25;"	d	file:
+STARTBLOCK	netblock.h	5;"	d
+STOPBLOCK	netblock.h	4;"	d
+UNIX_DOMAIN	netblock.c	23;"	d	file:
+UNIX_DOMAIN	netblock.h	7;"	d
+WtPid	netblock.c	/^void WtPid()$/;"	f
+_EtherHdr	netblock.h	/^typedef struct _EtherHdr$/;"	s
+_HEAD_NETBLOCK	netblock.h	2;"	d
+_blockInfo	netblock.h	/^typedef struct _blockInfo$/;"	s
+block	netblock.c	/^blockinfo* block;$/;"	v
+blockinfo	netblock.h	/^}blockinfo;$/;"	t	typeref:struct:_blockInfo
+close_loop	netblock.c	/^void close_loop(int sig)$/;"	f
+dstip	netblock.h	/^    in_addr_t dstip;$/;"	m	struct:_blockInfo
+ether_dst	netblock.h	/^    u_int8_t ether_dst[6];$/;"	m	struct:_EtherHdr
+ether_src	netblock.h	/^    u_int8_t ether_src[6];$/;"	m	struct:_EtherHdr
+ether_type	netblock.h	/^    u_int16_t ether_type;$/;"	m	struct:_EtherHdr
+handle	netblock.c	/^pcap_t *handle=NULL;$/;"	v
+init_net	netblock.c	/^void init_net()$/;"	f
+init_sock	netblock.c	/^void init_sock()$/;"	f
+ip_Packet	netblock.c	/^int ip_Packet(const u_char *packet)$/;"	f
+main	netblock.c	/^int main(int argc, char* argv[])$/;"	f
+mycallback	netblock.c	/^void mycallback(u_char *user,const struct pcap_pkthdr *h,const u_char *data)$/;"	f
+net	netblock.c	/^static libnet_t *net=NULL;$/;"	v	file:
+parse	netblock.c	/^void parse(char* buf, blockinfo* block)$/;"	f
+processOrder	netblock.c	/^void processOrder(int *temp,const char *str,char *p[])$/;"	f
+reset_block	netblock.c	/^void reset_block()$/;"	f
+reset_tcp	netblock.c	/^void reset_tcp(struct iphdr *ip,struct tcphdr *tcp)$/;"	f
+srcip	netblock.h	/^    in_addr_t srcip;$/;"	m	struct:_blockInfo
+start_capture	netblock.c	/^void* start_capture(void* arg)$/;"	f
+start_loop	netblock.c	/^void start_loop(int sig)$/;"	f
+stop_capture	netblock.c	/^void* stop_capture(void* arg)$/;"	f

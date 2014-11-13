@@ -1,0 +1,103 @@
+#include "insertdata.h"
+#include <stdio.h>
+extern pthread_mutex_t sqlite_sync_mutex;
+extern int startrun;
+extern CTips_sqlite_sync tip_sqlte_sync;
+void Insertdb::Set_DB(sqlite3* handerdb)
+{
+int rc=sqlite3_open("/root/lirongxun/manage_20130324/tips.db",&db);
+  if(rc)
+  {
+      cout<<"openfaild"<<endl;
+  }
+  rc=sqlite3_key(db,"admin",5);
+  if(rc)cout<<"key error!"<<endl;
+	
+//	db=handerdb;
+	//cout <<"aaaaaaaaaaaaaaaaaaaaaaaaaaa"<<endl;
+	num = 0;
+	is_succed = 1;
+	
+	/*if(SQLITE_OK != sqlite3_open("linuxnew.db", &db)){
+		cout << "can't open db" << endl;
+	}
+	else{*/
+	pthread_mutex_lock (&sqlite_sync_mutex);
+		sqlite3_exec(db, "begin;", 0, 0, 0);
+		startrun = 1;
+	pthread_mutex_unlock (&sqlite_sync_mutex);
+//	}
+}
+/*
+void Insertdb::Setdb(sqlite3 *handledb)
+{
+	db = handledb;
+}
+*/
+Insertdb::~Insertdb()
+{
+	pthread_mutex_lock (&sqlite_sync_mutex);
+	//cout << "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" << endl;
+	if(is_succed){
+		sqlite3_exec(db, "commit;", 0, 0, 0);
+	}
+	else{
+		sqlite3_exec(db, "rollback;", 0, 0, 0);
+	}
+	startrun = 0;
+	pthread_mutex_unlock (&sqlite_sync_mutex);
+}
+
+void Insertdb::Insertdata(char *sql)
+{
+	printf("helooooooooooooooooooooooo\n");
+	char *err_msg=NULL;
+	printf("sql====%s\n",sql);
+	//cout << "==================aaaaaaaaaaa============" << endl;
+	pthread_mutex_lock (&sqlite_sync_mutex);
+	int sqlite_err=sqlite3_exec(db,sql,0,0,&err_msg);
+	printf("errmsg=========%s\n",sqlite3_errmsg(db));
+	printf("sqlite_err============%d\n",sqlite_err);
+	if(SQLITE_OK != sqlite_err){
+		is_succed = 0;
+		//cout<<"数据库插入失败!"<<err_msg<<endl;
+		printf("数据库插入失败!.......%s\n",err_msg);
+			//cout << "err_msg=========" << err_msg << endl;
+	}
+	else
+	{
+		printf("数据库插入成功！\n");
+	}
+	pthread_mutex_unlock (&sqlite_sync_mutex);
+	//cout << "==================bbbbbbbbbb============" << endl;
+	//cout << "is_succed====" << is_succed << endl;
+//	if(4 == num%5){
+	if(0 == num%1){
+	pthread_mutex_lock (&sqlite_sync_mutex);
+		//cout << "aaaaaaaa====" << num << endl;
+		if(is_succed){
+			printf("开始提交!!\n");
+			int ret  = sqlite3_exec(db, "commit;", 0, 0, &err_msg);
+			printf("提交完成!");
+			if (SQLITE_OK != ret)
+			{
+				cout <<"database error" << err_msg << endl;
+			}
+			//cout << "========================commit" << num << endl;
+		}
+		else{
+			printf("回滚！");
+			sqlite3_exec(db, "rollback;", 0, 0, 0);
+			is_succed = 1;
+			printf("回滚结束!");
+		}
+	startrun = 0;
+	pthread_mutex_unlock (&sqlite_sync_mutex);
+	pthread_mutex_lock (&sqlite_sync_mutex);
+	sqlite3_exec(db, "begin;", 0, 0, 0);
+	startrun = 1;
+	pthread_mutex_unlock (&sqlite_sync_mutex);
+	}
+	num++;
+	//cout << "nbbbbb=== "<< num << endl;
+}

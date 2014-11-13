@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/DevelopRep/!svn/ver/5870/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan
+END
+policy
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/5870/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan/policy
+END
+policy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan/policy.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan/main.cpp
+END
+policy.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan/policy.h
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5870/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan/compile
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/policyVlan/tags
+END

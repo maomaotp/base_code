@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem
+END
+main.cpp.bak
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/main.cpp.bak
+END
+main1.cpp.bak
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/main1.cpp.bak
+END
+sharemem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/sharemem.cpp
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/main
+END
+shm_struct_t.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/shm_struct_t.h
+END
+main1
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/main1
+END
+sharemem.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/sharemem.h
+END
+shm.conf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/shm.conf
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/sharemem/Makefile
+END

@@ -1,0 +1,23 @@
+#ifndef _INSERTDATA_H_
+#define _INSERTDATA_H_
+
+#include <iostream>
+//#include "sqlite3.h"
+#include <sqlite3.h>
+#include "tips_sqlite_manage.h"
+
+using namespace std;
+
+class Insertdb{
+	public:
+		Insertdb(sqlite3 *handerdb);
+		~Insertdb();
+		void Insertdata(char *sql);
+		sqlite3 *db;
+		//void Setdb(sqlite3 *handledb);
+	private:
+		int num;//插入几个数
+		int is_succed;//判断插入是否成功
+};
+
+#endif

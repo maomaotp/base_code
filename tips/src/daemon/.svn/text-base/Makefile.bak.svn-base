@@ -1,0 +1,6 @@
+#update by yong , 2013.10.14
+CC=g++
+tips:
+	@$(CC) daemon.cpp AdaptiveData.cpp sharemem.cpp ReadConfig.cpp GetConfigInfo.cpp Sigsuspend.cpp -o tipsdaemon libn6601.so -lpthread -lrt -Wl,-rpath,/root/test_daemon_20140226/daemon
+clean:
+	@rm main.o tipsdaemon -rf

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem
+END
+main.cpp.bak
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/main.cpp.bak
+END
+main1.cpp.bak
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/main1.cpp.bak
+END
+sharemem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/sharemem.cpp
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/main
+END
+shm_struct_t.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/shm_struct_t.h
+END
+main1
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/main1
+END
+sharemem.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/sharemem.h
+END
+shm.conf
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/shm.conf
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/sharemem/Makefile
+END

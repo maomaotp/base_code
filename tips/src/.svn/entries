@@ -1,0 +1,58 @@
+10
+
+dir
+7309
+https://172.16.0.253:8443/svn/DevelopRep/BoundaryProtectLine/TNM/MAINLINE/trunk/src
+https://172.16.0.253:8443/svn/DevelopRep
+
+
+
+2014-07-16T01:32:24.078125Z
+7289
+liuqiang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ded74755-6c64-d747-8149-5f3e4e0b3511
+
+mngagent
+dir
+
+policyVlan
+dir
+
+netblock
+dir
+
+cache
+dir
+
+daemon
+dir
+
+Audit
+dir
+
+stat
+dir
+
+Alarm
+dir
+
+trojan
+dir
+
+ui
+dir
+

@@ -1,0 +1,6 @@
+#！/bin/bash
+
+#gcc  *.c juageIP.o  -lpcap -lcrypto -lpthread -otipsTrojanChecker
+#gcc -g -shared geoip.c client.c funclist.c hashdata.c init.c loadrule.c UnTrojan.c juageIP.o -L /usr/local/lib -lzlog -I /usr/local/include/ -o libtrojan.so -Wall -Wextra
+gcc -g -shared *.c juageIP.o -L /usr/local/lib -lzlog -I /usr/local/include/ -o libtrojan.so -Wall -Wextra
+

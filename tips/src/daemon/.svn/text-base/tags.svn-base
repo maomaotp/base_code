@@ -1,0 +1,375 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALARMPID	sharemem.h	7;"	d
+ARAbend	pubdata.h	55;"	d
+ARPID	pubdata.h	84;"	d
+AUAbend	pubdata.h	57;"	d
+AUDITPID	sharemem.h	8;"	d
+AUPID	pubdata.h	86;"	d
+Adaptive	AdaptiveData.cpp	/^void Adaptive(struct G_Struct *Grup_minor,struct G_Struct *Grup_communicate)$/;"	f
+Adaptive	AdaptiveData.h	/^struct Adaptive 	\/* 光电自适应结构体*\/$/;"	s
+AdaptiveCurr	daemon.cpp	/^struct UseCard	 AdaptiveCurr;$/;"	v	typeref:struct:UseCard
+AdaptiveEndRelated	AdaptiveData.cpp	/^void  AdaptiveEndRelated()$/;"	f
+AdaptiveImageCtl	AdaptiveData.cpp	/^void AdaptiveImageCtl()$/;"	f
+AdaptiveImageWork	daemon.cpp	/^void *AdaptiveImageWork(void *arg)$/;"	f
+AdaptiveInitRelated	AdaptiveData.cpp	/^void AdaptiveInitRelated()$/;"	f
+AdaptiveStu	AdaptiveData.h	/^	struct Adaptive AdaptiveStu;$/;"	m	struct:UseCard	typeref:struct:UseCard::Adaptive
+Adaptive_Data_H__	AdaptiveData.h	2;"	d
+AliveEthCnt	AdaptiveData.h	58;"	d
+AllocSpace	GetConfigInfo.cpp	/^void AllocSpace(char **point,char* info)$/;"	f
+AloneImageMode	AdaptiveData.h	66;"	d
+AloneImageMode	pubdata.h	9;"	d
+AloneMode	AdaptiveData.cpp	/^void AloneMode()$/;"	f
+AssembledStr	AdaptiveData.cpp	/^void AssembledStr(struct G_Struct *G_Stu,char *src,int type)$/;"	f
+BLOCKPID	sharemem.h	9;"	d
+CAAbend	pubdata.h	51;"	d
+CACHEPID	sharemem.h	11;"	d
+CAPID	pubdata.h	80;"	d
+CC	Makefile	/^CC=g++$/;"	m
+CC	flicker/Makefile	/^CC = gcc$/;"	m
+CHAR	sharemem.cpp	13;"	d	file:
+CONFIG_FILE	ReadConfig.h	4;"	d
+CPU_OCCUPY	daemon.cpp	/^}CPU_OCCUPY;$/;"	t	typeref:struct:PACKED_C	file:
+CacheImage	daemon.cpp	/^void 	CacheImage()$/;"	f
+CallFunc	AdaptiveData.cpp	/^void CallFunc(struct G_Struct *p_M,int C_flag,struct G_Struct *Grup_two_1,struct G_Struct *Grup_two_2,void func(struct G_Struct *one,struct G_Struct *two),char *err_2)$/;"	f
+CarrierName	AdaptiveData.h	26;"	d
+CarrierPath	AdaptiveData.h	25;"	d
+CatStrEXE	daemon.cpp	/^void	CatStrEXE(char *sub1,char *sub2)$/;"	f
+CheckerImage	daemon.cpp	/^void 	CheckerImage(char *sh_name)$/;"	f
+CheckerUI	daemon.cpp	/^void 	CheckerUI(char *sh_name)$/;"	f
+ChildWork	daemon.cpp	/^void ChildWork()$/;"	f
+CmpCurrupLastuse	AdaptiveData.cpp	/^bool CmpCurrupLastuse(char *Grup_one, char *Grup_two, struct UseCard *Use,int ImageFlag, int *result,int ModeFlag)$/;"	f
+CmpUseByDaemon	AdaptiveData.cpp	/^void CmpUseByDaemon(char *Grup_one, char *Grup_two, int ImageFlag, int *result,int ModeFlag)$/;"	f
+Commu_MEM	pubdata.h	106;"	d
+ConfigInfo	GetConfigInfo.h	/^union ConfigInfo$/;"	u
+ConfirmAliveEth	AdaptiveData.cpp	/^void ConfirmAliveEth()$/;"	f
+Confirm_E_O	AdaptiveData.cpp	/^int Confirm_E_O(char *last_eth)$/;"	f
+Core	AdaptiveData.h	/^struct Core 		\/* 核心数据 *\/$/;"	s
+Core_data	AdaptiveData.h	/^	struct 	Core Core_data;$/;"	m	struct:G_Struct	typeref:struct:G_Struct::Core
+CpySetCurrUse	AdaptiveData.cpp	/^void CpySetCurrUse(void *src_Curr,void *dst_unknow,int dst_len,int flag)$/;"	f
+CtlLight	flicker/n6601.c	/^int CtlLight(UINT8 *gpio_num,int flag)$/;"	f
+CurrUse	AdaptiveData.cpp	/^struct UseCard 	CurrUse;		\/*用于存放当前使用的网口信息*\/$/;"	v	typeref:struct:UseCard
+DAEMONPID	sharemem.h	6;"	d
+DOUBLE	sharemem.cpp	18;"	d	file:
+D_SingleImage	AdaptiveData.cpp	/^void D_SingleImage(char *eth_name)$/;"	f
+DaemonWork	daemon.cpp	/^void *DaemonWork(void *arg)$/;"	f
+DealCR	AdaptiveData.cpp	/^void DealCR(char *buffer)$/;"	f
+DefaultNICList	AdaptiveData.h	/^struct DefaultNICList 	\/* 存放设备默认使用的网卡名称及其对应关系 *\/$/;"	s
+DefaultNicStu	AdaptiveData.cpp	/^struct DefaultNICList DefaultNicStu; 	\/*用于存放设备默认网口信息*\/$/;"	v	typeref:struct:DefaultNICList
+DestroyStu	AdaptiveData.cpp	/^void DestroyStu(struct G_Struct *p_G)$/;"	f
+DoubleImage	AdaptiveData.cpp	/^void  DoubleImage() \/* 双镜像 *\/$/;"	f
+E_Communicate	AdaptiveData.h	45;"	d
+E_CommunicateStu	AdaptiveData.cpp	/^struct G_Struct E_CommunicateStu;$/;"	v	typeref:struct:G_Struct
+E_Image_1	AdaptiveData.h	46;"	d
+E_Image_1Stu	AdaptiveData.cpp	/^struct G_Struct E_Image_1Stu;$/;"	v	typeref:struct:G_Struct
+E_Image_2	AdaptiveData.h	47;"	d
+E_Image_2Stu	AdaptiveData.cpp	/^struct G_Struct E_Image_2Stu;$/;"	v	typeref:struct:G_Struct
+E_Monitor	AdaptiveData.h	44;"	d
+E_MonitorStu	AdaptiveData.cpp	/^struct G_Struct E_MonitorStu;$/;"	v	typeref:struct:G_Struct
+E_communicate	AdaptiveData.h	/^	char E_communicate[MicroMiniBufferSize];$/;"	m	struct:DefaultNICList
+E_image_1	AdaptiveData.h	/^	char E_image_1[MicroMiniBufferSize];$/;"	m	struct:DefaultNICList
+E_image_2	AdaptiveData.h	/^	char E_image_2[MicroMiniBufferSize];$/;"	m	struct:DefaultNICList
+E_monitor	AdaptiveData.h	/^	char E_monitor[MicroMiniBufferSize];		$/;"	m	struct:DefaultNICList
+EasyCopy	AdaptiveData.cpp	/^void EasyCopy(void *dst,int dst_len,void *src,int src_len )$/;"	f
+ErrSize	GetConfigInfo.h	9;"	d
+EthNameSi	AdaptiveData.h	59;"	d
+FLOAT	sharemem.cpp	17;"	d	file:
+Fill_PID_ARR	daemon.cpp	/^int	Fill_PID_ARR()$/;"	f
+FindDualImage	AdaptiveData.cpp	/^void FindDualImage()$/;"	f
+FindOtherImage	AdaptiveData.cpp	/^void FindOtherImage(struct G_Struct *G_stu)$/;"	f
+FirstBoot	AdaptiveData.cpp	/^void FirstBoot(void OperSinglefunc(char *eth_name))$/;"	f
+GClose	AdaptiveData.h	62;"	d
+GOpen	AdaptiveData.h	61;"	d
+G_Change	AdaptiveData.h	/^struct G_Change		\/*用于定义转移表,方便轮询到保护模式时，主从口的切换等*\/$/;"	s
+G_Oth_Array	AdaptiveData.cpp	/^struct G_Other	G_Oth_Array[] = {{E_Image_1,&O_Image_2Stu},{O_Image_1,&E_Image_1Stu},$/;"	v	typeref:struct:G_Other
+G_Other	AdaptiveData.h	/^struct G_Other		\/* 用于返回同组另一个镜像口 *\/$/;"	s
+G_Struct	AdaptiveData.h	/^struct G_Struct		\/* 通用的临时结构体 *\/$/;"	s
+G_Stu_Array	AdaptiveData.cpp	/^struct G_Change G_Stu_Array[] = {{&E_MonitorStu},{&E_CommunicateStu},{&E_Image_1Stu},{&E_Image_2Stu},$/;"	v	typeref:struct:G_Change
+GeneralBuffSize	AdaptiveData.h	55;"	d
+GeneralDeal	AdaptiveData.cpp	/^void GeneralDeal() \/*用户未选择独立模式或保护模式*\/$/;"	f
+GeneralOpera	daemon.cpp	/^void GeneralOpera(pid_t pid , char *ResetName,char* ProName,char *led_abend)$/;"	f
+GetCurrImage	AdaptiveData.cpp	/^bool 	GetCurrImage(struct UseCard *curr)$/;"	f
+GetImageModeByUI	AdaptiveData.cpp	/^bool GetImageModeByUI()$/;"	f
+GetInfo	GetConfigInfo.cpp	/^bool GetInfo(char *ConfigPath,char *key,char *separtor,union ConfigInfo *BackInfo)$/;"	f
+GetInfoByConfig	ReadConfig.cpp	/^bool GetInfoByConfig(char *KEY,char *separtor,char *dstbuf,int len)$/;"	f
+GetModeByUI	AdaptiveData.cpp	/^int GetModeByUI(u_int8_t *mode)$/;"	f
+GetNicInfo	ReadConfig.cpp	/^bool GetNicInfo(struct DefaultNICList *DefaultNicStu)$/;"	f
+GetNicInfo_H__	GetNicInfo.h	2;"	d
+GetOtherImage	AdaptiveData.cpp	/^void GetOtherImage(struct G_Struct *Image_Stu_1,struct G_Struct *Image_Stu_2,int *SingleImageFlag,struct G_Struct *TmpStu)$/;"	f
+GetOtherStu	AdaptiveData.cpp	/^struct G_Struct * GetOtherStu(int type)$/;"	f
+GetPacketCnt	AdaptiveData.cpp	/^void GetPacketCnt(char *cmd,char *PacketCntBuff,int BuffSize)$/;"	f
+GetPacketRise	AdaptiveData.cpp	/^void GetPacketRise(char *eth_X,int *result)$/;"	f
+GetPidByPath	daemon.cpp	/^int GetPidByPath(char *path)$/;"	f
+GetTipsConfigInfo	GetConfigInfo.cpp	/^bool GetTipsConfigInfo(char *ConfigPath,char *key,char *separtor,union ConfigInfo *BackInfo)$/;"	f
+Get_pid_shm	sharemem.cpp	/^int ShareMem::Get_pid_shm(int process)$/;"	f	class:ShareMem
+Get_status_shm	sharemem.cpp	/^int ShareMem::Get_status_shm(int id, void * param, int len)$/;"	f	class:ShareMem
+Glimpse	flicker/n6601.c	/^int Glimpse(UINT8 *gpio_num,int cnt,int onspeed)$/;"	f
+INT	sharemem.cpp	14;"	d	file:
+INT16	flicker/ich8.h	/^typedef signed short	INT16;$/;"	t
+INT16	ich8.h	/^typedef signed short	INT16;$/;"	t
+INT32	flicker/ich8.h	/^typedef signed int		INT32;$/;"	t
+INT32	ich8.h	/^typedef signed int		INT32;$/;"	t
+INT8	flicker/ich8.h	/^typedef signed char		INT8;$/;"	t
+INT8	ich8.h	/^typedef signed char		INT8;$/;"	t
+IO_MODE_IN	flicker/ich8.h	33;"	d
+IO_MODE_IN	ich8.h	33;"	d
+IO_MODE_OUT	flicker/ich8.h	34;"	d
+IO_MODE_OUT	ich8.h	34;"	d
+IPC_SHM_NAME	sharemem.cpp	10;"	d	file:
+Image	AdaptiveData.cpp	/^void Image(struct G_Struct *image_one,struct G_Struct *image_two)$/;"	f
+Image	AdaptiveData.h	/^struct Image 		\/* 镜像口结构体 *\/$/;"	s
+ImageStu	AdaptiveData.h	/^	struct Image 	ImageStu;$/;"	m	struct:UseCard	typeref:struct:UseCard::Image
+Image_1_MEM	pubdata.h	108;"	d
+Image_2_MEM	pubdata.h	109;"	d
+Image_Mode_MEM	pubdata.h	107;"	d
+Image_one_stu	AdaptiveData.cpp	/^struct G_Struct Image_one_stu; 		\/*镜像处理用*\/$/;"	v	typeref:struct:G_Struct
+Image_two_stu	AdaptiveData.cpp	/^struct G_Struct Image_two_stu;$/;"	v	typeref:struct:G_Struct
+InitCheck	GetConfigInfo.cpp	/^bool InitCheck(char *ConfigPath,char *key,char *separtor,union ConfigInfo *BackInfo)$/;"	f
+InitSigsuspend	Sigsuspend.cpp	/^int InitSigsuspend()$/;"	f
+InitWork	daemon.cpp	/^void	InitWork()$/;"	f
+Init_shm	sharemem.cpp	/^int ShareMem::Init_shm()$/;"	f	class:ShareMem
+InitializeGPIO	flicker/n6601.c	/^int  InitializeGPIO(UINT8 *gpio_num)$/;"	f
+JudgeAdaptive	AdaptiveData.cpp	/^void JudgeAdaptive()$/;"	f
+JudgeAlive	daemon.cpp	/^void 	JudgeAlive()$/;"	f
+JudgeEXE	daemon.cpp	/^int JudgeEXE(char *proc_pid,char *pro_name)$/;"	f
+JudgeExist	AdaptiveData.cpp	/^bool JudgeExist(char *pathname)$/;"	f
+JudgeImage	AdaptiveData.cpp	/^void JudgeImage()$/;"	f
+JudgeKeySepartor	GetConfigInfo.cpp	/^bool JudgeKeySepartor(char *CmdBuff,char *ConfigPath,char *dst,union ConfigInfo *BackInfo,int flag)$/;"	f
+JudgeLastEmpty	AdaptiveData.cpp	/^bool JudgeLastEmpty(struct UseCard *use)$/;"	f
+JudgeM_S_Image	AdaptiveData.cpp	/^void JudgeM_S_Image(struct G_Struct *src_one,struct G_Struct *src_two,char *M_image,char *S_image)$/;"	f
+JudgePacket	AdaptiveData.cpp	/^bool JudgePacket(char *eth_one,char *eth_two,int *result_packet)$/;"	f
+JudgePath	daemon.cpp	/^int	JudgePath(char *path)$/;"	f
+JudgeStr	pubdata.h	93;"	d
+JudgeStu	AdaptiveData.cpp	/^int JudgeStu(struct G_Struct *G_one,struct G_Struct *G_two)$/;"	f
+Judge_A_I	AdaptiveData.cpp	/^void Judge_A_I(struct G_Struct *Grup_one_1,struct G_Struct *Grup_one_2,struct G_Struct *Grup_two_1,struct G_Struct *Grup_two_2,void func(struct G_Struct *argv1,struct G_Struct *arg2),char *err_1,char *err_2,int ModeFlag)$/;"	f
+KillALL	pubdata.h	13;"	d
+KillAction	daemon.cpp	/^void KillAction(int pid, char* proname)$/;"	f
+KillAllChecker	AdaptiveData.cpp	/^void KillAllChecker()$/;"	f
+KillProByName	daemon.cpp	/^void KillProByName(char *ProName)$/;"	f
+KillProByPID	daemon.cpp	/^int KillProByPID(pid_t pid,	int SIG)$/;"	f
+KillProName	pubdata.h	14;"	d
+LEDAction	daemon.cpp	/^void 	LEDAction(char *proAbend)$/;"	f
+LONG	sharemem.cpp	15;"	d	file:
+LargeBuffSize	AdaptiveData.h	56;"	d
+LastUse	AdaptiveData.cpp	/^struct UseCard 	LastUse;		\/*用于存放上次使用的网口信息*\/$/;"	v	typeref:struct:UseCard
+LocalBuffSize	GetConfigInfo.h	10;"	d
+LoopTimes	pubdata.h	5;"	d
+MAX_SHM_SIZE	shm_struct_t.h	10;"	d
+MAX_VAR_NUM	shm_struct_t.h	9;"	d
+MEM_OCCUPY	daemon.cpp	/^}MEM_OCCUPY;$/;"	t	typeref:struct:PACKED_M	file:
+MNAbend	pubdata.h	52;"	d
+MNGAGNTPID	sharemem.h	12;"	d
+MNPID	pubdata.h	81;"	d
+MalFunc	daemon.cpp	/^void MalFunc(int node)$/;"	f
+MicroMiniBufferSize	AdaptiveData.h	53;"	d
+MiniBufferSize	AdaptiveData.h	54;"	d
+Minor_MEM	pubdata.h	105;"	d
+ModeByUI	AdaptiveData.cpp	/^u_int8_t ModeByUI;			\/*用于存放ui放到内存池的镜像模式*\/ $/;"	v
+ModePath	AdaptiveData.h	35;"	d
+NBAbend	pubdata.h	56;"	d
+NBPID	pubdata.h	85;"	d
+NETSTATPID	sharemem.h	14;"	d
+NICCONF	AdaptiveData.h	23;"	d
+NormalGlimpse	daemon.cpp	/^void *NormalGlimpse(void *arg)\/* normally for ever*\/$/;"	f
+O_Communicate	AdaptiveData.h	49;"	d
+O_CommunicateStu	AdaptiveData.cpp	/^struct G_Struct	O_CommunicateStu;$/;"	v	typeref:struct:G_Struct
+O_Image_1	AdaptiveData.h	50;"	d
+O_Image_1Stu	AdaptiveData.cpp	/^struct G_Struct O_Image_1Stu;$/;"	v	typeref:struct:G_Struct
+O_Image_2	AdaptiveData.h	51;"	d
+O_Image_2Stu	AdaptiveData.cpp	/^struct G_Struct O_Image_2Stu;$/;"	v	typeref:struct:G_Struct
+O_Monitor	AdaptiveData.h	48;"	d
+O_MonitorStu	AdaptiveData.cpp	/^struct G_Struct O_MonitorStu;$/;"	v	typeref:struct:G_Struct
+O_communicate	AdaptiveData.h	/^	char O_communicate[MicroMiniBufferSize];$/;"	m	struct:DefaultNICList
+O_image_1	AdaptiveData.h	/^	char O_image_1[MicroMiniBufferSize];$/;"	m	struct:DefaultNICList
+O_image_2	AdaptiveData.h	/^	char O_image_2[MicroMiniBufferSize];$/;"	m	struct:DefaultNICList
+O_monitor	AdaptiveData.h	/^	char O_monitor[MicroMiniBufferSize];		$/;"	m	struct:DefaultNICList
+OffFrequence	flicker/n6601.c	8;"	d	file:
+OnFrequence	flicker/n6601.h	10;"	d
+OnFrequence	n6601.h	9;"	d
+OpenAliveEthCarrier	AdaptiveData.cpp	/^void OpenAliveEthCarrier(struct G_Struct *p_carrier)$/;"	f
+OpenSingleImage	AdaptiveData.cpp	/^void OpenSingleImage(char *eth_name)$/;"	f
+OthStu	AdaptiveData.h	/^	struct	G_Struct *OthStu;$/;"	m	struct:G_Other	typeref:struct:G_Other::G_Struct
+PACKED_C	daemon.cpp	/^typedef struct PACKED_C$/;"	s	file:
+PACKED_M	daemon.cpp	/^typedef struct PACKED_M$/;"	s	file:
+PATH_ARR	daemon.cpp	/^char *PATH_ARR[ProCnt] = {CAPID,MNPID,UserPID,ARPID,NBPID,AUPID,STPID};$/;"	v
+PCI_INDEX_GPIO	flicker/ich8.h	42;"	d
+PCI_INDEX_GPIO	ich8.h	42;"	d
+PID_ARR	daemon.cpp	/^int PID_ARR[ProCnt];		$/;"	v
+PREALLOC1PID	sharemem.h	15;"	d
+PREALLOC2PID	sharemem.h	16;"	d
+PacketRise	AdaptiveData.h	29;"	d
+ParentWork	daemon.cpp	/^void ParentWork()$/;"	f
+PrintFlag	AdaptiveData.cpp	/^bool PrintFlag(struct G_Struct* p_G)$/;"	f
+ProAction	daemon.cpp	/^struct ProActionStu ProAction[ProCnt] = $/;"	v	typeref:struct:ProActionStu
+ProActionStu	pubdata.h	/^struct ProActionStu$/;"	s
+ProCnt	pubdata.h	91;"	d
+ProName	pubdata.h	/^	char *ProName;$/;"	m	struct:ProActionStu
+ProScavenger	AdaptiveData.cpp	/^void ProScavenger(char *ProName)$/;"	f
+ProcPath	pubdata.h	15;"	d
+ProtectImageMode	AdaptiveData.h	67;"	d
+ProtectImageMode	pubdata.h	10;"	d
+ProtectMode	AdaptiveData.cpp	/^void ProtectMode()$/;"	f
+ProtectUpdateUse	AdaptiveData.cpp	/^void ProtectUpdateUse(char *M_image,char *S_image)$/;"	f
+QuickGlimpse	daemon.cpp	/^void *QuickGlimpse(void *arg)\/*quick for ever*\/$/;"	f
+RX_FP	AdaptiveData.cpp	/^FILE * RX_FP; 				\/* 用于存放打开网卡接收到数据包个数的文件指针 *\/$/;"	v
+RX_Packets	AdaptiveData.h	28;"	d
+R_DoubleImage	AdaptiveData.cpp	/^void R_DoubleImage()$/;"	f
+R_Protect	AdaptiveData.cpp	/^void R_Protect()$/;"	f
+R_SingleImage	AdaptiveData.cpp	/^void R_SingleImage()$/;"	f
+ReadConfigFunc	ReadConfig.cpp	/^bool ReadConfigFunc(int* LoopTimes)$/;"	f
+ReadNicInfo	AdaptiveData.cpp	/^bool ReadNicInfo()$/;"	f
+Read_config	sharemem.cpp	/^int ShareMem::Read_config()$/;"	f	class:ShareMem
+ReleaseInfoSpace	GetConfigInfo.cpp	/^bool ReleaseInfoSpace(union ConfigInfo *BackInfo)$/;"	f
+ResetAR	pubdata.h	67;"	d
+ResetAU	pubdata.h	66;"	d
+ResetAction	daemon.cpp	/^void 	ResetAction(char *sh_name,char *pro_name)$/;"	f
+ResetCA	pubdata.h	62;"	d
+ResetMN	pubdata.h	60;"	d
+ResetNB	pubdata.h	68;"	d
+ResetName	pubdata.h	/^	char *ResetName;$/;"	m	struct:ProActionStu
+ResetST	pubdata.h	64;"	d
+ResetUI	pubdata.h	63;"	d
+Routines	AdaptiveData.cpp	/^void Routines()$/;"	f
+RulesCtl	AdaptiveData.cpp	/^void RulesCtl()$/;"	f
+SB_BUS	flicker/ich8.h	37;"	d
+SB_BUS	ich8.h	37;"	d
+SB_DEV	flicker/ich8.h	38;"	d
+SB_DEV	ich8.h	38;"	d
+SB_FUNC	flicker/ich8.h	39;"	d
+SB_FUNC	ich8.h	39;"	d
+SB_REG_GPIOBASE	flicker/ich8.h	40;"	d
+SB_REG_GPIOBASE	ich8.h	40;"	d
+SENSTPID	sharemem.h	10;"	d
+SHAREMEM_H	sharemem.h	2;"	d
+SHMCONF	sharemem.cpp	11;"	d	file:
+SHM_STRUCT_H	shm_struct_t.h	2;"	d
+SIGRESUME	Sigsuspend.h	8;"	d
+SIGSUSPEND	Sigsuspend.h	9;"	d
+STAbend	pubdata.h	58;"	d
+STPID	pubdata.h	88;"	d
+ScavengerPath	AdaptiveData.h	32;"	d
+SelectFD	AdaptiveData.cpp	/^void SelectFD()$/;"	f
+Set_pid_shm	sharemem.cpp	/^void ShareMem::Set_pid_shm(int process)$/;"	f	class:ShareMem
+Set_status_shm	sharemem.cpp	/^int ShareMem::Set_status_shm(int id, const void * param, int len)$/;"	f	class:ShareMem
+Set_var_type	sharemem.cpp	/^int ShareMem::Set_var_type(char* str, var_t * var_ptr)$/;"	f	class:ShareMem
+ShareMem	sharemem.h	/^class ShareMem$/;"	c
+SingleImageMode	AdaptiveData.h	65;"	d
+SingleImageMode	pubdata.h	8;"	d
+Sizeof	sharemem.cpp	/^int ShareMem::Sizeof(int type)$/;"	f	class:ShareMem
+TIPS_alarm	AdaptiveData.h	41;"	d
+TIPS_auditor	AdaptiveData.h	42;"	d
+TIPS_cache	AdaptiveData.h	39;"	d
+TIPS_manager	AdaptiveData.h	38;"	d
+TIPS_netblock	AdaptiveData.h	40;"	d
+TIPS_ui	AdaptiveData.h	37;"	d
+TipsAlarm	pubdata.h	43;"	d
+TipsAudit	pubdata.h	45;"	d
+TipsCache	pubdata.h	39;"	d
+TipsManager	pubdata.h	40;"	d
+TipsNetblock	pubdata.h	44;"	d
+TipsProName	AdaptiveData.h	33;"	d
+TipsStat	pubdata.h	48;"	d
+TipsUser	pubdata.h	41;"	d
+Trace	flicker/ich8.h	27;"	d
+Trace	flicker/ich8.h	29;"	d
+Trace	ich8.h	27;"	d
+Trace	ich8.h	29;"	d
+TraverGetFlag	AdaptiveData.cpp	/^void TraverGetFlag(struct G_Struct *G_Stu)$/;"	f
+UIAbend	pubdata.h	53;"	d
+UINT16	flicker/ich8.h	/^typedef unsigned short	UINT16;$/;"	t
+UINT16	ich8.h	/^typedef unsigned short	UINT16;$/;"	t
+UINT32	flicker/ich8.h	/^typedef unsigned int	UINT32;$/;"	t
+UINT32	ich8.h	/^typedef unsigned int	UINT32;$/;"	t
+UINT8	flicker/ich8.h	/^typedef unsigned char	UINT8;$/;"	t
+UINT8	ich8.h	/^typedef unsigned char	UINT8;$/;"	t
+UIPID	sharemem.h	13;"	d
+UNDEFINE	sharemem.cpp	12;"	d	file:
+UNSIGNEDINT	sharemem.cpp	16;"	d	file:
+Unlink_shm	sharemem.cpp	/^int ShareMem::Unlink_shm()$/;"	f	class:ShareMem
+UpdateCurrUse	AdaptiveData.cpp	/^void UpdateCurrUse(struct UseCard *CurrUse, char *Grup_one, char *Grup_two, int  ModeFlag, int ImageFlag)$/;"	f
+UpdateStu	AdaptiveData.cpp	/^void UpdateStu(struct UseCard *stu, char *Grup_one, char *Grup_two, int ModeFlag, int ImageFlag)$/;"	f
+UpdateUse	AdaptiveData.cpp	/^void UpdateUse(char *Grup_one, char *Grup_two, int ModeFlag, int ImageFlag, int UseFlag)$/;"	f
+Update_S_Image	AdaptiveData.cpp	/^void Update_S_Image(char *eth)$/;"	f
+UseCard	AdaptiveData.h	/^struct UseCard 		\/* 网口信息 监控口、通信口、镜像模式、镜像口1、镜像口2 *\/$/;"	s
+UserPID	pubdata.h	82;"	d
+WriteShareMem	daemon.cpp	/^void WriteShareMem(struct UseCard *use)$/;"	f
+_GetConfigInfo_H__	GetConfigInfo.h	2;"	d
+_ICH8_H_	flicker/ich8.h	8;"	d
+_ICH8_H_	ich8.h	8;"	d
+_N6601_H_	flicker/n6601.h	2;"	d
+_N6601_H_	n6601.h	2;"	d
+_PUBDATA_H_	pubdata.h	3;"	d
+_ReadConfig_h_	ReadConfig.h	2;"	d
+_Sigsuspend_H__	Sigsuspend.h	2;"	d
+autodyne	GetConfigInfo.h	/^		char *autodyne;$/;"	m	union:ConfigInfo
+cal_CpuAndMem	daemon.cpp	/^void* cal_CpuAndMem(void*)$/;"	f
+cal_cpuoccupy	daemon.cpp	/^int cal_cpuoccupy(CPU_OCCUPY* o, CPU_OCCUPY* n)$/;"	f
+carrier_path	AdaptiveData.h	/^	char 	carrier_path[MiniBufferSize]; 	\/*carrier 完整路径*\/$/;"	m	struct:G_Struct
+carrier_value	AdaptiveData.h	/^	char 	carrier_value;			\/*carrier 值*\/$/;"	m	struct:Core
+cmd	ReadConfig.cpp	/^char cmd[MicroMiniBufferSize] = {0};$/;"	v
+communicate	AdaptiveData.h	/^	char communicate[MicroMiniBufferSize];$/;"	m	struct:Adaptive
+curr_mutex	AdaptiveData.cpp	/^pthread_mutex_t curr_mutex;		\/*"(检测进程)保活线程"用*\/$/;"	v
+err	GetConfigInfo.h	/^		char *err;$/;"	m	union:ConfigInfo
+eth_name	AdaptiveData.h	/^	char 	eth_name[MicroMiniBufferSize];	\/*网卡名称*\/$/;"	m	struct:Core
+exe_cmd	daemon.cpp	/^char exe_cmd[MicroMiniBufferSize];$/;"	v
+fd	AdaptiveData.h	/^	int 	fd;	  			\/*carrier_path 文件描述符*\/$/;"	m	struct:G_Struct
+fd	daemon.cpp	/^int fd[2];							$/;"	v
+fp	GetConfigInfo.cpp	/^FILE *fp = 0;$/;"	v
+free	daemon.cpp	/^    unsigned long free;$/;"	m	struct:PACKED_M	file:
+gPort	flicker/n6601.c	/^UINT8 gPort[100] = {17, 20, 18, 37};$/;"	v
+g_bSuspend	Sigsuspend.cpp	/^static __thread int g_bSuspend;  $/;"	v	file:
+g_stu	AdaptiveData.h	/^	struct G_Struct *g_stu;$/;"	m	struct:G_Change	typeref:struct:G_Change::G_Struct
+get_cpuoccupy	daemon.cpp	/^int get_cpuoccupy(CPU_OCCUPY* cpust)$/;"	f
+get_memoccupy	daemon.cpp	/^int get_memoccupy(MEM_OCCUPY* m)$/;"	f
+getgroup	flicker/ich8.h	48;"	d
+getgroup	ich8.h	48;"	d
+getmask	flicker/ich8.h	50;"	d
+getmask	ich8.h	50;"	d
+getshift	flicker/ich8.h	49;"	d
+getshift	ich8.h	49;"	d
+gpio_num	daemon.cpp	/^UINT8 gpio_num = sizeof(gPort) \/ sizeof(gPort[0]);$/;"	v
+idle	daemon.cpp	/^    unsigned int idle;$/;"	m	struct:PACKED_C	file:
+image_card_one	AdaptiveData.h	/^	char image_card_one[MicroMiniBufferSize]; $/;"	m	struct:Image
+image_card_two	AdaptiveData.h	/^	char image_card_two[MicroMiniBufferSize]; \/* 当image_mode为1或2时有效 *\/ $/;"	m	struct:Image
+image_mode	AdaptiveData.h	/^	int  image_mode;\/* 1:单镜像口 2:独立模式 3:保护模式 *\/$/;"	m	struct:Image
+init_pthread_mutex	AdaptiveData.cpp	/^void init_pthread_mutex()$/;"	f
+killflag	pubdata.h	/^	int 	killflag;$/;"	m	struct:ProActionStu
+main	daemon.cpp	/^int main(int argc,char *argv[])$/;"	f
+main	flicker/example_main.c	/^int main(int argc,char *argv[])$/;"	f
+main	imitation_process/Imitation.cpp	/^int main(int argc, char** argv)$/;"	f
+mem	shm_struct_t.h	/^	char 		mem[MAX_SHM_SIZE];$/;"	m	struct:shm_struct_t
+monitor	AdaptiveData.h	/^	char monitor[MicroMiniBufferSize];$/;"	m	struct:Adaptive
+mutex	shm_struct_t.h	/^	sem_t		mutex;$/;"	m	struct:shm_struct_t
+name	daemon.cpp	/^    char name[20];$/;"	m	struct:PACKED_C	file:
+name	daemon.cpp	/^    char name[20];$/;"	m	struct:PACKED_M	file:
+name2	daemon.cpp	/^    char name2[20];$/;"	m	struct:PACKED_M	file:
+next_var_offset	shm_struct_t.h	/^	int			next_var_offset;$/;"	m	struct:shm_struct_t
+nice	daemon.cpp	/^    unsigned int nice;$/;"	m	struct:PACKED_C	file:
+num	shm_struct_t.h	/^	int num;$/;"	m	struct:var_t
+obj	daemon.cpp	/^ShareMem obj;		$/;"	v
+offset	shm_struct_t.h	/^	int offset;$/;"	m	struct:var_t
+proAbend	pubdata.h	/^	char *proAbend;$/;"	m	struct:ProActionStu
+resume	Sigsuspend.cpp	/^int resume( pthread_t thread)  $/;"	f
+resume_handler	Sigsuspend.cpp	/^void resume_handler(int signum)  $/;"	f
+sendKill	daemon.cpp	/^void sendKill()$/;"	f
+shm	sharemem.h	/^	shm_struct_t * shm;$/;"	m	class:ShareMem
+shm_struct_t	shm_struct_t.h	/^typedef struct shm_struct_t$/;"	s
+shm_struct_t	shm_struct_t.h	/^}shm_struct_t;$/;"	t	typeref:struct:shm_struct_t
+suspend	Sigsuspend.cpp	/^int suspend( pthread_t thread)  $/;"	f
+suspend_handler	Sigsuspend.cpp	/^void suspend_handler(int signum)  $/;"	f
+system	daemon.cpp	/^    unsigned int system;$/;"	m	struct:PACKED_C	file:
+testStu	ReadConfig.cpp	/^union ConfigInfo testStu;$/;"	v	typeref:union:ConfigInfo
+tmp_buff	daemon.cpp	/^char tmp_buff[MicroMiniBufferSize];$/;"	v
+total	daemon.cpp	/^    unsigned long total;$/;"	m	struct:PACKED_M	file:
+type	AdaptiveData.h	/^	int 	type; 				\/*网卡功能分配,如E_Monitor等*\/		$/;"	m	struct:Core
+type	AdaptiveData.h	/^	int 	type;$/;"	m	struct:G_Other
+type	shm_struct_t.h	/^	int type;$/;"	m	struct:var_t
+user	daemon.cpp	/^    unsigned int user;$/;"	m	struct:PACKED_C	file:
+valid	shm_struct_t.h	/^	int valid;$/;"	m	struct:var_t
+var	shm_struct_t.h	/^	var_t 		var[MAX_VAR_NUM];$/;"	m	struct:shm_struct_t
+var_t	shm_struct_t.h	/^typedef	struct var_t$/;"	s
+var_t	shm_struct_t.h	/^}var_t;$/;"	t	typeref:struct:var_t

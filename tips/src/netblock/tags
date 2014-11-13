@@ -1,0 +1,214 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCEPT_POLICT_H	accept_policy.h	2;"	d
+AIP	juageIP.cpp	6;"	d	file:
+ALARM	cachestruct.h	6;"	d
+ALERT	cachestruct.h	11;"	d
+AUDIT	cachestruct.h	7;"	d
+BIP	juageIP.cpp	3;"	d	file:
+BIPa	juageIP.cpp	4;"	d	file:
+BIPb	juageIP.cpp	5;"	d	file:
+BLOCK	cachestruct.h	10;"	d
+BlockAddr	manageCommand.h	/^}BlockAddr;$/;"	t	typeref:struct:_Block_ADDR
+BlockOrder	manageCommand.h	/^}BlockOrder;$/;"	t	typeref:struct:_BLOCKORDER
+CACHE_STRUCT_H	cachestruct.h	2;"	d
+CATCHPACKET_H	InitProcess.h	2;"	d
+CIP	juageIP.cpp	7;"	d	file:
+CIPa	juageIP.cpp	8;"	d	file:
+DEBUG	netblock.c	24;"	d	file:
+ETHERNET_TYPE_IP	netblock.h	9;"	d
+EtherHdr	netblock.h	/^}EtherHdr;$/;"	t	typeref:struct:_EtherHdr
+Exit_Client	client.cpp	/^void Exit_Client()$/;"	f
+INIT_ALARM_HEAD	cachestruct.h	13;"	d
+INIT_ALERT_HEAD	cachestruct.h	43;"	d
+INIT_AUDIT_HEAD	cachestruct.h	19;"	d
+INIT_BLOCK_HEAD	cachestruct.h	37;"	d
+INIT_OPT_HEAD	cachestruct.h	25;"	d
+INIT_SECRET_HEAD	cachestruct.h	31;"	d
+Init_Client	client.cpp	/^int Init_Client()$/;"	f
+Init_accept_server	accept_policy.cpp	/^int Init_accept_server()$/;"	f
+JUAGEIP_H	juageIP.h	2;"	d
+MANAGECOMMAND_H	manageCommand.h	2;"	d
+OPT	cachestruct.h	8;"	d
+PORT	manageCommand.h	/^}PORT;$/;"	t	typeref:struct:_PORT
+REORTBLOCKINFO_H	reportBlockInfo.h	2;"	d
+SECRET	cachestruct.h	9;"	d
+SERVERPORT	client.h	3;"	d
+STARTBLOCK	netblock.h	5;"	d
+STOPBLOCK	netblock.h	4;"	d
+Send_Msg	client.cpp	/^int Send_Msg(char* buff, int len)$/;"	f
+TurnTime	reportBlockInfo.cpp	/^void TurnTime(const time_t clock,char *buffer,int size)$/;"	f
+UNIX_DOMAIN	accept_policy.cpp	1;"	d	file:
+UNIX_DOMAIN	netblock.c	23;"	d	file:
+UNIX_DOMAIN	netblock.h	7;"	d
+WtPid	netblock.c	/^void WtPid()$/;"	f
+_BLOCKORDER	manageCommand.h	/^typedef struct _BLOCKORDER$/;"	s
+_Block_ADDR	manageCommand.h	/^typedef struct _Block_ADDR$/;"	s
+_CLIENT_H_	client.h	2;"	d
+_EtherHdr	netblock.h	/^typedef struct _EtherHdr$/;"	s
+_HEAD_NETBLOCK	netblock.h	2;"	d
+_PORT	manageCommand.h	/^typedef struct _PORT$/;"	s
+_blockInfo	netblock.h	/^typedef struct _blockInfo$/;"	s
+alarm_id	cachestruct.h	/^	char alarm_id[12];$/;"	m	struct:cache_alarm_t
+alarm_time	cachestruct.h	/^	char alarm_time[25];$/;"	m	struct:cache_alert_t
+alarm_time	cachestruct.h	/^	time_t alarm_time;$/;"	m	struct:cache_alarm_t
+alert_id	cachestruct.h	/^	char alert_id[12];$/;"	m	struct:cache_alert_t
+block	netblock.c	/^blockinfo* block;$/;"	v
+block_desc	cachestruct.h	/^	char block_desc[33];$/;"	m	struct:cache_block_t
+block_tcp_stream	reportBlockInfo.cpp	/^void block_tcp_stream(struct iphdr *ip,struct tcphdr *tcp)$/;"	f
+blockinfo	netblock.h	/^}blockinfo;$/;"	t	typeref:struct:_blockInfo
+cache_alarm_t	cachestruct.h	/^typedef struct cache_alarm_t$/;"	s
+cache_alarm_t	cachestruct.h	/^}cache_alarm_t;$/;"	t	typeref:struct:cache_alarm_t
+cache_alert_t	cachestruct.h	/^typedef struct cache_alert_t$/;"	s
+cache_alert_t	cachestruct.h	/^}cache_alert_t;$/;"	t	typeref:struct:cache_alert_t
+cache_audit_t	cachestruct.h	/^typedef struct cache_audit_t$/;"	s
+cache_audit_t	cachestruct.h	/^}cache_audit_t;$/;"	t	typeref:struct:cache_audit_t
+cache_block_t	cachestruct.h	/^typedef struct cache_block_t$/;"	s
+cache_block_t	cachestruct.h	/^}cache_block_t;$/;"	t	typeref:struct:cache_block_t
+cache_head_t	cachestruct.h	/^typedef struct cache_head_t$/;"	s
+cache_head_t	cachestruct.h	/^}cache_head_t;$/;"	t	typeref:struct:cache_head_t
+cache_opt_t	cachestruct.h	/^typedef struct cache_opt_t$/;"	s
+cache_opt_t	cachestruct.h	/^}cache_opt_t;$/;"	t	typeref:struct:cache_opt_t
+cache_secret_t	cachestruct.h	/^typedef struct cache_secret_t$/;"	s
+cache_secret_t	cachestruct.h	/^}cache_secret_t;$/;"	t	typeref:struct:cache_secret_t
+close_loop	netblock.c	/^void close_loop(int sig)$/;"	f
+compare	InitProcess.cpp	/^bool compare(PORT &src,PORT &dest)$/;"	f
+compareIP	reportBlockInfo.cpp	/^bool compareIP(const in_addr_t *addr,const BlockAddr *listElement)$/;"	f
+comparePort	reportBlockInfo.cpp	/^bool comparePort(const in_port_t *port,const PORT *listElement)$/;"	f
+createBlockInfo	InitProcess.cpp	/^void createBlockInfo(const int *counter,char * const pointer[],BlockOrder *blockinfo)$/;"	f
+createPthread	reportBlockInfo.cpp	/^void createPthread(pcap_t *handle)$/;"	f
+createtime	manageCommand.h	/^    time_t          createtime;$/;"	m	struct:_BLOCKORDER
+descr	cachestruct.h	/^	char descr[129];$/;"	m	struct:cache_secret_t
+describe	cachestruct.h	/^	char describe[128];$/;"	m	struct:cache_opt_t
+descry	cachestruct.h	/^	char descry[65];$/;"	m	struct:cache_alarm_t
+descry	cachestruct.h	/^	char descry[65];$/;"	m	struct:cache_alert_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_alarm_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_alert_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_block_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_secret_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_alarm_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_alert_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_block_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_secret_t
+dip	cachestruct.h	/^	uint32_t dip;$/;"	m	struct:cache_audit_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_alarm_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_alert_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_secret_t
+dnshash	cachestruct.h	/^	char dnshash[33];$/;"	m	struct:cache_alert_t
+down_KB	cachestruct.h	/^	float	 down_KB;$/;"	m	struct:cache_audit_t
+dport	cachestruct.h	/^	uint16_t dport;$/;"	m	struct:cache_audit_t
+dport	cachestruct.h	/^	uint32_t dport;$/;"	m	struct:cache_alert_t
+dport	cachestruct.h	/^	uint32_t dport;$/;"	m	struct:cache_secret_t
+dstip	netblock.h	/^    in_addr_t dstip;$/;"	m	struct:_blockInfo
+endIP	manageCommand.h	/^    in_addr_t  endIP;$/;"	m	struct:_Block_ADDR
+end_time	cachestruct.h	/^	time_t   end_time;$/;"	m	struct:cache_audit_t
+env_mutex	InitProcess.cpp	/^pthread_mutex_t  env_mutex ;$/;"	v
+ether_dst	netblock.h	/^    u_int8_t ether_dst[6];$/;"	m	struct:_EtherHdr
+ether_src	netblock.h	/^    u_int8_t ether_src[6];$/;"	m	struct:_EtherHdr
+ether_type	netblock.h	/^    u_int16_t ether_type;$/;"	m	struct:_EtherHdr
+event_class	cachestruct.h	/^	uint32_t event_class;$/;"	m	struct:cache_secret_t
+event_id	cachestruct.h	/^	char event_id[12];$/;"	m	struct:cache_secret_t
+event_time	cachestruct.h	/^	char event_time[25];$/;"	m	struct:cache_secret_t
+event_type	cachestruct.h	/^	char event_type[3];$/;"	m	struct:cache_secret_t
+expired_time	cachestruct.h	/^	char expired_time[25];$/;"	m	struct:cache_block_t
+extra_text	cachestruct.h	/^	char extra_text[65];$/;"	m	struct:cache_alert_t
+filename	cachestruct.h	/^	char filename[257];$/;"	m	struct:cache_secret_t
+findBlockOrder	InitProcess.cpp	/^void findBlockOrder(BlockOrder &blockinfo)$/;"	f
+getIpAndMask	InitProcess.cpp	/^void getIpAndMask(const char *str,char *ip,char *mask)$/;"	f
+getOrderParameter	InitProcess.cpp	/^void getOrderParameter(const char *parameter)$/;"	f
+getopt_reset	reportBlockInfo.cpp	/^void getopt_reset()$/;"	f
+handle	netblock.c	/^pcap_t *handle=NULL;$/;"	v
+handle_func	netblock.c	/^void handle_func(int sig)$/;"	f
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_alarm_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_alert_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_audit_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_block_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_opt_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_secret_t
+inSideIp	manageCommand.h	/^    BlockAddr       inSideIp;$/;"	m	struct:_BLOCKORDER
+initAche_block_t	reportBlockInfo.cpp	/^void initAche_block_t(struct cache_block_t *info,const time_t *now,const struct iphdr *ip,const struct tcphdr *tcp)$/;"	f
+initBlock	InitProcess.cpp	/^void initBlock(BlockOrder &p)$/;"	f
+initBlockTime	InitProcess.cpp	/^void initBlockTime(const char *time,BlockOrder *blockinfo)$/;"	f
+initHost	InitProcess.cpp	/^void initHost(const char *ip,BlockOrder *blockinfo)$/;"	f
+initInsideAddress	InitProcess.cpp	/^void initInsideAddress(char *sip,BlockOrder *blockinfo)$/;"	f
+initInsidePort	InitProcess.cpp	/^void initInsidePort(const char *sport,BlockOrder *blockinfo)$/;"	f
+initNetAddr	InitProcess.cpp	/^void initNetAddr(const char *ip,BlockOrder *blockinfo)$/;"	f
+initNetWork	reportBlockInfo.cpp	/^void initNetWork()$/;"	f
+initNetWorkOutPam	InitProcess.cpp	/^void initNetWorkOutPam(const char *ip,const char *mask,BlockOrder *blockinfo)$/;"	f
+initNetWorkPam	InitProcess.cpp	/^void initNetWorkPam(const char *ip,const char *mask,BlockOrder *blockinfo)$/;"	f
+initOutSideAddress	InitProcess.cpp	/^void initOutSideAddress(char *dip,BlockOrder *blockinfo)$/;"	f
+initOutsidePort	InitProcess.cpp	/^void initOutsidePort(const char *dport,BlockOrder *blockinfo)$/;"	f
+init_net	netblock.c	/^void init_net()$/;"	f
+init_sock	netblock.c	/^void init_sock(char** argv)$/;"	f
+insidePort	manageCommand.h	/^    PORT            insidePort;$/;"	m	struct:_BLOCKORDER
+ip_Packet	netblock.c	/^int ip_Packet(const u_char *packet)$/;"	f
+ipmarkoff	juageIP.cpp	/^bool ipmarkoff(in_addr_t *addr)$/;"	f
+isPacket	InitProcess.cpp	/^bool isPacket(const u_char *packet)$/;"	f
+juageIp	reportBlockInfo.cpp	/^bool juageIp(struct iphdr *ip,BlockOrder *order)$/;"	f
+juagePort	reportBlockInfo.cpp	/^bool juagePort(struct iphdr *ip,struct tcphdr *tcp,BlockOrder *order)$/;"	f
+judgeIP	InitProcess.cpp	/^bool judgeIP(const char *ip,const char *mask)$/;"	f
+main	netblock.c	/^int main(int argc, char* argv[])$/;"	f
+main	test.c	/^int main()$/;"	f
+main	test_client.c	/^int main()$/;"	f
+manager	InitProcess.cpp	/^std::list<BlockOrder> manager;$/;"	v
+my_alarm	reportBlockInfo.cpp	/^void my_alarm(int signo)$/;"	f
+mycallback	netblock.c	/^void mycallback(u_char *user,const struct pcap_pkthdr *h,const u_char *data)$/;"	f
+mycallback	reportBlockInfo.cpp	/^void mycallback(u_char *user,const struct pcap_pkthdr *h,const u_char *bytes)$/;"	f
+net	netblock.c	/^static libnet_t *net=NULL;$/;"	v	file:
+net	reportBlockInfo.cpp	/^static libnet_t *net=NULL;$/;"	v	file:
+opttime	cachestruct.h	/^	char opttime[24];$/;"	m	struct:cache_opt_t
+outSideIp	manageCommand.h	/^    BlockAddr       outSideIp;$/;"	m	struct:_BLOCKORDER
+outsidePort	manageCommand.h	/^    PORT            outsidePort;$/;"	m	struct:_BLOCKORDER
+parse	netblock.c	/^void parse(char* buf, blockinfo* block)$/;"	f
+pid	reportBlockInfo.cpp	/^pthread_t pid=0;$/;"	v
+plugin_id	cachestruct.h	/^	uint32_t plugin_id;$/;"	m	struct:cache_alert_t
+port	manageCommand.h	/^    std::list<in_port_t>  port;$/;"	m	struct:_PORT
+processOrder	InitProcess.cpp	/^void processOrder(int *temp,const char *str,char *p[])$/;"	f
+processOrder	netblock.c	/^void processOrder(int *temp,const char *str,char *p[])$/;"	f
+protocol	cachestruct.h	/^	uint32_t protocol; $/;"	m	struct:cache_alert_t
+protocol	cachestruct.h	/^	uint32_t protocol;$/;"	m	struct:cache_audit_t
+pthreadFunc	reportBlockInfo.cpp	/^void* pthreadFunc(void *arg)$/;"	f
+receiver	cachestruct.h	/^	char receiver[257];$/;"	m	struct:cache_secret_t
+reset_block	netblock.c	/^void reset_block()$/;"	f
+reset_tcp	netblock.c	/^void reset_tcp(struct iphdr *ip,struct tcphdr *tcp)$/;"	f
+risk	cachestruct.h	/^	char risk;$/;"	m	struct:cache_alarm_t
+risk	cachestruct.h	/^	char risk[3];$/;"	m	struct:cache_alert_t
+scc	cachestruct.h	/^	char scc[65];$/;"	m	struct:cache_alarm_t
+scc	cachestruct.h	/^	char scc[65];$/;"	m	struct:cache_alert_t
+scc_flag	cachestruct.h	/^	char scc_flag;$/;"	m	struct:cache_alarm_t
+scc_flag	cachestruct.h	/^	char scc_flag;$/;"	m	struct:cache_alert_t
+searchThisOrder	InitProcess.cpp	/^bool searchThisOrder(BlockOrder &blockinfo,BlockOrder &order)$/;"	f
+searchTimeout	reportBlockInfo.cpp	/^bool searchTimeout(std::list<BlockOrder>::iterator &p,const time_t *now)$/;"	f
+sen_msg	cachestruct.h	/^	char sen_msg[129];$/;"	m	struct:cache_secret_t
+sender	cachestruct.h	/^	char sender[65];$/;"	m	struct:cache_secret_t
+serverfd	client.cpp	/^int serverfd;$/;"	v
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_alarm_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_alert_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_block_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_secret_t
+sip	cachestruct.h	/^	uint32_t sip;$/;"	m	struct:cache_audit_t
+size	cachestruct.h	/^	int size;$/;"	m	struct:cache_head_t
+sport	cachestruct.h	/^	uint16_t sport;$/;"	m	struct:cache_audit_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_alert_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_block_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_secret_t
+srcip	netblock.h	/^    in_addr_t srcip;$/;"	m	struct:_blockInfo
+startIP	manageCommand.h	/^    in_addr_t  startIP;$/;"	m	struct:_Block_ADDR
+start_capture	netblock.c	/^void* start_capture(void* arg)$/;"	f
+start_loop	netblock.c	/^void start_loop(int sig)$/;"	f
+start_time	cachestruct.h	/^	char start_time[25];$/;"	m	struct:cache_block_t
+start_time	cachestruct.h	/^	time_t 	 start_time;$/;"	m	struct:cache_audit_t
+stop_capture	netblock.c	/^void* stop_capture(void* arg)$/;"	f
+times	manageCommand.h	/^    time_t          times;$/;"	m	struct:_BLOCKORDER
+title	cachestruct.h	/^	char title[129];$/;"	m	struct:cache_secret_t
+transferMask	InitProcess.cpp	/^void transferMask(const char *trains,char *mask)$/;"	f
+trojan_id	cachestruct.h	/^	char trojan_id[6];$/;"	m	struct:cache_alarm_t
+trojan_id	cachestruct.h	/^	char trojan_id[6];$/;"	m	struct:cache_alert_t
+type	cachestruct.h	/^	char type[3];$/;"	m	struct:cache_alarm_t
+type	cachestruct.h	/^	int type;$/;"	m	struct:cache_head_t
+up_KB	cachestruct.h	/^	float	 up_KB;$/;"	m	struct:cache_audit_t
+username	cachestruct.h	/^	char username[64];$/;"	m	struct:cache_opt_t

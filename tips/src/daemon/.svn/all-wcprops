@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon
+END
+sharemem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/sharemem.cpp
+END
+manager.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/manager.sh
+END
+ReadConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/ReadConfig.h
+END
+user.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/user.sh
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/tags
+END
+n6601.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/n6601.h
+END
+shm_struct_t.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/shm_struct_t.h
+END
+alarm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/alarm.sh
+END
+pubdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/pubdata.h
+END
+GetConfigInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/GetConfigInfo.h
+END
+AdaptiveData.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/AdaptiveData.cpp
+END
+Makefile.bak
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/Makefile.bak
+END
+netblock.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/netblock.sh
+END
+Sigsuspend.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/Sigsuspend.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/7151/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/Makefile
+END
+wxf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/wxf.sh
+END
+audit.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/audit.sh
+END
+ich8.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/ich8.h
+END
+libn6601.so
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5700/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/libn6601.so
+END
+ReadConfig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/7151/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/ReadConfig.cpp
+END
+tipsstat.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5823/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/tipsstat.sh
+END
+daemon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/7310/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/daemon.cpp
+END
+sharemem.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/7151/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/sharemem.h
+END
+Adaptive
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/Adaptive
+END
+GetConfigInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/GetConfigInfo.cpp
+END
+tipsdaemon
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/7310/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/tipsdaemon
+END
+Sigsuspend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/Sigsuspend.cpp
+END
+TipsNIC.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/TipsNIC.cfg
+END
+ProScavenger.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/ProScavenger.sh
+END
+shm.conf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/shm.conf
+END
+GetNicInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/GetNicInfo.h
+END
+cache.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/cache.sh
+END
+AdaptiveData.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5719/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/AdaptiveData.h
+END
+ProAllKill.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/daemon/ProAllKill.sh
+END

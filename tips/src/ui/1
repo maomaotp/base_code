@@ -1,0 +1,205 @@
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;*/
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:		mconfig->modify_flag = 1;
+admin_opt.cpp:					mconfig->modify_flag = 1;
+admin_opt.cpp:					mconfig->modify_flag = 1;
+admin_opt.cpp:					mconfig->modify_flag = 1;
+admin_opt.cpp:					mconfig->modify_flag = 1;
+admin_opt.cpp:					mconfig->modify_flag = 1;
+admin_opt.cpp:            realxml = (char *)g_strdup_printf("<autorefresh interval='%s'></autorefresh><attack Type='%s' Risk='%s' Scc_flag='%s'><isfind>1</isfind><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time>%s<page>%s%s</page></attack>",interval, alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml,pagenum,tips_url);
+admin_opt.cpp:            	realxml = (char *)g_strdup_printf("<autorefresh interval='%s'></autorefresh><attack Type='%s' Risk='%s' Scc_flag='%s'><isfind>1</isfind><msg>备份成功</msg><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time>%s<page>%s%s</page></attack>",interval, alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml, pagenum, tips_url);
+admin_opt.cpp:            	realxml = (char *)g_strdup_printf("<autorefresh interval='%s'></autorefresh><attack Type='%s' Risk='%s' Scc_flag='%s'><isfind>1</isfind><msg>备份成功</msg><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time>%s<page>%s%s</page></attack>",interval, alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml, pagenum, tips_url);
+admin_opt.cpp:                realxml = (char *)g_strdup_printf("<autorefresh interval='%s'></autorefresh><attack Type='%s' Risk='%s' Scc_flag='%s'><msg>删除成功</msg><isfind>1</isfind><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time>%s<page>%s%s</page></attack>",interval, alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml, pagenum, tips_url);
+admin_opt.cpp:      realxml = (char *)g_strdup_printf("<autorefresh interval='%s'></autorefresh><attack Type='%s' Risk='%s' Scc_flag='%s'><msg>删除成功</msg><isfind>1</isfind><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time>%s<page>%s%s</page></attack>",interval, alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml, pagenum, tips_url);
+admin_opt.cpp:                realxml = (char *)g_strdup_printf("<attack Type='%s' Risk='%s' Scc_flag='%s'><isfind>1</isfind><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time>%s%s%s</attack>",alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml,pagenum,tips_url);
+admin_opt.cpp:                realxml = (char *)g_strdup_printf("<shadiness plugin_id='%s' Scc_flag='%s'><ORisk>%s</ORisk><OAlarm_time>%s</OAlarm_time><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac>%s</shadiness>",alert_info.plugin_id, alert_info.Scc_flag, alert_info.Risk, alert_info.Alarm_time, alert_info.Sip, alert_info.Dip, alert_info.Dmac, xml);
+admin_opt.cpp:				if(tips_config_manage.modify_flag)
+admin_opt.cpp:				if(tips_system_config.modify_flag)
+dbtable:Scc_flag
+gcrypt.h1:  int (*sendmsg) (int s, const void *msg, int flags);
+gcrypt.h1:  int (*recvmsg) (int s, void *msg, int flags);
+gcrypt.h1:  int (*sendmsg) (int s, const struct msghdr *msg, int flags);
+gcrypt.h1:  int (*recvmsg) (int s, struct msghdr *msg, int flags);
+gcrypt.h1:enum gcry_mpi_flag
+gcrypt.h1:/* Set the FLAG for the big integer A.  Currently only the flag
+gcrypt.h1:void gcry_mpi_set_flag (gcry_mpi_t a, enum gcry_mpi_flag flag);
+gcrypt.h1:   currently useless as no flags are allowed. */
+gcrypt.h1:void gcry_mpi_clear_flag (gcry_mpi_t a, enum gcry_mpi_flag flag);
+gcrypt.h1:int gcry_mpi_get_flag (gcry_mpi_t a, enum gcry_mpi_flag flag);
+gcrypt.h1:enum gcry_cipher_flags
+gcrypt.h1:   be given as an bitwise OR of the gcry_cipher_flags values. */
+gcrypt.h1:                              int algo, int mode, unsigned int flags);
+gcrypt.h1:#define GCRY_PK_USAGE_UNKN 128 /* Unknown usage flag. */
+gcrypt.h1:enum gcry_md_flags
+gcrypt.h1:   given as an bitwise OR of the gcry_md_flags values.  ALGO may be
+gcrypt.h1:gcry_error_t gcry_md_open (gcry_md_hd_t *h, int algo, unsigned int flags);
+gcrypt.h1:gcry_error_t gcry_ac_data_set (gcry_ac_data_t data, unsigned int flags,
+gcrypt.h1:gcry_error_t gcry_ac_data_get_name (gcry_ac_data_t data, unsigned int flags,
+gcrypt.h1:gcry_error_t gcry_ac_data_get_index (gcry_ac_data_t data, unsigned int flags,
+gcrypt.h1:                           gcry_ac_id_t algorithm, unsigned int flags)
+gcrypt.h1:				  unsigned int flags, void *options,
+gcrypt.h1:				  unsigned int flags, void *options,
+gcrypt.h1:   the control of the flags FLAGS and store the resulting data set
+gcrypt.h1:                                   unsigned int flags,
+gcrypt.h1:   with the key KEY under the control of the flags FLAGS and store the
+gcrypt.h1:                                   unsigned int flags,
+gcrypt.h1:					  unsigned int flags, void *opts,
+gcrypt.h1:   with the secret key KEY according to SCHEME, @var{flags} and OPTS.
+gcrypt.h1:					  unsigned int flags, void *opts,
+gcrypt.h1:				       unsigned int flags, void *opts,
+gcrypt.h1:					 unsigned int flags, void *opts,
+gcrypt.h1:                                  unsigned int flags);
+gcrypt.h1:gcry_error_t gcry_prime_check (gcry_mpi_t x, unsigned int flags);
+gcrypt-module.h:					      int flags);
+gcrypt-module.h:					      int flags);
+gsad_base.h:  int login_flag;
+gsad_base.h:	int login_flag;
+gsad_base.h:	int modify_flag;
+gsad_base.h:	int modify_flag;
+gsad_base.h:  int valid;             /* Validation flag. */
+internal.h:   * (this flag will determine if we call the 'notify_completed'
+Binary file libz.so matches
+main.cpp:                	char *realxml = (char *)g_strdup_printf("<attack><title>攻击窃密警报</title><condition><OType>%s</OType><ORisk>%s</ORisk><Scc_flag>%s</Scc_flag><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time></condition><result>%s</result></attack>",alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml);
+main.cpp:      char *realxml = (char *)g_strdup_printf("<attack><title>攻击窃密警报</title><condition><OType>%s</OType><ORisk>%s</ORisk><Scc_flag>%s</Scc_flag><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time></condition><result>%s</result></attack>",alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml);
+main.cpp:      char *realxml = (char *)g_strdup_printf("<attack><title>攻击窃密警报</title><condition><OType>%s</OType><ORisk>%s</ORisk><Scc_flag>%s</Scc_flag><OTrogan_id>%s</OTrogan_id><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac><OAlarm_time>%s</OAlarm_time></condition><result>%s</result></attack>",alarm_info.Type, alarm_info.Risk, alarm_info.Scc_flag, alarm_info.Trojan_id, alarm_info.Sip, alarm_info.Dip, alarm_info.Dmac, alarm_info.Alarm_time, xml);
+main.cpp:    char *realxml = (char *)g_strdup_printf("<shadiness><title>可疑行为报警</title><condition><Oplugin_id>%s</Oplugin_id><OScc_flag>%s</OScc_flag><ORisk>%s</ORisk><OAlarm_time>%s</OAlarm_time><OSip>%s</OSip><ODip>%s</ODip><ODmac>%s</ODmac></condition><result>%s</result></shadiness>",alert_info.plugin_id, alert_info.Scc_flag, alert_info.Risk, alert_info.Alarm_time, alert_info.Sip, alert_info.Dip, alert_info.Dmac, xml);
+main.cpp:	int flag= fcntl(tips_daemon->socket_fd, F_GETFD);
+main.cpp:	flag |= FD_CLOEXEC;
+main.cpp:	int i = fcntl(tips_daemon->socket_fd, F_SETFD, flag);
+microhttpd.h:   * Run in debug mode.  If this flag is used, the
+microhttpd.h:   * possible).  Specifically, at the moment, this flag causes MHD to
+microhttpd.h:   * flag being set.
+microhttpd.h: * @param flags combination of MHD_FLAG values
+microhttpd.h: * @param flags combination of MHD_FLAG values
+microhttpd.h:struct MHD_Daemon *MHD_start_daemon (unsigned int flags,
+omp.xsl:      <select name="tips_Scc_flag" class="text">
+omp.xsl:	<xsl:call-template name="scc_addr_flag"/>
+omp.xsl:    			<input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+omp.xsl:    <input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+omp.xsl:  <td><xsl:value-of select="Scc_flag"/></td>
+omp.xsl:<xsl:template name="scc_addr_flag">
+omp.xsl:	 <xsl:when test="@Scc_flag=6">
+omp.xsl:	 <xsl:when test="@Scc_flag=1">
+omp.xsl:	 <xsl:when test="@Scc_flag=2">
+omp.xsl:	 <xsl:when test="@Scc_flag=3">
+omp.xsl:	 <xsl:when test="@Scc_flag=4">
+omp.xsl:	 <xsl:when test="@Scc_flag=5">
+omp.xsl:	 <xsl:when test="@Scc_flag=0">
+omp.xsl~:      <select name="tips_Scc_flag" class="text">
+omp.xsl~:	<xsl:call-template name="scc_addr_flag"/>
+omp.xsl~:    <input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+omp.xsl~:    <input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+omp.xsl~:    <input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+omp.xsl~:  <td><xsl:value-of select="Scc_flag"/></td>
+omp.xsl~:<xsl:template name="scc_addr_flag">
+omp.xsl~:	 <xsl:when test="@Scc_flag=6">
+omp.xsl~:	 <xsl:when test="@Scc_flag=1">
+omp.xsl~:	 <xsl:when test="@Scc_flag=2">
+omp.xsl~:	 <xsl:when test="@Scc_flag=3">
+omp.xsl~:	 <xsl:when test="@Scc_flag=4">
+omp.xsl~:	 <xsl:when test="@Scc_flag=5">
+plibc.h:int _win_open(const char *filename, int oflag, ...);
+plibc.h:void *_win_mmap(void *start, size_t len, int access, int flags, int fd,
+plibc.h:int _win_msync(void *start, size_t length, int flags);
+plibc.h:int _win_recv(int s, char *buf, int len, int flags);
+plibc.h:int _win_recvfrom(int s, void *buf, int len, int flags,
+plibc.h:int _win_send(int s, const char *buf, int len, int flags);
+plibc.h:int _win_sendto(int s, const char *buf, int len, int flags,
+sqlite3.h:** When the SQLITE_SYNC_DATAONLY flag is used, it means that the
+sqlite3.h:** information need not be flushed. The SQLITE_SYNC_NORMAL flag means 
+sqlite3.h:** to use normal fsync() semantics. The SQLITE_SYNC_FULL flag means 
+sqlite3.h:** The flags argument to xSync may be one of [SQLITE_SYNC_NORMAL] or
+sqlite3.h:** OS-X style fullsync.  The SQLITE_SYNC_DATA flag may be ORed in to
+sqlite3.h:  int (*xSync)(sqlite3_file*, int flags);
+sqlite3.h:** {F11142} The flags argument to xOpen() includes all bits set in
+sqlite3.h:** the flags argument to [sqlite3_open_v2()].  Or if [sqlite3_open()]
+sqlite3.h:** or [sqlite3_open16()] is used, then flags includes at least
+sqlite3.h:** {F11143} SQLite will also add one of the following flags to the xOpen()
+sqlite3.h:** The file I/O implementation can use the object type flags to
+sqlite3.h:** SQLite might also add one of the following flags to the xOpen
+sqlite3.h:** {F11145} The [SQLITE_OPEN_DELETEONCLOSE] flag means the file should be
+sqlite3.h:** {F11147} The [SQLITE_OPEN_EXCLUSIVE] flag means the file should be opened
+sqlite3.h:** for exclusive access.  This flag is set for all files except
+sqlite3.h:** {F11149} The flags argument to xAccess() may be [SQLITE_ACCESS_EXISTS] 
+sqlite3.h:               int flags, int *pOutFlags);
+sqlite3.h:  int (*xAccess)(sqlite3_vfs*, const char *zName, int flags);
+sqlite3.h:** over the new database connection.  The flags parameter can be
+sqlite3.h:  int flags,              /* Flags */
+sqlite3.h:** If the flags parameter is non-zero, the blob is opened for 
+sqlite3.h:  int flags,
+sqlite3.h:** was not opened for writing (the flags parameter to [sqlite3_blob_open()]
+sqlite3.h:** Each new VFS becomes the default VFS if the makeDflt flag is set.
+sqlite3.h:** with the makeDflt flag set.  If two different VFSes with the
+sqlite3.h:** with the SQLITE_DEBUG flag.  {U17087} External mutex implementations
+tips_alarm.cpp:			       xml_Scc_flag};
+tips_alarm.cpp:	char *Scc_flag = NULL;
+tips_alarm.cpp:	tips_sqlite_handle.init_sql_num(salarm->Scc_flag, &Scc_flag);
+tips_alarm.cpp:	Alarm_one_init(&sqltemp, (char *)"Scc_flag", salarm->Scc_flag, (char *)"=");
+tips_alarm.cpp:	free(Scc_flag);
+tips_alarm.cpp:  	sql = g_strdup_printf("%s group by Trojan_id,Sip,Dip,Dmac,Type,Risk,Scc_flag,Scc,Descry,Device_id,Alarm_judgetime", sqltemp);
+tips_alarm.cpp:	char *Scc_flag = NULL;
+tips_alarm.cpp:	char *sqltemp = g_strdup("select Trojan_id, Sip, Dip, Dmac, Alarm_time, Type, Risk,Scc_flag from tips_Alarm where");
+tips_alarm.cpp:	tips_sqlite_handle.init_sql_num(salarm->Scc_flag, &Scc_flag);
+tips_alarm.cpp:	Alarm_one_init(&sqltemp, (char *)"Scc_flag", salarm->Scc_flag, (char *)"=");
+tips_alarm.cpp:	free(Scc_flag);
+tips_alarm.cpp:		sql = g_strdup("select Trojan_id, Sip, Dip, Dmac, Alarm_time, Type, Risk,Scc_flag from tips_Alarm");
+tips_alarm.cpp:	Alarm_init_sql_interface(salarm, pagenum, (char *)"select Trojan_id, Sip, Dip, Dmac, Alarm_time, Type, Risk,Scc_flag from tips_Alarm");
+tips_alarm.cpp:	char *Scc_flag = NULL;
+tips_alarm.cpp:	char *sqltemp = g_strdup("select Trojan_id, Sip, Dip, Dmac, Alarm_time, Type, Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id from tips_Alarm where");
+tips_alarm.cpp:	tips_sqlite_handle.init_sql_num(salarm->Scc_flag, &Scc_flag);
+tips_alarm.cpp:	Alarm_one_init(&sqltemp, (char *)"Scc_flag", salarm->Scc_flag, (char *)"=");
+tips_alarm.cpp:	free(Scc_flag);
+tips_alarm.cpp:		sql = g_strdup("select Trojan_id, Sip, Dip, Dmac, Alarm_time, Type, Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id from tips_Alarm");
+tips_alarm.cpp:	Alarm_init_sql_interface(salarm, pagenum, (char *)"select Trojan_id, Sip, Dip, Dmac, Alarm_time, Type, Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id,Alarm_judgetime,flag from tips_Alarm");
+tips_alarm.cpp:	char *Scc_flag = NULL;
+tips_alarm.cpp:	tips_sqlite_handle.init_sql_num(salarm->Scc_flag, &Scc_flag);
+tips_alarm.cpp:	Alarm_one_init(&sqltemp, (char *)"Scc_flag", salarm->Scc_flag, (char *)"=");
+tips_alarm.cpp:	free(Scc_flag);
+tips_alarm.h:	char *Scc_flag;
+tips_alert.cpp:			       xml_Scc_flag};
+tips_alert.cpp:	char *Scc_flag = NULL;
+tips_alert.cpp:	char *sqltemp = strdup("select plugin_id,Risk,Alarm_time,Sip,Dip,Dmac,Scc_flag from tips_Alert where");
+tips_alert.cpp:	tips_sqlite_handle.init_sql_num(salert->Scc_flag, &Scc_flag);
+tips_alert.cpp:	Alert_one_init(&sqltemp, (char *)"Scc_flag", Scc_flag, (char *)"=");
+tips_alert.cpp:	free(Scc_flag);
+tips_alert.cpp:		sql = strdup("select plugin_id,Risk,Alarm_time,Sip,Dip,Dmac,Scc_flag from tips_Alert");
+tips_alert.h:	char *Scc_flag;
+tips_event.cpp:	Event_init_sql_interface(sevent, (char*)"select Event_class,Event_type,Event_time,Sip,Sport,Dip,Dport,Dmac,Sender,Receiver,Title,File_name,Descr,Sen_msg,Event_iid,Device_id,Event_judgetime,flag from tips_Event");
+tips_opt.cpp:	Opt_init_sql_interface(sopt, (char *)"select username,Otime,Optdsc,flag from tips_opt");
+tips_page.cpp:	urlpart = g_strdup_printf("/omp?token=%s&amp;cmd=tips_alarm_display&amp;tips_Trogan_id=%s&amp;tips_Sip=%s&amp;tips_Dip=%s&amp;tips_Dmac=%s&amp;tips_Alarm_time=%s&amp;tips_Type=%s&amp;tips_Risk=%s&amp;tips_Scc_flag=%s&amp;refresh_interval=%s", token, value->Trojan_id, value->Sip, value->Dip, value->Dmac, value->Alarm_time, value->Type, value->Risk, value->Scc_flag, interval);
+tips_sqlite.cpp:	user->login_flag = 1;
+tips_sqlite.cpp:		user->login_flag = 1;
+tips_sqlite.cpp:	user->login_flag = 0;
+tips_sqlite.cpp:	if(user->login_flag == 1){
+tips_sqlite.cpp:	sql = g_strdup_printf("insert into tips_Opt(username,Otime,Optdsc,flag) values('%s','%s','%s','0')",username, clock, des);
+tips_sqlite.cpp:	ret = snprintf(sql, 2047, "insert into tips_Alarm(Trojan_id,Sip,Dip,Dmac,Alarm_time,Type,Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id,BackID,Alarm_judgetime,flag) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%lld','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11],dbnowtemp->nowspace,argv[12], argv[13]);
+tips_sqlite.cpp:	ret = snprintf(sql, 2047, "insert into tips_Event(Event_class,Event_type,Event_time,Sip,Sport,Dip,Dport,Dmac,Sender,Receiver,Title,File_name,Descr,Sen_msg,Event_iid,Device_id,BackID,Event_judgetime,flag) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%lld','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11], argv[12], argv[13], argv[14], argv[15], dbnowtemp->nowspace, argv[16], argv[17]);
+tips_sqlite.cpp:	ret = snprintf(sql, 2047, "insert into tips_opt(username,Otime,Optdsc,BackID,flag) values('%s','%s','%s','%lld','%s')",argv[0], argv[1], argv[2], dbnowtemp->nowspace, argv[3]);
+tips_sqlite.cpp:	ret = snprintf(sql, 2047, "insert into tips_Alarm(Trojan_id,Sip,Dip,Dmac,Alarm_time,Type,Risk,Scc_flag,Scc,Descry,Alarm_iid,Device_id,Alarm_judgetime) values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')",argv[0], argv[1], argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10], argv[11],argv[12]);
+tips_sqlite.cpp:	char *sql = g_strdup_printf("select tips_Alarm.Trojan_id,tips_Alarm.Sip,tips_Alarm.Dip,tips_Alarm.Dmac,tips_Alarm.Alarm_time,tips_Alarm.Type,tips_Alarm.Risk,tips_Alarm.Scc_flag,tips_Alarm.Scc,tips_Alarm.Descry,tips_Alarm.Alarm_iid,tips_Alarm.Device_id,tips_Alarm.Alarm_judgetime from tips_back,tips_Alarm where tips_back.BackID=tips_Alarm.BackID and tips_back.BackID='%lld'",oid);
+tips_sqlite.cpp:	ret = snprintf(sql, 2047, "insert into tips_opt(username,Otime,flag,Optdsc) values('%s','%s','%s','%s')",argv[0], argv[1], argv[2], argv[3]);
+tips_sqlite.cpp:	char *sql = g_strdup_printf("select  tips_opt.username,tips_opt.Otime,tips_opt.flag,tips_opt.Optdsc from tips_back,tips_opt where tips_back.BackID=tips_opt.BackID and tips_back.BackID='%lld'",oid);
+Binary file tipsuser matches
+tips_xml_part.h:inline char *xml_Scc_flag(char *value, char **xmlpart)
+tips_xml_part.h:				char *(Sccflagarr[8]) = {(char *)"国外",
+tips_xml_part.h:				int flag = atoi(value);
+tips_xml_part.h:				if((flag < 0) || (flag > 7)){
+tips_xml_part.h:					printf("Scc_flag err\n");
+tips_xml_part.h:					flag = 7;
+tips_xml_part.h:					flag = 7;
+tips_xml_part.h:        *xmlpart = g_strdup_printf("%s<Scc_flag><![CDATA[%s]]></Scc_flag>",temp, Sccflagarr[flag]);
+tips_xml_part.h:	alarm_info->Scc_flag = (char *)params_value(params, "tips_Scc_flag");
+tips_xml_part.h:	printf("qqqqqqqqqqSCC=%s\n",alarm_info->Scc_flag);
+tips_xml_part.h:	alert_info->Scc_flag = (char *)params_value(params, "tips_Scc_flag");
+tracef.h: * @brief Trace text flag.
+tracef.h: * @brief Verbose output flag.

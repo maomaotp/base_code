@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+ xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xop="http://www.w3.org/2004/08/xop/include"
+ xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+ xmlns:x="http://127.0.0.1/m.xsd"
+ xmlns:ns="urn:ssl">
+ <SOAP-ENV:Body SOAP-ENV:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+  <ns:upload-message>
+   <Device-ID></Device-ID>
+   <returntype>0</returntype>
+   <state>
+    <item>
+     <type></type>
+     <msg></msg>
+    </item>
+   
+    <item>
+     <type></type>
+     <msg></msg>
+    </item>
+   </state>
+   <authstr></authstr>
+  </ns:upload-message>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

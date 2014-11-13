@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DB_NAME	sqlhandler.h	9;"	d
+DEBUG	broker.c	19;"	d	file:
+Exec_Begin	sqlhandler.c	/^int Exec_Begin()$/;"	f
+Exec_Rollback	sqlhandler.c	/^int Exec_Rollback()$/;"	f
+HTTP_PORT	broker.c	25;"	d	file:
+Init_Sql	sqlhandler.c	/^void Init_Sql(MYSQL* mysql)$/;"	f
+Insert_Sql_Exec	sqlhandler.c	/^int Insert_Sql_Exec(MYSQL* mysql, char* sql)$/;"	f
+LOCAL_IP	broker.c	24;"	d	file:
+PASSWD	sqlhandler.h	8;"	d
+REDIS_SERVER_IP	broker.c	21;"	d	file:
+REDIS_SERVER_PORT	broker.c	22;"	d	file:
+SERVER_IP	sqlhandler.h	6;"	d
+SQLHANDLER_H	sqlhandler.h	2;"	d
+Select_Sql_Exec	sqlhandler.c	/^int Select_Sql_Exec(MYSQL* mysql, char* sql, char *xmlBuf)$/;"	f
+USER_NAME	sqlhandler.h	7;"	d
+base	broker.c	/^struct event_base* base;$/;"	v	typeref:struct:event_base
+c	broker.c	/^redisContext* c;$/;"	v
+call_back	sql.c	/^void call_back(char** result,int row, char *resBuf)$/;"	f
+call_back_table_name	sql.c	/^void call_back_table_name(char** result,int column,void* param)$/;"	f
+eventHttp	broker.c	/^int eventHttp(void)$/;"	f
+genericHandler	broker.c	/^void genericHandler(struct evhttp_request *req, void *arg)$/;"	f
+i	broker.c	/^int i = 0;$/;"	v
+insert_sql	sql.c	/^void insert_sql(int index)$/;"	f
+main	broker.c	/^int main()$/;"	f
+main	client.c	/^int main(int argc, char* argv[])$/;"	f
+main	client_send.c	/^int main(int argc, char* argv[])$/;"	f
+mutex	sqlhandler.h	/^pthread_mutex_t mutex;$/;"	v
+reply	broker.c	/^redisReply* reply;$/;"	v
+select_sql	sql.c	/^void select_sql(char *xmlBuf)$/;"	f
+stores_Sql_Exec	sqlhandler.c	/^int stores_Sql_Exec(MYSQL* mysql, char* sql, void (*call_back)(char** result, int row, char *resBuf), char *resBuf)$/;"	f
+stores_sql	sql.c	/^void stores_sql()$/;"	f

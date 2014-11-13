@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+ xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xop="http://www.w3.org/2004/08/xop/include"
+ xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+ xmlns:ns2="http://tempuri.org/ns2.xsd"
+ xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+ xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl">
+ <SOAP-ENV:Body>
+  <ns2:upload-message>
+   <Device-ID></Device-ID>
+   <buer>false</buer>
+   <state>
+    <item>
+     <type></type>
+     <msg></msg>
+    </item>
+   
+    <item>
+     <type></type>
+     <msg></msg>
+    </item>
+   </state>
+   <t-auth-str></t-auth-str>
+  </ns2:upload-message>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

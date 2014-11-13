@@ -1,0 +1,2540 @@
+CC	Makefile	/^CC=g++ -g -DWITH_NONAMESPACES -DWITH_OPENSSL$/
+CLIENT_H	client_0501.h	2
+CLIENT_H	client.h	2
+CLIENT_OBJS	Makefile	/^CLIENT_OBJS=soapC.o stdsoap2.o soapClient.o client/
+CYGWIN	stdsoap2.h	163
+D	stdsoap2.o	19
+DBGFUN	stdsoap2.h	/^#  define DBGFUN(FNAME) DBGLOG(TEST, SOAP_MESSAGE(/
+DBGFUN	stdsoap2.h	/^# define DBGFUN(FNAME)$/
+DBGFUN1	stdsoap2.h	/^#  define DBGFUN1(FNAME, FMT, ARG) DBGLOG(TEST, SO/
+DBGFUN1	stdsoap2.h	/^# define DBGFUN1(FNAME, FMT, ARG)$/
+DBGFUN2	stdsoap2.h	/^#  define DBGFUN2(FNAME, FMT1, ARG1, FMT2, ARG2) D/
+DBGFUN2	stdsoap2.h	/^# define DBGFUN2(FNAME, FMT1, ARG1, FMT2, ARG2)$/
+DBGFUN3	stdsoap2.h	/^#  define DBGFUN3(FNAME, FMT1, ARG1, FMT2, ARG2, F/
+DBGFUN3	stdsoap2.h	/^# define DBGFUN3(FNAME, FMT1, ARG1, FMT2, ARG2, FM/
+DBGHEX	stdsoap2.h	/^#  define DBGHEX(DBGFILE, MSG, LEN) \\$/
+DBGHEX	stdsoap2.h	/^# define DBGHEX(DBGFILE, MSG, LEN)$/
+DBGLOG	stdsoap2.h	/^#  define DBGLOG(DBGFILE, CMD) \\$/
+DBGLOG	stdsoap2.h	/^# define DBGLOG(DBGFILE, CMD)$/
+DBGMSG	stdsoap2.h	/^#  define DBGMSG(DBGFILE, MSG, LEN) \\$/
+DBGMSG	stdsoap2.h	/^# define DBGMSG(DBGFILE, MSG, LEN)$/
+DBL_MAX	stdsoap2.h	1140
+DBL_NAN	stdsoap2.h	1167
+DBL_NINFTY	stdsoap2.h	1185
+DBL_PINFTY	stdsoap2.h	590
+DBL_PINFTY	stdsoap2.h	1172
+DBL_PINFTY	stdsoap2.h	1174
+DBL_PINFTY	stdsoap2.h	1176
+DBL_PINFTY	stdsoap2.h	1178
+DBL_PINFTY	stdsoap2.h	1180
+Detail	libgsoapssl++.a	/^Detail: %s$/
+Device_ID	client00.cpp	7
+Device_ID	client_01.cpp	7
+Device_ID	client_02.cpp	7
+Device_ID	client_03.cpp	8
+Device_ID	client_04.cpp	8
+Device_ID	client_0501.cpp	11
+Device_ID	client_05.cpp	10
+Device_ID	client_07.cpp	10
+Device_ID	client_08.cpp	10
+Device_ID	client.cpp	12
+Device_ID	client_net.cpp	8
+Device_ID	soapStub.h	150
+E	fileclient	212
+E	stdsoap2.o	91
+E‹	fileclient	187
+E‹	stdsoap2.o	50
+EÐ	fileclient	159
+EÐ	stdsoap2.o	24
+Eô	stdsoap2.o	103
+FD_SETSIZE	stdsoap2.h	863
+FLT_MAX	stdsoap2.h	1137
+FLT_NAN	stdsoap2.h	1145
+FLT_NINFTY	stdsoap2.h	1163
+FLT_PINFTY	stdsoap2.h	1150
+FLT_PINFTY	stdsoap2.h	1152
+FLT_PINFTY	stdsoap2.h	1154
+FLT_PINFTY	stdsoap2.h	1156
+FLT_PINFTY	stdsoap2.h	1158
+GCRY_THREAD_OPTION_PTHREAD_IMPL	stdsoap2.cpp	191
+GCRY_THREAD_OPTION_PTH_IMPL	stdsoap2.cpp	195
+GSOAP_LIB_VERSION	stdsoap2.cpp	54
+GSOAP_ROOT	Makefile	/^GSOAP_ROOT=\/root\/gsoap\/gsoap-2.8\/gsoap$/
+GSOAP_VERSION	stdsoap2.h	54
+GetTime	client_03.cpp	/^int GetTime(unsigned long* timebuff)$/
+GetTime	client_04.cpp	/^int GetTime(unsigned long* timebuff)$/
+GetTime	client_0501.cpp	/^int GetTime(unsigned long* timebuff)$/
+GetTime	client_05.cpp	/^int GetTime(unsigned long* timebuff)$/
+GetTime	client_07.cpp	/^int GetTime(unsigned long* timebuff)$/
+GetTime	client_08.cpp	/^int GetTime(unsigned long* timebuff)$/
+GetTime	client.cpp	/^int GetTime(unsigned long* timebuff,int servertype/
+GetTime	client_net.cpp	/^int GetTime(unsigned long* timebuff)$/
+HAVE_ALARM	config.h	5
+HAVE_ARPA_INET_H	config.h	8
+HAVE_ERRNO_H	config.h	11
+HAVE_FCNTL_H	config.h	14
+HAVE_FTIME	config.h	17
+HAVE_FTIME	stdsoap2.h	232
+HAVE_FTIME	stdsoap2.h	247
+HAVE_FTIME	stdsoap2.h	280
+HAVE_FTIME	stdsoap2.h	304
+HAVE_FTIME	stdsoap2.h	344
+HAVE_FTIME	stdsoap2.h	364
+HAVE_FTIME	stdsoap2.h	402
+HAVE_FTIME	stdsoap2.h	446
+HAVE_FTIME	stdsoap2.h	460
+HAVE_FTIME	stdsoap2.h	477
+HAVE_FTIME	stdsoap2.h	497
+HAVE_FTIME	stdsoap2.h	511
+HAVE_GETHOSTBYNAME_R	config.h	20
+HAVE_GETHOSTBYNAME_R	stdsoap2.h	404
+HAVE_GETHOSTBYNAME_R	stdsoap2.h	479
+HAVE_GETHOSTBYNAME_R	stdsoap2.h	499
+HAVE_GETHOSTBYNAME_R	stdsoap2.h	513
+HAVE_GETTIMEOFDAY	config.h	23
+HAVE_GETTIMEOFDAY	stdsoap2.h	324
+HAVE_GETTIMEOFDAY	stdsoap2.h	381
+HAVE_GMTIME	config.h	26
+HAVE_GMTIME	stdsoap2.h	233
+HAVE_GMTIME	stdsoap2.h	435
+HAVE_GMTIME_R	config.h	29
+HAVE_GMTIME_R	stdsoap2.h	249
+HAVE_GMTIME_R	stdsoap2.h	266
+HAVE_GMTIME_R	stdsoap2.h	282
+HAVE_GMTIME_R	stdsoap2.h	306
+HAVE_GMTIME_R	stdsoap2.h	326
+HAVE_GMTIME_R	stdsoap2.h	346
+HAVE_GMTIME_R	stdsoap2.h	366
+HAVE_GMTIME_R	stdsoap2.h	384
+HAVE_GMTIME_R	stdsoap2.h	405
+HAVE_GMTIME_R	stdsoap2.h	448
+HAVE_GMTIME_R	stdsoap2.h	462
+HAVE_GMTIME_R	stdsoap2.h	480
+HAVE_GMTIME_R	stdsoap2.h	500
+HAVE_GMTIME_R	stdsoap2.h	514
+HAVE_GMTIME_R	stdsoap2.h	594
+HAVE_GNUTLS_GNUTLS_H	config.h	32
+HAVE_INTTYPES_H	config.h	35
+HAVE_ISINF	config.h	38
+HAVE_ISINF	stdsoap2.h	334
+HAVE_ISINF	stdsoap2.h	373
+HAVE_ISINF	stdsoap2.h	1103
+HAVE_ISINF	stdsoap2.h	1123
+HAVE_ISNAN	config.h	41
+HAVE_ISNAN	stdsoap2.h	310
+HAVE_ISNAN	stdsoap2.h	333
+HAVE_ISNAN	stdsoap2.h	372
+HAVE_ISNAN	stdsoap2.h	1085
+HAVE_ISNAN	stdsoap2.h	1099
+HAVE_ISNAN	stdsoap2.h	1109
+HAVE_ISNAN	stdsoap2.h	1120
+HAVE_ISNAN	stdsoap2.h	1128
+HAVE_LIMITS_H	config.h	44
+HAVE_LOCALTIME	stdsoap2.h	436
+HAVE_LOCALTIME_R	config.h	47
+HAVE_LOCALTIME_R	stdsoap2.h	250
+HAVE_LOCALTIME_R	stdsoap2.h	267
+HAVE_LOCALTIME_R	stdsoap2.h	283
+HAVE_LOCALTIME_R	stdsoap2.h	307
+HAVE_LOCALTIME_R	stdsoap2.h	327
+HAVE_LOCALTIME_R	stdsoap2.h	347
+HAVE_LOCALTIME_R	stdsoap2.h	367
+HAVE_LOCALTIME_R	stdsoap2.h	385
+HAVE_LOCALTIME_R	stdsoap2.h	406
+HAVE_LOCALTIME_R	stdsoap2.h	449
+HAVE_LOCALTIME_R	stdsoap2.h	463
+HAVE_LOCALTIME_R	stdsoap2.h	481
+HAVE_LOCALTIME_R	stdsoap2.h	501
+HAVE_LOCALTIME_R	stdsoap2.h	515
+HAVE_LOCALTIME_R	stdsoap2.h	595
+HAVE_MALLOC	config.h	51
+HAVE_MBTOWC	config.h	54
+HAVE_MBTOWC	stdsoap2.h	235
+HAVE_MBTOWC	stdsoap2.h	253
+HAVE_MBTOWC	stdsoap2.h	271
+HAVE_MBTOWC	stdsoap2.h	285
+HAVE_MBTOWC	stdsoap2.h	295
+HAVE_MBTOWC	stdsoap2.h	309
+HAVE_MBTOWC	stdsoap2.h	330
+HAVE_MBTOWC	stdsoap2.h	349
+HAVE_MBTOWC	stdsoap2.h	371
+HAVE_MBTOWC	stdsoap2.h	388
+HAVE_MBTOWC	stdsoap2.h	409
+HAVE_MBTOWC	stdsoap2.h	451
+HAVE_MBTOWC	stdsoap2.h	465
+HAVE_MBTOWC	stdsoap2.h	484
+HAVE_MBTOWC	stdsoap2.h	519
+HAVE_MBTOWC	stdsoap2.h	593
+HAVE_MEMORY_H	config.h	57
+HAVE_MEMSET	config.h	60
+HAVE_MKTIME	stdsoap2.h	437
+HAVE_NETDB_H	config.h	63
+HAVE_NETINET_IN_H	config.h	66
+HAVE_OPENSSL_SSL_H	config.h	69
+HAVE_POLL	config.h	72
+HAVE_POLL	stdsoap2.h	239
+HAVE_POLL	stdsoap2.h	255
+HAVE_POLL	stdsoap2.h	312
+HAVE_POLL	stdsoap2.h	351
+HAVE_POLL	stdsoap2.h	469
+HAVE_POLL_H	config.h	75
+HAVE_PTHREAD_H	stdsoap2.h	792
+HAVE_RANDOM	config.h	78
+HAVE_RAND_R	stdsoap2.h	248
+HAVE_RAND_R	stdsoap2.h	265
+HAVE_RAND_R	stdsoap2.h	281
+HAVE_RAND_R	stdsoap2.h	305
+HAVE_RAND_R	stdsoap2.h	325
+HAVE_RAND_R	stdsoap2.h	345
+HAVE_RAND_R	stdsoap2.h	365
+HAVE_RAND_R	stdsoap2.h	383
+HAVE_RAND_R	stdsoap2.h	403
+HAVE_RAND_R	stdsoap2.h	447
+HAVE_RAND_R	stdsoap2.h	461
+HAVE_RAND_R	stdsoap2.h	478
+HAVE_RAND_R	stdsoap2.h	498
+HAVE_RAND_R	stdsoap2.h	512
+HAVE_SELECT	config.h	81
+HAVE_SNPRINTF	config.h	84
+HAVE_SNPRINTF	stdsoap2.h	219
+HAVE_SNPRINTF	stdsoap2.h	240
+HAVE_SNPRINTF	stdsoap2.h	256
+HAVE_SNPRINTF	stdsoap2.h	273
+HAVE_SNPRINTF	stdsoap2.h	287
+HAVE_SNPRINTF	stdsoap2.h	297
+HAVE_SNPRINTF	stdsoap2.h	313
+HAVE_SNPRINTF	stdsoap2.h	337
+HAVE_SNPRINTF	stdsoap2.h	352
+HAVE_SNPRINTF	stdsoap2.h	375
+HAVE_SNPRINTF	stdsoap2.h	393
+HAVE_SNPRINTF	stdsoap2.h	439
+HAVE_SNPRINTF	stdsoap2.h	453
+HAVE_SNPRINTF	stdsoap2.h	470
+HAVE_SNPRINTF	stdsoap2.h	490
+HAVE_SNPRINTF	stdsoap2.h	504
+HAVE_SNPRINTF	stdsoap2.h	596
+HAVE_SOCKET	config.h	87
+HAVE_SPRINTF_L	stdsoap2.h	224
+HAVE_SPRINTF_L	stdsoap2.h	262
+HAVE_SPRINTF_L	stdsoap2.h	319
+HAVE_SPRINTF_L	stdsoap2.h	358
+HAVE_SPRINTF_L	stdsoap2.h	399
+HAVE_SPRINTF_L	stdsoap2.h	579
+HAVE_SSCANF	config.h	93
+HAVE_SSCANF	stdsoap2.h	217
+HAVE_SSCANF	stdsoap2.h	222
+HAVE_SSCANF	stdsoap2.h	243
+HAVE_SSCANF	stdsoap2.h	259
+HAVE_SSCANF	stdsoap2.h	276
+HAVE_SSCANF	stdsoap2.h	290
+HAVE_SSCANF	stdsoap2.h	300
+HAVE_SSCANF	stdsoap2.h	316
+HAVE_SSCANF	stdsoap2.h	340
+HAVE_SSCANF	stdsoap2.h	355
+HAVE_SSCANF	stdsoap2.h	378
+HAVE_SSCANF	stdsoap2.h	396
+HAVE_SSCANF	stdsoap2.h	432
+HAVE_SSCANF	stdsoap2.h	442
+HAVE_SSCANF	stdsoap2.h	456
+HAVE_SSCANF	stdsoap2.h	473
+HAVE_SSCANF	stdsoap2.h	493
+HAVE_SSCANF	stdsoap2.h	507
+HAVE_SSCANF_L	stdsoap2.h	261
+HAVE_SSCANF_L	stdsoap2.h	318
+HAVE_SSCANF_L	stdsoap2.h	357
+HAVE_SSCANF_L	stdsoap2.h	398
+HAVE_SSCANF_L	stdsoap2.h	578
+HAVE_STDINT_H	config.h	99
+HAVE_STDLIB_H	config.h	102
+HAVE_STRCHR	config.h	105
+HAVE_STRERROR	config.h	108
+HAVE_STRERROR_R	config.h	111
+HAVE_STRERROR_R	stdsoap2.h	251
+HAVE_STRERROR_R	stdsoap2.h	268
+HAVE_STRERROR_R	stdsoap2.h	328
+HAVE_STRERROR_R	stdsoap2.h	368
+HAVE_STRERROR_R	stdsoap2.h	407
+HAVE_STRERROR_R	stdsoap2.h	482
+HAVE_STRERROR_R	stdsoap2.h	516
+HAVE_STRFTIME	config.h	114
+HAVE_STRINGS_H	config.h	117
+HAVE_STRING_H	config.h	120
+HAVE_STRRCHR	config.h	123
+HAVE_STRRCHR	stdsoap2.h	220
+HAVE_STRRCHR	stdsoap2.h	241
+HAVE_STRRCHR	stdsoap2.h	257
+HAVE_STRRCHR	stdsoap2.h	274
+HAVE_STRRCHR	stdsoap2.h	288
+HAVE_STRRCHR	stdsoap2.h	298
+HAVE_STRRCHR	stdsoap2.h	314
+HAVE_STRRCHR	stdsoap2.h	338
+HAVE_STRRCHR	stdsoap2.h	353
+HAVE_STRRCHR	stdsoap2.h	376
+HAVE_STRRCHR	stdsoap2.h	394
+HAVE_STRRCHR	stdsoap2.h	430
+HAVE_STRRCHR	stdsoap2.h	440
+HAVE_STRRCHR	stdsoap2.h	454
+HAVE_STRRCHR	stdsoap2.h	471
+HAVE_STRRCHR	stdsoap2.h	491
+HAVE_STRRCHR	stdsoap2.h	505
+HAVE_STRSTR	config.h	126
+HAVE_STRTOD	config.h	129
+HAVE_STRTOD	stdsoap2.h	221
+HAVE_STRTOD	stdsoap2.h	242
+HAVE_STRTOD	stdsoap2.h	258
+HAVE_STRTOD	stdsoap2.h	275
+HAVE_STRTOD	stdsoap2.h	289
+HAVE_STRTOD	stdsoap2.h	299
+HAVE_STRTOD	stdsoap2.h	315
+HAVE_STRTOD	stdsoap2.h	339
+HAVE_STRTOD	stdsoap2.h	354
+HAVE_STRTOD	stdsoap2.h	377
+HAVE_STRTOD	stdsoap2.h	395
+HAVE_STRTOD	stdsoap2.h	412
+HAVE_STRTOD	stdsoap2.h	423
+HAVE_STRTOD	stdsoap2.h	431
+HAVE_STRTOD	stdsoap2.h	441
+HAVE_STRTOD	stdsoap2.h	455
+HAVE_STRTOD	stdsoap2.h	472
+HAVE_STRTOD	stdsoap2.h	492
+HAVE_STRTOD	stdsoap2.h	506
+HAVE_STRTOD_L	config.h	132
+HAVE_STRTOD_L	stdsoap2.h	223
+HAVE_STRTOD_L	stdsoap2.h	260
+HAVE_STRTOD_L	stdsoap2.h	317
+HAVE_STRTOD_L	stdsoap2.h	356
+HAVE_STRTOD_L	stdsoap2.h	397
+HAVE_STRTOD_L	stdsoap2.h	577
+HAVE_STRTOF	config.h	135
+HAVE_STRTOF	stdsoap2.h	468
+HAVE_STRTOF_L	config.h	138
+HAVE_STRTOF_L	stdsoap2.h	576
+HAVE_STRTOL	config.h	141
+HAVE_STRTOL	stdsoap2.h	225
+HAVE_STRTOL	stdsoap2.h	244
+HAVE_STRTOL	stdsoap2.h	263
+HAVE_STRTOL	stdsoap2.h	277
+HAVE_STRTOL	stdsoap2.h	291
+HAVE_STRTOL	stdsoap2.h	301
+HAVE_STRTOL	stdsoap2.h	320
+HAVE_STRTOL	stdsoap2.h	341
+HAVE_STRTOL	stdsoap2.h	359
+HAVE_STRTOL	stdsoap2.h	379
+HAVE_STRTOL	stdsoap2.h	400
+HAVE_STRTOL	stdsoap2.h	433
+HAVE_STRTOL	stdsoap2.h	443
+HAVE_STRTOL	stdsoap2.h	457
+HAVE_STRTOL	stdsoap2.h	474
+HAVE_STRTOL	stdsoap2.h	494
+HAVE_STRTOL	stdsoap2.h	508
+HAVE_STRTOLD	config.h	144
+HAVE_STRTOLD_L	config.h	147
+HAVE_STRTOLL	config.h	150
+HAVE_STRTOLL	stdsoap2.h	228
+HAVE_STRTOLL	stdsoap2.h	322
+HAVE_STRTOLL	stdsoap2.h	361
+HAVE_STRTOLL	stdsoap2.h	557
+HAVE_STRTOUL	config.h	153
+HAVE_STRTOUL	stdsoap2.h	226
+HAVE_STRTOUL	stdsoap2.h	245
+HAVE_STRTOUL	stdsoap2.h	264
+HAVE_STRTOUL	stdsoap2.h	278
+HAVE_STRTOUL	stdsoap2.h	292
+HAVE_STRTOUL	stdsoap2.h	302
+HAVE_STRTOUL	stdsoap2.h	321
+HAVE_STRTOUL	stdsoap2.h	342
+HAVE_STRTOUL	stdsoap2.h	360
+HAVE_STRTOUL	stdsoap2.h	380
+HAVE_STRTOUL	stdsoap2.h	401
+HAVE_STRTOUL	stdsoap2.h	434
+HAVE_STRTOUL	stdsoap2.h	444
+HAVE_STRTOUL	stdsoap2.h	458
+HAVE_STRTOUL	stdsoap2.h	475
+HAVE_STRTOUL	stdsoap2.h	495
+HAVE_STRTOUL	stdsoap2.h	509
+HAVE_STRTOULL	config.h	156
+HAVE_STRTOULL	stdsoap2.h	229
+HAVE_STRTOULL	stdsoap2.h	323
+HAVE_STRTOULL	stdsoap2.h	362
+HAVE_STRTOULL	stdsoap2.h	558
+HAVE_SYS_SOCKET_H	config.h	162
+HAVE_SYS_STAT_H	config.h	165
+HAVE_SYS_TIMEB_H	config.h	168
+HAVE_SYS_TIMEB_H	stdsoap2.h	231
+HAVE_SYS_TIMEB_H	stdsoap2.h	246
+HAVE_SYS_TIMEB_H	stdsoap2.h	279
+HAVE_SYS_TIMEB_H	stdsoap2.h	293
+HAVE_SYS_TIMEB_H	stdsoap2.h	303
+HAVE_SYS_TIMEB_H	stdsoap2.h	343
+HAVE_SYS_TIMEB_H	stdsoap2.h	363
+HAVE_SYS_TIMEB_H	stdsoap2.h	382
+HAVE_SYS_TIMEB_H	stdsoap2.h	445
+HAVE_SYS_TIMEB_H	stdsoap2.h	459
+HAVE_SYS_TIMEB_H	stdsoap2.h	476
+HAVE_SYS_TIMEB_H	stdsoap2.h	496
+HAVE_SYS_TIMEB_H	stdsoap2.h	510
+HAVE_SYS_TIME_H	config.h	171
+HAVE_SYS_TYPES_H	config.h	174
+HAVE_TIMEGM	config.h	177
+HAVE_TIMEGM	stdsoap2.h	269
+HAVE_TIMEGM	stdsoap2.h	369
+HAVE_UNISTD_H	config.h	180
+HAVE_WCTOMB	config.h	183
+HAVE_WCTOMB	stdsoap2.h	234
+HAVE_WCTOMB	stdsoap2.h	252
+HAVE_WCTOMB	stdsoap2.h	270
+HAVE_WCTOMB	stdsoap2.h	284
+HAVE_WCTOMB	stdsoap2.h	294
+HAVE_WCTOMB	stdsoap2.h	308
+HAVE_WCTOMB	stdsoap2.h	329
+HAVE_WCTOMB	stdsoap2.h	348
+HAVE_WCTOMB	stdsoap2.h	370
+HAVE_WCTOMB	stdsoap2.h	387
+HAVE_WCTOMB	stdsoap2.h	408
+HAVE_WCTOMB	stdsoap2.h	450
+HAVE_WCTOMB	stdsoap2.h	464
+HAVE_WCTOMB	stdsoap2.h	483
+HAVE_WCTOMB	stdsoap2.h	518
+HAVE_WCTOMB	stdsoap2.h	592
+HAVE_XLOCALE_H	config.h	186
+HAVE_ZLIB_H	config.h	189
+HP_UX	stdsoap2.h	180
+IGNORE_STDIO_STUBS	stdsoap2.h	415
+INCLUDE	Makefile	/^INCLUDE=-I$(GSOAP_ROOT)$/
+INET_ERROR	stdsoap2.h	611
+IP_MULTICAST_IF	stdsoap2.cpp	3952
+J‰H	fileclient	31
+J‰H	fileclient	40
+J‰H	fileclient	69
+J‰H‹	fileclient	48
+J‰H‹	fileclient	55
+J‰H‹J‰H	fileclient	93
+LONG64	stdsoap2.h	485
+LONG64	stdsoap2.h	588
+LONG64	stdsoap2.h	879
+LONG64	stdsoap2.h	886
+LONG64	stdsoap2.h	890
+LONG64	stdsoap2.h	894
+LONG64	stdsoap2.h	899
+LONG64	stdsoap2.h	908
+LONG64	stdsoap2.h	912
+LONG64	stdsoap2.h	917
+LONG64	stdsoap2.h	920
+LoadRules	client00.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_01.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_02.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_03.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_04.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_0501.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_05.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_07.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+LoadRules	client_net.cpp	/^int LoadRules(char * filename, void * * rule_obj, /
+Namespace	stdsoap2.h	1546
+OPENSSL_NO_KRB5	stdsoap2.h	770
+OS390	stdsoap2.h	192
+O_NONBLOCK	stdsoap2.h	417
+Order	connect.h	42
+Order	soapStub.h	112
+Order	ssl.h	35
+P	fileclient	22
+P	soapC.o	23
+PACKAGE	config.h	195
+PACKAGE_BUGREPORT	config.h	198
+PACKAGE_NAME	config.h	201
+PACKAGE_STRING	config.h	204
+PACKAGE_TARNAME	config.h	207
+PACKAGE_VERSION	config.h	210
+PALM	stdsoap2.h	174
+Param	connect.h	43
+Param	soapStub.h	113
+Param	ssl.h	36
+RETSIGTYPE	config.h	213
+SERVER_OBJS	Makefile	/^SERVER_OBJS=soapC.o stdsoap2.o soapServer.o server/
+SOAP_AP	stdsoap2.cpp	98
+SOAP_BEGIN	stdsoap2.h	1397
+SOAP_BLKLEN	stdsoap2.h	1032
+SOAP_BLKLEN	stdsoap2.h	1034
+SOAP_BUFLEN	stdsoap2.h	564
+SOAP_BUFLEN	stdsoap2.h	583
+SOAP_BUFLEN	stdsoap2.h	597
+SOAP_BUFLEN	stdsoap2.h	1005
+SOAP_BUFLEN	stdsoap2.h	1007
+SOAP_CANARY	stdsoap2.cpp	317
+SOAP_CHK_EOF	stdsoap2.h	867
+SOAP_CHK_EOF	stdsoap2.h	869
+SOAP_CLI_FAULT	stdsoap2.h	1224
+SOAP_CMAC	stdsoap2.h	103
+SOAP_CONNECT	stdsoap2.h	1298
+SOAP_COPY	stdsoap2.h	1391
+SOAP_C_MBSTRING	stdsoap2.h	1354
+SOAP_C_NILSTRING	stdsoap2.h	1355
+SOAP_C_NOIOB	stdsoap2.h	1352
+SOAP_C_UTFSTRING	stdsoap2.h	1353
+SOAP_DATAENCODINGUNKNOWN	stdsoap2.h	1264
+SOAP_DEBUG	stdsoap2.h	1418
+SOAP_DEL	stdsoap2.h	1297
+SOAP_DELETE	stdsoap2.h	/^# define SOAP_DELETE(obj) delete obj$/
+SOAP_DELETE_ARRAY	stdsoap2.h	/^# define SOAP_DELETE_ARRAY(obj) delete[] obj$/
+SOAP_DEL_METHOD	stdsoap2.h	1240
+SOAP_DIME_ABSURI	stdsoap2.h	1307
+SOAP_DIME_CF	stdsoap2.h	1302
+SOAP_DIME_END	stdsoap2.h	1258
+SOAP_DIME_ERROR	stdsoap2.h	1255
+SOAP_DIME_HREF	stdsoap2.h	1256
+SOAP_DIME_MB	stdsoap2.h	1304
+SOAP_DIME_ME	stdsoap2.h	1303
+SOAP_DIME_MEDIA	stdsoap2.h	1306
+SOAP_DIME_MISMATCH	stdsoap2.h	1257
+SOAP_DIME_VERSION	stdsoap2.h	1305
+SOAP_DOM_ASIS	stdsoap2.h	1350
+SOAP_DOM_NODE	stdsoap2.h	1349
+SOAP_DOM_TREE	stdsoap2.h	1348
+SOAP_DUPLICATE_ID	stdsoap2.h	1247
+SOAP_EADDRINUSE	stdsoap2.h	966
+SOAP_EADDRINUSE	stdsoap2.h	971
+SOAP_EAGAIN	stdsoap2.h	963
+SOAP_EAGAIN	stdsoap2.h	970
+SOAP_EINPROGRESS	stdsoap2.h	965
+SOAP_EINPROGRESS	stdsoap2.h	974
+SOAP_EINPROGRESS	stdsoap2.h	977
+SOAP_EINTR	stdsoap2.h	962
+SOAP_EINTR	stdsoap2.h	969
+SOAP_ENC	stdsoap2.h	1330
+SOAP_ENC_DIME	stdsoap2.h	1333
+SOAP_ENC_LATIN	stdsoap2.h	1331
+SOAP_ENC_MIME	stdsoap2.h	1334
+SOAP_ENC_MTOM	stdsoap2.h	1335
+SOAP_ENC_SSL	stdsoap2.h	1337
+SOAP_ENC_XML	stdsoap2.h	1332
+SOAP_ENC_ZLIB	stdsoap2.h	1336
+SOAP_END	stdsoap2.h	1405
+SOAP_END_BODY	stdsoap2.h	1403
+SOAP_END_ENVELOPE	stdsoap2.h	1404
+SOAP_END_HEADER	stdsoap2.h	1400
+SOAP_ENV__Code	soapStub.h	274
+SOAP_ENV__Code	soapStub.h	332
+SOAP_ENV__Detail	soapStub.h	291
+SOAP_ENV__Detail	soapStub.h	336
+SOAP_ENV__Fault	soapStub.h	325
+SOAP_ENV__Header	soapStub.h	256
+SOAP_ENV__Node	soapStub.h	334
+SOAP_ENV__Reason	soapStub.h	309
+SOAP_ENV__Reason	soapStub.h	333
+SOAP_ENV__Role	soapStub.h	335
+SOAP_ENV__Subcode	soapStub.h	278
+SOAP_ENV__Text	soapStub.h	312
+SOAP_ENV__Value	soapStub.h	277
+SOAP_EOF	stdsoap2.h	1221
+SOAP_EOM	stdsoap2.h	1243
+SOAP_ERANGE	stdsoap2.h	961
+SOAP_ERANGE	stdsoap2.h	968
+SOAP_ERR	stdsoap2.h	1222
+SOAP_EWOULDBLOCK	stdsoap2.h	964
+SOAP_EWOULDBLOCK	stdsoap2.h	973
+SOAP_EWOULDBLOCK	stdsoap2.h	976
+SOAP_FATAL_ERROR	stdsoap2.h	1234
+SOAP_FAULT	stdsoap2.h	1235
+SOAP_FD_EXCEEDED	stdsoap2.h	1269
+SOAP_FILE	stdsoap2.h	1289
+SOAP_FMAC1	stdsoap2.h	71
+SOAP_FMAC2	stdsoap2.h	75
+SOAP_FMAC3	soapClientLib.cpp	16
+SOAP_FMAC3	soapServerLib.cpp	16
+SOAP_FMAC3	stdsoap2.h	79
+SOAP_FMAC3S	stdsoap2.h	83
+SOAP_FMAC4	stdsoap2.h	87
+SOAP_FMAC4S	stdsoap2.h	91
+SOAP_FMAC5	stdsoap2.h	95
+SOAP_FMAC6	stdsoap2.h	99
+SOAP_FORM	stdsoap2.h	1287
+SOAP_FREE	stdsoap2.h	/^#  define SOAP_FREE(soap, ptr) soap_track_free(soa/
+SOAP_FREE	stdsoap2.h	/^# define SOAP_FREE(soap, ptr) free(ptr)$/
+SOAP_GAI_STRERROR	stdsoap2.h	739
+SOAP_GAI_STRERROR	stdsoap2.h	859
+SOAP_GET	stdsoap2.h	1295
+SOAP_GET_METHOD	stdsoap2.h	1238
+SOAP_GT	stdsoap2.cpp	96
+SOAP_HDR	stdsoap2.h	1245
+SOAP_HDRLEN	stdsoap2.h	1046
+SOAP_HDRLEN	stdsoap2.h	1048
+SOAP_HEAD_METHOD	stdsoap2.h	1241
+SOAP_HREF	stdsoap2.h	1249
+SOAP_HTML	stdsoap2.h	1288
+SOAP_HTTP_ERROR	stdsoap2.h	1252
+SOAP_HTTP_METHOD	stdsoap2.h	1242
+SOAP_IDHASH	stdsoap2.h	1025
+SOAP_IDHASH	stdsoap2.h	1027
+SOAP_INDEX_RECV	stdsoap2.h	1061
+SOAP_INDEX_SENT	stdsoap2.h	1062
+SOAP_INDEX_TEST	stdsoap2.h	1063
+SOAP_INIT	stdsoap2.h	1390
+SOAP_INVALID_SOCKET	stdsoap2.h	852
+SOAP_IN_BODY	stdsoap2.h	1402
+SOAP_IN_ENVELOPE	stdsoap2.h	1398
+SOAP_IN_HEADER	stdsoap2.h	1399
+SOAP_IO	stdsoap2.h	1320
+SOAP_IOB	stdsoap2.h	1230
+SOAP_IO_BUFFER	stdsoap2.h	1322
+SOAP_IO_CHUNK	stdsoap2.h	1324
+SOAP_IO_DEFAULT	stdsoap2.h	1366
+SOAP_IO_DEFAULT	stdsoap2.h	1368
+SOAP_IO_FLUSH	stdsoap2.h	1321
+SOAP_IO_KEEPALIVE	stdsoap2.h	1328
+SOAP_IO_LENGTH	stdsoap2.h	1327
+SOAP_IO_STORE	stdsoap2.h	1323
+SOAP_IO_UDP	stdsoap2.h	1326
+SOAP_LABLEN	stdsoap2.h	1011
+SOAP_LENGTH	stdsoap2.h	1268
+SOAP_LONG_FORMAT	stdsoap2.h	236
+SOAP_LONG_FORMAT	stdsoap2.h	331
+SOAP_LONG_FORMAT	stdsoap2.h	389
+SOAP_LONG_FORMAT	stdsoap2.h	487
+SOAP_LONG_FORMAT	stdsoap2.h	902
+SOAP_LONG_FORMAT	stdsoap2.h	926
+SOAP_LONG_FORMAT	stdsoap2.h	937
+SOAP_LT	stdsoap2.cpp	94
+SOAP_MALLOC	stdsoap2.h	/^#  define SOAP_MALLOC(soap, size) soap_track_mallo/
+SOAP_MALLOC	stdsoap2.h	/^# define SOAP_MALLOC(soap, size) malloc(size)$/
+SOAP_MAXARRAYSIZE	stdsoap2.h	1075
+SOAP_MAXDIMS	stdsoap2.h	1053
+SOAP_MAXDIMS	stdsoap2.h	1055
+SOAP_MAXKEEPALIVE	stdsoap2.h	1068
+SOAP_MAXLOGS	stdsoap2.h	1060
+SOAP_MEM_DEBUG	stdsoap2.h	1421
+SOAP_MESSAGE	stdsoap2.h	1485
+SOAP_MIME_END	stdsoap2.h	1261
+SOAP_MIME_ERROR	stdsoap2.h	1259
+SOAP_MIME_HREF	stdsoap2.h	1260
+SOAP_MIME_POSTCHECK	stdsoap2.h	1360
+SOAP_MISSING_ID	stdsoap2.h	1248
+SOAP_MOE	stdsoap2.h	1244
+SOAP_MUSTUNDERSTAND	stdsoap2.h	1231
+SOAP_NAMESPACE	stdsoap2.h	1232
+SOAP_NEW	stdsoap2.h	/^#  define SOAP_NEW(type) new SOAP_NOTHROW type$/
+SOAP_NEW	stdsoap2.h	/^#  define SOAP_NEW(type) new SOAP_NOTHROW (type)$/
+SOAP_NEW_ARRAY	stdsoap2.h	/^#  define SOAP_NEW_ARRAY(type, n) new SOAP_NOTHROW/
+SOAP_NEW_ARRAY	stdsoap2.h	/^#  define SOAP_NEW_ARRAY(type, n) new SOAP_NOTHROW/
+SOAP_NEW_COPY	stdsoap2.h	/^# define SOAP_NEW_COPY(clas) new SOAP_NOTHROW clas/
+SOAP_NMAC	stdsoap2.h	107
+SOAP_NONE	stdsoap2.h	1389
+SOAP_NON_NULL	stdsoap2.cpp	323
+SOAP_NOTHROW	stdsoap2.h	1444
+SOAP_NOTHROW	stdsoap2.h	1446
+SOAP_NO_BODY	stdsoap2.h	1401
+SOAP_NO_DATA	stdsoap2.h	1237
+SOAP_NO_METHOD	stdsoap2.h	1236
+SOAP_NO_TAG	stdsoap2.h	1229
+SOAP_NTLM_ERROR	stdsoap2.h	1271
+SOAP_NULL	stdsoap2.h	1246
+SOAP_OCCURS	stdsoap2.h	1267
+SOAP_OK	stdsoap2.h	1223
+SOAP_PLACEMENT_NEW	stdsoap2.h	/^# define SOAP_PLACEMENT_NEW(buf, type) new (buf) t/
+SOAP_PLUGIN_ERROR	stdsoap2.h	1263
+SOAP_POST	stdsoap2.h	1293
+SOAP_POST_FILE	stdsoap2.h	1294
+SOAP_PROHIBITED	stdsoap2.h	1266
+SOAP_PTRBLK	stdsoap2.h	1014
+SOAP_PTRHASH	stdsoap2.h	1018
+SOAP_PTRHASH	stdsoap2.h	1020
+SOAP_PURE_VIRTUAL	stdsoap2.h	551
+SOAP_PURE_VIRTUAL	stdsoap2.h	553
+SOAP_PUT	stdsoap2.h	1296
+SOAP_PUT_METHOD	stdsoap2.h	1239
+SOAP_QT	stdsoap2.cpp	97
+SOAP_REQUIRED	stdsoap2.h	1265
+SOAP_RESEND	soapStub.h	13
+SOAP_RESEND	ssl.h	18
+SOAP_SEC_BEGIN	stdsoap2.h	1409
+SOAP_SEC_DECRYPT	stdsoap2.h	1411
+SOAP_SEC_SIGN	stdsoap2.h	1410
+SOAP_SEC_WSUID	stdsoap2.h	1362
+SOAP_SHUT_RDWR	stdsoap2.h	856
+SOAP_SHUT_WR	stdsoap2.h	855
+SOAP_SOCKBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKBLOCK(fd) \\$/
+SOAP_SOCKBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKBLOCK(fd) \\$/
+SOAP_SOCKBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKBLOCK(fd) \\$/
+SOAP_SOCKBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKBLOCK(fd) fcntl(fd, F_SETFL, fc/
+SOAP_SOCKBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKBLOCK(fd) \\$/
+SOAP_SOCKBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKBLOCK(fd) fcntl(fd, F_SETFL, fc/
+SOAP_SOCKET	stdsoap2.h	598
+SOAP_SOCKET	stdsoap2.h	844
+SOAP_SOCKET	stdsoap2.h	847
+SOAP_SOCKLEN_T	stdsoap2.h	828
+SOAP_SOCKLEN_T	stdsoap2.h	830
+SOAP_SOCKLEN_T	stdsoap2.h	833
+SOAP_SOCKLEN_T	stdsoap2.h	835
+SOAP_SOCKLEN_T	stdsoap2.h	837
+SOAP_SOCKLEN_T	stdsoap2.h	839
+SOAP_SOCKNONBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKNONBLOCK(fd) \\$/
+SOAP_SOCKNONBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKNONBLOCK(fd) \\$/
+SOAP_SOCKNONBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKNONBLOCK(fd) \\$/
+SOAP_SOCKNONBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKNONBLOCK(fd) fcntl(fd, F_SETFL,/
+SOAP_SOCKNONBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKNONBLOCK(fd) \\$/
+SOAP_SOCKNONBLOCK	stdsoap2.cpp	/^  #define SOAP_SOCKNONBLOCK(fd) fcntl(fd, F_SETFL,/
+SOAP_SOURCE_STAMP	soapC.cpp	/^SOAP_SOURCE_STAMP("@(#) soapC.cpp ver 2.8.14 2013-/
+SOAP_SOURCE_STAMP	soapClient.cpp	/^SOAP_SOURCE_STAMP("@(#) soapClient.cpp ver 2.8.14 /
+SOAP_SOURCE_STAMP	stdsoap2.h	/^# define SOAP_SOURCE_STAMP(str)$/
+SOAP_SSL_ALLOW_EXPIRED_CERTIFICATE	stdsoap2.h	1377
+SOAP_SSL_CLIENT	stdsoap2.h	1383
+SOAP_SSL_DEFAULT	stdsoap2.h	1385
+SOAP_SSL_ERROR	stdsoap2.h	1253
+SOAP_SSL_NO_AUTHENTICATION	stdsoap2.h	1373
+SOAP_SSL_NO_DEFAULT_CA_PATH	stdsoap2.h	1378
+SOAP_SSL_REQUIRE_CLIENT_AUTHENTICATION	stdsoap2.h	1375
+SOAP_SSL_REQUIRE_SERVER_AUTHENTICATION	stdsoap2.h	1374
+SOAP_SSL_RSA	stdsoap2.h	1379
+SOAP_SSL_RSA_BITS	stdsoap2.cpp	173
+SOAP_SSL_RSA_BITS	stdsoap2.cpp	184
+SOAP_SSL_SKIP_HOST_CHECK	stdsoap2.h	1376
+SOAP_SSLv3	stdsoap2.h	1380
+SOAP_SSLv3_TLSv1	stdsoap2.h	1382
+SOAP_STD_API	stdsoap2.h	1858
+SOAP_STD_API	stdsoap2.h	1860
+SOAP_STD_API	stdsoap2.h	1863
+SOAP_STOP	stdsoap2.h	1286
+SOAP_STRCMP	stdsoap2.h	804
+SOAP_STRCMP	stdsoap2.h	806
+SOAP_STR_EOS	stdsoap2.cpp	322
+SOAP_STR_PADDING	stdsoap2.cpp	321
+SOAP_SVR_FAULT	stdsoap2.h	1225
+SOAP_SYNTAX_ERROR	stdsoap2.h	1228
+SOAP_TAGLEN	stdsoap2.h	1039
+SOAP_TAGLEN	stdsoap2.h	1041
+SOAP_TAG_MISMATCH	stdsoap2.h	1226
+SOAP_TCP_ERROR	stdsoap2.h	1251
+SOAP_TCP_SELECT_ALL	stdsoap2.cpp	243
+SOAP_TCP_SELECT_ERR	stdsoap2.cpp	242
+SOAP_TCP_SELECT_RCV	stdsoap2.cpp	240
+SOAP_TCP_SELECT_SND	stdsoap2.cpp	241
+SOAP_TLSv1	stdsoap2.h	1381
+SOAP_TT	stdsoap2.cpp	95
+SOAP_TYPE	stdsoap2.h	1227
+SOAP_TYPE_PointerToPointerTons__ResultItem	soapH.h	1089
+SOAP_TYPE_PointerToSOAP_ENV__Code	soapH.h	916
+SOAP_TYPE_PointerToSOAP_ENV__Detail	soapH.h	893
+SOAP_TYPE_PointerToSOAP_ENV__Reason	soapH.h	870
+SOAP_TYPE_PointerToint	soapH.h	956
+SOAP_TYPE_PointerTons__GetDataResponse	soapH.h	937
+SOAP_TYPE_PointerTons__MsgItem	soapH.h	1127
+SOAP_TYPE_PointerTons__MsgList	soapH.h	1070
+SOAP_TYPE_PointerTons__ResultItem	soapH.h	1108
+SOAP_TYPE_PointerTons__ResultList	soapH.h	1051
+SOAP_TYPE_PointerTostring	soapH.h	1013
+SOAP_TYPE_PointerTounsignedByte	soapH.h	1146
+SOAP_TYPE_PointerTox__Data	soapH.h	1032
+SOAP_TYPE_PointerTox__DataSet	soapH.h	994
+SOAP_TYPE_PointerTox__Keys	soapH.h	975
+SOAP_TYPE_SOAP_ENV__Code	soapH.h	318
+SOAP_TYPE_SOAP_ENV__Code	soapStub.h	272
+SOAP_TYPE_SOAP_ENV__Detail	soapH.h	282
+SOAP_TYPE_SOAP_ENV__Detail	soapStub.h	289
+SOAP_TYPE_SOAP_ENV__Fault	soapH.h	210
+SOAP_TYPE_SOAP_ENV__Fault	soapStub.h	323
+SOAP_TYPE_SOAP_ENV__Header	soapH.h	354
+SOAP_TYPE_SOAP_ENV__Header	soapStub.h	254
+SOAP_TYPE_SOAP_ENV__Reason	soapH.h	246
+SOAP_TYPE_SOAP_ENV__Reason	soapStub.h	307
+SOAP_TYPE__QName	soapH.h	1165
+SOAP_TYPE__QName	soapStub.h	351
+SOAP_TYPE__XML	soapStub.h	356
+SOAP_TYPE__xop__Include	soapH.h	836
+SOAP_TYPE__xop__Include	soapStub.h	46
+SOAP_TYPE_byte	soapH.h	46
+SOAP_TYPE_double	soapH.h	128
+SOAP_TYPE_int	soapH.h	66
+SOAP_TYPE_long	soapH.h	86
+SOAP_TYPE_ns__GetData	soapH.h	388
+SOAP_TYPE_ns__GetData	soapStub.h	238
+SOAP_TYPE_ns__GetDataResponse	soapH.h	420
+SOAP_TYPE_ns__GetDataResponse	soapStub.h	226
+SOAP_TYPE_ns__MsgItem	soapH.h	772
+SOAP_TYPE_ns__MsgItem	soapStub.h	80
+SOAP_TYPE_ns__MsgList	soapH.h	740
+SOAP_TYPE_ns__MsgList	soapStub.h	93
+SOAP_TYPE_ns__PutData	soapH.h	452
+SOAP_TYPE_ns__PutData	soapStub.h	211
+SOAP_TYPE_ns__PutDataResponse	soapH.h	484
+SOAP_TYPE_ns__PutDataResponse	soapStub.h	199
+SOAP_TYPE_ns__ResultItem	soapH.h	708
+SOAP_TYPE_ns__ResultItem	soapStub.h	106
+SOAP_TYPE_ns__ResultList	soapH.h	676
+SOAP_TYPE_ns__ResultList	soapStub.h	120
+SOAP_TYPE_ns__upload_message	soapH.h	612
+SOAP_TYPE_ns__upload_message	soapStub.h	145
+SOAP_TYPE_ns__upload_messageResponse	soapH.h	644
+SOAP_TYPE_ns__upload_messageResponse	soapStub.h	133
+SOAP_TYPE_string	soapH.h	1187
+SOAP_TYPE_unsignedByte	soapH.h	148
+SOAP_TYPE_unsignedInt	soapH.h	168
+SOAP_TYPE_unsignedLong	soapH.h	188
+SOAP_TYPE_x__Data	soapH.h	580
+SOAP_TYPE_x__Data	soapStub.h	160
+SOAP_TYPE_x__DataSet	soapH.h	548
+SOAP_TYPE_x__DataSet	soapStub.h	173
+SOAP_TYPE_x__Keys	soapH.h	516
+SOAP_TYPE_x__Keys	soapStub.h	186
+SOAP_TYPE_xmime5__base64Binary	soapH.h	804
+SOAP_TYPE_xmime5__base64Binary	soapStub.h	63
+SOAP_TYPE_xsd__double	soapH.h	106
+SOAP_TYPE_xsd__double	soapStub.h	361
+SOAP_UDP_ERROR	stdsoap2.h	1250
+SOAP_ULONG_FORMAT	stdsoap2.h	237
+SOAP_ULONG_FORMAT	stdsoap2.h	332
+SOAP_ULONG_FORMAT	stdsoap2.h	390
+SOAP_ULONG_FORMAT	stdsoap2.h	488
+SOAP_ULONG_FORMAT	stdsoap2.h	905
+SOAP_ULONG_FORMAT	stdsoap2.h	932
+SOAP_ULONG_FORMAT	stdsoap2.h	941
+SOAP_UNKNOWN_CHAR	stdsoap2.cpp	90
+SOAP_USER_ERROR	stdsoap2.h	1233
+SOAP_UTF_ERROR	stdsoap2.h	1270
+SOAP_VERSIONMISMATCH	stdsoap2.h	1262
+SOAP_WINSOCKINT	stdsoap2.h	710
+SOAP_WINSOCKINT	stdsoap2.h	712
+SOAP_XML_CANONICAL	stdsoap2.h	1343
+SOAP_XML_DEFAULTNS	stdsoap2.h	1342
+SOAP_XML_DOM	stdsoap2.h	1357
+SOAP_XML_GRAPH	stdsoap2.h	1358
+SOAP_XML_IGNORENS	stdsoap2.h	1341
+SOAP_XML_INDENT	stdsoap2.h	1340
+SOAP_XML_NIL	stdsoap2.h	1345
+SOAP_XML_NOTYPE	stdsoap2.h	1346
+SOAP_XML_STRICT	stdsoap2.h	1339
+SOAP_XML_TREE	stdsoap2.h	1344
+SOAP_ZLIB_DEFLATE	stdsoap2.h	1312
+SOAP_ZLIB_ERROR	stdsoap2.h	1254
+SOAP_ZLIB_GZIP	stdsoap2.h	1314
+SOAP_ZLIB_INFLATE	stdsoap2.h	1313
+SOAP_ZLIB_NONE	stdsoap2.h	1311
+STDC_HEADERS	config.h	216
+STDSOAP_H	stdsoap2.h	120
+SYMBIAN	stdsoap2.h	168
+SendConfig	client_02.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client_03.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client_04.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client_0501.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client_05.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client_07.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendConfig	client_net.cpp	/^int SendConfig(struct config_struct* config,char* /
+SendData	client_03.cpp	/^int SendData(void **data,int size,int type)$/
+SendData	client_04.cpp	/^int SendData(void **data,int size,int type)$/
+SendData	client_0501.cpp	/^int SendData(void **data,int size,int type)$/
+SendData	client_05.cpp	/^int SendData(void **data,int size,int type)$/
+SendData	client_07.cpp	/^int SendData(void **data,int size,int type)$/
+SendData	client.cpp	/^int SendData(void **data,int size,int type,int ser/
+SendData	client_net.cpp	/^int SendData(void **data,int size,int type)$/
+SendData1	client_04.cpp	/^int SendData1(struct session_blocked data)$/
+SendData1	client_0501.cpp	/^int SendData1(struct session_blocked data)$/
+SendData1	client_05.cpp	/^int SendData1(struct session_blocked data)$/
+SendData1	client_07.cpp	/^int SendData1(struct session_blocked data)$/
+SendData1	client.cpp	/^int SendData1(struct session_blocked data,int serv/
+SendStatus	client00.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_01.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_02.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_03.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_04.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_0501.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_05.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_07.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client.cpp	/^int SendStatus(struct status_struct * status, char/
+SendStatus	client_net.cpp	/^int SendStatus(struct status_struct * status, char/
+Server	client00.cpp	6
+Server	client_01.cpp	6
+Server	client_02.cpp	6
+Server	client_03.cpp	7
+Server	client_04.cpp	7
+Server	client_0501.cpp	10
+Server	client_05.cpp	9
+Server	client_07.cpp	9
+Server	client_08.cpp	9
+Server	client.cpp	11
+Server	client_net.cpp	7
+TIME_WITH_SYS_TIME	config.h	219
+TRU64	stdsoap2.h	186
+TimeStamp	connect.h	41
+TimeStamp	soapStub.h	111
+TimeStamp	ssl.h	34
+ULONG64	stdsoap2.h	486
+ULONG64	stdsoap2.h	589
+ULONG64	stdsoap2.h	880
+ULONG64	stdsoap2.h	887
+ULONG64	stdsoap2.h	891
+ULONG64	stdsoap2.h	895
+ULONG64	stdsoap2.h	900
+ULONG64	stdsoap2.h	909
+ULONG64	stdsoap2.h	913
+ULONG64	stdsoap2.h	918
+ULONG64	stdsoap2.h	921
+UNDER_CE	stdsoap2.h	143
+UpdateSys	client00.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_01.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_02.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_03.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_04.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_0501.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_05.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client_07.cpp	/^int UpdateSys(char * filename)$/
+UpdateSys	client.cpp	/^int UpdateSys(char * filename,int servertype)$/
+UpdateSys	client_net.cpp	/^int UpdateSys(char * filename)$/
+UploadData	client00.cpp	/^int UploadData(char *filename)$/
+UploadData	client_01.cpp	/^int UploadData(char *filename)$/
+UploadData	client_02.cpp	/^int UploadData(char *filename)$/
+UploadData	client_03.cpp	/^int UploadData(char *filename)$/
+UploadData	client_04.cpp	/^int UploadData(char *filename)$/
+UploadData	client_0501.cpp	/^int UploadData(char *filename)$/
+UploadData	client_05.cpp	/^int UploadData(char *filename)$/
+UploadData	client_07.cpp	/^int UploadData(char *filename)$/
+UploadData	client.cpp	/^int UploadData(char *filename,int servertype)$/
+UploadData	client_net.cpp	/^int UploadData(char *filename)$/
+VERSION	config.h	225
+VXWORKS	stdsoap2.h	124
+WIN32	stdsoap2.h	130
+WIN32	stdsoap2.h	137
+WIN32	stdsoap2.h	149
+WIN32	stdsoap2.h	156
+WIN32	stdsoap2.h	169
+WITH_CDATA	stdsoap2.h	528
+WITH_COOKIES	stdsoap2.h	641
+WITH_FAST	stdsoap2.h	116
+WITH_GNUTLS	stdsoap2.h	205
+WITH_GNUTLS	stdsoap2.h	769
+WITH_GZIP	stdsoap2.h	211
+WITH_IPV6	stdsoap2.h	717
+WITH_LEAN	stdsoap2.h	216
+WITH_LEAN	stdsoap2.h	411
+WITH_LEAN	stdsoap2.h	421
+WITH_LEAN	stdsoap2.h	535
+WITH_NOEMPTYSTRUCT	stdsoap2.h	547
+WITH_NOEMPTYSTRUCT	stdsoap2.h	591
+WITH_NOGLOBAL	soapClientLib.cpp	14
+WITH_NOGLOBAL	soapServerLib.cpp	14
+WITH_NOIO	stdsoap2.h	392
+WITH_NOIO	stdsoap2.h	585
+WITH_NOIO	stdsoap2.h	640
+WITH_NONAMESPACES	stdsoap2.h	422
+WITH_OPENSSL	stdsoap2.h	200
+WITH_ZLIB	stdsoap2.h	210
+WITH_ZLIB	stdsoap2.h	799
+WSNAME	Makefile	/^WSNAME=file$/
+X	libgsoapssl++.a	/^X:v"òUÈ\\:Æxb@sä"¾wº“9?"ÌóØuilÉZZYƒ[vfÿ÷/
+YYTEXT_POINTER	config.h	229
+_POSIX_THREADS	stdsoap2.h	428
+_QName	soapStub.h	352
+_REENTRANT	stdsoap2.h	66
+_SSL_ERROR	stdsoap2.cpp	/^#define _SSL_ERROR(e) { e, #e }$/
+_THREAD_SAFE	stdsoap2.h	61
+_XML	soapStub.h	357
+__STDC_FORMAT_MACROS	stdsoap2.h	874
+__USE_STD_IOSTREAM	stdsoap2.h	386
+__any	soapStub.h	294
+__ptr	connect.h	36
+__ptr	connect.h	47
+__ptr	soapStub.h	51
+__ptr	soapStub.h	68
+__ptr	soapStub.h	98
+__ptr	soapStub.h	125
+__ptr	ssl.h	28
+__ptr	ssl.h	40
+__ptr	stdsoap2.h	1571
+__ptr	xmime5.h	68
+__ptr	xop.h	58
+__size	connect.h	19
+__size	connect.h	25
+__size	connect.h	37
+__size	connect.h	48
+__size	soapStub.h	52
+__size	soapStub.h	69
+__size	soapStub.h	99
+__size	soapStub.h	126
+__size	soapStub.h	178
+__size	soapStub.h	191
+__size	ssl.h	29
+__size	ssl.h	41
+__size	ssl.h	61
+__size	ssl.h	67
+__size	stdsoap2.h	1572
+__size	xmime5.h	69
+__size	xop.h	59
+__type	soapStub.h	295
+_xop__Include	soapStub.h	48
+_xop__Include	soapStub.h	59
+_xop__Include	xop.h	57
+_xop__Include	xop.h	65
+alarm_id	client_05.cpp	736
+alarm_id	client_05.cpp	741
+alarm_id	client_07.cpp	671
+alarm_id	client_07.cpp	676
+alarm_id	client_08.cpp	757
+alarm_id	client.cpp	795
+alarm_time	client_05.cpp	748
+alarm_time	client_07.cpp	683
+all	Makefile	/^all:server$/
+array	stdsoap2.h	1579
+authstr	soapStub.h	153
+authstr	soapStub.h	219
+authstr	soapStub.h	245
+break	client_0501.cpp	817
+break	client_0501.cpp	987
+break	client_05.cpp	817
+break	client_05.cpp	987
+break	client_07.cpp	752
+break	client_07.cpp	922
+break	client_08.cpp	815
+break	client_08.cpp	985
+break	client.cpp	855
+break	client.cpp	1025
+client	Makefile	/^client: $(CLIENT_OBJS)$/
+client_end	client00.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_01.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_02.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_03.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_04.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_0501.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_05.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_07.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_08.cpp	/^int client_end(struct soap* soap)$/
+client_end	client.cpp	/^int client_end(struct soap* soap)$/
+client_end	client_net.cpp	/^int client_end(struct soap* soap)$/
+client_getData	client00.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_01.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_02.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_03.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_04.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_0501.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_05.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_07.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_08.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_getData	client_net.cpp	/^int client_getData(struct soap *soap,int count,cha/
+client_init	client00.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_01.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_02.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_03.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_04.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_0501.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_05.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client_07.cpp	/^int client_init(struct soap *soap,int type)$/
+client_init	client.cpp	/^int client_init(struct soap *soap,int type,int ser/
+client_init	client_net.cpp	/^int client_init(struct soap *soap,int type)$/
+client_putData	client00.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_01.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_02.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_03.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_04.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_0501.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_05.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_07.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_08.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client.cpp	/^int client_putData(struct soap * soap,int count,ch/
+client_putData	client_net.cpp	/^int client_putData(struct soap * soap,int count,ch/
+connect_timeout	client_08.cpp	428
+data	client_05.cpp	734
+data	client_05.cpp	735
+data	client_07.cpp	669
+data	client_07.cpp	670
+data	client_08.cpp	750
+data	client_08.cpp	751
+data	client.cpp	788
+data	client.cpp	789
+descry	client_05.cpp	751
+descry	client_07.cpp	686
+detail	soapStub.h	331
+device_id	client_05.cpp	743
+device_id	client_07.cpp	678
+device_id	soapStub.h	218
+device_id	soapStub.h	244
+dip	client_05.cpp	746
+dip	client_07.cpp	681
+dmac	client_05.cpp	747
+dmac	client_07.cpp	682
+domain	stdsoap2.h	1628
+dummy	soapStub.h	262
+dv	stdsoap2.h	1131
+else	client_08.cpp	448
+endl	__size	1
+endl	__size	2
+env	stdsoap2.h	1635
+errno	stdsoap2.cpp	292
+expire	stdsoap2.h	1630
+fault	soapStub.h	296
+faultactor	soapStub.h	330
+faultcode	soapStub.h	328
+faultstring	soapStub.h	329
+fdelete	stdsoap2.h	/^  int (*fdelete)(struct soap_clist*);$/
+file	stdsoap2.h	1597
+flag	stdsoap2.h	1615
+fplugin	stdsoap2.cpp	/^fplugin(struct soap *soap, const char *id)$/
+frecv	stdsoap2.cpp	/^frecv(struct soap *soap, char *s, size_t n)$/
+fsend	stdsoap2.cpp	/^fsend(struct soap *soap, const char *s, size_t n)$/
+fv	stdsoap2.h	1131
+get_device_data	client_03.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client_04.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client_0501.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client_05.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client_07.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client_08.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_data	client_net.cpp	/^int get_device_data(struct soap *soap,struct ns__M/
+get_device_info	client_02.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_03.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_04.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_0501.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_05.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_07.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_08.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_info	client_net.cpp	/^int get_device_info(struct soap *soap,struct ns__M/
+get_device_state	client00.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_01.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_02.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_03.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_04.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_0501.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_05.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_07.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_08.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_device_state	client_net.cpp	/^int get_device_state(struct soap *soap,struct ns__/
+get_rules_info	client00.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_01.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_02.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_03.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_04.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_0501.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_05.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_07.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_08.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_rules_info	client_net.cpp	/^int get_rules_info(void** rule_obj, int type)$/
+get_session_blocked	client00.cpp	/^int get_session_blocked(struct soap *soap,struct n/
+get_session_blocked	client_01.cpp	/^int get_session_blocked(struct soap *soap,struct n/
+get_session_blocked	client_02.cpp	/^int get_session_blocked(struct soap *soap,struct n/
+h_error_codes	stdsoap2.cpp	429
+h_http_error_codes	stdsoap2.cpp	453
+h_ssl_error_codes	stdsoap2.cpp	498
+html_entity_codes	stdsoap2.cpp	326
+http_200	stdsoap2.cpp	/^http_200(struct soap *soap)$/
+http_405	stdsoap2.cpp	/^http_405(struct soap *soap)$/
+http_error	stdsoap2.cpp	/^http_error(struct soap *soap, int status)$/
+http_get	stdsoap2.cpp	/^http_get(struct soap *soap)$/
+http_parse	stdsoap2.cpp	/^http_parse(struct soap *soap)$/
+http_parse_header	stdsoap2.cpp	/^http_parse_header(struct soap *soap, const char *k/
+http_post	stdsoap2.cpp	/^http_post(struct soap *soap, const char *endpoint,/
+http_post_header	stdsoap2.cpp	/^http_post_header(struct soap *soap, const char *ke/
+http_response	stdsoap2.cpp	/^http_response(struct soap *soap, int status, size_/
+http_send_header	stdsoap2.cpp	/^http_send_header(struct soap *soap, const char *s)/
+i	client_05.cpp	737
+i	client_07.cpp	672
+i	client_08.cpp	752
+i	client.cpp	790
+id	soapStub.h	53
+id	soapStub.h	70
+id	stdsoap2.h	1547
+id	stdsoap2.h	1559
+id	stdsoap2.h	1581
+id	xmime5.h	70
+id	xop.h	60
+in	stdsoap2.h	1549
+index	stdsoap2.h	1557
+int32_t	stdsoap2.h	586
+int64_t	stdsoap2.h	587
+item	connect.h	20
+item	soapStub.h	179
+item	ssl.h	62
+iv	stdsoap2.h	1131
+key	connect.h	26
+key	soapStub.h	192
+key	ssl.h	68
+level	stdsoap2.h	1556
+line	stdsoap2.h	1598
+live	stdsoap2.h	1599
+mark1	stdsoap2.h	1582
+mark2	stdsoap2.h	1583
+maxage	stdsoap2.h	1631
+mime_client_write	client00.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_01.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_02.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_03.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_04.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_0501.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_05.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_07.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_08.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write	client_net.cpp	/^int mime_client_write(struct soap *soap, void *han/
+mime_client_write_close	client00.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_01.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_02.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_03.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_04.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_0501.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_05.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_07.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_08.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_close	client_net.cpp	/^void mime_client_write_close(struct soap *soap, vo/
+mime_client_write_open	client00.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_01.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_02.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_03.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_04.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_0501.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_05.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_07.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_08.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open	client_net.cpp	/^void *mime_client_write_open(struct soap *soap, vo/
+mime_client_write_open_rules	client00.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_01.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_02.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_03.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_04.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_0501.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_05.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_07.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_08.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_open_rules	client_net.cpp	/^void *mime_client_write_open_rules(struct soap *so/
+mime_client_write_rules	client00.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_01.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_02.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_03.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_04.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_0501.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_05.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_07.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_08.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_client_write_rules	client_net.cpp	/^int mime_client_write_rules(struct soap *soap, voi/
+mime_codes	stdsoap2.cpp	513
+mime_read	client00.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_01.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_02.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_03.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_04.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_0501.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_05.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_07.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_08.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read	client_net.cpp	/^size_t mime_read(struct soap *soap, void *handle, /
+mime_read_close	client00.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_01.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_02.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_03.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_04.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_0501.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_05.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_07.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_08.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_close	client_net.cpp	/^void mime_read_close(struct soap *soap, void *hand/
+mime_read_open	client00.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_01.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_02.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_03.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_04.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_0501.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_05.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_07.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_08.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+mime_read_open	client_net.cpp	/^void *mime_read_open(struct soap *soap, void *hand/
+modified	stdsoap2.h	1636
+msg	client_0501.cpp	813
+msg	client_05.cpp	813
+msg	client_07.cpp	748
+msg	client_08.cpp	166
+msg	client_08.cpp	811
+msg	client.cpp	851
+msg	connect.h	32
+msg	soapStub.h	86
+msg	ssl.h	24
+n1	stdsoap2.h	1131
+n2	stdsoap2.h	1131
+name	stdsoap2.h	1620
+name	stdsoap2.h	1626
+namespaces	connect.nsmap	3
+namespaces	ssl.nsmap	3
+next	stdsoap2.h	1555
+next	stdsoap2.h	1564
+next	stdsoap2.h	1577
+next	stdsoap2.h	1588
+next	stdsoap2.h	1595
+next	stdsoap2.h	1605
+next	stdsoap2.h	1614
+next	stdsoap2.h	1625
+ns	stdsoap2.h	1548
+ns	stdsoap2.h	1558
+ns	stdsoap2.h	1618
+ns__GetData	soapStub.h	240
+ns__GetDataResponse	soapStub.h	228
+ns__MsgItem	connect.h	29
+ns__MsgItem	soapStub.h	82
+ns__MsgItem	ssl.h	21
+ns__MsgList	connect.h	34
+ns__MsgList	soapStub.h	95
+ns__MsgList	ssl.h	26
+ns__PutData	soapStub.h	213
+ns__PutDataResponse	soapStub.h	201
+ns__ResultItem	connect.h	39
+ns__ResultItem	soapStub.h	108
+ns__ResultItem	ssl.h	32
+ns__ResultList	connect.h	45
+ns__ResultList	soapStub.h	122
+ns__ResultList	ssl.h	38
+ns__upload_message	soapStub.h	147
+ns__upload_messageResponse	soapStub.h	135
+open_data	client00.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_01.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_02.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_03.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_04.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_0501.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_05.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_07.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_08.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client.cpp	/^int open_data(struct soap *soap,const char *file,s/
+open_data	client_net.cpp	/^int open_data(struct soap *soap,const char *file,s/
+options	soapStub.h	55
+options	soapStub.h	72
+options	xmime5.h	72
+options	xop.h	62
+out	stdsoap2.h	1550
+path	stdsoap2.h	1629
+plist	stdsoap2.h	1589
+ptr	stdsoap2.h	1565
+ptr	stdsoap2.h	1578
+ptr	stdsoap2.h	1596
+ptr	stdsoap2.h	1606
+response	soapStub.h	204
+result	soapStub.h	138
+returntype	soapStub.h	151
+rules_NULL_error	client00.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_01.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_02.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_03.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_04.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_0501.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_05.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_07.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_08.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client.cpp	/^int rules_NULL_error(char *p)$/
+rules_NULL_error	client_net.cpp	/^int rules_NULL_error(char *p)$/
+rulescontent	client00.cpp	12
+rulescontent	client_01.cpp	12
+rulescontent	client_02.cpp	14
+rulescontent	client_03.cpp	14
+rulescontent	client_04.cpp	14
+rulescontent	client_0501.cpp	16
+rulescontent	client_05.cpp	15
+rulescontent	client_07.cpp	15
+rulescontent	client_08.cpp	15
+rulescontent	client.cpp	17
+rulescontent	client_net.cpp	14
+ruleslen	client00.cpp	11
+ruleslen	client_01.cpp	11
+ruleslen	client_02.cpp	13
+ruleslen	client_03.cpp	13
+ruleslen	client_04.cpp	13
+ruleslen	client_0501.cpp	15
+ruleslen	client_05.cpp	14
+ruleslen	client_07.cpp	14
+ruleslen	client_08.cpp	14
+ruleslen	client.cpp	16
+ruleslen	client_net.cpp	13
+rulesnum	client00.cpp	10
+rulesnum	client_01.cpp	10
+rulesnum	client_02.cpp	12
+rulesnum	client_03.cpp	12
+rulesnum	client_04.cpp	12
+rulesnum	client_0501.cpp	14
+rulesnum	client_05.cpp	13
+rulesnum	client_07.cpp	13
+rulesnum	client_08.cpp	13
+rulesnum	client.cpp	15
+rulesnum	client_net.cpp	12
+scc	client_05.cpp	750
+scc	client_07.cpp	685
+secure	stdsoap2.h	1633
+send_timeout	client_08.cpp	429
+server	Makefile	/^server: $(SERVER_OBJS)$/
+session	stdsoap2.h	1634
+sip	client_05.cpp	745
+sip	client_07.cpp	680
+size	stdsoap2.h	1566
+size	stdsoap2.h	1608
+size	stdsoap2.h	1617
+soap::soap	stdsoap2.cpp	/^soap::soap()$/
+soap::soap	stdsoap2.cpp	/^soap::soap(soap_mode m)$/
+soap::soap	stdsoap2.cpp	/^soap::soap(soap_mode im, soap_mode om)$/
+soap::soap	stdsoap2.cpp	/^soap::soap(const struct soap& soap)$/
+soap::~soap	stdsoap2.cpp	/^soap::~soap()$/
+soapH_H	soapH.h	12
+soapStub_H	soapStub.h	12
+soap_LONG642s	stdsoap2.cpp	/^soap_LONG642s(struct soap *soap, LONG64 n)$/
+soap_QName2s	stdsoap2.cpp	/^soap_QName2s(struct soap *soap, const char *s)$/
+soap_ULONG642s	stdsoap2.cpp	/^soap_ULONG642s(struct soap *soap, ULONG64 n)$/
+soap_accept	stdsoap2.cpp	/^soap_accept(struct soap *soap)$/
+soap_append_lab	stdsoap2.cpp	/^soap_append_lab(struct soap *soap, const char *s, /
+soap_array	stdsoap2.h	1570
+soap_array_begin_out	stdsoap2.cpp	/^soap_array_begin_out(struct soap *soap, const char/
+soap_array_pointer_lookup	stdsoap2.cpp	/^soap_array_pointer_lookup(struct soap *soap, const/
+soap_array_reference	stdsoap2.cpp	/^soap_array_reference(struct soap *soap, const void/
+soap_array_reference	stdsoap2.h	/^# define soap_array_reference(s, p, a, n, t) (1)$/
+soap_attachment	stdsoap2.cpp	/^soap_attachment(struct soap *soap, const char *tag/
+soap_attr_value	stdsoap2.cpp	/^soap_attr_value(struct soap *soap, const char *nam/
+soap_attribute	stdsoap2.cpp	/^soap_attribute(struct soap *soap, const char *name/
+soap_attribute	stdsoap2.h	1613
+soap_base642s	stdsoap2.cpp	/^soap_base642s(struct soap *soap, const char *s, ch/
+soap_base64i	stdsoap2.cpp	306
+soap_base64o	stdsoap2.cpp	305
+soap_begin	stdsoap2.cpp	/^soap_begin(struct soap *soap)$/
+soap_begin_count	stdsoap2.cpp	/^soap_begin_count(struct soap *soap)$/
+soap_begin_recv	stdsoap2.cpp	/^soap_begin_recv(struct soap *soap)$/
+soap_begin_send	stdsoap2.cpp	/^soap_begin_send(struct soap *soap)$/
+soap_begin_serve	stdsoap2.cpp	/^soap_begin_serve(struct soap *soap)$/
+soap_bind	stdsoap2.cpp	/^soap_bind(struct soap *soap, const char *host, int/
+soap_blank	stdsoap2.cpp	/^#define soap_blank(c)		((c)+1 > 0 && (c) <= 32)$/
+soap_blist	stdsoap2.h	1563
+soap_block_size	stdsoap2.cpp	/^soap_block_size(struct soap *soap, struct soap_bli/
+soap_body_begin_in	stdsoap2.cpp	/^soap_body_begin_in(struct soap *soap)$/
+soap_body_begin_out	stdsoap2.cpp	/^soap_body_begin_out(struct soap *soap)$/
+soap_body_end_in	stdsoap2.cpp	/^soap_body_end_in(struct soap *soap)$/
+soap_body_end_out	stdsoap2.cpp	/^soap_body_end_out(struct soap *soap)$/
+soap_byte2s	stdsoap2.cpp	/^soap_byte2s(struct soap *soap, char n)$/
+soap_call_ns__GetData	soapClient.cpp	/^SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__GetData(st/
+soap_call_ns__PutData	soapClient.cpp	/^SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__PutData(st/
+soap_char	stdsoap2.cpp	/^soap_char(struct soap *soap)$/
+soap_check_faultdetail	soapC.cpp	/^SOAP_FMAC3 const char * SOAP_FMAC4 soap_check_faul/
+soap_check_faultsubcode	soapC.cpp	/^SOAP_FMAC3 const char * SOAP_FMAC4 soap_check_faul/
+soap_check_mime_attachments	stdsoap2.cpp	/^soap_check_mime_attachments(struct soap *soap)$/
+soap_check_result	stdsoap2.cpp	/^soap_check_result(struct soap *soap, const char *t/
+soap_check_state	stdsoap2.h	/^#define soap_check_state(soap) (!(soap) || ((soap)/
+soap_class_id_enter	soapC.cpp	/^SOAP_FMAC3 void* SOAP_FMAC4 soap_class_id_enter(st/
+soap_cleanup	stdsoap2.cpp	/^soap_cleanup(struct soap *soap)$/
+soap_clist	stdsoap2.h	1604
+soap_close_logfile	stdsoap2.cpp	/^soap_close_logfile(struct soap *soap, int i)$/
+soap_close_logfiles	stdsoap2.cpp	/^soap_close_logfiles(struct soap *soap)$/
+soap_closesock	stdsoap2.cpp	/^soap_closesock(struct soap *soap)$/
+soap_closesocket	stdsoap2.h	/^#  define soap_closesocket(n) closesocket(n)$/
+soap_closesocket	stdsoap2.h	/^#  define soap_closesocket(n) close(n)$/
+soap_clr_attr	stdsoap2.cpp	/^soap_clr_attr(struct soap *soap)$/
+soap_clr_cookie	stdsoap2.cpp	/^soap_clr_cookie(struct soap *soap, const char *nam/
+soap_clr_cookie_session	stdsoap2.cpp	/^soap_clr_cookie_session(struct soap *soap, const c/
+soap_clr_dime	stdsoap2.cpp	/^soap_clr_dime(struct soap *soap)$/
+soap_clr_imode	stdsoap2.h	/^#define soap_clr_imode(soap, n) ((soap)->imode &= /
+soap_clr_mime	stdsoap2.cpp	/^soap_clr_mime(struct soap *soap)$/
+soap_clr_mode	stdsoap2.h	/^#define soap_clr_mode(soap, n) ((soap)->imode &= ~/
+soap_clr_omode	stdsoap2.h	/^#define soap_clr_omode(soap, n) ((soap)->omode &= /
+soap_code	stdsoap2.cpp	/^soap_code(const struct soap_code_map *code_map, co/
+soap_code_bits	stdsoap2.cpp	/^soap_code_bits(const struct soap_code_map *code_ma/
+soap_code_int	stdsoap2.cpp	/^soap_code_int(const struct soap_code_map *code_map/
+soap_code_list	stdsoap2.cpp	/^soap_code_list(struct soap *soap, const struct soa/
+soap_code_map	stdsoap2.h	2155
+soap_code_map::code	stdsoap2.h	2156
+soap_code_map::string	stdsoap2.h	2157
+soap_code_str	stdsoap2.cpp	/^soap_code_str(const struct soap_code_map *code_map/
+soap_connect	stdsoap2.cpp	/^soap_connect(struct soap *soap, const char *endpoi/
+soap_connect_command	stdsoap2.cpp	/^soap_connect_command(struct soap *soap, int http_c/
+soap_cookie	stdsoap2.cpp	/^soap_cookie(struct soap *soap, const char *name, c/
+soap_cookie	stdsoap2.h	1624
+soap_cookie_expire	stdsoap2.cpp	/^soap_cookie_expire(struct soap *soap, const char */
+soap_cookie_value	stdsoap2.cpp	/^soap_cookie_value(struct soap *soap, const char *n/
+soap_copy	stdsoap2.cpp	/^soap_copy(const struct soap *soap)$/
+soap_copy_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_SOAP_ENV__Cod/
+soap_copy_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_SOAP_ENV__Det/
+soap_copy_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_SOAP_ENV__Fau/
+soap_copy_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_SOAP_ENV__Hea/
+soap_copy_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_SOAP_ENV__Rea/
+soap_copy__xop__Include	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy__xop__Include/
+soap_copy_context	stdsoap2.cpp	/^soap_copy_context(struct soap *copy, const struct /
+soap_copy_cookies	stdsoap2.cpp	/^soap_copy_cookies(struct soap *copy, const struct /
+soap_copy_fault	stdsoap2.cpp	/^soap_copy_fault(struct soap *soap, const char *fau/
+soap_copy_ns__GetData	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__GetData(s/
+soap_copy_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__GetDataRe/
+soap_copy_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__MsgItem(s/
+soap_copy_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__MsgList(s/
+soap_copy_ns__PutData	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__PutData(s/
+soap_copy_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__PutDataRe/
+soap_copy_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__ResultIte/
+soap_copy_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__ResultLis/
+soap_copy_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__upload_me/
+soap_copy_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_ns__upload_me/
+soap_copy_stream	stdsoap2.cpp	/^soap_copy_stream(struct soap *copy, struct soap *s/
+soap_copy_x__Data	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_x__Data(struc/
+soap_copy_x__DataSet	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_x__DataSet(st/
+soap_copy_x__Keys	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_x__Keys(struc/
+soap_copy_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_copy_xmime5__base6/
+soap_count_attachments	stdsoap2.cpp	/^soap_count_attachments(struct soap *soap)$/
+soap_current_namespace	stdsoap2.cpp	/^soap_current_namespace(struct soap *soap, const ch/
+soap_dateTime2s	stdsoap2.cpp	/^soap_dateTime2s(struct soap *soap, time_t n)$/
+soap_dealloc	stdsoap2.cpp	/^soap_dealloc(struct soap *soap, void *p)$/
+soap_decode	stdsoap2.cpp	/^soap_decode(char *buf, size_t len, const char *val/
+soap_decode_key	stdsoap2.cpp	/^soap_decode_key(char *buf, size_t len, const char /
+soap_decode_val	stdsoap2.cpp	/^soap_decode_val(char *buf, size_t len, const char /
+soap_default_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__/
+soap_default_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__/
+soap_default_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__/
+soap_default_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__/
+soap_default_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_SOAP_ENV__/
+soap_default__QName	soapH.h	/^#define soap_default__QName(soap, a) soap_default_/
+soap_default__xop__Include	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default__xop__Incl/
+soap_default_byte	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_byte(struc/
+soap_default_double	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_double(str/
+soap_default_int	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_int(struct/
+soap_default_long	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_long(struc/
+soap_default_ns__GetData	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__GetDat/
+soap_default_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__GetDat/
+soap_default_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__MsgIte/
+soap_default_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__MsgLis/
+soap_default_ns__PutData	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__PutDat/
+soap_default_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__PutDat/
+soap_default_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__Result/
+soap_default_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__Result/
+soap_default_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__upload/
+soap_default_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__upload/
+soap_default_string	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_string(str/
+soap_default_unsignedByte	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_unsignedBy/
+soap_default_unsignedInt	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_unsignedIn/
+soap_default_unsignedLong	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_unsignedLo/
+soap_default_x__Data	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_x__Data(st/
+soap_default_x__DataSet	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_x__DataSet/
+soap_default_x__Keys	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_x__Keys(st/
+soap_default_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_default_xmime5__ba/
+soap_default_xsd__double	soapH.h	/^#define soap_default_xsd__double(soap, a) soap_def/
+soap_del	stdsoap2.cpp	/^soap_del(struct soap *soap)$/
+soap_delegate_deletion	stdsoap2.cpp	/^soap_delegate_deletion(struct soap *soap, struct s/
+soap_delete	stdsoap2.cpp	/^soap_delete(struct soap *soap, void *p)$/
+soap_delete_SOAP_ENV__Code	soapH.h	/^inline void soap_delete_SOAP_ENV__Code(struct soap/
+soap_delete_SOAP_ENV__Detail	soapH.h	/^inline void soap_delete_SOAP_ENV__Detail(struct so/
+soap_delete_SOAP_ENV__Fault	soapH.h	/^inline void soap_delete_SOAP_ENV__Fault(struct soa/
+soap_delete_SOAP_ENV__Header	soapH.h	/^inline void soap_delete_SOAP_ENV__Header(struct so/
+soap_delete_SOAP_ENV__Reason	soapH.h	/^inline void soap_delete_SOAP_ENV__Reason(struct so/
+soap_delete__xop__Include	soapH.h	/^inline void soap_delete__xop__Include(struct soap /
+soap_delete_ns__GetData	soapH.h	/^inline void soap_delete_ns__GetData(struct soap *s/
+soap_delete_ns__GetDataResponse	soapH.h	/^inline void soap_delete_ns__GetDataResponse(struct/
+soap_delete_ns__MsgItem	soapH.h	/^inline void soap_delete_ns__MsgItem(struct soap *s/
+soap_delete_ns__MsgList	soapH.h	/^inline void soap_delete_ns__MsgList(struct soap *s/
+soap_delete_ns__PutData	soapH.h	/^inline void soap_delete_ns__PutData(struct soap *s/
+soap_delete_ns__PutDataResponse	soapH.h	/^inline void soap_delete_ns__PutDataResponse(struct/
+soap_delete_ns__ResultItem	soapH.h	/^inline void soap_delete_ns__ResultItem(struct soap/
+soap_delete_ns__ResultList	soapH.h	/^inline void soap_delete_ns__ResultList(struct soap/
+soap_delete_ns__upload_message	soapH.h	/^inline void soap_delete_ns__upload_message(struct /
+soap_delete_ns__upload_messageResponse	soapH.h	/^inline void soap_delete_ns__upload_messageResponse/
+soap_delete_x__Data	soapH.h	/^inline void soap_delete_x__Data(struct soap *soap,/
+soap_delete_x__DataSet	soapH.h	/^inline void soap_delete_x__DataSet(struct soap *so/
+soap_delete_x__Keys	soapH.h	/^inline void soap_delete_x__Keys(struct soap *soap,/
+soap_delete_xmime5__base64Binary	soapH.h	/^inline void soap_delete_xmime5__base64Binary(struc/
+soap_destroy	stdsoap2.h	/^#define soap_destroy(soap) soap_delete((soap), NUL/
+soap_dime	stdsoap2.h	1663
+soap_dime::begin	stdsoap2.h	/^  soap_multipart_iterator begin()$/
+soap_dime::buflen	stdsoap2.h	1667
+soap_dime::chunksize	stdsoap2.h	1666
+soap_dime::count	stdsoap2.h	1664
+soap_dime::end	stdsoap2.h	/^  soap_multipart_iterator end()$/
+soap_dime::first	stdsoap2.h	1674
+soap_dime::flags	stdsoap2.h	1668
+soap_dime::id	stdsoap2.h	1670
+soap_dime::last	stdsoap2.h	1674
+soap_dime::list	stdsoap2.h	1673
+soap_dime::options	stdsoap2.h	1672
+soap_dime::ptr	stdsoap2.h	1669
+soap_dime::size	stdsoap2.h	1665
+soap_dime::type	stdsoap2.h	1671
+soap_dime_forward	stdsoap2.cpp	/^soap_dime_forward(struct soap *soap, unsigned char/
+soap_dime_option	stdsoap2.cpp	/^soap_dime_option(struct soap *soap, unsigned short/
+soap_dom_attribute	stdsoap2.h	1764
+soap_dom_attribute::data	stdsoap2.h	1768
+soap_dom_attribute::iterator	stdsoap2.h	1772
+soap_dom_attribute::name	stdsoap2.h	1767
+soap_dom_attribute::next	stdsoap2.h	1765
+soap_dom_attribute::nstr	stdsoap2.h	1766
+soap_dom_attribute::soap	stdsoap2.h	1770
+soap_dom_attribute::wide	stdsoap2.h	1769
+soap_dom_attribute_iterator	stdsoap2.h	1747
+soap_dom_attribute_iterator::att	stdsoap2.h	1749
+soap_dom_attribute_iterator::name	stdsoap2.h	1751
+soap_dom_attribute_iterator::nstr	stdsoap2.h	1750
+soap_dom_element	stdsoap2.h	1807
+soap_dom_element::atts	stdsoap2.h	1811
+soap_dom_element::data	stdsoap2.h	1814
+soap_dom_element::elts	stdsoap2.h	1810
+soap_dom_element::head	stdsoap2.h	1818
+soap_dom_element::iterator	stdsoap2.h	1822
+soap_dom_element::name	stdsoap2.h	1813
+soap_dom_element::next	stdsoap2.h	1808
+soap_dom_element::node	stdsoap2.h	1817
+soap_dom_element::nstr	stdsoap2.h	1812
+soap_dom_element::prnt	stdsoap2.h	1809
+soap_dom_element::soap	stdsoap2.h	1820
+soap_dom_element::tail	stdsoap2.h	1819
+soap_dom_element::type	stdsoap2.h	1816
+soap_dom_element::wide	stdsoap2.h	1815
+soap_dom_element_iterator	stdsoap2.h	1789
+soap_dom_element_iterator::elt	stdsoap2.h	1791
+soap_dom_element_iterator::name	stdsoap2.h	1793
+soap_dom_element_iterator::nstr	stdsoap2.h	1792
+soap_dom_element_iterator::type	stdsoap2.h	1794
+soap_done	stdsoap2.cpp	/^soap_done(struct soap *soap)$/
+soap_double2s	stdsoap2.cpp	/^soap_double2s(struct soap *soap, double n)$/
+soap_double_nan	stdsoap2.cpp	304
+soap_double_nan	stdsoap2.h	1131
+soap_element	stdsoap2.cpp	/^soap_element(struct soap *soap, const char *tag, i/
+soap_element_begin_in	stdsoap2.cpp	/^soap_element_begin_in(struct soap *soap, const cha/
+soap_element_begin_out	stdsoap2.cpp	/^soap_element_begin_out(struct soap *soap, const ch/
+soap_element_end_in	stdsoap2.cpp	/^soap_element_end_in(struct soap *soap, const char /
+soap_element_end_out	stdsoap2.cpp	/^soap_element_end_out(struct soap *soap, const char/
+soap_element_href	stdsoap2.cpp	/^soap_element_href(struct soap *soap, const char *t/
+soap_element_id	stdsoap2.cpp	/^soap_element_id(struct soap *soap, const char *tag/
+soap_element_nil	stdsoap2.cpp	/^soap_element_nil(struct soap *soap, const char *ta/
+soap_element_null	stdsoap2.cpp	/^soap_element_null(struct soap *soap, const char *t/
+soap_element_ref	stdsoap2.cpp	/^soap_element_ref(struct soap *soap, const char *ta/
+soap_element_result	stdsoap2.cpp	/^soap_element_result(struct soap *soap, const char /
+soap_element_start_end_out	stdsoap2.cpp	/^soap_element_start_end_out(struct soap *soap, cons/
+soap_embed	stdsoap2.cpp	/^soap_embed(struct soap *soap, const void *p, const/
+soap_embed	stdsoap2.h	/^# define soap_embed(s, p, a, n, t, pp) (0)$/
+soap_embedded	stdsoap2.cpp	/^soap_embedded(struct soap *soap, const void *p, in/
+soap_embedded	stdsoap2.h	/^# define soap_embedded(s, p, t) (0)$/
+soap_embedded_id	stdsoap2.cpp	/^soap_embedded_id(struct soap *soap, int id, const /
+soap_embedded_id	stdsoap2.h	/^# define soap_embedded_id(s, i, p, t) (i)$/
+soap_enc1	stdsoap2.cpp	297
+soap_enc2	stdsoap2.cpp	299
+soap_encode_cookie	stdsoap2.cpp	/^soap_encode_cookie(const char *s, char *t, size_t /
+soap_end	stdsoap2.cpp	/^soap_end(struct soap *soap)$/
+soap_end_block	stdsoap2.cpp	/^soap_end_block(struct soap *soap, struct soap_blis/
+soap_end_count	stdsoap2.cpp	/^soap_end_count(struct soap *soap)$/
+soap_end_recv	stdsoap2.cpp	/^soap_end_recv(struct soap *soap)$/
+soap_end_send	stdsoap2.cpp	/^soap_end_send(struct soap *soap)$/
+soap_end_send_flush	stdsoap2.cpp	/^soap_end_send_flush(struct soap *soap)$/
+soap_enter	stdsoap2.cpp	/^soap_enter(struct soap *soap, const char *id)$/
+soap_env1	stdsoap2.cpp	296
+soap_env2	stdsoap2.cpp	298
+soap_env_cookie_value	stdsoap2.cpp	/^soap_env_cookie_value(struct soap *soap, const cha/
+soap_envelope_begin_in	stdsoap2.cpp	/^soap_envelope_begin_in(struct soap *soap)$/
+soap_envelope_begin_out	stdsoap2.cpp	/^soap_envelope_begin_out(struct soap *soap)$/
+soap_envelope_end_in	stdsoap2.cpp	/^soap_envelope_end_in(struct soap *soap)$/
+soap_envelope_end_out	stdsoap2.cpp	/^soap_envelope_end_out(struct soap *soap)$/
+soap_errno	stdsoap2.h	983
+soap_errno	stdsoap2.h	987
+soap_errno	stdsoap2.h	993
+soap_errno	stdsoap2.h	997
+soap_fault	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_fault(struct soap /
+soap_faultcode	soapC.cpp	/^SOAP_FMAC3 const char ** SOAP_FMAC4 soap_faultcode/
+soap_faultdetail	soapC.cpp	/^SOAP_FMAC3 const char ** SOAP_FMAC4 soap_faultdeta/
+soap_faultstring	soapC.cpp	/^SOAP_FMAC3 const char ** SOAP_FMAC4 soap_faultstri/
+soap_faultsubcode	soapC.cpp	/^SOAP_FMAC3 const char ** SOAP_FMAC4 soap_faultsubc/
+soap_fcopy	stdsoap2.cpp	/^soap_fcopy(struct soap *soap, int st, int tt, void/
+soap_fdelete	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_fdelete(struct soap/
+soap_first_block	stdsoap2.cpp	/^soap_first_block(struct soap *soap, struct soap_bl/
+soap_flist	stdsoap2.h	2161
+soap_flist::len	stdsoap2.h	2166
+soap_flist::level	stdsoap2.h	2165
+soap_flist::next	stdsoap2.h	2162
+soap_flist::ptr	stdsoap2.h	2164
+soap_flist::type	stdsoap2.h	2163
+soap_float2s	stdsoap2.cpp	/^soap_float2s(struct soap *soap, float n)$/
+soap_flush	stdsoap2.cpp	/^soap_flush(struct soap *soap)$/
+soap_flush_raw	stdsoap2.cpp	/^soap_flush_raw(struct soap *soap, const char *s, s/
+soap_force_closesock	stdsoap2.cpp	/^soap_force_closesock(struct soap *soap)$/
+soap_free	stdsoap2.cpp	/^soap_free(struct soap *soap)$/
+soap_free_cookies	stdsoap2.cpp	/^soap_free_cookies(struct soap *soap)$/
+soap_free_iht	stdsoap2.cpp	/^soap_free_iht(struct soap *soap)$/
+soap_free_mht	stdsoap2.cpp	/^soap_free_mht(struct soap *soap)$/
+soap_free_ns	stdsoap2.cpp	/^soap_free_ns(struct soap *soap)$/
+soap_free_pht	stdsoap2.cpp	/^soap_free_pht(struct soap *soap)$/
+soap_free_stream	stdsoap2.cpp	/^soap_free_stream(struct soap *soap)$/
+soap_free_temp	stdsoap2.cpp	/^soap_free_temp(struct soap *soap)$/
+soap_get	stdsoap2.cpp	/^soap_get(struct soap *soap)$/
+soap_get0	stdsoap2.cpp	/^soap_get0(struct soap *soap)$/
+soap_get0	stdsoap2.h	/^# define soap_get0(soap) (((soap)->bufidx>=(soap)-/
+soap_get1	stdsoap2.cpp	/^soap_get1(struct soap *soap)$/
+soap_get1	stdsoap2.h	/^# define soap_get1(soap) (((soap)->bufidx>=(soap)-/
+soap_get_PointerToPointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultItem *** SOAP_FMAC4 so/
+soap_get_PointerToSOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Code ** SOAP_FMAC4 soa/
+soap_get_PointerToSOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Detail ** SOAP_FMAC4 s/
+soap_get_PointerToSOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Reason ** SOAP_FMAC4 s/
+soap_get_PointerToint	soapC.cpp	/^SOAP_FMAC3 int ** SOAP_FMAC4 soap_get_PointerToint/
+soap_get_PointerTons__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__GetDataResponse ** SOAP_FMAC/
+soap_get_PointerTons__MsgItem	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgItem ** SOAP_FMAC4 soap_g/
+soap_get_PointerTons__MsgList	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgList ** SOAP_FMAC4 soap_g/
+soap_get_PointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultItem ** SOAP_FMAC4 soa/
+soap_get_PointerTons__ResultList	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultList ** SOAP_FMAC4 soa/
+soap_get_PointerTostring	soapC.cpp	/^SOAP_FMAC3 char *** SOAP_FMAC4 soap_get_PointerTos/
+soap_get_PointerTounsignedByte	soapC.cpp	/^SOAP_FMAC3 unsigned char ** SOAP_FMAC4 soap_get_Po/
+soap_get_PointerTox__Data	soapC.cpp	/^SOAP_FMAC3 struct x__Data ** SOAP_FMAC4 soap_get_P/
+soap_get_PointerTox__DataSet	soapC.cpp	/^SOAP_FMAC3 struct x__DataSet ** SOAP_FMAC4 soap_ge/
+soap_get_PointerTox__Keys	soapC.cpp	/^SOAP_FMAC3 struct x__Keys ** SOAP_FMAC4 soap_get_P/
+soap_get_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Code * SOAP_FMAC4 soap/
+soap_get_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Detail * SOAP_FMAC4 so/
+soap_get_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Fault * SOAP_FMAC4 soa/
+soap_get_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 so/
+soap_get_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Reason * SOAP_FMAC4 so/
+soap_get__QName	soapC.cpp	/^SOAP_FMAC3 char ** SOAP_FMAC4 soap_get__QName(stru/
+soap_get__xop__Include	soapC.cpp	/^SOAP_FMAC3 struct _xop__Include * SOAP_FMAC4 soap_/
+soap_get_byte	soapC.cpp	/^SOAP_FMAC3 char * SOAP_FMAC4 soap_get_byte(struct /
+soap_get_double	soapC.cpp	/^SOAP_FMAC3 double * SOAP_FMAC4 soap_get_double(str/
+soap_get_header_attribute	stdsoap2.cpp	/^soap_get_header_attribute(struct soap *soap, const/
+soap_get_http_body	stdsoap2.cpp	/^soap_get_http_body(struct soap *soap)$/
+soap_get_int	soapC.cpp	/^SOAP_FMAC3 int * SOAP_FMAC4 soap_get_int(struct so/
+soap_get_long	soapC.cpp	/^SOAP_FMAC3 long * SOAP_FMAC4 soap_get_long(struct /
+soap_get_mime_attachment	stdsoap2.cpp	/^soap_get_mime_attachment(struct soap *soap, void */
+soap_get_ns__GetData	soapC.cpp	/^SOAP_FMAC3 struct ns__GetData * SOAP_FMAC4 soap_ge/
+soap_get_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__GetDataResponse * SOAP_FMAC4/
+soap_get_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgItem * SOAP_FMAC4 soap_ge/
+soap_get_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgList * SOAP_FMAC4 soap_ge/
+soap_get_ns__PutData	soapC.cpp	/^SOAP_FMAC3 struct ns__PutData * SOAP_FMAC4 soap_ge/
+soap_get_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__PutDataResponse * SOAP_FMAC4/
+soap_get_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultItem * SOAP_FMAC4 soap/
+soap_get_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultList * SOAP_FMAC4 soap/
+soap_get_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 struct ns__upload_message * SOAP_FMAC4 /
+soap_get_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__upload_messageResponse * SOA/
+soap_get_pi	stdsoap2.cpp	/^soap_get_pi(struct soap *soap)$/
+soap_get_string	soapC.cpp	/^SOAP_FMAC3 char ** SOAP_FMAC4 soap_get_string(stru/
+soap_get_unsignedByte	soapC.cpp	/^SOAP_FMAC3 unsigned char * SOAP_FMAC4 soap_get_uns/
+soap_get_unsignedInt	soapC.cpp	/^SOAP_FMAC3 unsigned int * SOAP_FMAC4 soap_get_unsi/
+soap_get_unsignedLong	soapC.cpp	/^SOAP_FMAC3 unsigned long * SOAP_FMAC4 soap_get_uns/
+soap_get_x__Data	soapC.cpp	/^SOAP_FMAC3 struct x__Data * SOAP_FMAC4 soap_get_x_/
+soap_get_x__DataSet	soapC.cpp	/^SOAP_FMAC3 struct x__DataSet * SOAP_FMAC4 soap_get/
+soap_get_x__Keys	soapC.cpp	/^SOAP_FMAC3 struct x__Keys * SOAP_FMAC4 soap_get_x_/
+soap_get_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 struct xmime5__base64Binary * SOAP_FMAC/
+soap_get_xsd__double	soapC.cpp	/^SOAP_FMAC3 double * SOAP_FMAC4 soap_get_xsd__doubl/
+soap_getattrval	stdsoap2.cpp	/^soap_getattrval(struct soap *soap, char *s, size_t/
+soap_getbase64	stdsoap2.cpp	/^soap_getbase64(struct soap *soap, int *n, int mall/
+soap_getchar	stdsoap2.cpp	/^soap_getchar(struct soap *soap)$/
+soap_getchunkchar	stdsoap2.cpp	/^soap_getchunkchar(struct soap *soap)$/
+soap_getcookies	stdsoap2.cpp	/^soap_getcookies(struct soap *soap, const char *val/
+soap_getdime	stdsoap2.cpp	/^soap_getdime(struct soap *soap)$/
+soap_getdimefield	stdsoap2.cpp	/^soap_getdimefield(struct soap *soap, size_t n)$/
+soap_getdimehdr	stdsoap2.cpp	/^soap_getdimehdr(struct soap *soap)$/
+soap_getelement	soapC.cpp	/^SOAP_FMAC3 void * SOAP_FMAC4 soap_getelement(struc/
+soap_getenv_cookies	stdsoap2.cpp	/^soap_getenv_cookies(struct soap *soap)$/
+soap_getfault	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_getfault(struct soa/
+soap_getgziphdr	stdsoap2.cpp	/^soap_getgziphdr(struct soap *soap)$/
+soap_gethex	stdsoap2.cpp	/^soap_gethex(struct soap *soap, int *n)$/
+soap_getindependent	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_getindependent(stru/
+soap_getindependent	stdsoap2.h	/^# define soap_getindependent(s) (0)$/
+soap_getline	stdsoap2.cpp	/^soap_getline(struct soap *soap, char *s, int len)$/
+soap_getmime	stdsoap2.cpp	/^soap_getmime(struct soap *soap)$/
+soap_getmimehdr	stdsoap2.cpp	/^soap_getmimehdr(struct soap *soap)$/
+soap_getoffsets	stdsoap2.cpp	/^soap_getoffsets(const char *attr, const int *size,/
+soap_getposition	stdsoap2.cpp	/^soap_getposition(const char *attr, int *pos)$/
+soap_getsize	stdsoap2.cpp	/^soap_getsize(const char *attr1, const char *attr2,/
+soap_getsizes	stdsoap2.cpp	/^soap_getsizes(const char *attr, int *size, int dim/
+soap_getutf8	stdsoap2.cpp	/^soap_getutf8(struct soap *soap)$/
+soap_has_copies	stdsoap2.cpp	/^soap_has_copies(struct soap *soap, register const /
+soap_hash	stdsoap2.cpp	/^soap_hash(register const char *s)$/
+soap_hash_ptr	stdsoap2.cpp	/^#define soap_hash_ptr(p)	((PtrToUlong(p) >> 3) & (/
+soap_hash_ptr	stdsoap2.cpp	/^#define soap_hash_ptr(p)	((size_t)(((unsigned long/
+soap_header	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_header(struct soap/
+soap_hex2s	stdsoap2.cpp	/^soap_hex2s(struct soap *soap, const char *s, char /
+soap_http_error_check	stdsoap2.h	/^#define soap_http_error_check(e) ((e) == SOAP_HTTP/
+soap_id_enter	stdsoap2.cpp	/^soap_id_enter(struct soap *soap, const char *id, v/
+soap_id_forward	stdsoap2.cpp	/^soap_id_forward(struct soap *soap, const char *hre/
+soap_id_forward	stdsoap2.h	/^# define soap_id_forward(s, h, p, len, st, tt, n, /
+soap_id_lookup	stdsoap2.cpp	/^soap_id_lookup(struct soap *soap, const char *id, /
+soap_id_lookup	stdsoap2.h	/^# define soap_id_lookup(s, i, p, t, n, k) (p)$/
+soap_ignore_element	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_ignore_element(stru/
+soap_ilist	stdsoap2.h	2171
+soap_ilist::copy	stdsoap2.h	2176
+soap_ilist::flist	stdsoap2.h	2177
+soap_ilist::id	stdsoap2.h	2180
+soap_ilist::level	stdsoap2.h	2179
+soap_ilist::link	stdsoap2.h	2175
+soap_ilist::next	stdsoap2.h	2172
+soap_ilist::ptr	stdsoap2.h	2178
+soap_ilist::size	stdsoap2.h	2174
+soap_ilist::type	stdsoap2.h	2173
+soap_imode	stdsoap2.h	/^#define soap_imode(soap, n) ((soap)->imode = (n))$/
+soap_inLONG64	stdsoap2.cpp	/^soap_inLONG64(struct soap *soap, const char *tag, /
+soap_inULONG64	stdsoap2.cpp	/^soap_inULONG64(struct soap *soap, const char *tag,/
+soap_in_PointerToPointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultItem *** SOAP_FMAC4 so/
+soap_in_PointerToSOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Code ** SOAP_FMAC4 soa/
+soap_in_PointerToSOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Detail ** SOAP_FMAC4 s/
+soap_in_PointerToSOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Reason ** SOAP_FMAC4 s/
+soap_in_PointerToint	soapC.cpp	/^SOAP_FMAC3 int ** SOAP_FMAC4 soap_in_PointerToint(/
+soap_in_PointerTons__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__GetDataResponse ** SOAP_FMAC/
+soap_in_PointerTons__MsgItem	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgItem ** SOAP_FMAC4 soap_i/
+soap_in_PointerTons__MsgList	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgList ** SOAP_FMAC4 soap_i/
+soap_in_PointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultItem ** SOAP_FMAC4 soa/
+soap_in_PointerTons__ResultList	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultList ** SOAP_FMAC4 soa/
+soap_in_PointerTostring	soapC.cpp	/^SOAP_FMAC3 char *** SOAP_FMAC4 soap_in_PointerTost/
+soap_in_PointerTounsignedByte	soapC.cpp	/^SOAP_FMAC3 unsigned char ** SOAP_FMAC4 soap_in_Poi/
+soap_in_PointerTox__Data	soapC.cpp	/^SOAP_FMAC3 struct x__Data ** SOAP_FMAC4 soap_in_Po/
+soap_in_PointerTox__DataSet	soapC.cpp	/^SOAP_FMAC3 struct x__DataSet ** SOAP_FMAC4 soap_in/
+soap_in_PointerTox__Keys	soapC.cpp	/^SOAP_FMAC3 struct x__Keys ** SOAP_FMAC4 soap_in_Po/
+soap_in_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Code * SOAP_FMAC4 soap/
+soap_in_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Detail * SOAP_FMAC4 so/
+soap_in_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Fault * SOAP_FMAC4 soa/
+soap_in_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Header * SOAP_FMAC4 so/
+soap_in_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 struct SOAP_ENV__Reason * SOAP_FMAC4 so/
+soap_in__QName	soapC.cpp	/^SOAP_FMAC3 char * * SOAP_FMAC4 soap_in__QName(stru/
+soap_in__xop__Include	soapC.cpp	/^SOAP_FMAC3 struct _xop__Include * SOAP_FMAC4 soap_/
+soap_in_byte	soapC.cpp	/^SOAP_FMAC3 char * SOAP_FMAC4 soap_in_byte(struct s/
+soap_in_double	soapC.cpp	/^SOAP_FMAC3 double * SOAP_FMAC4 soap_in_double(stru/
+soap_in_int	soapC.cpp	/^SOAP_FMAC3 int * SOAP_FMAC4 soap_in_int(struct soa/
+soap_in_long	soapC.cpp	/^SOAP_FMAC3 long * SOAP_FMAC4 soap_in_long(struct s/
+soap_in_ns__GetData	soapC.cpp	/^SOAP_FMAC3 struct ns__GetData * SOAP_FMAC4 soap_in/
+soap_in_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__GetDataResponse * SOAP_FMAC4/
+soap_in_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgItem * SOAP_FMAC4 soap_in/
+soap_in_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 struct ns__MsgList * SOAP_FMAC4 soap_in/
+soap_in_ns__PutData	soapC.cpp	/^SOAP_FMAC3 struct ns__PutData * SOAP_FMAC4 soap_in/
+soap_in_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__PutDataResponse * SOAP_FMAC4/
+soap_in_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultItem * SOAP_FMAC4 soap/
+soap_in_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 struct ns__ResultList * SOAP_FMAC4 soap/
+soap_in_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 struct ns__upload_message * SOAP_FMAC4 /
+soap_in_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 struct ns__upload_messageResponse * SOA/
+soap_in_string	soapC.cpp	/^SOAP_FMAC3 char * * SOAP_FMAC4 soap_in_string(stru/
+soap_in_unsignedByte	soapC.cpp	/^SOAP_FMAC3 unsigned char * SOAP_FMAC4 soap_in_unsi/
+soap_in_unsignedInt	soapC.cpp	/^SOAP_FMAC3 unsigned int * SOAP_FMAC4 soap_in_unsig/
+soap_in_unsignedLong	soapC.cpp	/^SOAP_FMAC3 unsigned long * SOAP_FMAC4 soap_in_unsi/
+soap_in_x__Data	soapC.cpp	/^SOAP_FMAC3 struct x__Data * SOAP_FMAC4 soap_in_x__/
+soap_in_x__DataSet	soapC.cpp	/^SOAP_FMAC3 struct x__DataSet * SOAP_FMAC4 soap_in_/
+soap_in_x__Keys	soapC.cpp	/^SOAP_FMAC3 struct x__Keys * SOAP_FMAC4 soap_in_x__/
+soap_in_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 struct xmime5__base64Binary * SOAP_FMAC/
+soap_in_xsd__double	soapC.cpp	/^SOAP_FMAC3 double * SOAP_FMAC4 soap_in_xsd__double/
+soap_inbyte	stdsoap2.cpp	/^soap_inbyte(struct soap *soap, const char *tag, ch/
+soap_indateTime	stdsoap2.cpp	/^soap_indateTime(struct soap *soap, const char *tag/
+soap_indent	stdsoap2.cpp	310
+soap_indouble	stdsoap2.cpp	/^soap_indouble(struct soap *soap, const char *tag, /
+soap_infloat	stdsoap2.cpp	/^soap_infloat(struct soap *soap, const char *tag, f/
+soap_inint	stdsoap2.cpp	/^soap_inint(struct soap *soap, const char *tag, int/
+soap_init	stdsoap2.h	/^#define soap_init(soap) soap_init1(soap, SOAP_IO_D/
+soap_init1	stdsoap2.h	/^#define soap_init1(soap, mode) soap_init2(soap, mo/
+soap_init2	stdsoap2.h	/^#define soap_init2(soap, imode, omode) soap_versio/
+soap_init_iht	stdsoap2.cpp	/^soap_init_iht(struct soap *soap)$/
+soap_init_logs	stdsoap2.cpp	/^soap_init_logs(struct soap *soap)$/
+soap_init_mht	stdsoap2.cpp	/^soap_init_mht(struct soap *soap)$/
+soap_init_pht	stdsoap2.cpp	/^soap_init_pht(struct soap *soap)$/
+soap_inliteral	stdsoap2.cpp	/^soap_inliteral(struct soap *soap, const char *tag,/
+soap_inlong	stdsoap2.cpp	/^soap_inlong(struct soap *soap, const char *tag, lo/
+soap_inshort	stdsoap2.cpp	/^soap_inshort(struct soap *soap, const char *tag, s/
+soap_instantiate	soapC.cpp	/^SOAP_FMAC3 void * SOAP_FMAC4 soap_instantiate(stru/
+soap_instantiate_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC1 struct SOAP_ENV__Code * SOAP_FMAC2 soap/
+soap_instantiate_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC1 struct SOAP_ENV__Detail * SOAP_FMAC2 so/
+soap_instantiate_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC1 struct SOAP_ENV__Fault * SOAP_FMAC2 soa/
+soap_instantiate_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC1 struct SOAP_ENV__Header * SOAP_FMAC2 so/
+soap_instantiate_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC1 struct SOAP_ENV__Reason * SOAP_FMAC2 so/
+soap_instantiate__xop__Include	soapC.cpp	/^SOAP_FMAC1 struct _xop__Include * SOAP_FMAC2 soap_/
+soap_instantiate_ns__GetData	soapC.cpp	/^SOAP_FMAC1 struct ns__GetData * SOAP_FMAC2 soap_in/
+soap_instantiate_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC1 struct ns__GetDataResponse * SOAP_FMAC2/
+soap_instantiate_ns__MsgItem	soapC.cpp	/^SOAP_FMAC1 struct ns__MsgItem * SOAP_FMAC2 soap_in/
+soap_instantiate_ns__MsgList	soapC.cpp	/^SOAP_FMAC1 struct ns__MsgList * SOAP_FMAC2 soap_in/
+soap_instantiate_ns__PutData	soapC.cpp	/^SOAP_FMAC1 struct ns__PutData * SOAP_FMAC2 soap_in/
+soap_instantiate_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC1 struct ns__PutDataResponse * SOAP_FMAC2/
+soap_instantiate_ns__ResultItem	soapC.cpp	/^SOAP_FMAC1 struct ns__ResultItem * SOAP_FMAC2 soap/
+soap_instantiate_ns__ResultList	soapC.cpp	/^SOAP_FMAC1 struct ns__ResultList * SOAP_FMAC2 soap/
+soap_instantiate_ns__upload_message	soapC.cpp	/^SOAP_FMAC1 struct ns__upload_message * SOAP_FMAC2 /
+soap_instantiate_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC1 struct ns__upload_messageResponse * SOA/
+soap_instantiate_x__Data	soapC.cpp	/^SOAP_FMAC1 struct x__Data * SOAP_FMAC2 soap_instan/
+soap_instantiate_x__DataSet	soapC.cpp	/^SOAP_FMAC1 struct x__DataSet * SOAP_FMAC2 soap_ins/
+soap_instantiate_x__Keys	soapC.cpp	/^SOAP_FMAC1 struct x__Keys * SOAP_FMAC2 soap_instan/
+soap_instantiate_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC1 struct xmime5__base64Binary * SOAP_FMAC/
+soap_instring	stdsoap2.cpp	/^soap_instring(struct soap *soap, const char *tag, /
+soap_int2s	stdsoap2.cpp	/^soap_int2s(struct soap *soap, int n)$/
+soap_int32	stdsoap2.h	945
+soap_int32	stdsoap2.h	947
+soap_int32	stdsoap2.h	949
+soap_int32	stdsoap2.h	952
+soap_int32	stdsoap2.h	954
+soap_int32	stdsoap2.h	957
+soap_inunsignedByte	stdsoap2.cpp	/^soap_inunsignedByte(struct soap *soap, const char /
+soap_inunsignedInt	stdsoap2.cpp	/^soap_inunsignedInt(struct soap *soap, const char */
+soap_inunsignedLong	stdsoap2.cpp	/^soap_inunsignedLong(struct soap *soap, const char /
+soap_inunsignedShort	stdsoap2.cpp	/^soap_inunsignedShort(struct soap *soap, const char/
+soap_inwliteral	stdsoap2.cpp	/^soap_inwliteral(struct soap *soap, const char *tag/
+soap_inwstring	stdsoap2.cpp	/^soap_inwstring(struct soap *soap, const char *tag,/
+soap_is_embedded	stdsoap2.cpp	/^soap_is_embedded(struct soap *soap, struct soap_pl/
+soap_is_embedded	stdsoap2.h	/^# define soap_is_embedded(s, p) (0)$/
+soap_is_single	stdsoap2.cpp	/^soap_is_single(struct soap *soap, struct soap_plis/
+soap_is_single	stdsoap2.h	/^# define soap_is_single(s, p) (1)$/
+soap_isinf	stdsoap2.h	/^# define soap_isinf(n) (!_finite(n))$/
+soap_isinf	stdsoap2.h	/^#  define soap_isinf(n) isinf(n)$/
+soap_isinf	stdsoap2.h	/^#  define soap_isinf(n) (!soap_isnan(n) && soap_is/
+soap_isnan	stdsoap2.h	/^#   define soap_isnan(num) isNan(num)$/
+soap_isnan	stdsoap2.h	/^# define soap_isnan(n) _isnan(n)$/
+soap_isnan	stdsoap2.h	/^#  define soap_isnan(n) isnan(n)$/
+soap_isnan	stdsoap2.h	/^#  define soap_isnan(n) ((n) != (n))$/
+soap_isninfd	stdsoap2.h	/^#define soap_isninfd(n) ((n) < 0 && soap_isinf(n))/
+soap_isninff	stdsoap2.h	/^#define soap_isninff(n) ((n) < 0 && soap_isinf(n))/
+soap_isnumeric	stdsoap2.cpp	/^static int soap_isnumeric(struct soap *soap, const/
+soap_ispinfd	stdsoap2.h	/^#define soap_ispinfd(n) ((n) > 0 && soap_isinf(n))/
+soap_ispinff	stdsoap2.h	/^#define soap_ispinff(n) ((n) > 0 && soap_isinf(n))/
+soap_isxdigit	stdsoap2.cpp	/^soap_isxdigit(int c)$/
+soap_link	stdsoap2.cpp	/^soap_link(struct soap *soap, void *p, int t, int n/
+soap_long2s	stdsoap2.cpp	/^soap_long2s(struct soap *soap, long n)$/
+soap_lookup	stdsoap2.cpp	/^soap_lookup(struct soap *soap, const char *id)$/
+soap_lookup_ns	stdsoap2.cpp	/^soap_lookup_ns(struct soap *soap, const char *tag,/
+soap_lookup_plugin	stdsoap2.cpp	/^soap_lookup_plugin(struct soap *soap, const char */
+soap_lookup_type	stdsoap2.cpp	/^soap_lookup_type(struct soap *soap, const char *id/
+soap_lookup_type	stdsoap2.h	/^# define soap_lookup_type(s, i) (0)$/
+soap_malloc	stdsoap2.cpp	/^soap_malloc(struct soap *soap, size_t n)$/
+soap_markelement	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_markelement(struct/
+soap_markelement	stdsoap2.h	/^# define soap_markelement(s, p, n) (0)$/
+soap_match_array	stdsoap2.cpp	/^soap_match_array(struct soap *soap, const char *ty/
+soap_match_cid	stdsoap2.cpp	/^soap_match_cid(struct soap *soap, const char *s, c/
+soap_match_namespace	stdsoap2.cpp	/^soap_match_namespace(struct soap *soap, const char/
+soap_match_tag	stdsoap2.cpp	/^soap_match_tag(struct soap *soap, const char *tag1/
+soap_mime	stdsoap2.h	1685
+soap_mime::begin	stdsoap2.h	/^  soap_multipart_iterator begin()$/
+soap_mime::boundary	stdsoap2.h	1686
+soap_mime::end	stdsoap2.h	/^  soap_multipart_iterator end()$/
+soap_mime::first	stdsoap2.h	1689
+soap_mime::last	stdsoap2.h	1689
+soap_mime::list	stdsoap2.h	1688
+soap_mime::start	stdsoap2.h	1687
+soap_mime_encoding	stdsoap2.h	1701
+soap_mime_encoding::SOAP_MIME_7BIT	stdsoap2.h	1703
+soap_mime_encoding::SOAP_MIME_8BIT	stdsoap2.h	1704
+soap_mime_encoding::SOAP_MIME_BASE64	stdsoap2.h	1707
+soap_mime_encoding::SOAP_MIME_BINARY	stdsoap2.h	1705
+soap_mime_encoding::SOAP_MIME_IETF_TOKEN	stdsoap2.h	1708
+soap_mime_encoding::SOAP_MIME_NONE	stdsoap2.h	1702
+soap_mime_encoding::SOAP_MIME_QUOTED_PRINTABLE	stdsoap2.h	1706
+soap_mime_encoding::SOAP_MIME_X_TOKEN	stdsoap2.h	1709
+soap_mlist	stdsoap2.h	1594
+soap_mode	stdsoap2.h	1318
+soap_mode	stdsoap2.h	/^#define soap_mode(soap, n) ((soap)->mode = (soap)-/
+soap_move	stdsoap2.cpp	/^soap_move(struct soap *soap, long n)$/
+soap_multipart	stdsoap2.h	1715
+soap_multipart::description	stdsoap2.h	1724
+soap_multipart::encoding	stdsoap2.h	1722
+soap_multipart::id	stdsoap2.h	1719
+soap_multipart::iterator	stdsoap2.h	1726
+soap_multipart::location	stdsoap2.h	1723
+soap_multipart::next	stdsoap2.h	1716
+soap_multipart::options	stdsoap2.h	1721
+soap_multipart::ptr	stdsoap2.h	1717
+soap_multipart::size	stdsoap2.h	1718
+soap_multipart::type	stdsoap2.h	1720
+soap_multipart_iterator	stdsoap2.h	1644
+soap_multipart_iterator::content	stdsoap2.h	1646
+soap_multipart_iterator::operator!=	stdsoap2.h	/^  bool operator!=(const soap_multipart_iterator& i/
+soap_multipart_iterator::operator*	stdsoap2.h	/^  struct soap_multipart &operator*() const$/
+soap_multipart_iterator::operator++	stdsoap2.h	/^  soap_multipart_iterator &operator++()$/
+soap_multipart_iterator::operator==	stdsoap2.h	/^  bool operator==(const soap_multipart_iterator& i/
+soap_multipart_iterator::soap_multipart_iterator	stdsoap2.h	/^  soap_multipart_iterator() : content(NULL)$/
+soap_multipart_iterator::soap_multipart_iterator	stdsoap2.h	/^  soap_multipart_iterator(struct soap_multipart *p/
+soap_new	stdsoap2.h	/^#define soap_new() soap_new1(SOAP_IO_DEFAULT)$/
+soap_new1	stdsoap2.h	/^#define soap_new1(mode) soap_new2(mode, mode)$/
+soap_new2	stdsoap2.h	/^#define soap_new2(imode, omode) soap_versioning(so/
+soap_new_SOAP_ENV__Code	soapH.h	/^inline struct SOAP_ENV__Code * soap_new_SOAP_ENV__/
+soap_new_SOAP_ENV__Detail	soapH.h	/^inline struct SOAP_ENV__Detail * soap_new_SOAP_ENV/
+soap_new_SOAP_ENV__Fault	soapH.h	/^inline struct SOAP_ENV__Fault * soap_new_SOAP_ENV_/
+soap_new_SOAP_ENV__Header	soapH.h	/^inline struct SOAP_ENV__Header * soap_new_SOAP_ENV/
+soap_new_SOAP_ENV__Reason	soapH.h	/^inline struct SOAP_ENV__Reason * soap_new_SOAP_ENV/
+soap_new__xop__Include	soapH.h	/^inline struct _xop__Include * soap_new__xop__Inclu/
+soap_new_block	stdsoap2.cpp	/^soap_new_block(struct soap *soap)$/
+soap_new_multipart	stdsoap2.cpp	/^soap_new_multipart(struct soap *soap, struct soap_/
+soap_new_ns__GetData	soapH.h	/^inline struct ns__GetData * soap_new_ns__GetData(s/
+soap_new_ns__GetDataResponse	soapH.h	/^inline struct ns__GetDataResponse * soap_new_ns__G/
+soap_new_ns__MsgItem	soapH.h	/^inline struct ns__MsgItem * soap_new_ns__MsgItem(s/
+soap_new_ns__MsgList	soapH.h	/^inline struct ns__MsgList * soap_new_ns__MsgList(s/
+soap_new_ns__PutData	soapH.h	/^inline struct ns__PutData * soap_new_ns__PutData(s/
+soap_new_ns__PutDataResponse	soapH.h	/^inline struct ns__PutDataResponse * soap_new_ns__P/
+soap_new_ns__ResultItem	soapH.h	/^inline struct ns__ResultItem * soap_new_ns__Result/
+soap_new_ns__ResultList	soapH.h	/^inline struct ns__ResultList * soap_new_ns__Result/
+soap_new_ns__upload_message	soapH.h	/^inline struct ns__upload_message * soap_new_ns__up/
+soap_new_ns__upload_messageResponse	soapH.h	/^inline struct ns__upload_messageResponse * soap_ne/
+soap_new_req_SOAP_ENV__Code	soapH.h	/^inline struct SOAP_ENV__Code * soap_new_req_SOAP_E/
+soap_new_req_SOAP_ENV__Detail	soapH.h	/^inline struct SOAP_ENV__Detail * soap_new_req_SOAP/
+soap_new_req_SOAP_ENV__Fault	soapH.h	/^inline struct SOAP_ENV__Fault * soap_new_req_SOAP_/
+soap_new_req_SOAP_ENV__Header	soapH.h	/^inline struct SOAP_ENV__Header * soap_new_req_SOAP/
+soap_new_req_SOAP_ENV__Reason	soapH.h	/^inline struct SOAP_ENV__Reason * soap_new_req_SOAP/
+soap_new_req__xop__Include	soapH.h	/^inline struct _xop__Include * soap_new_req__xop__I/
+soap_new_req_ns__GetData	soapH.h	/^inline struct ns__GetData * soap_new_req_ns__GetDa/
+soap_new_req_ns__GetDataResponse	soapH.h	/^inline struct ns__GetDataResponse * soap_new_req_n/
+soap_new_req_ns__MsgItem	soapH.h	/^inline struct ns__MsgItem * soap_new_req_ns__MsgIt/
+soap_new_req_ns__MsgList	soapH.h	/^inline struct ns__MsgList * soap_new_req_ns__MsgLi/
+soap_new_req_ns__PutData	soapH.h	/^inline struct ns__PutData * soap_new_req_ns__PutDa/
+soap_new_req_ns__PutDataResponse	soapH.h	/^inline struct ns__PutDataResponse * soap_new_req_n/
+soap_new_req_ns__ResultItem	soapH.h	/^inline struct ns__ResultItem * soap_new_req_ns__Re/
+soap_new_req_ns__ResultList	soapH.h	/^inline struct ns__ResultList * soap_new_req_ns__Re/
+soap_new_req_ns__upload_message	soapH.h	/^inline struct ns__upload_message * soap_new_req_ns/
+soap_new_req_ns__upload_messageResponse	soapH.h	/^inline struct ns__upload_messageResponse * soap_ne/
+soap_new_req_x__Data	soapH.h	/^inline struct x__Data * soap_new_req_x__Data(struc/
+soap_new_req_x__DataSet	soapH.h	/^inline struct x__DataSet * soap_new_req_x__DataSet/
+soap_new_req_x__Keys	soapH.h	/^inline struct x__Keys * soap_new_req_x__Keys(struc/
+soap_new_req_xmime5__base64Binary	soapH.h	/^inline struct xmime5__base64Binary * soap_new_req_/
+soap_new_set_SOAP_ENV__Code	soapH.h	/^inline struct SOAP_ENV__Code * soap_new_set_SOAP_E/
+soap_new_set_SOAP_ENV__Detail	soapH.h	/^inline struct SOAP_ENV__Detail * soap_new_set_SOAP/
+soap_new_set_SOAP_ENV__Fault	soapH.h	/^inline struct SOAP_ENV__Fault * soap_new_set_SOAP_/
+soap_new_set_SOAP_ENV__Header	soapH.h	/^inline struct SOAP_ENV__Header * soap_new_set_SOAP/
+soap_new_set_SOAP_ENV__Reason	soapH.h	/^inline struct SOAP_ENV__Reason * soap_new_set_SOAP/
+soap_new_set__xop__Include	soapH.h	/^inline struct _xop__Include * soap_new_set__xop__I/
+soap_new_set_ns__GetData	soapH.h	/^inline struct ns__GetData * soap_new_set_ns__GetDa/
+soap_new_set_ns__GetDataResponse	soapH.h	/^inline struct ns__GetDataResponse * soap_new_set_n/
+soap_new_set_ns__MsgItem	soapH.h	/^inline struct ns__MsgItem * soap_new_set_ns__MsgIt/
+soap_new_set_ns__MsgList	soapH.h	/^inline struct ns__MsgList * soap_new_set_ns__MsgLi/
+soap_new_set_ns__PutData	soapH.h	/^inline struct ns__PutData * soap_new_set_ns__PutDa/
+soap_new_set_ns__PutDataResponse	soapH.h	/^inline struct ns__PutDataResponse * soap_new_set_n/
+soap_new_set_ns__ResultItem	soapH.h	/^inline struct ns__ResultItem * soap_new_set_ns__Re/
+soap_new_set_ns__ResultList	soapH.h	/^inline struct ns__ResultList * soap_new_set_ns__Re/
+soap_new_set_ns__upload_message	soapH.h	/^inline struct ns__upload_message * soap_new_set_ns/
+soap_new_set_ns__upload_messageResponse	soapH.h	/^inline struct ns__upload_messageResponse * soap_ne/
+soap_new_set_x__Data	soapH.h	/^inline struct x__Data * soap_new_set_x__Data(struc/
+soap_new_set_x__DataSet	soapH.h	/^inline struct x__DataSet * soap_new_set_x__DataSet/
+soap_new_set_x__Keys	soapH.h	/^inline struct x__Keys * soap_new_set_x__Keys(struc/
+soap_new_set_xmime5__base64Binary	soapH.h	/^inline struct xmime5__base64Binary * soap_new_set_/
+soap_new_x__Data	soapH.h	/^inline struct x__Data * soap_new_x__Data(struct so/
+soap_new_x__DataSet	soapH.h	/^inline struct x__DataSet * soap_new_x__DataSet(str/
+soap_new_x__Keys	soapH.h	/^inline struct x__Keys * soap_new_x__Keys(struct so/
+soap_new_xmime5__base64Binary	soapH.h	/^inline struct xmime5__base64Binary * soap_new_xmim/
+soap_next_block	stdsoap2.cpp	/^soap_next_block(struct soap *soap, struct soap_bli/
+soap_next_multipart	stdsoap2.cpp	/^soap_next_multipart(struct soap_multipart *content/
+soap_nlist	stdsoap2.h	1554
+soap_notblank	stdsoap2.cpp	/^#define soap_notblank(c)	((c) > 32)$/
+soap_ntlm_handshake	stdsoap2.cpp	/^soap_ntlm_handshake(struct soap *soap, int command/
+soap_omode	stdsoap2.h	/^#define soap_omode(soap, n) ((soap)->omode = (n))$/
+soap_open_logfile	stdsoap2.cpp	/^soap_open_logfile(struct soap *soap, int i)$/
+soap_outLONG64	stdsoap2.cpp	/^soap_outLONG64(struct soap *soap, const char *tag,/
+soap_outULONG64	stdsoap2.cpp	/^soap_outULONG64(struct soap *soap, const char *tag/
+soap_out_PointerToPointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToPointe/
+soap_out_PointerToSOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToSOAP_E/
+soap_out_PointerToSOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToSOAP_E/
+soap_out_PointerToSOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToSOAP_E/
+soap_out_PointerToint	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerToint(st/
+soap_out_PointerTons__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTons__Ge/
+soap_out_PointerTons__MsgItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTons__Ms/
+soap_out_PointerTons__MsgList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTons__Ms/
+soap_out_PointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTons__Re/
+soap_out_PointerTons__ResultList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTons__Re/
+soap_out_PointerTostring	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTostring/
+soap_out_PointerTounsignedByte	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTounsign/
+soap_out_PointerTox__Data	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTox__Dat/
+soap_out_PointerTox__DataSet	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTox__Dat/
+soap_out_PointerTox__Keys	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_PointerTox__Key/
+soap_out_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_SOAP_ENV__Code(/
+soap_out_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_SOAP_ENV__Detai/
+soap_out_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_SOAP_ENV__Fault/
+soap_out_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_SOAP_ENV__Heade/
+soap_out_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_SOAP_ENV__Reaso/
+soap_out__QName	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out__QName(struct s/
+soap_out__xop__Include	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out__xop__Include(s/
+soap_out_byte	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_byte(struct soa/
+soap_out_double	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_double(struct s/
+soap_out_int	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_int(struct soap/
+soap_out_long	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_long(struct soa/
+soap_out_ns__GetData	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__GetData(str/
+soap_out_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__GetDataResp/
+soap_out_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__MsgItem(str/
+soap_out_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__MsgList(str/
+soap_out_ns__PutData	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__PutData(str/
+soap_out_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__PutDataResp/
+soap_out_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__ResultItem(/
+soap_out_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__ResultList(/
+soap_out_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__upload_mess/
+soap_out_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__upload_mess/
+soap_out_string	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_string(struct s/
+soap_out_unsignedByte	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_unsignedByte(st/
+soap_out_unsignedInt	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_unsignedInt(str/
+soap_out_unsignedLong	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_unsignedLong(st/
+soap_out_x__Data	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_x__Data(struct /
+soap_out_x__DataSet	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_x__DataSet(stru/
+soap_out_x__Keys	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_x__Keys(struct /
+soap_out_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_xmime5__base64B/
+soap_out_xsd__double	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_out_xsd__double(str/
+soap_outbyte	stdsoap2.cpp	/^soap_outbyte(struct soap *soap, const char *tag, i/
+soap_outdateTime	stdsoap2.cpp	/^soap_outdateTime(struct soap *soap, const char *ta/
+soap_outdouble	stdsoap2.cpp	/^soap_outdouble(struct soap *soap, const char *tag,/
+soap_outfloat	stdsoap2.cpp	/^soap_outfloat(struct soap *soap, const char *tag, /
+soap_outint	stdsoap2.cpp	/^soap_outint(struct soap *soap, const char *tag, in/
+soap_outliteral	stdsoap2.cpp	/^soap_outliteral(struct soap *soap, const char *tag/
+soap_outlong	stdsoap2.cpp	/^soap_outlong(struct soap *soap, const char *tag, i/
+soap_outshort	stdsoap2.cpp	/^soap_outshort(struct soap *soap, const char *tag, /
+soap_outstring	stdsoap2.cpp	/^soap_outstring(struct soap *soap, const char *tag,/
+soap_outunsignedByte	stdsoap2.cpp	/^soap_outunsignedByte(struct soap *soap, const char/
+soap_outunsignedInt	stdsoap2.cpp	/^soap_outunsignedInt(struct soap *soap, const char /
+soap_outunsignedLong	stdsoap2.cpp	/^soap_outunsignedLong(struct soap *soap, const char/
+soap_outunsignedShort	stdsoap2.cpp	/^soap_outunsignedShort(struct soap *soap, const cha/
+soap_outwliteral	stdsoap2.cpp	/^soap_outwliteral(struct soap *soap, const char *ta/
+soap_outwstring	stdsoap2.cpp	/^soap_outwstring(struct soap *soap, const char *tag/
+soap_padding	stdsoap2.cpp	320
+soap_pblk	stdsoap2.h	1587
+soap_peek_element	stdsoap2.cpp	/^soap_peek_element(struct soap *soap)$/
+soap_plist	stdsoap2.h	1576
+soap_plugin	stdsoap2.h	2183
+soap_plugin::data	stdsoap2.h	2186
+soap_plugin::id	stdsoap2.h	2185
+soap_plugin::next	stdsoap2.h	2184
+soap_pointer_enter	stdsoap2.cpp	/^soap_pointer_enter(struct soap *soap, const void */
+soap_pointer_lookup	stdsoap2.cpp	/^soap_pointer_lookup(struct soap *soap, const void /
+soap_poll	stdsoap2.cpp	/^soap_poll(struct soap *soap)$/
+soap_pop_block	stdsoap2.cpp	/^soap_pop_block(struct soap *soap, struct soap_blis/
+soap_pop_namespace	stdsoap2.cpp	/^soap_pop_namespace(struct soap *soap)$/
+soap_post_check_mime_attachments	stdsoap2.cpp	/^soap_post_check_mime_attachments(struct soap *soap/
+soap_print_fault	stdsoap2.cpp	/^soap_print_fault(struct soap *soap, FILE *fd)$/
+soap_print_fault_location	stdsoap2.cpp	/^soap_print_fault_location(struct soap *soap, FILE /
+soap_push_block	stdsoap2.cpp	/^soap_push_block(struct soap *soap, struct soap_bli/
+soap_push_namespace	stdsoap2.cpp	/^soap_push_namespace(struct soap *soap, const char /
+soap_push_ns	stdsoap2.cpp	/^soap_push_ns(struct soap *soap, const char *id, co/
+soap_put_PointerToPointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerToPointe/
+soap_put_PointerToSOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerToSOAP_E/
+soap_put_PointerToSOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerToSOAP_E/
+soap_put_PointerToSOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerToSOAP_E/
+soap_put_PointerToint	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerToint(st/
+soap_put_PointerTons__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTons__Ge/
+soap_put_PointerTons__MsgItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTons__Ms/
+soap_put_PointerTons__MsgList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTons__Ms/
+soap_put_PointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTons__Re/
+soap_put_PointerTons__ResultList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTons__Re/
+soap_put_PointerTostring	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTostring/
+soap_put_PointerTounsignedByte	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTounsign/
+soap_put_PointerTox__Data	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTox__Dat/
+soap_put_PointerTox__DataSet	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTox__Dat/
+soap_put_PointerTox__Keys	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_PointerTox__Key/
+soap_put_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_SOAP_ENV__Code(/
+soap_put_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_SOAP_ENV__Detai/
+soap_put_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_SOAP_ENV__Fault/
+soap_put_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_SOAP_ENV__Heade/
+soap_put_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_SOAP_ENV__Reaso/
+soap_put__QName	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put__QName(struct s/
+soap_put__xop__Include	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put__xop__Include(s/
+soap_put_byte	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_byte(struct soa/
+soap_put_double	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_double(struct s/
+soap_put_int	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_int(struct soap/
+soap_put_long	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_long(struct soa/
+soap_put_ns__GetData	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__GetData(str/
+soap_put_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__GetDataResp/
+soap_put_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__MsgItem(str/
+soap_put_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__MsgList(str/
+soap_put_ns__PutData	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__PutData(str/
+soap_put_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__PutDataResp/
+soap_put_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__ResultItem(/
+soap_put_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__ResultList(/
+soap_put_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__upload_mess/
+soap_put_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_ns__upload_mess/
+soap_put_string	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_string(struct s/
+soap_put_unsignedByte	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_unsignedByte(st/
+soap_put_unsignedInt	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_unsignedInt(str/
+soap_put_unsignedLong	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_unsignedLong(st/
+soap_put_x__Data	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_x__Data(struct /
+soap_put_x__DataSet	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_x__DataSet(stru/
+soap_put_x__Keys	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_x__Keys(struct /
+soap_put_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_xmime5__base64B/
+soap_put_xsd__double	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_put_xsd__double(str/
+soap_putbase64	stdsoap2.cpp	/^soap_putbase64(struct soap *soap, const unsigned c/
+soap_putcookies	stdsoap2.cpp	/^soap_putcookies(struct soap *soap, const char *dom/
+soap_putdime	stdsoap2.cpp	/^soap_putdime(struct soap *soap)$/
+soap_putdimefield	stdsoap2.cpp	/^soap_putdimefield(struct soap *soap, const char *s/
+soap_putdimehdr	stdsoap2.cpp	/^soap_putdimehdr(struct soap *soap)$/
+soap_putelement	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_putelement(struct s/
+soap_putfault	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_putfault(struct soa/
+soap_putheader	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_putheader(struct so/
+soap_puthex	stdsoap2.cpp	/^soap_puthex(struct soap *soap, const unsigned char/
+soap_puthttphdr	stdsoap2.cpp	/^soap_puthttphdr(struct soap *soap, int status, siz/
+soap_putindependent	soapC.cpp	/^SOAP_FMAC3 int SOAP_FMAC4 soap_putindependent(stru/
+soap_putindependent	stdsoap2.h	/^# define soap_putindependent(s) (0)$/
+soap_putmime	stdsoap2.cpp	/^soap_putmime(struct soap *soap)$/
+soap_putmimehdr	stdsoap2.cpp	/^soap_putmimehdr(struct soap *soap, struct soap_mul/
+soap_putoffset	stdsoap2.cpp	/^soap_putoffset(struct soap *soap, int offset)$/
+soap_putoffsets	stdsoap2.cpp	/^soap_putoffsets(struct soap *soap, const int *offs/
+soap_putsetcookies	stdsoap2.cpp	/^soap_putsetcookies(struct soap *soap)$/
+soap_putsize	stdsoap2.cpp	/^soap_putsize(struct soap *soap, const char *type, /
+soap_putsizes	stdsoap2.cpp	/^soap_putsizes(struct soap *soap, const char *type,/
+soap_putsizesoffsets	stdsoap2.cpp	/^soap_putsizesoffsets(struct soap *soap, const char/
+soap_pututf8	stdsoap2.cpp	/^soap_pututf8(struct soap *soap, register unsigned /
+soap_rand	stdsoap2.cpp	/^soap_rand()$/
+soap_random	stdsoap2.h	2260
+soap_random	stdsoap2.h	2263
+soap_random	stdsoap2.h	2265
+soap_read_PointerToPointerTons__ResultItem	soapH.h	/^#define soap_read_PointerToPointerTons__ResultItem/
+soap_read_PointerToSOAP_ENV__Code	soapH.h	/^#define soap_read_PointerToSOAP_ENV__Code(soap, da/
+soap_read_PointerToSOAP_ENV__Detail	soapH.h	/^#define soap_read_PointerToSOAP_ENV__Detail(soap, /
+soap_read_PointerToSOAP_ENV__Reason	soapH.h	/^#define soap_read_PointerToSOAP_ENV__Reason(soap, /
+soap_read_PointerToint	soapH.h	/^#define soap_read_PointerToint(soap, data) ( soap_/
+soap_read_PointerTons__GetDataResponse	soapH.h	/^#define soap_read_PointerTons__GetDataResponse(soa/
+soap_read_PointerTons__MsgItem	soapH.h	/^#define soap_read_PointerTons__MsgItem(soap, data)/
+soap_read_PointerTons__MsgList	soapH.h	/^#define soap_read_PointerTons__MsgList(soap, data)/
+soap_read_PointerTons__ResultItem	soapH.h	/^#define soap_read_PointerTons__ResultItem(soap, da/
+soap_read_PointerTons__ResultList	soapH.h	/^#define soap_read_PointerTons__ResultList(soap, da/
+soap_read_PointerTostring	soapH.h	/^#define soap_read_PointerTostring(soap, data) ( so/
+soap_read_PointerTounsignedByte	soapH.h	/^#define soap_read_PointerTounsignedByte(soap, data/
+soap_read_PointerTox__Data	soapH.h	/^#define soap_read_PointerTox__Data(soap, data) ( s/
+soap_read_PointerTox__DataSet	soapH.h	/^#define soap_read_PointerTox__DataSet(soap, data) /
+soap_read_PointerTox__Keys	soapH.h	/^#define soap_read_PointerTox__Keys(soap, data) ( s/
+soap_read_SOAP_ENV__Code	soapH.h	/^#define soap_read_SOAP_ENV__Code(soap, data) ( soa/
+soap_read_SOAP_ENV__Detail	soapH.h	/^#define soap_read_SOAP_ENV__Detail(soap, data) ( s/
+soap_read_SOAP_ENV__Fault	soapH.h	/^#define soap_read_SOAP_ENV__Fault(soap, data) ( so/
+soap_read_SOAP_ENV__Header	soapH.h	/^#define soap_read_SOAP_ENV__Header(soap, data) ( s/
+soap_read_SOAP_ENV__Reason	soapH.h	/^#define soap_read_SOAP_ENV__Reason(soap, data) ( s/
+soap_read__QName	soapH.h	/^#define soap_read__QName(soap, data) ( soap_begin_/
+soap_read__xop__Include	soapH.h	/^#define soap_read__xop__Include(soap, data) ( soap/
+soap_read_byte	soapH.h	/^#define soap_read_byte(soap, data) ( soap_begin_re/
+soap_read_double	soapH.h	/^#define soap_read_double(soap, data) ( soap_begin_/
+soap_read_int	soapH.h	/^#define soap_read_int(soap, data) ( soap_begin_rec/
+soap_read_long	soapH.h	/^#define soap_read_long(soap, data) ( soap_begin_re/
+soap_read_ns__GetData	soapH.h	/^#define soap_read_ns__GetData(soap, data) ( soap_b/
+soap_read_ns__GetDataResponse	soapH.h	/^#define soap_read_ns__GetDataResponse(soap, data) /
+soap_read_ns__MsgItem	soapH.h	/^#define soap_read_ns__MsgItem(soap, data) ( soap_b/
+soap_read_ns__MsgList	soapH.h	/^#define soap_read_ns__MsgList(soap, data) ( soap_b/
+soap_read_ns__PutData	soapH.h	/^#define soap_read_ns__PutData(soap, data) ( soap_b/
+soap_read_ns__PutDataResponse	soapH.h	/^#define soap_read_ns__PutDataResponse(soap, data) /
+soap_read_ns__ResultItem	soapH.h	/^#define soap_read_ns__ResultItem(soap, data) ( soa/
+soap_read_ns__ResultList	soapH.h	/^#define soap_read_ns__ResultList(soap, data) ( soa/
+soap_read_ns__upload_message	soapH.h	/^#define soap_read_ns__upload_message(soap, data) (/
+soap_read_ns__upload_messageResponse	soapH.h	/^#define soap_read_ns__upload_messageResponse(soap,/
+soap_read_string	soapH.h	/^#define soap_read_string(soap, data) ( soap_begin_/
+soap_read_unsignedByte	soapH.h	/^#define soap_read_unsignedByte(soap, data) ( soap_/
+soap_read_unsignedInt	soapH.h	/^#define soap_read_unsignedInt(soap, data) ( soap_b/
+soap_read_unsignedLong	soapH.h	/^#define soap_read_unsignedLong(soap, data) ( soap_/
+soap_read_x__Data	soapH.h	/^#define soap_read_x__Data(soap, data) ( soap_begin/
+soap_read_x__DataSet	soapH.h	/^#define soap_read_x__DataSet(soap, data) ( soap_be/
+soap_read_x__Keys	soapH.h	/^#define soap_read_x__Keys(soap, data) ( soap_begin/
+soap_read_xmime5__base64Binary	soapH.h	/^#define soap_read_xmime5__base64Binary(soap, data)/
+soap_read_xsd__double	soapH.h	/^#define soap_read_xsd__double(soap, data) ( soap_b/
+soap_receiver_fault	stdsoap2.cpp	/^soap_receiver_fault(struct soap *soap, const char /
+soap_receiver_fault_subcode	stdsoap2.cpp	/^soap_receiver_fault_subcode(struct soap *soap, con/
+soap_recv	stdsoap2.cpp	/^soap_recv(struct soap *soap)$/
+soap_recv_empty_response	stdsoap2.cpp	/^soap_recv_empty_response(struct soap *soap)$/
+soap_recv_fault	stdsoap2.cpp	/^soap_recv_fault(struct soap *soap, int check)$/
+soap_recv_header	stdsoap2.cpp	/^soap_recv_header(struct soap *soap)$/
+soap_recv_raw	stdsoap2.cpp	/^soap_recv_raw(struct soap *soap)$/
+soap_reference	stdsoap2.cpp	/^soap_reference(struct soap *soap, const void *p, i/
+soap_reference	stdsoap2.h	/^# define soap_reference(s, a, t) (1)$/
+soap_register_plugin	stdsoap2.h	/^#define soap_register_plugin(soap, plugin) soap_re/
+soap_register_plugin_arg	stdsoap2.cpp	/^soap_register_plugin_arg(struct soap *soap, int (*/
+soap_reset_errno	stdsoap2.h	985
+soap_reset_errno	stdsoap2.h	989
+soap_reset_errno	stdsoap2.h	995
+soap_reset_errno	stdsoap2.h	999
+soap_resolve	stdsoap2.cpp	/^soap_resolve(struct soap *soap)$/
+soap_resolve_attachment	stdsoap2.cpp	/^soap_resolve_attachment(struct soap *soap, struct /
+soap_response	stdsoap2.cpp	/^soap_response(struct soap *soap, int status)$/
+soap_retry	stdsoap2.cpp	/^soap_retry(struct soap *soap)$/
+soap_revert	stdsoap2.cpp	/^soap_revert(struct soap *soap)$/
+soap_revget1	stdsoap2.h	/^#define soap_revget1(soap) ((soap)->bufidx--)$/
+soap_rpc	stdsoap2.cpp	300
+soap_s2LONG64	stdsoap2.cpp	/^soap_s2LONG64(struct soap *soap, const char *s, LO/
+soap_s2QName	stdsoap2.cpp	/^soap_s2QName(struct soap *soap, const char *s, cha/
+soap_s2ULONG64	stdsoap2.cpp	/^soap_s2ULONG64(struct soap *soap, const char *s, U/
+soap_s2base64	stdsoap2.cpp	/^soap_s2base64(struct soap *soap, const unsigned ch/
+soap_s2byte	stdsoap2.cpp	/^soap_s2byte(struct soap *soap, const char *s, char/
+soap_s2dateTime	stdsoap2.cpp	/^soap_s2dateTime(struct soap *soap, const char *s, /
+soap_s2double	stdsoap2.cpp	/^soap_s2double(struct soap *soap, const char *s, do/
+soap_s2float	stdsoap2.cpp	/^soap_s2float(struct soap *soap, const char *s, flo/
+soap_s2hex	stdsoap2.cpp	/^soap_s2hex(struct soap *soap, const unsigned char /
+soap_s2int	stdsoap2.cpp	/^soap_s2int(struct soap *soap, const char *s, int */
+soap_s2long	stdsoap2.cpp	/^soap_s2long(struct soap *soap, const char *s, long/
+soap_s2short	stdsoap2.cpp	/^soap_s2short(struct soap *soap, const char *s, sho/
+soap_s2string	stdsoap2.cpp	/^soap_s2string(struct soap *soap, const char *s, ch/
+soap_s2unsignedByte	stdsoap2.cpp	/^soap_s2unsignedByte(struct soap *soap, const char /
+soap_s2unsignedInt	stdsoap2.cpp	/^soap_s2unsignedInt(struct soap *soap, const char */
+soap_s2unsignedLong	stdsoap2.cpp	/^soap_s2unsignedLong(struct soap *soap, const char /
+soap_s2unsignedShort	stdsoap2.cpp	/^soap_s2unsignedShort(struct soap *soap, const char/
+soap_s2wchar	stdsoap2.cpp	/^soap_s2wchar(struct soap *soap, const char *s, wch/
+soap_save_block	stdsoap2.cpp	/^soap_save_block(struct soap *soap, struct soap_bli/
+soap_select_mime_boundary	stdsoap2.cpp	/^soap_select_mime_boundary(struct soap *soap)$/
+soap_send	stdsoap2.cpp	/^soap_send(struct soap *soap, const char *s)$/
+soap_send2	stdsoap2.cpp	/^soap_send2(struct soap *soap, const char *s1, cons/
+soap_send3	stdsoap2.cpp	/^soap_send3(struct soap *soap, const char *s1, cons/
+soap_send_empty_response	stdsoap2.cpp	/^soap_send_empty_response(struct soap *soap, int ht/
+soap_send_fault	stdsoap2.cpp	/^soap_send_fault(struct soap *soap)$/
+soap_send_raw	stdsoap2.cpp	/^soap_send_raw(struct soap *soap, const char *s, si/
+soap_sender_fault	stdsoap2.cpp	/^soap_sender_fault(struct soap *soap, const char *f/
+soap_sender_fault_subcode	stdsoap2.cpp	/^soap_sender_fault_subcode(struct soap *soap, const/
+soap_serialize_PointerToPointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerToSOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerToSOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerToSOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerToint	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTons__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTons__MsgItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTons__MsgList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTons__ResultItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTons__ResultList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTostring	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTounsignedByte	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTox__Data	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTox__DataSet	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_PointerTox__Keys	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_PointerT/
+soap_serialize_SOAP_ENV__Code	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV/
+soap_serialize_SOAP_ENV__Detail	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV/
+soap_serialize_SOAP_ENV__Fault	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV/
+soap_serialize_SOAP_ENV__Header	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV/
+soap_serialize_SOAP_ENV__Reason	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_SOAP_ENV/
+soap_serialize__QName	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize__QName(s/
+soap_serialize__xop__Include	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize__xop__In/
+soap_serialize_ns__GetData	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__GetD/
+soap_serialize_ns__GetDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__GetD/
+soap_serialize_ns__MsgItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__MsgI/
+soap_serialize_ns__MsgList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__MsgL/
+soap_serialize_ns__PutData	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__PutD/
+soap_serialize_ns__PutDataResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__PutD/
+soap_serialize_ns__ResultItem	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__Resu/
+soap_serialize_ns__ResultList	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__Resu/
+soap_serialize_ns__upload_message	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__uplo/
+soap_serialize_ns__upload_messageResponse	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__uplo/
+soap_serialize_string	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_string(s/
+soap_serialize_x__Data	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_x__Data(/
+soap_serialize_x__DataSet	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_x__DataS/
+soap_serialize_x__Keys	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_x__Keys(/
+soap_serialize_xmime5__base64Binary	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_xmime5__/
+soap_serializefault	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serializefault(str/
+soap_serializeheader	soapC.cpp	/^SOAP_FMAC3 void SOAP_FMAC4 soap_serializeheader(st/
+soap_serve	soapServer.cpp	/^extern "C" SOAP_FMAC5 int SOAP_FMAC6 soap_serve(st/
+soap_serve_ns__GetData	soapServer.cpp	/^SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__GetData(s/
+soap_serve_ns__PutData	soapServer.cpp	/^SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__PutData(s/
+soap_serve_ns__upload_message	soapServer.cpp	/^SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__upload_me/
+soap_serve_request	soapServer.cpp	/^extern "C" SOAP_FMAC5 int SOAP_FMAC6 soap_serve_re/
+soap_set_attr	stdsoap2.cpp	/^soap_set_attr(struct soap *soap, const char *name,/
+soap_set_cookie	stdsoap2.cpp	/^soap_set_cookie(struct soap *soap, const char *nam/
+soap_set_cookie_expire	stdsoap2.cpp	/^soap_set_cookie_expire(struct soap *soap, const ch/
+soap_set_cookie_session	stdsoap2.cpp	/^soap_set_cookie_session(struct soap *soap, const c/
+soap_set_dime	stdsoap2.cpp	/^soap_set_dime(struct soap *soap)$/
+soap_set_dime_attachment	stdsoap2.cpp	/^soap_set_dime_attachment(struct soap *soap, char */
+soap_set_embedded	stdsoap2.cpp	/^soap_set_embedded(struct soap *soap, struct soap_p/
+soap_set_endpoint	stdsoap2.cpp	/^soap_set_endpoint(struct soap *soap, const char *e/
+soap_set_error	stdsoap2.cpp	/^soap_set_error(struct soap *soap, const char *faul/
+soap_set_fault	stdsoap2.cpp	/^soap_set_fault(struct soap *soap)$/
+soap_set_imode	stdsoap2.h	/^#define soap_set_imode(soap, n) ((soap)->imode |= /
+soap_set_local_namespaces	stdsoap2.cpp	/^soap_set_local_namespaces(struct soap *soap)$/
+soap_set_logfile	stdsoap2.cpp	/^soap_set_logfile(struct soap *soap, int i, const c/
+soap_set_mime	stdsoap2.cpp	/^soap_set_mime(struct soap *soap, const char *bound/
+soap_set_mime_attachment	stdsoap2.cpp	/^soap_set_mime_attachment(struct soap *soap, char */
+soap_set_mode	stdsoap2.h	/^#define soap_set_mode(soap, n) ((soap)->imode |= (/
+soap_set_namespaces	stdsoap2.cpp	/^soap_set_namespaces(struct soap *soap, const struc/
+soap_set_omode	stdsoap2.h	/^#define soap_set_omode(soap, n) ((soap)->omode |= /
+soap_set_receiver_error	stdsoap2.cpp	/^soap_set_receiver_error(struct soap *soap, const c/
+soap_set_recv_logfile	stdsoap2.cpp	/^soap_set_recv_logfile(struct soap *soap, const cha/
+soap_set_sender_error	stdsoap2.cpp	/^soap_set_sender_error(struct soap *soap, const cha/
+soap_set_sent_logfile	stdsoap2.cpp	/^soap_set_sent_logfile(struct soap *soap, const cha/
+soap_set_test_logfile	stdsoap2.cpp	/^soap_set_test_logfile(struct soap *soap, const cha/
+soap_set_validation_fault	stdsoap2.cpp	/^soap_set_validation_fault(struct soap *soap, const/
+soap_set_version	stdsoap2.cpp	/^soap_set_version(struct soap *soap, short version)/
+soap_short2s	stdsoap2.cpp	/^soap_short2s(struct soap *soap, short n)$/
+soap_size	stdsoap2.cpp	/^soap_size(const int *size, int dim)$/
+soap_size_block	stdsoap2.cpp	/^soap_size_block(struct soap *soap, struct soap_bli/
+soap_snprintf	stdsoap2.h	1211
+soap_snprintf	stdsoap2.h	1213
+soap_soap_error_check	stdsoap2.h	/^#define soap_soap_error_check(e) ((e) == SOAP_CLI_/
+soap_socket_errno	stdsoap2.h	/^#  define soap_socket_errno(s) GetLastError()$/
+soap_socket_errno	stdsoap2.h	/^#  define soap_socket_errno(s) WSAGetLastError()$/
+soap_socket_errno	stdsoap2.h	/^#  define soap_socket_errno(s) errno$/
+soap_socket_errno	stdsoap2.h	/^#  define soap_socket_errno(s) 0$/
+soap_sprint_fault	stdsoap2.cpp	/^soap_sprint_fault(struct soap *soap, char *buf, si/
+soap_ssl_accept	stdsoap2.cpp	/^soap_ssl_accept(struct soap *soap)$/
+soap_ssl_client_context	stdsoap2.cpp	/^soap_ssl_client_context(struct soap *soap, unsigne/
+soap_ssl_error	stdsoap2.cpp	/^soap_ssl_error(struct soap *soap, int ret)$/
+soap_ssl_error_check	stdsoap2.h	/^#define soap_ssl_error_check(e) ((e) == SOAP_SSL_E/
+soap_ssl_init	stdsoap2.cpp	/^soap_ssl_init()$/
+soap_ssl_init_done	stdsoap2.cpp	175
+soap_ssl_init_done	stdsoap2.cpp	186
+soap_ssl_server_context	stdsoap2.cpp	/^soap_ssl_server_context(struct soap *soap, unsigne/
+soap_status	stdsoap2.h	1219
+soap_store_lab	stdsoap2.cpp	/^soap_store_lab(struct soap *soap, const char *s, s/
+soap_strdup	stdsoap2.cpp	/^soap_strdup(struct soap *soap, const char *s)$/
+soap_stream_fault	stdsoap2.cpp	/^soap_stream_fault(struct soap *soap, std::ostream&/
+soap_strerror	stdsoap2.cpp	/^soap_strerror(struct soap *soap)$/
+soap_string_in	stdsoap2.cpp	/^soap_string_in(struct soap *soap, int flag, long m/
+soap_string_out	stdsoap2.cpp	/^soap_string_out(struct soap *soap, const char *s, /
+soap_strrchr	stdsoap2.cpp	/^soap_strrchr(const char *s, int t)$/
+soap_strrchr	stdsoap2.h	/^# define soap_strrchr(s, t) strrchr(s, t)$/
+soap_strtol	stdsoap2.cpp	/^soap_strtol(const char *s, char **t, int b)$/
+soap_strtol	stdsoap2.h	/^# define soap_strtol(s, t, b) strtol(s, t, b)$/
+soap_strtoll	stdsoap2.h	2248
+soap_strtoll	stdsoap2.h	2250
+soap_strtoul	stdsoap2.cpp	/^soap_strtoul(const char *s, char **t, int b)$/
+soap_strtoul	stdsoap2.h	/^# define soap_strtoul(s, t, b) strtoul(s, t, b)$/
+soap_strtoull	stdsoap2.h	2254
+soap_strtoull	stdsoap2.h	2256
+soap_tag_cmp	stdsoap2.cpp	/^soap_tag_cmp(const char *s, const char *t)$/
+soap_tagsearch	stdsoap2.cpp	/^soap_tagsearch(const char *big, const char *little/
+soap_tcp_error_check	stdsoap2.h	/^#define soap_tcp_error_check(e) ((e) == SOAP_EOF |/
+soap_tell	stdsoap2.cpp	/^soap_tell(struct soap *soap)$/
+soap_timegm	stdsoap2.cpp	/^soap_timegm(struct tm *T)$/
+soap_track_free	stdsoap2.cpp	/^soap_track_free(struct soap *soap, const char *fil/
+soap_track_malloc	stdsoap2.cpp	/^soap_track_malloc(struct soap *soap, const char *f/
+soap_track_unlink	stdsoap2.cpp	/^soap_track_unlink(struct soap *soap, const void *p/
+soap_try_connect_command	stdsoap2.cpp	/^soap_try_connect_command(struct soap *soap, int ht/
+soap_type	soapStub.h	/^	int soap_type() const { return 7; } \/* = unique i/
+soap_type	soapStub.h	/^	int soap_type() const { return 11; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 14; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 15; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 17; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 20; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 26; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 27; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 28; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 29; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 31; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 37; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 38; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 39; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 42; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 43; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 44; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 46; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 49; } \/* = unique /
+soap_type	soapStub.h	/^	int soap_type() const { return 50; } \/* = unique /
+soap_unget	stdsoap2.h	/^#define soap_unget(soap, c) ((soap)->ahead = c)$/
+soap_unlink	stdsoap2.cpp	/^soap_unlink(struct soap *soap, const void *p)$/
+soap_unsignedByte2s	stdsoap2.cpp	/^soap_unsignedByte2s(struct soap *soap, unsigned ch/
+soap_unsignedInt2s	stdsoap2.cpp	/^soap_unsignedInt2s(struct soap *soap, unsigned int/
+soap_unsignedLong2s	stdsoap2.cpp	/^soap_unsignedLong2s(struct soap *soap, unsigned lo/
+soap_unsignedShort2s	stdsoap2.cpp	/^soap_unsignedShort2s(struct soap *soap, unsigned s/
+soap_update_pointers	stdsoap2.cpp	/^soap_update_pointers(struct soap *soap, char *star/
+soap_utilize_ns	stdsoap2.cpp	/^soap_utilize_ns(struct soap *soap, const char *tag/
+soap_valid_mime_boundary	stdsoap2.cpp	/^soap_valid_mime_boundary(struct soap *soap)$/
+soap_valid_socket	stdsoap2.h	/^#define soap_valid_socket(n) ((n) != SOAP_INVALID_/
+soap_value	stdsoap2.cpp	/^soap_value(struct soap *soap)$/
+soap_versioning	stdsoap2.cpp	/^soap_versioning(soap_new)(soap_mode imode, soap_mo/
+soap_versioning	stdsoap2.cpp	/^soap_versioning(soap_init)(struct soap *soap, soap/
+soap_versioning	stdsoap2.h	/^#define soap_versioning(name) soap_versioning_ext(/
+soap_versioning_ext	stdsoap2.h	/^#define soap_versioning_ext(name, ext) soap_versio/
+soap_versioning_paste	stdsoap2.h	/^#define soap_versioning_paste(name, ext) name##_LI/
+soap_walker	stdsoap2.h	2285
+soap_wchar	stdsoap2.h	1543
+soap_wchar2s	stdsoap2.cpp	/^soap_wchar2s(struct soap *soap, const wchar_t *s)$/
+soap_write_PointerToPointerTons__ResultItem	soapH.h	/^#define soap_write_PointerToPointerTons__ResultIte/
+soap_write_PointerToSOAP_ENV__Code	soapH.h	/^#define soap_write_PointerToSOAP_ENV__Code(soap, d/
+soap_write_PointerToSOAP_ENV__Detail	soapH.h	/^#define soap_write_PointerToSOAP_ENV__Detail(soap,/
+soap_write_PointerToSOAP_ENV__Reason	soapH.h	/^#define soap_write_PointerToSOAP_ENV__Reason(soap,/
+soap_write_PointerToint	soapH.h	/^#define soap_write_PointerToint(soap, data) ( soap/
+soap_write_PointerTons__GetDataResponse	soapH.h	/^#define soap_write_PointerTons__GetDataResponse(so/
+soap_write_PointerTons__MsgItem	soapH.h	/^#define soap_write_PointerTons__MsgItem(soap, data/
+soap_write_PointerTons__MsgList	soapH.h	/^#define soap_write_PointerTons__MsgList(soap, data/
+soap_write_PointerTons__ResultItem	soapH.h	/^#define soap_write_PointerTons__ResultItem(soap, d/
+soap_write_PointerTons__ResultList	soapH.h	/^#define soap_write_PointerTons__ResultList(soap, d/
+soap_write_PointerTostring	soapH.h	/^#define soap_write_PointerTostring(soap, data) ( s/
+soap_write_PointerTounsignedByte	soapH.h	/^#define soap_write_PointerTounsignedByte(soap, dat/
+soap_write_PointerTox__Data	soapH.h	/^#define soap_write_PointerTox__Data(soap, data) ( /
+soap_write_PointerTox__DataSet	soapH.h	/^#define soap_write_PointerTox__DataSet(soap, data)/
+soap_write_PointerTox__Keys	soapH.h	/^#define soap_write_PointerTox__Keys(soap, data) ( /
+soap_write_SOAP_ENV__Code	soapH.h	/^#define soap_write_SOAP_ENV__Code(soap, data) ( so/
+soap_write_SOAP_ENV__Detail	soapH.h	/^#define soap_write_SOAP_ENV__Detail(soap, data) ( /
+soap_write_SOAP_ENV__Fault	soapH.h	/^#define soap_write_SOAP_ENV__Fault(soap, data) ( s/
+soap_write_SOAP_ENV__Header	soapH.h	/^#define soap_write_SOAP_ENV__Header(soap, data) ( /
+soap_write_SOAP_ENV__Reason	soapH.h	/^#define soap_write_SOAP_ENV__Reason(soap, data) ( /
+soap_write__QName	soapH.h	/^#define soap_write__QName(soap, data) ( soap_begin/
+soap_write__xop__Include	soapH.h	/^#define soap_write__xop__Include(soap, data) ( soa/
+soap_write_byte	soapH.h	/^#define soap_write_byte(soap, data) ( soap_begin(s/
+soap_write_double	soapH.h	/^#define soap_write_double(soap, data) ( soap_begin/
+soap_write_int	soapH.h	/^#define soap_write_int(soap, data) ( soap_begin(so/
+soap_write_long	soapH.h	/^#define soap_write_long(soap, data) ( soap_begin(s/
+soap_write_ns__GetData	soapH.h	/^#define soap_write_ns__GetData(soap, data) ( soap_/
+soap_write_ns__GetDataResponse	soapH.h	/^#define soap_write_ns__GetDataResponse(soap, data)/
+soap_write_ns__MsgItem	soapH.h	/^#define soap_write_ns__MsgItem(soap, data) ( soap_/
+soap_write_ns__MsgList	soapH.h	/^#define soap_write_ns__MsgList(soap, data) ( soap_/
+soap_write_ns__PutData	soapH.h	/^#define soap_write_ns__PutData(soap, data) ( soap_/
+soap_write_ns__PutDataResponse	soapH.h	/^#define soap_write_ns__PutDataResponse(soap, data)/
+soap_write_ns__ResultItem	soapH.h	/^#define soap_write_ns__ResultItem(soap, data) ( so/
+soap_write_ns__ResultList	soapH.h	/^#define soap_write_ns__ResultList(soap, data) ( so/
+soap_write_ns__upload_message	soapH.h	/^#define soap_write_ns__upload_message(soap, data) /
+soap_write_ns__upload_messageResponse	soapH.h	/^#define soap_write_ns__upload_messageResponse(soap/
+soap_write_string	soapH.h	/^#define soap_write_string(soap, data) ( soap_begin/
+soap_write_unsignedByte	soapH.h	/^#define soap_write_unsignedByte(soap, data) ( soap/
+soap_write_unsignedInt	soapH.h	/^#define soap_write_unsignedInt(soap, data) ( soap_/
+soap_write_unsignedLong	soapH.h	/^#define soap_write_unsignedLong(soap, data) ( soap/
+soap_write_x__Data	soapH.h	/^#define soap_write_x__Data(soap, data) ( soap_begi/
+soap_write_x__DataSet	soapH.h	/^#define soap_write_x__DataSet(soap, data) ( soap_b/
+soap_write_x__Keys	soapH.h	/^#define soap_write_x__Keys(soap, data) ( soap_begi/
+soap_write_xmime5__base64Binary	soapH.h	/^#define soap_write_xmime5__base64Binary(soap, data/
+soap_write_xsd__double	soapH.h	/^#define soap_write_xsd__double(soap, data) ( soap_/
+soap_wstrdup	stdsoap2.cpp	/^soap_wstrdup(struct soap *soap, const wchar_t *s)$/
+soap_wstring_in	stdsoap2.cpp	/^soap_wstring_in(struct soap *soap, int flag, long /
+soap_wstring_out	stdsoap2.cpp	/^soap_wstring_out(struct soap *soap, const wchar_t /
+soap_xlist	stdsoap2.h	1733
+soap_xlist::id	stdsoap2.h	1737
+soap_xlist::next	stdsoap2.h	1734
+soap_xlist::options	stdsoap2.h	1739
+soap_xlist::ptr	stdsoap2.h	1735
+soap_xlist::size	stdsoap2.h	1736
+soap_xlist::type	stdsoap2.h	1738
+soap_xml_error_check	stdsoap2.h	/^#define soap_xml_error_check(e) ((e) == SOAP_TAG_M/
+soap_xop_forward	stdsoap2.cpp	/^soap_xop_forward(struct soap *soap, unsigned char /
+soap_zlib_error_check	stdsoap2.h	/^#define soap_zlib_error_check(e) ((e) == SOAP_ZLIB/
+ssl_auth_init	stdsoap2.cpp	/^ssl_auth_init(struct soap *soap)$/
+ssl_password	stdsoap2.cpp	/^ssl_password(char *buf, int num, int rwflag, void /
+ssl_verify	stdsoap2.cpp	/^ssl_verify(struct soap *soap, const char *host)$/
+ssl_verify_callback	stdsoap2.cpp	/^ssl_verify_callback(int ok, X509_STORE_CTX *store)/
+ssl_verify_callback_allow_expired_certificate	stdsoap2.cpp	/^ssl_verify_callback_allow_expired_certificate(int /
+state	soapStub.h	152
+t_auth_str	client00.cpp	8
+t_auth_str	client_01.cpp	8
+t_auth_str	client_02.cpp	9
+t_auth_str	client_03.cpp	9
+t_auth_str	client_04.cpp	9
+t_auth_str	client_0501.cpp	12
+t_auth_str	client_05.cpp	11
+t_auth_str	client_07.cpp	11
+t_auth_str	client_08.cpp	11
+t_auth_str	client.cpp	13
+t_auth_str	client_net.cpp	9
+tcp_accept	stdsoap2.cpp	/^tcp_accept(struct soap *soap, SOAP_SOCKET s, struc/
+tcp_closesocket	stdsoap2.cpp	/^tcp_closesocket(struct soap *soap, SOAP_SOCKET sk)/
+tcp_connect	stdsoap2.cpp	/^tcp_connect(struct soap *soap, const char *endpoin/
+tcp_disconnect	stdsoap2.cpp	/^tcp_disconnect(struct soap *soap)$/
+tcp_done	stdsoap2.cpp	526
+tcp_error	stdsoap2.cpp	/^tcp_error(struct soap *soap)$/
+tcp_gethost	stdsoap2.cpp	/^tcp_gethost(struct soap *soap, const char *addr, s/
+tcp_init	stdsoap2.cpp	/^tcp_init(struct soap *soap)$/
+tcp_select	stdsoap2.cpp	/^tcp_select(struct soap *soap, SOAP_SOCKET sk, int /
+tcp_shutdownsocket	stdsoap2.cpp	/^tcp_shutdownsocket(struct soap *soap, SOAP_SOCKET /
+trojan_id	client_05.cpp	744
+trojan_id	client_07.cpp	679
+type	client_0501.cpp	812
+type	client_05.cpp	749
+type	client_05.cpp	812
+type	client_07.cpp	684
+type	client_07.cpp	747
+type	client_08.cpp	810
+type	client.cpp	850
+type	connect.h	31
+type	soapStub.h	54
+type	soapStub.h	71
+type	soapStub.h	85
+type	ssl.h	23
+type	stdsoap2.h	1580
+type	stdsoap2.h	1607
+type	xmime5.h	71
+type	xop.h	61
+value	stdsoap2.h	1616
+value	stdsoap2.h	1627
+version	connect.GetData.req.xml	1
+version	connect.GetData.res.xml	1
+version	connect.PutData.req.xml	1
+version	connect.PutData.res.xml	1
+version	connect.wsdl	1
+version	ns2.upload-message.req.xml	1
+version	ns2.upload-message.res.xml	1
+version	ns2.wsdl	1
+version	ns2.xsd	1
+version	ns.xsd	1
+version	ssl.GetData.req.xml	1
+version	ssl.GetData.res.xml	1
+version	ssl.PutData.req.xml	1
+version	ssl.PutData.res.xml	1
+version	ssl.upload-message.req.xml	1
+version	ssl.upload-message.res.xml	1
+version	ssl.wsdl	1
+version	stdsoap2.h	1632
+version	x.xsd	1
+visible	stdsoap2.h	1619
+x__Data	connect.h	12
+x__Data	soapStub.h	162
+x__Data	ssl.h	54
+x__DataSet	connect.h	18
+x__DataSet	soapStub.h	175
+x__DataSet	ssl.h	60
+x__Keys	connect.h	24
+x__Keys	soapStub.h	188
+x__Keys	ssl.h	66
+x__data	soapStub.h	216
+x__data	soapStub.h	231
+x__keys	soapStub.h	217
+x__keys	soapStub.h	243
+xmime5__base64Binary	soapStub.h	65
+xmime5__base64Binary	soapStub.h	76
+xmime5__base64Binary	xmime5.h	67
+xmime5__base64Binary	xmime5.h	74
+xmime5__contentType	connect.h	14
+xmime5__contentType	soapStub.h	166
+xmime5__contentType	ssl.h	56
+xop__Include	connect.h	13
+xop__Include	soapStub.h	165
+xop__Include	ssl.h	55
+xsd__double	soapStub.h	362
+xsd__double	ssl.h	17

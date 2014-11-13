@@ -1,0 +1,237 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALARM	cachestruct.h	3;"	d
+ALERT	cachestruct.h	8;"	d
+AUDIT	cachestruct.h	4;"	d
+BKDRHash	hash.h	/^inline size_t BKDRHash(const char *str)$/;"	f
+BLOCK	cachestruct.h	7;"	d
+CACHE_STRUCT_H	cachestruct.h	2;"	d
+Exit_Client	client.c	/^void Exit_Client()$/;"	f
+FUNCLIST_H	funclist.h	2;"	d
+Func	funclist.h	/^typedef void (*Func)(const struct pcap_pkthdr *hdr,const u_char *data);$/;"	t
+GETOIP_H	geoip.h	2;"	d
+HASHDATA_H	hashdata.h	2;"	d
+HASHSIZE	hashdata.c	16;"	d	file:
+HASH_H	hash.h	2;"	d
+INIT_ALARM_HEAD	cachestruct.h	10;"	d
+INIT_ALERT_HEAD	cachestruct.h	40;"	d
+INIT_AUDIT_HEAD	cachestruct.h	16;"	d
+INIT_BLOCK_HEAD	cachestruct.h	34;"	d
+INIT_H	init.h	2;"	d
+INIT_OPT_HEAD	cachestruct.h	22;"	d
+INIT_SECRET_HEAD	cachestruct.h	28;"	d
+Init_Client	client.c	/^int Init_Client(char* serverip)$/;"	f
+JHASH_GOLDEN_RATIO	hash.h	6;"	d
+JUAGE_IP	juageIP.h	2;"	d
+LOADRULE_H	loadrule.h	2;"	d
+MESSAGE_SIZE	UnTrojan.h	18;"	d
+MODE	loadrule.c	9;"	d	file:
+OPT	cachestruct.h	5;"	d
+RULEFILE	loadrule.c	8;"	d	file:
+RULESIZE	hashdata.c	17;"	d	file:
+RULESIZE	loadrule.c	10;"	d	file:
+SECRET	cachestruct.h	6;"	d
+SERVERPORT	client.h	3;"	d
+Send_Msg	client.c	/^int Send_Msg(char* buff, int len)$/;"	f
+TIMEE	UnTrojan.h	17;"	d
+TIMEE	hashdata.c	19;"	d	file:
+TurnTime	UnTrojan.c	/^void TurnTime(const time_t clock,char *buffer,int size)$/;"	f
+UNKOWN_H	UnTrojan.h	2;"	d
+UNSIZE	UnTrojan.h	16;"	d
+U_trojan	UnTrojan.c	/^unkown_trojan **U_trojan;$/;"	v
+_CLIENT_H_	client.h	2;"	d
+__jhash_mix	hash.h	9;"	d
+addfunc	funclist.c	/^void addfunc()$/;"	f
+addhorse	hashdata.c	/^void addhorse(struct horserule *end, struct iphdr *ip, struct tcphdr *tcp, struct filerule *pos)$/;"	f
+addnode	UnTrojan.c	/^void addnode(uint32_t pos,const struct iphdr *ip,const struct tcphdr *tcp)$/;"	f
+addrule	loadrule.c	/^struct filerule* addrule()$/;"	f
+addrulehorse	hashdata.c	/^void addrulehorse(struct horserule *end,struct iphdr *ip,struct tcphdr *tcp,const u_char *packet)$/;"	f
+alar	hashdata.c	/^void alar(struct horserule *save,const u_char *packet)$/;"	f
+alarm_id	cachestruct.h	/^	char alarm_id[12];$/;"	m	struct:cache_alarm_t
+alarm_time	cachestruct.h	/^	char alarm_time[25];$/;"	m	struct:cache_alert_t
+alarm_time	cachestruct.h	/^	time_t alarm_time;$/;"	m	struct:cache_alarm_t
+alarmutrojan	UnTrojan.c	/^void alarmutrojan(const struct iphdr *ip,const struct tcphdr *tcp)$/;"	f
+alert	UnTrojan.c	/^struct cache_alert_t alert;$/;"	v	typeref:struct:cache_alert_t
+alert_id	cachestruct.h	/^	char alert_id[12];$/;"	m	struct:cache_alert_t
+begin	loadrule.h	/^   int begin;$/;"	m	struct:filerule
+block_desc	cachestruct.h	/^	char block_desc[33];$/;"	m	struct:cache_block_t
+cache_alarm_t	cachestruct.h	/^typedef struct cache_alarm_t$/;"	s
+cache_alarm_t	cachestruct.h	/^}cache_alarm_t;$/;"	t	typeref:struct:cache_alarm_t
+cache_alert_t	cachestruct.h	/^typedef struct cache_alert_t$/;"	s
+cache_alert_t	cachestruct.h	/^}cache_alert_t;$/;"	t	typeref:struct:cache_alert_t
+cache_audit_t	cachestruct.h	/^typedef struct cache_audit_t$/;"	s
+cache_audit_t	cachestruct.h	/^}cache_audit_t;$/;"	t	typeref:struct:cache_audit_t
+cache_block_t	cachestruct.h	/^typedef struct cache_block_t$/;"	s
+cache_block_t	cachestruct.h	/^}cache_block_t;$/;"	t	typeref:struct:cache_block_t
+cache_head_t	cachestruct.h	/^typedef struct cache_head_t$/;"	s
+cache_head_t	cachestruct.h	/^}cache_head_t;$/;"	t	typeref:struct:cache_head_t
+cache_opt_t	cachestruct.h	/^typedef struct cache_opt_t$/;"	s
+cache_opt_t	cachestruct.h	/^}cache_opt_t;$/;"	t	typeref:struct:cache_opt_t
+cache_secret_t	cachestruct.h	/^typedef struct cache_secret_t$/;"	s
+cache_secret_t	cachestruct.h	/^}cache_secret_t;$/;"	t	typeref:struct:cache_secret_t
+clearhash	hashdata.c	/^void clearhash(int alarmTime)$/;"	f
+clearstream	hashdata.c	/^void clearstream(struct horserule *freestr)$/;"	f
+clearun	UnTrojan.c	/^void clearun(struct unkown_trojan *it)$/;"	f
+clearunhash	UnTrojan.c	/^void clearunhash()$/;"	f
+content	hashdata.h	/^  bool content;$/;"	m	struct:stream
+content	loadrule.h	/^   char *content;$/;"	m	struct:filerule
+convert	loadrule.c	/^void convert(const char *src,unsigned char *dest,int length)$/;"	f
+convertbyt	hashdata.c	/^char convertbyt(char t)$/;"	f
+create	hashdata.c	/^void create(uint32_t hashpos, const u_char *packet, uint32_t datalength, struct filerule *pos)$/;"	f
+createHashTable	hashdata.c	/^void createHashTable()$/;"	f
+createhashvalue	hashdata.c	/^void createhashvalue(uint32_t position,struct iphdr* ip,const u_char* packet)$/;"	f
+createmd5	hashdata.c	/^void createmd5(const struct iphdr *ip,uint32_t hashtemp,unsigned char *digest,uint32_t hashtep,unsigned char *summary)$/;"	f
+createmd5c	UnTrojan.c	/^void createmd5c(const struct iphdr *ip,uint32_t hashtemp,unsigned char *digest,uint32_t hashtep,unsigned char *summary)$/;"	f
+createunkown	UnTrojan.c	/^void createunkown()$/;"	f
+current	loadrule.h	/^   int current;$/;"	m	struct:filerule
+datalengthtemp	loadrule.c	/^int datalengthtemp;$/;"	v
+deleteun	UnTrojan.c	/^void deleteun(struct unkown_trojan* it)$/;"	f
+descr	cachestruct.h	/^	char descr[129];$/;"	m	struct:cache_secret_t
+describe	cachestruct.h	/^	char describe[128];$/;"	m	struct:cache_opt_t
+descry	cachestruct.h	/^	char descry[65];$/;"	m	struct:cache_alarm_t
+descry	cachestruct.h	/^	char descry[65];$/;"	m	struct:cache_alert_t
+designtre	hashdata.c	/^void designtre(struct horserule *tr,const u_char *packet)$/;"	f
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_alarm_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_alert_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_block_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_secret_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_alarm_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_alert_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_block_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_secret_t
+dip	cachestruct.h	/^	uint32_t dip;$/;"	m	struct:cache_audit_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_alarm_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_alert_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_secret_t
+dmac	hashdata.h	/^   char dmac[20];$/;"	m	struct:horserule
+dnshash	cachestruct.h	/^	char dnshash[33];$/;"	m	struct:cache_alert_t
+down_KB	cachestruct.h	/^	float	 down_KB;$/;"	m	struct:cache_audit_t
+download	UnTrojan.h	/^    size_t download;$/;"	m	struct:unkown_trojan
+dport	cachestruct.h	/^	uint16_t dport;$/;"	m	struct:cache_audit_t
+dport	cachestruct.h	/^	uint32_t dport;$/;"	m	struct:cache_alert_t
+dport	cachestruct.h	/^	uint32_t dport;$/;"	m	struct:cache_secret_t
+end_time	cachestruct.h	/^	time_t   end_time;$/;"	m	struct:cache_audit_t
+endip	geoip.h	/^    char endip[15];$/;"	m	struct:ipaddr
+enterprocess	hashdata.c	/^void enterprocess(const struct pcap_pkthdr *head,const u_char *packet)$/;"	f
+enterunkprocess	UnTrojan.c	/^void enterunkprocess(const struct pcap_pkthdr *head, const u_char *packet)$/;"	f
+event_class	cachestruct.h	/^	uint32_t event_class;$/;"	m	struct:cache_secret_t
+event_id	cachestruct.h	/^	char event_id[12];$/;"	m	struct:cache_secret_t
+event_time	cachestruct.h	/^	char event_time[25];$/;"	m	struct:cache_secret_t
+event_type	cachestruct.h	/^	char event_type[3];$/;"	m	struct:cache_secret_t
+expired_time	cachestruct.h	/^	char expired_time[25];$/;"	m	struct:cache_block_t
+extra_text	cachestruct.h	/^	char extra_text[65];$/;"	m	struct:cache_alert_t
+filefd	hashdata.h	/^  int filefd;$/;"	m	struct:stream
+filehead	hashdata.c	/^static struct pcap_file_header filehead;$/;"	v	typeref:struct:pcap_file_header	file:
+filename	cachestruct.h	/^	char filename[257];$/;"	m	struct:cache_secret_t
+filerule	loadrule.h	/^struct filerule$/;"	s
+finduntrojan	UnTrojan.c	/^bool finduntrojan(const struct tcphdr *tcp,const struct iphdr *ip,bool *isnull,uint32_t *positiontemp,struct unkown_trojan **pt)$/;"	f
+flag	geoip.h	/^    char flag;$/;"	m	struct:ipaddr
+flow	hashdata.h	/^   struct  stream *flow;$/;"	m	struct:horserule	typeref:struct:horserule::stream
+freethisstream	hashdata.c	/^void freethisstream(struct horserule *freestr,uint32_t index)$/;"	f
+func	funclist.h	/^struct func$/;"	s
+getAddr_dichotomy	geoip.c	/^void getAddr_dichotomy(const unsigned int ip, char* geography, char* scc_flag)$/;"	f
+getAddr_ergodic	geoip.c	/^void getAddr_ergodic(const unsigned int ip, char* geography, char* scc_flag)$/;"	f
+getlocalether	hashdata.c	/^void getlocalether(in_addr_t *src,in_addr_t *dest,u_char **temp,struct ether_header *ether)$/;"	f
+hashtable	hashdata.c	/^struct horserule  **hashtable;$/;"	v	typeref:struct:horserule
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_alarm_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_alert_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_audit_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_block_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_opt_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_secret_t
+head	funclist.c	/^struct func *head=NULL;$/;"	v	typeref:struct:func
+horserule	hashdata.h	/^struct horserule$/;"	s
+identifier	loadrule.h	/^   char identifier[8];$/;"	m	struct:filerule
+index	UnTrojan.h	/^	size_t index;$/;"	m	struct:unkown_trojan
+init	init.c	/^void init()$/;"	f
+initpacphead	hashdata.c	/^void initpacphead()$/;"	f
+insertRule	loadrule.c	/^void insertRule(unsigned int pos,struct filerule *rul)$/;"	f
+ipaddr	geoip.h	/^struct ipaddr$/;"	s
+ipfile	geoip.c	/^struct ipaddr* ipfile;$/;"	v	typeref:struct:ipaddr
+isTrojanHorse	hashdata.h	/^  bool isTrojanHorse;$/;"	m	struct:stream
+ishttp	UnTrojan.h	/^	int ishttp;$/;"	m	struct:unkown_trojan
+isovertime	UnTrojan.c	/^bool isovertime(time_t now,struct unkown_trojan *begin,struct unkown_trojan **pos)$/;"	f
+jhash_3words	hash.h	/^inline uint32_t jhash_3words(uint32_t srcip,uint32_t destip,uint32_t port,uint32_t initval)$/;"	f
+last	hashdata.h	/^   time_t last;$/;"	m	struct:horserule
+last_time	UnTrojan.h	/^	time_t last_time;$/;"	m	struct:unkown_trojan
+length	loadrule.h	/^   int length;$/;"	m	struct:filerule
+message	UnTrojan.h	/^	u_char* message;$/;"	m	struct:unkown_trojan
+message	hashdata.h	/^   unsigned char *message;$/;"	m	struct:horserule
+name	loadrule.h	/^   char name[64];$/;"	m	struct:filerule
+next	UnTrojan.h	/^	struct unkown_trojan *next;$/;"	m	struct:unkown_trojan	typeref:struct:unkown_trojan::unkown_trojan
+next	funclist.h	/^  struct func *next;$/;"	m	struct:func	typeref:struct:func::func
+next	hashdata.h	/^   struct horserule *next;$/;"	m	struct:horserule	typeref:struct:horserule::horserule
+next	loadrule.h	/^   struct filerule *next;$/;"	m	struct:filerule	typeref:struct:filerule::filerule
+opttime	cachestruct.h	/^	char opttime[24];$/;"	m	struct:cache_opt_t
+packmd5	hashdata.c	/^void packmd5(char *data,unsigned char *value)$/;"	f
+packmd5c	UnTrojan.c	/^void packmd5c(char *data,unsigned char *value)$/;"	f
+plugin_id	UnTrojan.h	/^	char plugin_id[4];$/;"	m	struct:unkown_trojan
+plugin_id	cachestruct.h	/^	uint32_t plugin_id;$/;"	m	struct:cache_alert_t
+prev	UnTrojan.h	/^	struct unkown_trojan *prev;$/;"	m	struct:unkown_trojan	typeref:struct:unkown_trojan::unkown_trojan
+prev	hashdata.h	/^   struct horserule *prev;$/;"	m	struct:horserule	typeref:struct:horserule::horserule
+process	funclist.h	/^  Func process;$/;"	m	struct:func
+processippacket	UnTrojan.c	/^void processippacket(const struct iphdr *ip,const u_char *data)$/;"	f
+processnode	UnTrojan.c	/^struct unkown_trojan* processnode(uint32_t pos,const struct iphdr *ip,const struct tcphdr *tcp)$/;"	f
+processrule	loadrule.c	/^void processrule(const char *ruled)$/;"	f
+processstream	hashdata.c	/^void processstream(struct horserule *cur,struct iphdr *ip,const u_char *packet)$/;"	f
+processtcppacket	UnTrojan.c	/^void processtcppacket(const struct tcphdr *tcp,const struct iphdr *ip,const u_char *packet)$/;"	f
+protocol	cachestruct.h	/^	uint32_t protocol; $/;"	m	struct:cache_alert_t
+protocol	cachestruct.h	/^	uint32_t protocol;$/;"	m	struct:cache_audit_t
+rea	loadrule.c	/^void rea()$/;"	f
+readIPfile	geoip.c	/^void readIPfile()$/;"	f
+readrule	loadrule.c	/^void readrule()$/;"	f
+receiver	cachestruct.h	/^	char receiver[257];$/;"	m	struct:cache_secret_t
+region	geoip.h	/^    char region[30];$/;"	m	struct:ipaddr
+regulation	hashdata.h	/^   struct  filerule *regulation;$/;"	m	struct:horserule	typeref:struct:horserule::filerule
+release	loadrule.c	/^void release()$/;"	f
+report	UnTrojan.h	/^	bool report;$/;"	m	struct:unkown_trojan
+risk	cachestruct.h	/^	char risk;$/;"	m	struct:cache_alarm_t
+risk	cachestruct.h	/^	char risk[3];$/;"	m	struct:cache_alert_t
+rule	loadrule.c	/^struct filerule *rule[RULESIZE];$/;"	v	typeref:struct:filerule
+savestream	hashdata.c	/^void savestream(struct horserule *save,const struct pcap_pkthdr *head,const u_char *packet)$/;"	f
+scc	cachestruct.h	/^	char scc[65];$/;"	m	struct:cache_alarm_t
+scc	cachestruct.h	/^	char scc[65];$/;"	m	struct:cache_alert_t
+scc_flag	cachestruct.h	/^	char scc_flag;$/;"	m	struct:cache_alarm_t
+scc_flag	cachestruct.h	/^	char scc_flag;$/;"	m	struct:cache_alert_t
+searchstream	hashdata.c	/^bool searchstream(uint32_t position,uint32_t location,struct iphdr *ip,uint32_t hashtemp,int *result,struct horserule **pos,uint32_t *index)$/;"	f
+searchunstream	UnTrojan.c	/^bool searchunstream(uint32_t position, uint32_t location, const struct iphdr *ip, uint32_t hashtemp,int *result, unkown_trojan **pos,uint32_t *index)$/;"	f
+sen_msg	cachestruct.h	/^	char sen_msg[129];$/;"	m	struct:cache_secret_t
+sender	cachestruct.h	/^	char sender[65];$/;"	m	struct:cache_secret_t
+serverfd	client.c	/^int serverfd;$/;"	v
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_alarm_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_alert_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_block_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_secret_t
+sip	cachestruct.h	/^	uint32_t sip;$/;"	m	struct:cache_audit_t
+size	cachestruct.h	/^	int size;$/;"	m	struct:cache_head_t
+sport	cachestruct.h	/^	uint16_t sport;$/;"	m	struct:cache_audit_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_alert_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_block_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_secret_t
+start_time	cachestruct.h	/^	char start_time[25];$/;"	m	struct:cache_block_t
+start_time	cachestruct.h	/^	time_t 	 start_time;$/;"	m	struct:cache_audit_t
+startip	geoip.h	/^    char startip[15];$/;"	m	struct:ipaddr
+stre	hashdata.c	/^bool stre(time_t now,struct horserule *begin,struct horserule **pos)$/;"	f
+stream	hashdata.h	/^struct stream$/;"	s
+temp	loadrule.c	/^int temp(char t)$/;"	f
+territory	geoip.h	/^    char territory[30];$/;"	m	struct:ipaddr
+title	cachestruct.h	/^	char title[129];$/;"	m	struct:cache_secret_t
+totallength	loadrule.h	/^   int totallength;$/;"	m	struct:filerule
+trojan	hashdata.c	/^cache_alarm_t trojan;$/;"	v
+trojan_id	cachestruct.h	/^	char trojan_id[6];$/;"	m	struct:cache_alarm_t
+trojan_id	cachestruct.h	/^	char trojan_id[6];$/;"	m	struct:cache_alert_t
+trojan_process	init.c	/^void trojan_process(const struct pcap_pkthdr *hdr,const u_char *bytes)$/;"	f
+type	cachestruct.h	/^	char type[3];$/;"	m	struct:cache_alarm_t
+type	cachestruct.h	/^	int type;$/;"	m	struct:cache_head_t
+type	loadrule.h	/^   char type[3];$/;"	m	struct:filerule
+unkown_trojan	UnTrojan.h	/^typedef struct unkown_trojan$/;"	s
+unkown_trojan	UnTrojan.h	/^}unkown_trojan;$/;"	t	typeref:struct:unkown_trojan
+up_KB	cachestruct.h	/^	float	 up_KB;$/;"	m	struct:cache_audit_t
+upload	UnTrojan.h	/^	size_t upload;$/;"	m	struct:unkown_trojan
+username	cachestruct.h	/^	char username[64];$/;"	m	struct:cache_opt_t
+vect	loadrule.h	/^   unsigned int vect[9];$/;"	m	struct:filerule
+writefile	hashdata.c	/^void writefile(struct horserule *save)$/;"	f

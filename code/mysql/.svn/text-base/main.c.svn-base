@@ -1,0 +1,100 @@
+#include "sqlhandler.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+void call_back_table_name(char** result,int column,void* param)
+{
+	*((int *)param) = atoll(result[0]);
+	printf("%s\n",result[0]);
+	///////////////////////////int *count =  (int *)param;
+	///////////////////////////(*count)++;
+	//printf("********************%d\n",*count);
+	//*((int *)param)++;
+	//*((int *)param)++;
+	//printf("column========%d\n",column);
+	//for(int i=0;i<column;++i)
+	//{
+		//printf("%s     ",result[0]);
+	//}
+	printf("\n");
+}
+void call_back(char** result,int column,void* param)
+{
+	int *count =  (int *)param;
+	int i;
+	(*count)++;
+	printf("********************%d\n",*count);
+	for(i=0; i<column; ++i)
+	{
+		//printf("%d",i);
+		printf("%s ",result[i]);
+	}
+	printf("\n");
+}
+
+void select_sql()
+{
+	int count = 0;
+	MYSQL mysql;
+	
+	Init_Sql(&mysql);
+	
+	char* query = (char*)"select * from tips_netlog limit 30 offset 30";
+
+	int ret1 = Select_Sql_Exec(&mysql, query, call_back,&count);
+	if(ret1 < 0)
+	{
+		printf("select sql fail\n");
+	}
+	mysql_close(&mysql);
+	
+	return;
+}
+
+void insert_sql(int index)
+{
+	int i;
+	char sql[256];
+	MYSQL mysql;
+
+	Init_Sql(&mysql);
+	
+	for(i=0; i<index; i++)
+	{
+		if(index == 10086) index++;
+		sprintf(sql, "insert into tips_netlog(netlog_id, Dip, Dport, Sip, Sport,Protocol,Start_time, End_time,`Load`, `Upload`,Below_protocol,flag) values(%d,'10.172.0.110','6379','10.171.0.110','7963','6','1114-04-17 13:53:56','1214-04-17 13:54:05','0.02','0.70','6','0')",i+1000);
+	
+	//	char* sql = (char *)"insert into tips_netlog(netlog_id, Dip, Dport, Sip, Sport,Protocol,Start_time, End_time,\
+															`Load`, `Upload`,Below_protocol,flag) values(\
+															'1000','10.172.0.110','6379','10.171.0.110',\
+															'7963','6','1114-04-17 13:53:56',\
+															'1214-04-17 13:54:05','0.02','0.70','6','0');";
+		printf("sql==%s\n", sql);
+		int ret = Insert_Sql_Exec(&mysql, sql);
+		if(ret < 0)
+		{
+			printf("insert sql fail\n");
+		}
+	}
+	mysql_close(&mysql);	
+
+	return;
+}
+
+int main(int argc, char* argv[])
+{
+	if(0 == strcmp(argv[1], "select"))
+	{
+		printf("execute select sql\n");
+		select_sql();
+	}
+	else if(0 == strcmp(argv[1], "insert"))
+	{
+		printf("execute insert the number is %d\n", atoi(argv[2]));
+		insert_sql(atoi(argv[2]));
+	}
+	
+	return 0;
+}

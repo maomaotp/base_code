@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="Service"
+ targetNamespace="http://tempuri.org/ns2.xsd/Service.wsdl"
+ xmlns:tns="http://tempuri.org/ns2.xsd/Service.wsdl"
+ xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+ xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xop="http://www.w3.org/2004/08/xop/include"
+ xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+ xmlns:ns2="http://tempuri.org/ns2.xsd"
+ xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+ xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap12/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="http://tempuri.org/ns2.xsd"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/schemas/connect.xsd"/>
+  <import namespace="http://www.genivia.com/wsdl/connect.wsdl"/>
+
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <!-- operation request element -->
+  <element name="upload-message">
+   <complexType>
+    <sequence>
+     <element name="Device-ID" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::Device_ID -->
+     <element name="buer" type="xsd:boolean" minOccurs="1" maxOccurs="1"/><!-- ns2__upload_message::buer -->
+     <element name="state" type="ns:MsgList" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::state -->
+     <element name="t-auth-str" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::t_auth_str -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="upload-messageResponse">
+   <complexType>
+    <sequence>
+     <element name="resultlist" type="ns:ResultList" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::resultlist -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+
+ <schema targetNamespace="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/wsdl/connect.wsdl"/>
+
+  <complexType name="Data">
+   <annotation>
+    <documentation>holds a MIME attachment</documentation>
+   </annotation>
+   <sequence>
+     <element ref="xop:Include" minOccurs="1" maxOccurs="1"/><!-- x__Data::xop__Include -->
+   </sequence>
+     <attribute ref="xmime5:contentType" use="optional"/>
+  </complexType>
+  <complexType name="DataSet">
+   <annotation>
+    <documentation>holds a set of MIME attachments</documentation>
+   </annotation>
+   <sequence>
+     <element name="item" type="x:Data" minOccurs="0" maxOccurs="unbounded"/><!-- x__DataSet::__size -->
+   </sequence>
+  </complexType>
+  <complexType name="Keys">
+   <annotation>
+    <documentation>holds a set of strings to access the data collection at the server side</documentation>
+   </annotation>
+   <sequence>
+     <element name="key" type="xsd:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/><!-- x__Keys::__size -->
+   </sequence>
+  </complexType>
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <element name="data" type="x:DataSet"/>
+  <element name="Keys" type="x:Keys"/>
+  <element name="keys" type="x:Keys"/>
+ </schema>
+
+ <schema targetNamespace="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/schemas/connect.xsd"/>
+
+  <complexType name="MsgItem"><!-- ns__MsgItem -->
+
+   <sequence>
+     <element name="type" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__MsgItem::type -->
+     <element name="msg" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__MsgItem::msg -->
+   </sequence>
+  </complexType>
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultItem"><!-- ns__ResultItem -->
+
+   <sequence>
+     <element name="TimeStamp" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::TimeStamp -->
+     <element name="Order" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::Order -->
+     <element name="Param" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::Param -->
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+ </schema>
+
+</types>
+
+<message name="upload-messageRequest">
+ <part name="parameters" element="ns2:upload-message"/><!-- ns2__upload_message::ns2__upload_message -->
+</message>
+
+<message name="upload-messageResponse">
+ <part name="parameters" element="ns2:upload-messageResponse"/>
+</message>
+
+<portType name="ServicePortType">
+ <operation name="upload-message">
+  <documentation>Service definition of function ns2__upload_message</documentation>
+  <input message="tns:upload-messageRequest"/>
+  <output message="tns:upload-messageResponse"/>
+ </operation>
+</portType>
+
+<binding name="Service" type="tns:ServicePortType">
+ <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="upload-message">
+  <SOAP:operation/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="Service">
+ <documentation>gSOAP 2.8.14 generated service definition</documentation>
+ <port name="Service" binding="tns:Service">
+  <SOAP:address location="http://localhost:80"/>
+ </port>
+</service>
+
+</definitions>

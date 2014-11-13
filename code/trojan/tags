@@ -1,0 +1,675 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALARM	decode.h	17;"	d
+ALARM	trojan.c	16;"	d	file:
+ALERT	decode.h	22;"	d
+ARPHdr	decode.h	/^}       ARPHdr;$/;"	t	typeref:struct:_ARPHdr
+AUDIT	decode.h	18;"	d
+BIT	decode.h	905;"	d
+BLOCK	decode.h	21;"	d
+DECODE_CLASS	decode.h	917;"	d
+DecodeIP	trojan.c	/^void DecodeIP(const u_int8_t* pkt, const u_int32_t len, Packet* p)$/;"	f
+DecodeTCP	trojan.c	/^void DecodeTCP(const u_int8_t * pkt, const u_int32_t len, Packet * p)$/;"	f
+DecoderFlags	decode.h	/^} DecoderFlags;$/;"	t	typeref:struct:_DecoderFlags
+EAPHdr	decode.h	/^}         EAPHdr;$/;"	t	typeref:struct:_EAPHdr
+ERSPAN3_TIMESTAMP	decode.h	470;"	d
+ERSPAN_SPAN_ID	decode.h	469;"	d
+ERSPAN_VERSION	decode.h	467;"	d
+ERSPAN_VLAN	decode.h	468;"	d
+ERSpanType2Hdr	decode.h	/^} ERSpanType2Hdr;$/;"	t	typeref:struct:_ERSpanType2Hdr
+ERSpanType3Hdr	decode.h	/^} ERSpanType3Hdr;$/;"	t	typeref:struct:_ERSpanType3Hdr
+ETHERNET_HEADER_LEN	decode.h	33;"	d
+ETHERNET_TYPE_8021Q	decode.h	29;"	d
+ETHERNET_TYPE_ARP	decode.h	27;"	d
+ETHERNET_TYPE_IP	decode.h	26;"	d
+ETHERNET_TYPE_PPPoE_DISC	decode.h	31;"	d
+ETHERNET_TYPE_PPPoE_SESS	decode.h	30;"	d
+ETHERNET_TYPE_REVARP	decode.h	28;"	d
+EXTRACT_32BITS	decode.h	15;"	d
+EapolKey	decode.h	/^}       EapolKey;$/;"	t	typeref:struct:_EapolKey
+EtherARP	decode.h	/^}         EtherARP;$/;"	t	typeref:struct:_EtherARP
+EtherEapol	decode.h	/^}         EtherEapol;$/;"	t	typeref:struct:_EtherEapol
+EtherHdr	decode.h	/^} EtherHdr;$/;"	t	typeref:struct:_EtherHdr
+Exit_Client	client.c	/^void Exit_Client()$/;"	f
+FALSE	trojan.c	25;"	d	file:
+GETOIP_H	geoip.h	2;"	d
+GET_PKT_SEQ	decode.h	896;"	d
+GREHdr	decode.h	/^} GREHdr;$/;"	t	typeref:struct:_GREHdr
+GRE_CHKSUM	decode.h	433;"	d
+GRE_CHKSUM_LEN	decode.h	427;"	d
+GRE_FLAGS	decode.h	440;"	d
+GRE_HEADER_LEN	decode.h	426;"	d
+GRE_KEY	decode.h	435;"	d
+GRE_KEY_LEN	decode.h	429;"	d
+GRE_OFFSET_LEN	decode.h	428;"	d
+GRE_PROTO	decode.h	441;"	d
+GRE_RECUR	decode.h	438;"	d
+GRE_ROUTE	decode.h	434;"	d
+GRE_SEQ	decode.h	436;"	d
+GRE_SEQ_LEN	decode.h	430;"	d
+GRE_SRE_HEADER_LEN	decode.h	431;"	d
+GRE_SSR	decode.h	437;"	d
+GRE_TYPE_PPP	decode.h	424;"	d
+GRE_TYPE_TRANS_BRIDGING	decode.h	423;"	d
+GRE_V1_ACK	decode.h	447;"	d
+GRE_V1_ACK_LEN	decode.h	445;"	d
+GRE_V1_FLAGS	decode.h	446;"	d
+GRE_V1_HEADER_LEN	decode.h	444;"	d
+GRE_VERSION	decode.h	439;"	d
+GTPHdr	decode.h	/^} GTPHdr;$/;"	t	typeref:struct:_GTPHdr
+ICMP6Hdr	decode.h	/^} ICMP6Hdr;$/;"	t	typeref:struct:_ICMP6
+ICMP6NodeInfo	decode.h	/^} ICMP6NodeInfo;$/;"	t	typeref:struct:_ICMP6NodeInfo
+ICMP6RouterAdvertisement	decode.h	/^} ICMP6RouterAdvertisement;$/;"	t	typeref:struct:_ICMP6RouterAdvertisement
+ICMP6RouterSolicitation	decode.h	/^} ICMP6RouterSolicitation;$/;"	t	typeref:struct:_ICMP6RouterSolicitation
+ICMP6TooBig	decode.h	/^} ICMP6TooBig;$/;"	t	typeref:struct:_ICMP6TooBig
+ICMP6_ADVERTISEMENT	decode.h	382;"	d
+ICMP6_BIG	decode.h	376;"	d
+ICMP6_ECHO	decode.h	379;"	d
+ICMP6_MIN_HEADER_LEN	decode.h	387;"	d
+ICMP6_NODE_INFO_QUERY	decode.h	383;"	d
+ICMP6_NODE_INFO_RESPONSE	decode.h	384;"	d
+ICMP6_PARAMS	decode.h	378;"	d
+ICMP6_REPLY	decode.h	380;"	d
+ICMP6_SOLICITATION	decode.h	381;"	d
+ICMP6_TIME	decode.h	377;"	d
+ICMP6_UNREACH	decode.h	375;"	d
+ICMPHdr	decode.h	/^}        ICMPHdr;$/;"	t	typeref:struct:_ICMPHdr
+INIT_ALARM_HEAD	decode.h	49;"	d
+INIT_ALERT_HEAD	decode.h	36;"	d
+INIT_H	init.h	2;"	d
+INIT_OPT_HEAD	decode.h	42;"	d
+IP4Hdr	decode.h	/^} IP4Hdr;$/;"	t	typeref:struct:_IPv4Hdr
+IP6Dest	decode.h	/^} IP6Dest;$/;"	t	typeref:struct:_IP6Dest
+IP6Extension	decode.h	/^} IP6Extension;$/;"	t	typeref:struct:_IP6Extension
+IP6F_MF	decode.h	266;"	d
+IP6F_MF_MASK	decode.h	262;"	d
+IP6F_OFFSET	decode.h	264;"	d
+IP6F_OFFSET_MASK	decode.h	261;"	d
+IP6F_RES	decode.h	265;"	d
+IP6Frag	decode.h	/^} IP6Frag;$/;"	t	typeref:struct:_IP6Frag
+IP6Hdr	decode.h	/^} IP6Hdr;$/;"	t	typeref:struct:_IPv6Hdr
+IP6HopByHop	decode.h	/^} IP6HopByHop;$/;"	t	typeref:struct:_IP6HopByHop
+IP6Option	decode.h	/^} IP6Option;$/;"	t	typeref:struct:_IP6Option
+IP6RawHdr	decode.h	/^} IP6RawHdr;$/;"	t	typeref:struct:_IP6RawHdr
+IP6Route	decode.h	/^} IP6Route;$/;"	t	typeref:struct:_IP6Route
+IP6Route0	decode.h	/^} IP6Route0;$/;"	t	typeref:struct:_IP6Route0
+IP6_HDR_LEN	decode.h	246;"	d
+IPARP_SAP	decode.h	7;"	d
+IPHdr	decode.h	/^}IPHdr;$/;"	t	typeref:struct:_IPHdr
+IPPROTO_GRE	decode.h	420;"	d
+IPPROTO_IPIP	decode.h	405;"	d
+IPRAW_HDR_VER	decode.h	243;"	d
+IP_HEADER_LEN	decode.h	34;"	d
+IP_HLEN	decode.h	10;"	d
+IP_LIST_LEN	decode.h	24;"	d
+IP_LIST_LEN	trojan.c	20;"	d	file:
+IP_PROTO_AH	decode.h	255;"	d
+IP_PROTO_DSTOPTS	decode.h	256;"	d
+IP_PROTO_FRAGMENT	decode.h	254;"	d
+IP_PROTO_HOPOPTS	decode.h	249;"	d
+IP_PROTO_ICMPV6	decode.h	257;"	d
+IP_PROTO_IPIP	decode.h	259;"	d
+IP_PROTO_IPV6	decode.h	258;"	d
+IP_PROTO_NONE	decode.h	252;"	d
+IP_PROTO_ROUTING	decode.h	253;"	d
+IP_VER	decode.h	11;"	d
+ISANKNOW	trojan.c	23;"	d	file:
+ISBLACK	trojan.c	22;"	d	file:
+ISWHITE	trojan.c	21;"	d	file:
+Init_Client	client.c	/^int Init_Client(char* serverip)$/;"	f
+IsICMP	decode.h	895;"	d
+IsIP	decode.h	892;"	d
+IsTCP	decode.h	893;"	d
+IsUDP	decode.h	894;"	d
+LAYER_MAX	decode.h	719;"	d
+LOADRULE_H	loadrule.h	2;"	d
+MODE	loadrule.c	9;"	d	file:
+MPLS_HEADER_LEN	decode.h	663;"	d
+MplsHdr	decode.h	/^} MplsHdr;$/;"	t	typeref:struct:_MplsHdr
+NUM_RESERVED_LABELS	decode.h	664;"	d
+OPT	decode.h	19;"	d
+Options	decode.h	/^} Options;$/;"	t	typeref:struct:_Options
+PGM_HEADER	decode.h	/^} PGM_HEADER;$/;"	t	typeref:struct:_PGM_HEADER
+PGM_NAK	decode.h	/^} PGM_NAK;$/;"	t	typeref:struct:_PGM_NAK
+PGM_NAK_ERR	decode.h	674;"	d
+PGM_NAK_OK	decode.h	675;"	d
+PGM_NAK_OPT	decode.h	/^} PGM_NAK_OPT;$/;"	t	typeref:struct:_PGM_NAK_OPT
+PGM_NAK_VULN	decode.h	676;"	d
+PIDFILE	init.c	5;"	d	file:
+PKT_ALLOW_MULTIPLE_DETECT	decode.h	77;"	d
+PKT_FROM_CLIENT	decode.h	66;"	d
+PKT_FROM_SERVER	decode.h	64;"	d
+PKT_HTTP_DECODE	decode.h	73;"	d
+PKT_IGNORE	decode.h	75;"	d
+PKT_IP_RULE	decode.h	83;"	d
+PKT_IP_RULE_2ND	decode.h	84;"	d
+PKT_LOGGED	decode.h	86;"	d
+PKT_MODIFIED	decode.h	88;"	d
+PKT_PASS_RULE	decode.h	82;"	d
+PKT_PAYLOAD_OBFUSCATE	decode.h	79;"	d
+PKT_PDU_HEAD	decode.h	69;"	d
+PKT_PDU_TAIL	decode.h	70;"	d
+PKT_PSEUDO	decode.h	87;"	d
+PKT_REBUILT_FRAG	decode.h	56;"	d
+PKT_REBUILT_STREAM	decode.h	57;"	d
+PKT_STATELESS	decode.h	81;"	d
+PKT_STREAM_EST	decode.h	60;"	d
+PKT_STREAM_INSERT	decode.h	62;"	d
+PKT_STREAM_TWH	decode.h	63;"	d
+PKT_STREAM_UNEST_UNI	decode.h	58;"	d
+PKT_TRUST	decode.h	76;"	d
+PKT_UNSURE_ENCAP	decode.h	71;"	d
+PKT_ZERO_LEN	decode.h	879;"	d
+PPPoEHdr	decode.h	/^} PPPoEHdr;$/;"	t	typeref:struct:_PPPoEHdr
+PPPoE_Tag	decode.h	/^} PPPoE_Tag;$/;"	t	typeref:struct:_PPPoE_Tag
+PROTO_BIT__ALL	decode.h	890;"	d
+PROTO_BIT__ARP	decode.h	883;"	d
+PROTO_BIT__GTP	decode.h	888;"	d
+PROTO_BIT__ICMP	decode.h	886;"	d
+PROTO_BIT__IP	decode.h	882;"	d
+PROTO_BIT__NONE	decode.h	881;"	d
+PROTO_BIT__OTHER	decode.h	889;"	d
+PROTO_BIT__TCP	decode.h	884;"	d
+PROTO_BIT__TEREDO	decode.h	887;"	d
+PROTO_BIT__UDP	decode.h	885;"	d
+PSEUDO_HDR	decode.h	/^} PSEUDO_HDR;$/;"	t	typeref:struct:s_pseudoheader
+Packet	decode.h	/^}Packet;$/;"	t	typeref:struct:_Packet
+RULEFILE	loadrule.c	8;"	d	file:
+RULESIZE	loadrule.c	10;"	d	file:
+SECRET	decode.h	20;"	d
+SEQ_EQ	decode.h	903;"	d
+SEQ_EQ	decode.h	95;"	d
+SEQ_GEQ	decode.h	902;"	d
+SEQ_GEQ	decode.h	94;"	d
+SEQ_GT	decode.h	901;"	d
+SEQ_GT	decode.h	93;"	d
+SEQ_LEQ	decode.h	900;"	d
+SEQ_LEQ	decode.h	92;"	d
+SEQ_LT	decode.h	899;"	d
+SEQ_LT	decode.h	91;"	d
+SERVERPORT	client.h	3;"	d
+SET_TCP_OFFSET	decode.h	482;"	d
+SET_TCP_X2	decode.h	483;"	d
+Send_Msg	client.c	/^int Send_Msg(char* buff, int len)$/;"	f
+TCPHdr	decode.h	/^}TCPHdr;$/;"	t	typeref:struct:_TCPHdr
+TCP_ISFLAGSET	decode.h	14;"	d
+TCP_ISFLAGSET	decode.h	479;"	d
+TCP_OFFSET	decode.h	12;"	d
+TCP_OFFSET	decode.h	476;"	d
+TCP_X2	decode.h	477;"	d
+TRH_MR_LEN	decode.h	9;"	d
+TRUE	trojan.c	24;"	d	file:
+TR_ALEN	decode.h	6;"	d
+Trh_hdr	decode.h	/^}Trh_hdr;$/;"	t	typeref:struct:_Trh_hdr
+Trh_llc	decode.h	/^}Trh_llc;$/;"	t	typeref:struct:_Trh_llc
+Trh_mr	decode.h	/^}Trh_mr;$/;"	t	typeref:struct:_Trh_mr
+UDPHdr	decode.h	/^}       UDPHdr;$/;"	t	typeref:struct:_UDPHdr
+VlanTagHdr	decode.h	/^} VlanTagHdr;$/;"	t	typeref:struct:_VlanTagHdr
+WtPid	init.c	/^void WtPid()$/;"	f
+_ARPHdr	decode.h	/^typedef struct _ARPHdr$/;"	s
+_CLIENT_H_	client.h	2;"	d
+_DECODE_H_	decode.h	2;"	d
+_DecoderFlags	decode.h	/^typedef struct _DecoderFlags$/;"	s
+_EAPHdr	decode.h	/^typedef struct _EAPHdr$/;"	s
+_ERSpanType2Hdr	decode.h	/^typedef struct _ERSpanType2Hdr$/;"	s
+_ERSpanType3Hdr	decode.h	/^typedef struct _ERSpanType3Hdr$/;"	s
+_EapolKey	decode.h	/^typedef struct _EapolKey$/;"	s
+_EtherARP	decode.h	/^typedef struct _EtherARP$/;"	s
+_EtherEapol	decode.h	/^typedef struct _EtherEapol$/;"	s
+_EtherHdr	decode.h	/^typedef struct _EtherHdr$/;"	s
+_GREHdr	decode.h	/^typedef struct _GREHdr$/;"	s
+_GTPHdr	decode.h	/^typedef struct _GTPHdr$/;"	s
+_ICMP6	decode.h	/^typedef struct _ICMP6$/;"	s
+_ICMP6NodeInfo	decode.h	/^typedef struct _ICMP6NodeInfo$/;"	s
+_ICMP6RouterAdvertisement	decode.h	/^typedef struct _ICMP6RouterAdvertisement$/;"	s
+_ICMP6RouterSolicitation	decode.h	/^typedef struct _ICMP6RouterSolicitation$/;"	s
+_ICMP6TooBig	decode.h	/^typedef struct _ICMP6TooBig$/;"	s
+_ICMPHdr	decode.h	/^typedef struct _ICMPHdr$/;"	s
+_IP6Dest	decode.h	/^typedef struct _IP6Dest$/;"	s
+_IP6Extension	decode.h	/^typedef struct _IP6Extension$/;"	s
+_IP6Frag	decode.h	/^typedef struct _IP6Frag$/;"	s
+_IP6HopByHop	decode.h	/^typedef struct _IP6HopByHop$/;"	s
+_IP6Option	decode.h	/^typedef struct _IP6Option$/;"	s
+_IP6RawHdr	decode.h	/^typedef struct _IP6RawHdr$/;"	s
+_IP6Route	decode.h	/^typedef struct _IP6Route$/;"	s
+_IP6Route0	decode.h	/^typedef struct _IP6Route0$/;"	s
+_IPHdr	decode.h	/^typedef struct _IPHdr$/;"	s
+_IPv4Hdr	decode.h	/^typedef struct _IPv4Hdr$/;"	s
+_IPv6Hdr	decode.h	/^typedef struct _IPv6Hdr$/;"	s
+_MplsHdr	decode.h	/^typedef struct _MplsHdr$/;"	s
+_Options	decode.h	/^typedef struct _Options$/;"	s
+_PGM_HEADER	decode.h	/^typedef struct _PGM_HEADER$/;"	s
+_PGM_NAK	decode.h	/^typedef struct _PGM_NAK$/;"	s
+_PGM_NAK_OPT	decode.h	/^typedef struct _PGM_NAK_OPT$/;"	s
+_PPPoEHdr	decode.h	/^typedef struct _PPPoEHdr$/;"	s
+_PPPoE_Tag	decode.h	/^typedef struct _PPPoE_Tag$/;"	s
+_Packet	decode.h	/^typedef struct _Packet$/;"	s
+_TCPHdr	decode.h	/^typedef struct _TCPHdr$/;"	s
+_Trh_hdr	decode.h	/^typedef struct _Trh_hdr$/;"	s
+_Trh_llc	decode.h	/^typedef struct _Trh_llc$/;"	s
+_Trh_mr	decode.h	/^typedef struct _Trh_mr$/;"	s
+_UDPHdr	decode.h	/^typedef struct _UDPHdr$/;"	s
+_VlanTagHdr	decode.h	/^typedef struct _VlanTagHdr$/;"	s
+_ip	decode.h	/^typedef struct _ip {$/;"	s
+ac	decode.h	/^    u_int8_t ac;        \/* access control field *\/$/;"	m	struct:_Trh_hdr
+addr	decode.h	/^            uint32_t addr;$/;"	m	struct:_ICMPHdr::__anon5::ra_addr
+addr_entry_size	decode.h	/^    uint8_t addr_entry_size;$/;"	m	struct:_ICMP6RouterAdvertisement
+addrule	loadrule.c	/^struct filerule* addrule()$/;"	f
+afi2	decode.h	/^    uint16_t  afi2;$/;"	m	struct:_PGM_NAK
+afil1	decode.h	/^    uint16_t  afil1;$/;"	m	struct:_PGM_NAK
+alar	trojan.c	/^void alar(struct filerule *rule, Packet *p)$/;"	f
+alarm_id	decode.h	/^	char alarm_id[12];$/;"	m	struct:cache_alarm_t
+alarm_time	decode.h	/^	time_t alarm_time;$/;"	m	struct:cache_alarm_t
+alarm_time	decode.h	/^    char alarm_time[25];$/;"	m	struct:cache_alert_t
+alert_id	decode.h	/^	char alert_id[12];$/;"	m	struct:cache_alert_t
+alt_dsize	decode.h	/^    u_int16_t alt_dsize;    \/* the dsize of a packet before munging$/;"	m	struct:_Packet
+ar_hln	decode.h	/^    uint8_t ar_hln;        \/* length of hardware address   *\/$/;"	m	struct:_ARPHdr
+ar_hrd	decode.h	/^    uint16_t ar_hrd;       \/* format of hardware address   *\/$/;"	m	struct:_ARPHdr
+ar_op	decode.h	/^    uint16_t ar_op;        \/* ARP opcode (command)         *\/$/;"	m	struct:_ARPHdr
+ar_pln	decode.h	/^    uint8_t ar_pln;        \/* length of protocol address   *\/$/;"	m	struct:_ARPHdr
+ar_pro	decode.h	/^    uint16_t ar_pro;       \/* format of protocol address   *\/$/;"	m	struct:_ARPHdr
+arp_sha	decode.h	/^    uint8_t arp_sha[6];    \/* sender hardware address *\/$/;"	m	struct:_EtherARP
+arp_spa	decode.h	/^    uint8_t arp_spa[4];    \/* sender protocol address *\/$/;"	m	struct:_EtherARP
+arp_tha	decode.h	/^    uint8_t arp_tha[6];    \/* target hardware address *\/$/;"	m	struct:_EtherARP
+arp_tpa	decode.h	/^    uint8_t arp_tpa[4];    \/* target protocol address *\/$/;"	m	struct:_EtherARP
+bcast_len_dir_lf_res	decode.h	/^    u_int16_t bcast_len_dir_lf_res;$/;"	m	struct:_Trh_mr
+begin	loadrule.h	/^   int begin;$/;"	m	struct:filerule
+bits	decode.h	/^    int16_t bits;$/;"	m	struct:_ip
+black_ip	trojan.c	/^struct ip_rules black_ip[IP_LIST_LEN];$/;"	v	typeref:struct:ip_rules
+black_ip_len	trojan.c	/^int black_ip_len;$/;"	v
+bos	decode.h	/^    uint8_t  bos;$/;"	m	struct:_MplsHdr
+bsd_icmp_frag	decode.h	/^    char bsd_icmp_frag;$/;"	m	struct:_DecoderFlags
+buf	trojan.c	/^char buf[20];$/;"	v
+bzero	decode.h	13;"	d
+cache_alarm_t	decode.h	/^typedef struct cache_alarm_t$/;"	s
+cache_alarm_t	decode.h	/^}cache_alarm_t;$/;"	t	typeref:struct:cache_alarm_t
+cache_alert_t	decode.h	/^typedef struct cache_alert_t$/;"	s
+cache_alert_t	decode.h	/^}cache_alert_t;$/;"	t	typeref:struct:cache_alert_t
+cache_head_t	decode.h	/^typedef struct cache_head_t$/;"	s
+cache_head_t	decode.h	/^}cache_head_t;$/;"	t	typeref:struct:cache_head_t
+cache_opt_t	decode.h	/^typedef struct cache_opt_t$/;"	s
+cache_opt_t	decode.h	/^}cache_opt_t;$/;"	t	typeref:struct:cache_opt_t
+caplen	decode.h	/^    u_int32_t caplen;$/;"	m	struct:_Packet
+checksum	decode.h	/^    uint16_t checksum;$/;"	m	struct:_PGM_HEADER
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_EAPHdr
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_ICMP6
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_ICMP6NodeInfo
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_ICMP6RouterAdvertisement
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_ICMP6RouterSolicitation
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_ICMP6TooBig
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_ICMPHdr
+code	decode.h	/^    uint8_t code;$/;"	m	struct:_Options
+code	decode.h	/^    unsigned char code;         \/* pppoe code CODE_* *\/$/;"	m	struct:_PPPoEHdr
+content	loadrule.h	/^   char *content;$/;"	m	struct:filerule
+convert	loadrule.c	/^void convert(const char *src,unsigned char *dest,int length)$/;"	f
+counter	decode.h	/^  uint8_t counter[8];$/;"	m	struct:_EapolKey
+csum	decode.h	/^    uint16_t csum;$/;"	m	struct:_ICMP6
+csum	decode.h	/^    uint16_t csum;$/;"	m	struct:_ICMP6NodeInfo
+csum	decode.h	/^    uint16_t csum;$/;"	m	struct:_ICMP6RouterAdvertisement
+csum	decode.h	/^    uint16_t csum;$/;"	m	struct:_ICMP6RouterSolicitation
+csum	decode.h	/^    uint16_t csum;$/;"	m	struct:_ICMP6TooBig
+csum	decode.h	/^    uint16_t csum;$/;"	m	struct:_ICMPHdr
+csum_flags	decode.h	/^    u_int8_t csum_flags;        \/* checksum flags *\/$/;"	m	struct:_Packet
+current	loadrule.h	/^   int current;$/;"	m	struct:filerule
+daddr	decode.h	/^    u_int8_t daddr[TR_ALEN];    \/* src address *\/$/;"	m	struct:_Trh_hdr
+dangerous	decode.h	/^    char dangerous;$/;"	m	struct:ip_rules
+data	decode.h	/^        char    data[1];$/;"	m	union:_ICMPHdr::__anon5
+data	decode.h	/^    const u_int8_t *data;         \/* packet payload pointer *\/$/;"	m	struct:_Packet
+data	decode.h	/^    const uint8_t *data;$/;"	m	struct:_IP6Option
+data	decode.h	/^    const uint8_t *data;$/;"	m	struct:_Options
+datalengthtemp	loadrule.c	/^int datalengthtemp;$/;"	v
+decodeEthPkt	trojan.c	/^void decodeEthPkt(Packet* p, const struct pcap_pkthdr* pkthdr, const u_int8_t* pkt)$/;"	f
+decode_alerts	decode.h	/^    char decode_alerts;   \/* if decode.c alerts are going to be enabled *\/$/;"	m	struct:_DecoderFlags
+describe	decode.h	/^    char describe[128];$/;"	m	struct:cache_opt_t
+descry	decode.h	/^	char descry[65];$/;"	m	struct:cache_alarm_t
+descry	decode.h	/^    char descry[65];$/;"	m	struct:cache_alert_t
+detect_func	trojan.c	/^static int detect_func(Packet *p)$/;"	f	file:
+device_id	decode.h	/^	char device_id[12];$/;"	m	struct:cache_alarm_t
+device_id	decode.h	/^	char device_id[12];$/;"	m	struct:cache_alert_t
+df	decode.h	/^    u_int8_t df;            \/* don't fragment flag *\/$/;"	m	struct:_Packet
+dip	decode.h	/^	char dip[19];$/;"	m	struct:cache_alarm_t
+dip	decode.h	/^	char dip[19];$/;"	m	struct:cache_alert_t
+dip	decode.h	/^    uint32_t sip, dip;$/;"	m	struct:s_pseudoheader
+dmac	decode.h	/^	char dmac[20];$/;"	m	struct:cache_alarm_t
+dmac	decode.h	/^	char dmac[20];$/;"	m	struct:cache_alert_t
+dnshash	decode.h	/^    char dnshash[33];$/;"	m	struct:cache_alert_t
+dp	decode.h	/^    u_int16_t dp;           \/* dest port (TCP\/UDP) *\/$/;"	m	struct:_Packet
+dport	decode.h	/^	uint32_t dport;$/;"	m	struct:cache_alert_t
+drop_alerts	decode.h	/^    char drop_alerts;     \/* drop alerts from decoder *\/$/;"	m	struct:_DecoderFlags
+drop_bad_ipv6_frag	decode.h	/^    char drop_bad_ipv6_frag;$/;"	m	struct:_DecoderFlags
+drop_ipopt_decode	decode.h	/^    char drop_ipopt_decode; \/* Drop on alerts from decoder inconsistencies *\/$/;"	m	struct:_DecoderFlags
+drop_tcpopt_decode	decode.h	/^    char drop_tcpopt_decode; \/* Drop on alerts from decoder inconsistencies *\/$/;"	m	struct:_DecoderFlags
+drop_tcpopt_experiment	decode.h	/^    char drop_tcpopt_experiment; \/* Drop alerts from TcpOptions Decoder *\/$/;"	m	struct:_DecoderFlags
+drop_tcpopt_obsolete	decode.h	/^    char drop_tcpopt_obsolete; \/* Drop on alerts from obsolete TCP options *\/$/;"	m	struct:_DecoderFlags
+drop_tcpopt_ttcp	decode.h	/^    char drop_tcpopt_ttcp;   \/* Drop on alerts from T\/TCP options *\/$/;"	m	struct:_DecoderFlags
+dsap	decode.h	/^    u_int8_t dsap;$/;"	m	struct:_Trh_llc
+dsize	decode.h	/^    u_int16_t dsize;        \/* packet payload size *\/$/;"	m	struct:_Packet
+dstport	decode.h	/^    uint16_t dstport;$/;"	m	struct:_PGM_HEADER
+ea_hdr	decode.h	/^    ARPHdr ea_hdr;      \/* fixed-size header *\/$/;"	m	struct:_EtherARP
+eaptype	decode.h	/^    uint8_t  eaptype;  \/* EAPOL Packet type *\/$/;"	m	struct:_EtherEapol
+eh	decode.h	/^    const EtherHdr *eh;               \/* standard TCP\/IP\/Ethernet\/ARP headers *\/$/;"	m	struct:_Packet
+endip	decode.h	/^    u_int endip;$/;"	m	struct:ip_rules
+endip	geoip.h	/^    char endip[15];$/;"	m	struct:ipaddr
+ether_dst	decode.h	/^    u_int8_t ether_dst[6];$/;"	m	struct:_EtherHdr
+ether_src	decode.h	/^    u_int8_t ether_src[6];$/;"	m	struct:_EtherHdr
+ether_type	decode.h	/^    u_int16_t ether_type;$/;"	m	struct:_EtherHdr
+ether_type	decode.h	/^    uint16_t ether_type;$/;"	m	struct:_GREHdr
+ethertype	decode.h	/^    u_int8_t ethertype;$/;"	m	struct:_Trh_llc
+exp	decode.h	/^    uint8_t  exp;$/;"	m	struct:_MplsHdr
+extra_text	decode.h	/^    char extra_text[65];$/;"	m	struct:cache_alert_t
+family	decode.h	/^	int family;$/;"	m	struct:_Packet
+family	decode.h	/^    int16_t family;$/;"	m	struct:_ip
+fc	decode.h	/^    u_int8_t fc;        \/* frame control field *\/$/;"	m	struct:_Trh_hdr
+filerule	loadrule.h	/^struct filerule$/;"	s
+flag	decode.h	/^    uint8_t  flag;              \/* flag: version (bit 6-8), PT (5), E (3), S (2), PN (1) *\/$/;"	m	struct:_GTPHdr
+flag	geoip.h	/^    char flag;$/;"	m	struct:ipaddr
+flags	decode.h	/^    uint16_t flags;$/;"	m	struct:_ICMP6NodeInfo
+flags	decode.h	/^    uint8_t flags;$/;"	m	struct:_GREHdr
+flags_spanId	decode.h	/^    uint16_t flags_spanId;$/;"	m	struct:_ERSpanType2Hdr
+flags_spanId	decode.h	/^    uint16_t flags_spanId;$/;"	m	struct:_ERSpanType3Hdr
+flow	decode.h	/^    void *flow;             \/* for flow info *\/$/;"	m	struct:_Packet
+frag_flag	decode.h	/^    u_int8_t frag_flag;     \/* flag to indicate a fragmented packet *\/$/;"	m	struct:_Packet
+frag_offset	decode.h	/^    u_int16_t frag_offset;  \/* fragment offset number *\/$/;"	m	struct:_Packet
+getAddr_dichotomy	geoip.c	/^void getAddr_dichotomy(const unsigned int ip, char* geography, char* scc_flag)$/;"	f
+getAddr_ergodic	geoip.c	/^void getAddr_ergodic(const unsigned int ip, char* geography, char* scc_flag)$/;"	f
+gsd	decode.h	/^    uint8_t  gsd[6];$/;"	m	struct:_PGM_HEADER
+gwaddr	decode.h	/^        struct in_addr gwaddr;$/;"	m	union:_ICMPHdr::__anon3	typeref:struct:_ICMPHdr::__anon3::in_addr
+handle_func	init.c	/^void handle_func(int sig)$/;"	f
+head	decode.h	/^	cache_head_t head;$/;"	m	struct:cache_alarm_t
+head	decode.h	/^	cache_head_t head;$/;"	m	struct:cache_alert_t
+head	decode.h	/^    cache_head_t head;$/;"	m	struct:cache_opt_t
+hop_lmt	decode.h	/^    uint8_t  hop_lmt;  \/* hop limit *\/$/;"	m	struct:_IPv6Hdr
+icmp_dun	decode.h	/^    } icmp_dun;$/;"	m	struct:_ICMPHdr	typeref:union:_ICMPHdr::__anon5
+icmp_hun	decode.h	/^    } icmp_hun;$/;"	m	struct:_ICMPHdr	typeref:union:_ICMPHdr::__anon3
+id	decode.h	/^            uint16_t id;$/;"	m	struct:_ICMPHdr::__anon3::idseq
+id	decode.h	/^    uint8_t id;$/;"	m	struct:_EAPHdr
+identifier	loadrule.h	/^   char identifier[8];$/;"	m	struct:filerule
+idseq	decode.h	/^        struct idseq$/;"	s	union:_ICMPHdr::__anon3
+idseq	decode.h	/^        } idseq;$/;"	m	union:_ICMPHdr::__anon3	typeref:struct:_ICMPHdr::__anon3::idseq
+ih_ip	decode.h	/^        struct ih_ip$/;"	s	union:_ICMPHdr::__anon5
+in6_addr	decode.h	/^struct in6_addr$/;"	s
+in6_u	decode.h	/^    } in6_u;$/;"	m	struct:in6_addr	typeref:union:in6_addr::__anon2
+index	decode.h	/^  uint8_t index;$/;"	m	struct:_EapolKey
+init	init.c	/^void init()$/;"	f
+ip	decode.h	/^            IPHdr *ip;$/;"	m	struct:_ICMPHdr::__anon5::ih_ip
+ip	decode.h	/^        } ip;$/;"	m	union:_ICMPHdr::__anon5	typeref:struct:_ICMPHdr::__anon5::ih_ip
+ip	decode.h	/^    } ip;$/;"	m	struct:_ip	typeref:union:_ip::__anon1
+ip6_dst	decode.h	/^    struct in6_addr ip6_dst;      \/* destination address *\/$/;"	m	struct:_IP6RawHdr	typeref:struct:_IP6RawHdr::in6_addr
+ip6_hoplim	decode.h	/^    uint8_t  ip6_hoplim;               \/* hop limit *\/$/;"	m	struct:_IP6RawHdr
+ip6_next	decode.h	/^    uint8_t  ip6_next;                \/* next header *\/$/;"	m	struct:_IP6RawHdr
+ip6_payload_len	decode.h	/^    uint16_t ip6_payload_len;               \/* payload length *\/$/;"	m	struct:_IP6RawHdr
+ip6_src	decode.h	/^    struct in6_addr ip6_src;      \/* source address *\/$/;"	m	struct:_IP6RawHdr	typeref:struct:_IP6RawHdr::in6_addr
+ip6_vtf	decode.h	/^    uint32_t ip6_vtf;               \/* 4 bits version, 8 bits TC,$/;"	m	struct:_IP6RawHdr
+ip6dest_len	decode.h	/^    uint8_t ip6dest_len;$/;"	m	struct:_IP6Dest
+ip6dest_nxt	decode.h	/^    uint8_t ip6dest_nxt;$/;"	m	struct:_IP6Dest
+ip6dest_pad	decode.h	/^    uint8_t ip6dest_pad[6];$/;"	m	struct:_IP6Dest
+ip6e_len	decode.h	/^    uint8_t ip6e_len;$/;"	m	struct:_IP6Extension
+ip6e_nxt	decode.h	/^    uint8_t ip6e_nxt;$/;"	m	struct:_IP6Extension
+ip6e_pad	decode.h	/^    uint8_t ip6e_pad[6];$/;"	m	struct:_IP6Extension
+ip6f_ident	decode.h	/^    uint32_t  ip6f_ident;   \/* identification *\/$/;"	m	struct:_IP6Frag
+ip6f_nxt	decode.h	/^    uint8_t   ip6f_nxt;     \/* next header *\/$/;"	m	struct:_IP6Frag
+ip6f_offlg	decode.h	/^    uint16_t  ip6f_offlg;   \/* offset, reserved, and flag *\/$/;"	m	struct:_IP6Frag
+ip6f_reserved	decode.h	/^    uint8_t   ip6f_reserved;    \/* reserved field *\/$/;"	m	struct:_IP6Frag
+ip6flow	decode.h	237;"	d
+ip6h	decode.h	/^	IP6Hdr *ip6h, *orig_ip6h;$/;"	m	struct:_Packet
+ip6hbh_len	decode.h	/^    uint8_t ip6hbh_len;$/;"	m	struct:_IP6HopByHop
+ip6hbh_nxt	decode.h	/^    uint8_t ip6hbh_nxt;$/;"	m	struct:_IP6HopByHop
+ip6hbh_pad	decode.h	/^    uint8_t ip6hbh_pad[6];$/;"	m	struct:_IP6HopByHop
+ip6hlim	decode.h	240;"	d
+ip6hops	decode.h	241;"	d
+ip6nxt	decode.h	239;"	d
+ip6plen	decode.h	238;"	d
+ip6rte0_addr	decode.h	/^    struct in6_addr ip6rte0_addr[1];  \/* Up to 23 IP6 addresses *\/$/;"	m	struct:_IP6Route0	typeref:struct:_IP6Route0::in6_addr
+ip6rte0_bitmap	decode.h	/^    uint8_t ip6rte0_bitmap[3];$/;"	m	struct:_IP6Route0
+ip6rte0_len	decode.h	/^    uint8_t ip6rte0_len;$/;"	m	struct:_IP6Route0
+ip6rte0_nxt	decode.h	/^    uint8_t ip6rte0_nxt;$/;"	m	struct:_IP6Route0
+ip6rte0_reserved	decode.h	/^    uint8_t ip6rte0_reserved;$/;"	m	struct:_IP6Route0
+ip6rte0_seg_left	decode.h	/^    uint8_t ip6rte0_seg_left;$/;"	m	struct:_IP6Route0
+ip6rte0_type	decode.h	/^    uint8_t ip6rte0_type;$/;"	m	struct:_IP6Route0
+ip6rte_len	decode.h	/^    uint8_t ip6rte_len;$/;"	m	struct:_IP6Route
+ip6rte_nxt	decode.h	/^    uint8_t ip6rte_nxt;$/;"	m	struct:_IP6Route
+ip6rte_seg_left	decode.h	/^    uint8_t ip6rte_seg_left;$/;"	m	struct:_IP6Route
+ip6rte_type	decode.h	/^    uint8_t ip6rte_type;$/;"	m	struct:_IP6Route
+ip_csum	decode.h	/^    u_int16_t ip_csum;      \/* checksum *\/$/;"	m	struct:_IPHdr
+ip_csum	decode.h	/^    uint16_t ip_csum;      \/* checksum *\/$/;"	m	struct:_IPv4Hdr
+ip_dst	decode.h	/^    sfip_t ip_dst;          \/* dest IP *\/$/;"	m	struct:_IPv4Hdr
+ip_dst	decode.h	/^    sfip_t ip_dst;$/;"	m	struct:_IPv6Hdr
+ip_dst	decode.h	/^    struct in_addr ip_dst;  \/* dest IP *\/$/;"	m	struct:_IPHdr	typeref:struct:_IPHdr::in_addr
+ip_id	decode.h	/^    u_int16_t ip_id;        \/* identification  *\/$/;"	m	struct:_IPHdr
+ip_id	decode.h	/^    uint16_t ip_id;        \/* identification  *\/$/;"	m	struct:_IPv4Hdr
+ip_lastopt_bad	decode.h	/^    u_char ip_lastopt_bad;  \/* flag to indicate that option decoding was$/;"	m	struct:_Packet
+ip_len	decode.h	/^    u_int16_t ip_len;       \/* datagram length *\/$/;"	m	struct:_IPHdr
+ip_len	decode.h	/^    uint16_t ip_len;       \/* datagram length *\/$/;"	m	struct:_IPv4Hdr
+ip_off	decode.h	/^    u_int16_t ip_off;       \/* fragment offset *\/$/;"	m	struct:_IPHdr
+ip_off	decode.h	/^    uint16_t ip_off;       \/* fragment offset *\/$/;"	m	struct:_IPv4Hdr
+ip_option_count	decode.h	/^    u_int32_t ip_option_count;  \/* number of options in this packet *\/$/;"	m	struct:_Packet
+ip_options_data	decode.h	/^    u_int8_t *ip_options_data;$/;"	m	struct:_Packet
+ip_options_len	decode.h	/^    u_int32_t ip_options_len;$/;"	m	struct:_Packet
+ip_proto	decode.h	/^    u_int8_t ip_proto;      \/* datagram protocol *\/$/;"	m	struct:_IPHdr
+ip_proto	decode.h	/^    uint8_t ip_proto;      \/* datagram protocol *\/$/;"	m	struct:_IPv4Hdr
+ip_rules	decode.h	/^struct ip_rules{$/;"	s
+ip_src	decode.h	/^    sfip_t ip_src;          \/* source IP *\/$/;"	m	struct:_IPv4Hdr
+ip_src	decode.h	/^    sfip_t ip_src;$/;"	m	struct:_IPv6Hdr
+ip_src	decode.h	/^    struct in_addr ip_src;  \/* source IP *\/$/;"	m	struct:_IPHdr	typeref:struct:_IPHdr::in_addr
+ip_tos	decode.h	/^    u_int8_t ip_tos;        \/* type of service *\/$/;"	m	struct:_IPHdr
+ip_tos	decode.h	/^    uint8_t ip_tos;        \/* type of service *\/$/;"	m	struct:_IPv4Hdr
+ip_ttl	decode.h	/^    u_int8_t ip_ttl;        \/* time to live field *\/$/;"	m	struct:_IPHdr
+ip_ttl	decode.h	/^    uint8_t ip_ttl;        \/* time to live field *\/$/;"	m	struct:_IPv4Hdr
+ip_verhl	decode.h	/^    u_int8_t ip_verhl;      \/* version & header length *\/$/;"	m	struct:_IPHdr
+ip_verhl	decode.h	/^    uint8_t ip_verhl;      \/* version & header length *\/$/;"	m	struct:_IPv4Hdr
+ipaddr	geoip.h	/^struct ipaddr$/;"	s
+ipfile	geoip.c	/^struct ipaddr* ipfile;$/;"	v	typeref:struct:ipaddr
+iph	decode.h	/^    IPHdr *iph, *orig_iph;   \/* and orig. headers for ICMP_*_UNREACH family *\/$/;"	m	struct:_Packet
+ipm_void	decode.h	/^            uint16_t ipm_void;$/;"	m	struct:_ICMPHdr::__anon3::pmtu
+ipopt_decode	decode.h	/^    char ipopt_decode;      \/* alert on decoder inconsistencies *\/$/;"	m	struct:_DecoderFlags
+ipv6_bad_frag_pkt	decode.h	/^    char ipv6_bad_frag_pkt;$/;"	m	struct:_DecoderFlags
+iv	decode.h	/^  uint8_t iv[16];$/;"	m	struct:_EapolKey
+label	decode.h	/^    uint32_t label;$/;"	m	struct:_MplsHdr
+len	decode.h	/^    uint16_t len;      \/* length of the payload *\/$/;"	m	struct:_IPv6Hdr
+len	decode.h	/^    uint16_t len;  \/* Packet body length *\/$/;"	m	struct:_EtherEapol
+len	decode.h	/^    uint16_t len;$/;"	m	struct:_EAPHdr
+len	decode.h	/^    uint16_t len;$/;"	m	struct:s_pseudoheader
+len	decode.h	/^    uint8_t len; \/* length of the data section *\/$/;"	m	struct:_Options
+len	decode.h	/^    uint8_t len;$/;"	m	struct:_PGM_NAK_OPT
+length	decode.h	/^    uint16_t length;            \/* length *\/$/;"	m	struct:_GTPHdr
+length	decode.h	/^    uint16_t length;$/;"	m	struct:_PGM_HEADER
+length	decode.h	/^    unsigned short length;      \/* payload length *\/$/;"	m	struct:_PPPoEHdr
+length	decode.h	/^    unsigned short length;    \/* tag length *\/$/;"	m	struct:_PPPoE_Tag
+length	decode.h	/^  uint8_t length[2];$/;"	m	struct:_EapolKey
+length	loadrule.h	/^   int length;$/;"	m	struct:filerule
+lifetime	decode.h	/^            uint16_t lifetime;$/;"	m	struct:_ICMPHdr::__anon3::rtradv
+lifetime	decode.h	/^    uint16_t lifetime;$/;"	m	struct:_ICMP6RouterAdvertisement
+mask	decode.h	/^        uint32_t mask;$/;"	m	union:_ICMPHdr::__anon5
+mf	decode.h	/^    u_int8_t mf;            \/* more fragments flag *\/$/;"	m	struct:_Packet
+mtu	decode.h	/^    uint32_t mtu;$/;"	m	struct:_ICMP6TooBig
+multi	decode.h	/^    uint32_t  multi;$/;"	m	struct:_PGM_NAK
+nak	decode.h	/^    PGM_NAK  nak;$/;"	m	struct:_PGM_HEADER
+name	loadrule.h	/^   char name[64];$/;"	m	struct:filerule
+next	decode.h	/^    uint8_t  next;     \/* next header$/;"	m	struct:_IPv6Hdr
+next	loadrule.h	/^   struct filerule *next;$/;"	m	struct:filerule	typeref:struct:filerule::filerule
+nextmtu	decode.h	/^            uint16_t nextmtu;$/;"	m	struct:_ICMPHdr::__anon3::pmtu
+nonce	decode.h	/^    uint64_t nonce;$/;"	m	struct:_ICMP6NodeInfo
+num_addrs	decode.h	/^            uint8_t num_addrs;$/;"	m	struct:_ICMPHdr::__anon3::rtradv
+num_addrs	decode.h	/^    uint8_t num_addrs;$/;"	m	struct:_ICMP6RouterAdvertisement
+opt	decode.h	/^    PGM_NAK_OPT opt;$/;"	m	struct:_PGM_NAK
+opt	decode.h	/^    uint8_t  opt;$/;"	m	struct:_PGM_HEADER
+opttime	decode.h	/^    char opttime[24];$/;"	m	struct:cache_opt_t
+orig_dp	decode.h	/^    u_int16_t orig_dp;      \/* dest port (TCP\/UDP) of original datagram *\/$/;"	m	struct:_Packet
+orig_family	decode.h	/^	int orig_family;$/;"	m	struct:_Packet
+orig_ip6h	decode.h	/^	IP6Hdr *ip6h, *orig_ip6h;$/;"	m	struct:_Packet
+orig_iph	decode.h	/^    IPHdr *iph, *orig_iph;   \/* and orig. headers for ICMP_*_UNREACH family *\/$/;"	m	struct:_Packet
+orig_sp	decode.h	/^    u_int16_t orig_sp;      \/* source port (TCP\/UDP) of original datagram *\/$/;"	m	struct:_Packet
+orig_tcph	decode.h	/^    TCPHdr *tcph, *orig_tcph;$/;"	m	struct:_Packet
+otime	decode.h	/^            uint32_t otime;$/;"	m	struct:_ICMPHdr::__anon5::ts
+outer_family	decode.h	/^	int outer_family;$/;"	m	struct:_Packet
+oversized_alert	decode.h	/^    char oversized_alert;   \/* alert if garbage after tcp\/udp payload *\/$/;"	m	struct:_DecoderFlags
+oversized_drop	decode.h	/^    char oversized_drop;   \/* alert if garbage after tcp\/udp payload *\/$/;"	m	struct:_DecoderFlags
+packet_flags	decode.h	/^    u_int32_t packet_flags;     \/* special flags for the packet *\/$/;"	m	struct:_Packet
+pad	decode.h	/^    uint32_t pad;$/;"	m	struct:_ERSpanType2Hdr
+pad0	decode.h	/^    uint16_t pad0;$/;"	m	struct:_ERSpanType3Hdr
+pad1	decode.h	/^    uint16_t pad1;$/;"	m	struct:_ERSpanType3Hdr
+pad2	decode.h	/^    uint32_t pad2;$/;"	m	struct:_ERSpanType3Hdr
+pad3	decode.h	/^    uint32_t pad3;$/;"	m	struct:_ERSpanType3Hdr
+param	decode.h	/^        } param;$/;"	m	union:_ICMPHdr::__anon3	typeref:struct:_ICMPHdr::__anon3::__anon4
+pkt	decode.h	/^    const u_int8_t *pkt;              \/* base pointer to the raw packet data *\/$/;"	m	struct:_Packet
+pkth	decode.h	/^    const struct pcap_pkthdr *pkth;   \/* BPF data *\/$/;"	m	struct:_Packet	typeref:struct:_Packet::pcap_pkthdr
+plugin_id	decode.h	/^	uint32_t plugin_id;$/;"	m	struct:cache_alert_t
+pmtu	decode.h	/^        struct pmtu$/;"	s	union:_ICMPHdr::__anon3
+pmtu	decode.h	/^        } pmtu;$/;"	m	union:_ICMPHdr::__anon3	typeref:struct:_ICMPHdr::__anon3::pmtu
+port	decode.h	/^    u_short port;$/;"	m	struct:ip_rules
+pptr	decode.h	/^            uint8_t pptr;$/;"	m	struct:_ICMPHdr::__anon3::__anon4
+preference	decode.h	/^            uint32_t preference;$/;"	m	struct:_ICMPHdr::__anon5::ra_addr
+preprocessors	decode.h	/^    int preprocessors;          \/* flags for preprocessors to check *\/$/;"	m	struct:_Packet
+pres1	decode.h	/^            uint8_t pres1;$/;"	m	struct:_ICMPHdr::__anon3::__anon4
+pres2	decode.h	/^            uint16_t pres2;$/;"	m	struct:_ICMPHdr::__anon3::__anon4
+processrule	loadrule.c	/^void processrule(int rule_num, const char *ruled)$/;"	f
+protid	decode.h	/^    u_int8_t protid[3];$/;"	m	struct:_Trh_llc
+protocol	decode.h	/^	uint32_t protocol;$/;"	m	struct:cache_alert_t
+protocol	decode.h	/^    uint8_t  protocol;$/;"	m	struct:s_pseudoheader
+qtype	decode.h	/^    uint16_t qtype;$/;"	m	struct:_ICMP6NodeInfo
+ra_addr	decode.h	/^        struct ra_addr$/;"	s	union:_ICMPHdr::__anon5
+radv	decode.h	/^        } radv;$/;"	m	union:_ICMPHdr::__anon5	typeref:struct:_ICMPHdr::__anon5::ra_addr
+rea	loadrule.c	/^void rea()$/;"	f
+reachable_time	decode.h	/^    uint32_t reachable_time;$/;"	m	struct:_ICMP6RouterAdvertisement
+readIPfile	geoip.c	/^void readIPfile()$/;"	f
+readrule	loadrule.c	/^void readrule()$/;"	f
+region	geoip.h	/^    char region[30];$/;"	m	struct:ipaddr
+release	loadrule.c	/^void release()$/;"	f
+res	decode.h	/^    uint8_t res[2];$/;"	m	struct:_PGM_NAK_OPT
+res1	decode.h	/^    uint16_t  res1;$/;"	m	struct:_PGM_NAK
+res2	decode.h	/^    uint16_t  res2;$/;"	m	struct:_PGM_NAK
+reserved	decode.h	/^    uint32_t reserved;$/;"	m	struct:_ICMP6RouterSolicitation
+retrans_time	decode.h	/^    uint32_t retrans_time;$/;"	m	struct:_ICMP6RouterAdvertisement
+rf	decode.h	/^    u_int8_t rf;                  \/* IP reserved bit *\/$/;"	m	struct:_Packet
+risk	decode.h	/^	char risk;$/;"	m	struct:cache_alarm_t
+risk	decode.h	/^	char risk[3];$/;"	m	struct:cache_alert_t
+rset	decode.h	/^    u_int16_t rset[8];$/;"	m	struct:_Trh_mr
+rtime	decode.h	/^            uint32_t rtime;$/;"	m	struct:_ICMPHdr::__anon5::ts
+rtradv	decode.h	/^        struct rtradv$/;"	s	union:_ICMPHdr::__anon3
+rtradv	decode.h	/^        } rtradv;$/;"	m	union:_ICMPHdr::__anon3	typeref:struct:_ICMPHdr::__anon3::rtradv
+rule	loadrule.c	/^struct filerule *rule[RULESIZE];$/;"	v	typeref:struct:filerule
+s6_addr	decode.h	219;"	d
+s6_addr16	decode.h	220;"	d
+s6_addr32	decode.h	221;"	d
+s_icmp_data	decode.h	586;"	d
+s_icmp_gwaddr	decode.h	542;"	d
+s_icmp_id	decode.h	543;"	d
+s_icmp_ip	decode.h	583;"	d
+s_icmp_lifetime	decode.h	550;"	d
+s_icmp_mask	decode.h	585;"	d
+s_icmp_nextmtu	decode.h	547;"	d
+s_icmp_num_addrs	decode.h	548;"	d
+s_icmp_otime	decode.h	580;"	d
+s_icmp_pmvoid	decode.h	546;"	d
+s_icmp_pptr	decode.h	541;"	d
+s_icmp_radv	decode.h	584;"	d
+s_icmp_rtime	decode.h	581;"	d
+s_icmp_seq	decode.h	544;"	d
+s_icmp_ttime	decode.h	582;"	d
+s_icmp_void	decode.h	545;"	d
+s_icmp_wpa	decode.h	549;"	d
+s_pseudoheader	decode.h	/^typedef struct s_pseudoheader$/;"	s
+saddr	decode.h	/^    u_int8_t saddr[TR_ALEN];    \/* dst address *\/$/;"	m	struct:_Trh_hdr
+scc	decode.h	/^	char scc[65];$/;"	m	struct:cache_alarm_t
+scc	decode.h	/^    char scc[65];$/;"	m	struct:cache_alert_t
+scc_flag	decode.h	/^	char scc_flag;$/;"	m	struct:cache_alarm_t
+scc_flag	decode.h	/^    char scc_flag;$/;"	m	struct:cache_alert_t
+seq	decode.h	/^            uint16_t seq;$/;"	m	struct:_ICMPHdr::__anon3::idseq
+seq	decode.h	/^    uint32_t seq[1];    \/* could be many many more, but 1 is sufficient *\/$/;"	m	struct:_PGM_NAK_OPT
+seqnum	decode.h	/^    uint32_t  seqnum;$/;"	m	struct:_PGM_NAK
+serverfd	client.c	/^int serverfd;$/;"	v
+session	decode.h	/^    unsigned short session;     \/* session id *\/$/;"	m	struct:_PPPoEHdr
+sfip_t	decode.h	/^} sfip_t;$/;"	t	typeref:struct:_ip
+sig	decode.h	/^  uint8_t sig[16];$/;"	m	struct:_EapolKey
+sih_void	decode.h	/^        uint32_t sih_void;$/;"	m	union:_ICMPHdr::__anon3
+sip	decode.h	/^	char sip[19];$/;"	m	struct:cache_alarm_t
+sip	decode.h	/^	char sip[19];$/;"	m	struct:cache_alert_t
+sip	decode.h	/^    uint32_t sip, dip;$/;"	m	struct:s_pseudoheader
+size	decode.h	/^	int size;$/;"	m	struct:cache_head_t
+sp	decode.h	/^    u_int16_t sp;           \/* source port (TCP\/UDP) *\/$/;"	m	struct:_Packet
+sport	decode.h	/^	uint32_t sport;$/;"	m	struct:cache_alert_t
+src	decode.h	/^    uint32_t  src;$/;"	m	struct:_PGM_NAK
+srcport	decode.h	/^    uint16_t srcport;$/;"	m	struct:_PGM_HEADER
+ssap	decode.h	/^    u_int8_t ssap;$/;"	m	struct:_Trh_llc
+ssnptr	decode.h	/^    void *ssnptr;           \/* for tcp session tracking info... *\/$/;"	m	struct:_Packet
+startip	decode.h	/^    u_int startip;$/;"	m	struct:ip_rules
+startip	geoip.h	/^    char startip[15];$/;"	m	struct:ipaddr
+streamptr	decode.h	/^    void *streamptr;        \/* for tcp pkt dump *\/$/;"	m	struct:_Packet
+tcp_lastopt_bad	decode.h	/^    u_char tcp_lastopt_bad;  \/* flag to indicate that option decoding was$/;"	m	struct:_Packet
+tcp_option_count	decode.h	/^    u_int32_t tcp_option_count;$/;"	m	struct:_Packet
+tcp_options_data	decode.h	/^    u_int8_t *tcp_options_data;$/;"	m	struct:_Packet
+tcp_options_len	decode.h	/^    u_int32_t tcp_options_len;$/;"	m	struct:_Packet
+tcph	decode.h	/^    TCPHdr *tcph, *orig_tcph;$/;"	m	struct:_Packet
+tcpopt_decode	decode.h	/^    char tcpopt_decode;      \/* alert on decoder inconsistencies *\/$/;"	m	struct:_DecoderFlags
+tcpopt_experiment	decode.h	/^    char tcpopt_experiment;  \/* TcpOptions Decoder *\/$/;"	m	struct:_DecoderFlags
+tcpopt_obsolete	decode.h	/^    char tcpopt_obsolete;    \/* Alert on obsolete TCP options *\/$/;"	m	struct:_DecoderFlags
+tcpopt_ttcp	decode.h	/^    char tcpopt_ttcp;        \/* Alert on T\/TCP options *\/$/;"	m	struct:_DecoderFlags
+temp	loadrule.c	/^int temp(char t)$/;"	f
+territory	geoip.h	/^    char territory[30];$/;"	m	struct:ipaddr
+th_ack	decode.h	/^    u_int32_t th_ack;       \/* acknowledgement number *\/$/;"	m	struct:_TCPHdr
+th_dport	decode.h	/^    u_int16_t th_dport;     \/* destination port *\/$/;"	m	struct:_TCPHdr
+th_flags	decode.h	/^    u_int8_t th_flags;$/;"	m	struct:_TCPHdr
+th_offx2	decode.h	/^    u_int8_t th_offx2;     \/* offset and reserved *\/$/;"	m	struct:_TCPHdr
+th_seq	decode.h	/^    u_int32_t th_seq;       \/* sequence number *\/$/;"	m	struct:_TCPHdr
+th_sport	decode.h	/^    u_int16_t th_sport;     \/* source port *\/$/;"	m	struct:_TCPHdr
+th_sum	decode.h	/^    u_int16_t th_sum;       \/* checksum *\/$/;"	m	struct:_TCPHdr
+th_urp	decode.h	/^    u_int16_t th_urp;       \/* urgent pointer *\/$/;"	m	struct:_TCPHdr
+th_win	decode.h	/^    u_int16_t th_win;       \/* window *\/$/;"	m	struct:_TCPHdr
+timestamp	decode.h	/^    uint32_t timestamp;$/;"	m	struct:_ERSpanType3Hdr
+totallength	loadrule.h	/^   int totallength;$/;"	m	struct:filerule
+trh	decode.h	/^    Trh_hdr *trh;               \/* Token Ring support headers *\/$/;"	m	struct:_Packet
+trhllc	decode.h	/^    Trh_llc *trhllc;$/;"	m	struct:_Packet
+trhmr	decode.h	/^    Trh_mr *trhmr;$/;"	m	struct:_Packet
+trojan	trojan.c	/^cache_alarm_t trojan;$/;"	v
+trojan_id	decode.h	/^	char trojan_id[6];$/;"	m	struct:cache_alarm_t
+trojan_id	decode.h	/^	char trojan_id[6];$/;"	m	struct:cache_alert_t
+ts	decode.h	/^        struct ts$/;"	s	union:_ICMPHdr::__anon5
+ts	decode.h	/^        } ts;$/;"	m	union:_ICMPHdr::__anon5	typeref:struct:_ICMPHdr::__anon5::ts
+ttime	decode.h	/^            uint32_t ttime;$/;"	m	struct:_ICMPHdr::__anon5::ts
+ttl	decode.h	/^    uint8_t  ttl;$/;"	m	struct:_MplsHdr
+type	decode.h	/^	char type[3];$/;"	m	struct:cache_alarm_t
+type	decode.h	/^	int type;$/;"	m	struct:cache_head_t
+type	decode.h	/^    char type;$/;"	m	struct:ip_rules
+type	decode.h	/^    uint8_t  type;              \/* message type *\/$/;"	m	struct:_GTPHdr
+type	decode.h	/^    uint8_t  type;$/;"	m	struct:_PGM_HEADER
+type	decode.h	/^    uint8_t type;     \/* 02 = vuln *\/$/;"	m	struct:_PGM_NAK_OPT
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_ICMP6
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_ICMP6NodeInfo
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_ICMP6RouterAdvertisement
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_ICMP6RouterSolicitation
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_ICMP6TooBig
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_ICMPHdr
+type	decode.h	/^    uint8_t type;$/;"	m	struct:_IP6Option
+type	decode.h	/^    unsigned short type;    \/* tag type TAG_* *\/$/;"	m	struct:_PPPoE_Tag
+type	decode.h	/^  uint8_t type;$/;"	m	struct:_EapolKey
+type	loadrule.h	/^   char type[3];$/;"	m	struct:filerule
+u6_addr16	decode.h	/^        u_int16_t u6_addr16[8];$/;"	m	union:_ip::__anon1
+u6_addr16	decode.h	/^        uint16_t u6_addr16[8];$/;"	m	union:in6_addr::__anon2
+u6_addr32	decode.h	/^        u_int32_t u6_addr32[4];$/;"	m	union:_ip::__anon1
+u6_addr32	decode.h	/^        uint32_t u6_addr32[4];$/;"	m	union:in6_addr::__anon2
+u6_addr8	decode.h	/^        u_int8_t  u6_addr8[16];$/;"	m	union:_ip::__anon1
+u6_addr8	decode.h	/^        uint8_t u6_addr8[16];$/;"	m	union:in6_addr::__anon2
+uh_chk	decode.h	/^    uint16_t uh_chk;$/;"	m	struct:_UDPHdr
+uh_dport	decode.h	/^    uint16_t uh_dport;$/;"	m	struct:_UDPHdr
+uh_len	decode.h	/^    uint16_t uh_len;$/;"	m	struct:_UDPHdr
+uh_sport	decode.h	/^    uint16_t uh_sport;$/;"	m	struct:_UDPHdr
+uri_count	decode.h	/^    u_int8_t uri_count;     \/* number of URIs in this packet *\/$/;"	m	struct:_Packet
+username	decode.h	/^    char username[64];$/;"	m	struct:cache_opt_t
+vcl	decode.h	/^    uint32_t vcl;      \/* version, class, and label *\/$/;"	m	struct:_IPv6Hdr
+vect	loadrule.h	/^   unsigned int vect[9];$/;"	m	struct:filerule
+ver_type	decode.h	/^    unsigned char ver_type;     \/* pppoe version\/type *\/$/;"	m	struct:_PPPoEHdr
+ver_vlan	decode.h	/^    uint16_t ver_vlan;$/;"	m	struct:_ERSpanType2Hdr
+ver_vlan	decode.h	/^    uint16_t ver_vlan;$/;"	m	struct:_ERSpanType3Hdr
+version	decode.h	/^    uint8_t  version;  \/* EAPOL proto version *\/$/;"	m	struct:_EtherEapol
+version	decode.h	/^    uint8_t version;$/;"	m	struct:_GREHdr
+vh	decode.h	/^    VlanTagHdr *vh;$/;"	m	struct:_Packet
+vth_pri_cfi_vlan	decode.h	/^    u_int16_t vth_pri_cfi_vlan;$/;"	m	struct:_VlanTagHdr
+vth_proto	decode.h	/^    u_int16_t vth_proto;  \/* protocol field... *\/$/;"	m	struct:_VlanTagHdr
+white_ip	trojan.c	/^struct ip_rules white_ip[IP_LIST_LEN];$/;"	v	typeref:struct:ip_rules
+white_ip_len	trojan.c	/^int white_ip_len;$/;"	v
+wpa	decode.h	/^            uint8_t wpa;$/;"	m	struct:_ICMPHdr::__anon3::rtradv
+zero	decode.h	/^    uint8_t  zero;$/;"	m	struct:s_pseudoheader

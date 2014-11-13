@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <schema targetNamespace="http://tempuri.org/ns2.xsd"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/schemas/connect.xsd"/>
+  <import namespace="http://www.genivia.com/wsdl/connect.wsdl"/>
+
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <!-- operation request element -->
+  <element name="upload-message">
+   <complexType>
+    <sequence>
+     <element name="Device-ID" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::Device_ID -->
+     <element name="buer" type="xsd:boolean" minOccurs="1" maxOccurs="1"/><!-- ns2__upload_message::buer -->
+     <element name="state" type="ns:MsgList" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::state -->
+     <element name="t-auth-str" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::t_auth_str -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="upload-messageResponse">
+   <complexType>
+    <sequence>
+     <element name="resultlist" type="ns:ResultList" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns2__upload_message::resultlist -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+

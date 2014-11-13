@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/CA
+END
+cacert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/CA/cacert.pem
+END
+servercert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/CA/servercert.pem
+END

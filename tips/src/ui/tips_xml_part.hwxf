@@ -1,0 +1,422 @@
+#ifndef TIPS_XML_PART
+#define TIPS_XML_PART
+#include "gsad_base.h"
+#include "tips_block.h"
+#include "tips_event.h"
+#include "tips_netlog.h"
+#include "tips_alarm.h"
+#include "tips_alert.h"
+
+inline char *xml_Dip(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Dip>%s</Dip>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+
+inline char *xml_Sip(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Sip>%s</Sip>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_backid(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<backid>%s</backid>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_name(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<name><![CDATA[%s]]></name>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_tips_table(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<tips_table>%s</tips_table>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Sport(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Sport>%s</Sport>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Dport(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Dport>%s</Dport>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Start_time(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Start_time>%s</Start_time>",temp ,value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Expired_time(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Expired_time>%s</Expired_time>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Block_desc(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Block_desc><![CDATA[%s]]></Block_desc>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Event_class(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+				if(strcmp(value, "1011"))
+        	*xmlpart = g_strdup_printf("%s<Event_class>发现涉嫌传输含有恶意程序文件</Event_class>",temp);
+				else
+        	*xmlpart = g_strdup_printf("%s<Event_class>发现涉嫌违规传输泄密信息</Event_class>",temp);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Event_time(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Event_time>%s</Event_time>",temp ,value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Dmac(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Dmac>%s</Dmac>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Sender(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Sender><![CDATA[%s]]></Sender>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Receiver(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Receiver><![CDATA[%s]]></Receiver>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_File_name(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<File_name><![CDATA[%s]]></File_name>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Sen_msg(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Sen_msg>%s</Sen_msg>",temp, value);
+       // *xmlpart = g_strdup_printf("%s<Sen_msg>%s</Sen_msg>",temp, "");
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Protocol(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+				if(!strcmp(value, "6"))
+        	*xmlpart = g_strdup_printf("%s<Protocol>UDP</Protocol>",temp);
+				else if(!strcmp(value, "21"))
+        	*xmlpart = g_strdup_printf("%s<Protocol>FTP</Protocol>",temp);
+				else if(!strcmp(value, "80"))
+        	*xmlpart = g_strdup_printf("%s<Protocol>HTTP</Protocol>",temp);
+				else
+        	*xmlpart = g_strdup_printf("%s<Protocol>TCP</Protocol>",temp);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_End_time(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<End_time><![CDATA[%s]]></End_time>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Load(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Load><![CDATA[%s]]></Load>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Upload(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Upload><![CDATA[%s]]></Upload>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_username(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<username><![CDATA[%s]]></username>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *xml_Otime(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Otime><![CDATA[%s]]></Otime>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Optdsc(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Optdsc><![CDATA[%s]]></Optdsc>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Trogan_id(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Trogan_id><![CDATA[%s]]></Trogan_id>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Alarm_time(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Alarm_time><![CDATA[%s]]></Alarm_time>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline int change_Type(char *value, char *temp)
+{
+	int typeint = atoi(value);
+	switch(typeint){
+		case 10:{strcpy(temp, (char *)"特种木马行为");
+						 break;
+						}
+		case 20:{strcpy(temp, (char *)"普通木马行为");
+						 break;
+						}
+		case 30:{strcpy(temp, (char *)"疑似木马行为");
+						 break;
+						}
+		case 80:{strcpy(temp, (char *)"非木马类攻击窃密行为");
+						 break;
+						}
+		default:{strcpy(temp, (char *)"其他可疑行为");
+						 break;
+						}
+
+	}
+}
+
+inline char *xml_Type(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+				char typechar[60];
+				memset(typechar, 0, 60);
+				change_Type(value, typechar);
+
+        *xmlpart = g_strdup_printf("%s<Type><![CDATA[%s]]></Type>",temp, typechar);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Risk(char *value, char **xmlpart)
+{
+				char *(Riskarr[4]) = {(char *)"一般级",
+															(char *)"关注级",
+															(char *)"严重级",
+															(char *)"紧急级"};
+				int riskint = atoi(value) - 1;
+				if((riskint < 0) || (riskint > 3)){
+					printf("risk err\n");
+					riskint = 0;
+				}
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<Risk><![CDATA[%s]]></Risk>",temp, Riskarr[riskint]);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_Scc_flag(char *value, char **xmlpart)
+{
+				char *(Sccflagarr[8]) = {(char *)"国外",
+																 (char *)"大陆",
+																 (char *)"台湾",
+																 (char *)"香港",
+																 (char *)"澳门",
+																 (char *)"其他",
+																 (char *)"局域网",
+																 (char *)"unknow",
+																};
+        char *temp = *xmlpart;
+				int flag = atoi(value);
+				if((flag < 0) || (flag > 7)){
+					printf("Scc_flag err\n");
+					flag = 7;
+				}
+				if(!strcmp(value, "e"))
+					flag = 7;
+        *xmlpart = g_strdup_printf("%s<Scc_flag><![CDATA[%s]]></Scc_flag>",temp, Sccflagarr[flag]);
+        g_free(temp);
+        return *xmlpart;
+}
+
+
+inline char *xml_plugin_id(char *value, char **xmlpart)
+{
+        char *temp = *xmlpart;
+        *xmlpart = g_strdup_printf("%s<plugin_id><![CDATA[%s]]></plugin_id>",temp, value);
+        g_free(temp);
+        return *xmlpart;
+}
+
+inline char *response_html(credentials_t *credentials, const char *value)
+{
+	time_t now;
+        char ctime_now[200];
+        now = time (NULL);
+        ctime_r_strip_newline (&now, ctime_now);
+        char *xml = (char *)g_strdup_printf("<envelope><login><![CDATA[%s]]></login><time>%s</time><token>%s</token>%s</envelope>",credentials->username, ctime_now,credentials->token, value);
+	printf("xmlwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww==%s\n",xml);
+        char *html = xsl_transform(xml);
+        g_free(xml);
+        return html;
+}
+
+
+inline char *response_html_user(credentials_t *credentials, const char *value)
+{
+	time_t now;
+        char ctime_now[200];
+        now = time (NULL);
+        ctime_r_strip_newline (&now, ctime_now);
+        char *xml = (char *)g_strdup_printf("<envelope tipsuser=\"1\"><login><![CDATA[%s]]></login><time>%s</time><token>%s</token>%s</envelope>",credentials->username, ctime_now,credentials->token, value);
+	printf("xml_user==%s\n",xml);
+        char *html = xsl_transform(xml);
+        g_free(xml);
+        return html;
+}
+
+inline int tips_block_params(params_t* params, block_stut_t *block_info)
+{
+	block_info->dip = (char *)params_value(params, "tips_Dip");
+	block_info->sip = (char *)params_value(params, "tips_Sip");
+	block_info->Sport = (char *)params_value(params, "tips_Sport");
+	block_info->Start_time = (char *)params_value(params, "tips_Start_time");
+	block_info->Expired_time = (char *)params_value(params, "tips_Expired_time");
+	return 0;
+}
+
+inline int tips_event_params(params_t* params, event_stut_t *event_info)
+{
+	event_info->Event_class = (char *)params_value(params, "tips_Event_class");
+	event_info->Event_time = (char *)params_value(params, "tips_Event_time");
+	event_info->Sip = (char *)params_value(params, "tips_Sip");
+	event_info->Sport = (char *)params_value(params, "tips_Sport");
+	event_info->Dip = (char *)params_value(params, "tips_Dip");
+	event_info->Sender = (char *)params_value(params, "tips_Sender");
+	event_info->Receiver = (char *)params_value(params, "tips_Receiver")     ;
+	event_info->Sen_msg = (char *)params_value(params, "tips_Sen_msg");
+	return 0;
+}
+
+inline int tips_netlog_params(params_t* params, netlog_stut_t *netlog_info)
+{
+	netlog_info->Dip = (char *)params_value(params, "tips_Dip");
+	netlog_info->Sip = (char *)params_value(params, "tips_Sip");
+	netlog_info->Sport = (char *)params_value(params, "tips_Sport");
+	netlog_info->Protocol = (char *)params_value(params, "tips_Protocol");
+	netlog_info->Start_time = (char *)params_value(params, "tips_Start_time");
+	netlog_info->End_time = (char *)params_value(params, "tips_End_time");
+	netlog_info->Load = (char *)params_value(params, "tips_Load");
+	netlog_info->Upload = (char *)params_value(params, "tips_Upload");
+	return 0;
+}
+
+inline int tips_alarm_params(params_t* params, alarm_stut_t *alarm_info)
+{
+	alarm_info->Trojan_id = (char *)params_value(params, "tips_Trogan_id");
+	printf("qqqqqqqqqqT=%s\n",alarm_info->Trojan_id);
+	alarm_info->Sip = (char *)params_value(params, "tips_Sip");
+	printf("qqqqqqqqqqS=%s\n",alarm_info->Sip);
+	alarm_info->Dip = (char *)params_value(params, "tips_Dip");
+	printf("qqqqqqqqqqD=%s\n",alarm_info->Dip);
+	alarm_info->Dmac = (char *)params_value(params, "tips_Dmac");
+	printf("qqqqqqqqqqDm=%s\n",alarm_info->Dmac);
+	alarm_info->Alarm_time = (char *)params_value(params, "tips_Alarm_time");
+	printf("qqqqqqqqqqA=%s\n",alarm_info->Alarm_time);
+	alarm_info->Type = (char *)params_value(params, "tips_Type");
+	printf("qqqqqqqqqqT=%s\n",alarm_info->Type);
+	alarm_info->Risk = (char *)params_value(params, "tips_Risk");
+	printf("qqqqqqqqqqR=%s\n",alarm_info->Risk);
+	alarm_info->Scc_flag = (char *)params_value(params, "tips_Scc_flag");
+	printf("qqqqqqqqqqSCC=%s\n",alarm_info->Scc_flag);
+	return 0;
+}
+
+inline int tips_alert_params(params_t* params, alert_stut_t *alert_info)
+{
+	alert_info->plugin_id = (char *)params_value(params, "tips_plugin_id");
+	alert_info->Risk = (char *)params_value(params, "tips_Risk");
+	alert_info->Alarm_time = (char *)params_value(params, "tips_Alarm_time");
+	alert_info->Sip = (char *)params_value(params, "tips_Sip");
+	alert_info->Dip = (char *)params_value(params, "tips_Dip");
+	alert_info->Dmac = (char *)params_value(params, "tips_Dmac");
+	alert_info->Scc_flag = (char *)params_value(params, "tips_Scc_flag");
+	return 0;
+}
+
+#endif

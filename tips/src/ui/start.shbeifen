@@ -1,0 +1,12 @@
+#!/bin/bash
+#sleep 1;
+#ifconfig > /root/zzf
+cd /root/lirongxun20130427/checklrx/
+(export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+/root/lirongxun20130427/checklrx/tipschecker &)
+sleep 1;
+cd /root/lirongxun20130427/manage_20130324/
+/root/lirongxun20130427/manage_20130324/tipsmanager &
+cd /root/lirongxun20130427/ui/
+(export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/i386-linux-gnu/:/lib/i386-linux-gnu/:/root/lirongxun20130427/ui
+/root/lirongxun20130427/ui/tipsuser &)

@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALARMPID	sharemem.h	6;"	d
+AUDITPID	sharemem.h	7;"	d
+BLOCKPID	sharemem.h	8;"	d
+CACHEPID	sharemem.h	10;"	d
+CHAR	sharemem.c	12;"	d	file:
+DAEMONPID	sharemem.h	5;"	d
+DOUBLE	sharemem.c	17;"	d	file:
+FLOAT	sharemem.c	16;"	d	file:
+Get_pid_shm	sharemem.c	/^int Get_pid_shm(shm_struct_t * shm, int process)$/;"	f
+Get_status_shm	sharemem.c	/^int Get_status_shm(shm_struct_t * shm, int id, void * param, int len)$/;"	f
+INT	sharemem.c	13;"	d	file:
+IPC_SHM_NAME	sharemem.c	9;"	d	file:
+Init_shm	sharemem.c	/^int Init_shm(shm_struct_t * shm)$/;"	f
+LONG	sharemem.c	14;"	d	file:
+MAX_SHM_SIZE	shm_struct_t.h	10;"	d
+MAX_VAR_NUM	shm_struct_t.h	9;"	d
+MNGAGNTPID	sharemem.h	11;"	d
+NETSTATPID	sharemem.h	13;"	d
+NUM	main.c	3;"	d	file:
+NUM	main1.c	2;"	d	file:
+PREALLOC1PID	sharemem.h	14;"	d
+PREALLOC2PID	sharemem.h	15;"	d
+Read_config	sharemem.c	/^int Read_config(shm_struct_t * shm)$/;"	f
+SENSTPID	sharemem.h	9;"	d
+SHAREMEM_H	sharemem.h	2;"	d
+SHMCONF	sharemem.c	10;"	d	file:
+SHM_STRUCT_H	shm_struct_t.h	2;"	d
+Set_pid_shm	sharemem.c	/^void Set_pid_shm(shm_struct_t * shm, int process)$/;"	f
+Set_status_shm	sharemem.c	/^int Set_status_shm(shm_struct_t * shm, int id, void * param, int len)$/;"	f
+Set_var_type	sharemem.c	/^int Set_var_type(char* str, var_t * var_ptr)$/;"	f
+Sizeof	sharemem.c	/^int Sizeof(int type)$/;"	f
+UIPID	sharemem.h	12;"	d
+UNDEFINE	sharemem.c	11;"	d	file:
+UNSIGNEDINT	sharemem.c	15;"	d	file:
+Unlink_shm	sharemem.c	/^int Unlink_shm(shm_struct_t * shm)$/;"	f
+main	main.c	/^int main()$/;"	f
+main	main1.c	/^int main()$/;"	f
+mem	shm_struct_t.h	/^	char 		mem[MAX_SHM_SIZE];$/;"	m	struct:shm_struct_t
+mutex	shm_struct_t.h	/^	sem_t		mutex;$/;"	m	struct:shm_struct_t
+next_var_offset	shm_struct_t.h	/^	int			next_var_offset;$/;"	m	struct:shm_struct_t
+num	shm_struct_t.h	/^	int num;$/;"	m	struct:var_t
+offset	shm_struct_t.h	/^	int offset;$/;"	m	struct:var_t
+shm_struct_t	shm_struct_t.h	/^typedef struct shm_struct_t$/;"	s
+shm_struct_t	shm_struct_t.h	/^}shm_struct_t;$/;"	t	typeref:struct:shm_struct_t
+type	shm_struct_t.h	/^	int type;$/;"	m	struct:var_t
+valid	shm_struct_t.h	/^	int valid;$/;"	m	struct:var_t
+var	shm_struct_t.h	/^	var_t 		var[MAX_VAR_NUM];$/;"	m	struct:shm_struct_t
+var_t	shm_struct_t.h	/^typedef	struct var_t$/;"	s
+var_t	shm_struct_t.h	/^}var_t;$/;"	t	typeref:struct:var_t

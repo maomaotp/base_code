@@ -1,0 +1,2 @@
+all:
+	g++ ../sqlite3.o *.cpp -o tipsuser -I. -lcrypto -I/usr/include/glib-2.0/ -I/usr/lib/i386-linux-gnu/glib-2.0/include -I/usr/local/mysql/include -lmysqlclient -L/usr/local/mysql/lib -Wl,-rpath,/usr/local/mysql/lib -Iglib -L. -lglib-2.0 -L/lib/i386-linux-gnu -L/usr/lib/i386-linux-gnu -L/usr/local/lib/ -lmicrohttpd -I/usr/include/glib-2.0/ -I/usr/lib/i386-linux-gnu/glib-2.0/include/ -I/usr/include/libxml2/ -lexslt -lxml2 -I/usr/include/uuid/ -luuid -lgcrypt -lgnutls -g -I..

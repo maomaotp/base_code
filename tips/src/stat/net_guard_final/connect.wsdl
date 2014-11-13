@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="connect"
+ targetNamespace="http://www.genivia.com/wsdl/connect.wsdl"
+ xmlns:tns="http://www.genivia.com/wsdl/connect.wsdl"
+ xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+ xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xop="http://www.w3.org/2004/08/xop/include"
+ xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+ xmlns:ns2="http://tempuri.org/ns2.xsd"
+ xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+ xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap12/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="http://tempuri.org/ns2.xsd"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/schemas/connect.xsd"/>
+  <import namespace="http://www.genivia.com/wsdl/connect.wsdl"/>
+
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+ </schema>
+
+ <schema targetNamespace="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/wsdl/connect.wsdl"/>
+
+  <complexType name="Data">
+   <annotation>
+    <documentation>holds a MIME attachment</documentation>
+   </annotation>
+   <sequence>
+     <element ref="xop:Include" minOccurs="1" maxOccurs="1"/><!-- x__Data::xop__Include -->
+   </sequence>
+     <attribute ref="xmime5:contentType" use="optional"/>
+  </complexType>
+  <complexType name="DataSet">
+   <annotation>
+    <documentation>holds a set of MIME attachments</documentation>
+   </annotation>
+   <sequence>
+     <element name="item" type="x:Data" minOccurs="0" maxOccurs="unbounded"/><!-- x__DataSet::__size -->
+   </sequence>
+  </complexType>
+  <complexType name="Keys">
+   <annotation>
+    <documentation>holds a set of strings to access the data collection at the server side</documentation>
+   </annotation>
+   <sequence>
+     <element name="key" type="xsd:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/><!-- x__Keys::__size -->
+   </sequence>
+  </complexType>
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <element name="data" type="x:DataSet"/>
+  <element name="Keys" type="x:Keys"/>
+  <element name="keys" type="x:Keys"/>
+ </schema>
+
+ <schema targetNamespace="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:ns2="http://tempuri.org/ns2.xsd"
+  xmlns:x="http://www.genivia.com/schemas/connect.xsd"
+  xmlns:ns="http://www.genivia.com/wsdl/connect.wsdl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://www.genivia.com/schemas/connect.xsd"/>
+
+  <complexType name="MsgItem"><!-- ns__MsgItem -->
+
+   <sequence>
+     <element name="type" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__MsgItem::type -->
+     <element name="msg" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__MsgItem::msg -->
+   </sequence>
+  </complexType>
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultItem"><!-- ns__ResultItem -->
+
+   <sequence>
+     <element name="TimeStamp" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::TimeStamp -->
+     <element name="Order" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::Order -->
+     <element name="Param" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::Param -->
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <!-- operation request element -->
+  <element name="PutData">
+   <complexType>
+    <sequence>
+     <element ref="x:data" minOccurs="0" maxOccurs="1"/><!-- ns__PutData::x__data -->
+     <element ref="x:Keys" minOccurs="0" maxOccurs="1"/><!-- ns__PutData::x__Keys -->
+     <element name="device-id" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__PutData::device_id -->
+     <element name="authstr" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__PutData::authstr -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="PutDataResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="xsd:int" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__PutData::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="GetData">
+   <complexType>
+    <sequence>
+     <element ref="x:keys" minOccurs="0" maxOccurs="1"/><!-- ns__GetData::x__keys -->
+     <element name="device-id" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__GetData::device_id -->
+     <element name="authstr" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__GetData::authstr -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="GetDataResponse">
+   <complexType>
+    <sequence>
+     <element ref="x:data" minOccurs="1" maxOccurs="1"/><!-- ns__GetDataResponse::x__data -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+
+</types>
+
+<message name="PutDataRequest">
+ <part name="parameters" element="ns:PutData"/><!-- ns__PutData::ns__PutData -->
+ <part name="attachments" type="xsd:base64Binary"/>
+</message>
+
+<message name="PutDataResponse">
+ <part name="parameters" element="ns:PutDataResponse"/>
+ <part name="attachments" type="xsd:base64Binary"/>
+</message>
+
+<message name="GetData">
+ <part name="parameters" element="ns:GetData"/><!-- ns__GetData::ns__GetData -->
+ <part name="attachments" type="xsd:base64Binary"/>
+</message>
+
+<message name="GetDataResponse">
+ <part name="parameters" element="ns:GetDataResponse"/><!-- ns__GetData::_param_1 -->
+ <part name="attachments" type="xsd:base64Binary"/>
+</message>
+
+<portType name="connectPortType">
+ <operation name="PutData">
+  <documentation>stores a data set at the server side and returns a set of unique keys to access that data</documentation>
+  <input message="tns:PutDataRequest"/>
+  <output message="tns:PutDataResponse"/>
+ </operation>
+ <operation name="GetData">
+  <documentation>gets a set of data items from the server given a set of keys</documentation>
+  <input message="tns:GetData"/>
+  <output message="tns:GetDataResponse"/>
+ </operation>
+</portType>
+
+<binding name="connect" type="tns:connectPortType">
+ <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="PutData">
+  <SOAP:operation/>
+  <input>
+   <MIME:multipartRelated>
+    <MIME:part>
+     <SOAP:body parts="parameters" use="literal"/>
+    </MIME:part>
+    <MIME:part>
+     <MIME:content part="attachments" type="*/*"/>
+    </MIME:part>
+   </MIME:multipartRelated>
+  </input>
+  <output>
+   <MIME:multipartRelated>
+    <MIME:part>
+     <SOAP:body parts="parameters" use="literal"/>
+    </MIME:part>
+    <MIME:part>
+     <MIME:content part="attachments" type="*/*"/>
+    </MIME:part>
+   </MIME:multipartRelated>
+  </output>
+ </operation>
+ <operation name="GetData">
+  <SOAP:operation/>
+  <input>
+   <MIME:multipartRelated>
+    <MIME:part>
+     <SOAP:body parts="parameters" use="literal"/>
+    </MIME:part>
+    <MIME:part>
+     <MIME:content part="attachments" type="*/*"/>
+    </MIME:part>
+   </MIME:multipartRelated>
+  </input>
+  <output>
+   <MIME:multipartRelated>
+    <MIME:part>
+     <SOAP:body parts="parameters" use="literal"/>
+    </MIME:part>
+    <MIME:part>
+     <MIME:content part="attachments" type="*/*"/>
+    </MIME:part>
+   </MIME:multipartRelated>
+  </output>
+ </operation>
+</binding>
+
+<service name="connect">
+ <documentation>gSOAP 2.8.14 generated service definition</documentation>
+ <port name="connect" binding="tns:connect">
+  <SOAP:address location="http://localhost:80"/>
+ </port>
+</service>
+
+</definitions>

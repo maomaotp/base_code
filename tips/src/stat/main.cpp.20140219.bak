@@ -1,0 +1,256 @@
+#include <iostream>
+#include "check.h"
+using namespace std;
+
+int flag=0;
+info_t  info;
+const char * eth2 = "eth2";
+const char * eth3 = "eth3";
+int linked_num = 0;
+
+extern std::set<in_addr_t> ft_user;
+extern std::set<in_addr_t> se_user;
+extern std::set<message,compare> ft_comp;
+extern std::set<message,compare> se_comp;
+
+void mycallback2(u_char *user,const struct pcap_pkthdr *hdr,const u_char *bytes)
+{
+    geteth2dataflow(hdr); 
+    
+    struct ether_header *ether=(struct ether_header*)bytes;
+    if(ntohs(ether->ether_type) == ETHERTYPE_IP)
+    {
+      static message md5;
+      static message md5tp;
+      static char buffer[64];
+
+      struct iphdr *ip=(struct iphdr *)(bytes+sizeof(struct ether_header));
+      if(ipmarkoff(&ip->saddr))
+      {
+        ft_user.insert(ip->saddr);
+      }
+      else
+      {
+        ft_user.insert(ip->daddr);
+      }
+
+      if(ip->protocol == IPPROTO_TCP )
+      {
+        struct tcphdr *tcp=(struct tcphdr*)(bytes+sizeof(ether_header)+ip->ihl*4);
+	
+ 	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,tcp->source,ip->daddr,tcp->dest);
+        memset(md5.mess,0,16);
+	packmd5((unsigned char*)buffer,md5.mess);
+ 	
+	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,tcp->source,ip->daddr,tcp->dest);
+        memset(md5tp.mess,0,16);
+        packmd5((unsigned char*)buffer,md5tp.mess); 
+
+        if(search(md5) || search(md5tp))
+	{
+	
+	}
+	else
+	{
+	  ft_comp.insert(md5);  
+	}
+      }
+
+      if(ip->protocol == IPPROTO_UDP )
+      {
+        struct udphdr *udp=(struct udphdr*)(bytes+sizeof(ether_header)+ip->ihl*4);
+	
+ 	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,udp->source,ip->daddr,udp->dest);
+        memset(md5.mess,0,16);
+	packmd5((unsigned char*)buffer,md5.mess);
+ 	
+	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,udp->source,ip->daddr,udp->dest);
+        memset(md5tp.mess,0,16);
+        packmd5((unsigned char*)buffer,md5tp.mess); 
+
+        if(search(md5) || search(md5tp))
+	{
+	
+	}
+	else
+	{
+	  ft_comp.insert(md5);  
+	}
+      }
+
+    }
+
+}
+
+void mycallback1(u_char *user,const struct pcap_pkthdr *hdr,const u_char *bytes)
+{
+   geteth3dataflow(hdr);
+
+   struct ether_header *ether=(struct ether_header*)bytes;
+   if(ntohs(ether->ether_type) == ETHERTYPE_IP)
+   {
+      static message md5;
+      static message md5tp;
+      static char buffer[64];
+
+      struct iphdr *ip=(struct iphdr *)(bytes+sizeof(struct ether_header));
+      if(ipmarkoff(&ip->saddr))
+      {
+        se_user.insert(ip->saddr);
+      }
+      else
+      {
+        se_user.insert(ip->daddr);
+      }
+       
+      if(ip->protocol == IPPROTO_TCP)
+      {
+        struct tcphdr *tcp=(struct tcphdr*)(bytes+sizeof(ether_header)+ip->ihl*4);
+	
+ 	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,tcp->source,ip->daddr,tcp->dest);
+        memset(md5.mess,0,16);
+	packmd5((unsigned char*)buffer,md5.mess);
+ 	
+	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,tcp->source,ip->daddr,tcp->dest);
+        memset(md5tp.mess,0,16);
+        packmd5((unsigned char*)buffer,md5tp.mess); 
+
+        if(find(md5) || find(md5tp))
+	{
+	
+	}
+	else
+	{
+	  se_comp.insert(md5);  
+	}
+      }
+      if(ip->protocol == IPPROTO_UDP )
+      {
+        struct udphdr *udp=(struct udphdr*)(bytes+sizeof(ether_header)+ip->ihl*4);
+	
+ 	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,udp->source,ip->daddr,udp->dest);
+        memset(md5.mess,0,16);
+	packmd5((unsigned char*)buffer,md5.mess);
+ 	
+	memset(buffer,0,64);
+	sprintf(buffer,"%u%u%u%u",ip->saddr,udp->source,ip->daddr,udp->dest);
+        memset(md5tp.mess,0,16);
+        packmd5((unsigned char*)buffer,md5tp.mess); 
+
+        if(search(md5) || search(md5tp))
+	{
+	
+	}
+	else
+	{
+	  ft_comp.insert(md5);  
+	}
+      }
+   }
+}
+
+void* func2(void* arg)
+{
+   pcap_loop((pcap_t*)arg,-1,mycallback2,NULL);
+}
+
+void* func1(void* arg)
+{
+   pcap_loop((pcap_t*)arg,-1,mycallback1,NULL);
+}
+
+void getallinfo(int signo)
+{
+//	printf("flag=%d\n", flag);
+   process(&flag);
+   ft_user.clear();
+   se_user.clear();
+   ft_comp.clear();
+   se_comp.clear();
+  
+   getcominfo(info.commu_info);
+   
+   getmonitorinfo(info.monitor_t);
+   printf("%s  %s  %d\n",info.monitor_t.monitorip,info.monitor_t.connectip,info.monitor_t.status);
+   memset(&info,0,sizeof(info));
+   alarm(GETTIME);
+}
+
+void getinfo(int signo)
+{
+   time_t  remain=0;
+   remain=alarm(GETTIME);
+   if(remain == 0 || remain == 3)
+   {
+     return ;
+   }
+   else
+   {
+   process_time(&flag,GETTIME-remain);
+   ft_user.clear();
+   se_user.clear();
+   ft_comp.clear();
+   se_comp.clear();
+
+   getcominfo(info.commu_info);
+
+   getmonitorinfo(info.monitor_t);
+   printf("%s  %s  %d  lnj!!!!!!!!!!!!!!\n",info.monitor_t.monitorip,info.monitor_t.connectip,info.monitor_t.status);
+   memset(&info,0,sizeof(info));
+   alarm(GETTIME);
+   }
+}
+
+int main()
+{
+   pid_t  id=0;
+   pcap_t *mirror0=NULL;
+   pcap_t *mirror1=NULL;
+   pthread_t pid1=0;
+   pthread_t pid2=0;
+
+   id=getpid();
+   printf("%u  ----------------\n",id);
+
+   init_flag(&flag);
+   getworkstatus(info.mirror_info);
+
+  
+   signal(SIGALRM,getallinfo);
+   signal(SIGUSR1,getinfo);
+   alarm(GETTIME);
+   
+
+	 if(1 == info.mirror_info.eth0_status)
+	 {
+	 		mirror0=pcap_open_live(eth2,1600,1,0,NULL);
+  	 	pthread_create(&pid2,NULL,func1,mirror0);
+//   		pcap_loop(eth2,-1,mycallback2,NULL);
+	 }
+
+	 if(1 == info.mirror_info.eth1_status)
+	 {
+  	 mirror1=pcap_open_live(eth3,1600,1,0,NULL);
+  	 pthread_create(&pid1,NULL,func2,mirror1);
+	 }
+	 if(pid1 != 0)
+	 {
+  	 pthread_join(pid1,NULL);
+	 }
+	 if(pid2 != 0)
+	 {
+  	 pthread_join(pid2,NULL);
+	 }
+	 while(1)
+	 {
+		sleep(100);
+	 }
+	 return 0;
+}

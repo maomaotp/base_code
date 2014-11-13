@@ -1,0 +1,27 @@
+#include "sqlhandler.h"
+#include <stdio.h>
+void call_back(char** result,int column,void* param)
+{
+	//int *count =  (int *)param;
+	*((int *)param)++;
+	//*((int *)param)++;
+	//printf("column========%d\n",column);
+	for(int i=0;i<column;++i)
+	{
+		printf("%s     ",result[i]);
+	}
+	printf("\n");
+}
+int main()
+{
+	Sqlhandler sqlhandler;
+	int count = 0;
+	bool err=sqlhandler.Init_Sql((char *)"127.0.0.1",(char *)"root",(char *)"123456",(char *)"xx",0,NULL,0);
+	if(!err)
+		printf("初始化sql错误!");
+	char* query=(char*)"select * from tttips_netlog;";
+	int ret=sqlhandler.Select_Sql_Exec(query,call_back,&count);
+	//printf("ret==========%d\n",ret);
+	sqlhandler.Exit_Sql();
+	
+}

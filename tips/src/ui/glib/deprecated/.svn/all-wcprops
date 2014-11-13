@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated
+END
+grel.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated/grel.h
+END
+gcache.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated/gcache.h
+END
+gmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated/gmain.h
+END
+gthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated/gthread.h
+END
+gcompletion.h
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated/gcompletion.h
+END
+gallocator.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/glib/deprecated/gallocator.h
+END

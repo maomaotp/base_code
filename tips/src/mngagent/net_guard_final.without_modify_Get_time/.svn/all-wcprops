@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time
+END
+connect.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.h
+END
+soapClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapClient.cpp
+END
+stdsoap2.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/stdsoap2.h
+END
+connect.GetData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.GetData.req.xml
+END
+soapC.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapC.cpp
+END
+ssl.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.h
+END
+connect.GetData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.GetData.res.xml
+END
+client.cpp_bak20131105
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client.cpp_bak20131105
+END
+dnslist_2013.43.23.7.rules
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/dnslist_2013.43.23.7.rules
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/config.h
+END
+soap12.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soap12.h
+END
+ns2.upload-message.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ns2.upload-message.req.xml
+END
+xop.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/xop.h
+END
+ns2.upload-message.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ns2.upload-message.res.xml
+END
+ssl.GetData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.GetData.req.xml
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/tags
+END
+ns2.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ns2.xsd
+END
+client00.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client00.cpp
+END
+client_01.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_01.cpp
+END
+client_02.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_02.cpp
+END
+ssl.GetData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.GetData.res.xml
+END
+client_03.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_03.cpp
+END
+soapServerLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapServerLib.cpp
+END
+client_04.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_04.cpp
+END
+client_05.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_05.cpp
+END
+client.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client.h
+END
+x.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/x.xsd
+END
+client_07.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_07.cpp
+END
+client_net.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_net.cpp
+END
+client_08.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_08.cpp
+END
+client_0501.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_0501.h
+END
+ns2.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ns2.wsdl
+END
+soapServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapServer.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/Makefile
+END
+fileclient
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/fileclient
+END
+connect.PutData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.PutData.req.xml
+END
+stdsoap2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/stdsoap2.cpp
+END
+connect.PutData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.PutData.res.xml
+END
+soapStub.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapStub.h
+END
+ssl.PutData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.PutData.req.xml
+END
+ssl.PutData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.PutData.res.xml
+END
+xmime5.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/xmime5.h
+END
+ssl.upload-message.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.upload-message.req.xml
+END
+ssl.upload-message.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.upload-message.res.xml
+END
+client.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client.cpp
+END
+soapH.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapH.h
+END
+connect.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.wsdl
+END
+tips.db
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/tips.db
+END
+client_0501.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/client_0501.cpp
+END
+tempfile
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/tempfile
+END
+connect.nsmap
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/connect.nsmap
+END
+__size
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/__size
+END
+soapClientLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/soapClientLib.cpp
+END
+ssl.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.wsdl
+END
+tipsmanager
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/tipsmanager
+END
+ns.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ns.xsd
+END
+ssl.nsmap
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/DevelopRep/!svn/ver/7394/BoundaryProtectLine/TNM/Trunk/Source/src/mngagent/net_guard_final.without_modify_Get_time/ssl.nsmap
+END

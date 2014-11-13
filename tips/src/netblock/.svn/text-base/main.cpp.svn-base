@@ -1,0 +1,91 @@
+#include <iostream>
+#include <signal.h>
+#include "client.h"
+#include "accept_policy.h"
+#include "cachestruct.h"
+#include "InitProcess.h"
+#include "reportBlockInfo.h"
+#include "zlog.h"
+
+using namespace std;
+
+extern pthread_t pid;
+char ETH_NETBLOCK[10] = {0};
+
+void WtPid()
+{
+	FILE *fp;
+	char id_buf[10];
+	pid_t pid;
+	memset(id_buf,0,10);
+	pid = getpid();
+	sprintf(id_buf,"%d",pid);
+	if(NULL == (fp = fopen("/usr/local/tipschecker/etc/tipscheck/netblockid","w+")))
+	{
+		dzlog_info("fopen file error!!!");
+		return;
+	}
+	fwrite(id_buf,strlen(id_buf),1,fp);
+	fclose(fp);
+	return;
+}
+
+void handle_func(int sig)
+{
+	dzlog_info("netblock: i received the signal and sleep 30 now!\n");
+    sleep(30);
+    dzlog_info("i wake up begin to work");
+}
+
+int main(int argc,char *argv[])
+{
+  char *pos;
+  int length;
+  int sockfd=0;
+  pcap_t *handle=NULL;
+  char order[64];
+  char buffer[64];
+  strcpy(ETH_NETBLOCK,argv[1]);
+
+  WtPid();//add by lipeiting 2014-01-12-9:08
+  
+  signal(SIGUSR1, handle_func);
+  //zlog init
+  if(dzlog_init("/usr/local/tipschecker/etc/log.conf", "netblock")) {
+      printf("dzlog init failed\n");
+  }
+
+  dzlog_info("netblock:start now!!!");
+  initNetWork();
+  
+  handle=pcap_open_live(ETH_NETBLOCK,1600,1,0,NULL);//add by lipeiting 2014-03-18-16:05
+  //handle=pcap_open_live("eth2",1600,1,0,NULL);
+  createPthread(handle);
+  Init_Client((char*)"127.0.0.1");
+	sockfd=Init_accept_server();
+  
+	while(1)
+  {
+    pos=NULL;
+    length=0;
+    memset(order,0,64);
+    memset(buffer,0,64);
+    accept_policy(sockfd,order,&length);
+		if(pos=strstr(order,"netblock"))
+    {
+			cout<<pos<<endl;
+      strcpy(buffer,pos);
+      getOrderParameter(buffer);
+    }
+    else if(pos=strstr(order,"stopnetblock"))
+    {
+			cout<<order<<endl;
+      strcpy(buffer,pos);
+			cout<<buffer<<endl;
+      getOrderParameter(buffer);
+    }
+  }
+ 
+  pthread_join(pid,NULL);
+  return 0;
+}

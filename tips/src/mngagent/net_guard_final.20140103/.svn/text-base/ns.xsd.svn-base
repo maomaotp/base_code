@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <schema targetNamespace="urn:ssl"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:x="http://127.0.0.1/m.xsd"
+  xmlns:ns="urn:ssl"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://www.w3.org/2003/05/soap-envelope"/>
+  <import namespace="http://www.w3.org/2003/05/soap-encoding"/>
+  <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+  <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+  <import namespace="http://127.0.0.1/m.xsd"/>
+
+  <complexType name="MsgItem"><!-- ns__MsgItem -->
+
+   <sequence>
+     <element name="type" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__MsgItem::type -->
+     <element name="msg" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__MsgItem::msg -->
+   </sequence>
+  </complexType>
+  <complexType name="MsgList"><!-- ns__MsgList -->
+
+   <sequence>
+    <element name="item" type="ns:MsgItem" minOccurs="0" maxOccurs="unbounded" nillable="false"/>
+   </sequence>
+  </complexType>
+  <complexType name="ResultItem"><!-- ns__ResultItem -->
+
+   <sequence>
+     <element name="TimeStamp" type="xsd:unsignedLong" minOccurs="1" maxOccurs="1"/><!-- ns__ResultItem::TimeStamp -->
+     <element name="Order" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::Order -->
+     <element name="Param" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/><!-- ns__ResultItem::Param -->
+   </sequence>
+  </complexType>
+  <complexType name="ResultList"><!-- ns__ResultList -->
+
+   <sequence>
+    <element name="item" type="ns:ResultItem" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+   </sequence>
+  </complexType>
+ </schema>
+

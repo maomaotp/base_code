@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Exec_Begin	sqlhandler.cpp	/^bool Sqlhandler::Exec_Begin()$/;"	f	class:Sqlhandler
+Exit_Sql	sqlhandler.cpp	/^void Sqlhandler::Exit_Sql()$/;"	f	class:Sqlhandler
+Init_Sql	sqlhandler.cpp	/^bool Sqlhandler::Init_Sql(char* serverip,char* user,char* passwd,char* dbname,int port,char* unixsocket,int flag)$/;"	f	class:Sqlhandler
+Insert_Sql_Exec	sqlhandler.cpp	/^int Sqlhandler::Insert_Sql_Exec(char* sql)$/;"	f	class:Sqlhandler
+SQLHANDLER_H	sqlhandler.h	2;"	d
+Select_Sql_Exec	sqlhandler.cpp	/^int Sqlhandler::Select_Sql_Exec(char* sql,void (*call_back)(char** result,int column,void* param),void* param)$/;"	f	class:Sqlhandler
+Sqlhandler	sqlhandler.h	/^class Sqlhandler{$/;"	c
+call_back	main.cpp	/^void call_back(char** result,int column,void* param)$/;"	f
+main	main.cpp	/^int main()$/;"	f
+mutex	sqlhandler.h	/^	pthread_mutex_t mutex;$/;"	m	class:Sqlhandler
+mysql	sqlhandler.h	/^	MYSQL mysql,*sock;$/;"	m	class:Sqlhandler
+sock	sqlhandler.h	/^	MYSQL mysql,*sock;$/;"	m	class:Sqlhandler

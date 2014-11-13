@@ -1,0 +1,3 @@
+#!/bin/sh
+gcc main.c sqlhandler.c -I/usr/local/mysql/include -lmysqlclient -L/usr/local/mysql/lib -o insert -Wl,-rpath,/usr/local/mysql/lib
+gcc main.c sqlhandler.c -I/usr/local/mysql/include -lmysqlclient -L/usr/local/mysql/lib -o select -Wl,-rpath,/usr/local/mysql/lib

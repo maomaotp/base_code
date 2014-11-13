@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+POLICY_H	policy.h	2;"	d
+_addr_t	policy.h	/^typedef struct _addr_t$/;"	s
+_policy_t	policy.h	/^typedef struct _policy_t$/;"	s
+add_policy	policy.cpp	/^static void add_policy(const char *it)$/;"	f	file:
+addr_t	policy.h	/^}addr_t;$/;"	t	typeref:struct:_addr_t
+check_policy	policy.cpp	/^static bool check_policy(const char *pcy)$/;"	f	file:
+covert_mask	policy.cpp	/^static void covert_mask(const char *trains,char *mask)$/;"	f	file:
+en_ip	policy.h	/^   in_addr_t  en_ip;$/;"	m	struct:_addr_t
+find_policy	policy.cpp	/^static bool find_policy(u_int16_t vlanid,const struct iphdr *ip)$/;"	f	file:
+getnet_policy	policy.cpp	/^static void getnet_policy(const char *iprange,const char *mask,policy_t *ply)$/;"	f	file:
+getopt_reset	policy.cpp	/^static void getopt_reset()$/;"	f	file:
+init_policy	policy.cpp	/^void init_policy()$/;"	f
+insert_policy	policy.cpp	/^static void insert_policy(const int *counter,char * const pointer[],policy_t *ply)$/;"	f	file:
+ip_t	policy.h	/^   addr_t     ip_t; $/;"	m	struct:_policy_t
+juage_ip	policy.cpp	/^static bool juage_ip(uint32_t ip,std::list<policy_t>::iterator &it)$/;"	f	file:
+juage_policy	policy.cpp	/^bool juage_policy(const u_char *packet)$/;"	f
+juage_vlan	policy.cpp	/^static bool juage_vlan(u_int16_t vlanid,std::list<policy_t>::iterator &it)$/;"	f	file:
+main	main.cpp	/^int main()$/;"	f
+mycallback	main.cpp	/^void mycallback(u_char *user,const struct pcap_pkthdr *hdr,const u_char *bytes)$/;"	f
+policy	policy.cpp	/^std::list<policy_t> policy;$/;"	v
+policy_path	policy.cpp	4;"	d	file:
+policy_t	policy.h	/^}policy_t;$/;"	t	typeref:struct:_policy_t
+process_policy	policy.cpp	/^static void process_policy(const char *it)$/;"	f	file:
+spite_policy	policy.cpp	/^static void spite_policy(int *temp,const char *str,char *p[])$/;"	f	file:
+st_ip	policy.h	/^   in_addr_t  st_ip;$/;"	m	struct:_addr_t
+vlan_id	policy.h	/^   u_int16_t  vlan_id;$/;"	m	struct:_policy_t

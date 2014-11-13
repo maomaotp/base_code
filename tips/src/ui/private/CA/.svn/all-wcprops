@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/private/CA
+END
+serverkey.pem
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/private/CA/serverkey.pem
+END
+cakey.pem
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/private/CA/cakey.pem
+END

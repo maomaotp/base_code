@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <pcap.h>
+
+void mycallback(u_char *par,const struct pcap_pkthdr *hdr,const u_char *data)
+{
+    //redis_init("127.0.0.1", 6379);
+    trojan_process(hdr,data);
+}
+
+#if 0
+int main()
+{
+  pcap_t *handle;
+  char  error[256];
+
+  init();
+  handle = pcap_open_live("eth2",1600,1,0,error);
+  pcap_loop(handle,-1,mycallback,NULL);
+  return 0;
+}
+#endif

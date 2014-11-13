@@ -1,0 +1,718 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AIP	capturepacket.cpp	60;"	d	file:
+ALARM	cachestruct.h	3;"	d
+ALERT	cachestruct.h	8;"	d
+AMatch	multikeymatch.cpp	/^struct result_struct MultiKeyMatch::AMatch(char* source,int start,int len)$/;"	f	class:MultiKeyMatch
+AUDIT	cachestruct.h	4;"	d
+AddKey	multikeymatch.cpp	/^int MultiKeyMatch::AddKey(char* key)$/;"	f	class:MultiKeyMatch
+AlarmConfig	capturepacket.h	11;"	d
+AlertTimeOut	dnschecker.h	46;"	d
+AlertType	dnschecker.h	43;"	d
+AlertType	ipblackchecker.h	34;"	d
+AllocSpace	GetConfigInfo.cpp	/^void AllocSpace(char **point,char* info)$/;"	f
+Arcanum_NO	unixdomain.h	19;"	d
+BIP	capturepacket.cpp	61;"	d	file:
+BIPa	capturepacket.cpp	62;"	d	file:
+BIPb	capturepacket.cpp	63;"	d	file:
+BKDRHash	hash.h	/^inline size_t BKDRHash(const char *str)$/;"	f
+BLOCK	cachestruct.h	7;"	d
+BUFFSIZE	dnschecker.h	34;"	d
+BUFFSIZE	savefile.h	7;"	d
+BUFFSIZE	wtEnd.h	23;"	d
+BUFFSIZE	wtpcap.h	21;"	d
+BackMatch	multikeymatch.cpp	/^struct result_struct MultiKeyMatch::BackMatch(char** backlist,int site,char* source)$/;"	f	class:MultiKeyMatch
+CACHE_STRUCT_H	cachestruct.h	2;"	d
+CCacheclient	client++.h	/^class CCacheclient{$/;"	c
+CHECKIP	itipschecker.h	/^	int CHECKIP;$/;"	m	class:ITipsChecker
+CHKMNGDATA_H	chkmngdata.h	2;"	d
+CIP	capturepacket.cpp	64;"	d	file:
+CIPa	capturepacket.cpp	65;"	d	file:
+CLASSCOUNT	itipschecker.h	9;"	d
+CMEMPOOL_H	cmempool.h	2;"	d
+CMempool	cmempool.h	/^class CMempool{$/;"	c
+CONFIGFILE	wtEnd.h	21;"	d
+CheckObj	checkobj.h	/^class CheckObj{$/;"	c
+CheckObj_H_	checkobj.h	2;"	d
+Clear	dnschecker.cpp	/^void DNSChecker::Clear()$/;"	f	class:DNSChecker
+Clear	itipschecker.cpp	/^void ITipsChecker::Clear()$/;"	f	class:ITipsChecker
+CmdNoBlock_NO	unixdomain.h	29;"	d
+CmdNoCom_NO	unixdomain.h	27;"	d
+CmdParBlock_NO	unixdomain.h	28;"	d
+CmdParCom_NO	unixdomain.h	26;"	d
+CmpIP	ipblackchecker.cpp	/^bool IPBlackChecker::CmpIP(map<u_short,struct ip_rules>::iterator it,map<u_short,struct ip_rules> *Xmap,uint32_t *dstip,uint32_t *srcip)$/;"	f	class:IPBlackChecker
+Comptro_NO	unixdomain.h	18;"	d
+ConfigInfo	GetConfigInfo.h	/^union ConfigInfo$/;"	u
+CreatChecker	checkobj.cpp	/^bool CheckObj::CreatChecker(int* classid,ITipsChecker** checker)$/;"	f	class:CheckObj
+CreateMD5	dnschecker.cpp	/^bool CreateMD5(char *srcbuff,char *dstbuff)$/;"	f
+DEVIDNUM	wtEnd.h	24;"	d
+DEVKEY	wtEnd.h	22;"	d
+DEV_ID_IP	ipblackchecker.cpp	/^int DEV_ID_IP  = 123456;$/;"	v
+DNLEN	dnschecker.h	33;"	d
+DNSCHECKER_H	dnschecker.h	2;"	d
+DNSCLASSID	dnschecker.h	52;"	d
+DNSChecker	dnschecker.h	/^class DNSChecker:public ITipsChecker{$/;"	c
+DNSFileDIR	dnschecker.h	48;"	d
+DNSHL	dnschecker.h	32;"	d
+DNSPORT	dnschecker.h	31;"	d
+DNS_ID	dnschecker.cpp	/^bool DNSChecker::DNS_ID(u_int32_t *id)$/;"	f	class:DNSChecker
+DNS_NO	unixdomain.h	16;"	d
+DNS_NUM	dnschecker.cpp	/^u_int32_t DNS_NUM = 0;$/;"	v
+DNS_NUM_FILE	dnschecker.h	53;"	d
+DataPacketType	dnschecker.h	41;"	d
+DataPacketType	ipblackchecker.h	32;"	d
+Deal_PRead	cmempool.cpp	/^bool CMempool::Deal_PRead()$/;"	f	class:CMempool
+Deal_PWrite	cmempool.cpp	/^bool CMempool::Deal_PWrite()$/;"	f	class:CMempool
+DestroyCheckerList	checkobj.cpp	/^void DestroyCheckerList()$/;"	f
+Destroy_Mempool	cmempool.cpp	/^void CMempool::Destroy_Mempool()$/;"	f	class:CMempool
+Dgrous	dnschecker.h	/^		map<u_int32_t,u_int8_t> Dgrous;$/;"	m	class:DNSChecker
+Dgrous	ipblackchecker.h	/^		map<u_int8_t,u_int8_t>Dgrous;$/;"	m	class:IPBlackChecker
+DgrousLevel	dnschecker.cpp	/^void DNSChecker::DgrousLevel(u_int8_t *srclevel,char *newlevel)$/;"	f	class:DNSChecker
+DnameRigour	dnschecker.h	/^		map<u_int32_t,string> DnameRigour;$/;"	m	class:DNSChecker
+DnsAlertMap	dnschecker.cpp	/^map<u_int32_t,cache_alert_t> DnsAlertMap;$/;"	v
+DnsAlert_mutex	dnschecker.cpp	/^pthread_mutex_t DnsAlert_mutex;$/;"	v
+DnsDealPlugin_id	dnschecker.h	38;"	d
+DnsLinkPlugin_id	dnschecker.h	39;"	d
+ETH_ALARM	main.cpp	/^char ETH_ALARM[10] = {0};$/;"	v
+ErrSize	GetConfigInfo.h	9;"	d
+EthTag	capturepacket.h	12;"	d
+Exit_Client	client.cpp	/^void CCacheclient::Exit_Client()$/;"	f	class:CCacheclient
+Expand_Mempool	cmempool.cpp	/^struct Head* CMempool::Expand_Mempool()$/;"	f	class:CMempool
+FALSE	ipblackchecker.cpp	24;"	d	file:
+FILEPTHREAD_H	savefile.h	2;"	d
+FUNCLIST_H	funclist.h	2;"	d
+FileDIR	savefile.h	11;"	d
+FileName	wtpcap.h	22;"	d
+FileNameSize	dnschecker.h	35;"	d
+FileNameSize	savefile.h	8;"	d
+Fill_alert	dnschecker.cpp	/^bool DNSChecker::Fill_alert(char *DomainName,int len,cache_alert_t *dns_alert,struct net_element *e)$/;"	f	class:DNSChecker
+Func	funclist.h	/^typedef void (*Func)(const struct pcap_pkthdr *hdr,const u_char *data);$/;"	t
+GETOIP_H	geoip.h	2;"	d
+GetDomainName	dnschecker.cpp	/^int GetDomainName(struct dnshdr *dns_addr,char *tmp,int *mis,int *len,char *DomainName)$/;"	f
+GetEth	AlarmConfigOperate.cpp	/^bool GetEth(char *eth)$/;"	f
+GetInfo	GetConfigInfo.cpp	/^bool GetInfo(char *ConfigPath,char *key,char *separtor,union ConfigInfo *BackInfo)$/;"	f
+GetMatchArr	multikeymatch.cpp	/^void MultiKeyMatch::GetMatchArr()$/;"	f	class:MultiKeyMatch
+GetMatchKey	multikeymatch.cpp	/^void MultiKeyMatch::GetMatchKey(struct match_struct* match,char* key)$/;"	f	class:MultiKeyMatch
+GetMatchMap	multikeymatch.cpp	/^void MultiKeyMatch::GetMatchMap()$/;"	f	class:MultiKeyMatch
+GetMax	multikeymatch.cpp	/^void MultiKeyMatch::GetMax()$/;"	f	class:MultiKeyMatch
+GetMsgBySys	unixdomain.cpp	/^void GetMsgBySys(char *user,cache_opt_t *OptStu,char *dsc)$/;"	f
+GetPos	multikeymatch.cpp	/^unsigned short MultiKeyMatch::GetPos(char ch1,char ch2)$/;"	f	class:MultiKeyMatch
+GetTipsConfigInfo	GetConfigInfo.cpp	/^bool GetTipsConfigInfo(char *ConfigPath,char *key,char *separtor,union ConfigInfo *BackInfo)$/;"	f
+Get_Exist	itipschecker.cpp	/^bool ITipsChecker::Get_Exist()$/;"	f	class:ITipsChecker
+Get_Mirror	itipschecker.cpp	/^void ITipsChecker::Get_Mirror(struct mirror_struct* m)$/;"	f	class:ITipsChecker
+Get_Netelement	capturepacket.cpp	/^void Get_Netelement(const u_char* hdr)$/;"	f
+Get_Type	itipschecker.cpp	/^int ITipsChecker::Get_Type()$/;"	f	class:ITipsChecker
+GreateHash	dnschecker.cpp	/^void DNSChecker::GreateHash(const char* str,u_int32_t* ip,u_int32_t* hash)$/;"	f	class:DNSChecker
+HASHDATA_H	hashdata.h	2;"	d
+HASH_H	hash.h	2;"	d
+Head	cmempool.h	/^struct Head{$/;"	s
+ID	ipblackchecker.cpp	/^bool IPBlackChecker::ID(u_int32_t *id)$/;"	f	class:IPBlackChecker
+ID_NUM	wtEnd.cpp	/^u_int32_t  ID_NUM;$/;"	v
+ID_NUM_FILE	ipblackchecker.h	40;"	d
+INIT_ALARM_HEAD	cachestruct.h	10;"	d
+INIT_ALERT_HEAD	cachestruct.h	40;"	d
+INIT_AUDIT_HEAD	cachestruct.h	16;"	d
+INIT_BLOCK_HEAD	cachestruct.h	34;"	d
+INIT_H	init.h	2;"	d
+INIT_OPT_HEAD	cachestruct.h	22;"	d
+INIT_SECRET_HEAD	cachestruct.h	28;"	d
+IPBLACKCHECKER_H	ipblackchecker.h	2;"	d
+IPBlackChecker	ipblackchecker.h	/^class IPBlackChecker:public ITipsChecker{$/;"	c
+IPBlack_NO	unixdomain.h	17;"	d
+IPFileDIR	ipblackchecker.h	39;"	d
+IPLinkPlugin_id	ipblackchecker.h	30;"	d
+IPSize	dnschecker.h	36;"	d
+IPSize	savefile.h	9;"	d
+IPSize	wtpcap.h	23;"	d
+IP_BLACK_NUM	ipblackchecker.cpp	/^int IP_BLACK_NUM = 0;$/;"	v
+IP_HL	dnschecker.h	50;"	d
+IP_HL	ipblackchecker.h	36;"	d
+IP_LIST_LEN	ipblackchecker.cpp	19;"	d	file:
+IP_VR	dnschecker.h	51;"	d
+IP_VR	ipblackchecker.h	37;"	d
+ISANKNOW	ipblackchecker.cpp	22;"	d	file:
+ISBLACK	ipblackchecker.cpp	21;"	d	file:
+ISWHITE	ipblackchecker.cpp	20;"	d	file:
+ITIPSCHECKER_H	itipschecker.h	2;"	d
+ITipsChecker	itipschecker.cpp	/^ITipsChecker::ITipsChecker()$/;"	f	class:ITipsChecker
+ITipsChecker	itipschecker.h	/^class ITipsChecker{$/;"	c
+InitCheck	GetConfigInfo.cpp	/^bool InitCheck(char *ConfigPath,char *key,char *separtor,union ConfigInfo *BackInfo)$/;"	f
+InitFsm	unixdomain.cpp	/^void  UnixDomain::InitFsm()$/;"	f	class:UnixDomain
+InitWorker	main.cpp	/^bool InitWorker()$/;"	f
+Init_Check	checkobj.cpp	/^bool CheckObj::Init_Check()$/;"	f	class:CheckObj
+Init_Client	client.cpp	/^bool CCacheclient::Init_Client(char* serverip)$/;"	f	class:CCacheclient
+Init_UnixDomain	unixdomain.cpp	/^bool UnixDomain::Init_UnixDomain()$/;"	f	class:UnixDomain
+JHASH_GOLDEN_RATIO	hash.h	6;"	d
+JUAGE_IP	juageIP.h	2;"	d
+JudgeDNS	dnschecker.cpp	/^void DNSChecker::JudgeDNS(char *DomainName,struct ip* addr,int len,struct net_element *e)$/;"	f	class:DNSChecker
+JudgeKeySepartor	GetConfigInfo.cpp	/^bool JudgeKeySepartor(char *CmdBuff,char *ConfigPath,char *dst,union ConfigInfo *BackInfo,int flag)$/;"	f
+JudgeType	savefile.cpp	/^bool StartFileSave::JudgeType(char *Name,char *sub)$/;"	f	class:StartFileSave
+LINK11	wtpcap.h	78;"	d
+LINK999	wtpcap.h	71;"	d
+LINKARCNET	wtpcap.h	69;"	d
+LINKBSD	wtpcap.h	66;"	d
+LINKBSDPPP	wtpcap.h	76;"	d
+LINKBSDSLIP	wtpcap.h	75;"	d
+LINKCISCO	wtpcap.h	77;"	d
+LINKCOOKED	wtpcap.h	80;"	d
+LINKETHER	wtpcap.h	67;"	d
+LINKFDDI	wtpcap.h	72;"	d
+LINKLLC	wtpcap.h	73;"	d
+LINKOPENBSD	wtpcap.h	79;"	d
+LINKRAWIP	wtpcap.h	74;"	d
+LINKSLIP	wtpcap.h	70;"	d
+LINKTALK	wtpcap.h	81;"	d
+LINKTR	wtpcap.h	68;"	d
+LOADRULE_H	loadrule.h	2;"	d
+LOCALDEVID	wtEnd.cpp	/^char LOCALDEVID[11];$/;"	v
+LoadTabCnt	unixdomain.h	12;"	d
+Load_Rules	dnschecker.cpp	/^int DNSChecker::Load_Rules(char* rule,int len)$/;"	f	class:DNSChecker
+Load_Rules	ipblackchecker.cpp	/^int IPBlackChecker::Load_Rules(char* rule, int len)$/;"	f	class:IPBlackChecker
+LocalBuffSize	GetConfigInfo.h	10;"	d
+Location_NO	unixdomain.h	21;"	d
+MCmd	unixdomain.h	25;"	d
+MPro	unixdomain.h	15;"	d
+MULTIKEYMATCH_H	multikeymatch.h	2;"	d
+MacFrameLen	wtpcap.h	27;"	d
+MacFrameProtocolType	wtpcap.h	40;"	d
+Mail_NO	unixdomain.h	22;"	d
+MatchByte	multikeymatch.cpp	/^bool MultiKeyMatch::MatchByte(char* source,int site,char* p)$/;"	f	class:MultiKeyMatch
+MatchClear	multikeymatch.cpp	/^void MultiKeyMatch::MatchClear()$/;"	f	class:MultiKeyMatch
+MatchInit	multikeymatch.cpp	/^void MultiKeyMatch::MatchInit()$/;"	f	class:MultiKeyMatch
+MatchMain	multikeymatch.cpp	/^void MultiKeyMatch::MatchMain(char* source,list<result_struct>* result,int len)$/;"	f	class:MultiKeyMatch
+Mem_Read	cmempool.cpp	/^void* CMempool::Mem_Read()$/;"	f	class:CMempool
+Mem_Write	cmempool.cpp	/^int CMempool::Mem_Write(void* buff, unsigned int len)$/;"	f	class:CMempool
+Mem_Write2	cmempool.cpp	/^int CMempool::Mem_Write2(char* name,void* buff,int len)$/;"	f	class:CMempool
+Mempool_Destroy	cmempool.cpp	/^void CMempool::Mempool_Destroy()$/;"	f	class:CMempool
+Mempool_Init	cmempool.cpp	/^bool CMempool::Mempool_Init(int unit_size,int unit_count,int type)$/;"	f	class:CMempool
+MultiKeyMatch	multikeymatch.cpp	/^MultiKeyMatch::MultiKeyMatch()$/;"	f	class:MultiKeyMatch
+MultiKeyMatch	multikeymatch.h	/^class MultiKeyMatch{$/;"	c
+NUM_FILE	wtEnd.h	18;"	d
+NameSize	ipblackchecker.h	27;"	d
+OPT	cachestruct.h	5;"	d
+OpeID	wtEnd.cpp	/^void OpeID(bool flag)$/;"	f
+Outinit	wtEnd.cpp	/^void Outinit()\/\/程序启动时初始化$/;"	f
+PBRead	cmempool.h	/^				struct Head* PBRead,*PBWrite;\/\/当前读写block$/;"	m	class:CMempool	typeref:struct:CMempool::Head
+PBWrite	cmempool.h	/^				struct Head* PBRead,*PBWrite;\/\/当前读写block$/;"	m	class:CMempool	typeref:struct:CMempool::
+PIDFILE	wtEnd.h	20;"	d
+PMAGIC	wtpcap.h	59;"	d
+PRead	cmempool.h	/^				struct Unit* PRead,*PWrite;\/\/读写指针$/;"	m	class:CMempool	typeref:struct:CMempool::Unit
+PTHREADDATA_H	checkdata.h	2;"	d
+PTHREADDATA_H	pthreaddata.h	2;"	d
+PVMAJOR	wtpcap.h	60;"	d
+PVMINOR	wtpcap.h	61;"	d
+PWrite	cmempool.h	/^				struct Unit* PRead,*PWrite;\/\/读写指针$/;"	m	class:CMempool	typeref:struct:CMempool::
+ParBuff	wtEnd.cpp	/^bool ParBuff(char *buffer)$/;"	f
+ParID	wtEnd.cpp	/^bool ParID(int fd,u_int32_t *id)\/\/读$/;"	f
+Parse_Command	unixdomain.cpp	/^void Parse_Command(char *cmdbuff,int cmdlen)$/;"	f
+Pcap	wtpcap.h	/^class Pcap{$/;"	c
+PcapDataType	wtpcap.h	24;"	d
+PcapFileHeadSize	wtpcap.h	26;"	d
+PcapFlag	savefile.h	12;"	d
+PcapPacketHeadSize	wtpcap.h	28;"	d
+PositionExist	multikeymatch.cpp	/^bool MultiKeyMatch::PositionExist(unsigned short position)$/;"	f	class:MultiKeyMatch
+Print_Error	dnschecker.cpp	/^void DNSChecker::Print_Error(int fd,char *Api)$/;"	f	class:DNSChecker
+Print_Error	ipblackchecker.cpp	/^void IPBlackChecker::Print_Error(int fd,char *Api)$/;"	f	class:IPBlackChecker
+REDIS_H	redis.h	2;"	d
+REPORTDATA_H	reportdata.h	2;"	d
+RULESDATA_H	rulesdata.h	2;"	d
+ReLoad_Rules	dnschecker.cpp	/^int DNSChecker::ReLoad_Rules(char* rule,int len)$/;"	f	class:DNSChecker
+ReLoad_Rules	ipblackchecker.cpp	/^int IPBlackChecker::ReLoad_Rules(char* rule,int len)$/;"	f	class:IPBlackChecker
+Readed_Set	cmempool.cpp	/^void CMempool::Readed_Set()$/;"	f	class:CMempool
+Register	checkobj.cpp	/^void CheckObj::Register(ITipsChecker* check)$/;"	f	class:CheckObj
+RegisterAll	checkobj.cpp	/^void CheckObj::RegisterAll()$/;"	f	class:CheckObj
+ReleaseInfoSpace	GetConfigInfo.cpp	/^bool ReleaseInfoSpace(union ConfigInfo *BackInfo)$/;"	f
+Run_File	savefile.cpp	/^void StartFileSave::Run_File()$/;"	f	class:StartFileSave
+SECRET	cachestruct.h	6;"	d
+SERVERPORT	client++.h	3;"	d
+SERVERPORT	client.h	3;"	d
+SIGFIGS	wtpcap.h	63;"	d
+SNAPLEN	wtpcap.h	64;"	d
+Send_Msg	client.cpp	/^int CCacheclient::Send_Msg(char* buff,int len)$/;"	f	class:CCacheclient
+Set_CheckIP	itipschecker.cpp	/^void ITipsChecker::Set_CheckIP(int ip)$/;"	f	class:ITipsChecker
+Set_Exist	itipschecker.cpp	/^void ITipsChecker::Set_Exist(bool e)$/;"	f	class:ITipsChecker
+Set_FileMem	itipschecker.cpp	/^void ITipsChecker::Set_FileMem(CMempool* mem)$/;"	f	class:ITipsChecker
+Set_Mempool	savefile.cpp	/^void StartFileSave::Set_Mempool(CMempool* mem)$/;"	f	class:StartFileSave
+Set_Type	itipschecker.cpp	/^int ITipsChecker::Set_Type(int t)$/;"	f	class:ITipsChecker
+Start	capturepacket.cpp	/^void StartCapture::Start()$/;"	f	class:StartCapture
+Start	savefile.cpp	/^void StartFileSave::Start(pthread_t* pid)$/;"	f	class:StartFileSave
+Start	unixdomain.cpp	/^bool  UnixDomain::Start(pthread_t *id)$/;"	f	class:UnixDomain
+StartCapture	capturepacket.h	/^class StartCapture$/;"	c
+StartFileSave	savefile.h	/^class StartFileSave{$/;"	c
+StartWorker	main.cpp	/^void StartWorker()$/;"	f
+Start_Check	dnschecker.cpp	/^int DNSChecker::Start_Check(struct ip* addr, bool type, struct net_element *e)$/;"	f	class:DNSChecker
+Start_Check	ipblackchecker.cpp	/^int IPBlackChecker::Start_Check(struct ip *packet, bool type, struct net_element *e)$/;"	f	class:IPBlackChecker
+Start_Check	itipschecker.cpp	/^int ITipsChecker::Start_Check(struct ip* packet,bool type,struct net_element* e)$/;"	f	class:ITipsChecker
+Start_Check	itipschecker.cpp	/^int ITipsChecker::Start_Check(struct tcp_stream* a_tcp,void** tcpobj)$/;"	f	class:ITipsChecker
+Start_Check	itipschecker.cpp	/^int ITipsChecker::Start_Check(struct tuple4* addr,char* buf,int len,struct ip* iph)$/;"	f	class:ITipsChecker
+THISZONE	wtpcap.h	62;"	d
+TIPS_PCAP_H	wtpcap.h	2;"	d
+TRUE	ipblackchecker.cpp	23;"	d	file:
+ToolBuffSize	tools.h	7;"	d
+TopLimit	wtEnd.h	17;"	d
+TorjanID	dnschecker.h	42;"	d
+TorjanID	ipblackchecker.h	33;"	d
+Trojan_NO	unixdomain.h	20;"	d
+TrueLoadTabCnt	unixdomain.h	13;"	d
+UNIT_DYNAMIC	cmempool.h	5;"	d
+UNIT_STATIC	cmempool.h	6;"	d
+UNIX_DOMAIN	unixdomain.h	10;"	d
+UNKOWN_H	UnTrojan.h	2;"	d
+UdpParse	dnschecker.cpp	/^int DNSChecker::UdpParse(struct ip* addr,struct net_element *e)$/;"	f	class:DNSChecker
+UnRegister	checkobj.cpp	/^void CheckObj::UnRegister(int type)$/;"	f	class:CheckObj
+Unit	cmempool.h	/^struct Unit{$/;"	s
+UnixDomain	unixdomain.h	/^class UnixDomain$/;"	c
+UpdateAlertList	dnschecker.cpp	/^void DNSChecker::UpdateAlertList(char *DomainBuf,unsigned int addr)$/;"	f	class:DNSChecker
+WtContent	savefile.cpp	/^void StartFileSave::WtContent(FILE *fp,char *temp,int used_size)$/;"	f	class:StartFileSave
+WtDevID	wtEnd.cpp	/^void WtDevID()$/;"	f
+WtEnd	wtEnd.cpp	/^void WtEnd(int)\/\/关机前的操作$/;"	f
+WtFile	savefile.cpp	/^void StartFileSave::WtFile(char *temp,char *name,int used_size,bool type)$/;"	f	class:StartFileSave
+WtFileMem	dnschecker.cpp	/^void DNSChecker::WtFileMem(char *Name,char *PacketContent,int ContentLen)$/;"	f	class:DNSChecker
+WtMem2	dnschecker.cpp	/^void DNSChecker::WtMem2(struct ip *addr)$/;"	f	class:DNSChecker
+WtPFH	savefile.cpp	/^void StartFileSave::WtPFH(FILE *fp)$/;"	f	class:StartFileSave
+WtPcapData	wtpcap.cpp	/^void Pcap::WtPcapData(char *PcapMemBuff,void *addr,int ip_len)$/;"	f	class:Pcap
+WtPcapDataH	wtpcap.cpp	/^void Pcap::WtPcapDataH(char *PcapMemBuff,int Caplen,int Truelen)$/;"	f	class:Pcap
+WtPcapFileH	wtpcap.cpp	/^void Pcap::WtPcapFileH(FILE *fp,char *PcapMemBuff)$/;"	f	class:Pcap
+WtPcapMacFrame	wtpcap.cpp	/^void Pcap::WtPcapMacFrame(char *PcapMemBuff,struct macframes *MF)$/;"	f	class:Pcap
+WtPid	main.cpp	/^void WtPid()$/;"	f
+_CLIENT_H_	client.h	2;"	d
+_CLIENT_H____	client++.h	2;"	d
+_CapturePacket_H__	capturepacket.h	2;"	d
+_DATA_H__	data.h	2;"	d
+_GetConfigInfo_H__	GetConfigInfo.h	2;"	d
+_TOOLS_H_	tools.h	2;"	d
+_UNIXDOMAIN_H__	unixdomain.h	2;"	d
+_WTEND_H__	wtEnd.h	2;"	d
+__jhash_mix	hash.h	9;"	d
+aditional	dnschecker.h	/^	u_short aditional;\/\/额外资源记录数$/;"	m	struct:dnshdr
+aditional	dnschecker.h	/^	u_short aditional;\/\/额外资源记录数$/;"	m	struct:dnshead
+alarm_id	cachestruct.h	/^	char alarm_id[12];$/;"	m	struct:cache_alarm_t
+alarm_info	reportdata.h	/^struct alarm_info{$/;"	s
+alarm_time	cachestruct.h	/^	char alarm_time[25];$/;"	m	struct:cache_alert_t
+alarm_time	cachestruct.h	/^	time_t alarm_time;$/;"	m	struct:cache_alarm_t
+alarm_time	reportdata.h	/^	char alarm_time[25];$/;"	m	struct:alarm_info
+alarm_time	reportdata.h	/^	time_t alarm_time;$/;"	m	struct:ipblack_info
+alert_id	cachestruct.h	/^	char alert_id[12];$/;"	m	struct:cache_alert_t
+alert_info	reportdata.h	/^struct alert_info{ $/;"	s
+alert_time	reportdata.h	/^	char alert_time[25];$/;"	m	struct:alert_info
+alert_time	reportdata.h	/^	time_t alert_time;$/;"	m	struct:dnsblack_info
+already	cmempool.h	/^		int already;\/\/已经使用的快数$/;"	m	struct:Head
+audit_info	reportdata.h	/^struct audit_info{$/;"	s
+autodyne	GetConfigInfo.h	/^		char *autodyne;$/;"	m	union:ConfigInfo
+begin	loadrule.h	/^   int begin;$/;"	m	struct:filerule
+black_ip	ipblackchecker.cpp	/^static struct ip_rules black_ip[IP_LIST_LEN];$/;"	v	typeref:struct:ip_rules	file:
+black_ip_len	ipblackchecker.cpp	/^static int black_ip_len;$/;"	v	file:
+blacklist	ipblackchecker.h	/^		map<u_short,struct ip_rules> blacklist;$/;"	m	class:IPBlackChecker
+block_desc	cachestruct.h	/^	char block_desc[33];$/;"	m	struct:cache_block_t
+block_desc	reportdata.h	/^	char block_desc[32];$/;"	m	struct:block_info
+block_info	reportdata.h	/^struct block_info{$/;"	s
+block_size	cmempool.h	/^		int block_size;$/;"	m	struct:Head
+cache_alarm_t	cachestruct.h	/^typedef struct cache_alarm_t$/;"	s
+cache_alarm_t	cachestruct.h	/^}cache_alarm_t;$/;"	t	typeref:struct:cache_alarm_t
+cache_alert_t	cachestruct.h	/^typedef struct cache_alert_t$/;"	s
+cache_alert_t	cachestruct.h	/^}cache_alert_t;$/;"	t	typeref:struct:cache_alert_t
+cache_audit_t	cachestruct.h	/^typedef struct cache_audit_t$/;"	s
+cache_audit_t	cachestruct.h	/^}cache_audit_t;$/;"	t	typeref:struct:cache_audit_t
+cache_block_t	cachestruct.h	/^typedef struct cache_block_t$/;"	s
+cache_block_t	cachestruct.h	/^}cache_block_t;$/;"	t	typeref:struct:cache_block_t
+cache_head_t	cachestruct.h	/^typedef struct cache_head_t$/;"	s
+cache_head_t	cachestruct.h	/^}cache_head_t;$/;"	t	typeref:struct:cache_head_t
+cache_opt_t	cachestruct.h	/^typedef struct cache_opt_t$/;"	s
+cache_opt_t	cachestruct.h	/^}cache_opt_t;$/;"	t	typeref:struct:cache_opt_t
+cache_secret_t	cachestruct.h	/^typedef struct cache_secret_t$/;"	s
+cache_secret_t	cachestruct.h	/^}cache_secret_t;$/;"	t	typeref:struct:cache_secret_t
+cacheclient	main.cpp	/^CCacheclient cacheclient;$/;"	v
+caplen	wtpcap.h	/^		u_int32_t caplen;$/;"	m	struct:pcap_packet_head
+change_dangerous	ipblackchecker.cpp	/^static int change_dangerous(char src, char *dst)$/;"	f	file:
+check	main.cpp	/^CheckObj check;$/;"	v
+check_num	tools.cpp	/^bool check_num(char *buffer,int n)$/;"	f
+check_struct	checkdata.h	/^struct check_struct{$/;"	s
+check_struct	pthreaddata.h	/^struct check_struct{$/;"	s
+checker	checkdata.h	/^	ITipsChecker* checker;$/;"	m	struct:check_struct
+checker	checkobj.cpp	/^ITipsChecker* checker[CLASSCOUNT];$/;"	v
+checker	pthreaddata.h	/^		ITipsChecker* checker;$/;"	m	struct:check_struct
+classes	dnschecker.h	/^	unsigned short classes; \/\/类型码$/;"	m	struct:dns_response
+classid	checkobj.h	/^				int classid[CLASSCOUNT];$/;"	m	class:CheckObj
+codeflag	multikeymatch.h	/^  int codeflag;$/;"	m	struct:result_struct
+comeback_stderr	tools.cpp	/^void comeback_stderr()$/;"	f
+cond	cmempool.h	/^				pthread_cond_t cond;$/;"	m	class:CMempool
+content	hashdata.h	/^  bool content;$/;"	m	struct:stream
+content	loadrule.h	/^   unsigned char *content;$/;"	m	struct:filerule
+content	rulesdata.h	/^	char content[1024];$/;"	m	struct:spectro_rules
+content	rulesdata.h	/^	char content[129];$/;"	m	struct:sec_rules
+content	rulesdata.h	/^	char content[256];$/;"	m	struct:mail_rules
+count	multikeymatch.h	/^  int count;$/;"	m	class:MultiKeyMatch
+current	loadrule.h	/^   int current;$/;"	m	struct:filerule
+dangerous	rulesdata.h	/^	char dangerous;$/;"	m	struct:ip_rules
+dangerous	rulesdata.h	/^	u_int8_t dangerous;\/\/危险级别$/;"	m	struct:dns_rules
+data_domain	unixdomain.h	/^				int manager_domain,data_domain; \/\/用于建立与manager通信的socket 和 接收管控命令、策略的socket$/;"	m	class:UnixDomain
+descr	cachestruct.h	/^	char descr[129];$/;"	m	struct:cache_secret_t
+descr	reportdata.h	/^	char descr[128];$/;"	m	struct:secret_info
+describe	cachestruct.h	/^	char describe[128];$/;"	m	struct:cache_opt_t
+descry	cachestruct.h	/^	char descry[65];$/;"	m	struct:cache_alarm_t
+descry	cachestruct.h	/^	char descry[65];$/;"	m	struct:cache_alert_t
+descry	reportdata.h	/^	char descry[64];$/;"	m	struct:ipblack_info
+descry	reportdata.h	/^	char descry[65];$/;"	m	struct:alarm_info
+descry	reportdata.h	/^	char descry[65];$/;"	m	struct:alert_info
+descry	reportdata.h	/^	char descry[65];$/;"	m	struct:dnsblack_info
+destroy_pthread_mutex	checkobj.cpp	/^void destroy_pthread_mutex()$/;"	f
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_alarm_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_alert_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_block_t
+device_id	cachestruct.h	/^	char device_id[12];$/;"	m	struct:cache_secret_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_alarm_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_alert_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_block_t
+dip	cachestruct.h	/^	char dip[19];$/;"	m	struct:cache_secret_t
+dip	cachestruct.h	/^	uint32_t dip;$/;"	m	struct:cache_audit_t
+dip	reportdata.h	/^	char dip[16];$/;"	m	struct:alarm_info
+dip	reportdata.h	/^	char dip[16];$/;"	m	struct:alert_info
+dip	reportdata.h	/^	u_int dip;$/;"	m	struct:audit_info
+dip	reportdata.h	/^	u_int dip;$/;"	m	struct:block_info
+dip	reportdata.h	/^	u_int dip;$/;"	m	struct:dnsblack_info
+dip	reportdata.h	/^	u_int dip;$/;"	m	struct:ipblack_info
+dip	reportdata.h	/^	u_int dip;$/;"	m	struct:secret_info
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_alarm_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_alert_t
+dmac	cachestruct.h	/^	char dmac[20];$/;"	m	struct:cache_secret_t
+dmac	hashdata.h	/^   char dmac[20];$/;"	m	struct:horserule
+dmac	reportdata.h	/^	char dmac[18];$/;"	m	struct:alarm_info
+dmac	reportdata.h	/^	char dmac[18];$/;"	m	struct:alert_info
+dns_id	reportdata.h	/^	u_int32_t dns_id;$/;"	m	struct:dnsblack_info
+dns_name	rulesdata.h	/^	char dns_name[65];\/\/域名$/;"	m	struct:dns_rules
+dns_response	dnschecker.h	/^struct dns_response \/\/DNS响应数据报：$/;"	s
+dns_rules	rulesdata.h	/^struct dns_rules{$/;"	s
+dnsblack_info	reportdata.h	/^struct dnsblack_info{$/;"	s
+dnshash	cachestruct.h	/^	char dnshash[33];$/;"	m	struct:cache_alert_t
+dnshash	reportdata.h	/^	char dnshash[32];$/;"	m	struct:dnsblack_info
+dnshash	reportdata.h	/^	char dnshash[33];$/;"	m	struct:alert_info
+dnshdr	dnschecker.h	/^struct dnshdr$/;"	s
+dnshead	dnschecker.h	/^struct dnshead$/;"	s
+down_KB	cachestruct.h	/^	float	 down_KB;$/;"	m	struct:cache_audit_t
+download	UnTrojan.h	/^    size_t   download;$/;"	m	struct:unkown_trojan
+dport	cachestruct.h	/^	uint16_t dport;$/;"	m	struct:cache_audit_t
+dport	cachestruct.h	/^	uint32_t dport;$/;"	m	struct:cache_alert_t
+dport	cachestruct.h	/^	uint32_t dport;$/;"	m	struct:cache_secret_t
+dport	reportdata.h	/^	char dport[6];$/;"	m	struct:alert_info
+dport	reportdata.h	/^	u_short dport;$/;"	m	struct:audit_info
+dport	reportdata.h	/^	u_short dport;$/;"	m	struct:dnsblack_info
+dport	reportdata.h	/^	u_short dport;$/;"	m	struct:secret_info
+dstip	chkmngdata.h	/^	u_int dstip;$/;"	m	struct:net_element
+dstip	reportdata.h	/^	u_int dstip;$/;"	m	struct:netopt_audit
+dstmac	chkmngdata.h	/^	u_char dstmac[6];$/;"	m	struct:net_element
+dstmac	wtpcap.h	/^		char dstmac[6];	$/;"	m	struct:macframes
+dstp	chkmngdata.h	/^	u_short dstp;$/;"	m	struct:net_element
+dstp	rulesdata.h	/^	uint16_t dstp;	$/;"	m	struct:net_shark
+dstport	reportdata.h	/^	u_short dstport;$/;"	m	struct:netopt_audit
+element	capturepacket.cpp	/^struct net_element element;$/;"	v	typeref:struct:net_element
+employ_size	cmempool.h	/^		int employ_size;\/\/已经使用大小$/;"	m	struct:Unit
+end	reportdata.h	/^	time_t end;$/;"	m	struct:netopt_audit
+end_time	cachestruct.h	/^	time_t   end_time;$/;"	m	struct:cache_audit_t
+endip	geoip.h	/^    char endip[15];$/;"	m	struct:ipaddr
+endip	rulesdata.h	/^	u_int endip;$/;"	m	struct:ip_rules
+endip	rulesdata.h	/^	u_int endip;$/;"	m	struct:ipaudit_rules
+endip	rulesdata.h	/^	u_int endip;$/;"	m	struct:ippos_rules
+endip	rulesdata.h	/^	u_int endip;$/;"	m	struct:net_shark
+endip	rulesdata.h	/^	u_int endip;$/;"	m	struct:white_rules
+endtime	rulesdata.h	/^	char endtime[20];$/;"	m	struct:mail_rules
+err	GetConfigInfo.h	/^		char *err;$/;"	m	union:ConfigInfo
+event_class	cachestruct.h	/^	uint32_t event_class;$/;"	m	struct:cache_secret_t
+event_class	reportdata.h	/^	char event_class[5];$/;"	m	struct:secret_info
+event_id	cachestruct.h	/^	char event_id[12];$/;"	m	struct:cache_secret_t
+event_id	reportdata.h	/^	int event_id;$/;"	m	struct:secret_info
+event_id	reportdata.h	/^	u_int event_id; $/;"	m	struct:alarm_info
+event_time	cachestruct.h	/^	char event_time[25];$/;"	m	struct:cache_secret_t
+event_time	reportdata.h	/^	time_t event_time;$/;"	m	struct:secret_info
+event_type	cachestruct.h	/^	char event_type[3];$/;"	m	struct:cache_secret_t
+event_type	reportdata.h	/^	char event_type[2];$/;"	m	struct:secret_info
+exist	itipschecker.h	/^	bool exist;$/;"	m	class:ITipsChecker
+exit	itipschecker.h	/^	bool exit;$/;"	m	class:ITipsChecker
+expired	reportdata.h	/^	time_t expired;$/;"	m	struct:block_info
+expired_time	cachestruct.h	/^	char expired_time[25];$/;"	m	struct:cache_block_t
+extra	reportdata.h	/^	char extra[65];$/;"	m	struct:alert_info
+extra_text	cachestruct.h	/^	char extra_text[65];$/;"	m	struct:cache_alert_t
+extra_text	reportdata.h	/^	char extra_text[65];$/;"	m	struct:dnsblack_info
+family	reportdata.h	/^	char family;$/;"	m	struct:alarm_info
+family	reportdata.h	/^	char family;$/;"	m	struct:alert_info
+family	reportdata.h	/^	char family;$/;"	m	struct:netopt_audit
+family	reportdata.h	/^	char family;$/;"	m	struct:secret_info
+file_name	reportdata.h	/^	char file_name[256];$/;"	m	struct:secret_info
+filefd	hashdata.h	/^  int filefd;$/;"	m	struct:stream
+filefun	savefile.cpp	/^void* filefun(void* pthobj)$/;"	f
+filemem	itipschecker.h	/^	CMempool* filemem;$/;"	m	class:ITipsChecker
+filemem	main.cpp	/^CMempool filemem;$/;"	v
+filename	cachestruct.h	/^	char filename[257];$/;"	m	struct:cache_secret_t
+filerule	loadrule.h	/^struct filerule$/;"	s
+first_unit	cmempool.h	/^		struct Unit* first_unit;\/\/第一个地址单元$/;"	m	struct:Head	typeref:struct:Head::Unit
+flag	cmempool.h	/^		u_int8_t flag;\/\/标志位，最后一位为写入标志$/;"	m	struct:Unit
+flag	geoip.h	/^    char flag;$/;"	m	struct:ipaddr
+flag	rulesdata.h	/^	char flag;$/;"	m	struct:ippos_rules
+flow	chkmngdata.h	/^	double flow;$/;"	m	struct:mirror_struct
+flow	hashdata.h	/^   struct  stream *flow;$/;"	m	struct:horserule	typeref:struct:horserule::stream
+fp	GetConfigInfo.cpp	/^FILE *fp = 0;$/;"	v
+free_size	cmempool.h	/^		u_int32_t free_size;\/\/剩余空间大小$/;"	m	struct:Unit
+func	funclist.h	/^struct func$/;"	s
+grant	dnschecker.h	/^	u_short grant;\/\/授权资源记录数$/;"	m	struct:dnshdr
+grant	dnschecker.h	/^	u_short grant;\/\/授权资源记录数$/;"	m	struct:dnshead
+handle_func	main.cpp	/^void handle_func(int sig)$/;"	f
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_alarm_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_alert_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_audit_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_block_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_opt_t
+head	cachestruct.h	/^	cache_head_t head;$/;"	m	struct:cache_secret_t
+head	cmempool.h	/^				struct Head* head;$/;"	m	class:CMempool	typeref:struct:CMempool::Head
+hex2d	tools.cpp	/^int hex2d(char *p)$/;"	f
+horserule	hashdata.h	/^struct horserule$/;"	s
+id_mutex	wtEnd.cpp	/^pthread_mutex_t id_mutex;$/;"	v
+ident	dnschecker.h	/^	u_short ident;\/\/标识$/;"	m	struct:dnshdr
+ident	dnschecker.h	/^	u_short ident;\/\/标识$/;"	m	struct:dnshead
+identifier	loadrule.h	/^   char identifier[8];$/;"	m	struct:filerule
+index	UnTrojan.h	/^	size_t   index;$/;"	m	struct:unkown_trojan
+init_pthread_mutex	checkobj.cpp	/^void init_pthread_mutex()$/;"	f
+ip_black_id	reportdata.h	/^	u_int32_t ip_black_id;$/;"	m	struct:ipblack_info
+ip_callback	capturepacket.cpp	/^void ip_callback(const struct pcap_pkthdr* hdr,const u_char* data)$/;"	f
+ip_rules	rulesdata.h	/^struct ip_rules{$/;"	s
+ipaddr	geoip.h	/^struct ipaddr$/;"	s
+ipaudit_rules	rulesdata.h	/^struct ipaudit_rules{$/;"	s
+ipblack_info	reportdata.h	/^struct ipblack_info{$/;"	s
+iplist	checkobj.cpp	/^list<struct check_struct> iplist;$/;"	v
+ipmarkoff	capturepacket.cpp	/^bool ipmarkoff(in_addr_t *addr)$/;"	f
+ipmutex	checkobj.cpp	/^pthread_mutex_t ipmutex,tcpmutex,udpmutex;$/;"	v
+ippos_rules	rulesdata.h	/^struct ippos_rules{$/;"	s
+isTrojanHorse	hashdata.h	/^  bool isTrojanHorse;$/;"	m	struct:stream
+isblack	ipblackchecker.cpp	/^static int isblack(uint32_t ip, uint16_t port, char *risk)$/;"	f	file:
+ishttp	UnTrojan.h	/^	int     ishttp;$/;"	m	struct:unkown_trojan
+iswhite	ipblackchecker.cpp	/^static int iswhite(struct net_element *link)$/;"	f	file:
+itoa	tools.cpp	/^void itoa(int num,char *buffer)$/;"	f
+jhash_3words	hash.h	/^inline uint32_t jhash_3words(uint32_t srcip,uint32_t destip,uint32_t port,uint32_t initval)$/;"	f
+key	multikeymatch.h	/^  char* key;$/;"	m	struct:result_struct
+key_count	multikeymatch.h	/^  int key_count;$/;"	m	class:MultiKeyMatch
+keylist	multikeymatch.h	/^  list<char*> keylist;$/;"	m	class:MultiKeyMatch
+keymatch	dnschecker.h	/^		MultiKeyMatch keymatch;$/;"	m	class:DNSChecker
+l_type	reportdata.h	/^	int l_type;\/\/ $/;"	m	struct:alert_info
+l_type	reportdata.h	/^	int l_type;\/\/$/;"	m	struct:audit_info
+l_type	reportdata.h	/^	int l_type;\/\/12 梁彦鹏$/;"	m	struct:block_info
+l_type	reportdata.h	/^	int l_type;\/\/13 梁彦鹏$/;"	m	struct:secret_info
+l_type	reportdata.h	/^	int l_type;\/\/2   张勇$/;"	m	struct:ipblack_info
+l_type	reportdata.h	/^	int l_type;\/\/21 11  李春辉$/;"	m	struct:netopt_audit
+l_type	reportdata.h	/^	int l_type;\/\/31 $/;"	m	struct:alarm_info
+l_type	reportdata.h	/^	int l_type;\/\/4  张勇$/;"	m	struct:dnsblack_info
+last	dnschecker.h	/^		list<struct result_struct> last;$/;"	m	class:DNSChecker
+last	hashdata.h	/^   time_t last;$/;"	m	struct:horserule
+last_time	UnTrojan.h	/^	time_t   last_time;$/;"	m	struct:unkown_trojan
+last_unit	cmempool.h	/^		struct Unit* last_unit;\/\/最后一个单元地址$/;"	m	struct:Head	typeref:struct:Head::Unit
+lasttime	reportdata.h	/^	time_t lasttime;$/;"	m	struct:netopt_audit
+len	wtpcap.h	/^		u_int32_t len;$/;"	m	struct:pcap_packet_head
+length	dnschecker.h	/^	unsigned short length; \/\/资源数据长度$/;"	m	struct:dns_response
+length	loadrule.h	/^   int length;$/;"	m	struct:filerule
+libnet_init_flag	ipblackchecker.cpp	/^bool libnet_init_flag = true;$/;"	v
+linktype	wtpcap.h	/^		u_int32_t linktype;$/;"	m	struct:pcap_file_head
+listarr	multikeymatch.h	/^  char** listarr;$/;"	m	struct:match_struct
+live	chkmngdata.h	/^	int live;$/;"	m	struct:mirror_struct
+load	reportdata.h	/^	u_int64_t load;$/;"	m	struct:netopt_audit
+load_struct	rulesdata.h	/^struct load_struct{$/;"	s
+loadtab	unixdomain.cpp	/^struct rules_fsm loadtab[LoadTabCnt] = {$/;"	v	typeref:struct:rules_fsm
+macframes	wtpcap.h	/^struct macframes$/;"	s
+magic	wtpcap.h	/^		u_int32_t magic;$/;"	m	struct:pcap_file_head
+mail_rules	rulesdata.h	/^struct mail_rules{$/;"	s
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+manager_domain	unixdomain.h	/^				int manager_domain,data_domain; \/\/用于建立与manager通信的socket 和 接收管控命令、策略的socket$/;"	m	class:UnixDomain
+map_mutex	itipschecker.h	/^	pthread_mutex_t map_mutex;$/;"	m	class:ITipsChecker
+mark	dnschecker.h	/^	u_short mark;\/\/标志$/;"	m	struct:dnshdr
+mark	dnschecker.h	/^	u_short mark;\/\/标志$/;"	m	struct:dnshead
+match_flag	multikeymatch.h	/^	bool match_flag;$/;"	m	class:MultiKeyMatch
+match_map	multikeymatch.h	/^  map<unsigned short,struct match_struct> match_map;$/;"	m	class:MultiKeyMatch
+match_mode	rulesdata.h	/^	u_int8_t match_mode;\/\/匹配模式$/;"	m	struct:dns_rules
+match_struct	multikeymatch.h	/^struct match_struct{$/;"	s
+max	multikeymatch.h	/^  int max;$/;"	m	class:MultiKeyMatch
+mempool	savefile.h	/^		CMempool* mempool;$/;"	m	class:StartFileSave
+message	UnTrojan.h	/^	u_char   *message;$/;"	m	struct:unkown_trojan
+message	hashdata.h	/^   unsigned char *message;$/;"	m	struct:horserule
+mirror	chkmngdata.h	/^	char mirror;$/;"	m	struct:mirror_struct
+mirror	itipschecker.h	/^	struct mirror_struct mirror;$/;"	m	class:ITipsChecker	typeref:struct:ITipsChecker::mirror_struct
+mirror_mutex	itipschecker.h	/^	pthread_mutex_t mirror_mutex;$/;"	m	class:ITipsChecker
+mirror_struct	chkmngdata.h	/^struct mirror_struct{$/;"	s
+module	chkmngdata.h	/^	char module[9];$/;"	m	struct:mirror_struct
+module_no	unixdomain.h	/^		int module_no;\/*模块标号*\/$/;"	m	struct:rules_fsm
+mutex	cmempool.h	/^				pthread_mutex_t mutex;$/;"	m	class:CMempool
+my_pow	tools.cpp	/^int my_pow(int num,int n)$/;"	f
+mycallback	capturepacket.cpp	/^void mycallback(u_char *par, const struct pcap_pkthdr *hdr, const u_char *data)$/;"	f
+name	dnschecker.h	/^	u_int8_t *name;\/\/查询的问题$/;"	m	struct:dnshdr
+name	loadrule.h	/^   char name[32];$/;"	m	struct:filerule
+net_element	chkmngdata.h	/^struct net_element$/;"	s
+net_shark	rulesdata.h	/^struct net_shark{$/;"	s
+netopt_audit	reportdata.h	/^struct netopt_audit{$/;"	s
+next	UnTrojan.h	/^	struct unkown_trojan *next;$/;"	m	struct:unkown_trojan	typeref:struct:unkown_trojan::unkown_trojan
+next	funclist.h	/^  struct func *next;$/;"	m	struct:func	typeref:struct:func::func
+next	hashdata.h	/^   struct horserule *next;$/;"	m	struct:horserule	typeref:struct:horserule::horserule
+next	loadrule.h	/^   struct filerule *next;$/;"	m	struct:filerule	typeref:struct:filerule::filerule
+next_block	cmempool.h	/^		struct Head* next_block;\/\/下一个内存快指针$/;"	m	struct:Head	typeref:struct:Head::Head
+next_unit	cmempool.h	/^		struct Unit* next_unit;\/\/下一个内存单元地址(当head->type==1时有效)$/;"	m	struct:Unit	typeref:struct:Unit::Unit
+nproblem	dnschecker.h	/^	u_short nproblem;\/\/问题数$/;"	m	struct:dnshdr
+nproblem	dnschecker.h	/^	u_short nproblem;\/\/问题数$/;"	m	struct:dnshead
+nresource	dnschecker.h	/^	u_short nresource;\/\/资源记录数$/;"	m	struct:dnshdr
+nresource	dnschecker.h	/^	u_short nresource;\/\/资源记录数$/;"	m	struct:dnshead
+obj	unixdomain.h	/^		ITipsChecker * obj;$/;"	m	struct:rules_fsm
+operator <	checkdata.h	/^	bool operator<(check_struct& chk)$/;"	f	struct:check_struct
+operator <	pthreaddata.h	/^		bool operator<(check_struct& chk)$/;"	f	struct:check_struct
+operator ==	checkdata.h	/^	bool operator==(check_struct& chk)$/;"	f	struct:check_struct
+operator ==	pthreaddata.h	/^		bool operator==(check_struct& chk)$/;"	f	struct:check_struct
+opt_dsc	unixdomain.h	/^		char *  opt_dsc;$/;"	m	struct:rules_fsm
+opttime	cachestruct.h	/^	char opttime[24];$/;"	m	struct:cache_opt_t
+pcap_file_head	wtpcap.h	/^struct pcap_file_head$/;"	s
+pcap_packet_head	wtpcap.h	/^struct pcap_packet_head $/;"	s
+plugin_id	UnTrojan.h	/^	char     plugin_id[4];$/;"	m	struct:unkown_trojan
+plugin_id	cachestruct.h	/^	uint32_t plugin_id;$/;"	m	struct:cache_alert_t
+plugin_id	reportdata.h	/^	char plugin_id[5];$/;"	m	struct:alert_info
+port	rulesdata.h	/^	u_short port;$/;"	m	struct:ip_rules
+port	rulesdata.h	/^	u_short port;$/;"	m	struct:ipaudit_rules
+port	rulesdata.h	/^	u_short port;$/;"	m	struct:white_rules
+pos	multikeymatch.h	/^  char pos[3];$/;"	m	struct:match_struct
+prev	UnTrojan.h	/^	struct unkown_trojan *prev;$/;"	m	struct:unkown_trojan	typeref:struct:unkown_trojan::unkown_trojan
+prev	hashdata.h	/^   struct horserule *prev;$/;"	m	struct:horserule	typeref:struct:horserule::horserule
+pro	unixdomain.h	/^		unsigned char pro;\/*'L'*\/$/;"	m	struct:rules_fsm
+process	funclist.h	/^  Func process;$/;"	m	struct:func
+protocol	cachestruct.h	/^	uint32_t protocol; $/;"	m	struct:cache_alert_t
+protocol	cachestruct.h	/^	uint32_t protocol;$/;"	m	struct:cache_audit_t
+protocol	chkmngdata.h	/^	u_int8_t protocol;$/;"	m	struct:net_element
+protocol	reportdata.h	/^	char protocol[4];$/;"	m	struct:alert_info
+protocol	reportdata.h	/^	u_int8_t protocol;$/;"	m	struct:audit_info
+protocol	reportdata.h	/^	u_int8_t protocol;$/;"	m	struct:dnsblack_info
+protocol	reportdata.h	/^	u_int8_t protocol;$/;"	m	struct:netopt_audit
+protocol	rulesdata.h	/^	uint8_t protocol;$/;"	m	struct:net_shark
+receiver	cachestruct.h	/^	char receiver[257];$/;"	m	struct:cache_secret_t
+receiver	reportdata.h	/^	char receiver[256];$/;"	m	struct:secret_info
+region	geoip.h	/^    char region[15];$/;"	m	struct:ipaddr
+region	rulesdata.h	/^	char region[28];$/;"	m	struct:ippos_rules
+regulation	hashdata.h	/^   struct  filerule *regulation;$/;"	m	struct:horserule	typeref:struct:horserule::filerule
+report	UnTrojan.h	/^	bool     report;$/;"	m	struct:unkown_trojan
+res	multikeymatch.h	/^  int res;$/;"	m	struct:result_struct
+result_struct	multikeymatch.h	/^struct result_struct{$/;"	s
+risk	cachestruct.h	/^	char risk;$/;"	m	struct:cache_alarm_t
+risk	cachestruct.h	/^	char risk[3];$/;"	m	struct:cache_alert_t
+risk	reportdata.h	/^	char risk; \/\/by -- yong 20130411$/;"	m	struct:dnsblack_info
+risk	reportdata.h	/^	char risk;$/;"	m	struct:alarm_info
+risk	reportdata.h	/^	char risk;$/;"	m	struct:ipblack_info
+risk	reportdata.h	/^	char risk[3];$/;"	m	struct:alert_info
+rules	rulesdata.h	/^void** rules;$/;"	m	struct:load_struct
+rules_action	unixdomain.h	/^		int (*rules_action)(char *rules,int len);$/;"	m	struct:rules_fsm
+rules_fsm	unixdomain.h	/^struct rules_fsm{$/;"	s
+scc	cachestruct.h	/^	char scc[65];$/;"	m	struct:cache_alarm_t
+scc	cachestruct.h	/^	char scc[65];$/;"	m	struct:cache_alert_t
+scc_flag	cachestruct.h	/^	char scc_flag;$/;"	m	struct:cache_alarm_t
+scc_flag	cachestruct.h	/^	char scc_flag;$/;"	m	struct:cache_alert_t
+sec_rules	rulesdata.h	/^struct sec_rules{$/;"	s
+secret_info	reportdata.h	/^struct secret_info{$/;"	s
+sen_msg	cachestruct.h	/^	char sen_msg[129];$/;"	m	struct:cache_secret_t
+sen_msg	reportdata.h	/^	char sen_msg[128];$/;"	m	struct:secret_info
+sender	cachestruct.h	/^	char sender[65];$/;"	m	struct:cache_secret_t
+sender	reportdata.h	/^	char sender[64];$/;"	m	struct:secret_info
+serverfd	client++.h	/^		int serverfd;$/;"	m	class:CCacheclient
+shield_stderr	tools.cpp	/^void shield_stderr()$/;"	f
+sigfigs	wtpcap.h	/^		u_int32_t sigfigs;$/;"	m	struct:pcap_file_head
+sign	rulesdata.h	/^	char sign;$/;"	m	struct:mail_rules
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_alarm_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_alert_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_block_t
+sip	cachestruct.h	/^	char sip[19];$/;"	m	struct:cache_secret_t
+sip	cachestruct.h	/^	uint32_t sip;$/;"	m	struct:cache_audit_t
+sip	reportdata.h	/^	char sip[16];$/;"	m	struct:alarm_info
+sip	reportdata.h	/^	char sip[16];$/;"	m	struct:alert_info
+sip	reportdata.h	/^	u_int sip;$/;"	m	struct:audit_info
+sip	reportdata.h	/^	u_int sip;$/;"	m	struct:block_info
+sip	reportdata.h	/^	u_int sip;$/;"	m	struct:dnsblack_info
+sip	reportdata.h	/^	u_int sip;$/;"	m	struct:ipblack_info
+sip	reportdata.h	/^	u_int sip;$/;"	m	struct:secret_info
+size	cachestruct.h	/^	int size;$/;"	m	struct:cache_head_t
+snaplen	wtpcap.h	/^		u_int32_t snaplen;$/;"	m	struct:pcap_file_head
+space	multikeymatch.h	/^  int space;$/;"	m	struct:match_struct
+spectro_rules	rulesdata.h	/^struct spectro_rules{$/;"	s
+sport	cachestruct.h	/^	uint16_t sport;$/;"	m	struct:cache_audit_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_alert_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_block_t
+sport	cachestruct.h	/^	uint32_t sport;$/;"	m	struct:cache_secret_t
+sport	reportdata.h	/^	char sport[6];$/;"	m	struct:alert_info
+sport	reportdata.h	/^	u_short sport;$/;"	m	struct:audit_info
+sport	reportdata.h	/^	u_short sport;$/;"	m	struct:block_info
+sport	reportdata.h	/^	u_short sport;$/;"	m	struct:dnsblack_info
+sport	reportdata.h	/^	u_short sport;$/;"	m	struct:secret_info
+srcip	chkmngdata.h	/^	u_int srcip;$/;"	m	struct:net_element
+srcip	reportdata.h	/^	u_int srcip;$/;"	m	struct:netopt_audit
+srcmac	chkmngdata.h	/^	u_char srcmac[6];$/;"	m	struct:net_element
+srcmac	wtpcap.h	/^		char srcmac[6];	$/;"	m	struct:macframes
+srcp	chkmngdata.h	/^	u_short srcp;$/;"	m	struct:net_element
+srcp	rulesdata.h	/^	uint16_t srcp;$/;"	m	struct:net_shark
+srcport	reportdata.h	/^	u_short srcport;$/;"	m	struct:netopt_audit
+start	reportdata.h	/^	time_t start;$/;"	m	struct:block_info
+start	reportdata.h	/^	time_t start;$/;"	m	struct:netopt_audit
+start_accept	unixdomain.cpp	/^void* start_accept(void* argc)$/;"	f
+start_time	cachestruct.h	/^	char start_time[25];$/;"	m	struct:cache_block_t
+start_time	cachestruct.h	/^	time_t 	 start_time;$/;"	m	struct:cache_audit_t
+startfile	main.cpp	/^StartFileSave startfile;$/;"	v
+startip	geoip.h	/^    char startip[15];$/;"	m	struct:ipaddr
+startip	rulesdata.h	/^	u_int startip;$/;"	m	struct:ip_rules
+startip	rulesdata.h	/^	u_int startip;$/;"	m	struct:ipaudit_rules
+startip	rulesdata.h	/^	u_int startip;$/;"	m	struct:ippos_rules
+startip	rulesdata.h	/^	u_int startip;$/;"	m	struct:net_shark
+startip	rulesdata.h	/^	u_int startip;$/;"	m	struct:white_rules
+startpacket	main.cpp	/^StartCapture startpacket;$/;"	v
+starttime	rulesdata.h	/^	char starttime[20];$/;"	m	struct:mail_rules
+stream	hashdata.h	/^struct stream$/;"	s
+tcplist	checkobj.cpp	/^list<struct check_struct> tcplist;$/;"	v
+tcpmutex	checkobj.cpp	/^pthread_mutex_t ipmutex,tcpmutex,udpmutex;$/;"	v
+territory	geoip.h	/^    char territory[15];$/;"	m	struct:ipaddr
+thiszone	wtpcap.h	/^		int thiszone;$/;"	m	struct:pcap_file_head
+time_convert_string	tools.cpp	/^void time_convert_string(char *struct_time,int time,int flag)$/;"	f
+tirr	rulesdata.h	/^	char tirr[40];$/;"	m	struct:ippos_rules
+title	cachestruct.h	/^	char title[129];$/;"	m	struct:cache_secret_t
+title	reportdata.h	/^	char title[128];$/;"	m	struct:secret_info
+totallength	loadrule.h	/^   int totallength;$/;"	m	struct:filerule
+trojan_id	cachestruct.h	/^	char trojan_id[6];$/;"	m	struct:cache_alarm_t
+trojan_id	cachestruct.h	/^	char trojan_id[6];$/;"	m	struct:cache_alert_t
+trojan_id	reportdata.h	/^	char trojan_id[6];$/;"	m	struct:alarm_info
+trojan_id	reportdata.h	/^	char trojan_id[6];$/;"	m	struct:alert_info
+ts	wtpcap.h	/^		struct timeval ts;$/;"	m	struct:pcap_packet_head	typeref:struct:pcap_packet_head::timeval
+ttl	dnschecker.h	/^	unsigned int ttl; \/\/生存时间$/;"	m	struct:dns_response
+type	cachestruct.h	/^	char type[3];$/;"	m	struct:cache_alarm_t
+type	cachestruct.h	/^	int type;$/;"	m	struct:cache_head_t
+type	cmempool.h	/^		int type;\/\/是否存在连续单元$/;"	m	struct:Head
+type	dnschecker.h	/^	unsigned short type; \/\/查询类型$/;"	m	struct:dns_response
+type	itipschecker.h	/^	int type;$/;"	m	class:ITipsChecker
+type	loadrule.h	/^   char type[3];$/;"	m	struct:filerule
+type	reportdata.h	/^	char type[3];$/;"	m	struct:alarm_info
+type	reportdata.h	/^	char type[3];$/;"	m	struct:ipblack_info
+type	rulesdata.h	/^	char type;$/;"	m	struct:ip_rules
+type	rulesdata.h	/^	u_int8_t type;\/\/类型$/;"	m	struct:dns_rules
+type	rulesdata.h	/^int type;$/;"	m	struct:load_struct
+type	wtpcap.h	/^		u_int16_t type;$/;"	m	struct:macframes
+udplist	checkobj.cpp	/^list<struct check_struct> udplist;$/;"	v
+udpmutex	checkobj.cpp	/^pthread_mutex_t ipmutex,tcpmutex,udpmutex;$/;"	v
+unit_count	cmempool.h	/^		int unit_count;$/;"	m	struct:Head
+unit_free	cmempool.h	/^				int unit_free;$/;"	m	class:CMempool
+unit_size	cmempool.h	/^		int unit_size;$/;"	m	struct:Head
+unixdomain	main.cpp	/^UnixDomain unixdomain;$/;"	v
+unkown_trojan	UnTrojan.h	/^typedef struct unkown_trojan$/;"	s
+unkown_trojan	UnTrojan.h	/^}unkown_trojan;$/;"	t	typeref:struct:unkown_trojan
+up_KB	cachestruct.h	/^	float	 up_KB;$/;"	m	struct:cache_audit_t
+upload	UnTrojan.h	/^	size_t   upload;$/;"	m	struct:unkown_trojan
+upload	reportdata.h	/^	u_int64_t upload;	$/;"	m	struct:netopt_audit
+username	cachestruct.h	/^	char username[64];$/;"	m	struct:cache_opt_t
+vect	loadrule.h	/^   unsigned int vect[9];$/;"	m	struct:filerule
+version_major	wtpcap.h	/^		u_short version_major;$/;"	m	struct:pcap_file_head
+version_minor	wtpcap.h	/^		u_short version_minor;$/;"	m	struct:pcap_file_head
+white_ip	ipblackchecker.cpp	/^static struct ip_rules white_ip[IP_LIST_LEN];$/;"	v	typeref:struct:ip_rules	file:
+white_ip_len	ipblackchecker.cpp	/^static int white_ip_len;$/;"	v	file:
+white_rules	rulesdata.h	/^struct white_rules{$/;"	s
+whitelist	ipblackchecker.h	/^		map<u_short,struct ip_rules> whitelist;$/;"	m	class:IPBlackChecker
+writeflag	cmempool.h	/^				bool writeflag;\/\/当前write指针是否可写$/;"	m	class:CMempool
+writemem	ipblackchecker.cpp	/^int IPBlackChecker::writemem(uint32_t sip, uint32_t dip, uint16_t sport, uint16_t dport,u_char srcmac[6],u_int8_t protocol,char risk)$/;"	f	class:IPBlackChecker
+wtpcap	dnschecker.h	/^		Pcap * wtpcap;$/;"	m	class:DNSChecker
+wtpcap	ipblackchecker.h	/^		Pcap * wtpcap;$/;"	m	class:IPBlackChecker
+wtpcap	savefile.h	/^		Pcap * wtpcap;$/;"	m	class:StartFileSave
+x	rulesdata.h	/^	char x;$/;"	m	struct:mail_rules
+~MultiKeyMatch	multikeymatch.cpp	/^MultiKeyMatch::~MultiKeyMatch()$/;"	f	class:MultiKeyMatch

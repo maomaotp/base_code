@@ -1,0 +1,3 @@
+g++ *.cpp -I. -L. -lmicrohttpd -lglib-2.0 -lexslt -lxml2 -luuid -lsqlite3
+
+g++ *.cpp -I/usr/include/glib-2.0/ -I/usr/lib/i386-linux-gnu/glib-2.0/include -L. -lmicrohttpd -I/usr/include/glib-2.0/ -I/usr/lib/i386-linux-gnu/glib-2.0/include/ -lglib-2.0 -I/usr/include/libxml2/ -lexslt -lxml2 -I/usr/include/uuid/ -luuid -lsqlite3

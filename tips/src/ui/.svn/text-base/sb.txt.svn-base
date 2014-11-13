@@ -1,0 +1,1089 @@
+num:-1
+131074
+IP====172.16.0.15
+xxxxxxxxxxxxxxxxxxxxxxxxxxx
+ssl_private_key:-----BEGIN RSA PRIVATE KEY-----
+MIICXwIBAAKBgQDKYu0AsvZKZFZhC/D1yWwLFqwDZ/HEy7zS0KhtzdqQTFx0GFst
+g3wle9k08C5Gz5L0K2Or5FUgoG4IqGRW/sD7EiU7fc/jp0RT0dc9eDuwkjzt5qbg
+MzsPjjeBy0fdUgHm50/BGzFebnaGYIieEXQfOiSWm8LCUCL5rAEo8AzQfQIDAQAB
+AoGBAKGCSLiiGMJNSFGyAd1jnIFM2oDtVpdCL7HdKkxWVvGIvs83EKxFnbEcIL6K
+XaPMyu1oIuZuFTEwVh86orh6HO3T6oxlYkRishVeIhPppL/Ooq1VgshQ7wuzSPTG
+VLotxDTSossdKK02Bqw7ufkH1nXrIX0YCN4WikU+DD0KgyXRAkEA88RyyEVMIGkq
+aeO/P3L8w49W7r1t97ZruEJnrO0TadV0BvzTHtrt2kyCmhK9nHDoTPs9i4cdlgw6
+FZktunv4kwJBANSK4MrFnW9eTc2SGGkaQ0mu18tyVgokYoH1dEPwjHRoqYIhK4EW
+MDVNgETBjBmya+uAC05tTk56n6vvq68dDK8CQQCpeDe8V8D2/2YHO9hnyg9D/dEY
+JQXgoyf8b94X8LIAb+88NGSqHNYjX/GkH8dGjZBShJBjAkplWJbBET8jWLCVAkEA
+zaJ8MNMXKfv0jJLv2ShWt8BY+nZptjBTumbvkRf33Fyyu7s56w+7nqaYFm2oDeip
+L1VYGw34OEe9mk0tLySM8wJBAOIH9kC1EAqeIy2dEVEykrM2/1DJiNbX96K0sumy
+EJEQtNpoOTflobOPwNgZm3LGiPLUA3vSHIgYyOnruhnFbd4=
+-----END RSA PRIVATE KEY-----
+
+ssl_certificate:Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=DE, L=Berlin, O=OpenVAS Users United, OU=Certification Authority for BeiJing-TiPs, CN=BeiJing-TiPs/emailAddress=ca@BeiJing-TiPs
+        Validity
+            Not Before: Aug 27 15:11:27 2013 GMT
+            Not After : Aug 27 15:11:27 2014 GMT
+        Subject: C=DE, L=Berlin, O=OpenVAS Users United, OU=Server certificate for BeiJing-TiPs, CN=BeiJing-TiPs/emailAddress=openvassd@BeiJing-TiPs
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:ca:62:ed:00:b2:f6:4a:64:56:61:0b:f0:f5:c9:
+                    6c:0b:16:ac:03:67:f1:c4:cb:bc:d2:d0:a8:6d:cd:
+                    da:90:4c:5c:74:18:5b:2d:83:7c:25:7b:d9:34:f0:
+                    2e:46:cf:92:f4:2b:63:ab:e4:55:20:a0:6e:08:a8:
+                    64:56:fe:c0:fb:12:25:3b:7d:cf:e3:a7:44:53:d1:
+                    d7:3d:78:3b:b0:92:3c:ed:e6:a6:e0:33:3b:0f:8e:
+                    37:81:cb:47:dd:52:01:e6:e7:4f:c1:1b:31:5e:6e:
+                    76:86:60:88:9e:11:74:1f:3a:24:96:9b:c2:c2:50:
+                    22:f9:ac:01:28:f0:0c:d0:7d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            Netscape Cert Type: 
+                SSL Server
+            X509v3 Key Usage: 
+                Digital Signature, Non Repudiation, Key Encipherment
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                8C:CE:5F:3F:35:46:5B:AC:75:3E:7D:33:BA:F1:75:94:69:FD:80:12
+            X509v3 Authority Key Identifier: 
+                keyid:59:25:3C:7B:99:14:51:8D:DE:D0:EF:DB:C9:B9:01:F0:98:89:ED:BB
+                DirName:/C=DE/L=Berlin/O=OpenVAS Users United/OU=Certification Authority for BeiJing-TiPs/CN=BeiJing-TiPs/emailAddress=ca@BeiJing-TiPs
+                serial:E1:22:10:73:DB:F4:C7:80
+
+            X509v3 Subject Alternative Name: 
+                email:openvassd@BeiJing-TiPs
+            X509v3 Issuer Alternative Name: 
+                <EMPTY>
+
+    Signature Algorithm: sha1WithRSAEncryption
+        07:d7:39:b6:6d:3a:84:14:02:b4:49:4d:c2:dd:e8:73:f2:e7:
+        41:a7:bd:06:13:4b:4c:04:b0:a8:4d:e6:1b:6c:3a:7a:1f:d5:
+        1d:9d:03:c1:2b:c7:7c:fb:da:95:00:5b:31:e7:32:2c:d0:5c:
+        5f:1d:d9:6d:3a:e2:53:de:ff:f7:5c:44:b7:45:1c:6c:55:2d:
+        79:79:ff:a6:30:40:2b:01:3b:41:fb:cd:10:93:88:dc:65:58:
+        56:74:6c:56:cd:42:fa:92:3f:c2:e1:a9:e7:9d:77:a5:07:9c:
+        05:50:51:71:e1:c2:d8:79:ea:d5:1c:fa:1e:e1:2c:c5:fa:99:
+        65:e4
+-----BEGIN CERTIFICATE-----
+MIIESDCCA7GgAwIBAgIBATANBgkqhkiG9w0BAQUFADCBpzELMAkGA1UEBhMCREUx
+DzANBgNVBAcTBkJlcmxpbjEdMBsGA1UEChMUT3BlblZBUyBVc2VycyBVbml0ZWQx
+MTAvBgNVBAsTKENlcnRpZmljYXRpb24gQXV0aG9yaXR5IGZvciBCZWlKaW5nLVRp
+UHMxFTATBgNVBAMTDEJlaUppbmctVGlQczEeMBwGCSqGSIb3DQEJARYPY2FAQmVp
+SmluZy1UaVBzMB4XDTEzMDgyNzE1MTEyN1oXDTE0MDgyNzE1MTEyN1owgakxCzAJ
+BgNVBAYTAkRFMQ8wDQYDVQQHEwZCZXJsaW4xHTAbBgNVBAoTFE9wZW5WQVMgVXNl
+cnMgVW5pdGVkMSwwKgYDVQQLEyNTZXJ2ZXIgY2VydGlmaWNhdGUgZm9yIEJlaUpp
+bmctVGlQczEVMBMGA1UEAxMMQmVpSmluZy1UaVBzMSUwIwYJKoZIhvcNAQkBFhZv
+cGVudmFzc2RAQmVpSmluZy1UaVBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKB
+gQDKYu0AsvZKZFZhC/D1yWwLFqwDZ/HEy7zS0KhtzdqQTFx0GFstg3wle9k08C5G
+z5L0K2Or5FUgoG4IqGRW/sD7EiU7fc/jp0RT0dc9eDuwkjzt5qbgMzsPjjeBy0fd
+UgHm50/BGzFebnaGYIieEXQfOiSWm8LCUCL5rAEo8AzQfQIDAQABo4IBfjCCAXow
+EQYJYIZIAYb4QgEBBAQDAgZAMAsGA1UdDwQEAwIF4DAsBglghkgBhvhCAQ0EHxYd
+T3BlblNTTCBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwHQYDVR0OBBYEFIzOXz81Rlus
+dT59M7rxdZRp/YASMIHcBgNVHSMEgdQwgdGAFFklPHuZFFGN3tDv28m5AfCYie27
+oYGtpIGqMIGnMQswCQYDVQQGEwJERTEPMA0GA1UEBxMGQmVybGluMR0wGwYDVQQK
+ExRPcGVuVkFTIFVzZXJzIFVuaXRlZDExMC8GA1UECxMoQ2VydGlmaWNhdGlvbiBB
+dXRob3JpdHkgZm9yIEJlaUppbmctVGlQczEVMBMGA1UEAxMMQmVpSmluZy1UaVBz
+MR4wHAYJKoZIhvcNAQkBFg9jYUBCZWlKaW5nLVRpUHOCCQDhIhBz2/THgDAhBgNV
+HREEGjAYgRZvcGVudmFzc2RAQmVpSmluZy1UaVBzMAkGA1UdEgQCMAAwDQYJKoZI
+hvcNAQEFBQADgYEAB9c5tm06hBQCtElNwt3oc/LnQae9BhNLTASwqE3mG2w6eh/V
+HZ0DwSvHfPvalQBbMecyLNBcXx3ZbTriU97/91xEt0UcbFUteXn/pjBAKwE7QfvN
+EJOI3GVYVnRsVs1C+pI/wuGp5513pQecBVBRceHC2Hnq1Rz6HuEsxfqZZeQ=
+-----END CERTIFICATE-----
+
+aaaaaaaaaaaaaaaaaaaaaaaaa
+i===================================0
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+user_find front
+user_find middle
+cookie=159548f6-3cb2-4a80-aabc-9b113576ed49
+token=0368848a-d998-467b-a97a-74b7259a25a4
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/gsa-style.css
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/gsa-style.css
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+url:/gsa-style.css
+path========================gsa-style.css
+path:gsa-style.css
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/script/jquery-1.4.1.min.js
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/script/jquery-1.4.1.min.js
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+url:/script/jquery-1.4.1.min.js
+path========================script/jquery-1.4.1.min.js
+path:script/jquery-1.4.1.min.js
+begin
+duifanip============3760509110
+startIP====wwwuuuu0,4294967295
+url:/script/script.js
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============3760509110
+startIP====wwwuuuu0,4294967295
+url:/script/script.js
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+url:/script/script.js
+path========================script/script.js
+path:script/script.js
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/img/bg_login.jpg
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/img/bg_login.jpg
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+444444444444444444444444444444444444444444444444444444
+url:/img/bg_login.jpg
+path========================img/bg_login.jpg
+path:img/bg_login.jpg
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:POST
+33333333333333333333333333333333333333333333333333
+=====================post================================
+The first post
+before the serve_post
+after the serve_post
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:POST
+33333333333333333333333333333333333333333333333333
+=====================post================================
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+This is in the serve_post
+aaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+This is in the serve_post
+aaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+This is in the serve_post
+aaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+This is in the serve_post
+aaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+begin
+duifanip============2954481846
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:POST
+33333333333333333333333333333333333333333333333333
+=====================post================================
+kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+token==(null)
+before into exec_omp_post
+in the exec_omp_post
+cmd===========================:login
+before get password
+after get password:
+==========================================000000
+in user_login_judge
+after login judge
+1
+aaaaaaaaaaaaaaaaaaa 607
+************************************************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+1unlock
+1unlockfinish
+aaaaaa614
+admin
+ret:1
+This is in the function attach_sid
+ret===============================================================================1,1
+redirect success
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+user_find front
+in user_find for
+token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user.token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+user.cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user_find middle
+cookie=683092ef-68e5-4a00-832e-08df1fdba304
+token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+dashuaige==============================
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+cmd in omp_get:get_information_attack
+cmd before in admin get_information_attack
+cmd in admin *******************************get_information_attack
+2013-09-28
+2013-09-28-01-06-26
+2013:::9::::28
+year_flag=================0
+i=============6
+dat_temp===========28
+dat_temp===========2013
+dat_temp===========9
+2013-09-24
+2013-09-25
+2013-09-26
+2013-09-27
+2013-09-28
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-24%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-24%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 0
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-25%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-25%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 0
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-26%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-26%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 13
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-27%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-27%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 55
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-28%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time like '2013-09-28%' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 9
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='1' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='1' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 0
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='2' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='2' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 0
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='3' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='3' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 68
+sql======select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='4' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+I going ************************
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx:0
+sql == select count(*) from tips_Alarm where Alarm_id in (select Alarm_id from tips_Alarm where Alarm_time between '2013-09-24' and '2013-09-28' and Risk='4' group by Alarm_judgetime,Trojan_id,Sip,Dip)
+1unlock
+1unlockfinish
+myself_sql*************is 0
+**************************************************************************************************I am nothing do you know !
+xmlwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww==<envelope><login><![CDATA[admin]]></login><time>Sat Sep 28 01:06:26 2013 CST</time><token>9d32c1d7-c4d2-4b90-bd98-49f2a107e336</token><information_attack><StrTime>2013-09-24</StrTime><EndTime>2013-09-28</EndTime><lineDataStr>['2013-09-24',0],['2013-09-25',0],['2013-09-26',13],['2013-09-27',55],['2013-09-28',9]</lineDataStr><barDataStr>['一般级',0],['关注级',0],['严重级',68],['紧急级',0]</barDataStr></information_attack></envelope>
+=========00<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/gsa-style.css">
+<script src="/script/jquery-1.4.1.min.js" language="javascript" type="text/javascript"></script><script src="/script/script.js" language="javascript" type="text/javascript"></script><!--[if IE 6]>
+      
+        <link rel="stylesheet" type="text/css" href="IE6fixes.css"/>
+        <link rel="stylesheet" type="text/css" href="../IE6fixes.css"/>
+    <![endif]-->
+</head>
+<body><div xmlns="" class="envelope">
+<div class="head_bg"><div class="header"><div class="top">
+            欢迎您： <span></span><b><a href="/omp?cmd=user_modify_page&amp;login=admin&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">admin</a></b><image src="img/style/exit.png" class="exitImg"></image><a href="/logout?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336" title="Logout" style="margin-left:3px;">安全退出</a>
+</div></div></div>
+<div class="wrap">
+<div class="menu"><center><ul class="grade_1">
+<li>
+<a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a><ul><li id="1"><a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a><ul><li id="2"><a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a><ul><li id="3"><a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a><ul><li id="4"><a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">检索信息</a><ul>
+<li id="5"><a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密报警</a></li>
+<li id="6"><a href="/omp?cmd=get_event_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标志事件</a></li>
+<li id="7"><a href="/omp?cmd=get_netlog_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">上网行为审计</a></li>
+</ul>
+</li>
+<li>
+<a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">产品维护</a><ul>
+<li id="8"><a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">设备状态</a></li>
+<li id="9"><a href="/omp?cmd=get_sysSetting&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">系统设置</a></li>
+</ul>
+</li>
+<li id="7" class="current">
+<a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">统计信息</a><ul>
+<li id="10" class="g2_current"><a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密</a></li>
+<li id="11"><a href="/omp?cmd=get_information_operation&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">操作审计</a></li>
+<li id="12"><a href="/omp?cmd=get_information_secret&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标识</a></li>
+<li id="13"><a href="/omp?cmd=get_information_action&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">行为审计</a></li>
+</ul>
+</li>
+</ul></center></div>
+<div xmlns:gsa="http://openvas.org" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cve="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:ns6="http://scap.nist.gov/schema/scap-core/0.1" xmlns:config="http://scap.nist.gov/schema/configuration/0.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" class="workSpace">
+<div class="location">您的位置：统计信息&gt;&gt;攻击窃密</div>
+<script src="/script/jscharts.js" language="javascript" type="text/javascript"></script><script src="/script/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script><link href="/script/My97DatePicker/skin/WdatePicker.css" rel="stylesheet">
+<script type="text/javascript">
+        $(function () {
+
+	    var lineDataStr="['2013-09-24',0],['2013-09-25',0],['2013-09-26',13],['2013-09-27',55],['2013-09-28',9]";
+             lineDataStr = "new Array(" + lineDataStr + ")";
+            var lineDataArr = eval(lineDataStr); 
+	   var countX=lineDataArr.length;   
+             
+           var myChart = new JSChart('lineChart', 'line');
+            myChart.setDataArray(lineDataArr);
+    
+            myChart.setAxisNameX('报警时间');
+            myChart.setAxisNameY('报警数量');
+	    myChart.setAxisValuesNumberY(6);
+	    myChart.setAxisValuesNumberX(countX);
+	    myChart.setAxisPaddingLeft(50);
+	    myChart.setAxisPaddingBottom(50);
+
+            myChart.setLineColor('#2d5797');  
+            myChart.setLineWidth(3);  
+            myChart.setAxisValuesColor('#000');  
+            myChart.setTitle(' '); 
+            myChart.draw();
+         
+      
+
+	    var barDataStr="['一般级',0],['关注级',0],['严重级',68],['紧急级',0]";
+             barDataStr = "new Array(" + barDataStr + ")";
+            var barDataArr = eval(barDataStr);                    
+            var colors=['#97d1f7','#e3deb8','#c9e8bf','#85abcf'];
+
+            var myChart2 = new JSChart('barChart', 'bar');
+            myChart2.setDataArray(barDataArr);
+	    myChart2.colorizeBars(colors);
+            myChart2.setAxisNameX('报警类型');
+            myChart2.setAxisNameY('报警数量');
+	    myChart2.setAxisPaddingLeft(50);
+	    myChart2.setAxisPaddingBottom(50);
+            myChart2.setAxisValuesNumberY(6);
+	    myChart2.setBarSpacingRatio(50);//柱状之间的距离，决定着柱的宽度
+            myChart2.setTitle(' ');     
+            myChart2.draw();
+            
+        })
+
+    </script><form action="/omp" method="get">
+<input type="hidden" name="token" value="9d32c1d7-c4d2-4b90-bd98-49f2a107e336"><input type="hidden" name="cmd" value="get_information_attack"><div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>查询信息</div>
+<div class="content">
+<p class="searchTr"><span class="tag">操作时间：</span><td>
+<input autocomplete="off" name="strTime" type="text" value="2013-09-24" class="Wdate colMid" onfocus="WdatePicker()">--<input name="endTime" type="text" value="2013-09-28" class="Wdate colMid" onfocus="WdatePicker()"><input type="submit" name="submit" value="查询" style="margin-left:44px;">
+</td></p>
+<div class="msgTr"></div>
+</div>
+</div>
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>统计分析</div>
+<div class="content" style="height:430px;">
+<div id="lineChart" style="width:400px;height:300px;float:left;padding-left:20px;">正在加载... </div>
+<div id="barChart" style="width:400px;height:300px;display:inline-block;"> 正在加载...</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div></body></html>
+
+=========01<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/gsa-style.css">
+<script src="/script/jquery-1.4.1.min.js" language="javascript" type="text/javascript"></script><script src="/script/script.js" language="javascript" type="text/javascript"></script><!--[if IE 6]>
+      
+        <link rel="stylesheet" type="text/css" href="IE6fixes.css"/>
+        <link rel="stylesheet" type="text/css" href="../IE6fixes.css"/>
+    <![endif]-->
+</head>
+<body><div xmlns="" class="envelope">
+<div class="head_bg"><div class="header"><div class="top">
+            欢迎您： <span></span><b><a href="/omp?cmd=user_modify_page&amp;login=admin&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">admin</a></b><image src="img/style/exit.png" class="exitImg"></image><a href="/logout?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336" title="Logout" style="margin-left:3px;">安全退出</a>
+</div></div></div>
+<div class="wrap">
+<div class="menu"><center><ul class="grade_1">
+<li>
+<a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a><ul><li id="1"><a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a><ul><li id="2"><a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a><ul><li id="3"><a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a><ul><li id="4"><a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">检索信息</a><ul>
+<li id="5"><a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密报警</a></li>
+<li id="6"><a href="/omp?cmd=get_event_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标志事件</a></li>
+<li id="7"><a href="/omp?cmd=get_netlog_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">上网行为审计</a></li>
+</ul>
+</li>
+<li>
+<a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">产品维护</a><ul>
+<li id="8"><a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">设备状态</a></li>
+<li id="9"><a href="/omp?cmd=get_sysSetting&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">系统设置</a></li>
+</ul>
+</li>
+<li id="7" class="current">
+<a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">统计信息</a><ul>
+<li id="10" class="g2_current"><a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密</a></li>
+<li id="11"><a href="/omp?cmd=get_information_operation&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">操作审计</a></li>
+<li id="12"><a href="/omp?cmd=get_information_secret&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标识</a></li>
+<li id="13"><a href="/omp?cmd=get_information_action&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">行为审计</a></li>
+</ul>
+</li>
+</ul></center></div>
+<div xmlns:gsa="http://openvas.org" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cve="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:ns6="http://scap.nist.gov/schema/scap-core/0.1" xmlns:config="http://scap.nist.gov/schema/configuration/0.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" class="workSpace">
+<div class="location">您的位置：统计信息&gt;&gt;攻击窃密</div>
+<script src="/script/jscharts.js" language="javascript" type="text/javascript"></script><script src="/script/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script><link href="/script/My97DatePicker/skin/WdatePicker.css" rel="stylesheet">
+<script type="text/javascript">
+        $(function () {
+
+	    var lineDataStr="['2013-09-24',0],['2013-09-25',0],['2013-09-26',13],['2013-09-27',55],['2013-09-28',9]";
+             lineDataStr = "new Array(" + lineDataStr + ")";
+            var lineDataArr = eval(lineDataStr); 
+	   var countX=lineDataArr.length;   
+             
+           var myChart = new JSChart('lineChart', 'line');
+            myChart.setDataArray(lineDataArr);
+    
+            myChart.setAxisNameX('报警时间');
+            myChart.setAxisNameY('报警数量');
+	    myChart.setAxisValuesNumberY(6);
+	    myChart.setAxisValuesNumberX(countX);
+	    myChart.setAxisPaddingLeft(50);
+	    myChart.setAxisPaddingBottom(50);
+
+            myChart.setLineColor('#2d5797');  
+            myChart.setLineWidth(3);  
+            myChart.setAxisValuesColor('#000');  
+            myChart.setTitle(' '); 
+            myChart.draw();
+         
+      
+
+	    var barDataStr="['一般级',0],['关注级',0],['严重级',68],['紧急级',0]";
+             barDataStr = "new Array(" + barDataStr + ")";
+            var barDataArr = eval(barDataStr);                    
+            var colors=['#97d1f7','#e3deb8','#c9e8bf','#85abcf'];
+
+            var myChart2 = new JSChart('barChart', 'bar');
+            myChart2.setDataArray(barDataArr);
+	    myChart2.colorizeBars(colors);
+            myChart2.setAxisNameX('报警类型');
+            myChart2.setAxisNameY('报警数量');
+	    myChart2.setAxisPaddingLeft(50);
+	    myChart2.setAxisPaddingBottom(50);
+            myChart2.setAxisValuesNumberY(6);
+	    myChart2.setBarSpacingRatio(50);//柱状之间的距离，决定着柱的宽度
+            myChart2.setTitle(' ');     
+            myChart2.draw();
+            
+        })
+
+    </script><form action="/omp" method="get">
+<input type="hidden" name="token" value="9d32c1d7-c4d2-4b90-bd98-49f2a107e336"><input type="hidden" name="cmd" value="get_information_attack"><div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>查询信息</div>
+<div class="content">
+<p class="searchTr"><span class="tag">操作时间：</span><td>
+<input autocomplete="off" name="strTime" type="text" value="2013-09-24" class="Wdate colMid" onfocus="WdatePicker()">--<input name="endTime" type="text" value="2013-09-28" class="Wdate colMid" onfocus="WdatePicker()"><input type="submit" name="submit" value="查询" style="margin-left:44px;">
+</td></p>
+<div class="msgTr"></div>
+</div>
+</div>
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>统计分析</div>
+<div class="content" style="height:430px;">
+<div id="lineChart" style="width:400px;height:300px;float:left;padding-left:20px;">正在加载... </div>
+<div id="barChart" style="width:400px;height:300px;display:inline-block;"> 正在加载...</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div></body></html>
+
+html================<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/gsa-style.css">
+<script src="/script/jquery-1.4.1.min.js" language="javascript" type="text/javascript"></script><script src="/script/script.js" language="javascript" type="text/javascript"></script><!--[if IE 6]>
+      
+        <link rel="stylesheet" type="text/css" href="IE6fixes.css"/>
+        <link rel="stylesheet" type="text/css" href="../IE6fixes.css"/>
+    <![endif]-->
+</head>
+<body><div xmlns="" class="envelope">
+<div class="head_bg"><div class="header"><div class="top">
+            欢迎您： <span></span><b><a href="/omp?cmd=user_modify_page&amp;login=admin&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">admin</a></b><image src="img/style/exit.png" class="exitImg"></image><a href="/logout?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336" title="Logout" style="margin-left:3px;">安全退出</a>
+</div></div></div>
+<div class="wrap">
+<div class="menu"><center><ul class="grade_1">
+<li>
+<a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a><ul><li id="1"><a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a><ul><li id="2"><a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a><ul><li id="3"><a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a><ul><li id="4"><a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">检索信息</a><ul>
+<li id="5"><a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密报警</a></li>
+<li id="6"><a href="/omp?cmd=get_event_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标志事件</a></li>
+<li id="7"><a href="/omp?cmd=get_netlog_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">上网行为审计</a></li>
+</ul>
+</li>
+<li>
+<a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">产品维护</a><ul>
+<li id="8"><a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">设备状态</a></li>
+<li id="9"><a href="/omp?cmd=get_sysSetting&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">系统设置</a></li>
+</ul>
+</li>
+<li id="7" class="current">
+<a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">统计信息</a><ul>
+<li id="10" class="g2_current"><a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密</a></li>
+<li id="11"><a href="/omp?cmd=get_information_operation&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">操作审计</a></li>
+<li id="12"><a href="/omp?cmd=get_information_secret&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标识</a></li>
+<li id="13"><a href="/omp?cmd=get_information_action&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">行为审计</a></li>
+</ul>
+</li>
+</ul></center></div>
+<div xmlns:gsa="http://openvas.org" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cve="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:ns6="http://scap.nist.gov/schema/scap-core/0.1" xmlns:config="http://scap.nist.gov/schema/configuration/0.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" class="workSpace">
+<div class="location">您的位置：统计信息&gt;&gt;攻击窃密</div>
+<script src="/script/jscharts.js" language="javascript" type="text/javascript"></script><script src="/script/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script><link href="/script/My97DatePicker/skin/WdatePicker.css" rel="stylesheet">
+<script type="text/javascript">
+        $(function () {
+
+	    var lineDataStr="['2013-09-24',0],['2013-09-25',0],['2013-09-26',13],['2013-09-27',55],['2013-09-28',9]";
+             lineDataStr = "new Array(" + lineDataStr + ")";
+            var lineDataArr = eval(lineDataStr); 
+	   var countX=lineDataArr.length;   
+             
+           var myChart = new JSChart('lineChart', 'line');
+            myChart.setDataArray(lineDataArr);
+    
+            myChart.setAxisNameX('报警时间');
+            myChart.setAxisNameY('报警数量');
+	    myChart.setAxisValuesNumberY(6);
+	    myChart.setAxisValuesNumberX(countX);
+	    myChart.setAxisPaddingLeft(50);
+	    myChart.setAxisPaddingBottom(50);
+
+            myChart.setLineColor('#2d5797');  
+            myChart.setLineWidth(3);  
+            myChart.setAxisValuesColor('#000');  
+            myChart.setTitle(' '); 
+            myChart.draw();
+         
+      
+
+	    var barDataStr="['一般级',0],['关注级',0],['严重级',68],['紧急级',0]";
+             barDataStr = "new Array(" + barDataStr + ")";
+            var barDataArr = eval(barDataStr);                    
+            var colors=['#97d1f7','#e3deb8','#c9e8bf','#85abcf'];
+
+            var myChart2 = new JSChart('barChart', 'bar');
+            myChart2.setDataArray(barDataArr);
+	    myChart2.colorizeBars(colors);
+            myChart2.setAxisNameX('报警类型');
+            myChart2.setAxisNameY('报警数量');
+	    myChart2.setAxisPaddingLeft(50);
+	    myChart2.setAxisPaddingBottom(50);
+            myChart2.setAxisValuesNumberY(6);
+	    myChart2.setBarSpacingRatio(50);//柱状之间的距离，决定着柱的宽度
+            myChart2.setTitle(' ');     
+            myChart2.draw();
+            
+        })
+
+    </script><form action="/omp" method="get">
+<input type="hidden" name="token" value="9d32c1d7-c4d2-4b90-bd98-49f2a107e336"><input type="hidden" name="cmd" value="get_information_attack"><div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>查询信息</div>
+<div class="content">
+<p class="searchTr"><span class="tag">操作时间：</span><td>
+<input autocomplete="off" name="strTime" type="text" value="2013-09-24" class="Wdate colMid" onfocus="WdatePicker()">--<input name="endTime" type="text" value="2013-09-28" class="Wdate colMid" onfocus="WdatePicker()"><input type="submit" name="submit" value="查询" style="margin-left:44px;">
+</td></p>
+<div class="msgTr"></div>
+</div>
+</div>
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>统计分析</div>
+<div class="content" style="height:430px;">
+<div id="lineChart" style="width:400px;height:300px;float:left;padding-left:20px;">正在加载... </div>
+<div id="barChart" style="width:400px;height:300px;display:inline-block;"> 正在加载...</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div></body></html>
+
+This is in the function attach_sid
+ret===============================================================================1,1
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+user_find front
+in user_find for
+token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user.token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+user.cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user_find middle
+cookie=683092ef-68e5-4a00-832e-08df1fdba304
+token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+dashuaige==============================
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+cmd in omp_get:get_data
+cmd before in admin get_data
+cmd in admin *******************************get_data
+xmlwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww==<envelope><login><![CDATA[admin]]></login><time>Sat Sep 28 01:06:28 2013 CST</time><token>9d32c1d7-c4d2-4b90-bd98-49f2a107e336</token><autorefresh interval='0'></autorefresh><data><isfind>0</isfind></data></envelope>
+html================<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/gsa-style.css">
+<script src="/script/jquery-1.4.1.min.js" language="javascript" type="text/javascript"></script><script src="/script/script.js" language="javascript" type="text/javascript"></script><!--[if IE 6]>
+      
+        <link rel="stylesheet" type="text/css" href="IE6fixes.css"/>
+        <link rel="stylesheet" type="text/css" href="../IE6fixes.css"/>
+    <![endif]-->
+</head>
+<body><div xmlns="" class="envelope">
+<div class="head_bg"><div class="header"><div class="top">
+            欢迎您： <span></span><b><a href="/omp?cmd=user_modify_page&amp;login=admin&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">admin</a></b><image src="img/style/exit.png" class="exitImg"></image><a href="/logout?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336" title="Logout" style="margin-left:3px;">安全退出</a>
+</div></div></div>
+<div class="wrap">
+<div class="menu"><center><ul class="grade_1">
+<li>
+<a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a><ul><li id="1"><a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a><ul><li id="2"><a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a><ul><li id="3"><a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a><ul><li id="4"><a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">检索信息</a><ul>
+<li id="5"><a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密报警</a></li>
+<li id="6"><a href="/omp?cmd=get_event_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标志事件</a></li>
+<li id="7"><a href="/omp?cmd=get_netlog_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">上网行为审计</a></li>
+</ul>
+</li>
+<li>
+<a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">产品维护</a><ul>
+<li id="8"><a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">设备状态</a></li>
+<li id="9"><a href="/omp?cmd=get_sysSetting&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">系统设置</a></li>
+</ul>
+</li>
+<li id="7" class="current">
+<a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">统计信息</a><ul>
+<li id="10" class="g2_current"><a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密</a></li>
+<li id="11"><a href="/omp?cmd=get_information_operation&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">操作审计</a></li>
+<li id="12"><a href="/omp?cmd=get_information_secret&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标识</a></li>
+<li id="13"><a href="/omp?cmd=get_information_action&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">行为审计</a></li>
+</ul>
+</li>
+</ul></center></div>
+<div xmlns:gsa="http://openvas.org" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cve="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:ns6="http://scap.nist.gov/schema/scap-core/0.1" xmlns:config="http://scap.nist.gov/schema/configuration/0.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" class="workSpace">
+<div class="location">您的位置：数据管理</div>
+<script src="/script/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script><link href="/script/My97DatePicker/skin/WdatePicker.css" rel="stylesheet">
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>数据信息</div>
+<div class="content">
+<form action="/omp?cmd=data_display" method="get">
+<input type="hidden" name="token" value="9d32c1d7-c4d2-4b90-bd98-49f2a107e336"><input type="hidden" name="pagenum" value="1"><input type="hidden" name="cmd" value="data_display"><input type="hidden" name="refresh_interval" value="0"><p class="searchTr"><span class="tag">备份名称：</span><input class="text" type="text" name="bak_name" value=""><span class="tag"> 备份时间：</span><input type="text" name="bak_time" value="" class="Wdate colMid" onfocus="WdatePicker()"><input type="submit" name="" value="搜索" style="margin-left:44px;"></p>
+</form>
+<div class="msgTr"><tr><td colspan="4"><font color="red"></font></td></tr></div>
+</div>
+</div>
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>数据列表</div>
+<div class="content" style="height:435px;">
+<table class="list" cellspacing="0"><thead>
+<th style="width:30%">备份名</th>
+<th style="width:30%">备份时间</th>
+<th style="width:20%">恢复</th>
+<th>删除</th>
+</thead></table>
+<div class="divTbOuter" style="height:370px;"><table class="list"><tbody></tbody></table></div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+
+This is in the function attach_sid
+ret===============================================================================1,1
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+user_find front
+in user_find for
+token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user.token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+user.cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user_find middle
+cookie=683092ef-68e5-4a00-832e-08df1fdba304
+token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+dashuaige==============================
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+cmd in omp_get:data_display
+cmd before in admin data_display
+cmd in admin *******************************data_display
+sql == select count(*) from tips_back where BackName like '%%' and BackTime like '%2013-09-27%'
+sql========select BackID,BackName,BackTime,Oid from tips_back where BackName like '%%' and BackTime like '%2013-09-27%' limit 50 offset 0
+argc=4
+argc=4
+argc=4
+argc=4
+argc=4
+argc=4
+argc=4
+xml_opt.xml = <list><backid>7</backid><name><![CDATA[攻击窃密警报-1380297465]]></name><Start_time>2013-09-27 23:57:45</Start_time><tips_table>0</tips_table></list><list><backid>8</backid><name><![CDATA[攻击窃密警报-1380297474]]></name><Start_time>2013-09-27 23:57:54</Start_time><tips_table>0</tips_table></list><list><backid>9</backid><name><![CDATA[攻击窃密警报-1380297487]]></name><Start_time>2013-09-27 23:58:07</Start_time><tips_table>0</tips_table></list><list><backid>10</backid><name><![CDATA[攻击窃密警报-1380297497]]></name><Start_time>2013-09-27 23:58:17</Start_time><tips_table>0</tips_table></list><list><backid>11</backid><name><![CDATA[攻击窃密警报-1380297515]]></name><Start_time>2013-09-27 23:58:35</Start_time><tips_table>0</tips_table></list><list><backid>12</backid><name><![CDATA[攻击窃密警报-1380297524]]></name><Start_time>2013-09-27 23:58:44</Start_time><tips_table>0</tips_table></list><list><backid>13</backid><name><![CDATA[通信会话审计-1380297587]]></name><Start_time>2013-09-27 23:59:47</Start_time><tips_table>2</tips_table></list>
+xml=======<list><backid>7</backid><name><![CDATA[攻击窃密警报-1380297465]]></name><Start_time>2013-09-27 23:57:45</Start_time><tips_table>0</tips_table></list><list><backid>8</backid><name><![CDATA[攻击窃密警报-1380297474]]></name><Start_time>2013-09-27 23:57:54</Start_time><tips_table>0</tips_table></list><list><backid>9</backid><name><![CDATA[攻击窃密警报-1380297487]]></name><Start_time>2013-09-27 23:58:07</Start_time><tips_table>0</tips_table></list><list><backid>10</backid><name><![CDATA[攻击窃密警报-1380297497]]></name><Start_time>2013-09-27 23:58:17</Start_time><tips_table>0</tips_table></list><list><backid>11</backid><name><![CDATA[攻击窃密警报-1380297515]]></name><Start_time>2013-09-27 23:58:35</Start_time><tips_table>0</tips_table></list><list><backid>12</backid><name><![CDATA[攻击窃密警报-1380297524]]></name><Start_time>2013-09-27 23:58:44</Start_time><tips_table>0</tips_table></list><list><backid>13</backid><name><![CDATA[通信会话审计-1380297587]]></name><Start_time>2013-09-27 23:59:47</Start_time><tips_table>2</tips_table></list>
+xmlwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww==<envelope><login><![CDATA[admin]]></login><time>Sat Sep 28 01:06:32 2013 CST</time><token>9d32c1d7-c4d2-4b90-bd98-49f2a107e336</token><data><list><backid>7</backid><name><![CDATA[攻击窃密警报-1380297465]]></name><Start_time>2013-09-27 23:57:45</Start_time><tips_table>0</tips_table></list><list><backid>8</backid><name><![CDATA[攻击窃密警报-1380297474]]></name><Start_time>2013-09-27 23:57:54</Start_time><tips_table>0</tips_table></list><list><backid>9</backid><name><![CDATA[攻击窃密警报-1380297487]]></name><Start_time>2013-09-27 23:58:07</Start_time><tips_table>0</tips_table></list><list><backid>10</backid><name><![CDATA[攻击窃密警报-1380297497]]></name><Start_time>2013-09-27 23:58:17</Start_time><tips_table>0</tips_table></list><list><backid>11</backid><name><![CDATA[攻击窃密警报-1380297515]]></name><Start_time>2013-09-27 23:58:35</Start_time><tips_table>0</tips_table></list><list><backid>12</backid><name><![CDATA[攻击窃密警报-1380297524]]></name><Start_time>2013-09-27 23:58:44</Start_time><tips_table>0</tips_table></list><list><backid>13</backid><name><![CDATA[通信会话审计-1380297587]]></name><Start_time>2013-09-27 23:59:47</Start_time><tips_table>2</tips_table></list><bakname></bakname><baktime>2013-09-27</baktime><page><nowpage>1</nowpage><lastpage>1</lastpage><page1>1</page1><page2>2</page2><page3>3</page3><page4>4</page4><page5>5</page5><page6>6</page6><page7>7</page7><page8>8</page8><page9>9</page9><page10>10</page10><tips_urlf>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=1&amp;tips_sort=0</tips_urlf><tips_urll>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=1&amp;tips_sort=0</tips_urll><tips_urlp>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=0&amp;tips_sort=0</tips_urlp><tips_urln>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=2&amp;tips_sort=0</tips_urln><tips_urlpp>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=0&amp;tips_sort=0</tips_urlpp><tips_urlnp>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=11&amp;tips_sort=0</tips_urlnp><tips_url1>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=1&amp;tips_sort=0</tips_url1><tips_url2>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=2&amp;tips_sort=0</tips_url2><tips_url3>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=3&amp;tips_sort=0</tips_url3><tips_url4>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=4&amp;tips_sort=0</tips_url4><tips_url5>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=5&amp;tips_sort=0</tips_url5><tips_url6>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=6&amp;tips_sort=0</tips_url6><tips_url7>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=7&amp;tips_sort=0</tips_url7><tips_url8>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=8&amp;tips_sort=0</tips_url8><tips_url9>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=9&amp;tips_sort=0</tips_url9><tips_url10>/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=10&amp;tips_sort=0</tips_url10></page></data></envelope>
+html================<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head xmlns="">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/gsa-style.css">
+<script src="/script/jquery-1.4.1.min.js" language="javascript" type="text/javascript"></script><script src="/script/script.js" language="javascript" type="text/javascript"></script><!--[if IE 6]>
+      
+        <link rel="stylesheet" type="text/css" href="IE6fixes.css"/>
+        <link rel="stylesheet" type="text/css" href="../IE6fixes.css"/>
+    <![endif]-->
+</head>
+<body><div xmlns="" class="envelope">
+<div class="head_bg"><div class="header"><div class="top">
+            欢迎您： <span></span><b><a href="/omp?cmd=user_modify_page&amp;login=admin&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">admin</a></b><image src="img/style/exit.png" class="exitImg"></image><a href="/logout?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336" title="Logout" style="margin-left:3px;">安全退出</a>
+</div></div></div>
+<div class="wrap">
+<div class="menu"><center><ul class="grade_1">
+<li>
+<a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a><ul><li id="1"><a href="/omp?cmd=get_users&amp;overrides=1&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">用户管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a><ul><li id="2"><a href="/omp?cmd=get_config&amp;type=assets&amp;overrides=1&amp;levels=hm&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">配置管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a><ul><li id="3"><a href="/omp?cmd=get_data&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;pagenum=1">数据管理</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a><ul><li id="4"><a href="/omp?cmd=get_audit&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">审计查询</a></li></ul>
+</li>
+<li>
+<a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">检索信息</a><ul>
+<li id="5"><a href="/omp?cmd=get_Alarm_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密报警</a></li>
+<li id="6"><a href="/omp?cmd=get_event_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标志事件</a></li>
+<li id="7"><a href="/omp?cmd=get_netlog_info&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">上网行为审计</a></li>
+</ul>
+</li>
+<li>
+<a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">产品维护</a><ul>
+<li id="8"><a href="/omp?cmd=get_product&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">设备状态</a></li>
+<li id="9"><a href="/omp?cmd=get_sysSetting&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">系统设置</a></li>
+</ul>
+</li>
+<li id="7" class="current">
+<a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">统计信息</a><ul>
+<li id="10" class="g2_current"><a href="/omp?cmd=get_information_attack&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">攻击窃密</a></li>
+<li id="11"><a href="/omp?cmd=get_information_operation&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">操作审计</a></li>
+<li id="12"><a href="/omp?cmd=get_information_secret&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">涉密标识</a></li>
+<li id="13"><a href="/omp?cmd=get_information_action&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336">行为审计</a></li>
+</ul>
+</li>
+</ul></center></div>
+<div xmlns:gsa="http://openvas.org" xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4" xmlns:cpe-lang="http://cpe.mitre.org/language/2.0" xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1" xmlns:cve="http://scap.nist.gov/schema/feed/vulnerability/2.0" xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:patch="http://scap.nist.gov/schema/patch/0.1" xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2" xmlns:ns6="http://scap.nist.gov/schema/scap-core/0.1" xmlns:config="http://scap.nist.gov/schema/configuration/0.1" xmlns:cpe="http://cpe.mitre.org/dictionary/2.0" class="workSpace">
+<div class="location">您的位置：数据管理</div>
+<script src="/script/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script><link href="/script/My97DatePicker/skin/WdatePicker.css" rel="stylesheet">
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>数据信息</div>
+<div class="content">
+<form action="/omp?cmd=data_display" method="get">
+<input type="hidden" name="token" value="9d32c1d7-c4d2-4b90-bd98-49f2a107e336"><input type="hidden" name="pagenum" value="1"><input type="hidden" name="cmd" value="data_display"><input type="hidden" name="refresh_interval" value=""><p class="searchTr"><span class="tag">备份名称：</span><input class="text" type="text" name="bak_name" value=""><span class="tag"> 备份时间：</span><input type="text" name="bak_time" value="2013-09-27" class="Wdate colMid" onfocus="WdatePicker()"><input type="submit" name="" value="搜索" style="margin-left:44px;"></p>
+</form>
+<div class="msgTr"><tr><td colspan="4"><font color="red"></font></td></tr></div>
+</div>
+</div>
+<div class="divBlock">
+<div class="title">
+<div class="title_icon"></div>数据列表</div>
+<div class="content" style="height:435px;">
+<table class="list" cellspacing="0"><thead>
+<th style="width:30%">备份名</th>
+<th style="width:30%">备份时间</th>
+<th style="width:20%">恢复</th>
+<th>删除</th>
+</thead></table>
+<div class="divTbOuter" style="height:370px;"><table class="list"><tbody>
+<tr>
+<td style="width:30%">攻击窃密警报-1380297465</td>
+<td style="width:30%">2013-09-27 23:57:45</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=7&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=7&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+<tr>
+<td style="width:30%">攻击窃密警报-1380297474</td>
+<td style="width:30%">2013-09-27 23:57:54</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=8&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=8&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+<tr>
+<td style="width:30%">攻击窃密警报-1380297487</td>
+<td style="width:30%">2013-09-27 23:58:07</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=9&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=9&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+<tr>
+<td style="width:30%">攻击窃密警报-1380297497</td>
+<td style="width:30%">2013-09-27 23:58:17</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=10&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=10&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+<tr>
+<td style="width:30%">攻击窃密警报-1380297515</td>
+<td style="width:30%">2013-09-27 23:58:35</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=11&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=11&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+<tr>
+<td style="width:30%">攻击窃密警报-1380297524</td>
+<td style="width:30%">2013-09-27 23:58:44</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=12&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=12&amp;tips_table=0&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+<tr>
+<td style="width:30%">通信会话审计-1380297587</td>
+<td style="width:30%">2013-09-27 23:59:47</td>
+<td style="width:20%"><a href="/omp?cmd=data_rebuild&amp;BackID=13&amp;tips_table=2&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">恢复</a></td>
+<td><a href="/omp?cmd=data_delete&amp;BackID=13&amp;tips_table=2&amp;token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;bak_time=&amp;bak_name=&amp;pagenum=1">删除</a></td>
+</tr>
+</tbody></table></div>
+<div class="page">
+<a href="/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=1&amp;tips_sort=0">首页</a><a class="unable">上一页</a><a class="unable">1</a><a class="unable">下一页</a><a href="/omp?token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336&amp;cmd=data_display&amp;bakname=&amp;bakname=2013-09-27&amp;pagenum=1&amp;tips_sort=0">尾页</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></body></html>
+
+This is in the function attach_sid
+ret===============================================================================1,1
+This in the free_resources
+kkkkkkkkkkkkkkkkkkkkkkkkkk
+xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+leave the free
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+get param===================
+method:GET
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+begin
+duifanip============1036470
+startIP====wwwuuuu0,4294967295
+url:/omp
+method out of new:GET
+33333333333333333333333333333333333333333333333333
+=====================get================================
+user_find front
+in user_find for
+token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user.token:9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+user.cookie:683092ef-68e5-4a00-832e-08df1fdba304
+user_find middle
+cookie=683092ef-68e5-4a00-832e-08df1fdba304
+token=9d32c1d7-c4d2-4b90-bd98-49f2a107e336
+dashuaige==============================
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+cmd in omp_get:data_delete
+cmd before in admin data_delete
+cmd in admin *******************************data_delete
+kaishifjieflefjefjekfle
+kaishifjieflefjefjekfle
+kaishifjieflefjefjekfle
+
+
+
+

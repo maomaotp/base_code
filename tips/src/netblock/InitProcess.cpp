@@ -1,0 +1,428 @@
+#include "InitProcess.h"
+
+std::list<BlockOrder> manager;
+pthread_mutex_t  env_mutex ;
+
+bool isPacket(const u_char *packet)
+{
+   struct ether_header *ether=NULL;
+   ether=(struct ether_header *)packet;
+
+   if(ntohs(ether->ether_type) == ETHERTYPE_IP)
+   return true;
+
+   return false;
+}
+
+void getIpAndMask(const char *str,char *ip,char *mask)
+{
+    char buffer[128]={0};
+    char *pos=NULL;
+
+    strcpy(buffer,str);
+    printf("IP and mask:%s\n", buffer);
+   
+    pos=strchr(buffer,'/');
+    strcpy(mask,pos+1);
+
+    *pos='\0';
+     strcpy(ip,buffer);
+}
+
+void transferMask(const char *trains,char *mask)
+{
+    static const char BASE=8;
+    
+    int i=0;
+    char PBASE=7;
+    int localmask=atoi(trains);
+
+    int total=0;
+    char buffer[8]={0};
+    unsigned char unkown=0;
+    unsigned char kown=0;
+
+    kown=localmask/BASE;
+    unkown=localmask%BASE;
+
+    memset(mask,0,sizeof(mask));
+
+    for(i=0;i<kown;i++)
+    {
+      strcat(mask,"255.");
+    }
+
+    for(i=0;i<unkown;i++)
+    {
+      total+=pow(2,PBASE); 
+      PBASE--;
+    }
+
+    sprintf(buffer,"%d.",total);
+
+    if(4 - kown > 0)
+    {
+       strcat(mask,buffer);
+       kown++;
+    }
+ 
+    for(i=0;i<(4-kown);i++)
+    {
+       strcat(mask,"0.");
+    }
+
+    mask[strlen(mask)-1]='\0';
+}
+
+bool judgeIP(const char *ip,const char *mask)
+{
+    in_addr_t localip=ntohl(inet_addr(ip));
+    in_addr_t localmask=ntohl(inet_addr(mask));
+
+    if( (localip & (~localmask)))
+    {
+       return true;
+    }
+
+    return false;
+}
+
+void initInsideAddress(char *sip,BlockOrder *blockinfo)
+{
+    char temp[64]={0};
+    strcpy(temp,sip);
+
+    printf("\nsip == %s\n", temp);
+
+
+    if(0 == atoi(temp)) {
+      memset(&(blockinfo->inSideIp),0,sizeof(blockinfo->inSideIp));
+      return ;
+    }
+
+    char ip[64]={0};
+    char mask[64]={0};
+    char maskTrains[8]={0};
+
+    getIpAndMask(temp,ip,maskTrains);
+
+    transferMask(maskTrains,mask);
+
+    if(judgeIP(ip,mask))
+    {
+       initHost(ip,blockinfo); 
+    }
+    else
+    {
+       initNetWorkPam(ip,mask,blockinfo); 
+    }
+}
+
+void initNetWorkPam(const char *ip,const char *mask,BlockOrder *blockinfo)
+{
+    in_addr_t endip=0;
+    in_addr_t startip=0;
+
+    startip=ntohl(inet_addr(ip));
+    endip=ntohl(inet_addr(mask));
+
+    unsigned int temp=0;
+    temp=((startip & endip) + 1);
+
+    blockinfo->inSideIp.startIP=temp;
+
+    endip=~endip;
+    temp=((endip | startip)-1);
+
+    blockinfo->inSideIp.endIP=temp;
+}
+
+void initHost(const char *ip,BlockOrder *blockinfo)
+{
+    uint32_t it=0;
+
+    it=ntohl(inet_addr(ip));
+
+    blockinfo->inSideIp.endIP=it;
+    blockinfo->inSideIp.startIP=it;
+}
+
+void createBlockInfo(const int *counter,char * const pointer[],BlockOrder *blockinfo)
+{
+    getopt_reset();
+    char ch=0;
+    in_addr_t ip_addr;
+    char temp[24];
+
+    printf("get the opt now33333333333333\n");
+
+    while((ch=getopt(*counter,pointer,"i:t:o:n:w:")) != -1)
+    {
+        switch(ch)
+       {
+         case  'i':
+	         //initInsideAddress(optarg,blockinfo);
+            
+             printf("444444444444444444444444\n");
+             printf("optarg = %s\n", optarg);
+             ip_addr = ntohl(inet_addr(optarg));
+             printf("ip_addr == %u\n", ip_addr);
+             blockinfo->inSideIp.startIP = ip_addr;
+             printf("insideip==%u\n", blockinfo->inSideIp.startIP);
+	         break;
+         case  'o':
+	         //initOutSideAddress(optarg,blockinfo);
+             blockinfo->outSideIp.startIP = ntohl(inet_addr(optarg));
+             printf("outsideip==%u\n", blockinfo->outSideIp.startIP);
+	         break;
+
+	         break;
+	     case 't':
+	        initBlockTime(optarg,blockinfo);
+	        break;
+	     case 'n':
+	        initInsidePort(optarg,blockinfo);
+	        break;
+	     case 'w':
+	        initOutsidePort(optarg,blockinfo);
+	        break;
+       }
+    }
+}
+
+void initOutsidePort(const char *dport,BlockOrder *blockinfo)
+{
+    
+    if(0 == atoi(dport))
+    {
+       blockinfo->outsidePort.port.push_back(0);
+    }
+    else
+    {
+        char buffer[128]={0};
+	char *str=NULL;
+	char *result=NULL;
+	
+	strcpy(buffer,dport);
+	str=buffer;
+
+	while(result=strsep(&str,","))
+	{
+	   blockinfo->outsidePort.port.push_back(atoi(result));
+	}
+    }
+}
+
+void initInsidePort(const char *sport,BlockOrder *blockinfo)
+{
+    if(0 == atoi(sport))
+    {
+       blockinfo->insidePort.port.push_back(0);
+    }
+    else
+    {
+        char buffer[128]={0};
+	char *str=NULL;
+	char *result=NULL;
+	
+	strcpy(buffer,sport);
+	printf("sport==%s\n", buffer);
+	str=buffer;
+
+	while(result=strsep(&str,","))
+	{
+	   blockinfo->insidePort.port.push_back(atoi(result));
+	}
+    }
+}
+
+void initBlockTime(const char *time,BlockOrder *blockinfo)
+{
+   blockinfo->times=atoi(time);
+}
+
+void initOutSideAddress(char *dip,BlockOrder *blockinfo)
+{
+    char temp[64]={0};
+
+    strcpy(temp,dip);
+    printf("dip==%s\n", temp);
+
+    if(0 == atoi(temp))
+    {
+       memset(&(blockinfo->outSideIp),0,sizeof(blockinfo->outSideIp));
+       return ;
+    }
+
+    char ip[64]={0};
+    char mask[64]={0};
+    char maskTrains[8]={0};
+
+    getIpAndMask(temp,ip,maskTrains);
+
+    transferMask(maskTrains,mask);
+
+    if(judgeIP(ip,mask))
+    {
+      initNetAddr(ip,blockinfo);
+    }
+    else
+    {
+      initNetWorkOutPam(ip,mask,blockinfo);
+    }
+}
+
+void initNetWorkOutPam(const char *ip,const char *mask,BlockOrder *blockinfo)
+{
+    in_addr_t endip=0;
+    in_addr_t startip=0;
+
+    startip=ntohl(inet_addr(ip));
+    endip=ntohl(inet_addr(mask));
+
+    unsigned int temp=0;
+    temp=((startip & endip) + 1);
+
+    blockinfo->outSideIp.startIP=temp;
+
+    endip=~endip;
+    temp=((endip | startip)-1);
+
+    blockinfo->outSideIp.endIP=temp;
+}
+
+void initNetAddr(const char *ip,BlockOrder *blockinfo)
+{
+   uint32_t it=0;
+
+   it=ntohl(inet_addr(ip));
+   blockinfo->outSideIp.startIP=it;
+   blockinfo->outSideIp.endIP=it;
+}
+
+void initBlock(BlockOrder &p)
+{
+   memset(&p.inSideIp,-1,sizeof(p.inSideIp));
+   memset(&p.outSideIp,-1,sizeof(p.outSideIp));
+}
+
+
+void findBlockOrder(BlockOrder &blockinfo)
+{
+    if(manager.empty())
+       return ;
+
+    std::list<BlockOrder>::iterator begin=manager.begin();  
+   
+    for(;begin != manager.end();begin++)
+    {
+       if(searchThisOrder(blockinfo,*begin)) 
+       {
+           //process  delete
+           manager.erase(begin);
+	   break;
+       }
+    }
+   
+}
+
+bool compare(PORT &src,PORT &dest)
+{
+  bool sc=src.port.empty();
+  bool dc=dest.port.empty();
+
+  if((sc && !dc) || (!sc && dc))
+  return false;
+ 
+  if( (sc == dc) && sc)
+  return true;
+
+  int slength=src.port.size();
+  int dlength=dest.port.size();
+
+  if(slength != dlength)
+  return false;
+
+  std::list<in_port_t>::iterator source=src.port.begin();
+  std::list<in_port_t>::iterator destation=dest.port.begin();
+
+  for(;source != src.port.end();source++,destation++)
+  {
+     if( *source != *destation)
+     return false;
+  }
+
+  return true;
+}
+
+bool searchThisOrder(BlockOrder &blockinfo,BlockOrder &order)
+{
+   if(memcmp(&blockinfo.inSideIp,&order.inSideIp,sizeof(order.inSideIp)) !=0 || memcmp(&blockinfo.outSideIp,&order.outSideIp,sizeof(order.outSideIp)) !=0)
+     return false;
+
+     if(blockinfo.times != order.times)
+     return false;
+
+     if(!compare(blockinfo.insidePort,order.insidePort) || !compare(blockinfo.outsidePort,order.outsidePort))   
+     return false;
+
+     return true;
+}
+
+void getOrderParameter(const char *parameter)
+{
+	 if(manager.size() >= 1000)
+	 {
+	    return;
+	 }
+
+   int counter=0; 
+   BlockOrder BlockInfo;
+   char *pointer[12]={0};
+   
+   initBlock(BlockInfo);
+    
+   printf("22222222222222222222\n");
+   processOrder(&counter,parameter,pointer);
+
+   createBlockInfo(&counter,pointer,&BlockInfo);
+
+   if(strstr(parameter,"netblock")) {
+      BlockInfo.createtime=time(NULL);
+      pthread_mutex_lock(&env_mutex);
+      manager.push_back(BlockInfo);
+      pthread_mutex_unlock(&env_mutex);
+   }
+   /*
+   else
+   {
+       printf("getOrderPatameter 22222222222222222222222222222\n");
+      pthread_mutex_lock(&env_mutex);
+      findBlockOrder(BlockInfo);       
+      pthread_mutex_unlock(&env_mutex);
+   }*/
+}
+
+void processOrder(int *temp,const char *str,char *p[])
+{
+    int counter=0;
+    char *pos=NULL;
+
+    char *inter=(char*)str;
+    char *btr=(char*)str;
+    char *postemp=NULL;
+
+    while((pos=strchr(inter,' '))) {
+        *pos='\0';
+        p[counter]=btr;
+    	counter++;
+    	pos++;
+    	btr=pos;
+    	inter=pos;
+    	postemp=pos;
+    }
+
+    p[counter]=postemp;
+
+    *temp=counter+1;
+}

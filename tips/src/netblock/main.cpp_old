@@ -1,0 +1,192 @@
+#include <iostream>
+#include <signal.h>
+#include "client.h"
+#include "accept_policy.h"
+#include "cachestruct.h"
+#include "InitProcess.h"
+#include "reportBlockInfo.h"
+#include "zlog.h"
+
+#define UNIX_DOMAIN "/tmp/domain.block"
+
+using namespace std;
+
+extern pthread_t pid;
+char ETH_NETBLOCK[10] = {0};
+
+void WtPid()
+{
+	FILE *fp;
+	char id_buf[10];
+	pid_t pid;
+	memset(id_buf,0,10);
+	pid = getpid();
+	sprintf(id_buf,"%d",pid);
+	if(NULL == (fp = fopen("/usr/local/tipschecker/etc/tipscheck/netblockid","w+")))
+	{
+		dzlog_info("fopen file error!!!");
+		return;
+	}
+	fwrite(id_buf,strlen(id_buf),1,fp);
+	fclose(fp);
+	
+	dzlog_info("netblick start now pid:%d", pid);
+	return;
+}
+
+void handle_func(int sig)
+{
+	dzlog_info("netblock: i received the signal and sleep 30 now!\n");
+    sleep(30);
+    dzlog_info("i wake up begin to work");
+}
+
+int main(int argc,char *argv[])
+{
+     char *pos;
+     int length;
+     socklen_t len;
+     int chksock, clientfd;
+     pcap_t *handle=NULL;
+     char order[128];
+     char buffer[128];
+     struct sockaddr_un clientaddr;
+
+     strcpy(ETH_NETBLOCK,argv[1]);
+
+     WtPid();//add by lipeiting 2014-01-12-9:08
+     
+     signal(SIGUSR1, handle_func);
+     //zlog init
+     if(dzlog_init("/usr/local/tipschecker/etc/log.conf", "netblock")) {
+         printf("dzlog init failed\n");
+     }
+
+     initNetWork();
+     
+     handle=pcap_open_live(ETH_NETBLOCK,1600,1,0,NULL);//add by lipeiting 2014-03-18-16:05
+     //handle=pcap_open_live("eth2",1600,1,0,NULL);
+     createPthread(handle);
+     //Init_Client();
+     chksock = Init_accept_server();
+ 
+	while(1) {
+        memset(order,0,sizeof(order));
+        memset(buffer,0,sizeof(buffer));
+
+        len = sizeof(clientaddr);
+        clientfd = accept(chksock, (struct sockaddr*)&clientaddr, &len);
+        printf("accept the link\n");
+        if( (length = read(clientfd, order, sizeof(order))) <= 0 ) {
+            printf("the length is %d\n", length);
+            continue;    
+        }
+
+        printf("buff = %s len=%d\n", order, length);
+        
+        if(pos = strstr(order, "netblock")) {
+            printf("find netblock comand!~~~~~~~~~~~~~~~~~~~~~~\n");
+            strcpy(buffer, pos);
+            getOrderParameter(buffer);
+        }
+        else if(pos = strstr(order, "stopnetblock")) {
+            strcpy(buffer,pos);
+            getOrderParameter(buffer);
+        }
+    }
+    pthread_join(pid,NULL);
+ 
+  return 0;
+}
+/*********************************liuq*****************************************/
+#define STOPBLOCK    "stopnetblock"
+#define BLOCK        "netblock"
+
+void parseCmd(void* arg)
+{
+	int clientfd, serverfd;
+	socklen_t len;
+	char cmdbuf[128];
+    struct sockaddr_un saddr, caddr;
+    
+    saddr.sun_family=AF_UNIX;
+    strncpy(saddr.sun_path,UNIX_DOMAIN,sizeof(saddr.sun_path)-1);
+    
+    unlink(UNIX_DOMAIN);
+
+    if( (serverfd = socket(PF_UNIX, SOCK_STREAM,0)) < 0 ) {
+        dzlog_info("socket fail!!!");
+        close(serverfd);
+      	exit(0);
+    }
+    
+    if( bind(serverfd, (struct sockaddr*)&saddr, sizeof(saddr)) < 0 ) {
+        dzlog_info("bind error");
+        close(serverfd);
+        unlink(UNIX_DOMAIN);
+        exit(0);
+    }	
+    
+    listen(serverfd, 5);
+
+    while(1) {
+        memset(cmdbuf, 0, sizeof(cmdbuf));
+        len = sizeof(caddr);
+        if( (clientfd = accept(serverfd, (struct sockaddr *)&caddr, &len)) < 0 ) {
+            dzlog_error("accept error!!!");
+            return;
+        }
+        read(clientfd, order, sizeof(cmd_buf))
+#ifdef DBUG
+        printf("now read cmdbuf==%s\n", cmdbuf);
+#endif
+        if( strncmp(cmdbuf, STOPBLOCK, 12) == 0 ) {
+            //getOrderParameter(cmdbuf);
+        }
+        else if( strncmp(cmdbuf, STARTBLOCK, 8) == 0 ) {
+            //getOrderParameter(cmdbuf);
+        }
+        else {
+            dzlog_info("can't parse the cmd from manager");
+        }
+    }
+}
+
+
+void* capture_packet(void* arg)
+{
+    pcap_t *handle=NULL;
+    
+
+    initNetWork();
+    
+    printf("the interface:%s\n", (char *)arg);
+    handle=pcap_open_live((char *)arg, 1600, 1, 0, NULL);
+
+    pcap_loop(handle,-1,mycallback,NULL);
+}
+
+int main(int argc, char* argv[])
+{
+    pthread_t id;
+
+     if(dzlog_init("/usr/local/tipschecker/etc/log.conf", "netblock")) {
+         printf("dzlog init failed\n");
+     }
+     WtPid();//add by lipeiting 2014-01-12-9:08
+     
+     signal(SIGUSR1, handle_func);
+
+    if (pthread_create(&id[0], 0, capture_packet, argv[1]) != 0) {
+        printf("create pthread capture failed\n");
+        exit(1);
+    }
+    if (pthread_create(&id[1], 0, parsecmd,0) != 0) {
+        printf("create pthread policy failed\n");
+        exit(1);
+    }
+    
+    pthread_join(id[0], NULL);
+    pthread_join(id[1], NULL);
+
+}

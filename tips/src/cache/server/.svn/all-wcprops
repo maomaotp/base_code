@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/test
+END
+cachehandle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/cachehandle.cpp
+END
+cachehandle.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/cachehandle.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/main.cpp
+END
+a.out
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/a.out
+END
+cmemcache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/cmemcache.cpp
+END
+cmemcache.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/cache/server/cmemcache.h
+END

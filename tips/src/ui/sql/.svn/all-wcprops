@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql
+END
+2
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/2
+END
+auto.sh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/auto.sh
+END
+sqlhandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/sqlhandler.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/main.cpp
+END
+mysqltest
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/mysqltest
+END
+sqlhandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/sqlhandler.cpp
+END
+sshShell.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/sshShell.sh
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/DevelopRep/!svn/ver/5664/BoundaryProtectLine/TNM/MAINLINE/trunk/src/ui/sql/tags
+END

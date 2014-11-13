@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/5947/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final
+END
+connect.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.h
+END
+soapClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapClient.cpp
+END
+stdsoap2.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/stdsoap2.h
+END
+connect.GetData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.GetData.req.xml
+END
+soapC.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapC.cpp
+END
+ssl.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.h
+END
+connect.GetData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.GetData.res.xml
+END
+client.cpp_bak20131105
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client.cpp_bak20131105
+END
+dnslist_2013.43.23.7.rules
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/dnslist_2013.43.23.7.rules
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/config.h
+END
+soap12.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soap12.h
+END
+ns2.upload-message.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ns2.upload-message.req.xml
+END
+xop.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/xop.h
+END
+ns2.upload-message.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ns2.upload-message.res.xml
+END
+ssl.GetData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.GetData.req.xml
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/tags
+END
+client00.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client00.cpp
+END
+client_01.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_01.cpp
+END
+ns2.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ns2.xsd
+END
+client_02.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_02.cpp
+END
+ssl.GetData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.GetData.res.xml
+END
+client_03.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_03.cpp
+END
+soapServerLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapServerLib.cpp
+END
+client_04.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_04.cpp
+END
+client_05.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_05.cpp
+END
+client.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client.h
+END
+x.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/x.xsd
+END
+client_net.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_net.cpp
+END
+client_07.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_07.cpp
+END
+client_08.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_08.cpp
+END
+client_0501.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_0501.h
+END
+ns2.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ns2.wsdl
+END
+soapServer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapServer.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/Makefile
+END
+fileclient
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/fileclient
+END
+connect.PutData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.PutData.req.xml
+END
+stdsoap2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DevelopRep/!svn/ver/5947/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/stdsoap2.cpp
+END
+connect.PutData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.PutData.res.xml
+END
+soapStub.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapStub.h
+END
+libgsoapssl++.a
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/libgsoapssl++.a
+END
+client.cpp.fxl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client.cpp.fxl
+END
+ssl.PutData.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.PutData.req.xml
+END
+ssl.PutData.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.PutData.res.xml
+END
+xmime5.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/xmime5.h
+END
+ssl.upload-message.req.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.upload-message.req.xml
+END
+ssl.upload-message.res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.upload-message.res.xml
+END
+client.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/DevelopRep/!svn/ver/5947/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client.cpp
+END
+soapH.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapH.h
+END
+connect.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.wsdl
+END
+soapC.o
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapC.o
+END
+tips.db
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/tips.db
+END
+client_0501.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client_0501.cpp
+END
+tempfile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/tempfile
+END
+connect.nsmap
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/connect.nsmap
+END
+__size
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/__size
+END
+soapClientLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/soapClientLib.cpp
+END
+ssl.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.wsdl
+END
+client.cpp.201402191616.bak
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/client.cpp.201402191616.bak
+END
+ns.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ns.xsd
+END
+ssl.nsmap
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/net_guard_final/ssl.nsmap
+END

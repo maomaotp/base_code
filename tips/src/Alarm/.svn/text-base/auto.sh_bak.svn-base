@@ -1,0 +1,8 @@
+#!/bin/sh
+cd ../trojan
+gcc -g -shared *.c juageIP.o -L /usr/local/lib -lzlog -I /usr/local/include/ -o libtrojan.so -Wall -Wextra
+cp libtrojan.so ../Alarm
+cp libtrojan.so /lib
+cd ../Alarm
+g++ -g *.cpp -L. -ltrojan -lcrypto  -lpthread -lpcap -lssl -otipsalarm -Wl,-rpath,./ -Wall -Wextra
+cp tipsalarm geoip_2013.1.0.0.conf AlarmConfig ID.txt rule /usr/local/tipschecker/bin/Alarm

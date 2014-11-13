@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns2="http://www.lab503.cn/schema/dataengine/v1/local"
+  xmlns:ns3="http://www.lab503.cn/schema/dataengine/v1/types"
+  xmlns:ns1="http://www.lab503.cn/wsdl/dataengine/v1/service">
+ <SOAP-ENV:Body>
+   <ns2:queryFm>
+    <ns2:userId></ns2:userId>
+   </ns2:queryFm>
+
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

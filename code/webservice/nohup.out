@@ -1,0 +1,56 @@
+connect success!
+select cityName from Radio_Info where provinceSpell='jilin' group by cityName
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='1242' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='1242' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='1242' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='1242' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='1242' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='11' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='15' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='19' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='19' and programState=0
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select cityName from Radio_Info where provinceSpell='jilin' group by cityName
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='' and programState=0
+connect success!
+select programId,radioId,programName,introduction,webSite,createTime,updateTime from Program_Info where radioId='19' and programState=0
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select cityName from Radio_Info where provinceSpell='hongkong' group by cityName
+connect success!
+select cityName from Radio_Info where provinceSpell='yunnan' group by cityName
+connect success!
+select cityName from Radio_Info where provinceSpell='henan' group by cityName
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select radioId,nameCn,nameEn,url,webSite,introduction,address,zip,scheduleURL,radioLevel,provinceSpell,cityName,createTime,updateTime from Radio_Info where cityName='(null)' limit 20
+connect success!
+select cityName from Radio_Info where provinceSpell='hongkong' group by cityName
+connect success!
+select cityName from Radio_Info where provinceSpell='heilongjiang' group by cityName
+connect success!
+select cityName from Radio_Info where provinceSpell='yunnan' group by cityName
+connect success!
+select cityNa

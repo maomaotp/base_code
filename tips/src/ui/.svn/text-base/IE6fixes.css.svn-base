@@ -1,0 +1,60 @@
+.header {
+  text-align:left;
+  background: url('img/style/bg.jpg');
+}
+
+/*检索信息的tab*/
+.tab {
+ text-align:left;
+ width:900px;
+ padding-top:-2px;
+}
+
+.tab ul {
+ border-bottom: 1px solid #CDCDCD;
+ padding-left:20px;
+ list-style:none;
+ height:36px;
+}
+
+.tab ul li{
+ display:inline-block;
+ background-color:#F0F0F0;
+ border:1px solid #CDCDCD;
+ border-bottom:none;
+ height:36px;
+ line-height:36px;
+ display:block;
+ float:left;
+}
+
+.tab ul li a{ 
+ padding:9px;
+ color:#000000;
+ text-decoration:none;
+}
+
+.tab ul li a:hover{
+ color:#06c;
+}
+
+#tab_chosen{
+ border-top:1px solid #CDCDCD;
+ background-color:#FFFFFF;
+}
+ 
+#tab_chosen a{
+ background-color:#FFFFFF;
+}
+
+#tab_chosen a:hover{
+ color:#000;
+}
+
+.place {
+ position:relative;
+ left:1px;
+ top:-30px;
+ width:900px;
+ height:1px;
+}

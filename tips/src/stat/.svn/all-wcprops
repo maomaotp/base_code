@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat
+END
+monitorNetwork.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DevelopRep/!svn/ver/5947/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/monitorNetwork.cpp
+END
+init.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/5947/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/init.cpp
+END
+monitorNetwork.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/monitorNetwork.h
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/compile
+END
+communiteNetwork.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/DevelopRep/!svn/ver/6002/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/communiteNetwork.cpp
+END
+tags
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/DevelopRep/!svn/ver/6002/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/tags
+END
+communiteNetwork.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/communiteNetwork.h
+END
+main.cpp.20140219.bak
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/main.cpp.20140219.bak
+END
+check.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/check.h
+END
+juageIP.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/juageIP.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/7310/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/main.cpp
+END
+mirrorNetwork.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/DevelopRep/!svn/ver/5838/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/mirrorNetwork.cpp
+END
+juageIP.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/juageIP.h
+END
+mirrorNetwork.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/DevelopRep/!svn/ver/5718/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/mirrorNetwork.h
+END
+tipsstat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/7310/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/tipsstat
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/DevelopRep/!svn/ver/7237/BoundaryProtectLine/TNM/MAINLINE/trunk/src/stat/Makefile
+END

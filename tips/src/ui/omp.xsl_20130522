@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:str="http://exslt.org/strings"
+    xmlns:func = "http://exslt.org/functions"
+    xmlns:gsa="http://openvas.org"
+    xmlns:vuln="http://scap.nist.gov/schema/vulnerability/0.4"
+    xmlns:cpe-lang="http://cpe.mitre.org/language/2.0"
+    xmlns:scap-core="http://scap.nist.gov/schema/scap-core/0.1"
+    xmlns:cve="http://scap.nist.gov/schema/feed/vulnerability/2.0"
+    xmlns:cvss="http://scap.nist.gov/schema/cvss-v2/0.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:patch="http://scap.nist.gov/schema/patch/0.1"
+    xmlns:meta="http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2"
+    xmlns:ns6="http://scap.nist.gov/schema/scap-core/0.1"
+    xmlns:config="http://scap.nist.gov/schema/configuration/0.1"
+    xmlns:cpe="http://cpe.mitre.org/dictionary/2.0"
+    xsi:schemaLocation="http://scap.nist.gov/schema/configuration/0.1 http://nvd.nist.gov/schema/configuration_0.1.xsd http://scap.nist.gov/schema/scap-core/0.3 http://nvd.nist.gov/schema/scap-core_0.3.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.2.xsd http://scap.nist.gov/schema/scap-core/0.1 http://nvd.nist.gov/schema/scap-core_0.1.xsd http://scap.nist.gov/schema/cpe-dictionary-metadata/0.2 http://nvd.nist.gov/schema/cpe-dictionary-metadata_0.2.xsd"
+    xmlns:date="http://exslt.org/dates-and-times"
+    extension-element-prefixes="str func date">
+    <xsl:output
+      method="html"
+      doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+      doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
+      encoding="UTF-8"/>
+
+<!-- XPATH FUNCTIONS -->
+
+<func:function name="gsa:long-time">
+  <xsl:param name="time"></xsl:param>
+  <func:result>
+    <xsl:if test="string-length ($time) &gt; 0">
+      <xsl:value-of select="concat (date:day-abbreviation ($time), ' ', date:month-abbreviation ($time), ' ', date:day-in-month ($time), ' ', format-number(date:hour-in-day($time), '00'), ':', format-number(date:minute-in-hour($time), '00'), ':', format-number(date:second-in-minute($time), '00'), ' ', date:year($time))"/>
+    </xsl:if>
+  </func:result>
+</func:function>
+
+<!--用户管理-->
+<xsl:template name="html-user-table">
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:0px;"></div></div>
+ <div style="width:900px;">
+  <xsl:variable name="apply-overrides" select="apply_overrides"/>
+  <form action="/omp" method="post">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="cmd" value="tips_create_user"/>
+   <input type="hidden" name="text" value="/omp?cmd=get_users&amp;overrides=1" />
+   <table class="operate" cellspacing="2" cellpadding="4" border="0">
+    <tr>
+     <td class="tag">用户名：</td>
+     <td ><input style="width:140px" type="text" autocomplete="off" name="username" value=""/></td>
+     <td class="tag">用户角色：</td>
+     <td >     
+      <select name="newrole" style="width:120px" >
+        <option value="0">普通用户</option>
+        <option value="2">管理员</option>
+     </select>
+     </td>
+     <td class="tag">密码：</td>
+     <td><input style="width:140px" type="password" autocomplete="off" name="password" value="" /></td>
+     <td class="tag"> 确认密码：</td>
+     <td><input style="width:140px" type="password" autocomplete="off" name="checkpassword" value="" /></td>
+     <td colspan=""><input type="submit" name="submit" value="新建"/></td>
+    </tr>
+   </table>
+  </form> 
+  <br clear="all"/>
+  <xsl:apply-templates select="msg"/>
+  <table class="list" cellspacing="2" cellpadding="4" border="0">
+  	 <tr class="listhead">
+    <td>用户名</td>
+    <td>用户角色</td>
+    <td>密码</td>
+    <td width="260px">创建时间</td>
+    <td>删除</td>
+    <td>修改</td>
+   </tr>
+   <xsl:apply-templates select="tips_user"/>
+  </table>
+ </div>
+</xsl:template>
+
+<!--用户列表-->
+<xsl:template match="tips_user">
+ <tr>
+  <td><xsl:value-of select="username"/></td>
+  <td><xsl:value-of select="userrole"/></td>
+  <td><xsl:value-of select="passwd"/></td>
+  <td><xsl:value-of select="createtime"/></td> 
+  <td><a href="/omp?cmd=user_delete&amp;login={./username}&amp;token={/envelope/token}">删除</a></td>
+  <td><a href="/omp?cmd=user_modify_page&amp;login={./username}&amp;token={/envelope/token}&amp;userrole={userrole}">修改</a></td>
+ </tr>
+</xsl:template>
+
+<!--提示信息-->
+<xsl:template match="msg">
+ <div class="msg">
+  <span id="usermsg"><xsl:value-of select="."/></span>
+ </div> 
+</xsl:template>
+
+<!--修改用户-->
+<xsl:template name="user_amend">
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:0px;"></div></div>
+ <form action="/omp" method="post">
+  <input type="hidden" name="token" value="{/envelope/token}"/>
+  <input type="hidden" name="cmd" value="user_modify"/>
+  <table cellspacing="4" cellpadding="4" border="0"  width="300px">
+    <tr>
+     <td class="tag" style="width:100px;">用户名：</td>
+     <td colspan="2"><input style="width:100%;border:0" type="text" autocomplete="off" name="username" value="{./tip_user}" readonly="readonly"/></td>
+    </tr>
+    <tr>
+     <td class="tag" style="width:100px;">用户角色：</td>
+     <td colspan="2"><input style="width:100%;border:0" type="text" autocomplete="off" name="userrole" value="{./userrole}" readonly="readonly"/></td>
+    </tr>
+    <tr>
+     <td class="tag">密码：</td>
+     <td colspan="2"><input style="width:100%" type="password" autocomplete="off" name="passwd" value="{./tip_password}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">确认密码：</td>
+     <td colspan="2"><input style="width:100%" type="password" autocomplete="off" name="checkpasswd" value=""/></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td colspan="2" style="color:#F00"> <xsl:value-of select="./tip_errmsg"/></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td width="140"><input type="submit" name="submit" value="保存"/></td>
+     <td><a href="/omp?cmd={/envelope/get_tasks_response/gotocmd}&amp;overrides=1&amp;token={/envelope/token}">取消</a></td>
+    </tr>
+   </table>
+ </form>
+</xsl:template>
+
+<xsl:template match="all">
+</xsl:template>
+
+<!--配置管理-->
+<xsl:template name="config">
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:150px;"></div></div>
+  <form action="/omp" method="post">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="cmd" value="configadmin"/>
+   <table cellspacing="4" cellpadding="4" border="0">
+    <tr>
+     <td class="tag"> 管理口IP： </td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="manage_IP" value="{./MANAGE_IP}"/></td>
+    </tr>
+    <tr>
+     <td class="tag"> 联网口IP： </td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="net_IP" value="{./NET_IP}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">网关：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="gateway" value="{./GATEWAY}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">静态路由：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="static_route" value="{./STATIC_ROUTE}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">管理机IP：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="supervisor" value="{./SUPERVISOR}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">代理服务器地址：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="serve_addr" value="{./SERVE_ADDR}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">代理服务器账号：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="serve_user" value="{./SERVE_USER}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">代理服务器口令：</td>
+     <td><input style="width:200px;" type="password" autocomplete="off" name="serve_password" value="{./SERVE_PASSWORD}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">管理中心IP：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="administration_IP" value="{./ADMINSTRATION_IP}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">管理中心port：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="manage_PORT" value="{./MANAGE_PORT}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">副管理中心IP：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="administration_IP1" value="{./ADMINSTRATION_IP1}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">副管理中心port：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="manage_PORT1" value="{./MANAGE_PORT1}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">部属单位信息：</td>
+     <td><input style="width:200px;" type="text" autocomplete="off" name="unit_name" value="{./UNIT_NAME}"/></td>
+    </tr>
+    <tr class="msg">
+      <xsl:apply-templates select="config_msg"/>
+    </tr>
+    <tr>
+     <td colspan="2" align="center"><input type="submit" name="" value="保存"/></td>
+    </tr>
+   </table>
+  </form>
+</xsl:template>
+
+<!--配置管理的提示-->
+<xsl:template match="config_msg">
+ <td colspan="2" align="center"><xsl:value-of select="."/></td>
+
+</xsl:template>
+
+<!--数据管理-->
+<xsl:template match="data">
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:300px;"></div></div>
+  <table class="list" cellspacing="2" cellpadding="4" border="0">
+   <tr class="listhead">
+    <td>备份名</td>
+    <td>备份时间</td>
+    <td>恢复</td>
+    <td>删除</td>
+   </tr>
+  <xsl:apply-templates select="list"/>
+  </table>
+  <xsl:apply-templates select="page"/>
+</xsl:template>
+
+<!--数据列表-->
+<xsl:template match="list">
+ <tr>
+  <td><xsl:value-of select="name"/></td>
+  <td><xsl:value-of select="Start_time"/></td>
+  <td><a href="/omp?cmd=data_rebuild&amp;BackID={./backid}&amp;tips_table={./tips_table}&amp;token={/envelope/token}&amp;pagenum={//nowpage}">恢复</a></td>
+  <td><a href="/omp?cmd=data_delete&amp;BackID={./backid}&amp;tips_table={./tips_table}&amp;token={/envelope/token}&amp;pagenum={//nowpage}">删除</a></td>
+ </tr>
+</xsl:template>
+
+<!-- 检索信息-->
+
+<!--攻击窃密-->
+<xsl:template match="attack">
+ <xsl:param name="tipsuser">user</xsl:param>
+  <xsl:choose>
+   <xsl:when test="$tipsuser='user'">
+    <div class="place"><div class="click" style="position:absolute;top:-40px;left:0px;"></div></div>
+   </xsl:when>
+  <xsl:otherwise>
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:450px;"></div></div>
+  <div class="tab">
+   <ul>
+      <li id="tab_chosen"><a>攻击窃密警报</a></li>
+      <li><a href="/omp?cmd=get_event_info&amp;token={/envelope/token}">涉密标志事件</a></li>
+      <li><a href="/omp?cmd=get_netlog_info&amp;token={/envelope/token}">通信会话审计</a></li>
+   </ul>
+  </div>
+  <br/>
+  </xsl:otherwise>
+ </xsl:choose>
+ <div style="width:900px">
+  <form action="/omp" method="get">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="pagenum" value="1"/>
+   <input type="hidden" name="cmd" value="tips_alarm_display"/>
+   <input type="hidden" name="refresh_interval" value="{/envelope/autorefresh/@interval}"/>
+   <table class="operate" cellspacing="4" cellpadding="4" border="0" >
+    <tr>
+     <td class="tag">木马编号：</td>
+     <td><input class="text" type="text" autocomplete="off" name="tips_Trogan_id" value="{./OTrogan_id}"/></td>
+     <td class="tag">外部主机IP：</td>
+     <td><input class="text" type="text" autocomplete="off" name="tips_Sip" value="{./OSip}"/></td>
+     <td class="tag">内部主机IP：</td>
+     <td><input class="text" type="text" autocomplete="off" name="tips_Dip" value="{./ODip}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">内部主机MAC：</td>
+     <td><input class="text" type="text" autocomplete="off" name="tips_Dmac" value="{./ODmac}"/></td>
+     <td class="tag">警报产生时间：</td>
+     <td><input class="text" type="text" autocomplete="off" name="tips_Alarm_time" value="{./OAlarm_time}"/></td>
+     <td class="tag">警报类型：</td>
+     <td>
+       <select name="tips_Type">
+       <xsl:choose>
+        <xsl:when test="@Type=90">
+       	 <option value="">所有</option>
+       	 <option value="10">特种木马行为</option>
+         <option value="20" >普通木马行为</option>
+         <option value="30" >疑似木马行为</option>
+         <option value="80" >非木马类攻击窃密行为</option>
+         <option value="90" selected="1">其他可疑行为</option>
+	</xsl:when>
+        <xsl:when test="@Type=20">
+       	 <option value="">所有</option>
+       	 <option value="10" >特种木马行为</option>
+         <option value="20" selected="1">普通木马行为</option>
+         <option value="30" >疑似木马行为</option>
+         <option value="80" >非木马类攻击窃密行为</option>
+         <option value="90" >其他可疑行为</option>
+	</xsl:when>
+        <xsl:when test="@Type=30">
+       	 <option value="">所有</option>
+       	 <option value="10" >特种木马行为</option>
+         <option value="20" >普通木马行为</option>
+         <option value="30" selected="1">疑似木马行为</option>
+         <option value="80" >非木马类攻击窃密行为</option>
+         <option value="90" >其他可疑行为</option>
+	</xsl:when>
+        <xsl:when test="@Type=80">
+       	 <option value="">所有</option>
+       	 <option value="10" >特种木马行为</option>
+         <option value="20" >普通木马行为</option>
+         <option value="30" >疑似木马行为</option>
+         <option value="80" selected="1">非木马类攻击窃密行为</option>
+         <option value="90" >其他可疑行为</option>
+	</xsl:when>
+        <xsl:when test="@Type=10">
+       	 <option value="">所有</option>
+       	 <option value="10" selected="1">特种木马行为</option>
+         <option value="20" >普通木马行为</option>
+         <option value="30" >疑似木马行为</option>
+         <option value="80" >非木马类攻击窃密行为</option>
+         <option value="90" >其他可疑行为</option>
+	</xsl:when>
+        <xsl:otherwise>
+       	 <option value="" selected="1">所有</option>
+       	 <option value="10" >特种木马行为</option>
+         <option value="20" >普通木马行为</option>
+         <option value="30" >疑似木马行为</option>
+         <option value="80" >非木马类攻击窃密行为</option>
+         <option value="90" >其他可疑行为</option>
+	</xsl:otherwise>
+       </xsl:choose>
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <td class="tag">警报级别：</td>
+     <td>
+      <select name="tips_Risk" class="text">
+       <xsl:choose>
+	<xsl:when test="@Risk=4">
+         <option value="" >所有</option>
+         <option value="1" >一般级</option>
+         <option value="2" >关注级</option>
+         <option value="3" >严重级</option>
+         <option value="4" selected="1">紧急级</option>
+	</xsl:when>
+	<xsl:when test="@Risk=2">
+         <option value="" >所有</option>
+         <option value="1" >一般级</option>
+         <option value="2" selected="1">关注级</option>
+         <option value="3" >严重级</option>
+         <option value="4" >紧急级</option>
+	</xsl:when>
+	<xsl:when test="@Risk=3">
+         <option value="" >所有</option>
+         <option value="1" >一般级</option>
+         <option value="2" >关注级</option>
+         <option value="3" selected="1">严重级</option>
+         <option value="4" >紧急级</option>
+	</xsl:when>
+	<xsl:when test="@Risk=1">
+         <option value="" >所有</option>
+         <option value="1" selected="1">一般级</option>
+         <option value="2" >关注级</option>
+         <option value="3" >严重级</option>
+         <option value="4" >紧急级</option>
+	</xsl:when>
+	<xsl:otherwise>
+         <option value="" selected="1">所有</option>
+         <option value="1" >一般级</option>
+         <option value="2" >关注级</option>
+         <option value="3" >严重级</option>
+         <option value="4" >紧急级</option>
+	</xsl:otherwise>
+       </xsl:choose>
+      </select>
+     </td>
+     <td class="tag">IP地理位置：</td>
+     <td>
+      <select name="tips_Scc_flag" class="text">
+	<xsl:call-template name="scc_addr_flag"/>
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <td></td>
+     <td colspan="4" align="center"><input type="submit" name="submit" value="查询"/></td>
+    </tr>
+   </table>
+  </form>
+ </div>
+ <br clear="all"/>
+<table style="width:900px;">
+  <tr>
+   <td style="width:400px;" colspan="5">
+     <form method="get" action="/omp">
+     	    <input type="hidden" name="token" value="{/envelope/token}"/>
+     			<input type="hidden" name="cmd" value="tips_alarm_display"/>
+    			<input type="hidden" name="isfind" value="{./isfind}"/>
+    			<input type="hidden" name="pagenum" value="{//nowpage}"/>
+    			<input type="hidden" name="tips_Trogan_id" value="{./OTrogan_id}"/>
+    			<input type="hidden" name="tips_Sip" value="{./OSip}"/>
+   	 			<input type="hidden" name="tips_Dip" value="{./ODip}"/>
+    			<input type="hidden" name="tips_Dmac" value="{./ODmac}"/>
+    			<input type="hidden" name="tips_Alarm_time" value="{./OAlarm_time}"/>
+    			<input type="hidden" name="tips_Type" value="{./@Type}"/>
+    			<input type="hidden" name="tips_Risk" value="{./@Risk}"/>
+    			<input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+          <select style="margin-bottom: 0px;" name="refresh_interval" size="1">
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='0'">
+                <option value="0" selected="1">&#8730;不自动刷新</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="0">不自动刷新</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='10'">
+                <option value="10" selected="1">&#8730;每10秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="10">每10秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='30'">
+                <option value="30" selected="1">&#8730;每30秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="30">每30秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='60'">
+                <option value="60" selected="1">&#8730;每60秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="60">每60秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+          </select>
+          <input type="image"
+                 name="Update"
+                 src="/img/refresh.png"
+                 alt="Update" style="margin-left:3px;margin-right:3px;"/>
+     </form>
+  </td>
+<xsl:if test="$tipsuser!='user'">  
+  <td style="width:145px;">
+   <form action="/omp" method="get">
+    <select name="tips_operator">
+     <option value="tips_output_alarm">导出当页</option>
+     <option value="tips_copy_alarm">备份当页</option>
+     <option value="tips_delete_alarm">删除当页</option>
+     <option value="tips_output_alarmf">导出全部</option>
+     <option value="tips_copy_alarmf">备份全部</option>
+     <option value="tips_delete_alarmf">删除全部</option>
+    </select>
+    <input type="hidden" name="token" value="{/envelope/token}"/>
+    <input type="hidden" name="cmd" value="tips_alarm_opt"/>
+    <input type="hidden" name="refresh_interval" value="{/envelope/autorefresh/@interval}"/>
+    <input type="hidden" name="isfind" value="{./isfind}"/>
+    <input type="hidden" name="pagenum" value="{//nowpage}"/>
+    <input type="hidden" name="tips_Trogan_id" value="{./OTrogan_id}"/>
+    <input type="hidden" name="tips_Sip" value="{./OSip}"/>
+    <input type="hidden" name="tips_Dip" value="{./ODip}"/>
+    <input type="hidden" name="tips_Dmac" value="{./ODmac}"/>
+    <input type="hidden" name="tips_Alarm_time" value="{./OAlarm_time}"/>
+    <input type="hidden" name="tips_Type" value="{./@Type}"/>
+    <input type="hidden" name="tips_Risk" value="{./@Risk}"/>
+    <input type="hidden" name="tips_Scc_flag" value="{./@Scc_flag}"/>
+    <input type="submit" name="output" value="提交" />
+   </form>
+  </td>
+</xsl:if>
+ </tr>
+ </table>
+
+  
+  <div style="clear:both"><xsl:apply-templates select="//msg"/></div>
+  <table class="list" cellspacing="4" cellpadding="4" border="0">
+   <tr class="listhead">
+    <td>木马编号</td>
+    <td>外部主机IP</td>
+    <td>内部主机IP</td>
+    <td>内部主机MAC</td>
+    <td>警报产生时间</td>
+    <td>警报类型</td>
+    <td>警报级别</td>
+    <td>IP地理位置</td>
+   </tr>
+   <tr>
+    <xsl:apply-templates select="list" mode="attach"/>
+   </tr>
+  </table>
+  <xsl:apply-templates select="page"/>
+</xsl:template>
+
+<!--攻击窃密列表-->
+<xsl:template match="list" mode="attach">
+ <tr>
+  <td><xsl:value-of select="Trogan_id"/></td><!--mmbh=木马编号首拼音-->
+  <td><xsl:value-of select="Sip"/></td>
+  <td><xsl:value-of select="Dip"/></td>
+  <td><xsl:value-of select="Dmac"/></td>
+  <td><xsl:value-of select="Alarm_time"/></td>
+  <td><xsl:value-of select="Type"/></td>
+  <td><xsl:value-of select="Risk"/></td>
+  <td><xsl:value-of select="Scc_flag"/></td>
+ </tr>
+</xsl:template>
+
+
+
+
+<!--地址标识-->
+<xsl:template name="scc_addr_flag">
+<xsl:choose>
+	 <xsl:when test="@Scc_flag=6">
+          <option value="" >所有</option>
+          <option value="0" >国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" selected="1">局域网</option>
+	 </xsl:when>
+	 <xsl:when test="@Scc_flag=1">
+          <option value="" >所有</option>
+          <option value="0" >国外</option>
+          <option value="1" selected="1">大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:when>
+	 <xsl:when test="@Scc_flag=2">
+          <option value="" >所有</option>
+          <option value="0" >国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" selected="1">台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:when>
+	 <xsl:when test="@Scc_flag=3">
+          <option value="" >所有</option>
+          <option value="0" >国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" selected="1">香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:when>
+	 <xsl:when test="@Scc_flag=4">
+          <option value="" >所有</option>
+          <option value="0" >国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" selected="1">澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:when>
+	 <xsl:when test="@Scc_flag=5">
+          <option value="" >所有</option>
+          <option value="0" >国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" selected="1">其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:when>
+	 <xsl:when test="@Scc_flag=0">
+          <option value="" >所有</option>
+          <option value="0" selected="1">国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:when>
+	 <xsl:otherwise>
+          <option value="" selected="1">所有</option>
+          <option value="0" >国外</option>
+          <option value="1" >大陆</option>
+          <option value="2" >台湾</option>
+          <option value="3" >香港</option>
+          <option value="4" >澳门</option>
+          <option value="5" >其他</option>
+          <option value="6" >局域网</option>
+	 </xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
+<!--涉密标志-->
+<xsl:template match="secret">
+ <xsl:param name="tipsuser">user</xsl:param>
+  <xsl:choose>
+   <xsl:when test="$tipsuser='user'">
+    <div class="place"><div class="click" style="position:absolute;top:-40px;left:150px;"></div></div>
+   </xsl:when>
+  <xsl:otherwise>
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:450px;"></div></div>
+  <div class="tab">
+   <ul>
+      <li><a href="/omp?cmd=get_Alarm_info&amp;token={/envelope/token}">攻击窃密警报</a></li>
+      <li id="tab_chosen"><a>涉密标志事件</a></li>
+      <li><a href="/omp?cmd=get_netlog_info&amp;token={/envelope/token}">通信会话审计</a></li>
+   </ul>
+  </div>
+  <br/>
+  </xsl:otherwise>
+ </xsl:choose>
+ <div style="width:900px">
+  <form action="/omp" method="get">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="cmd" value="tips_event_display"/>
+   <input type="hidden" name="pagenum" value="1"/>
+   <input type="hidden" name="refresh_interval" value="{/envelope/autorefresh/@interval}"/>
+   <table  class="operate" cellspacing="4" cellpadding="4" border="0" >
+
+    <tr>
+     <td class="tag">事件类型：</td>
+     <td>
+       <select name="tips_Event_class">
+       <xsl:choose>
+	<xsl:when test="@type = 1011">
+       	  <option value="">所有</option>
+       	  <option value="1011" selected="1">发现涉嫌违规传输泄密信息</option>
+          <option value="1002" >发现涉嫌传输含有恶意程序文件</option>
+	</xsl:when>
+	<xsl:when test="@type = 1002">
+       	  <option value="">所有</option>
+       	  <option value="1011">发现涉嫌违规传输泄密信息</option>
+          <option value="1002" selected="1">发现涉嫌传输含有恶意程序文件</option>
+	</xsl:when>
+	<xsl:otherwise>
+       	  <option value="" selected="1">所有</option>
+       	  <option value="1011" >发现涉嫌违规传输泄密信息</option>
+          <option value="1002">发现涉嫌传输含有恶意程序文件</option>
+	</xsl:otherwise>
+      </xsl:choose>
+      </select>
+     </td>
+     <td class="tag">产生时间：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Event_time" value="{./OEvent_time}"/></td>
+     <td class="tag">外部主机IP：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Sip" value="{./OSip}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">端口号：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Sport" value="{./OSport}"/></td>
+     <td class="tag">内部主机IP：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Dip" value="{./ODip}"/></td>
+     <td class="tag">发送人ID：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Sender" value="{./OSender}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">接受人ID：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Receiver" value="{./OReceiver}"/></td>
+     <td class="tag">敏感词：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Sen_msg" value="{./OSen_msg}"/></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td colspan="4" align="center"><input type="submit" name="submit" value="查询"/></td>
+    </tr>
+   </table>
+  </form>  
+  <br clear="all"/>
+<table style="width:900px;">
+  <tr>
+   <td style="width:400px;" colspan="5">
+     <form method="get" action="/omp">
+    	    <input type="hidden" name="token" value="{/envelope/token}"/>
+     			<input type="hidden" name="cmd" value="tips_event_display"/>
+    			<input type="hidden" name="isfind" value="{./isfind}"/>
+    			<input type="hidden" name="pagenum" value="{//nowpage}"/>
+ 				  <input type="hidden" name="tips_Event_class" value="{./@type}"/>
+    			<input type="hidden" name="tips_Event_time" value="{./OEvent_time}"/>
+    			<input type="hidden" name="tips_Sip" value="{./OSip}"/>
+    			<input type="hidden" name="tips_Sport" value="{./OSport}"/>
+    			<input type="hidden" name="tips_Dip" value="{./ODip}"/>
+    			<input type="hidden" name="tips_Sender" value="{./OSender}"/>
+    			<input type="hidden" name="tips_Receiver" value="{./@Receiver}"/>
+    			<input type="hidden" name="tips_Sen_msg" value="{./OSen_msg}"/>
+ 
+ 
+          <select style="margin-bottom: 0px;" name="refresh_interval" size="1">
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='0'">
+                <option value="0" selected="1">&#8730;不自动刷新</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="0">不自动刷新</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='10'">
+                <option value="10" selected="1">&#8730;每10秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="10">每10秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='30'">
+                <option value="30" selected="1">&#8730;每30秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="30">每30秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='60'">
+                <option value="60" selected="1">&#8730;每60秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="60">每60秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+          </select>
+          <input type="image"
+                 name="Update"
+                 src="/img/refresh.png"
+                 alt="Update" style="margin-left:3px;margin-right:3px;"/>
+     </form>
+  </td>
+<xsl:if test="$tipsuser!='user'">
+  <td style="width:145px;">
+   <form action="/omp" method="get">
+    <select name="tips_operator">
+     <option value="tips_output_event">导出当页</option>
+     <option value="tips_copy_event">备份当页</option>
+     <option value="tips_delete_event">删除当页</option>
+     <option value="tips_output_eventf">导出全部</option>
+     <option value="tips_copy_eventf">备份全部</option>
+     <option value="tips_delete_eventf">删除全部</option>
+    </select>
+    <input type="hidden" name="cmd" value="tips_event_opt"/>
+    <input type="hidden" name="token" value="{/envelope/token}"/>
+    <input type="hidden" name="isfind" value="{./isfind}"/>
+    <input type="hidden" name="pagenum" value="{//nowpage}"/>
+    <input type="hidden" name="refresh_interval" value="{/envelope/autorefresh/@interval}"/>
+    <input type="hidden" name="tips_Event_class" value="{./@type}"/>
+    <input type="hidden" name="tips_Event_time" value="{./OEvent_time}"/>
+    <input type="hidden" name="tips_Sip" value="{./OSip}"/>
+    <input type="hidden" name="tips_Sport" value="{./OSport}"/>
+    <input type="hidden" name="tips_Dip" value="{./ODip}"/>
+    <input type="hidden" name="tips_Sender" value="{./OSender}"/>
+    <input type="hidden" name="tips_Receiver" value="{./@Receiver}"/>
+    <input type="hidden" name="tips_Sen_msg" value="{./OSen_msg}"/>
+    <input type="submit" name="output" value="提交" />
+   </form>
+  </td>
+</xsl:if>
+ </tr>
+ </table>
+ </div>
+  <div style="clear:both"><xsl:apply-templates select="//msg"/></div>
+  <table class="list" cellspacing="2" cellpadding="4" border="0">
+   <tr class="listhead">
+    <td>事件类型</td>
+    <td>产生时间</td>
+    <td>外部主机IP</td>
+    <td>端口号</td>
+    <td>内部主机IP</td>
+    <td>内部主机MAC</td>
+    <td>发送人ID</td>
+    <td>接受人ID</td>
+    <td>文件名/敏感内容</td>
+    <td>匹配的敏感词</td>
+   </tr>
+  <xsl:apply-templates select="list" mode="secret_list"/>
+  </table>
+  <xsl:apply-templates select="page"/>
+</xsl:template>
+
+<!--涉密标志列表-->
+<xsl:template match="list" mode="secret_list">
+ <tr>
+  <td><xsl:value-of select="./Event_class"/></td>
+  <td><xsl:value-of select="./Event_time"/></td>
+  <td><xsl:value-of select="./Sip"/></td>
+  <td><xsl:value-of select="./Sport"/></td>
+  <td><xsl:value-of select="./Dip"/></td>
+  <td><xsl:value-of select="./Dmac"/></td>
+  <td><xsl:value-of select="./Sender"/></td>
+  <td><xsl:value-of select="./Receiver"/></td>
+  <td><xsl:value-of select="./File_name"/></td>
+  <td><xsl:value-of select="./Sen_msg"/></td>
+ </tr>
+</xsl:template>
+
+<!--通信会话-->
+<xsl:template match="tips_dialog">
+ <xsl:param name="tipsuser">user</xsl:param>
+  <xsl:choose>
+   <xsl:when test="$tipsuser='user'">
+    <div class="place"><div class="click" style="position:absolute;top:-40px;left:300px;"></div></div>
+   </xsl:when>
+  <xsl:otherwise>
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:450px;"></div></div>
+  <div class="tab">
+   <ul>
+      <li><a href="/omp?cmd=get_Alarm_info&amp;token={/envelope/token}">攻击窃密警报</a></li>
+      <li><a href="/omp?cmd=get_event_info&amp;token={/envelope/token}">涉密标志事件</a></li>
+      <li id="tab_chosen"><a>通信会话审计</a></li>
+   </ul>
+  </div>
+  <br/>
+  </xsl:otherwise>
+ </xsl:choose>
+ <div style="width:900px">
+  <form action="/omp" method="get">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="cmd" value="tips_netlog_display"/>
+   <input type="hidden" name="pagenum" value="1"/>
+   <input type="hidden" name="refresh_interval" value="{/envelope/autorefresh/@interval}"/>
+   <table class="operate" cellspacing="4" cellpadding="4" border="0"  >
+    <tr>
+     <td class="tag">内部主机IP：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Dip" value="{./ODip}"/></td>
+     <td class="tag">外部主机IP：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Sip" value="{./OSip}"/></td>
+     <td class="tag">端口号：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Sport" value="{./OSport}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">协议类型：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Protocol" value="{./OProtocol}"/></td>
+     <td class="tag">通信开始时间：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Start_time" value="{./OStart_time}"/></td>
+     <td class="tag">通信结束时间：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_End_time" value="{./OEnd_time}"/></td>
+    </tr>
+    <tr>
+     <td class="tag">流入数据字节：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Load" value="{./OLoad}"/></td>
+     <td class="tag">流出数据字节：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Upload" value="{./OUpload}"/></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td colspan="4" align="center"><input type="submit" name="submit" value="查询"/></td>
+    </tr>
+   </table>
+  </form>  
+  <br clear="all"/>
+<table style="width:900px;">
+  <tr>
+   <td style="width:400px;" colspan="5">
+     <form method="get" action="/omp">
+ 			<input type="hidden" name="token" value="{/envelope/token}"/>
+    	<input type="hidden" name="cmd" value="tips_netlog_display"/>
+    	<input type="hidden" name="isfind" value="{./isfind}"/>
+    	<input type="hidden" name="pagenum" value="{//nowpage}"/>
+    	<input type="hidden" name="tips_Dip" value="{./ODip}"/>
+    	<input type="hidden" name="tips_Sip" value="{./OSip}"/>
+    	<input type="hidden" name="tips_Sport" value="{./OSport}"/>
+    	<input type="hidden" name="tips_Protocol" value="{./OProtocol}"/>
+    	<input type="hidden" name="tips_Start_time" value="{./OStart_time}"/>
+    	<input type="hidden" name="tips_End_time" value="{./OEnd_time}"/>
+    	<input type="hidden" name="tips_Load" value="{./OLoad}"/>
+    	<input type="hidden" name="tips_Upload" value="{./OUpload}"/>
+          <select style="margin-bottom: 0px;" name="refresh_interval" size="1">
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='0'">
+                <option value="0" selected="1">&#8730;不自动刷新</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="0">不自动刷新</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='10'">
+                <option value="10" selected="1">&#8730;每10秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="10">每10秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='30'">
+                <option value="30" selected="1">&#8730;每30秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="30">每30秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/envelope/autorefresh/@interval='60'">
+                <option value="60" selected="1">&#8730;每60秒刷新一次</option>
+              </xsl:when>
+              <xsl:otherwise>
+                <option value="60">每60秒刷新一次</option>
+              </xsl:otherwise>
+            </xsl:choose>
+          </select>
+          <input type="image"
+                 name="Update"
+                 src="/img/refresh.png"
+                 alt="Update" style="margin-left:3px;margin-right:3px;"/>
+     </form>
+  </td>
+<xsl:if test="$tipsuser!='user'">
+  <td style="width:145px;">
+   <form action="/omp" method="get">
+    <select name="tips_operator">
+     <option value="tips_output_netlog">导出当页</option>
+     <option value="tips_copy_netlog">备份当页</option>
+     <option value="tips_delete_netlog">删除当页</option>
+     <option value="tips_output_netlogf">导出全部</option>
+     <option value="tips_copy_netlogf">备份全部</option>
+     <option value="tips_delete_netlogf">删除全部</option>
+    </select>
+    <input type="hidden" name="token" value="{/envelope/token}"/>
+    <input type="hidden" name="cmd" value="tips_netlog_opt"/>
+    <input type="hidden" name="isfind" value="{./isfind}"/>
+    <input type="hidden" name="pagenum" value="{//nowpage}"/>
+    <input type="hidden" name="refresh_interval" value="{/envelope/autorefresh/@interval}"/>
+    <input type="hidden" name="tips_Dip" value="{./ODip}"/>
+    <input type="hidden" name="tips_Sip" value="{./OSip}"/>
+    <input type="hidden" name="tips_Sport" value="{./OSport}"/>
+    <input type="hidden" name="tips_Protocol" value="{./OProtocol}"/>
+    <input type="hidden" name="tips_Start_time" value="{./OStart_time}"/>
+    <input type="hidden" name="tips_End_time" value="{./OEnd_time}"/>
+    <input type="hidden" name="tips_Load" value="{./OLoad}"/>
+    <input type="hidden" name="tips_Upload" value="{./OUpload}"/>
+    <input type="submit" name="output" value="提交" />
+   </form>
+  </td>
+</xsl:if>
+ </tr>
+ </table>
+ </div>
+  <div style="clear:both"><xsl:apply-templates select="//msg"/></div>
+  <table class="list" cellspacing="2" cellpadding="4" border="0">
+   <tr class="listhead">
+    <td>内部主机IP</td>
+    <td>外部主机IP</td>
+    <td>端口号</td>
+    <td>协议类型</td>
+    <td>通信开始时间</td>
+    <td>通信结束时间</td>
+    <td>流入数据字节</td>
+    <td>流出数据字节</td>
+   </tr>
+  <xsl:apply-templates select="list" mode="dialog_list"/>
+  </table>
+  <xsl:apply-templates select="page"/>
+</xsl:template>
+
+<!--通信会话列表-->
+<xsl:template match="list" mode="dialog_list">
+ <tr>
+  <td><xsl:value-of select="./Dip"/></td>
+  <td><xsl:value-of select="./Sip"/></td>
+  <td><xsl:value-of select="./Sport"/></td>
+  <td><xsl:value-of select="./Protocol"/></td>
+  <td><xsl:value-of select="./Start_time"/></td>
+  <td><xsl:value-of select="./End_time"/></td>
+  <td><xsl:value-of select="./Load"/></td>
+  <td><xsl:value-of select="./Upload"/></td>
+ </tr>
+</xsl:template>
+
+<!--审计查询-->
+<xsl:template match="audit">
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:600px;"></div></div>
+ <div style="width:900px;">
+  <form action="/omp" method="get">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="cmd" value="tips_opt_display"/>
+   <input type="hidden" name="pagenum" value="1"/>
+   <table class="operate" cellspacing="2" cellpadding="4" border="0"  >
+    <tr>
+     <td class="tag">用户名：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_username" value="{./Ousername}"/></td>
+     <td class="tag">操作描述：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Optdsc" value="{./OOptdsc}"/></td>
+     <td class="tag">操作时间：</td>
+     <td><input class="text" type="text" autocomplete="on" name="tips_Otime" value="{./OOtime}"/>--<input class="text" type="text" autocomplete="on" name="tips_Oetime" value="{./OOetime}"/></td>
+     <comment><td><xsl:apply-templates select="period"/></td></comment>
+     <td><input type="submit" name="submit" value="查询"/></td>
+    </tr>
+   </table>
+  </form> 
+  <br clear="all"/>
+  <xsl:apply-templates select="msg"/>
+  <table style="float:right">
+   <tr>
+   	<td width="600"></td>
+    <form action="/omp" method="get">
+   	 <input type="hidden" name="token" value="{/envelope/token}"/>
+   	 <input type="hidden" name="cmd" value="tips_opt_output"/>
+     <input type="hidden" name="pagenum" value="{//nowpage}"/>
+     <input type="hidden" name="tips_username" value="{./Ousername}"/>
+     <input type="hidden" name="tips_Optdsc" value="{./OOptdsc}"/>
+     <input type="hidden" name="tips_Otime" value="{./OOtime}"/>
+     <input type="hidden" name="tips_Oetime" value="{./OOetime}"/>
+     <td><input type="submit" name="submit" value="导出全部"/></td>
+    </form>
+    <form action="/omp" method="get">
+   	 <input type="hidden" name="token" value="{/envelope/token}"/>
+   	 <input type="hidden" name="cmd" value="tips_opt_copy"/>
+     <input type="hidden" name="pagenum" value="{//nowpage}"/>
+     <input type="hidden" name="tips_username" value="{./Ousername}"/>
+     <input type="hidden" name="tips_Optdsc" value="{./OOptdsc}"/>
+     <input type="hidden" name="tips_Otime" value="{./OOtime}"/>
+     <input type="hidden" name="tips_Oetime" value="{./OOetime}"/>
+     <td><input type="submit" name="submit" value="备份全部"/></td>
+		</form>
+   </tr>
+  </table>
+  <table class="list" cellspacing="2" cellpadding="4" border="0">
+   <tr class="listhead">
+    <td width="120px">用户名</td>
+    <td>操作描述</td>
+    <td width="200px">操作时间</td>
+   </tr>
+  <xsl:apply-templates select="list" mode="audit_list"/>
+  </table>
+ </div>
+  <xsl:apply-templates select="page"/>
+</xsl:template>
+
+<!--审计列表-->
+<xsl:template match="list" mode="audit_list">
+ <tr>
+  <td><xsl:value-of select="username"/></td>
+  <td><xsl:value-of select="Optdsc"/></td>
+  <td><xsl:value-of select="Otime"/></td>
+ </tr>
+</xsl:template>
+
+<!--产品维护-->
+<xsl:template match="product">
+<div class="place"><div class="click" style="position:absolute;top:-40px;left:750px;"></div></div>
+  <fieldset style="height:50px;border:1px solid #ccc;padding:10px;margin-bottom:10px;">
+   <legend>系统操作</legend>
+   <table cellspacing="4" cellpadding="4" border="0">
+    <tr>
+    <xsl:comment>
+     <td><input type="button" name="update" value="系统升级" onclick="javascript:top.location='/omp?cmd=upgrade&amp;overrides=1&amp;token={/envelope/token}'"/></td><td></td>
+     </xsl:comment>
+     <td><input type="button" name="format" value="恢复出厂" onclick="javascript:self.location='/omp?cmd=restore&amp;overrides=1&amp;token={/envelope/token}'"/></td><td></td><td></td>
+     <td><input type="button" name="shut" value="关机"  onclick="javascript:self.location='/omp?cmd=close&amp;overrides=1&amp;token={/envelope/token}'"/></td><td></td>
+     <td><input type="button" name="restart" value="重启" onclick="javascript:self.location='/omp?cmd=reboot&amp;overrides=1&amp;token={/envelope/token}'"/></td>
+    </tr>
+   </table>
+  </fieldset>
+  <fieldset style="float:left;width:420px;height:250px;border:1px solid #ccc;padding:10px;">
+   <legend>设备状态信息</legend>
+   <form action="/omp" method="post">
+   <input type="hidden" name="token" value=""/>
+   <input type="hidden" name="cmd" value=""/> 
+   <table cellspacing="2" cellpadding="4" border="0">
+   <tr>
+    <td class="tag">本次开机时间</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dstart}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">CUP利用率</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dcpu}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">内存利用率</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dmem}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">磁盘剩余空间</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{ddisk}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">镜像数据接入状态</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dmirror}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">镜像数据流量</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dflow}"/></td>
+   </tr>
+   <tr><td><br/></td></tr>
+   <tr>
+    <td class="tag" style="font-weight:bold;">运行状态</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td class="tag">攻击窃密检测</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dattach}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">网络行为审计</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dnetlog}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">涉密标识检测</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dsen}"/></td>
+   </tr>
+   <tr>
+    <td class="tag">网络窃密阻断</td>
+    <td><input class="show" type="text" readonly="1" name="" value="{dblock}"/></td>
+   </tr>
+  </table>
+  </form>
+  </fieldset>
+  <fieldset style="float:right;width:420px;height:250px;;border:1px solid #ccc;padding:10px;">
+   <legend>系统设置</legend>
+   <form action="/omp" method="post">
+   <input type="hidden" name="token" value="{/envelope/token}"/>
+   <input type="hidden" name="cmd" value="system_config"/> 
+   <table cellspacing="2" cellpadding="4" border="0">
+   <tr>
+    <td class="tag" style="font-weight:bold;">阈值设置</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td class="tag">CPU利用率</td>
+    <td><input class="text" type="text" autocomplete="on" name="cpu" value="{./cpu}"/>%</td>
+   </tr>
+   <tr>
+    <td class="tag">内存利用率</td>
+    <td><input class="text" type="text" autocomplete="on" name="mem" value="{./mem}"/>%</td>
+   </tr>
+   <tr>
+    <td class="tag">磁盘剩余空间</td>
+    <td><input class="text" type="text" autocomplete="on" name="disk" value="{./disk}"/>GB</td>
+   </tr>
+   <tr><td><br/></td></tr>
+   <tr>
+    <td class="tag" style="font-weight:bold;">定时上报设置</td>
+    <td></td>
+   </tr>
+   <tr>
+    <td class="tag">上报运行状态间隔时间</td>
+    <td><input class="text" type="text" autocomplete="on" name="runtime" value="{./runtime}"/>s</td>
+   </tr>
+   <tr>
+    <td class="tag">上报报警信息间隔时间</td>
+    <td><input class="text" type="text" autocomplete="on" name="alarmtime" value="{./alarmtime}"/>s</td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><xsl:apply-templates select="msg"/></td>
+   </tr>
+   <tr>
+    <td colspan="2" align="center"><input type="submit" name="submit" value="保存设置" />
+    </td>
+  </tr>  
+  <tr><td></td>
+  </tr>
+  </table>
+  </form>
+  </fieldset> <br/>
+
+</xsl:template>
+
+
+<!--账户管理-->
+<xsl:template name="html-create-config-form">
+  <form action="" method="post">
+   <table  cellspacing="2" cellpadding="4" border="0">
+    <tr>
+     <td>用户名:</td>
+     <td> <input type="text" /></td>
+     <td>新密码：</td>
+     <td><input type="password" /></td>
+     <td>确认密码：</td>
+     <td><input type="password" /></td>
+     <td colspan="2"><input type="submit" name="submit" value="保存"/></td>
+    </tr>
+   </table>
+  </form> 
+</xsl:template>
+
+<!--时间选择-->
+<xsl:template name="period">
+ <select name="hour">
+                <option value="00" selected="1">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>时
+ <select name="minute">
+                <option value="00" selected="1">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>分
+<select name="day">
+                <option value="00" selected="1">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>
+<select name="month">
+                <option value="00" selected="1">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>月
+<select name="year">
+                <option value="00" selected="1">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>年
+</xsl:template>
+
+<!-- 和用户管理的列表有关 -->
+
+<xsl:template match="get_tasks_response">
+  <xsl:choose>
+    <xsl:when test="substring(@status, 1, 1) = '4' or substring(@status, 1, 1) = '5'">
+      <xsl:call-template name="command_result_dialog">
+        <xsl:with-param name="operation">Get Tasks</xsl:with-param>
+        <xsl:with-param name="status">
+          <xsl:value-of select="@status"/>
+        </xsl:with-param>
+        <xsl:with-param name="msg">
+          <xsl:value-of select="@status_text"/>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:when test="task/reports">
+      <xsl:call-template name="html-report-table"/>
+    </xsl:when>
+    <xsl:when test="@modify_user_page">
+	<xsl:call-template name="user_amend"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:call-template name="html-user-table"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+
+<!-- 和配置管理有关 -->
+
+<xsl:template match="get_reports_response">
+  <xsl:choose>
+    <xsl:when test="substring(@status, 1, 1) = '4' or substring(@status, 1, 1) = '5'">
+      <xsl:call-template name="command_result_dialog">
+        <xsl:with-param name="operation">
+          Get Report
+        </xsl:with-param>
+        <xsl:with-param name="status">
+          <xsl:value-of select="@status"/>
+        </xsl:with-param>
+        <xsl:with-param name="msg">
+          <xsl:value-of select="@status_text"/>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:for-each select="report">
+        <xsl:choose>
+          <xsl:when test="@type = 'config'">
+            <xsl:call-template name="config"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:call-template name="html-report-details"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+<xsl:template match="page">
+  <div class="page">
+    <a href="{tips_urlf}">首页</a>
+    <xsl:choose>
+     <xsl:when test="nowpage = 1">
+      <a class="unable">上一页</a>
+     </xsl:when>
+     <xsl:otherwise>
+      <a href="{tips_urlp}">上一页</a> 
+     </xsl:otherwise>
+    </xsl:choose>
+
+     <xsl:if test="nowpage &gt; 10">
+      <a href="{tips_urlpp}">...</a>
+     </xsl:if>
+    <xsl:choose>
+     <xsl:when test="(nowpage mod 10) != 1">
+      <a href="{tips_url1}"><xsl:value-of select="page1"/></a>
+     </xsl:when>
+     <xsl:otherwise>
+      <a class="unable"><xsl:value-of select="page1"/></a>
+     </xsl:otherwise>
+    </xsl:choose>
+    <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 1">
+     <xsl:choose>
+      <xsl:when test="(nowpage mod 10) != 2">
+       <a href="{tips_url2}"><xsl:value-of select="page2"/></a>
+      </xsl:when>
+      <xsl:otherwise>
+       <a class="unable"><xsl:value-of select="page2"/></a>
+      </xsl:otherwise>
+     </xsl:choose>
+     <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 2">
+      <xsl:choose>
+       <xsl:when test="(nowpage mod 10) != 3">
+        <a href="{tips_url3}"><xsl:value-of select="page3"/></a>
+       </xsl:when>
+       <xsl:otherwise>
+        <a class="unable"><xsl:value-of select="page3"/></a>
+       </xsl:otherwise>
+      </xsl:choose>
+      <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 3">
+       <xsl:choose>
+        <xsl:when test="(nowpage mod 10) != 4">
+         <a href="{tips_url4}"><xsl:value-of select="page4"/></a>
+        </xsl:when>
+        <xsl:otherwise>
+         <a class="unable"><xsl:value-of select="page4"/></a>
+	</xsl:otherwise>
+       </xsl:choose>
+       <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 4">
+	<xsl:choose>
+	 <xsl:when test="(nowpage mod 10) != 5">
+          <a href="{tips_url5}"><xsl:value-of select="page5"/></a>
+	 </xsl:when>
+	 <xsl:otherwise>
+          <a class="unable"><xsl:value-of select="page5"/></a>
+	 </xsl:otherwise>
+	</xsl:choose>
+        <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 5">
+	 <xsl:choose>
+	  <xsl:when test="(nowpage mod 10) != 6">
+           <a href="{tips_url6}"><xsl:value-of select="page6"/></a>
+	  </xsl:when>
+	  <xsl:otherwise>
+           <a class="unable"><xsl:value-of select="page6"/></a>
+	  </xsl:otherwise>
+	 </xsl:choose>
+         <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 6">
+	  <xsl:choose>
+	   <xsl:when test="(nowpage mod 10) != 7">
+            <a href="{tips_url7}"><xsl:value-of select="page7"/></a>
+	   </xsl:when>
+	   <xsl:otherwise>
+            <a class="unable"><xsl:value-of select="page7"/></a>
+	   </xsl:otherwise>
+	  </xsl:choose>
+          <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 7">
+	   <xsl:choose>
+	    <xsl:when test="(nowpage mod 10) != 8">
+             <a href="{tips_url8}"><xsl:value-of select="page8"/></a>
+	    </xsl:when>
+	    <xsl:otherwise>
+             <a class="unable"><xsl:value-of select="page8"/></a>
+	    </xsl:otherwise>
+	   </xsl:choose>
+           <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 8">
+	    <xsl:choose>
+	     <xsl:when test="(nowpage mod 10) != 9">
+              <a href="{tips_url9}"><xsl:value-of select="page9"/></a>
+	     </xsl:when>
+	     <xsl:otherwise>
+              <a class="unable"><xsl:value-of select="page9"/></a>
+	     </xsl:otherwise>
+	    </xsl:choose>
+            <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 9">
+	     <xsl:choose>
+	      <xsl:when test="(nowpage mod 10) != 0">
+               <a href="{tips_url10}"><xsl:value-of select="page10"/></a>
+	      </xsl:when>
+	      <xsl:otherwise>
+               <a class="unable"><xsl:value-of select="page10"/></a>
+	      </xsl:otherwise>
+	     </xsl:choose>
+	    </xsl:if>
+	   </xsl:if>
+	  </xsl:if>
+	 </xsl:if>
+	</xsl:if>
+       </xsl:if>
+      </xsl:if>
+     </xsl:if>
+    </xsl:if>
+    <xsl:if test="(lastpage -(nowpage - (((nowpage - 1) mod 10)+1))) &gt; 10">
+      <a href="{tips_urlnp}">...</a>
+    </xsl:if>
+    <xsl:choose>
+     <xsl:when test="(lastpage &gt; nowpage)">
+      <a href="{tips_urln}">下一页</a>
+     </xsl:when>
+     <xsl:otherwise>
+      <a class="unable">下一页</a>
+     </xsl:otherwise>
+    </xsl:choose>
+    <a href="{tips_urll}">尾页</a>
+  </div>
+</xsl:template>
+
+</xsl:stylesheet>

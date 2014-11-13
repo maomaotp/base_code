@@ -1,0 +1,4 @@
+client_copy.123cpp:		cout<<"resultlist->__size = "<<resultlist.__size<<endl;
+client.cpp:		cout<<"resultlist->__size = "<<resultlist.__size<<endl;
+匹配到二进制文件 fileclient
+soapC.cpp:				{	soap_flag_resultlist--;
