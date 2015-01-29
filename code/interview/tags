@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CreateLinklist	linklist.c	/^linklist CreateLinklist()$/;"	f
+_node	linklist.c	/^typedef struct _node$/;"	s	file:
+a	linklist.c	/^    int a;$/;"	m	struct:_node	file:
+buf	linklist.c	/^    char buf[20];$/;"	m	struct:_node	file:
+insert_linklist	linklist.c	/^void insert_linklist(linklist h, const char* name, int num) $/;"	f
+linklist	linklist.c	/^}linknode, *linklist;$/;"	t	typeref:struct:_node	file:
+linknode	linklist.c	/^}linknode, *linklist;$/;"	t	typeref:struct:_node	file:
+main	buff.c	/^int main()$/;"	f
+main	linklist.c	/^int main()$/;"	f
+main	point.c	/^int main()$/;"	f
+main	select2.c	/^int main()$/;"	f
+main	sizeof.c	/^int main()$/;"	f
+main	string.c	/^int main()$/;"	f
+main	strlen.c	/^int main()$/;"	f
+main	strstr.c	/^int main()$/;"	f
+main	strtoint.c	/^int main()$/;"	f
+main	u_int.c	/^int main()$/;"	f
+my_strcmp	string.c	/^int my_strcmp(const char* str, const char* dst)$/;"	f
+my_strlen	string.c	/^int my_strlen(const char* buf)$/;"	f
+next	linklist.c	/^    struct _node *next;$/;"	m	struct:_node	typeref:struct:_node::_node	file:
+rever_linklist	linklist.c	/^void rever_linklist(linklist h)$/;"	f
+reverstr1	string.c	/^int reverstr1(char* buf)$/;"	f
+reverstr2	string.c	/^void reverstr2(char* buf)$/;"	f
+reverstr3	string.c	/^void reverstr3(char* buf)$/;"	f
+strtonum	strtoint.c	/^int strtonum(const char *string)$/;"	f
+test	buff.c	/^void test(char* buf)$/;"	f

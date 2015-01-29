@@ -4,6 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+DataType	hashtest.c	4;"	d	file:
+HashNode	hashtest.c	/^typedef struct HashNode    $/;"	s	file:
+HashTable	hashtest.c	/^}HashTable;$/;"	t	typeref:struct:HashNode	file:
+M	hashtest.c	5;"	d	file:
 REDIS_CMD_ADMIN	redis_hash.h	11;"	d
 REDIS_CMD_ASKING	redis_hash.h	19;"	d
 REDIS_CMD_DENYOOM	redis_hash.h	9;"	d
@@ -20,10 +24,13 @@ REDIS_CMD_STALE	redis_hash.h	17;"	d
 REDIS_CMD_WRITE	redis_hash.h	7;"	d
 REDIS_ERR	redis_hash.h	5;"	d
 REDIS_OK	redis_hash.h	4;"	d
+_HEAD_DICT_H	key.h	2;"	d
 _HEAD_SDS_H	sds.h	2;"	d
 _REDIS_HASH_H	redis_hash.h	2;"	d
+_dictInit	keyValue.c	/^int _dictInit(dict *d, void *privDataPtr)$/;"	f
 _dictInit	redis_hash.c	/^static void _dictInit(dict *d, dictType *type, void *privDataPtr)$/;"	f	file:
 _dictKeyIndex	redis_hash.c	/^static int _dictKeyIndex(dict *d, const void *key)$/;"	f	file:
+_dictReset	keyValue.c	/^static void _dictReset(dictht *ht)$/;"	f	file:
 argc	redis_hash.h	/^    int argc;$/;"	m	struct:redisClient
 argv	redis_hash.h	/^    robj **argv;$/;"	m	struct:redisClient
 arity	redis_hash.h	/^	int arity;$/;"	m	struct:redisCommand
@@ -45,23 +52,39 @@ cone	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnego
 crlf	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
 ctime	redis_hash.h	/^    time_t ctime;           \/* Client creation time *\/$/;"	m	struct:redisClient
 czero	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
+data	hashtest.c	/^	DataType data;  $/;"	m	struct:HashNode	file:
 db	redis_hash.h	/^    redisDb *db;$/;"	m	struct:redisClient
+dbAdd	redis_hash.c	/^void dbAdd(redisDb *db, robj *key, robj *val)$/;"	f
 del	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
+dict	key.h	/^typedef struct dict {$/;"	s
+dict	key.h	/^} dict;$/;"	t	typeref:struct:dict
 dict	redis_hash.h	/^    dict *dict;                 \/* The keyspace for this DB *\/$/;"	m	struct:redisDb
 dict	redis_hash.h	/^typedef struct dict {$/;"	s
 dict	redis_hash.h	/^} dict;$/;"	t	typeref:struct:dict
+dictAdd	keyValue.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
 dictAdd	redis_hash.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
+dictAddRaw	keyValue.c	/^dictEntry *dictAddRaw(dict *d, void *key)$/;"	f
 dictAddRaw	redis_hash.c	/^dictEntry *dictAddRaw(dict *d, void *key)$/;"	f
 dictCompareKeys	redis_hash.h	22;"	d
+dictCreate	keyValue.c	/^dict *dictCreate(void *privDataPtr)$/;"	f
 dictCreate	redis_hash.c	/^dict *dictCreate(dictType *type, void *privDataPtr)$/;"	f
+dictEntry	key.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	key.h	/^}dictEntry;$/;"	t	typeref:struct:dictEntry
 dictEntry	redis_hash.h	/^typedef struct dictEntry {$/;"	s
 dictEntry	redis_hash.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictExpand	keyValue.c	/^static int dictExpand(dict *d, unsigned long size)$/;"	f	file:
+dictHashKey	keyValue.c	/^unsigned int dictHashKey(const void* key, int len) $/;"	f
 dictHashKey	redis_hash.c	/^unsigned int dictHashKey(const unsigned char* buf, int len) $/;"	f
+dictKeyIndex	keyValue.c	/^static int dictKeyIndex(dict *d, const char *key)$/;"	f	file:
+dictSetKey	key.h	4;"	d
 dictSetKey	redis_hash.h	27;"	d
+dictSetVal	key.h	9;"	d
 dictSetVal	redis_hash.h	34;"	d
 dictType	redis_hash.h	/^typedef struct dictType {$/;"	s
 dictType	redis_hash.h	/^} dictType;$/;"	t	typeref:struct:dictType
 dict_hash_function_seed	redis_hash.c	/^static uint32_t dict_hash_function_seed = 5381;$/;"	v	file:
+dictht	key.h	/^typedef struct dictht {$/;"	s
+dictht	key.h	/^}dictht;$/;"	t	typeref:struct:dictht
 dictht	redis_hash.h	/^typedef struct dictht {$/;"	s
 dictht	redis_hash.h	/^} dictht;$/;"	t	typeref:struct:dictht
 dictid	redis_hash.h	/^    int dictid;$/;"	m	struct:redisClient
@@ -74,18 +97,28 @@ err	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegon
 execaborterr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
 expires	redis_hash.h	/^    dict *expires;              \/* Timeout of keys with a timeout set *\/$/;"	m	struct:redisDb
 fd	redis_hash.h	/^    int fd;$/;"	m	struct:redisClient
+find	hashtest.c	/^int find(DataType key)      \/\/进行查找 $/;"	f
 firstkey	redis_hash.h	/^	int firstkey;$/;"	m	struct:redisCommand
 flags	redis_hash.h	/^	int flags;$/;"	m	struct:redisCommand
 flags	redis_hash.h	/^    int flags;              \/* REDIS_SLAVE | REDIS_MONITOR | REDIS_MULTI ... *\/$/;"	m	struct:redisClient
 free	redis_hash.h	/^    void (*free)(void *ptr);$/;"	m	struct:list
 free	sds.h	/^	int free;$/;"	m	struct:sdshdr
+getHashAddress	hashtest.c	/^int getHashAddress(DataType key)    \/\/Hash函数 $/;"	f
 getkeys_proc	redis_hash.h	/^	redisGetKeysProc *getkeys_proc;$/;"	m	struct:redisCommand
+hashFunction	redis_hash.h	/^	unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
+hashTable	hashtest.c	/^HashTable hashTable[M];$/;"	v
 head	redis_hash.h	/^    listNode *head;$/;"	m	struct:list
+ht	key.h	/^	dictht ht;$/;"	m	struct:dict
 ht	redis_hash.h	/^	dictht ht;$/;"	m	struct:dict
 id	redis_hash.h	/^    int id;$/;"	m	struct:redisDb
 id	redis_hash.h	/^    uint64_t id;            \/* Client incremental unique ID. *\/$/;"	m	struct:redisClient
+initHashTable	hashtest.c	/^void initHashTable()$/;"	f
+insert	hashtest.c	/^int insert(DataType key)    \/\/向hash表中插入元素 $/;"	f
 integers	redis_hash.h	/^    *integers[10000],$/;"	m	struct:sharedObjectsStruct
+isNull	hashtest.c	/^    int isNull; $/;"	m	struct:HashNode	file:
+iterators	key.h	/^	int iterators;$/;"	m	struct:dict
 iterators	redis_hash.h	/^	int iterators;$/;"	m	struct:dict
+key	key.h	/^	char key[24];$/;"	m	struct:dictEntry
 key	redis_hash.h	/^	void *key;$/;"	m	struct:dictEntry
 keyCompare	redis_hash.h	/^	void *(*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
 keyDestructor	redis_hash.h	/^	void *(*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
@@ -104,6 +137,8 @@ loadingerr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowsc
 lpop	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
 lpush	redis_hash.h	/^    *lpush, *emptyscan, *minstring, *maxstring,$/;"	m	struct:sharedObjectsStruct
 lru	redis_hash.h	/^    unsigned lru:24; \/* lru time (relative to server.lruclock) *\/$/;"	m	struct:redisObject
+main	hashtest.c	/^int main(int argc, char *argv[])$/;"	f
+main	keyValue.c	/^int main()$/;"	f
 main	redis_hash.c	/^int main(int argc, char* argv[])$/;"	f
 main	sds.c	/^int main()$/;"	f
 masterdownerr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
@@ -116,6 +151,7 @@ minstring	redis_hash.h	/^    *lpush, *emptyscan, *minstring, *maxstring,$/;"	m	s
 multibulklen	redis_hash.h	/^    int multibulklen;       \/* number of multi bulk arguments left to read *\/$/;"	m	struct:redisClient
 name	redis_hash.h	/^	char name[20];$/;"	m	struct:redisCommand
 name	redis_hash.h	/^    robj *name;             \/* As set by CLIENT SETNAME *\/$/;"	m	struct:redisClient
+next	key.h	/^	struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
 next	redis_hash.h	/^	struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
 next	redis_hash.h	/^    struct listNode *next;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
 noautherr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
@@ -134,6 +170,7 @@ pmessagebulk	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *su
 pong	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
 populateCommandTable	redis_hash.c	/^void populateCommandTable(void) $/;"	f
 prev	redis_hash.h	/^    struct listNode *prev;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
+privdata	key.h	/^	void *privdata;$/;"	m	struct:dict
 privdata	redis_hash.h	/^	void *privdata;$/;"	m	struct:dict
 proc	redis_hash.h	/^	redisCommandProc *proc;$/;"	m	struct:redisCommand
 psubscribebulk	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
@@ -145,12 +182,11 @@ queued	redis_hash.h	/^    *colon, *nullbulk, *nullmultibulk, *queued,$/;"	m	stru
 ready_keys	redis_hash.h	/^    dict *ready_keys;           \/* Blocked keys that received a PUSH *\/$/;"	m	struct:redisDb
 redisClient	redis_hash.h	/^typedef struct redisClient {$/;"	s
 redisCommand	redis_hash.h	/^struct redisCommand {$/;"	s
-redisCommandProc	redis_hash.h	/^typedef void redisCommandProc(redisClient *c);$/;"	t
 redisDb	redis_hash.h	/^typedef struct redisDb {$/;"	s
 redisDb	redis_hash.h	/^} redisDb;$/;"	t	typeref:struct:redisDb
-redisGetkeysProc	redis_hash.h	/^typedef int *redisGetkeysProc(struct redisCommand *cmd, robj **argv, int argc, int *numkeys, int flags);$/;"	t
 redisObject	redis_hash.h	/^typedef struct redisObject {$/;"	s
 refcount	redis_hash.h	/^    int refcount;$/;"	m	struct:redisObject
+rehashidx	key.h	/^	int rehashidx;$/;"	m	struct:dict
 repl_ack_off	redis_hash.h	/^    long long repl_ack_off; \/* replication ack offset, if this is a slave *\/$/;"	m	struct:redisClient
 repl_ack_time	redis_hash.h	/^    long long repl_ack_time;\/* replication ack time, if this is a slave *\/$/;"	m	struct:redisClient
 repldbfd	redis_hash.h	/^    int repldbfd;           \/* replication DB file descriptor *\/$/;"	m	struct:redisClient
@@ -173,24 +209,30 @@ sdsnew	sds.c	/^sds sdsnew(const char* init)$/;"	f
 sdsnewlen	sds.c	/^sds sdsnewlen(const void *init, size_t initlen)$/;"	f
 select	redis_hash.h	/^    *select[10],$/;"	m	struct:sharedObjectsStruct
 sentlen	redis_hash.h	/^    int sentlen;            \/* Amount of bytes already sent in the current$/;"	m	struct:redisClient
+setkey	redis_hash.c	/^void setkey(redisDb *db, robj *key, robj *val)$/;"	f
 sflags	redis_hash.h	/^	char *sflags;$/;"	m	struct:redisCommand
 shared	redis_hash.c	/^struct sharedObjectsStruct shared;$/;"	v	typeref:struct:sharedObjectsStruct
 sharedObjectsStruct	redis_hash.h	/^struct sharedObjectsStruct {$/;"	s
+size	key.h	/^	unsigned long size;$/;"	m	struct:dictht
 size	redis_hash.h	/^	unsigned long size;$/;"	m	struct:dictht
+sizemask	key.h	/^	unsigned long sizemask;$/;"	m	struct:dictht
 sizemask	redis_hash.h	/^	unsigned long sizemask;$/;"	m	struct:dictht
 slave_listening_port	redis_hash.h	/^    int slave_listening_port; \/* As configured with: SLAVECONF listening-port *\/$/;"	m	struct:redisClient
 slowscripterr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowscripterr, *bgsaveerr,$/;"	m	struct:sharedObjectsStruct
 space	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
 subscribebulk	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *subscribebulk,$/;"	m	struct:sharedObjectsStruct
 syntaxerr	redis_hash.h	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct
+table	key.h	/^	dictEntry **table;$/;"	m	struct:dictht
 table	redis_hash.h	/^	dictEntry ** table;$/;"	m	struct:dictht
 tail	redis_hash.h	/^    listNode *tail;$/;"	m	struct:list
 type	redis_hash.h	/^	dictType *type;$/;"	m	struct:dict
 type	redis_hash.h	/^    unsigned type:4;$/;"	m	struct:redisObject
 u64	redis_hash.h	/^		uint64_t u64;$/;"	m	union:dictEntry::__anon1
 unsubscribebulk	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
+used	key.h	/^	unsigned long used;$/;"	m	struct:dictht
 used	redis_hash.h	/^	unsigned long used;$/;"	m	struct:dictht
 v	redis_hash.h	/^	} v;$/;"	m	struct:dictEntry	typeref:union:dictEntry::__anon1
+val	key.h	/^	char val[1024];$/;"	m	struct:dictEntry
 val	redis_hash.h	/^		void *val;$/;"	m	union:dictEntry::__anon1
 valDestructor	redis_hash.h	/^	void *(*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
 valDup	redis_hash.h	/^	void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
