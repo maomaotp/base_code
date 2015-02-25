@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_LINE	rot12_select.c	17;"	d	file:
+alloc_fd_state	rot12_select.c	/^alloc_fd_state(void)$/;"	f
+buffer	rot12_select.c	/^    char buffer[MAX_LINE];$/;"	m	struct:fd_state	file:
+buffer_used	rot12_select.c	/^    size_t buffer_used;$/;"	m	struct:fd_state	file:
+do_read	rot12_select.c	/^do_read(int fd, struct fd_state *state)$/;"	f
+do_write	rot12_select.c	/^do_write(int fd, struct fd_state *state)$/;"	f
+fd_state	rot12_select.c	/^struct fd_state {$/;"	s	file:
+free_fd_state	rot12_select.c	/^free_fd_state(struct fd_state *state)$/;"	f
+main	rot12_select.c	/^main(int c, char **v)$/;"	f
+make_nonblocking	rot12_select.c	/^make_nonblocking(int fd)$/;"	f
+n_written	rot12_select.c	/^    size_t n_written;$/;"	m	struct:fd_state	file:
+rot13_char	rot12_select.c	/^rot13_char(char c)$/;"	f
+run	rot12_select.c	/^run(void)$/;"	f
+write_upto	rot12_select.c	/^    size_t write_upto;$/;"	m	struct:fd_state	file:
+writing	rot12_select.c	/^    int writing;$/;"	m	struct:fd_state	file:

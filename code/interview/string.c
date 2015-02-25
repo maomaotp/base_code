@@ -79,7 +79,7 @@ void reverstr3(char* buf)
     snprintf(buf, 20, "%s %s", str2, str1);
 }
 
-//实现将字符串中的空格替换为'%20'
+//实现将字符串中的空格替换为'%20', 在一个新的内存空间
 int trasf(char *str, char * dst)
 {
 	while( *str != 0) {
@@ -120,16 +120,27 @@ int trasf2(char str[], int length)
 		length--;
 	}
 }
+//不使用循环while for go 获取字符串长度
+int mystrlen(const char *str)
+{
+	if (*str == '\0'){
+		return 0;
+	}
+	else{
+		return 1+mystrlen(str+1);
+	}
+}
 
 int main()
 {
     char str[24] = "hello world";
+	
+	int n = mystrlen(str);
+	printf("%d\n", n);
 
-	char a[40] = "we are happy.";
-	char dst[30];
 	//trasf(a, dst);
-	trasf2(a, strlen(a));
-	printf("a=%s\n", a);
+	//trasf2(a, strlen(a));
+	//printf("a=%s\n", a);
 	
     return 0;
 }

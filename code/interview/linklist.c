@@ -27,13 +27,38 @@ void insert_linklist(linklist h, const char* name, int num)
     node->a = num;
     node->next = h->next;
     h->next = node;
-
-    printf("h->next->num = %d\n", h->next->a);
 }
 
+//获取链表倒数第N个值
+linknode *find_node(const linknode *head, const int number)
+{
+	if (!head){
+		return NULL;
+	}
+	linknode *tmp_first;
+	linknode *tmp;
+	tmp_first = head->next;
+	tmp = head->next;
+
+
+	int i=0;
+	while(i++ <= number){
+		tmp_first = tmp_first->next;
+		if (tmp_first == NULL) {
+			printf("test:%d\n", i);
+			return NULL;
+		}
+	}
+	while(tmp_first->next){
+		tmp = tmp->next;	
+		tmp_first = tmp_first->next;
+	}
+	return tmp;
+}
+
+//反转链表
 void rever_linklist(linklist h)
 {
-
     linklist tmp, cur;
     int len = 0;
     
@@ -41,7 +66,7 @@ void rever_linklist(linklist h)
     h->next = NULL;
     while(cur) {
         tmp = cur;
-        cur = cur->next;;
+        cur = cur->next;
         tmp->next = h->next;
         h->next = tmp;
     }
@@ -59,12 +84,16 @@ int main()
     for(i=0; i<10; i++) {
         insert_linklist(h, buf, i);
     }
+	linklist tmp = h;
+
     rever_linklist(h);
 
+	printf("rever:");
     while(h->next) {
-        printf("node->i==%d\n", h->next->a);
+        printf("node->i=%d ", h->next->a);
         h=h->next;
     }
+	printf("\n");
 
     return 0;
 }

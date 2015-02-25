@@ -5,13 +5,22 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 CreateLinklist	linklist.c	/^linklist CreateLinklist()$/;"	f
+_node	link_find_node.c	/^typedef struct _node$/;"	s	file:
 _node	linklist.c	/^typedef struct _node$/;"	s	file:
 a	linklist.c	/^    int a;$/;"	m	struct:_node	file:
+array_merg	array.c	/^void array_merg(int a[14], int b[13])$/;"	f
 buf	linklist.c	/^    char buf[20];$/;"	m	struct:_node	file:
+create_link	link_find_node.c	/^linknode *create_link()$/;"	f
+find_node	link_find_node.c	/^linknode *find_node(const linknode *head, const int number)$/;"	f
+find_number	array.c	/^int find_number(int a[4][4], const int number)$/;"	f
+insert_link	link_find_node.c	/^void insert_link(linknode *head, int member)$/;"	f
 insert_linklist	linklist.c	/^void insert_linklist(linklist h, const char* name, int num) $/;"	f
 linklist	linklist.c	/^}linknode, *linklist;$/;"	t	typeref:struct:_node	file:
+linknode	link_find_node.c	/^}linknode;$/;"	t	typeref:struct:_node	file:
 linknode	linklist.c	/^}linknode, *linklist;$/;"	t	typeref:struct:_node	file:
+main	array.c	/^int main()$/;"	f
 main	buff.c	/^int main()$/;"	f
+main	link_find_node.c	/^int main()$/;"	f
 main	linklist.c	/^int main()$/;"	f
 main	point.c	/^int main()$/;"	f
 main	select2.c	/^int main()$/;"	f
@@ -20,13 +29,17 @@ main	string.c	/^int main()$/;"	f
 main	strlen.c	/^int main()$/;"	f
 main	strstr.c	/^int main()$/;"	f
 main	strtoint.c	/^int main()$/;"	f
-main	u_int.c	/^int main()$/;"	f
 my_strcmp	string.c	/^int my_strcmp(const char* str, const char* dst)$/;"	f
 my_strlen	string.c	/^int my_strlen(const char* buf)$/;"	f
+next	link_find_node.c	/^	struct _node *next;$/;"	m	struct:_node	typeref:struct:_node::_node	file:
 next	linklist.c	/^    struct _node *next;$/;"	m	struct:_node	typeref:struct:_node::_node	file:
+num	link_find_node.c	/^	int num;$/;"	m	struct:_node	file:
+print_link	link_find_node.c	/^void print_link(linknode *head)$/;"	f
 rever_linklist	linklist.c	/^void rever_linklist(linklist h)$/;"	f
 reverstr1	string.c	/^int reverstr1(char* buf)$/;"	f
 reverstr2	string.c	/^void reverstr2(char* buf)$/;"	f
 reverstr3	string.c	/^void reverstr3(char* buf)$/;"	f
 strtonum	strtoint.c	/^int strtonum(const char *string)$/;"	f
 test	buff.c	/^void test(char* buf)$/;"	f
+trasf	string.c	/^int trasf(char *str, char * dst)$/;"	f
+trasf2	string.c	/^int trasf2(char str[], int length)$/;"	f
