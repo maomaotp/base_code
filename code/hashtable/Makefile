@@ -1,4 +1,2 @@
-all: redis_hash.c
-	gcc -g -Wall -o keyValue keyValue.c
-clean:
-	rm -rf  *.o keyValue
+all: dict.c hash_test.c zmalloc.c
+	gcc -o hash dict.c hash_test.c zmalloc.c 

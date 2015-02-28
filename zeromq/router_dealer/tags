@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_HELPHER_H	zmqhelper.h	27;"	d
+__ZHELPERS_H_INCLUDED__	zhelpers.h	8;"	d
+client_task	asyncsrv.c	/^client_task (void *args)$/;"	f	file:
+flushall_msg_parts	zmqhelper.h	/^int flushall_msg_parts(void *skt){$/;"	f
+free_fn	zmqhelper.h	/^void free_fn(void *data, void *hint){$/;"	f
+main	asyncsrv.c	/^int main (void)$/;"	f
+main	broker.c	/^int main (void)$/;"	f
+main	client.c	/^int main (void)$/;"	f
+main	client1.c	/^int main (void)$/;"	f
+main	router_dealer.c	/^int main (void)$/;"	f
+main	worker.c	/^int main (void)$/;"	f
+randof	zhelpers.h	36;"	d
+randof	zhelpers.h	38;"	d
+recieve_msg	zhelpers.h	/^int recieve_msg(void *skt, size_t *msg_size, int64_t *more, size_t *more_size,\\$/;"	f
+recieve_msg	zmqhelper.h	/^int recieve_msg(void *skt, size_t *msg_size, int64_t *more, size_t *more_size,\\$/;"	f
+recvsnd	zmqhelper.h	/^int recvsnd(void *rcvskt, void *sndskt, size_t *msg_size, int64_t *more, size_t *more_size,\\$/;"	f
+s_clock	zhelpers.h	/^s_clock (void)$/;"	f
+s_console	zhelpers.h	/^s_console (const char *format, ...)$/;"	f
+s_dump	zhelpers.h	/^s_dump (void *socket)$/;"	f
+s_recv	zhelpers.h	/^s_recv (void *socket) {$/;"	f
+s_send	zhelpers.h	/^s_send (void *socket, char *string) {$/;"	f
+s_sendmore	zhelpers.h	/^s_sendmore (void *socket, char *string) {$/;"	f
+s_set_id	zhelpers.h	/^s_set_id (void *socket)$/;"	f
+s_sleep	zhelpers.h	/^s_sleep (int msecs)$/;"	f
+send_empty_msg	zmqhelper.h	/^int send_empty_msg(void *skt){$/;"	f
+send_msg_data	zmqhelper.h	/^int send_msg_data(void *skt,void *data,size_t size,void *freefnc,void *hint){$/;"	f
+send_msg_vsm	zmqhelper.h	/^int send_msg_vsm(void *skt, void *data, size_t size){$/;"	f
+sendmore_msg_data	zmqhelper.h	/^int sendmore_msg_data(void *skt,void *data,size_t size,void *freefnc,void *hint){$/;"	f
+sendmore_msg_vsm	zmqhelper.h	/^int sendmore_msg_vsm(void *skt, void *data, size_t size){$/;"	f
+server_task	asyncsrv.c	/^void *server_task (void *args)$/;"	f
+server_worker	asyncsrv.c	/^server_worker (void *args, zctx_t *ctx, void *pipe)$/;"	f	file:
+socket_bind	zmqhelper.h	/^void* socket_bind(void *ctx, int skt_type, char *address){$/;"	f
+socket_connect	zmqhelper.h	/^void* socket_connect(void *ctx, int skt_type, char *address){$/;"	f

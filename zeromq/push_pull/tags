@@ -1495,6 +1495,7 @@ content	zguide/bin/wdattach	/^content = open (filename, "rb").read().encode ("ba
 content	zguide/bin/wdput	/^    content = content + line$/;"	v
 content	zguide/bin/wdput	/^content = ""$/;"	v
 contents	zguide/examples/PHP/psenvsub.php	/^    $contents = $subscriber->recv();$/;"	v
+context	push.c	/^void *context;$/;"	v
 context	zguide/examples/C#/taskworker2.cs	/^        private ZmqContext context;$/;"	f	class:zguide.taskworker2.TaskWorker2	file:
 context	zguide/examples/Java/mthwserver.java	/^		private final ZMQ.Context context;		$/;"	f	class:mthwserver.WorkerThread	file:
 context	zguide/examples/Java/mtrelay.java	/^        private Context context;$/;"	f	class:mtrelay.Step1	file:
@@ -1733,6 +1734,7 @@ destroy	zguide/fragments/Java/clone-methods.java	/^    void destroy();$/;"	m	cla
 device	zguide/examples/PHP/asyncsrv.php	/^    \/\/      $device = new ZMQDevice($frontend, $backend);$/;"	v
 device	zguide/examples/PHP/msgqueue.php	/^$device = new ZMQDevice($frontend, $backend);$/;"	v
 device	zguide/examples/PHP/mtserver.php	/^$device = new ZMQDevice($clients, $workers);$/;"	v
+diff	push.c	/^struct timeval start,stop,diff;$/;"	v	typeref:struct:
 dir	zguide/bin/asciitosvg/ASCIIToSVG.php	/^              $dir = self::DIR_NE;$/;"	v
 dir	zguide/bin/asciitosvg/ASCIIToSVG.php	/^              $dir = self::DIR_SE;$/;"	v
 dir	zguide/bin/asciitosvg/ASCIIToSVG.php	/^            $dir = self::DIR_DOWN;$/;"	v
@@ -2542,10 +2544,8 @@ m_waiting	zguide/examples/C++/mdbroker.cpp	/^    std::vector<worker*> m_waiting;
 m_worker	zguide/examples/C++/mdwrkapi.hpp	/^    zmq::socket_t  *m_worker;     \/\/  Socket to broker$/;"	m	class:mdwrk
 m_workers	zguide/examples/C++/mdbroker.cpp	/^    size_t m_workers;               \/\/  How many workers we have$/;"	m	struct:service	file:
 m_workers	zguide/examples/C++/mdbroker.cpp	/^    std::map<std::string, worker*> m_workers;    \/\/  Hash of known workers$/;"	m	class:broker	file:
-main	client.c	/^int main (int argc, char* argv[])$/;"	f
 main	pull.c	/^int main (void)$/;"	f
 main	push.c	/^int main (void)$/;"	f
-main	server.c	/^int main (void)$/;"	f
 main	zguide/articles/src/multithreading/hello.c	/^void main (void) $/;"	f
 main	zguide/articles/src/multithreading/testit.c	/^int main () {$/;"	f
 main	zguide/articles/src/multithreading/threads.c	/^int main ()$/;"	f
@@ -3673,6 +3673,7 @@ recv_client	zguide/examples/Tcl/tripping.tcl	/^	proc recv_client {} {$/;"	p
 recv_kvmsg	zguide/examples/Tcl/clonecli3.tcl	/^proc recv_kvmsg {pub sub} {$/;"	p
 recv_kvmsg	zguide/examples/Tcl/clonecli4.tcl	/^proc recv_kvmsg {pub sub} {$/;"	p
 recv_kvmsg	zguide/examples/Tcl/clonecli5.tcl	/^proc recv_kvmsg {pub sub} {$/;"	p
+recv_result	push.c	/^void *recv_result(void *arg)$/;"	f
 recv_state	zguide/examples/Python/bstar.py	/^    def recv_state(self, msg):$/;"	m	class:BinaryStar
 ref	zguide/bin/asciitosvg/ASCIIToSVG.php	/^    $ref = '';$/;"	v
 ref	zguide/bin/asciitosvg/a2s52.php	/^    $ref = '';$/;"	v
@@ -4497,6 +4498,7 @@ socks	zguide/examples/Python/spqueue.py	/^        socks = dict(poll_workers.poll
 socks	zguide/examples/Python/taskwork2.py	/^    socks = dict(poller.poll())$/;"	v
 spqueue	zguide/examples/Java/spqueue.java	/^public class spqueue {$/;"	c
 spworker	zguide/examples/Java/spworker.java	/^public class spworker$/;"	c
+start	push.c	/^struct timeval start,stop,diff;$/;"	v	typeref:struct:timeval
 start	zguide/examples/C++/asyncsrv.cpp	/^    void start() {$/;"	f	class:client_task
 start	zguide/examples/Java/bstar.java	/^    public int start()$/;"	m	class:bstar
 start	zguide/examples/PHP/flclient2.php	/^$start = time();$/;"	v
@@ -4558,6 +4560,7 @@ step2	zguide/examples/PHP/mtrelay.php	/^function step2()$/;"	f
 step2	zguide/examples/Perl/mtrelay.pl	/^sub step2 {$/;"	s
 step2	zguide/examples/Python/mtrelay.py	/^def step2(context=None):$/;"	f
 step2	zguide/examples/Ruby/mtrelay.rb	/^def step2(context)$/;"	f
+stop	push.c	/^struct timeval start,stop,diff;$/;"	v	typeref:struct:
 stop	zguide/examples/Python/asyncrrhandlers.py	/^    def stop(self):$/;"	m	class:Server
 stop	zguide/examples/Python/interface.py	/^    def stop(self):$/;"	m	class:Interface
 stop	zguide/examples/Python/interface.py	/^    def stop(self):$/;"	m	class:InterfaceAgent
@@ -4816,6 +4819,7 @@ timeout	zguide/examples/PHP/mdcliapi2.php	/^    private $timeout;	\/\/  Request 
 timeout	zguide/examples/Python/mdcliapi.py	/^    timeout = 2500$/;"	v	class:MajorDomoClient
 timeout	zguide/examples/Python/mdcliapi2.py	/^    timeout = 2500$/;"	v	class:MajorDomoClient
 timeout	zguide/examples/Python/mdwrkapi.py	/^    timeout = 2500 # poller timeout$/;"	v	class:MajorDomoWorker
+timeval_subtract	push.c	/^int timeval_subtract(struct timeval *result, struct timeval *x, struct timeval*y)$/;"	f
 titanic	zguide/examples/Java/titanic.java	/^public class titanic$/;"	c
 titanic_close	zguide/examples/C/titanic.c	/^titanic_close (void *context)$/;"	f	file:
 titanic_close	zguide/examples/PHP/titanic.php	/^function titanic_close()$/;"	f
@@ -5001,6 +5005,7 @@ work	zguide/examples/Node.js/taskvent.js	/^function work() {$/;"	f
 work	zguide/examples/Python/rtdealer.py	/^    work = b"This is the workload"$/;"	v
 work	zguide/examples/Tcl/syncsub_callback.tcl	/^proc work {s} {$/;"	p
 work	zguide/examples/Tcl/taskwork2_callback.tcl	/^proc work {s} {$/;"	p
+work_task	push.c	/^void *work_task(void* arg)$/;"	f
 worker	zguide/examples/C++/mdbroker.cpp	/^    worker(std::string identity, service * service = 0, int64_t expiry = 0) {$/;"	f	struct:worker
 worker	zguide/examples/C++/mdbroker.cpp	/^struct worker$/;"	s	file:
 worker	zguide/examples/C/mdwrkapi.c	/^    void *worker;               \/\/  Socket to broker$/;"	m	struct:_mdwrk_t	file:

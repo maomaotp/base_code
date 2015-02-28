@@ -10,6 +10,7 @@
 #include <direct.h>
 #include "zmq.h"
 #include "zmq_utils.h" 
+#include <process.h>
 
 extern "C" {
 #include "cjson.c"
@@ -58,7 +59,7 @@ static int n_bgmusic = 11;
 
 static SpeakerInfo fixed_speakers[8] =
 {
-	{ "LHD", "CHS", "M" },
+	{ "LHD", "CHS", "M" }, 
 	{ "WH", "CHS", "F" },
 	{ "QJCS", "CHS", "F" },
 	{ "YUJ", "CHS", "F" },
@@ -66,7 +67,6 @@ static SpeakerInfo fixed_speakers[8] =
 	{ "Roger", "ENG", "M" },
 	{ "Nancy", "ENG", "F" },
 	{ "John", "ENG", "M" },
-
 };
 static SpeakerInfo *speaker_list = fixed_speakers;
 static int n_speakers = 8;
@@ -105,7 +105,7 @@ void set_mp3_file_name(char* filename, size_t fn_size) {
 	char file_time[20];
 
 	strftime(file, sizeof(file), "%m%d", localtime(&t));
-	strftime(file_time, sizeof(file_time), "%m%d%S", localtime(&t));
+	strftime(file_time, sizeof(file_time), "%H%M%S", localtime(&t));
 
 	sprintf(filename, "%s/%s", file, file_time);
 	sprintf(file_pass, "%s\\%s", VOISE_PWD, file);
@@ -134,7 +134,7 @@ static void stop_tts_service() {
 
 static char *s_recv(void *socket) {
 	char buffer[2048];
-	int size = zmq_recv(socket, buffer, 2047, 0);
+	int size = zmq_recv(socket, buffer, 2000, 0);
 	buffer[size] = 0;
 	return strdup(buffer);
 }
@@ -190,10 +190,6 @@ static int send_url_voice(int n_segs, char *file_name, char *res_json_t) {
 	return RETURN_SUCCESS;
 }
 
-static int get_speak_name(char *language) {
-	return (strncmp(language, "CHS", 3) == 0) ? 1 : 4;
-}
-
 static int set_speach_parameter(char *recv_buf, CoreTTSTask* task) {
 	cJSON *root;
 
@@ -209,18 +205,19 @@ static int set_speach_parameter(char *recv_buf, CoreTTSTask* task) {
 	}
 	cJSON *text = cJSON_GetObjectItem(root, "text");
 
-	cJSON *language = cJSON_GetObjectItem(format, "language");
-	//cJSON *name = cJSON_GetObjectItem(format, "Name");
+	//cJSON *language = cJSON_GetObjectItem(format, "language");
+	cJSON *speaker = cJSON_GetObjectItem(format, "speaker");
 	cJSON *volume = cJSON_GetObjectItem(format, "Volume");
 	cJSON *speed = cJSON_GetObjectItem(format, "Speed");
 	cJSON *pitch = cJSON_GetObjectItem(format, "Pitch");
 	cJSON *background = cJSON_GetObjectItem(format, "background_music");
-	if (text == NULL || language == NULL) {
+	if (text == NULL || text->valuestring == NULL) {
+		s_return_err(resp, 1003);
 		return RETURN_ERROR;
 	}
 
-	//获取发音者name
-	int index = get_speak_name(language->valuestring);
+	int index = speaker ? speaker->valueint : 1;
+	
 	//背景音乐
 	int back_gd = (background) ? background->valueint : 3;
 
@@ -232,13 +229,15 @@ static int set_speach_parameter(char *recv_buf, CoreTTSTask* task) {
 		return RETURN_ERROR;
 	}
 
+	//printf("speaker_info->name == %s  index=%d\n\n\n\n\n", speaker_info->name, index);
+
 	string gb_txt;
 	gb_txt = FORCE_UTF8 ? UTF8_To_string(text->valuestring) : text->valuestring;
 
 	task->SetGender( speaker_info->gender );
-	task->SetLanguage( language ? language->valuestring : "ENG" );
+	task->SetLanguage(speaker_info->language);
 	task->SetName( speaker_info->name );
-	task->SetVolume( volume ? volume->valueint: 3);
+	task->SetVolume( volume ? volume->valueint : 3);
 	task->SetSpeed( speed ? speed->valueint : 3);
 	task->SetPitch( pitch ? pitch->valueint : 3);
 	task->SetBGMusic(bgmusic, -1);
@@ -253,7 +252,7 @@ static int set_speach_parameter(char *recv_buf, CoreTTSTask* task) {
 	return RETURN_SUCCESS;
 }
 
-void parse_zmq_task(){
+void handle_zmq_task(){
 	char wav_path[100];
 	char mp3_path[100];
 
@@ -263,7 +262,7 @@ void parse_zmq_task(){
 		return;
 	}
 
-	char *recv_buf = (char *)malloc(2048);
+	char *recv_buf = (char *)malloc(3000);
 	if (!recv_buf) {
 		printf("malloc error");
 		return;
@@ -298,6 +297,7 @@ void parse_zmq_task(){
 
 		//发送URL,构建json格式数据
 		if (send_url_voice(n_segs, file_name, res_json_t) != 0) {
+			s_return_err(resp, 1006);
 			continue;
 		}
 
@@ -305,26 +305,35 @@ void parse_zmq_task(){
 
 		if (n_segs > 0 && ret_code == RET_SUCCEED){
 			for (int i = 0; i < n_segs; i++){
-
 				//循环获取合成的语音片段
 				WavRecord *wav = task->SequentialTTS_GetSegment(i, 5, ret_code);
-				if (!wav) continue;
+				if (!wav) {
+					s_return_err(resp, 1007);
+					continue;
+				}
 				if (ret_code == RET_SUCCEED){
 					//将合成的每个片段生成MP3文件
 					sprintf(wav_path, "%s\\%s_%d.wav", VOISE_PWD, file_name, i + 1);
 					sprintf(mp3_path, "%s\\%s_%d.mp3", VOISE_PWD, file_name, i + 1);
 
 					WriteWave(wav_path, wav->n_samples, (short *)wav->wav_buff);
+
 					//wav转mp3
 					Wav2MP3(wav_path, mp3_path);
 					//删除wav文件
 					remove(wav_path);
 					//生成第一个文件片段后发送响应消息
-					if (i == 1) {
+					if (i == 0) {
 						int send_size = zmq_send(resp, res_json_t, strlen(res_json_t) + 1, 0);
 					}
 				}
+				else{
+					s_return_err(resp, 1007);
+				}
 			}
+		}
+		else {
+			s_return_err(resp, 1008);
 		}
 
 		task->SequentialTTS_Exit();
@@ -333,6 +342,9 @@ void parse_zmq_task(){
 
 	free(recv_buf);
 	free(res_json_t);
+}
+
+unsigned int __stdcall handle_http_task(void *param) {
 }
 
 int main(int argc, _TCHAR* argv[])
@@ -346,7 +358,7 @@ int main(int argc, _TCHAR* argv[])
 	}
 
 	//接收任务
-	parse_zmq_task();
+	handle_zmq_task();
 
 	//关闭tts引擎
 	stop_tts_service();

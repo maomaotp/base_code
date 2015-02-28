@@ -4,238 +4,169 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-DataType	hashtest.c	4;"	d	file:
-HashNode	hashtest.c	/^typedef struct HashNode    $/;"	s	file:
-HashTable	hashtest.c	/^}HashTable;$/;"	t	typeref:struct:HashNode	file:
-M	hashtest.c	5;"	d	file:
-REDIS_CMD_ADMIN	redis_hash.h	11;"	d
-REDIS_CMD_ASKING	redis_hash.h	19;"	d
-REDIS_CMD_DENYOOM	redis_hash.h	9;"	d
-REDIS_CMD_FAST	redis_hash.h	20;"	d
-REDIS_CMD_LOADING	redis_hash.h	16;"	d
-REDIS_CMD_NOSCRIPT	redis_hash.h	13;"	d
-REDIS_CMD_NOT_USED_1	redis_hash.h	10;"	d
-REDIS_CMD_PUBSUB	redis_hash.h	12;"	d
-REDIS_CMD_RANDOM	redis_hash.h	14;"	d
-REDIS_CMD_READONLY	redis_hash.h	8;"	d
-REDIS_CMD_SKIP_MONITOR	redis_hash.h	18;"	d
-REDIS_CMD_SORT_FOR_SCRIPT	redis_hash.h	15;"	d
-REDIS_CMD_STALE	redis_hash.h	17;"	d
-REDIS_CMD_WRITE	redis_hash.h	7;"	d
-REDIS_ERR	redis_hash.h	5;"	d
-REDIS_OK	redis_hash.h	4;"	d
-_HEAD_DICT_H	key.h	2;"	d
-_HEAD_SDS_H	sds.h	2;"	d
-_REDIS_HASH_H	redis_hash.h	2;"	d
-_dictInit	keyValue.c	/^int _dictInit(dict *d, void *privDataPtr)$/;"	f
-_dictInit	redis_hash.c	/^static void _dictInit(dict *d, dictType *type, void *privDataPtr)$/;"	f	file:
-_dictKeyIndex	redis_hash.c	/^static int _dictKeyIndex(dict *d, const void *key)$/;"	f	file:
-_dictReset	keyValue.c	/^static void _dictReset(dictht *ht)$/;"	f	file:
-argc	redis_hash.h	/^    int argc;$/;"	m	struct:redisClient
-argv	redis_hash.h	/^    robj **argv;$/;"	m	struct:redisClient
-arity	redis_hash.h	/^	int arity;$/;"	m	struct:redisCommand
-authenticated	redis_hash.h	/^    int authenticated;      \/* when requirepass is non-NULL *\/$/;"	m	struct:redisClient
-avg_ttl	redis_hash.h	/^    long long avg_ttl;          \/* Average TTL, just for stats *\/$/;"	m	struct:redisDb
-bgsaveerr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowscripterr, *bgsaveerr,$/;"	m	struct:sharedObjectsStruct
-blocking_keys	redis_hash.h	/^    dict *blocking_keys;        \/* Keys with clients waiting for data (BLPOP) *\/$/;"	m	struct:redisDb
-buf	redis_hash.h	/^    char buf[16*1024];$/;"	m	struct:redisClient
-buf	sds.h	/^	char buf[];$/;"	m	struct:sdshdr
-bufpos	redis_hash.h	/^    int bufpos;$/;"	m	struct:redisClient
-bulkhdr	redis_hash.h	/^    *bulkhdr[32];  \/* "$<value>\\r\\n" *\/$/;"	m	struct:sharedObjectsStruct
-bulklen	redis_hash.h	/^    long bulklen;           \/* length of bulk argument in multi bulk request *\/$/;"	m	struct:redisClient
-calls	redis_hash.h	/^	long long microseconds, calls;$/;"	m	struct:redisCommand
-cmd	redis_hash.h	/^    struct redisCommand *cmd, *lastcmd;$/;"	m	struct:redisClient	typeref:struct:redisClient::redisCommand
-cnegone	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-colon	redis_hash.h	/^    *colon, *nullbulk, *nullmultibulk, *queued,$/;"	m	struct:sharedObjectsStruct
-commandTableDictType	redis_hash.c	/^dictType commandTableDictType = {$/;"	v
-cone	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-crlf	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-ctime	redis_hash.h	/^    time_t ctime;           \/* Client creation time *\/$/;"	m	struct:redisClient
-czero	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-data	hashtest.c	/^	DataType data;  $/;"	m	struct:HashNode	file:
-db	redis_hash.h	/^    redisDb *db;$/;"	m	struct:redisClient
-dbAdd	redis_hash.c	/^void dbAdd(redisDb *db, robj *key, robj *val)$/;"	f
-del	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
-dict	key.h	/^typedef struct dict {$/;"	s
-dict	key.h	/^} dict;$/;"	t	typeref:struct:dict
-dict	redis_hash.h	/^    dict *dict;                 \/* The keyspace for this DB *\/$/;"	m	struct:redisDb
-dict	redis_hash.h	/^typedef struct dict {$/;"	s
-dict	redis_hash.h	/^} dict;$/;"	t	typeref:struct:dict
-dictAdd	keyValue.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
-dictAdd	redis_hash.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
-dictAddRaw	keyValue.c	/^dictEntry *dictAddRaw(dict *d, void *key)$/;"	f
-dictAddRaw	redis_hash.c	/^dictEntry *dictAddRaw(dict *d, void *key)$/;"	f
-dictCompareKeys	redis_hash.h	22;"	d
-dictCreate	keyValue.c	/^dict *dictCreate(void *privDataPtr)$/;"	f
-dictCreate	redis_hash.c	/^dict *dictCreate(dictType *type, void *privDataPtr)$/;"	f
-dictEntry	key.h	/^typedef struct dictEntry {$/;"	s
-dictEntry	key.h	/^}dictEntry;$/;"	t	typeref:struct:dictEntry
-dictEntry	redis_hash.h	/^typedef struct dictEntry {$/;"	s
-dictEntry	redis_hash.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
-dictExpand	keyValue.c	/^static int dictExpand(dict *d, unsigned long size)$/;"	f	file:
-dictHashKey	keyValue.c	/^unsigned int dictHashKey(const void* key, int len) $/;"	f
-dictHashKey	redis_hash.c	/^unsigned int dictHashKey(const unsigned char* buf, int len) $/;"	f
-dictKeyIndex	keyValue.c	/^static int dictKeyIndex(dict *d, const char *key)$/;"	f	file:
-dictSetKey	key.h	4;"	d
-dictSetKey	redis_hash.h	27;"	d
-dictSetVal	key.h	9;"	d
-dictSetVal	redis_hash.h	34;"	d
-dictType	redis_hash.h	/^typedef struct dictType {$/;"	s
-dictType	redis_hash.h	/^} dictType;$/;"	t	typeref:struct:dictType
-dict_hash_function_seed	redis_hash.c	/^static uint32_t dict_hash_function_seed = 5381;$/;"	v	file:
-dictht	key.h	/^typedef struct dictht {$/;"	s
-dictht	key.h	/^}dictht;$/;"	t	typeref:struct:dictht
-dictht	redis_hash.h	/^typedef struct dictht {$/;"	s
-dictht	redis_hash.h	/^} dictht;$/;"	t	typeref:struct:dictht
-dictid	redis_hash.h	/^    int dictid;$/;"	m	struct:redisClient
-dup	redis_hash.h	/^    void *(*dup)(void *ptr);$/;"	m	struct:list
-emptybulk	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-emptymultibulk	redis_hash.h	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct
-emptyscan	redis_hash.h	/^    *lpush, *emptyscan, *minstring, *maxstring,$/;"	m	struct:sharedObjectsStruct
-encoding	redis_hash.h	/^    unsigned encoding:4;$/;"	m	struct:redisObject
-err	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-execaborterr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
-expires	redis_hash.h	/^    dict *expires;              \/* Timeout of keys with a timeout set *\/$/;"	m	struct:redisDb
-fd	redis_hash.h	/^    int fd;$/;"	m	struct:redisClient
-find	hashtest.c	/^int find(DataType key)      \/\/进行查找 $/;"	f
-firstkey	redis_hash.h	/^	int firstkey;$/;"	m	struct:redisCommand
-flags	redis_hash.h	/^	int flags;$/;"	m	struct:redisCommand
-flags	redis_hash.h	/^    int flags;              \/* REDIS_SLAVE | REDIS_MONITOR | REDIS_MULTI ... *\/$/;"	m	struct:redisClient
-free	redis_hash.h	/^    void (*free)(void *ptr);$/;"	m	struct:list
-free	sds.h	/^	int free;$/;"	m	struct:sdshdr
-getHashAddress	hashtest.c	/^int getHashAddress(DataType key)    \/\/Hash函数 $/;"	f
-getkeys_proc	redis_hash.h	/^	redisGetKeysProc *getkeys_proc;$/;"	m	struct:redisCommand
-hashFunction	redis_hash.h	/^	unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
-hashTable	hashtest.c	/^HashTable hashTable[M];$/;"	v
-head	redis_hash.h	/^    listNode *head;$/;"	m	struct:list
-ht	key.h	/^	dictht ht;$/;"	m	struct:dict
-ht	redis_hash.h	/^	dictht ht;$/;"	m	struct:dict
-id	redis_hash.h	/^    int id;$/;"	m	struct:redisDb
-id	redis_hash.h	/^    uint64_t id;            \/* Client incremental unique ID. *\/$/;"	m	struct:redisClient
-initHashTable	hashtest.c	/^void initHashTable()$/;"	f
-insert	hashtest.c	/^int insert(DataType key)    \/\/向hash表中插入元素 $/;"	f
-integers	redis_hash.h	/^    *integers[10000],$/;"	m	struct:sharedObjectsStruct
-isNull	hashtest.c	/^    int isNull; $/;"	m	struct:HashNode	file:
-iterators	key.h	/^	int iterators;$/;"	m	struct:dict
-iterators	redis_hash.h	/^	int iterators;$/;"	m	struct:dict
-key	key.h	/^	char key[24];$/;"	m	struct:dictEntry
-key	redis_hash.h	/^	void *key;$/;"	m	struct:dictEntry
-keyCompare	redis_hash.h	/^	void *(*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
-keyDestructor	redis_hash.h	/^	void *(*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
-keyDup	redis_hash.h	/^	void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
-keystep	redis_hash.h	/^	int keystep;$/;"	m	struct:redisCommand
-lastcmd	redis_hash.h	/^    struct redisCommand *cmd, *lastcmd;$/;"	m	struct:redisClient	typeref:struct:redisClient::
-lastinteraction	redis_hash.h	/^    time_t lastinteraction; \/* time of the last interaction, used for timeout *\/$/;"	m	struct:redisClient
-lastkey	redis_hash.h	/^	int lastkey;$/;"	m	struct:redisCommand
-len	redis_hash.h	/^    unsigned long len;$/;"	m	struct:list
-len	sds.h	/^	int len;$/;"	m	struct:sdshdr
-list	redis_hash.h	/^typedef struct list {$/;"	s
-list	redis_hash.h	/^} list;$/;"	t	typeref:struct:list
-listNode	redis_hash.h	/^typedef struct listNode {$/;"	s
-listNode	redis_hash.h	/^} listNode;$/;"	t	typeref:struct:listNode
-loadingerr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowscripterr, *bgsaveerr,$/;"	m	struct:sharedObjectsStruct
-lpop	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
-lpush	redis_hash.h	/^    *lpush, *emptyscan, *minstring, *maxstring,$/;"	m	struct:sharedObjectsStruct
-lru	redis_hash.h	/^    unsigned lru:24; \/* lru time (relative to server.lruclock) *\/$/;"	m	struct:redisObject
-main	hashtest.c	/^int main(int argc, char *argv[])$/;"	f
-main	keyValue.c	/^int main()$/;"	f
-main	redis_hash.c	/^int main(int argc, char* argv[])$/;"	f
-main	sds.c	/^int main()$/;"	f
-masterdownerr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
-match	redis_hash.h	/^    int (*match)(void *ptr, void *key);$/;"	m	struct:list
-maxstring	redis_hash.h	/^    *lpush, *emptyscan, *minstring, *maxstring,$/;"	m	struct:sharedObjectsStruct
-mbulkhdr	redis_hash.h	/^    *mbulkhdr[32], \/* "*<value>\\r\\n" *\/$/;"	m	struct:sharedObjectsStruct
-messagebulk	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *subscribebulk,$/;"	m	struct:sharedObjectsStruct
-microseconds	redis_hash.h	/^	long long microseconds, calls;$/;"	m	struct:redisCommand
-minstring	redis_hash.h	/^    *lpush, *emptyscan, *minstring, *maxstring,$/;"	m	struct:sharedObjectsStruct
-multibulklen	redis_hash.h	/^    int multibulklen;       \/* number of multi bulk arguments left to read *\/$/;"	m	struct:redisClient
-name	redis_hash.h	/^	char name[20];$/;"	m	struct:redisCommand
-name	redis_hash.h	/^    robj *name;             \/* As set by CLIENT SETNAME *\/$/;"	m	struct:redisClient
-next	key.h	/^	struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
-next	redis_hash.h	/^	struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
-next	redis_hash.h	/^    struct listNode *next;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
-noautherr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
-nokeyerr	redis_hash.h	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct
-noreplicaserr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
-noscripterr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowscripterr, *bgsaveerr,$/;"	m	struct:sharedObjectsStruct
-nullbulk	redis_hash.h	/^    *colon, *nullbulk, *nullmultibulk, *queued,$/;"	m	struct:sharedObjectsStruct
-nullmultibulk	redis_hash.h	/^    *colon, *nullbulk, *nullmultibulk, *queued,$/;"	m	struct:sharedObjectsStruct
-obuf_soft_limit_reached_time	redis_hash.h	/^    time_t obuf_soft_limit_reached_time;$/;"	m	struct:redisClient
-ok	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-oomerr	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *subscribebulk,$/;"	m	struct:sharedObjectsStruct
-outofrangeerr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowscripterr, *bgsaveerr,$/;"	m	struct:sharedObjectsStruct
-peerid	redis_hash.h	/^    sds peerid;             \/* Cached peer ID. *\/$/;"	m	struct:redisClient
-plus	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *subscribebulk,$/;"	m	struct:sharedObjectsStruct
-pmessagebulk	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *subscribebulk,$/;"	m	struct:sharedObjectsStruct
-pong	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-populateCommandTable	redis_hash.c	/^void populateCommandTable(void) $/;"	f
-prev	redis_hash.h	/^    struct listNode *prev;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
-privdata	key.h	/^	void *privdata;$/;"	m	struct:dict
-privdata	redis_hash.h	/^	void *privdata;$/;"	m	struct:dict
-proc	redis_hash.h	/^	redisCommandProc *proc;$/;"	m	struct:redisCommand
-psubscribebulk	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
-ptr	redis_hash.h	/^    void *ptr;$/;"	m	struct:redisObject
-punsubscribebulk	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
-querybuf	redis_hash.h	/^    sds querybuf;$/;"	m	struct:redisClient
-querybuf_peak	redis_hash.h	/^    size_t querybuf_peak;   \/* Recent (100ms or more) peak of querybuf size *\/$/;"	m	struct:redisClient
-queued	redis_hash.h	/^    *colon, *nullbulk, *nullmultibulk, *queued,$/;"	m	struct:sharedObjectsStruct
-ready_keys	redis_hash.h	/^    dict *ready_keys;           \/* Blocked keys that received a PUSH *\/$/;"	m	struct:redisDb
-redisClient	redis_hash.h	/^typedef struct redisClient {$/;"	s
-redisCommand	redis_hash.h	/^struct redisCommand {$/;"	s
-redisDb	redis_hash.h	/^typedef struct redisDb {$/;"	s
-redisDb	redis_hash.h	/^} redisDb;$/;"	t	typeref:struct:redisDb
-redisObject	redis_hash.h	/^typedef struct redisObject {$/;"	s
-refcount	redis_hash.h	/^    int refcount;$/;"	m	struct:redisObject
-rehashidx	key.h	/^	int rehashidx;$/;"	m	struct:dict
-repl_ack_off	redis_hash.h	/^    long long repl_ack_off; \/* replication ack offset, if this is a slave *\/$/;"	m	struct:redisClient
-repl_ack_time	redis_hash.h	/^    long long repl_ack_time;\/* replication ack time, if this is a slave *\/$/;"	m	struct:redisClient
-repldbfd	redis_hash.h	/^    int repldbfd;           \/* replication DB file descriptor *\/$/;"	m	struct:redisClient
-repldboff	redis_hash.h	/^    off_t repldboff;        \/* replication DB file offset *\/$/;"	m	struct:redisClient
-repldbsize	redis_hash.h	/^    off_t repldbsize;       \/* replication DB file size *\/$/;"	m	struct:redisClient
-reploff	redis_hash.h	/^    long long reploff;      \/* replication offset if this is our master *\/$/;"	m	struct:redisClient
-replrunid	redis_hash.h	/^    char replrunid[41]; \/* master run id if this is a master *\/$/;"	m	struct:redisClient
-replstate	redis_hash.h	/^    int replstate;          \/* replication state if this is a slave *\/$/;"	m	struct:redisClient
-reply	redis_hash.h	/^    list *reply;$/;"	m	struct:redisClient
-reply_bytes	redis_hash.h	/^    unsigned long reply_bytes; \/* Tot bytes of objects in reply list *\/$/;"	m	struct:redisClient
-reqtype	redis_hash.h	/^    int reqtype;$/;"	m	struct:redisClient
-robj	redis_hash.h	/^} robj;$/;"	t	typeref:struct:redisObject
-roslaveerr	redis_hash.h	/^    *masterdownerr, *roslaveerr, *execaborterr, *noautherr, *noreplicaserr,$/;"	m	struct:sharedObjectsStruct
-rpop	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
-s64	redis_hash.h	/^		int64_t s64;$/;"	m	union:dictEntry::__anon1
-sameobjecterr	redis_hash.h	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct
-sds	sds.c	/^typedef char *sds;$/;"	t	file:
-sdshdr	sds.h	/^struct sdshdr {$/;"	s
-sdsnew	sds.c	/^sds sdsnew(const char* init)$/;"	f
-sdsnewlen	sds.c	/^sds sdsnewlen(const void *init, size_t initlen)$/;"	f
-select	redis_hash.h	/^    *select[10],$/;"	m	struct:sharedObjectsStruct
-sentlen	redis_hash.h	/^    int sentlen;            \/* Amount of bytes already sent in the current$/;"	m	struct:redisClient
-setkey	redis_hash.c	/^void setkey(redisDb *db, robj *key, robj *val)$/;"	f
-sflags	redis_hash.h	/^	char *sflags;$/;"	m	struct:redisCommand
-shared	redis_hash.c	/^struct sharedObjectsStruct shared;$/;"	v	typeref:struct:sharedObjectsStruct
-sharedObjectsStruct	redis_hash.h	/^struct sharedObjectsStruct {$/;"	s
-size	key.h	/^	unsigned long size;$/;"	m	struct:dictht
-size	redis_hash.h	/^	unsigned long size;$/;"	m	struct:dictht
-sizemask	key.h	/^	unsigned long sizemask;$/;"	m	struct:dictht
-sizemask	redis_hash.h	/^	unsigned long sizemask;$/;"	m	struct:dictht
-slave_listening_port	redis_hash.h	/^    int slave_listening_port; \/* As configured with: SLAVECONF listening-port *\/$/;"	m	struct:redisClient
-slowscripterr	redis_hash.h	/^    *outofrangeerr, *noscripterr, *loadingerr, *slowscripterr, *bgsaveerr,$/;"	m	struct:sharedObjectsStruct
-space	redis_hash.h	/^    robj *crlf, *ok, *err, *emptybulk, *czero, *cone, *cnegone, *pong, *space,$/;"	m	struct:sharedObjectsStruct
-subscribebulk	redis_hash.h	/^    *oomerr, *plus, *messagebulk, *pmessagebulk, *subscribebulk,$/;"	m	struct:sharedObjectsStruct
-syntaxerr	redis_hash.h	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct
-table	key.h	/^	dictEntry **table;$/;"	m	struct:dictht
-table	redis_hash.h	/^	dictEntry ** table;$/;"	m	struct:dictht
-tail	redis_hash.h	/^    listNode *tail;$/;"	m	struct:list
-type	redis_hash.h	/^	dictType *type;$/;"	m	struct:dict
-type	redis_hash.h	/^    unsigned type:4;$/;"	m	struct:redisObject
-u64	redis_hash.h	/^		uint64_t u64;$/;"	m	union:dictEntry::__anon1
-unsubscribebulk	redis_hash.h	/^    *unsubscribebulk, *psubscribebulk, *punsubscribebulk, *del, *rpop, *lpop,$/;"	m	struct:sharedObjectsStruct
-used	key.h	/^	unsigned long used;$/;"	m	struct:dictht
-used	redis_hash.h	/^	unsigned long used;$/;"	m	struct:dictht
-v	redis_hash.h	/^	} v;$/;"	m	struct:dictEntry	typeref:union:dictEntry::__anon1
-val	key.h	/^	char val[1024];$/;"	m	struct:dictEntry
-val	redis_hash.h	/^		void *val;$/;"	m	union:dictEntry::__anon1
-valDestructor	redis_hash.h	/^	void *(*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
-valDup	redis_hash.h	/^	void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
-value	redis_hash.h	/^    void *value;$/;"	m	struct:listNode
-watched_keys	redis_hash.h	/^    dict *watched_keys;         \/* WATCHED keys for MULTI\/EXEC CAS *\/$/;"	m	struct:redisDb
-wrongtypeerr	redis_hash.h	/^    *emptymultibulk, *wrongtypeerr, *nokeyerr, *syntaxerr, *sameobjecterr,$/;"	m	struct:sharedObjectsStruct
+DICT_ERR	dict.h	45;"	d
+DICT_HT_INITIAL_SIZE	dict.h	154;"	d
+DICT_NOTUSED	dict.h	48;"	d
+DICT_OK	dict.h	44;"	d
+HAVE_MALLOC_SIZE	zmalloc.h	42;"	d
+HAVE_MALLOC_SIZE	zmalloc.h	52;"	d
+HAVE_MALLOC_SIZE	zmalloc.h	60;"	d
+PREFIX_SIZE	zmalloc.c	48;"	d	file:
+PREFIX_SIZE	zmalloc.c	51;"	d	file:
+PREFIX_SIZE	zmalloc.c	53;"	d	file:
+ZMALLOC_LIB	zmalloc.h	39;"	d
+ZMALLOC_LIB	zmalloc.h	49;"	d
+ZMALLOC_LIB	zmalloc.h	65;"	d
+_BSD_SOURCE	fmacros.h	33;"	d
+_FILE_OFFSET_BITS	fmacros.h	46;"	d
+_GNU_SOURCE	fmacros.h	36;"	d
+_LARGEFILE_SOURCE	fmacros.h	45;"	d
+_REDIS_FMACRO_H	fmacros.h	31;"	d
+_XOPEN_SOURCE	fmacros.h	40;"	d
+_XOPEN_SOURCE	fmacros.h	42;"	d
+__DICT_H	dict.h	39;"	d
+__ZMALLOC_H	zmalloc.h	32;"	d
+__str	zmalloc.h	36;"	d
+__xstr	zmalloc.h	35;"	d
+_dictClear	dict.c	/^int _dictClear(dict *d, dictht *ht)$/;"	f
+_dictExpandIfNeeded	dict.c	/^static int _dictExpandIfNeeded(dict *d)$/;"	f	file:
+_dictInit	dict.c	/^int _dictInit(dict *d, dictType *type,$/;"	f
+_dictKeyIndex	dict.c	/^static int _dictKeyIndex(dict *d, const void *key)$/;"	f	file:
+_dictNextPower	dict.c	/^static unsigned long _dictNextPower(unsigned long size)$/;"	f	file:
+_dictRehashStep	dict.c	/^static void _dictRehashStep(dict *d) {$/;"	f	file:
+_dictReset	dict.c	/^static void _dictReset(dictht *ht)$/;"	f	file:
+buf	hash_test.c	/^	char buf[];$/;"	m	struct:sdshdr	file:
+calloc	zmalloc.c	60;"	d	file:
+calloc	zmalloc.c	65;"	d	file:
+d	dict.h	/^    dict *d;                $/;"	m	struct:dictIterator
+dbDictType	hash_test.c	/^dictType dbDictType = {$/;"	v
+dict	dict.h	/^typedef struct dict {$/;"	s
+dict	dict.h	/^} dict;$/;"	t	typeref:struct:dict
+dictAdd	dict.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
+dictAddRaw	dict.c	/^dictEntry *dictAddRaw(dict *d, void *key)$/;"	f
+dictCompareKeys	dict.h	185;"	d
+dictCreate	dict.c	/^dict *dictCreate(dictType *type,$/;"	f
+dictDelete	dict.c	/^int dictDelete(dict *ht, const void *key) {$/;"	f
+dictDeleteNoFree	dict.c	/^int dictDeleteNoFree(dict *ht, const void *key) {$/;"	f
+dictDisableResize	dict.c	/^void dictDisableResize(void) {$/;"	f
+dictEmpty	dict.c	/^void dictEmpty(dict *d) {$/;"	f
+dictEnableResize	dict.c	/^void dictEnableResize(void) {$/;"	f
+dictEntry	dict.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	dict.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictExpand	dict.c	/^int dictExpand(dict *d, unsigned long size)$/;"	f
+dictFetchValue	dict.c	/^void *dictFetchValue(dict *d, const void *key) {$/;"	f
+dictFind	dict.c	/^dictEntry *dictFind(dict *d, const void *key)$/;"	f
+dictFreeKey	dict.h	174;"	d
+dictFreeVal	dict.h	157;"	d
+dictGenCaseHashFunction	dict.c	/^unsigned int dictGenCaseHashFunction(const unsigned char *buf, int len) {$/;"	f
+dictGenHashFunction	dict.c	/^unsigned int dictGenHashFunction(const void *key, int len) {$/;"	f
+dictGenericDelete	dict.c	/^static int dictGenericDelete(dict *d, const void *key, int nofree)$/;"	f	file:
+dictGetHashFunctionSeed	dict.c	/^uint32_t dictGetHashFunctionSeed(void) {$/;"	f
+dictGetIterator	dict.c	/^dictIterator *dictGetIterator(dict *d)$/;"	f
+dictGetKey	dict.h	191;"	d
+dictGetRandomKey	dict.c	/^dictEntry *dictGetRandomKey(dict *d)$/;"	f
+dictGetSafeIterator	dict.c	/^dictIterator *dictGetSafeIterator(dict *d) {$/;"	f
+dictGetSignedIntegerVal	dict.h	193;"	d
+dictGetUnsignedIntegerVal	dict.h	194;"	d
+dictGetVal	dict.h	192;"	d
+dictHashKey	dict.h	190;"	d
+dictIdentityHashFunction	dict.c	/^unsigned int dictIdentityHashFunction(unsigned int key)$/;"	f
+dictIntHashFunction	dict.c	/^unsigned int dictIntHashFunction(unsigned int key)$/;"	f
+dictIsRehashing	dict.h	197;"	d
+dictIterator	dict.h	/^typedef struct dictIterator {$/;"	s
+dictIterator	dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
+dictNext	dict.c	/^dictEntry *dictNext(dictIterator *iter)$/;"	f
+dictRedisObjectDestructor	hash_test.c	/^void dictRedisObjectDestructor(void *privdata, void *val){$/;"	f
+dictRehash	dict.c	/^int dictRehash(dict *d, int n) {$/;"	f
+dictRehashMilliseconds	dict.c	/^int dictRehashMilliseconds(dict *d, int ms) {$/;"	f
+dictRelease	dict.c	/^void dictRelease(dict *d)$/;"	f
+dictReleaseIterator	dict.c	/^void dictReleaseIterator(dictIterator *iter)$/;"	f
+dictReplace	dict.c	/^int dictReplace(dict *d, void *key, void *val)$/;"	f
+dictReplaceRaw	dict.c	/^dictEntry *dictReplaceRaw(dict *d, void *key) {$/;"	f
+dictResize	dict.c	/^int dictResize(dict *d)$/;"	f
+dictSdsDestructor	hash_test.c	/^void dictSdsDestructor(void *privdata, void *val) {$/;"	f
+dictSdsHash	hash_test.c	/^unsigned int dictSdsHash(const void *key) {$/;"	f
+dictSdsKeyCompare	hash_test.c	/^int dictSdsKeyCompare(void *privdata, const void *key1, const void *key2){$/;"	f
+dictSetHashFunctionSeed	dict.c	/^void dictSetHashFunctionSeed(uint32_t seed) {$/;"	f
+dictSetKey	dict.h	178;"	d
+dictSetSignedIntegerVal	dict.h	168;"	d
+dictSetUnsignedIntegerVal	dict.h	171;"	d
+dictSetVal	dict.h	161;"	d
+dictSize	dict.h	196;"	d
+dictSlots	dict.h	195;"	d
+dictType	dict.h	/^typedef struct dictType {$/;"	s
+dictType	dict.h	/^} dictType;$/;"	t	typeref:struct:dictType
+dict_can_resize	dict.c	/^static int dict_can_resize = 1;$/;"	v	file:
+dict_force_resize_ratio	dict.c	/^static unsigned int dict_force_resize_ratio = 5;$/;"	v	file:
+dict_hash_function_seed	dict.c	/^static uint32_t dict_hash_function_seed = 5381;$/;"	v	file:
+dictht	dict.h	/^typedef struct dictht {$/;"	s
+dictht	dict.h	/^} dictht;$/;"	t	typeref:struct:dictht
+entry	dict.h	/^    dictEntry *entry,       \/\/ 当前哈希节点$/;"	m	struct:dictIterator
+free	hash_test.c	/^	int free;$/;"	m	struct:sdshdr	file:
+free	zmalloc.c	62;"	d	file:
+free	zmalloc.c	67;"	d	file:
+hashFunction	dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
+ht	dict.h	/^    dictht ht[2];       $/;"	m	struct:dict
+index	dict.h	/^        index,              \/\/ 正在迭代的哈希表数组的索引$/;"	m	struct:dictIterator
+iterators	dict.h	/^    int iterators;      $/;"	m	struct:dict
+key	dict.h	/^    void *key;$/;"	m	struct:dictEntry
+keyCompare	dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
+keyDestructor	dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
+keyDup	dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
+len	hash_test.c	/^	int len;$/;"	m	struct:sdshdr	file:
+main	hash_test.c	/^int main()$/;"	f
+malloc	zmalloc.c	59;"	d	file:
+malloc	zmalloc.c	64;"	d	file:
+next	dict.h	/^    struct dictEntry *next; $/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
+nextEntry	dict.h	/^              *nextEntry;   \/\/ 当前哈希节点的后继节点$/;"	m	struct:dictIterator
+privdata	dict.h	/^    void *privdata;$/;"	m	struct:dict
+realloc	zmalloc.c	61;"	d	file:
+realloc	zmalloc.c	66;"	d	file:
+rehashidx	dict.h	/^    int rehashidx;$/;"	m	struct:dict
+s64	dict.h	/^        int64_t s64;$/;"	m	union:dictEntry::__anon1
+safe	dict.h	/^        safe;               \/\/ 是否安全？$/;"	m	struct:dictIterator
+sds	hash_test.c	/^typedef char *sds;$/;"	t	file:
+sdsfree	hash_test.c	/^void sdsfree(sds s) {$/;"	f
+sdshdr	hash_test.c	/^struct sdshdr {$/;"	s	file:
+sdslen	hash_test.c	/^static inline size_t sdslen(const sds s) {$/;"	f	file:
+sdsnew	hash_test.c	/^sds sdsnew(const char *init) {$/;"	f
+sdsnewlen	hash_test.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f
+size	dict.h	/^    unsigned long size;     $/;"	m	struct:dictht
+sizemask	dict.h	/^    unsigned long sizemask; $/;"	m	struct:dictht
+table	dict.h	/^    dictEntry **table;      $/;"	m	struct:dictht
+table	dict.h	/^    int table,              \/\/ 正在迭代的哈希表的号码（0 或者 1）$/;"	m	struct:dictIterator
+timeInMilliseconds	dict.c	/^long long timeInMilliseconds(void) {$/;"	f
+type	dict.h	/^    dictType *type;$/;"	m	struct:dict
+u64	dict.h	/^        uint64_t u64;$/;"	m	union:dictEntry::__anon1
+update_zmalloc_stat_add	zmalloc.c	71;"	d	file:
+update_zmalloc_stat_add	zmalloc.c	74;"	d	file:
+update_zmalloc_stat_alloc	zmalloc.c	88;"	d	file:
+update_zmalloc_stat_free	zmalloc.c	98;"	d	file:
+update_zmalloc_stat_sub	zmalloc.c	72;"	d	file:
+update_zmalloc_stat_sub	zmalloc.c	80;"	d	file:
+used	dict.h	/^    unsigned long used;     $/;"	m	struct:dictht
+used_memory	zmalloc.c	/^static size_t used_memory = 0;$/;"	v	file:
+used_memory_mutex	zmalloc.c	/^pthread_mutex_t used_memory_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+v	dict.h	/^    } v;$/;"	m	struct:dictEntry	typeref:union:dictEntry::__anon1
+val	dict.h	/^        void *val;$/;"	m	union:dictEntry::__anon1
+valDestructor	dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
+valDup	dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
+zcalloc	zmalloc.c	/^void *zcalloc(size_t size) {$/;"	f
+zfree	zmalloc.c	/^void zfree(void *ptr) {$/;"	f
+zlibc_free	zmalloc.c	/^void zlibc_free(void *ptr) {$/;"	f
+zmalloc	zmalloc.c	/^void *zmalloc(size_t size) {$/;"	f
+zmalloc_default_oom	zmalloc.c	/^static void zmalloc_default_oom(size_t size) {$/;"	f	file:
+zmalloc_enable_thread_safeness	zmalloc.c	/^void zmalloc_enable_thread_safeness(void) {$/;"	f
+zmalloc_get_fragmentation_ratio	zmalloc.c	/^float zmalloc_get_fragmentation_ratio(void) {$/;"	f
+zmalloc_get_private_dirty	zmalloc.c	/^size_t zmalloc_get_private_dirty(void) {$/;"	f
+zmalloc_get_rss	zmalloc.c	/^size_t zmalloc_get_rss(void) {$/;"	f
+zmalloc_oom_handler	zmalloc.c	/^static void (*zmalloc_oom_handler)(size_t) = zmalloc_default_oom;$/;"	v	file:
+zmalloc_set_oom_handler	zmalloc.c	/^void zmalloc_set_oom_handler(void (*oom_handler)(size_t)) {$/;"	f
+zmalloc_size	zmalloc.c	/^size_t zmalloc_size(void *ptr) {$/;"	f
+zmalloc_size	zmalloc.h	43;"	d
+zmalloc_size	zmalloc.h	53;"	d
+zmalloc_size	zmalloc.h	61;"	d
+zmalloc_thread_safe	zmalloc.c	/^static int zmalloc_thread_safe = 0;$/;"	v	file:
+zmalloc_used_memory	zmalloc.c	/^size_t zmalloc_used_memory(void) {$/;"	f
+zrealloc	zmalloc.c	/^void *zrealloc(void *ptr, size_t size) {$/;"	f
+zstrdup	zmalloc.c	/^char *zstrdup(const char *s) {$/;"	f
