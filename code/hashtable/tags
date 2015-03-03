@@ -17,13 +17,6 @@ PREFIX_SIZE	zmalloc.c	53;"	d	file:
 ZMALLOC_LIB	zmalloc.h	39;"	d
 ZMALLOC_LIB	zmalloc.h	49;"	d
 ZMALLOC_LIB	zmalloc.h	65;"	d
-_BSD_SOURCE	fmacros.h	33;"	d
-_FILE_OFFSET_BITS	fmacros.h	46;"	d
-_GNU_SOURCE	fmacros.h	36;"	d
-_LARGEFILE_SOURCE	fmacros.h	45;"	d
-_REDIS_FMACRO_H	fmacros.h	31;"	d
-_XOPEN_SOURCE	fmacros.h	40;"	d
-_XOPEN_SOURCE	fmacros.h	42;"	d
 __DICT_H	dict.h	39;"	d
 __ZMALLOC_H	zmalloc.h	32;"	d
 __str	zmalloc.h	36;"	d
@@ -35,11 +28,11 @@ _dictKeyIndex	dict.c	/^static int _dictKeyIndex(dict *d, const void *key)$/;"	f	
 _dictNextPower	dict.c	/^static unsigned long _dictNextPower(unsigned long size)$/;"	f	file:
 _dictRehashStep	dict.c	/^static void _dictRehashStep(dict *d) {$/;"	f	file:
 _dictReset	dict.c	/^static void _dictReset(dictht *ht)$/;"	f	file:
-buf	hash_test.c	/^	char buf[];$/;"	m	struct:sdshdr	file:
+buf	my_hash.c	/^	char buf[];$/;"	m	struct:sdshdr	file:
 calloc	zmalloc.c	60;"	d	file:
 calloc	zmalloc.c	65;"	d	file:
 d	dict.h	/^    dict *d;                $/;"	m	struct:dictIterator
-dbDictType	hash_test.c	/^dictType dbDictType = {$/;"	v
+dbDictType	my_hash.c	/^dictType dbDictType = {$/;"	v
 dict	dict.h	/^typedef struct dict {$/;"	s
 dict	dict.h	/^} dict;$/;"	t	typeref:struct:dict
 dictAdd	dict.c	/^int dictAdd(dict *d, void *key, void *val)$/;"	f
@@ -76,7 +69,7 @@ dictIsRehashing	dict.h	197;"	d
 dictIterator	dict.h	/^typedef struct dictIterator {$/;"	s
 dictIterator	dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
 dictNext	dict.c	/^dictEntry *dictNext(dictIterator *iter)$/;"	f
-dictRedisObjectDestructor	hash_test.c	/^void dictRedisObjectDestructor(void *privdata, void *val){$/;"	f
+dictRedisObjectDestructor	my_hash.c	/^void dictRedisObjectDestructor(void *privdata, void *val){$/;"	f
 dictRehash	dict.c	/^int dictRehash(dict *d, int n) {$/;"	f
 dictRehashMilliseconds	dict.c	/^int dictRehashMilliseconds(dict *d, int ms) {$/;"	f
 dictRelease	dict.c	/^void dictRelease(dict *d)$/;"	f
@@ -84,9 +77,9 @@ dictReleaseIterator	dict.c	/^void dictReleaseIterator(dictIterator *iter)$/;"	f
 dictReplace	dict.c	/^int dictReplace(dict *d, void *key, void *val)$/;"	f
 dictReplaceRaw	dict.c	/^dictEntry *dictReplaceRaw(dict *d, void *key) {$/;"	f
 dictResize	dict.c	/^int dictResize(dict *d)$/;"	f
-dictSdsDestructor	hash_test.c	/^void dictSdsDestructor(void *privdata, void *val) {$/;"	f
-dictSdsHash	hash_test.c	/^unsigned int dictSdsHash(const void *key) {$/;"	f
-dictSdsKeyCompare	hash_test.c	/^int dictSdsKeyCompare(void *privdata, const void *key1, const void *key2){$/;"	f
+dictSdsDestructor	my_hash.c	/^void dictSdsDestructor(void *privdata, void *val) {$/;"	f
+dictSdsHash	my_hash.c	/^unsigned int dictSdsHash(const void *key) {$/;"	f
+dictSdsKeyCompare	my_hash.c	/^int dictSdsKeyCompare(void *privdata, const void *key1, const void *key2){$/;"	f
 dictSetHashFunctionSeed	dict.c	/^void dictSetHashFunctionSeed(uint32_t seed) {$/;"	f
 dictSetKey	dict.h	178;"	d
 dictSetSignedIntegerVal	dict.h	168;"	d
@@ -102,7 +95,7 @@ dict_hash_function_seed	dict.c	/^static uint32_t dict_hash_function_seed = 5381;
 dictht	dict.h	/^typedef struct dictht {$/;"	s
 dictht	dict.h	/^} dictht;$/;"	t	typeref:struct:dictht
 entry	dict.h	/^    dictEntry *entry,       \/\/ 当前哈希节点$/;"	m	struct:dictIterator
-free	hash_test.c	/^	int free;$/;"	m	struct:sdshdr	file:
+free	my_hash.c	/^	int free;$/;"	m	struct:sdshdr	file:
 free	zmalloc.c	62;"	d	file:
 free	zmalloc.c	67;"	d	file:
 hashFunction	dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
@@ -113,8 +106,8 @@ key	dict.h	/^    void *key;$/;"	m	struct:dictEntry
 keyCompare	dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
 keyDestructor	dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
 keyDup	dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
-len	hash_test.c	/^	int len;$/;"	m	struct:sdshdr	file:
-main	hash_test.c	/^int main()$/;"	f
+len	my_hash.c	/^	int len;$/;"	m	struct:sdshdr	file:
+main	my_hash.c	/^int main(int argc, char **argv)$/;"	f
 malloc	zmalloc.c	59;"	d	file:
 malloc	zmalloc.c	64;"	d	file:
 next	dict.h	/^    struct dictEntry *next; $/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
@@ -125,12 +118,12 @@ realloc	zmalloc.c	66;"	d	file:
 rehashidx	dict.h	/^    int rehashidx;$/;"	m	struct:dict
 s64	dict.h	/^        int64_t s64;$/;"	m	union:dictEntry::__anon1
 safe	dict.h	/^        safe;               \/\/ 是否安全？$/;"	m	struct:dictIterator
-sds	hash_test.c	/^typedef char *sds;$/;"	t	file:
-sdsfree	hash_test.c	/^void sdsfree(sds s) {$/;"	f
-sdshdr	hash_test.c	/^struct sdshdr {$/;"	s	file:
-sdslen	hash_test.c	/^static inline size_t sdslen(const sds s) {$/;"	f	file:
-sdsnew	hash_test.c	/^sds sdsnew(const char *init) {$/;"	f
-sdsnewlen	hash_test.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f
+sds	my_hash.c	/^typedef char *sds;$/;"	t	file:
+sdsfree	my_hash.c	/^void sdsfree(sds s) {$/;"	f
+sdshdr	my_hash.c	/^struct sdshdr {$/;"	s	file:
+sdslen	my_hash.c	/^static inline size_t sdslen(const sds s) {$/;"	f	file:
+sdsnew	my_hash.c	/^sds sdsnew(const char *init) {$/;"	f
+sdsnewlen	my_hash.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f
 size	dict.h	/^    unsigned long size;     $/;"	m	struct:dictht
 sizemask	dict.h	/^    unsigned long sizemask; $/;"	m	struct:dictht
 table	dict.h	/^    dictEntry **table;      $/;"	m	struct:dictht

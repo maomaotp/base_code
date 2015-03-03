@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include <string>
+#include <iostream>
 #include "biloba_core_lib.h"
 #include <conio.h>
 #include <time.h>
@@ -19,7 +20,8 @@ extern "C" {
 #define VOISE_PWD	"G:\\liuq\\tts\\nginx-1.7.9\\html\\"
 //#define VOISE_PWD	"E:\\tmp\\"
 #define SERVER_URL	"http://202.142.26.210:8080"
-#define BROKER_IP   "tcp://123.57.41.242:5560"
+//#define BROKER_IP   "tcp://123.57.41.242:5560"
+#define BROKER_IP   "tcp://202.142.26.210:5560"
 
 #define FORCE_UTF8 1
 
@@ -29,7 +31,7 @@ extern "C" {
 using namespace std;
 using namespace BilobaTTS;
 
-bool WriteWave(const char *fname, int n_samples, short *data);
+int WriteWave(const char *fname, int n_samples, short *data);
 
 typedef struct _SpeakerInfo{
 	string name;
@@ -244,6 +246,8 @@ static int set_speach_parameter(char *recv_buf, CoreTTSTask* task) {
 	//设置合成文本
 	task->SetText(gb_txt);
 
+	
+
 	printf("SetText:\n\n\n%s\n\n\n", gb_txt.c_str());
 
 	//printf("speaker_info->gender == %s\nindex=%d\nspeaker_info->name=%s\n\n", speaker_info->gender, index, speaker_info->name);
@@ -336,6 +340,10 @@ void handle_zmq_task(){
 			s_return_err(resp, 1008);
 		}
 
+	    BilobaResult ret;
+		string utt_str = task->GetSynUtterString(ret);
+		std::cout << "Front end output:\n" << utt_str << std::endl;
+
 		task->SequentialTTS_Exit();
 		delete task;
 	}
@@ -346,6 +354,7 @@ void handle_zmq_task(){
 
 unsigned int __stdcall handle_http_task(void *param) {
 }
+
 
 int main(int argc, _TCHAR* argv[])
 {
