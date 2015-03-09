@@ -819,7 +819,7 @@ int main(int argc,char *argv[])
 
     dzlog_info("daemon:start now");
 
-	pthread_t id[2];
+	pthread_t id[3];
 	
 	if( pthread_create(&id[0], 0, DaemonWork,0) ) {
 	    dzlog_info("daemonwork pthread failed!!!");
